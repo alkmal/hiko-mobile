@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_sheet_top_corner_radius"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bottom_sheet_top_corner_radius"
+            android:backgroundTint="#361544">
+
+            <TextView
+                android:id="@+id/tvRoomName"
+                style="@style/commonTextStyle"
+                android:textColor="@color/pink"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/all_is_well_party" />
+
+            <ImageView
+                android:id="@+id/btnClose"
+                style="@style/closeButtonStyle"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layPasscode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="@color/white_10"
+                android:padding="@dimen/_5sdp"
+                android:paddingHorizontal="@dimen/_2sdp"
+                android:paddingVertical="@dimen/_2sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:fontFamily="@font/airbnb_cereal_medium"
+                    android:padding="@dimen/_3sdp"
+                    android:text="@string/private_room"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_10sdp"
+                    app:drawableStartCompat="@drawable/ic_private" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/commonHintTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/airbnb_cereal_medium"
+                android:text="@string/room_passcode"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_11sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_start_audio_room_select_image"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/etPasscode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:fontFamily="@font/airbnb_cereal_medium"
+                    android:gravity="center_vertical"
+                    android:hint="@string/enter_room_passcode"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:paddingVertical="15dp"
+                    android:paddingStart="15dp"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/hintColor"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSubmit"
+            style="@style/commonButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/submit_bg"
+            android:backgroundTint="@null"
+            android:elevation="5dp"
+            android:fontFamily="@font/airbnb_cereal_bold"
+            android:text="@string/submit" />
+    </LinearLayout>
+</layout>

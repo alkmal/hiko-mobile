@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/bg_bottom_sheet_top_corner_radius"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/bg_bottom_sheet_top_corner_radius">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/airbnbcereal_w_bd"
+                android:textSize="18sp"
+                android:text="@string/banned_list"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/btnClose"
+                android:src="@drawable/ic_close"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+
+                />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/layout"
+            android:background="@color/white_20"
+            android:layout_marginTop="12dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvBannedList"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/view"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/item_banned_list" />
+
+        <include
+            android:id="@+id/lytNoData"
+            layout="@layout/lyt_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/tintColor"
+            android:visibility="gone" />
+    </RelativeLayout>
+</layout>

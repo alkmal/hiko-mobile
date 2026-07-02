@@ -1,0 +1,59 @@
+package com.codder.ultimate.agora.ui;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatTextView;
+
+import com.codder.ultimate.R;
+
+public class RtcStatsView extends RelativeLayout {
+    private static final float LINE_EXTRA = 10f;
+    private static final float LINE_MULTIPLY = 1f;
+
+    private AppCompatTextView mTextView;
+    private ImageView mClose;
+    private String mStatsFormat;
+    private int mCloseSize;
+
+    public RtcStatsView(Context context) {
+        super(context);
+        init();
+    }
+
+    public RtcStatsView(Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
+        init();
+    }
+
+    private void init() {
+        mCloseSize = getResources().getDimensionPixelSize(R.dimen.live_stats_close_button_size);
+
+        mTextView = new AppCompatTextView(getContext());
+        mTextView.setLineSpacing(LINE_EXTRA, LINE_MULTIPLY);
+        addView(mTextView);
+        mStatsFormat = getResources().getString(R.string.rtc_stats_format);
+
+        mClose = new ImageView(getContext());
+        LayoutParams closeLayoutParams =
+                new LayoutParams(mCloseSize, mCloseSize);
+        closeLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_TOP, RelativeLayout.TRUE);
+        closeLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_END, RelativeLayout.TRUE);
+        addView(mClose, closeLayoutParams);
+        mClose.setScaleType(ImageView.ScaleType.FIT_XY);
+        mClose.setImageResource(R.drawable.ic_close);
+    }
+
+    public void setLocalStats(float rxRate, float rxLoss, float txRate, float txLoss) {
+        String stats = String.format(mStatsFormat, rxRate, rxLoss, txRate, txLoss);
+        mTextView.setText(stats);
+    }
+
+    public void setCloseListener(OnClickListener listener) {
+        mClose.setOnClickListener(listener);
+    }
+
+}

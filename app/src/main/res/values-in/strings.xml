@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">Masukkan nama aplikasi Anda</string>
+
+    <string name="no_internet_connection">Tidak Ada Koneksi Internet</string>
+    <string name="back_online">Kembali Online</string>
+    <string name="we_are_under_maintenance_text">Kami sedang dalam pemeliharaan</string>
+    <string name="dismiss">Membubarkan</string>
+    <string name="you_are_blocked_by_admin_text">Anda diblokir oleh admin</string>
+    <string name="cancel">Membatalkan</string>
+    <string name="you_are_logged_in_other_devices">Anda masuk ke perangkat lain</string>
+    <string name="log_out">Keluar</string>
+    <string name="policy">Dengan Mendaftar Anda akan menyetujui</string>
+    <string name="terms_amp_condition">Syarat &amp; Ketentuan</string>
+    <string name="and">andDan</string>
+    <string name="privacy_policy">Kebijakan Privasi</string>
+    <string name="please_wait">Harap tunggu</string>
+    <string name="your_name">Nama kamu</string>
+    <string name="male">Pria</string>
+    <string name="female">Perempuan</string>
+    <string name="select_your_age">Pilih usia Anda</string>
+    <string name="edit_profile">Edit Profil</string>
+    <string name="submit">Kirim</string>
+    <string name="enter_your_name">Masukkan nama Anda</string>
+    <string name="enter_username_first">Masukkan Nama Pengguna terlebih dahulu</string>
+    <string name="select_your_gender">Pilih jenis kelamin Anda</string>
+    <string name="minimum_age_must_be_18_years">Usia minimum harus 18 tahun.</string>
+    <string name="connecting">Menghubungkan…</string>
+    <string name="privacy_policy_text">Kebijakan Privasi</string>
+    <string name="accept_privacy_policy">Saya berusia 18+ dan telah membaca Kebijakan Privasi.</string>
+    <string name="deny">Membantah</string>
+    <string name="accept">Menerima</string>
+    <string name="please_accept_privacy_policy">Harap konfirmasi bahwa Anda telah membaca Kebijakan Privasi untuk melanjutkan.</string>
+    <string name="exit_app_confirmation">Apakah Anda yakin ingin keluar dari aplikasi?</string>
+    <string name="exit_this_app">Keluar dari Aplikasi Ini</string>
+    <string name="fans">Penggemar</string>
+    <string name="my_diamonds">Berlianku</string>
+    <string name="demo_host_center_text">Pusat Host Demo</string>
+    <string name="demo_agency_center">Pusat Agensi Demo</string>
+    <string name="host_request">Permintaan Tuan Rumah</string>
+    <string name="offline_recharge">Isi Ulang Offline</string>
+    <string name="my_posts">Postingan Saya</string>
+    <string name="my_relites">Relites saya</string>
+    <string name="store">Toko</string>
+    <string name="free_coins">Koin Gratis</string>
+    <string name="become_vip">Menjadi VIP</string>
+    <string name="user_level">Tingkat Pengguna</string>
+    <string name="copied_successfully">Berhasil disalin</string>
+    <string name="id">"IDPENGENAL:</string>
+    <string name="agency_center_text">Pusat Agensi</string>
+    <string name="host_center">Pusat Tuan Rumah</string>
+    <string name="ok">OK</string>
+    <string name="history">Sejarah</string>
+    <string name="recharge">Isi ulang</string>
+    <string name="my_diamond_balance">Koin Berlian Saya</string>
+    <string name="enter_user_id">Masukkan ID Pengguna</string>
+    <string name="enter_diamonds">Masuk Berlian</string>
+    <string name="note">Catatan</string>
+    <string name="top_up">Isi ulang</string>
+    <string name="user_not_found">Pengguna Tidak Ditemukan</string>
+    <string name="please_verify_user_id">harap verifikasi id pengguna</string>
+    <string name="enter_coin_value">Masukkan Nilai Koin</string>
+    <string name="invalid_coin_value">Nilai Koin Tidak Valid</string>
+    <string name="insufficient_coins">Koin tidak mencukupi</string>
+    <string name="send_successfully">Kirim Berhasil</string>
+    <string name="continue_text">Melanjutkan</string>
+    <string name="in_this_apk_all_data_are_only_for_demo_purpose">Dalam APK ini, Semua data hanya untuk Tujuan Demo.</string>
+    <string name="deleted_successfully">Berhasil Dihapus</string>
+    <string name="india">India</string>
+    <string name="we_will_take_immediately_action_for_this_user_thank_you">Kami akan segera mengambil tindakan untuk pengguna ini Terima Kasih</string>
+    <string name="likes">Suka</string>
+    <string name="comments">Komentar</string>
+    <string name="report_user">Laporkan Pengguna</string>
+    <string name="blocked_successfully">Diblokir Berhasil</string>
+    <string name="report_this_user">Laporkan Pengguna ini</string>
+    <string name="please_describe_your_issue_here">Tolong jelaskan masalah Anda di sini..</string>
+    <string name="unable_to_report">Tidak Dapat Melaporkan..</string>
+    <string name="something_went_wrong_text">Ada yang salah</string>
+    <string name="block_this_user">Blokir Pengguna Ini</string>
+    <string name="yes">YesYa</string>
+    <string name="type_message_first">Ketik pesan terlebih dahulu</string>
+    <string name="toast_cannot_retrieve_cropped_image">Tidak dapat mengambil gambar yang dipotong</string>
+    <string name="toast_unexpected_error">Kesalahan Tak Terduga</string>
+    <string name="call_ended">Panggilan Berakhir!</string>
+    <string name="ringing">Berdering</string>
+    <string name="we_will_take_immediately_action_for_this_user_n_thank_you">Kami akan segera mengambil tindakan untuk pengguna ini Terima Kasih</string>
+    <string name="enter_valid_message">Masukkan Pesan yang valid</string>
+    <string name="is_busy_with_someone_else">sedang sibuk dengan orang lain.</string>
+    <string name="discard_entire_video">Buang seluruh video?</string>
+    <string name="if_you_go_back_now_you_will_lose_all_the_clips_added_to_your_video">Jika Anda kembali sekarang, Anda akan kehilangan semua klip yang ditambahkan ke video Anda</string>
+    <string name="discard_video">Buang Video</string>
+    <string name="incoming_call">Panggilan masuk…</string>
+    <string name="need_permissions">"Butuh izin"</string>
+    <string name="call_declined">Panggilan Ditolak</string>
+    <string name="rtc_stats_format">Laju Bit Hilir: %.2f kbps%nLaju Kehilangan Hilir: %.2f%% %nLaju Bit Hulu: %.2f kbps%nLaju Kehilangan Hulu: %.2f%%</string>
+    <string name="unfollow">Berhenti mengikuti</string>
+    <string name="follow">Mengikuti</string>
+    <string name="unblock">Buka blokir</string>
+    <string name="block">Memblokir</string>
+    <string name="message">Pesan</string>
+    <string name="message_delete_confirmation">Apakah Anda yakin ingin menghapus Pesan ini?</string>
+    <string name="following">Mengikuti</string>
+    <string name="my_fans">Penggemarku</string>
+    <string name="image">Gambar</string>
+    <string name="choose_one">pilih satu</string>
+    <string name="say_something">Katakan sesuatu…</string>
+    <string name="failed_to_load_videos">Gagal memuat video.</string>
+    <string name="settings">Pengaturan</string>
+    <string name="notification">Pemberitahuan</string>
+    <string name="have_an_issue">Memiliki Masalah</string>
+    <string name="my_complains">Keluhan Saya</string>
+    <string name="terms_of_service">Ketentuan Layanan</string>
+    <string name="about_us">Tentang Kami</string>
+    <string name="next">Berikutnya</string>
+    <string name="complaint_or_suggestion">Keluhan atau Saran</string>
+    <string name="typing_somethings">Mengetik Sesuatu…</string>
+    <string name="contact">Kontak</string>
+    <string name="enter_your_mobile_number_or_email">Masukkan Nomor Ponsel atau Email Anda</string>
+    <string name="attach_your_image_or_screenshot">Lampirkan Gambar atau Tangkapan Layar Anda</string>
+    <string name="browse">Jelajahi</string>
+    <string name="complain_send_successfully">Keluhan Terkirim Berhasil</string>
+    <string name="please_enter_message">Silakan Masukkan Pesan</string>
+    <string name="please_enter_contact">Silakan masukkan kontak</string>
+    <string name="my_tickets">Tiket Saya</string>
+    <string name="open">Membuka</string>
+    <string name="ticket_details">Detail Tiket</string>
+    <string name="status">Status</string>
+    <string name="close">MENUTUP</string>
+    <string name="_1_self_introduction">1. Perkenalan diri</string>
+    <string name="name">Nama</string>
+    <string name="enter_name">Masukkan Nama</string>
+    <string name="mobile_number">Nomor Ponsel</string>
+    <string name="enter_mobile_number">Masukkan Nomor Ponsel</string>
+    <string name="Bio">BioBiografi</string>
+    <string name="_2_agency_code">2. Kode Agensi</string>
+    <string name="if_you_have">(Kalau sudah)</string>
+    <string name="_3_upload_photos">3. Unggah Foto</string>
+    <string name="personal_photo">Foto Pribadi</string>
+    <string name="_4_bank_details">4. Rincian Bank</string>
+    <string name="enter_your_bank_details">Masukkan rincian bank Anda</string>
+    <string name="admission_car">Gerbong Masuk</string>
+    <string name="enter_bio_text">Masukkan Bio</string>
+    <string name="select_personal_photo">Pilih Foto Pribadi</string>
+    <string name="image_file_not_found">File gambar tidak ditemukan</string>
+    <string name="host_request_send">Kirim Permintaan Host</string>
+    <string name="try_after_some_time">Silakan coba lagi nanti</string>
+    <string name="avatar_frame">Bingkai Avatar</string>
+    <string name="super_star">Bintang Super</string>
+    <string name="you_don_t_have_required_diamonds">Anda tidak memiliki Berlian yang dibutuhkan!</string>
+    <string name="diamond_star">Bintang Berlian</string>
+    <string name="stepping_in">Ayo maju!</string>
+    <string name="free_diamonds">Berlian Gratis</string>
+    <string name="method_1">Metode 1:</string>
+    <string name="method_2">Metode 2:</string>
+    <string name="your_refer_code">Kode Referensi Anda:</string>
+    <string name="enter_referral_code_here">Masukkan kode rujukan di sini</string>
+    <string name="you_have_2_referrals">Anda memiliki 2 referensi</string>
+    <string name="referral_code_copied">Kode Referensi Disalin!</string>
+    <string name="enter_refer_code">Masukkan Kode Referensi</string>
+    <string name="refereed_successfully">Wasit Berhasil</string>
+    <string name="generic_error">Terjadi kesalahan. Silakan coba lagi nanti.</string>
+    <string name="earned_by_user">Hadiah Diberikan</string>
+    <string name="invite_desc">Undang Teman Anda! Untuk setiap pembayaran teman yang diundang, Anda dan teman Anda akan menerima</string>
+    <string name="vip_plan">Paket VIP</string>
+    <string name="become_vip_and_get_many_privileges">Jadilah VIP dan dapatkan banyak Hak Istimewa</string>
+    <string name="vip_privileges">Hak Istimewa VIP</string>
+    <string name="get_vip_to_access_all_function">Dapatkan VIP untuk Mengakses Semua Fungsi</string>
+    <string name="vip_package">Paket VIP</string>
+    <string name="get_now">Dapatkan Sekarang</string>
+    <string name="first_select_the_plan">Pertama, pilih paketnya.</string>
+    <string name="credit_debit_card">Kartu Kredit/Debit</string>
+    <string name="google_play">Google Play</string>
+    <string name="hot">HotPanas</string>
+    <string name="your_level">Tingkat Anda</string>
+    <string name="no_level_available">Tidak Ada Level yang Tersedia</string>
+    <string name="unknown">Tidak dikenal</string>
+    <string name="income">Penghasilan</string>
+    <string name="record">Catatan</string>
+    <string name="diamonds">Berlian</string>
+    <string name="outcome">Hasil</string>
+    <string name="r_coins">Koin R</string>
+    <string name="confirm">Mengonfirmasi</string>
+    <string name="diamond_record">Rekaman Berlian</string>
+    <string name="spending">Pengeluaran</string>
+    <string name="converted_to_diamonds">diubah menjadi berlian</string>
+    <string name="diamond_purchase">Pembelian berlian</string>
+    <string name="you_have_called">Kamu sudah menelepon</string>
+    <string name="watching_ads">Menonton iklan</string>
+    <string name="login_bonus">bonus masuk</string>
+    <string name="referral_bonus">Bonus rujukan</string>
+    <string name="cash_out">Uang tunai</string>
+    <string name="svga_animation_purchased">Animasi SVGA Dibeli</string>
+    <string name="add_in_teenpatti_game">Tambahkan di Game Teenpatti</string>
+    <string name="purchased_avatar_frame">Bingkai Avatar yang dibeli</string>
+    <string name="coin_add_by_offline_recharge">Penambahan koin dengan isi ulang offline</string>
+    <string name="call_coin_received">Panggil Koin</string>
+    <string name="lucy_gift_bonus">Bonus Hadiah Lucy</string>
+    <string name="add_in_roulette_game">Tambahkan dalam Permainan Roulette</string>
+    <string name="add_in_ferry_wheel_game">Tambahkan di Game Roda Feri</string>
+    <string name="convert_in_coin_seller_coin">Konversi ke Koin Penjual Koin</string>
+    <string name="unknown_transaction">Transaksi tidak diketahui</string>
+    <string name="gift_broadcast_during_livestream_by_you">Siaran Hadiah selama siaran langsung oleh Anda</string>
+    <string name="gift_received">Hadiah diterima</string>
+    <string name="gift_send_to">hadiah kirim ke</string>
+    <string name="added_by_admin">Ditambahkan Oleh Admin</string>
+    <string name="reduce_by_admin">Kurangi Oleh Admin</string>
+    <string name="_1">$1</string>
+    <string name="withdrawing_rcoins">Penarikan RCoin</string>
+    <string name="convert_to_diamond">Konversi ke Berlian</string>
+    <string name="what_is_coins">Apa itu Koin?</string>
+    <string name="what_is_rcoin">1. Saat Anda menerima hadiah, seperti Lamborghini atau Kastil, Anda langsung mendapatkan Koin dengan jumlah yang sama dengan harga hadiah di Toko Hadiah. 2. Anda dapat mengonversi Koin menjadi berlian dan uang tunai. 3. Saldo Koin Tersedia + Penarikan</string>
+    <string name="this_is_a_demo_version">Ini adalah versi Demo</string>
+    <string name="payment_done">Pembayaran Selesai</string>
+    <string name="coin_sellers_list">Daftar Penjual Koin</string>
+    <string name="how_much_rcoins_convert_cash">Berapa banyak Rcoins yang dikonversi menjadi Uang Tunai?</string>
+    <string name="how_much_rcoins_convert_into_diamonds">Berapa banyak Rcoin yang dikonversi menjadi Berlian?</string>
+    <string name="setting_error">Kesalahan Pengaturan</string>
+    <string name="minimum_amount_is">Jumlah minimum adalah</string>
+    <string name="you_not_have_enough">Kamu tidak punya cukup</string>
+    <string name="you_are_not_able_to_cashout_at_your_level">Anda tidak dapat melakukan pencairan di level Anda</string>
+    <string name="your">Milikmu</string>
+    <string name="successfully_converted_into">Berhasil Dikonversi menjadi</string>
+    <string name="conversion_failed">Konversi gagal</string>
+    <string name="redeem_your_coins">Tukarkan Koin Anda</string>
+    <string name="enter_coins_to_withdraw">Masukkan koin untuk Penarikan</string>
+    <string name="your_redeem_history">Riwayat Penukaran Anda</string>
+    <string name="pending">Tertunda</string>
+    <string name="r_coin_convert">Konversi R-Koin</string>
+    <string name="how_much_coins_convert_into_diamonds">Berapa banyak koin yang dikonversi menjadi Berlian?</string>
+    <string name="enter_coins">Masukkan koin</string>
+    <string name="convert_to_diamonds">Konversi ke Berlian</string>
+    <string name="whatsapp_not_installed">Whatsapp belum terpasang</string>
+    <string name="invalid_whatsapp_number">Nomor whatsapp tidak valid</string>
+    <string name="withdrawable_rcoins">Rcoin yang Dapat Ditarik</string>
+    <string name="no_payment_method_found">Tidak Ada Metode Pembayaran yang Ditemukan</string>
+    <string name="insufficient">Tidak memadai</string>
+    <string name="please_enter_your_details">Silakan Masukkan Detail Anda</string>
+    <string name="redeem_request_sent_successfully">Permintaan Penukaran Berhasil Dikirim</string>
+    <string name="enter_your_upi_details">Masukkan detail UPI Anda</string>
+    <string name="enter_your_paytm_details">Masukkan detail Paytm Anda</string>
+    <string name="enter_your_bank_account_details">Masukkan rincian rekening Bank Anda</string>
+    <string name="enter_your_bybit_details">Masukkan detail Bybit Anda</string>
+    <string name="purchased">Dibeli</string>
+    <string name="go_live">Tayang Langsung</string>
+    <string name="song_hint">Klik untuk memilih lagu.</string>
+    <string name="timer_hint">Untuk membatalkan penghitung waktu sebelum dimulai, klik di sini.</string>
+    <string name="duration">Lamanya</string>
+    <string name="mmss">jam 0:00</string>
+    <string name="welcome_to_join_the_live_any_content_related_to_porn_violence_gambling_illegal_dealing_will_be_banned">Selamat datang untuk bergabung dalam siaran langsung. Konten apa pun yang terkait dengan pornografi, kekerasan, perjudian, dan perdagangan ilegal akan diblokir.</string>
+    <string name="enter_a_room">telah memasuki ruangan</string>
+    <string name="reacted">Bereaksi</string>
+    <string name="browse_file_title">Telusuri berkas</string>
+    <string name="please_enter_room_title">Silakan masukkan nama kamar</string>
+    <string name="please_select_room_image">Silakan pilih gambar ruangan</string>
+    <string name="you_are_block_from_admin_to_go_live">Anda diblokir oleh admin untuk melakukan siaran langsung</string>
+    <string name="start_audio_live">Mulai Audio Langsung</string>
+    <string name="take_picture">Ambil Gambar</string>
+    <string name="recorder_error_in_progress">Untuk melakukan ini, harap hentikan perekaman terlebih dahulu.</string>
+    <string name="recorder_error_maxed_out">Anda telah merekam untuk durasi maksimum.</string>
+    <string name="audio_from_clip">Audio khusus dari klip.</string>
+    <string name="recorder_error_no_clips">Silakan rekam klip Anda terlebih dahulu untuk melanjutkan.</string>
+    <string name="message_song_select">Anda tidak dapat memilih lagu setelah rekaman dimulai.</string>
+    <string name="message_song_change">Anda tidak dapat mengubah lagu setelah rekaman dimulai.</string>
+    <string name="you_need_storage_permission">Anda memerlukan Izin Penyimpanan</string>
+    <string name="filter">Pilih Filter</string>
+    <string name="you_cannot_upload_video_above_30_mb">Anda tidak dapat mengunggah video di atas 30 MB !!!</string>
+    <string name="choose_sticker">Pilih Stiker</string>
+    <string name="timer">Pengatur waktu</string>
+    <string name="sticker">Stiker</string>
+    <string name="filters">Filter</string>
+    <string name="preview">Pratinjau</string>
+    <string name="flip">Membalik</string>
+    <string name="speed">Kecepatan</string>
+    <string name="notification_channel_id">bawaan</string>
+    <string name="notification_download_title">Unduh berkas…</string>
+    <string name="notification_download_description">Seharusnya tidak memakan waktu lebih dari beberapa detik.</string>
+    <string name="announcement_welcome_to_room">Pengumuman: Selamat datang di ruangan</string>
+    <string name="all">ALLSEMUA</string>
+    <string name="send">Mengirim</string>
+    <string name="followers">Pengikut</string>
+    <string name="shorts">Celana pendek</string>
+    <string name="posts">Postingan</string>
+    <string name="creator">Pencipta</string>
+    <string name="agency">Agen</string>
+    <string name="coin_seller">Penjual Koin</string>
+    <string name="invite">Mengundang</string>
+    <string name="live">Hidup</string>
+    <string name="public_text">Publik</string>
+    <string name="private_text">Pribadi</string>
+    <string name="welcome_to_the_party">Selamat datang di pesta</string>
+    <string name="games">Pertandingan</string>
+    <string name="keep">Menyimpan</string>
+    <string name="exit_text">KELUAR</string>
+    <string name="you_not_have_enough_diamonds_to_send_gift">Anda tidak memiliki cukup berlian untuk mengirim hadiah</string>
+    <string name="sent_a_gift">Mengirim hadiah</string>
+    <string name="you_are_blocked_by_host">Anda diblokir oleh host</string>
+    <string name="you_cannot_upload_video_above_30_mb_text">Anda tidak dapat mengunggah video di atas 30 MB !!!</string>
+    <string name="select_song">Pilih Lagu</string>
+    <string name="select_filter">Pilih Filter</string>
+    <string name="upload_relite">Unggah Relite</string>
+    <string name="add_caption_with_hashtags_and_mentions">Tambahkan Caption dengan hashtag dan mention</string>
+    <string name="location">Lokasi</string>
+    <string name="show_to">Tunjukkan ke</string>
+    <string name="allow_comments">Izinkan Komentar</string>
+    <string name="upload_post">Unggah Postingan</string>
+    <string name="who_show_this_post_to">Kepada siapa saya harus menunjukkan postingan ini</string>
+    <string name="only_followers">Hanya Pengikut</string>
+    <string name="select_image_first">Pilih Gambar Pertama</string>
+    <string name="error_opening_gallery">Terjadi kesalahan saat membuka galeri</string>
+    <string name="permission_denied_message">Izin Ditolak....\n</string>
+    <string name="error_selecting_image">Terjadi kesalahan saat memilih gambar</string>
+    <string name="location_not_set">Lokasi belum ditetapkan</string>
+    <string name="count_clips">%s klip</string>
+    <string name="my_followers">Pengikut Saya</string>
+    <string name="add_a_comment">Tambahkan Komentar…</string>
+    <string name="send_a_gift_to">Mengirim hadiah ke</string>
+    <string name="room_image_updated">Gambar Ruangan Diperbarui</string>
+    <string name="sure_you_want_to_stand_up">Apakah Anda yakin ingin berdiri?</string>
+    <string name="there_s_no_user_to_invite_on_mic">Tidak ada pengguna yang dapat diundang melalui mikrofon.</string>
+    <string name="remove_seat">Hapus Kursi</string>
+    <string name="kick_out">Menendang keluar</string>
+    <string name="unmute_mic">Aktifkan mikrofon</string>
+    <string name="mute_mic">Bisukan mikrofon</string>
+    <string name="remove_mic">Hapus mikrofon</string>
+    <string name="invite_mic">Undang mikrofon</string>
+    <string name="take_the_mic">Ambil Mikrofonnya</string>
+    <string name="give_the_mic">Berikan Mikrofonnya</string>
+    <string name="lock_the_mic">Kunci Mikrofon</string>
+    <string name="mute_the_mic">Matikan Mikrofon</string>
+    <string name="unmute">Membunyikan</string>
+    <string name="unlock">Membuka kunci</string>
+    <string name="remove">Menghapus</string>
+    <string name="your_live_session_end_by_admin_text">Sesi langsung Anda diakhiri oleh admin.</string>
+    <string name="end_live_video">Akhiri Video Langsung</string>
+    <string name="don_t_have_user_to_sent_a_gift_wait_for_user">Tidak memiliki pengguna untuk mengirim hadiah, tunggu pengguna</string>
+    <string name="select_at_least_one_user">Pilih setidaknya satu pengguna</string>
+    <string name="room_settings">Pengaturan ruangan</string>
+    <string name="people">Rakyat</string>
+    <string name="copied_to_clipboard">Disalin ke Papan Klip</string>
+    <string name="room_name">Nama kamar</string>
+    <string name="enter_room_name">Masukkan nama ruangan</string>
+    <string name="please_enter_room_name">Silakan Masukkan Nama Kamar</string>
+    <string name="seat_mode">Mode kursi</string>
+    <string name="_8_seat">8 kursi</string>
+    <string name="use">UseMenggunakan</string>
+    <string name="_12_seat">12 kursi</string>
+    <string name="_16_seat">16 kursi</string>
+    <string name="seat_update">pembaruan kursi</string>
+    <string name="room_welcome_message">Pesan selamat datang di kamar</string>
+    <string name="enter_room_welcome_message">Masuk ke pesan selamat datang ruangan</string>
+    <string name="please_enter_room_welcome_message">Silakan Masuk Kamar Pesan Selamat Datang</string>
+    <string name="room_passcode">Kode sandi ruangan</string>
+    <string name="enter_room_passcode">Masukkan kode sandi ruangan</string>
+    <string name="change_background">Ubah latar belakang</string>
+    <string name="live_ended">Live Berakhir</string>
+    <string name="joined_users">Pengguna yang bergabung</string>
+    <string name="live_duration">Durasi langsung</string>
+    <string name="received_gifts">Menerima hadiah</string>
+    <string name="increased_fans">Meningkatnya penggemar</string>
+    <string name="rcoins">Koin</string>
+    <string name="back_to_the_home">Kembali ke rumah</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_watch_live">Anda saat ini berada di ruang audio. Silakan keluar dari ruang dan saksikan siaran langsung.</string>
+    <string name="s_live_has_ended">siaran langsungnya telah berakhir.</string>
+    <string name="all_is_well_party">Pesta semuanya baik-baik saja</string>
+    <string name="private_room">Kamar Pribadi</string>
+    <string name="_123456">123456</string>
+    <string name="enter_valid_passcode">Masukkan kode sandi yang valid</string>
+    <string name="enter_passcode">Masukkan kode sandi</string>
+    <string name="decline">Menolak</string>
+    <string name="audio_request_received_from">Permintaan audio diterima dari</string>
+    <string name="please_choose_another_seat">Silakan Pilih Kursi Lain</string>
+    <string name="this_seat_is_locked_by_host">Kursi ini dikunci oleh tuan rumah</string>
+    <string name="add_location">Tambahkan Lokasi</string>
+    <string name="search_area_or_city">Pencarian Area atau Kota</string>
+    <string name="manage_audio_volume">Kelola Volume Audio</string>
+    <string name="video_volume_label">Volume video</string>
+    <string name="song_volume_label">Volume lagu</string>
+    <string name="failed_to_delete">Gagal menghapus</string>
+    <string name="error_try_again">Coba lagi</string>
+    <string name="solved">TERSELESAIKAN</string>
+    <string name="relites">Menyalakan kembali</string>
+    <string name="error_loading_plans">Terjadi kesalahan saat memuat rencana</string>
+    <string name="billing_not_ready">Penagihan belum siap</string>
+    <string name="purchase_error">Kesalahan pembelian</string>
+    <string name="payment_init_failed">Inisiasi pembayaran gagal</string>
+    <string name="purchase_canceled">Pembelian Dibatalkan</string>
+    <string name="purchase_success">Pembelian Sukses</string>
+    <string name="purchase_failed">Pembelian gagal</string>
+    <string name="please_select_a_gift">Silakan pilih hadiah</string>
+    <string name="please_select_at_least_one_user">Silakan pilih setidaknya satu pengguna</string>
+    <string name="no_user_found">Tidak Ada Pengguna Ditemukan!</string>
+    <string name="notification_channel_name">bawaan</string>
+    <string name="audio_conversion_failed">Konversi audio gagal</string>
+    <string name="no_message_available">Tidak ada pesan yang tersedia</string>
+    <string name="no_date">Tidak ada tanggal</string>
+    <string name="invalid_user_id">ID pengguna tidak valid</string>
+    <string name="user_has_been_blocked">Pengguna telah diblokir</string>
+    <string name="user_data_is_not_available">Data pengguna tidak tersedia</string>
+    <string name="user_data_not_loaded">Data pengguna tidak dimuat</string>
+    <string name="cannot_load_video_preview">Tidak dapat memuat pratinjau video.</string>
+    <string name="failed_to_process_video">Gagal memproses video.</string>
+    <string name="are_you_sure_you_want_to_delete_your_room">Apakah Anda yakin ingin menghapus kamar Anda?</string>
+    <string name="your_room_deleted_successfully">Kamar Anda berhasil dihapus..</string>
+    <string name="you_are_not_able_to_post_at_your_level">Anda tidak dapat memposting di level Anda</string>
+    <string name="room_passcode_changed">Kode Sandi Kamar Berubah..</string>
+    <string name="using">Menggunakan</string>
+    <string name="failed_to_logout_please_try_again">Gagal keluar. Silakan coba lagi.</string>
+    <string name="link_not_available">Tautan tidak tersedia.</string>
+    <string name="we_will_take_immediate_action_thank_you">Kami akan segera mengambil tindakan. Terima kasih.</string>
+    <string name="picture_capture_timeout_please_try_again">Waktu pengambilan gambar habis. Silakan coba lagi.</string>
+    <string name="error_loading_image">Terjadi kesalahan saat memuat gambar</string>
+    <string name="no_image_selected">Tidak ada gambar yang dipilih</string>
+    <string name="error_processing_video">Terjadi kesalahan saat memproses video</string>
+    <string name="failed_to_capture_image">Gagal mengambil gambar.</string>
+    <string name="failed_to_save_image">Gagal menyimpan gambar.</string>
+    <string name="you_cant_unmute_your_self">Anda tidak dapat mengaktifkan suara Anda sendiri</string>
+    <string name="audio_file_missing">Berkas audio hilang!</string>
+    <string name="video_file_missing">Berkas video hilang!</string>
+    <string name="unexpected_error">Kesalahan tak terduga:</string>
+    <string name="final_merge_failed">Penggabungan akhir gagal.</string>
+    <string name="video_merge_failed">Penggabungan video gagal.</string>
+    <string name="unblocked_successfully">Berhasil dibuka blokirnya.</string>
+    <string name="unable_to_share_at_this_moment">Tidak dapat dibagikan saat ini</string>
+    <string name="unexpected_error_occurred_please_try_again">Terjadi kesalahan tak terduga. Silakan coba lagi.</string>
+    <string name="unknown_error">Kesalahan tidak diketahui</string>
+    <string name="transaction_failed">Transaksi gagal</string>
+    <string name="delete_failed">Penghapusan gagal:</string>
+    <string name="invalid_post">Postingan Tidak Valid</string>
+    <string name="report_successful">Laporan berhasil</string>
+    <string name="failed_to_upload_image">Gagal mengunggah gambar.</string>
+    <string name="failed_to_upload_image_please_try_again">Gagal mengunggah gambar. Silakan coba lagi.</string>
+    <string name="failed_to_load_data_please_try_again">Gagal memuat data. Silakan coba lagi.</string>
+    <string name="comment_text_cannot_be_empty">Teks komentar tidak boleh kosong.</string>
+    <string name="failed_to_submit_comment_please_try_again">Gagal mengirimkan komentar. Silakan coba lagi.</string>
+    <string name="invalid_video">Video Tidak Valid</string>
+    <string name="failed_to_delete_video">Gagal menghapus video.</string>
+    <string name="all_fields_required">Semua Bidang wajib diisi</string>
+    <string name="purchase_failed_please_try_again">Pembelian gagal. Silakan coba lagi.</string>
+    <string name="failed_to_send_request">Gagal mengirim permintaan</string>
+    <string name="failed_to_start_live_stream">Gagal memulai streaming langsung</string>
+    <string name="live_user_data_is_missing">Data pengguna langsung hilang</string>
+    <string name="failed_to_delete_room">Gagal menghapus ruangan</string>
+    <string name="update_failed">Pembaruan gagal</string>
+    <string name="private_room_passcode">Kode Sandi Ruang Pribadi</string>
+    <string name="here_s_the_private_passcode_for_the_room">Berikut kode sandi pribadi untuk ruangan tersebut:</string>
+    <string name="share_via">Bagikan melalui</string>
+    <string name="passcode_empty_error">Silakan masukkan kode sandi yang valid</string>
+    <string name="failed_to_update_passcode">Gagal memperbarui kode sandi</string>
+    <string name="enter_new_room_passcode">Masukkan Kode Sandi Kamar Baru</string>
+    <string name="change_room_passcode">Ubah Kode Sandi Kamar</string>
+    <string name="banned_list">Daftar Terlarang</string>
+    <string name="my_following">Pengikut Saya</string>
+    <string name="please_enter_valid_input">Silakan masukkan input yang valid</string>
+    <string name="join_requests">Permintaan Bergabung</string>
+    <string name="sorry_this_call_can_t_be_completed_right_now">Maaf, panggilan ini tidak dapat diselesaikan saat ini.</string>
+    <string name="watch_video_now">Tonton Video Sekarang</string>
+    <string name="you_exceed_your_ad_limit">Anda melampaui batas Iklan Anda.</string>
+    <string name="search_people">Cari Orang..</string>
+    <string name="public_room">Ruang Publik</string>
+    <string name="my_profile">Profil Saya</string>
+    <string name="edit_self">Edit Diri Sendiri</string>
+    <string name="blocked_user">Pengguna yang Diblokir</string>
+    <string name="my_wallet">Dompet Saya</string>
+    <string name="select_age">Pilih Usia</string>
+    <string name="save_changes">Simpan Perubahan</string>
+    <string name="enter_your_bio">Masukkan Bio Anda</string>
+    <string name="enter_bio_here">Masukkan bio di sini..</string>
+    <string name="hey_there">Hai!</string>
+    <string name="follow_back">Ikuti Kembali</string>
+    <string name="purchase">Pembelian</string>
+    <string name="select">Memilih</string>
+    <string name="selected">Terpilih</string>
+    <string name="method_2_desc">Ajak teman Anda bergabung menggunakan kode referral Anda. Dapatkan hadiah setiap kali kode Anda digunakan!</string>
+    <string name="method_1_desc">Tonton video iklan singkat dan dapatkan berlian gratis secara instan! Cukup ketuk tombol di bawah untuk mulai menonton dan menerima hadiah Anda.</string>
+    <string name="pay_now">Bayar Sekarang</string>
+    <string name="select_room_image">Pilih Gambar Ruangan</string>
+    <string name="room_description">Deskripsi Kamar</string>
+    <string name="room_type">Tipe Kamar</string>
+    <string name="upload_image_">Unggah Gambar</string>
+    <string name="enter_your_room_name">Masukkan nama kamar Anda</string>
+    <string name="enter_your_room_passcode">Masukkan kode sandi kamar Anda</string>
+    <string name="enter_your_room_description">Masukkan deskripsi kamar Anda</string>
+    <string name="enter_note_here">Masukkan Catatan di sini..</string>
+    <string name="add_caption">Tambahkan Keterangan</string>
+    <string name="attachments">Lampiran</string>
+    <string name="enter_details_here">Masukkan Detail di Sini…</string>
+    <string name="my_income">Penghasilan Saya</string>
+    <string name="best_plan">Rencana Terbaik</string>
+    <string name="best_recharge_plan">Paket Isi Ulang Terbaik</string>
+    <string name="purchase_recharge_plan">Beli Paket Isi Ulang</string>
+    <string name="available_my_r_coins">Koin R Saya Tersedia</string>
+    <string name="payment">Pembayaran</string>
+    <string name="select_payment_option">Pilih Opsi Pembayaran :</string>
+    <string name="select_record_duration">Pilih Durasi Rekaman :</string>
+    <string name="start_date_">Tanggal Mulai:</string>
+    <string name="end_date_">Tanggal Berakhir:</string>
+    <string name="demo_purpose">Dalam APK ini, Semua data hanya untuk Tujuan Demo.</string>
+    <string name="no_data_text">Tidak ada yang bisa ditunjukkan</string>
+    <string name="vip">VIPVIP</string>
+    <string name="payment_option">Opsi Pembayaran:</string>
+    <string name="withdrawable_r_coins">Koin R yang Dapat Ditarik:</string>
+    <string name="please_select_a_payment_option">Silakan pilih opsi pembayaran</string>
+    <string name="select_option">Pilih Opsi :</string>
+    <string name="bd">BD</string>
+    <string name="version">Versi :</string>
+    <string name="upload">Mengunggah</string>
+    <string name="no_one_joined">Tidak ada yang bergabung</string>
+    <string name="blocked_list">Daftar yang Diblokir</string>
+    <string name="room_close">Kamar Tutup</string>
+    <string name="common_bio">Menjelajahi koneksi, bukan hanya profil.</string>
+    <string name="reactions">Reaksi</string>
+    <string name="delete_confirmation_text">Yakin ingin menghapus? Tindakan ini tidak dapat dibatalkan.</string>
+    <string name="confirm_deletion">Konfirmasi Penghapusan</string>
+    <string name="confirm_stand_up">Konfirmasi Stand-Up</string>
+    <string name="delete_post_confirmation">Apakah Anda yakin ingin menghapus postingan ini?</string>
+    <string name="delete_relite_confirmation">Apakah Anda yakin ingin menghapus Relite ini?</string>
+    <string name="delete">Menghapus</string>
+    <string name="demo_agency">Agensi Demo</string>
+    <string name="exposure">Paparan</string>
+    <string name="smoothness">Kelancaran</string>
+    <string name="redness">Kemerahan</string>
+    <string name="sharpness">Ketajaman</string>
+    <string name="ar_effects">Efek AR</string>
+    <string name="calling">Panggilan</string>
+    <string name="no_comments_yet_be_the_first_to_say_something">Belum ada komentar. Jadilah yang pertama berkomentar!</string>
+    <string name="no_likes_yet_tap_to_spread_some_love">Belum ada yang suka. Ketuk ❤️ untuk berbagi cinta!</string>
+    <string name="finding_reasons_to_smile_everywhere_i_go_and_sharing_that_happiness_with_the_world">Menemukan alasan untuk tersenyum di mana pun saya pergi dan berbagi kebahagiaan itu dengan dunia.</string>
+    <string name="okay">Oke</string>
+    <string name="please_wait_for_a_spot_to_open">Silakan tunggu sampai ada tempat yang terbuka</string>
+    <string name="all_seats_are_taken">Semua kursi sudah terisi</string>
+    <string name="alex_sierra">#VALUE!</string>
+    <string name="request_sent">Permintaan Terkirim</string>
+    <string name="join">Bergabung</string>
+    <string name="video_call_gift">Hadiah panggilan video</string>
+    <string name="chat_gift">Hadiah obrolan</string>
+    <string name="uploading_">Mengunggah…</string>
+    <string name="please_try_after_some_time">Silakan coba lagi nanti</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_make_call">Sepertinya Anda sedang berada di ruang audio. Silakan keluar dan lakukan panggilan.</string>
+    <string name="notification_permission_denied">Izin notifikasi ditolak</string>
+    <string name="you_have_to_enable_it_from_settings">Anda harus mengaktifkannya dari pengaturan.</string>
+    <string name="open_settings">Buka Pengaturan</string>
+    <string name="cannot_unmute_user">Tidak Dapat Mengaktifkan Suara Pengguna</string>
+    <string name="this_user_has_muted_themselves_only_they_can_unmute">Pengguna ini telah menonaktifkan suaranya sendiri. Hanya mereka yang dapat mengaktifkannya kembali.</string>
+    <string name="you_are_not_able_to_live_at_your_level">Anda tidak dapat hidup sesuai level Anda</string>
+    <string name="conversion_successful">Konversi Berhasil</string>
+    <string name="screen_overlay_permission_needed">Diperlukan Izin Hamparan Layar</string>
+    <string name="enable_display_over_other_apps_from_system_settings">Aktifkan \'Tampilkan di aplikasi lain\' dari Pengaturan Sistem.</string>
+    <string name="you_are_vip_now">Anda sekarang VIP</string>
+    <string name="restart_app">Mulai ulang aplikasi</string>
+    <string name="this_seat_is_reserved">Kursi ini sudah dipesan</string>
+    <string name="do_you_really_want_to_log_out">Apakah Anda benar-benar ingin keluar? Anda perlu masuk lagi untuk mengakses akun Anda.</string>
+    <string name="notification_permission_granted">Izin notifikasi diberikan</string>
+    <string name="verified">Terverifikasi</string>
+    <string name="no_one_has_requested">Tidak ada yang meminta</string>
+    <string name="user_data_not_found_please_login_again">Data pengguna tidak ditemukan. Silakan masuk lagi.</string>
+    <string name="update_failed_">Pembaruan gagal:</string>
+    <string name="dummy_name">Mia Malkova</string>
+    <string name="miya">Miya</string>
+    <string name="riya">Riya</string>
+    <string name="luliya">Luliya</string>
+    <string name="rehan">Rehan</string>
+    <string name="susmita">Susmita</string>
+    <string name="rahi">Rahi</string>
+    <string name="nirma">Nirma</string>
+    <string name="jashvi">Jasvi</string>
+    <string name="hely">Heli</string>
+    <string name="shruti">Shruti</string>
+    <string name="dhruvi">Druvi</string>
+    <string name="mamta">Mamta</string>
+    <string name="zeel">Zil</string>
+    <string name="audio_live">Audio Langsung</string>
+    <string name="post">Pos</string>
+    <string name="demo_host_center">Pusat Host Demo</string>
+    <string name="agency_center">Pusat Agensi</string>
+    <string name="select_language">Pilih Bahasa</string>
+    <string name="english">Bahasa inggris</string>
+    <string name="explore">Mengeksplorasi</string>
+    <string name="party">Berpesta</string>
+    <string name="my_features">Fitur Saya</string>
+    <string name="host_vip_privilege">Hak Istimewa Host &amp; VIP</string>
+    <string name="restart_the_app">Mulai Ulang Aplikasi!</string>
+    <string name="restart">Mulai Ulang</string>
+    <string name="version_">"versi "</string>
+    <string name="top_users">Pengguna Teratas</string>
+    <string name="top_creators">Kreator Teratas</string>
+    <string name="top_agency">Agensi Teratas</string>
+    <string name="daily">Harian</string>
+    <string name="weekly">Mingguan</string>
+    <string name="monthly">Bulanan</string>
+    <string name="get_premium_crown">DAPATKAN MAHKOTA PREMIUM</string>
+    <string name="get_extra_coins">DAPATKAN KOIN TAMBAHAN</string>
+    <string name="get_all_level_access">AKSES SEMUA LEVEL</string>
+    <string name="invalid_validity_period">Periode validitas tidak valid</string>
+    <string name="user_id">ID Pengguna</string>
+    <string name="you_ve_spent_s">"Kamu telah menghabiskan %s "</string>
+    <string name="you_have">"Kamu memiliki "</string>
+    <string name="referrals">" referensi"</string>
+    <string name="id_">ID: </string>
+
+    <string name="feed">Umpan</string>
+    <string name="video">Video</string>
+    <string name="sent_a_gift_to">" Mengirim hadiah kepada "</string>
+    <string name="announcement">"Pengumuman : "</string>
+    <string name="please_enter_valid_passcode">Silakan masukkan kode akses yang valid</string>
+    <string name="passcode_length_invalid">Panjang kode akses tidak valid</string>
+    <string name="_0">0</string>
+    <string name="error_missing_room_data">Data kamar hilang</string>
+    <string name="error_invalid_room_data">Data kamar tidak valid</string>
+    <string name="dummy_noti_desc">James Bond mengirim hadiah kepada Daizy Sharma</string>
+    <string name="dummy_id">ID : 564321</string>
+    <string name="dummy_time">00:00</string>
+    <string name="cherry">Ceri</string>
+    <string name="level_1">Level 1</string>
+    <string name="hello">Halo</string>
+    <string name="dummy_comment">Siapa yang menjadi jutawan?</string>
+    <string name="country">Negara</string>
+    <string name="title1">Judul 1</string>
+    <string name="incoming_video_call">Panggilan video masuk</string>
+    <string name="upload_completed">Pengunggahan selesai!</string>
+    <string name="image_file_does_not_exist">Berkas gambar tidak ada.</string>
+    <string name="user_session_not_found">Sesi pengguna tidak ditemukan</string>
+    <string name="add">Tambah</string>
+    <string name="leave">Keluar</string>
+    <string name="requested">Diminta</string>
+    <string name="call_request_rejected">Permintaan panggilan ditolak</string>
+    <string name="call_setup_failed">"Penyiapan panggilan gagal: "</string>
+    <string name="invalid_chat_user">Pengguna chat tidak valid</string>
+    <string name="you">Anda</string>
+    <string name="sent_a_gift_">mengirim hadiah 🎁</string>
+    <string name="invalid_url">URL tidak valid</string>
+    <string name="here_is_my_referral_code">"Ini Kode Referensi Saya"</string>
+    <string name="let_me_recommend_you_this_application">\nIzinkan saya merekomendasikan aplikasi ini kepada Anda\n\n</string>
+    <string name="unknown_user">Pengguna Tidak Dikenal</string>
+    <string name="you_will_receive">"Anda akan menerima"</string>
+    <string name="_diamonds">"Berlian"</string>
+    <string name="camera_not_ready">Kamera belum siap</string>
+    <string name="ar_is_starting_please_try_again">AR sedang dimulai… silakan coba lagi.</string>
+    <string name="recording_started">Rekaman dimulai.</string>
+    <string name="camera_is_not_available">Kamera tidak tersedia.</string>
+    <string name="permission_rationale_upload">Untuk memilih dan mengunggah video dari Galeri, izin penyimpanan diperlukan.</string>
+    <string name="unable_to_choose_video_for_upload">Tidak dapat memilih video untuk diunggah.</string>
+    <string name="sticker_item_is_missing">Item stiker tidak ada.</string>
+    <string name="audio_file_is_missing">Berkas audionya hilang.</string>
+    <string name="could_not_load_audio">Tidak dapat memuat audio.</string>
+    <string name="selected_video_uri_is_missing">URI video yang dipilih tidak ada.</string>
+    <string name="failed_to_prepare_video_for_upload">Gagal menyiapkan video untuk diunggah.</string>
+    <string name="error_copying_file">Terjadi kesalahan saat menyalin berkas.</string>
+    <string name="failed_to_create_directory">Gagal membuat direktori.</string>
+    <string name="upload_failed_">"Pengunggahan gagal: "</string>
+    <string name="uploading">Mengunggah…</string>
+    <string name="public_">Publik</string>
+    <string name="unknown_title">Judul Tidak Diketahui</string>
+    <string name="unknown_singer">Penyanyi Tidak Dikenal</string>
+    <string name="invalid_host_data">Data host tidak valid</string>
+    <string name="type_something">Ketik sesuatu...</string>
+
+    <string-array name="fake_times">
+        <item>Sekarang</item>
+        <item>Saat tadi</item>
+        <item>5 menit yang lalu</item>
+        <item>Sekitar satu jam yang lalu</item>
+        <item>1 jam yang lalu</item>
+        <item>Pagi ini</item>
+        <item>Hari ini</item>
+        <item>Kemarin</item>
+        <item>Beberapa hari yang lalu</item>
+        <item>3 hari yang lalu</item>
+        <item>Minggu lalu</item>
+        <item>Beberapa hari yang lalu</item>
+        <item>2 minggu lalu</item>
+        <item>Bulan lalu</item>
+        <item>Beberapa waktu yang lalu</item>
+        <item>Sebentar yang lalu</item>
+        <item>Waktu yang lama</item>
+    </string-array>
+
+    <string-array name="fake_chat_sender">
+        <item>Hai! Apa kabar?</item>
+        <item>Aku berencana menonton film malam ini.</item>
+        <item>Bagaimana pendapatmu tentang berita terbaru?</item>
+        <item>Aku sedang mengerjakan proyek baru di kantor.</item>
+        <item>Mau ngopi nanti?</item>
+        <item>Baru saja selesai lari, rasanya luar biasa!</item>
+        <item>Ada rekomendasi buku?</item>
+        <item>Bagaimana akhir pekanmu?</item>
+        <item>Aku berencana liburan bulan depan.</item>
+        <item>Sudah coba restoran baru di pusat kota?</item>
+        <item>Sedang apa hari ini?</item>
+        <item>Baru saja menyelesaikan buku yang bagus, tak sabar ingin menceritakannya padamu.</item>
+        <item>Ada rencana untuk malam ini?</item>
+        <item>Aku ingin belajar bahasa baru.</item>
+        <item>Sudah nonton episode terbaru dari serial itu?</item>
+        <item>Kamu suka album baru yang baru rilis?</item>
+        <item>Aku lagi suka banget dengerin podcast akhir-akhir ini.</item>
+        <item>Bagaimana pendapatmu tentang gadget baru itu?</item>
+        <item>Aku berencana memulai blog.</item>
+        <item>Apa hobi favoritmu?</item>
+        <item>Bagaimana kamu tetap termotivasi?</item>
+        <item>Ada tips untuk lebih produktif?</item>
+        <item>Apa yang kamu lakukan untuk bersantai?</item>
+        <item>Bagaimana cara kamu mengatasi stres?</item>
+        <item>Apa yang menginspirasimu?</item>
+    </string-array>
+
+    <string-array name="fake_chat_receiver">
+        <item>Aku baik, kamu bagaimana?</item>
+        <item>Kedengarannya seru! Film apa?</item>
+        <item>Kurang tahu, aku belum banyak ikuti berita akhir-akhir ini.</item>
+        <item>Serius? Proyeknya tentang apa?</item>
+        <item>Tentu, aku mau!</item>
+        <item>Wah, keren! Aku juga harus mulai olahraga lagi.</item>
+        <item>Aku baru baca thriller yang bagus banget.</item>
+        <item>Nyantai aja, nggak banyak yang dilakukan.</item>
+        <item>Kedengarannya menyenangkan! Mau pergi ke mana?</item>
+        <item>Belum, emangnya enak?</item>
+        <item>Lagi kerja dari rumah, kamu?</item>
+        <item>Kedengarannya menarik, ceritain dong!</item>
+        <item>Tidak juga, cuma santai-santai aja.</item>
+        <item>Keren! Bahasa apa yang ingin kamu pelajari?</item>
+        <item>Ya, seru banget! Nggak sabar nunggu episode selanjutnya.</item>
+        <item>Aku belum dengar, ada lagu yang bagus?</item>
+        <item>Sama, menurutku podcast itu informatif banget.</item>
+        <item>Aku juga kepikiran beli. Fitur apa yang kamu suka?</item>
+        <item>Seru! Mau nulis tentang apa?</item>
+        <item>Aku suka melukis dan membaca.</item>
+        <item>Aku membuat target kecil supaya tetap semangat.</item>
+        <item>Membuat daftar tugas sangat membantu.</item>
+        <item>Nonton film atau baca buku.</item>
+        <item>Aku biasanya meditasi atau jalan-jalan.</item>
+        <item>Alam dan seni sangat menginspirasiku.</item>
+    </string-array>
+
+    <string-array name="lightening_contrast_options">
+        <item>Rendah</item>
+        <item>Normal</item>
+        <item>Tinggi</item>
+    </string-array>
+
+    <string-array name="fake_messages">
+        <item>Hai! 👋</item>
+        <item>Suka profilmu!</item>
+        <item>Baru di sini—sapa yuk!</item>
+        <item>Mau ngobrol sebentar?</item>
+        <item>Hey! 😊</item>
+        <item>Bagaimana harimu?</item>
+        <item>Kamu terlihat menarik 👀</item>
+        <item>Apa yang membawamu ke sini?</item>
+        <item>Senang bertemu denganmu! 🙌</item>
+        <item>Halo orang asing 😄</item>
+        <item>Kamu tipe kopi atau teh? ☕🍵</item>
+        <item>Aplikasi ini jadi lebih seru 😉</item>
+        <item>Jadi… apa ceritamu?</item>
+        <item>Hey hey! ✨</item>
+        <item>Nantikan obrolan kita!</item>
+        <item>Kamu punya vibe yang bagus 🌟</item>
+        <item>Hai! Mau terhubung?</item>
+        <item>Senang kita match 😍</item>
+        <item>Hey, bagaimana hidupmu?</item>
+        <item>Senyum besar untukmu 😁</item>
+        <item>Kamu baru muncul di layar saya 👌</item>
+        <item>Apakah ini aku, atau kita baru saja jadi sahabat? 😂</item>
+        <item>Aku berharap kita match 💫</item>
+        <item>Kamu terlihat menyenangkan untuk diajak ngobrol 😏</item>
+        <item>Ini aku! Apa alasanmu? 😜</item>
+        <item>Tebak apa? Kamu pesan pertamaku hari ini 📩</item>
+        <item>Kamu percaya kebetulan atau takdir? ✨</item>
+        <item>Aku rasa kamu berutang sapaan padaku 😇</item>
+        <item>Jujur, profilmu menonjol 🔥</item>
+        <item>Oke, senyummu menular 😍</item>
+    </string-array>
+
+</resources>

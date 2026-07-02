@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+        <RelativeLayout
+            android:id="@+id/mainRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="121dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/vip_plan_selected">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tvDays"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/airbnbcereal_w_blk"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/planTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:fontFamily="@font/airbnbcereal_w_blk"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="month"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:id="@+id/tvAmountPerMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/airbnbcereal_w_bk"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="INR70/mo"
+                    android:textColor="@color/white_60"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/layAmount"
+                    android:layout_width="75dp"
+                    android:layout_height="31dp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/vip_plan_amount_selected">
+
+                <TextView
+                    android:id="@+id/tvAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/airbnbcereal_w_md"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="$10"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvOfferTag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/vip_offer_tag_bg_pink"
+                android:backgroundTint="@color/redColor"
+                android:fontFamily="@font/airbnbcereal_w_md"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:text="90% off"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+</layout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp">
+
+            <RelativeLayout
+                android:id="@+id/lytSelected"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:id="@+id/layUserBg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/selected_gift_user"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgview"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:padding="2dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/profile_placeholder" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:maxWidth="50dp"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/airbnbcereal_w_md"
+                android:background="@drawable/bg_unselectgift_username"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white_76"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

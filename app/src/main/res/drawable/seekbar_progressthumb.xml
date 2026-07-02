@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Outer white/light ring -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#CCFFFFFF" />
+            <size
+                android:width="20dp"
+                android:height="20dp" />
+        </shape>
+    </item>
+
+    <!-- Inner gradient circle: pink center → purple edge -->
+    <item
+        android:top="2dp"
+        android:bottom="2dp"
+        android:left="2dp"
+        android:right="2dp">
+        <shape android:shape="oval">
+            <gradient
+                android:angle="135"
+                android:startColor="#2F0F4B"
+                android:centerColor="#2F0F4B"
+                android:endColor="#2F0F4B"
+                android:type="linear" />
+        </shape>
+    </item>
+
+</layer-list>

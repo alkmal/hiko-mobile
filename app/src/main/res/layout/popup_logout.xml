@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/popup_bg"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:paddingVertical="@dimen/_10sdp">
+
+
+            <ImageView
+                android:id="@+id/ivVector"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/vector_logout" />
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                android:fontFamily="@font/airbnbcereal_w_xbd"
+                android:text="@string/log_out"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:fontFamily="@font/airbnbcereal_w_bk"
+                android:gravity="center"
+                android:text="@string/if_you_go_back_now_you_will_lose_all_the_clips_added_to_your_video"
+                android:textColor="@color/white_80"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="7sp"
+                android:layout_marginBottom="2sp"
+                android:layout_marginTop="20sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="5sp"
+                    android:fontFamily="@font/airbnbcereal_w_bd"
+                    android:background="@drawable/gray_strock_30"
+                    android:text="@string/cancel"
+                    android:textSize="18sp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="15dp"
+                    android:textColor="@color/hintColor" />
+
+                <TextView
+                    android:id="@+id/btnContinue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_bg_radius_50"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingHorizontal="10sp"
+                    android:paddingVertical="15dp"
+                    android:textSize="18sp"
+                    android:layout_marginHorizontal="5sp"
+                    android:text="@string/continue_text"
+                    android:fontFamily="@font/airbnbcereal_w_bd"
+                    android:textColor="@color/white" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

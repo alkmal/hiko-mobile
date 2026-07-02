@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgUser"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/bg_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/bottomSheetColor"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp">
+
+                <TextView
+                    android:id="@+id/tvText"
+                    style="@style/commonPopupTextStyle"
+                    android:layout_marginTop="70dp"
+                    android:text="@string/in_this_apk_all_data_are_only_for_demo_purpose" />
+
+                <include layout="@layout/custom_line_view" />
+
+                <TextView
+                    android:id="@+id/btnContinue"
+                    style="@style/commonPopupButtonStyle"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:text="@string/accept"
+                    android:textColor="@color/pink" />
+
+                <include layout="@layout/custom_line_view" />
+
+                <TextView
+                    android:id="@+id/btnCancel"
+                    style="@style/commonPopupButtonStyle"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:text="@string/decline"
+                    android:textColor="@color/hintColor" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.codder.ultimate.utils.UserProfileImageView
+            android:id="@+id/imgUser"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center" />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+
+        <RelativeLayout
+            android:id="@+id/layoutMain"
+            android:layout_width="match_parent"
+            android:background="@drawable/party_bg1"
+            android:layout_marginHorizontal="7dp"
+            android:layout_marginBottom="15dp"
+            android:layoutDirection="locale"
+            android:textDirection="locale"
+            android:layout_height="100dp"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:cardCornerRadius="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivPartyImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/banner" />
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layRoomName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvPartyTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:textAlignment="viewStart"
+                            android:fontFamily="@font/airbnbcereal_w_xbd"
+                            android:singleLine="true"
+                            android:text="@string/dummy_room_name"
+                            android:textColor="@color/white"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/layRoomDes"
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/layRoomName"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvPartyDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/airbnbcereal_w_bk"
+                            android:maxLines="2"
+                            android:text="@string/dummy_lorem"
+                            android:textColor="@color/white_80"
+                            android:textSize="12sp" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       android:layout_below="@id/layRoomDes"
+                        android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/layView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        >
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:visibility="visible"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_fire" />
+
+                        <TextView
+                            android:id="@+id/tvViewCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_3sdp"
+                            android:layout_marginEnd="@dimen/_2sdp"
+                            android:fontFamily="@font/airbnbcereal_w_md"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layPrivate"
+                        android:layout_width="96dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/private_bg">
+
+                        <ImageView
+                            android:id="@+id/ivLock"
+                            android:layout_width="9dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="7dp"
+                            android:src="@drawable/ic_private" />
+
+                        <TextView
+                            android:id="@+id/tvPublic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_2sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="4dp"
+                            android:fontFamily="@font/airbnbcereal_w_md"
+                            android:text="@string/public_room"
+                            android:textColor="@color/white"
+                            android:textSize="11dp" />
+                    </LinearLayout>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+</layout>

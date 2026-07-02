@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="loader"
+            type="com.codder.ultimate.MyLoader" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/topLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="@drawable/gradient_bg_radius_50"
+                        android:backgroundTint="@color/shimmerColor"
+                        android:gravity="center"
+                        android:padding="@dimen/_3sdp">
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/shimmerColor"
+                            android:fontFamily="@font/airbnbcereal_w_bd"
+                            android:singleLine="true"
+                            android:text="@string/dummy_name"
+                            android:textColor="@color/shimmerColor"
+                            android:textSize="18sp" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/layoutUsername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:background="@color/shimmerColor"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvUserName"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/airbnbcereal_w_lt"
+                                android:gravity="start"
+                                android:text="@string/dummy_id"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/shimmerColor"
+                                android:textSize="15sp" />
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/bg_20dp"
+                                android:backgroundTint="@color/shimmerColor"
+                                android:paddingHorizontal="10sp"
+                                android:paddingVertical="4sp">
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="70dp"
+                                android:layout_height="25dp"
+                                android:layout_marginHorizontal="10dp"
+                                android:background="@drawable/bg_20dp"
+                                android:backgroundTint="@color/shimmerColor"
+                                android:paddingHorizontal="10sp"
+                                android:paddingVertical="4sp">
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/layEditDetails"
+                            android:layout_marginEnd="15dp"
+                            android:layout_toEndOf="@id/latProfile"
+                            android:clipToPadding="false"
+                            android:overScrollMode="never"
+                            android:scrollbars="none"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/tvType"
+                                    android:layout_width="60dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="center"
+                                    android:background="@color/shimmerColor"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible">
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="60dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="10dp"
+                                    android:background="@color/shimmerColor"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible">
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="60dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="10dp"
+                                    android:background="@color/shimmerColor"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible">
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="@color/shimmerColor"
+                    android:fontFamily="@font/airbnbcereal_w_bk"
+                    android:text="@string/common_bio"
+                    android:textColor="@color/shimmerColor"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_10dp_purewhite"
+                    android:backgroundTint="@color/shimmerColor"
+                    android:paddingVertical="12dp"
+                    android:weightSum="3">
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <include layout="@layout/layout_no_internet" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

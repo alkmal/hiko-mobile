@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.codder.ultimate.viewModel.LiveFragmentViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layoutDirection="locale"
+        android:textDirection="locale"
+        tools:context=".fragments.LiveFragmentMain">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_width="38sp"
+                android:layout_height="38sp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@drawable/app_logo_icon" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etSearch"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:background="@drawable/white_10_44px"
+                android:drawableStart="@drawable/icon_search"
+                android:drawablePadding="@dimen/_5sdp"
+                android:focusable="false"
+                android:fontFamily="@font/airbnbcereal_w_bk"
+                android:paddingHorizontal="@dimen/_8sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/search_people"
+                android:textColor="@color/white_60"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/layBackgroundAudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:gravity="center"
+                android:padding="2sp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="36sp"
+                    android:layout_height="36sp"
+                    android:src="@drawable/icon_live_room" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivLeaderboard"
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="3sp"
+                android:src="@drawable/icon_leaderboard" />
+
+            <LinearLayout
+                android:layout_width="38sp"
+                android:layout_height="38sp"
+                android:layout_marginStart="5sp"
+                android:layout_marginEnd="3sp"
+                android:background="@drawable/home_userprofile_bg">
+
+                <com.codder.ultimate.utils.UserProfileImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLiveUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.scwang.smart.refresh.header.ClassicsHeader
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                app:layout_srlSpinnerStyle="Translate"
+                app:srlAccentColor="@color/pink"
+                app:srlDrawableArrow="@drawable/swipe_arrow"
+                app:srlEnableLastTime="false"
+                app:srlEnablePullToCloseTwoLevel="false"
+                app:srlEnableTwoLevel="false" />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@android:color/transparent"
+                android:nestedScrollingEnabled="true">
+
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/app_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.appbar.CollapsingToolbarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="fill_vertical"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:gravity="start"
+                                android:textAlignment="viewStart"
+                                android:layout_marginBottom="15dp">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvliveuser"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layoutDirection="locale"
+                                    android:textDirection="locale"
+                                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                            </LinearLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvBanner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                    tools:listitem="@layout/item_banner" />
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rvDots"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="65dp"
+                                    android:orientation="horizontal"
+                                    android:paddingBottom="10dp"
+                                    android:visibility="visible"
+                                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                    tools:listitem="@layout/item_dots" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+                    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvCountryTab"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:clipToPadding="false"
+                            android:orientation="horizontal"
+                            android:padding="0dp"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            tools:listitem="@layout/item_country" />
+
+
+                        <!--                    <com.google.android.material.tabs.TabLayout-->
+                        <!--                        android:id="@+id/tabLayout"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="match_parent"-->
+                        <!--                        android:layout_marginEnd="@dimen/_5sdp"-->
+                        <!--                        app:tabGravity="start"-->
+                        <!--                        app:tabIndicator="@null"-->
+                        <!--                        app:tabMode="auto"-->
+                        <!--                        app:tabRippleColor="@null" />-->
+                    </RelativeLayout>
+                </com.google.android.material.appbar.AppBarLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+
+</layout>

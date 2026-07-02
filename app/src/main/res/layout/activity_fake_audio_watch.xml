@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.codder.ultimate.live.viewModel.HostLiveViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fake.activity.FakeAudioWatchActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/mainImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/app_main_bg" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_black_trans"
+                android:visibility="gone" />
+
+
+
+            <LinearLayout
+                android:id="@+id/topLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/lytHost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:background="@drawable/btn_bg"
+                        android:backgroundTint="@color/white_10"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            app:cardElevation="0dp"
+                            android:layout_marginHorizontal="@dimen/_4sdp"
+                            android:layout_marginVertical="@dimen/_3sdp"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="@dimen/_20sdp">
+
+                            <ImageView
+                                android:id="@+id/imgProfile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/girl"
+                                android:background="@drawable/profile_placeholder"
+                                android:scaleType="centerCrop" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginEnd="7dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/airbnbcereal_w_bd"
+                                android:text="@string/dummy_name"
+                                android:textColor="@color/white"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/tvUniqueId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/airbnbcereal_w_lt"
+                                android:text="@string/id_"
+                                android:textColor="@color/white"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:visibility="visible">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvViewUsers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:fadingEdge="horizontal"
+                            android:fadingEdgeLength="10dp"
+                            android:orientation="horizontal"
+                            android:requiresFadingEdge="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            tools:listitem="@layout/item_view" />
+
+                        <TextView
+                            android:id="@+id/tvNoOneJoined"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/bg_10dp_purewhite"
+                            android:backgroundTint="@color/sky"
+                            android:fontFamily="@font/airbnbcereal_w_md"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:paddingHorizontal="@dimen/_5sdp"
+                            android:paddingVertical="5dp"
+                            android:text="@string/no_one_joined"
+                            android:textColor="@color/white"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/ivShare"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_1sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:src="@drawable/a_share" />
+
+                    <ImageView
+                        android:id="@+id/btnClose"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_1sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:onClick="onClickBack"
+                        android:src="@drawable/a_close" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_bg"
+                            android:backgroundTint="@color/white_10"
+                            android:paddingHorizontal="5dp"
+                            android:paddingVertical="5dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="22dp"
+                                android:layout_height="22dp"
+                                android:src="@drawable/rcoin" />
+
+                            <TextView
+                                android:id="@+id/tvRcoins"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="@dimen/_7sdp"
+                                android:fontFamily="@font/airbnbcereal_w_bd"
+                                android:textColor="@color/room_rcoin_color"
+                                android:text="0"
+                                android:textSize="15sp" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/lytViewCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:background="@drawable/btn_bg"
+                            android:backgroundTint="@color/white_10"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="7dp"
+                            android:paddingVertical="5dp">
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/a_profile"
+                                app:tint="@color/white" />
+
+                            <TextView
+                                android:id="@+id/tvViewUserCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/airbnbcereal_w_md"
+                                android:includeFontPadding="false"
+                                android:layout_marginEnd="3dp"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/lytBottomBar"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="35dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/coming_soon_bg"
+                    app:tint="@color/gre_alpha_20" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="7dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/prank_cards" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fitsSystemWindows="true"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingBottom="5dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvComments"
+                        android:layout_width="350dp"
+                        android:layout_height="340dp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginBottom="5dp"
+                        android:adapter="@{viewmodel.liveStramCommentAdapter}"
+                        android:fadingEdge="vertical"
+                        android:fadingEdgeLength="50dp"
+                        android:requiresFadingEdge="vertical"
+                        android:visibility="visible"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_livestream_comment_1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lytBottomBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@+id/lytButtons"
+                        android:background="@drawable/gradient_bg_radius_50"
+                        android:backgroundTint="@color/white_10"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:paddingVertical="7dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/icon_et_comment"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="10dp"
+                            android:background="#47FFFFFF"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/etComment"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layoutDirection="locale"
+                                android:textDirection="locale"
+                                android:layout_centerVertical="true"
+                                android:layout_toStartOf="@id/btnSend"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/airbnbcereal_w_bk"
+                                android:gravity="center_vertical|start"
+                                android:hint="@string/type_something"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:textColor="@color/textColor"
+                                android:textColorHint="@color/white_70"
+                                android:textSize="13sp" />
+
+                            <ImageView
+                                android:id="@+id/btnSend"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="3dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="5dp"
+                                android:onClick="onClickSendComment"
+                                android:layout_gravity="center"
+                                android:backgroundTint="#FF1D7E"
+                                android:src="@drawable/icon_send" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lytButtons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="end"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/options"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/bg_etblack_a"
+                                android:backgroundTint="@color/lightGray1"
+                                android:padding="8dp"
+                                android:src="@drawable/application"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/btnReaction"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:scaleType="centerCrop"
+                            android:visibility="visible"
+                            android:src="@drawable/ic_emoji_hist" />
+
+                        <ImageView
+                            android:id="@+id/btnMute"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="5dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:visibility="gone"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_unmute" />
+
+                        <ImageView
+                            android:id="@+id/btnGift"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="5dp"
+                            android:padding="1dp"
+                            android:scaleType="centerCrop"
+                            android:onClick="onclickGiftIcon"
+                            android:src="@drawable/ic_chat_gift" />
+
+                        <ImageView
+                            android:id="@+id/imgGame"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/a_game_ic" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytGift"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/black50"
+                android:clickable="false"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/imgGift"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_gift" />
+
+                <ImageView
+                    android:id="@+id/imgGiftCount"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_below="@+id/imgGift"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-50dp"
+                    android:visibility="visible"
+                    android:layout_marginEnd="@dimen/_60sdp"
+                    android:src="@drawable/x10" />
+
+                <TextView
+                    android:id="@+id/tvGiftUserName"
+                    style="@style/TextOnShadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgGiftCount"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:clickable="false"
+                    android:fontFamily="@font/airbnb_cereal_medium"
+                    android:text="@string/sent_a_gift"
+                    android:textColor="@color/coinTextColor"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/hostProfileLyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topLay"
+                android:layout_marginTop="-25dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/imgUser1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center">
+
+                    <com.codder.ultimate.utils.UserProfileImageView
+                        android:id="@+id/mainHostProfileImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/mainHostnameCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/airbnb_cereal_medium"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hostProfileLyt"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="4"
+                tools:itemCount="8"
+                tools:listitem="@layout/item_seat" />
+
+            <include layout="@layout/layout_no_internet" />
+
+        </RelativeLayout>
+
+        <com.opensource.svgaplayer.SVGAImageView
+            android:id="@+id/svgGiftImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            app:autoPlay="true" />
+
+        <RelativeLayout
+            android:id="@+id/layEntry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <com.opensource.svgaplayer.SVGAImageView
+                android:id="@+id/svgImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                app:autoPlay="true" />
+
+
+            <RelativeLayout
+                android:id="@+id/nameLyt"
+                android:layout_width="@dimen/_155sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_120sdp">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@drawable/entry_bg_name_stroke" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/entry_bg_name"
+                        android:orientation="vertical"
+                        android:paddingVertical="@dimen/_8sdp"
+                        android:paddingStart="40dp">
+
+                        <TextView
+                            android:id="@+id/userName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="6dp"
+                            android:fontFamily="@font/airbnb_cereal_medium"
+                            android:includeFontPadding="false"
+                            android:singleLine="true"
+                            android:text="@string/dummy_name"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/airbnb_cereal_regular"
+                            android:includeFontPadding="false"
+                            android:text="@string/stepping_in"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_8sdp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@drawable/entry_bg_name_stroke" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/userImage"
+                        android:layout_width="@dimen/_43sdp"
+                        android:layout_height="@dimen/_43sdp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/profile_entry_bg_blue"
+                        android:padding="2dp" />
+
+                    <ImageView
+                        android:id="@+id/avatarFrameImage"
+                        android:layout_width="@dimen/_55sdp"
+                        android:layout_height="@dimen/_55sdp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <com.opensource.svgaplayer.SVGAImageView
+            android:id="@+id/svgaImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:autoPlay="false" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/mining"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loder2" />
+
+        <LinearLayout
+            android:id="@+id/lytNotification"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/giftbanner2"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:id="@+id/ivUserImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/girl" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvNotification"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/airbnbcereal_w_md"
+                    android:text="@string/dummy_noti_desc"
+                    android:textColor="@color/white"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:id="@+id/icGiftImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

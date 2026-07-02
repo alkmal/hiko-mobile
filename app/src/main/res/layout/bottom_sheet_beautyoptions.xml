@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_bottom_sheet_top_corner_radius"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bottom_sheet_top_corner_radius"
+            android:backgroundTint="#361544">
+
+            <TextView
+                style="@style/commonTextStyle"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/pink"
+                android:textSize="@dimen/_14sdp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/btnClose"
+                style="@style/closeButtonStyle" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/toolIconRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iconExposure"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:background="@drawable/border_bg"
+                    android:padding="@dimen/_1sdp"
+                    android:src="@drawable/ic_exposure" />
+
+                <TextView
+                    android:id="@+id/tvExposureProgress"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/border_bg"
+                    android:backgroundTint="@color/pink"
+                    android:gravity="center"
+                    android:text="+50"
+                    android:textColor="@color/pink"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvExposure"
+                    style="@style/commonPopupTextStyle"
+                    android:text="@string/exposure"
+                    android:textSize="@dimen/_8sdp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iconSmoothness"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:background="@drawable/border_bg"
+                    android:padding="@dimen/_1sdp"
+                    android:src="@drawable/ic_smoothness" />
+
+                <TextView
+                    android:id="@+id/tvSmoothnessProgress"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/border_bg"
+                    android:gravity="center"
+                    android:backgroundTint="@color/pink"
+                    android:text="+50"
+                    android:textColor="@color/pink"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvSmoothness"
+                    style="@style/commonPopupTextStyle"
+                    android:text="@string/smoothness"
+                    android:textSize="@dimen/_8sdp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iconRedness"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:background="@drawable/border_bg"
+                    android:padding="@dimen/_1sdp"
+                    android:src="@drawable/ic_redness" />
+
+                <TextView
+                    android:id="@+id/tvRednessProgress"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/border_bg"
+                    android:gravity="center"
+                    android:backgroundTint="@color/pink"
+                    android:text="+50"
+                    android:textColor="@color/pink"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvRedness"
+                    style="@style/commonPopupTextStyle"
+                    android:text="@string/redness"
+                    android:textSize="@dimen/_8sdp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iconSharpness"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:background="@drawable/border_bg"
+                    android:padding="@dimen/_1sdp"
+                    android:src="@drawable/ic_sharpness" />
+
+                <TextView
+                    android:id="@+id/tvSharpnessProgress"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/border_bg"
+                    android:gravity="center"
+                    android:text="+50"
+                    android:backgroundTint="@color/pink"
+                    android:textColor="@color/pink"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvSharpness"
+                    style="@style/commonPopupTextStyle"
+                    android:text="@string/sharpness"
+                    android:textSize="@dimen/_8sdp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutSpinnerLighteningContrast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/bg_10dp_purewhite"
+            android:backgroundTint="#3E2549"
+            android:padding="@dimen/_3sdp">
+
+            <Spinner
+                android:id="@+id/spinnerLighteningContrast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/whiteColor"
+                android:textColor="@color/textColor" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/groupExposure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/exposureCapsule"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="6dp">
+
+                <com.codder.ultimate.utils.CenteredScaleView
+                    android:id="@+id/scaleExposure"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/groupSmoothness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="6dp">
+
+                <com.codder.ultimate.utils.CenteredScaleView
+                    android:id="@+id/scaleSmoothness"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/groupRedness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="6dp">
+
+                <com.codder.ultimate.utils.CenteredScaleView
+                    android:id="@+id/scaleRedness"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/groupSharpness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="6dp">
+
+                <com.codder.ultimate.utils.CenteredScaleView
+                    android:id="@+id/scaleSharpness"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

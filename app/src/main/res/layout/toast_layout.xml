@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_custom_toast"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_bg"
+    android:backgroundTint="@color/red">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/airbnb_cereal_bold"
+        android:gravity="center"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="7dp"
+        android:text="@string/we_will_take_immediately_action_for_this_user_n_thank_you"
+        android:textColor="@color/white" />
+</RelativeLayout>

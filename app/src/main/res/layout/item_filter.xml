@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:elevation="0dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/lay_bg"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:gravity="center"
+            android:elevation="0dp"
+            android:layout_gravity="center"
+            android:paddingVertical="2dp"
+            android:paddingHorizontal="2dp"
+            android:background="@drawable/bg_selected_filter">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/transparent"
+            app:cardCornerRadius="18dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/girl"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/airbnbcereal_w_md"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            tools:text="@string/filter" />
+    </LinearLayout>
+</layout>

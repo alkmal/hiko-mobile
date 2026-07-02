@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">మీ యాప్ పేరును నమోదు చేయండి</string>
+
+    <string name="no_internet_connection">ఇంటర్నెట్ కనెక్షన్ లేదు</string>
+    <string name="back_online">తిరిగి ఆన్‌లైన్</string>
+    <string name="we_are_under_maintenance_text">మేము నిర్వహణలో ఉన్నాము</string>
+    <string name="dismiss">తొలగించు</string>
+    <string name="you_are_blocked_by_admin_text">మిమ్మల్ని అడ్మిన్ బ్లాక్ చేసారు</string>
+    <string name="cancel">రద్దు చేయి</string>
+    <string name="you_are_logged_in_other_devices">మీరు ఇతర పరికరాలకు లాగిన్ చేసారు</string>
+    <string name="log_out">లాగ్ అవుట్ చేయండి</string>
+    <string name="policy">సైన్ అప్ చేయడం ద్వారా మీరు మాతో అంగీకరిస్తారు</string>
+    <string name="terms_amp_condition">నిబంధనలు &amp; షరతులు</string>
+    <string name="and">andమరియు</string>
+    <string name="privacy_policy">గోప్యతా విధానం</string>
+    <string name="please_wait">దయచేసి వేచి ఉండండి</string>
+    <string name="your_name">మీ పేరు</string>
+    <string name="male">పురుషుడు</string>
+    <string name="female">స్త్రీ</string>
+    <string name="select_your_age">మీ వయస్సును ఎంచుకోండి</string>
+    <string name="edit_profile">ప్రొఫైల్‌ని సవరించండి</string>
+    <string name="submit">సమర్పించండి</string>
+    <string name="enter_your_name">మీ పేరును నమోదు చేయండి</string>
+    <string name="enter_username_first">ముందుగా వినియోగదారు పేరును నమోదు చేయండి</string>
+    <string name="select_your_gender">మీ లింగాన్ని ఎంచుకోండి</string>
+    <string name="minimum_age_must_be_18_years">కనీస వయస్సు 18 సంవత్సరాలు ఉండాలి.</string>
+    <string name="privacy_policy_text">గోప్యతా విధానం</string>
+    <string name="accept_privacy_policy">నాకు 18+ మరియు నేను గోప్యతా విధానాన్ని చదివాను.</string>
+    <string name="deny">తిరస్కరించు</string>
+    <string name="accept">అంగీకరించు</string>
+    <string name="please_accept_privacy_policy">దయచేసి మీరు కొనసాగడానికి గోప్యతా విధానాన్ని చదివినట్లు నిర్ధారించండి.</string>
+    <string name="exit_app_confirmation">మీరు ఖచ్చితంగా యాప్ నుండి నిష్క్రమించాలనుకుంటున్నారా?</string>
+    <string name="exit_this_app">ఈ యాప్ నుండి నిష్క్రమించండి</string>
+    <string name="fans">అభిమానులు</string>
+    <string name="my_diamonds">నా వజ్రాలు</string>
+    <string name="demo_host_center_text">డెమో హోస్ట్ సెంటర్</string>
+    <string name="demo_agency_center">డెమో ఏజెన్సీ సెంటర్</string>
+    <string name="host_request">హోస్ట్ అభ్యర్థన</string>
+    <string name="offline_recharge">ఆఫ్‌లైన్ రీఛార్జ్</string>
+    <string name="my_posts">నా పోస్ట్‌లు</string>
+    <string name="my_relites">నా రిలైట్స్</string>
+    <string name="store">స్టోర్</string>
+    <string name="free_coins">ఉచిత నాణేలు</string>
+    <string name="become_vip">VIP అవ్వండి</string>
+    <string name="user_level">వినియోగదారు స్థాయి</string>
+    <string name="copied_successfully">విజయవంతంగా కాపీ చేయబడింది</string>
+    <string name="id">"IDID:</string>
+    <string name="agency_center_text">ఏజెన్సీ కేంద్రం</string>
+    <string name="host_center">హోస్ట్ సెంటర్</string>
+    <string name="ok">OKసరే</string>
+    <string name="history">చరిత్ర</string>
+    <string name="recharge">రీఛార్జ్ చేయండి</string>
+    <string name="my_diamond_balance">నా డైమండ్ కాయిన్</string>
+    <string name="enter_user_id">వినియోగదారు IDని నమోదు చేయండి</string>
+    <string name="enter_diamonds">డైమండ్స్ నమోదు చేయండి</string>
+    <string name="note">గమనిక</string>
+    <string name="top_up">టాప్ అప్</string>
+    <string name="user_not_found">వినియోగదారు కనుగొనబడలేదు</string>
+    <string name="please_verify_user_id">దయచేసి వినియోగదారు ఐడిని ధృవీకరించండి</string>
+    <string name="enter_coin_value">కాయిన్ విలువను నమోదు చేయండి</string>
+    <string name="invalid_coin_value">చెల్లని నాణెం విలువ</string>
+    <string name="insufficient_coins">సరిపోని నాణేలు</string>
+    <string name="send_successfully">విజయవంతంగా పంపండి</string>
+    <string name="continue_text">కొనసాగించు</string>
+    <string name="in_this_apk_all_data_are_only_for_demo_purpose">ఈ APKలో, మొత్తం డేటా డెమో ప్రయోజనం కోసం మాత్రమే.</string>
+    <string name="deleted_successfully">విజయవంతంగా తొలగించబడింది</string>
+    <string name="india">భారతదేశం</string>
+    <string name="we_will_take_immediately_action_for_this_user_thank_you">మేము ఈ వినియోగదారు కోసం తక్షణమే చర్య తీసుకుంటాము ధన్యవాదాలు</string>
+    <string name="likes">ఇష్టపడ్డారు</string>
+    <string name="comments">వ్యాఖ్యలు</string>
+    <string name="report_user">వినియోగదారుని నివేదించండి</string>
+    <string name="blocked_successfully">విజయవంతంగా నిరోధించబడింది</string>
+    <string name="report_this_user">ఈ వినియోగదారుని నివేదించండి</string>
+    <string name="please_describe_your_issue_here">దయచేసి మీ సమస్యను ఇక్కడ వివరించండి..</string>
+    <string name="unable_to_report">నివేదించడం సాధ్యం కాలేదు..</string>
+    <string name="something_went_wrong_text">ఏదో తప్పు జరిగింది</string>
+    <string name="block_this_user">ఈ వినియోగదారుని బ్లాక్ చేయండి</string>
+    <string name="yes">Yesఅవును</string>
+    <string name="type_message_first">ముందుగా సందేశాన్ని టైప్ చేయండి</string>
+    <string name="toast_cannot_retrieve_cropped_image">కత్తిరించిన చిత్రాన్ని తిరిగి పొందడం సాధ్యం కాదు</string>
+    <string name="toast_unexpected_error">ఊహించని లోపం</string>
+    <string name="call_ended">కాల్ ముగిసింది!</string>
+    <string name="ringing">రింగింగ్</string>
+    <string name="we_will_take_immediately_action_for_this_user_n_thank_you">మేము ఈ వినియోగదారు కోసం తక్షణమే చర్య తీసుకుంటాము ధన్యవాదాలు</string>
+    <string name="enter_valid_message">చెల్లుబాటు అయ్యే సందేశాన్ని నమోదు చేయండి</string>
+    <string name="is_busy_with_someone_else">మరొకరితో బిజీగా ఉంది.</string>
+    <string name="discard_entire_video">మొత్తం వీడియోను విస్మరించాలా?</string>
+    <string name="if_you_go_back_now_you_will_lose_all_the_clips_added_to_your_video">మీరు ఇప్పుడు వెనక్కి వెళితే, మీ వీడియోకి జోడించిన అన్ని క్లిప్‌లను కోల్పోతారు</string>
+    <string name="discard_video">వీడియోను విస్మరించండి</string>
+    <string name="incoming_call">ఇన్‌కమింగ్ కాల్…</string>
+    <string name="need_permissions">"అనుమతులు కావాలి"</string>
+    <string name="call_declined">కాల్ తిరస్కరించబడింది</string>
+    <string name="rtc_stats_format">డౌన్‌స్ట్రీమ్ బిట్రేట్: %.2f kbps%nడౌన్‌స్ట్రీమ్ లాస్ రేట్: %.2f%% %nఅప్‌స్ట్రీమ్ బిట్రేట్: %.2f kbps%nఅప్‌స్ట్రీమ్ లాస్ రేట్: %.2f%%</string>
+    <string name="unfollow">అనుసరించవద్దు</string>
+    <string name="follow">అనుసరించండి</string>
+    <string name="unblock">అన్‌బ్లాక్ చేయండి</string>
+    <string name="block">నిరోధించు</string>
+    <string name="message">సందేశం</string>
+    <string name="message_delete_confirmation">మీరు ఖచ్చితంగా ఈ సందేశాన్ని తొలగించాలనుకుంటున్నారా?</string>
+    <string name="following">అనుసరిస్తోంది</string>
+    <string name="my_fans">నా అభిమానులు</string>
+    <string name="image">చిత్రం</string>
+    <string name="choose_one">ఒకదాన్ని ఎంచుకోండి</string>
+    <string name="say_something">ఏదైనా చెప్పు...</string>
+    <string name="failed_to_load_videos">వీడియోలను లోడ్ చేయడంలో విఫలమైంది.</string>
+    <string name="settings">సెట్టింగ్‌లు</string>
+    <string name="notification">నోటిఫికేషన్</string>
+    <string name="have_an_issue">ఒక సమస్య ఉంది</string>
+    <string name="my_complains">నా ఫిర్యాదులు</string>
+    <string name="terms_of_service">సేవా నిబంధనలు</string>
+    <string name="about_us">మా గురించి</string>
+    <string name="next">తదుపరి</string>
+    <string name="complaint_or_suggestion">ఫిర్యాదు లేదా సూచన</string>
+    <string name="typing_somethings">కొన్నింటిని టైప్ చేస్తోంది...</string>
+    <string name="contact">సంప్రదించండి</string>
+    <string name="enter_your_mobile_number_or_email">మీ మొబైల్ నంబర్ లేదా ఇమెయిల్‌ను నమోదు చేయండి</string>
+    <string name="attach_your_image_or_screenshot">మీ చిత్రం లేదా స్క్రీన్‌షాట్‌ను అటాచ్ చేయండి</string>
+    <string name="browse">బ్రౌజ్ చేయండి</string>
+    <string name="complain_send_successfully">ఫిర్యాదు విజయవంతంగా పంపండి</string>
+    <string name="please_enter_message">దయచేసి సందేశాన్ని నమోదు చేయండి</string>
+    <string name="please_enter_contact">దయచేసి పరిచయాన్ని నమోదు చేయండి</string>
+    <string name="my_tickets">నా టిక్కెట్లు</string>
+    <string name="open">తెరవండి</string>
+    <string name="ticket_details">టికెట్ వివరాలు</string>
+    <string name="status">స్థితి</string>
+    <string name="close">మూసివేయి</string>
+    <string name="_1_self_introduction">1. స్వీయ పరిచయం</string>
+    <string name="name">పేరు</string>
+    <string name="enter_name">పేరు నమోదు చేయండి</string>
+    <string name="mobile_number">మొబైల్ నంబర్</string>
+    <string name="enter_mobile_number">మొబైల్ నంబర్‌ని నమోదు చేయండి</string>
+    <string name="Bio">Bioబయో</string>
+    <string name="_2_agency_code">2. ఏజెన్సీ కోడ్</string>
+    <string name="if_you_have">(మీకు ఉంటే)</string>
+    <string name="_3_upload_photos">3. ఫోటోలను అప్‌లోడ్ చేయండి</string>
+    <string name="personal_photo">వ్యక్తిగత ఫోటో</string>
+    <string name="_4_bank_details">4. బ్యాంక్ వివరాలు</string>
+    <string name="enter_your_bank_details">మీ బ్యాంక్ వివరాలను నమోదు చేయండి</string>
+    <string name="admission_car">ప్రవేశ కారు</string>
+    <string name="enter_bio_text">బయోని నమోదు చేయండి</string>
+    <string name="select_personal_photo">వ్యక్తిగత ఫోటోను ఎంచుకోండి</string>
+    <string name="image_file_not_found">చిత్ర ఫైల్ కనుగొనబడలేదు</string>
+    <string name="host_request_send">హోస్ట్ అభ్యర్థన పంపండి</string>
+    <string name="try_after_some_time">దయచేసి కొంత సమయం తర్వాత ప్రయత్నించండి</string>
+    <string name="avatar_frame">అవతార్ ఫ్రేమ్</string>
+    <string name="super_star">సూపర్ స్టార్</string>
+    <string name="you_don_t_have_required_diamonds">మీకు అవసరమైన డైమండ్స్ లేవు!</string>
+    <string name="diamond_star">డైమండ్ స్టార్</string>
+    <string name="stepping_in">అడుగు పెట్టడం!</string>
+    <string name="free_diamonds">ఉచిత వజ్రాలు</string>
+    <string name="method_1">విధానం 1:</string>
+    <string name="method_2">విధానం 2:</string>
+    <string name="your_refer_code">మీ సూచన కోడ్:</string>
+    <string name="enter_referral_code_here">ఇక్కడ రెఫరల్ కోడ్‌ని నమోదు చేయండి</string>
+    <string name="you_have_2_referrals">మీకు 2 సిఫార్సులు ఉన్నాయి</string>
+    <string name="referral_code_copied">రెఫరల్ కోడ్ కాపీ చేయబడింది!</string>
+    <string name="enter_refer_code">రిఫర్ కోడ్‌ని నమోదు చేయండి</string>
+    <string name="refereed_successfully">విజయవంతంగా రిఫరీ చేయబడింది</string>
+    <string name="generic_error">ఏదో తప్పు జరిగింది. దయచేసి తర్వాత మళ్లీ ప్రయత్నించండి.</string>
+    <string name="earned_by_user">రివార్డ్ మంజూరు చేయబడింది</string>
+    <string name="invite_desc">మీ స్నేహితులను ఆహ్వానించండి! ఆహ్వానించబడిన స్నేహితుల ప్రతి చెల్లింపు కోసం, మీరు మరియు మీ స్నేహితుడు ఇద్దరూ అందుకుంటారు</string>
+    <string name="vip_plan">VIP ప్లాన్</string>
+    <string name="become_vip_and_get_many_privileges">VIP అవ్వండి మరియు అనేక అధికారాలను పొందండి</string>
+    <string name="vip_privileges">VIP అధికారాలు</string>
+    <string name="get_vip_to_access_all_function">అన్ని ఫంక్షన్లను యాక్సెస్ చేయడానికి VIPని పొందండి</string>
+    <string name="vip_package">VIP ప్యాకేజీ</string>
+    <string name="get_now">ఇప్పుడే పొందండి</string>
+    <string name="first_select_the_plan">ముందుగా ప్లాన్‌ని ఎంచుకోండి.</string>
+    <string name="credit_debit_card">క్రెడిట్/డెబిట్ కార్డ్</string>
+    <string name="google_play">Google Play</string>
+    <string name="hot">Hotవేడి</string>
+    <string name="your_level">మీ స్థాయి</string>
+    <string name="no_level_available">ఏ స్థాయి అందుబాటులో లేదు</string>
+    <string name="unknown">తెలియదు</string>
+    <string name="income">ఆదాయం</string>
+    <string name="record">రికార్డ్ చేయండి</string>
+    <string name="diamonds">వజ్రాలు</string>
+    <string name="outcome">ఫలితం</string>
+    <string name="r_coins">R-నాణేలు</string>
+    <string name="confirm">నిర్ధారించండి</string>
+    <string name="diamond_record">డైమండ్ రికార్డ్</string>
+    <string name="spending">ఖర్చు పెడుతున్నారు</string>
+    <string name="converted_to_diamonds">వజ్రాలుగా మార్చబడింది</string>
+    <string name="diamond_purchase">డైమండ్ కొనుగోలు</string>
+    <string name="you_have_called">మీరు కాల్ చేసారు</string>
+    <string name="watching_ads">ప్రకటనలు చూస్తున్నారు</string>
+    <string name="login_bonus">లాగిన్ బోనస్</string>
+    <string name="referral_bonus">రెఫరల్ బోనస్</string>
+    <string name="cash_out">క్యాష్ అవుట్</string>
+    <string name="svga_animation_purchased">SVGA యానిమేషన్ కొనుగోలు చేయబడింది</string>
+    <string name="add_in_teenpatti_game">తీన్‌పట్టి గేమ్‌లో జోడించండి</string>
+    <string name="purchased_avatar_frame">అవతార్ ఫ్రేమ్‌ని కొనుగోలు చేసారు</string>
+    <string name="coin_add_by_offline_recharge">ఆఫ్‌లైన్ రీఛార్జ్ ద్వారా కాయిన్ యాడ్</string>
+    <string name="call_coin_received">కాయిన్‌కి కాల్ చేయండి</string>
+    <string name="lucy_gift_bonus">లూసీ గిఫ్ట్ బోనస్</string>
+    <string name="add_in_roulette_game">రౌలెట్ గేమ్‌లో జోడించండి</string>
+    <string name="add_in_ferry_wheel_game">ఫెర్రీ వీల్ గేమ్‌లో జోడించండి</string>
+    <string name="convert_in_coin_seller_coin">కాయిన్ సెల్లర్ కాయిన్‌లో మార్చండి</string>
+    <string name="unknown_transaction">తెలియని లావాదేవీ</string>
+    <string name="gift_broadcast_during_livestream_by_you">మీ ద్వారా ప్రత్యక్ష ప్రసార సమయంలో బహుమతి ప్రసారం</string>
+    <string name="gift_received">బహుమతి అందుకుంది</string>
+    <string name="gift_send_to">బహుమతి పంపండి</string>
+    <string name="added_by_admin">అడ్మిన్ చే జోడించబడింది</string>
+    <string name="reduce_by_admin">అడ్మిన్ ద్వారా తగ్గించండి</string>
+    <string name="_1">$1</string>
+    <string name="withdrawing_rcoins">RCoins ఉపసంహరణ</string>
+    <string name="convert_to_diamond">డైమండ్‌గా మార్చండి</string>
+    <string name="what_is_coins">నాణేలు అంటే ఏమిటి?</string>
+    <string name="what_is_rcoin">1. మీరు లంబోర్ఘిని లేదా కోట వంటి బహుమతులను స్వీకరించినప్పుడు, మీరు గిఫ్ట్ స్టోర్‌లో బహుమతి ధరతో సమానమైన నాణేలను వెంటనే సంపాదిస్తారు. 2. మీరు నాణేలను వజ్రాలు మరియు నగదు రెండింటికి మార్చవచ్చు. 3. నాణేల బ్యాలెన్స్ అందుబాటులో ఉంది+ఉపసంహరణ</string>
+    <string name="this_is_a_demo_version">ఇది డెమో వెర్షన్</string>
+    <string name="payment_done">చెల్లింపు పూర్తయింది</string>
+    <string name="coin_sellers_list">నాణెం విక్రేతల జాబితా</string>
+    <string name="how_much_rcoins_convert_cash">ఎంత Rcoins నగదును మారుస్తుంది?</string>
+    <string name="how_much_rcoins_convert_into_diamonds">ఎంత Rcoins వజ్రాలుగా మారుతాయి?</string>
+    <string name="setting_error">సెట్టింగ్ లోపం</string>
+    <string name="minimum_amount_is">కనీస మొత్తం</string>
+    <string name="you_not_have_enough">నీ దగ్గర చాలదు</string>
+    <string name="you_are_not_able_to_cashout_at_your_level">మీరు మీ స్థాయిలో క్యాష్అవుట్ చేయలేరు</string>
+    <string name="your">మీ</string>
+    <string name="successfully_converted_into">విజయవంతంగా మార్చబడింది</string>
+    <string name="conversion_failed">మార్పిడి విఫలమైంది</string>
+    <string name="redeem_your_coins">మీ నాణేలను రీడీమ్ చేయండి</string>
+    <string name="enter_coins_to_withdraw">ఉపసంహరించుకోవడానికి నాణేలను నమోదు చేయండి</string>
+    <string name="your_redeem_history">మీ రీడీమ్ చరిత్ర</string>
+    <string name="pending">పెండింగ్‌లో ఉంది</string>
+    <string name="r_coin_convert">R-కాయిన్ మార్పిడి</string>
+    <string name="how_much_coins_convert_into_diamonds">ఎంత నాణేలు వజ్రాలుగా మారుతాయి?</string>
+    <string name="enter_coins">నాణేలను నమోదు చేయండి</string>
+    <string name="convert_to_diamonds">డైమండ్స్‌గా మార్చండి</string>
+    <string name="whatsapp_not_installed">Whatsapp ఇన్‌స్టాల్ కాలేదు</string>
+    <string name="invalid_whatsapp_number">చెల్లని వాట్సాప్ నంబర్</string>
+    <string name="withdrawable_rcoins">విత్‌డ్రా చేయగల Rcoins</string>
+    <string name="no_payment_method_found">చెల్లింపు పద్ధతి కనుగొనబడలేదు</string>
+    <string name="insufficient">సరిపోదు</string>
+    <string name="please_enter_your_details">దయచేసి మీ వివరాలను నమోదు చేయండి</string>
+    <string name="redeem_request_sent_successfully">రిడీమ్ అభ్యర్థన విజయవంతంగా పంపబడింది</string>
+    <string name="enter_your_upi_details">మీ UPI వివరాలను నమోదు చేయండి</string>
+    <string name="enter_your_paytm_details">మీ Paytm వివరాలను నమోదు చేయండి</string>
+    <string name="enter_your_bank_account_details">మీ బ్యాంక్ ఖాతా వివరాలను నమోదు చేయండి</string>
+    <string name="enter_your_bybit_details">మీ బైబిట్ వివరాలను నమోదు చేయండి</string>
+    <string name="purchased">కొనుగోలు చేశారు</string>
+    <string name="go_live">ప్రత్యక్ష ప్రసారం చేయి</string>
+    <string name="song_hint">పాటను ఎంచుకోవడానికి క్లిక్ చేయండి.</string>
+    <string name="timer_hint">టైమర్‌ను ప్రారంభించే ముందు రద్దు చేయడానికి, ఇక్కడ క్లిక్ చేయండి.</string>
+    <string name="duration">వ్యవధి</string>
+    <string name="mmss">0:00</string>
+    <string name="welcome_to_join_the_live_any_content_related_to_porn_violence_gambling_illegal_dealing_will_be_banned">ప్రత్యక్ష ప్రసారంలో చేరడానికి స్వాగతం. అశ్లీలత, హింస, జూదం, అక్రమ లావాదేవీలకు సంబంధించిన ఏదైనా కంటెంట్ నిషేధించబడుతుంది.</string>
+    <string name="enter_a_room">గదిలోకి ప్రవేశించింది</string>
+    <string name="reacted">స్పందించారు</string>
+    <string name="browse_file_title">ఫైల్‌ని బ్రౌజ్ చేయండి</string>
+    <string name="please_enter_room_title">దయచేసి గది పేరును నమోదు చేయండి</string>
+    <string name="please_select_room_image">దయచేసి గది చిత్రాన్ని ఎంచుకోండి</string>
+    <string name="you_are_block_from_admin_to_go_live">మీరు ప్రత్యక్ష ప్రసారం చేయడానికి అడ్మిన్ నుండి నిరోధించబడ్డారు</string>
+    <string name="start_audio_live">ఆడియో లైవ్‌ను ప్రారంభించండి</string>
+    <string name="take_picture">చిత్రాన్ని తీయండి</string>
+    <string name="recorder_error_in_progress">దీన్ని చేయడానికి, దయచేసి ముందుగా రికార్డింగ్‌ని ఆపివేయండి.</string>
+    <string name="recorder_error_maxed_out">మీరు ఇప్పటికే గరిష్ట వ్యవధి కోసం రికార్డ్ చేసారు.</string>
+    <string name="audio_from_clip">క్లిప్ నుండి అనుకూల ఆడియో.</string>
+    <string name="recorder_error_no_clips">దయచేసి కొనసాగించడానికి ముందుగా మీ క్లిప్‌ని రికార్డ్ చేయండి.</string>
+    <string name="message_song_select">రికార్డింగ్ ప్రారంభించిన తర్వాత మీరు పాటను ఎంచుకోలేరు.</string>
+    <string name="message_song_change">రికార్డింగ్ ప్రారంభించిన తర్వాత మీరు పాటను మార్చలేరు.</string>
+    <string name="you_need_storage_permission">మీకు నిల్వ అనుమతి అవసరం</string>
+    <string name="filter">ఫిల్టర్‌ని ఎంచుకోండి</string>
+    <string name="you_cannot_upload_video_above_30_mb">మీరు 30 MB కంటే ఎక్కువ ఉన్న వీడియోను అప్‌లోడ్ చేయలేరు !!!</string>
+    <string name="choose_sticker">స్టిక్కర్‌ని ఎంచుకోండి</string>
+    <string name="timer">టైమర్</string>
+    <string name="sticker">స్టిక్కర్</string>
+    <string name="filters">ఫిల్టర్లు</string>
+    <string name="preview">ప్రివ్యూ</string>
+    <string name="flip">తిప్పండి</string>
+    <string name="speed">వేగం</string>
+    <string name="notification_channel_id">డిఫాల్ట్</string>
+    <string name="notification_download_title">ఫైల్‌ని డౌన్‌లోడ్ చేయండి...</string>
+    <string name="notification_download_description">కొన్ని సెకన్ల కంటే ఎక్కువ సమయం తీసుకోకూడదు.</string>
+    <string name="announcement_welcome_to_room">ప్రకటన: గదికి స్వాగతం</string>
+    <string name="all">ALLఅన్ని</string>
+    <string name="send">పంపండి</string>
+    <string name="followers">అనుచరులు</string>
+    <string name="shorts">లఘు చిత్రాలు</string>
+    <string name="posts">పోస్ట్‌లు</string>
+    <string name="creator">సృష్టికర్త</string>
+    <string name="agency">ఏజెన్సీ</string>
+    <string name="coin_seller">కాయిన్ విక్రేత</string>
+    <string name="invite">ఆహ్వానించండి</string>
+    <string name="live">ప్రత్యక్షం</string>
+    <string name="public_text">పబ్లిక్</string>
+    <string name="private_text">ప్రైవేట్</string>
+    <string name="welcome_to_the_party">పార్టీకి స్వాగతం</string>
+    <string name="games">ఆటలు</string>
+    <string name="keep">ఉంచండి</string>
+    <string name="exit_text">నిష్క్రమించు</string>
+    <string name="you_not_have_enough_diamonds_to_send_gift">బహుమతి పంపడానికి మీ వద్ద తగినంత వజ్రాలు లేవు</string>
+    <string name="sent_a_gift">బహుమతి పంపారు</string>
+    <string name="you_are_blocked_by_host">మీరు హోస్ట్ ద్వారా బ్లాక్ చేయబడ్డారు</string>
+    <string name="you_cannot_upload_video_above_30_mb_text">మీరు 30 MB కంటే ఎక్కువ ఉన్న వీడియోను అప్‌లోడ్ చేయలేరు !!!</string>
+    <string name="select_song">పాటను ఎంచుకోండి</string>
+    <string name="select_filter">ఫిల్టర్‌ని ఎంచుకోండి</string>
+    <string name="upload_relite">Reliteని అప్‌లోడ్ చేయండి</string>
+    <string name="add_caption_with_hashtags_and_mentions">హ్యాష్‌ట్యాగ్‌లు మరియు ప్రస్తావనలతో శీర్షికను జోడించండి</string>
+    <string name="location">స్థానం</string>
+    <string name="show_to">చూపించు</string>
+    <string name="allow_comments">వ్యాఖ్యలను అనుమతించండి</string>
+    <string name="upload_post">పోస్ట్‌ను అప్‌లోడ్ చేయండి</string>
+    <string name="who_show_this_post_to">ఈ పోస్ట్‌ని ఎవరికి చూపించాలి</string>
+    <string name="only_followers">అనుచరులు మాత్రమే</string>
+    <string name="select_image_first">మొదట చిత్రాన్ని ఎంచుకోండి</string>
+    <string name="error_opening_gallery">గ్యాలరీని తెరవడంలో లోపం</string>
+    <string name="permission_denied_message">అనుమతి నిరాకరించబడింది....\n</string>
+    <string name="error_selecting_image">చిత్రాన్ని ఎంచుకోవడంలో లోపం</string>
+    <string name="location_not_set">స్థానం సెట్ చేయబడలేదు</string>
+    <string name="count_clips">%s క్లిప్‌లు</string>
+    <string name="my_followers">నా అనుచరులు</string>
+    <string name="add_a_comment">వ్యాఖ్యను జోడించండి…</string>
+    <string name="send_a_gift_to">బహుమతిని పంపారు</string>
+    <string name="room_image_updated">గది చిత్రం నవీకరించబడింది</string>
+    <string name="sure_you_want_to_stand_up">మీరు ఖచ్చితంగా నిలబడాలనుకుంటున్నారా?</string>
+    <string name="there_s_no_user_to_invite_on_mic">మైక్‌లో ఆహ్వానించడానికి వినియోగదారు ఎవరూ లేరు.</string>
+    <string name="remove_seat">సీటు తీసివేయండి</string>
+    <string name="kick_out">తన్నండి</string>
+    <string name="unmute_mic">మైక్‌ని అన్‌మ్యూట్ చేయండి</string>
+    <string name="mute_mic">మైక్‌ను మ్యూట్ చేయండి</string>
+    <string name="remove_mic">మైక్‌ని తీసివేయండి</string>
+    <string name="invite_mic">మైక్‌ని ఆహ్వానించండి</string>
+    <string name="take_the_mic">మైక్ తీసుకోండి</string>
+    <string name="give_the_mic">మైక్ ఇవ్వండి</string>
+    <string name="lock_the_mic">మైక్ లాక్ చేయండి</string>
+    <string name="mute_the_mic">మైక్‌ని మ్యూట్ చేయండి</string>
+    <string name="unmute">అన్‌మ్యూట్ చేయండి</string>
+    <string name="unlock">అన్‌లాక్ చేయండి</string>
+    <string name="remove">తొలగించు</string>
+    <string name="your_live_session_end_by_admin_text">అడ్మిన్ ద్వారా మీ లైవ్ సెషన్ ముగుస్తుంది.</string>
+    <string name="end_live_video">లైవ్ వీడియోను ముగించండి</string>
+    <string name="don_t_have_user_to_sent_a_gift_wait_for_user">బహుమతిని పంపడానికి వినియోగదారుని కలిగి ఉండకండి, వినియోగదారు కోసం వేచి ఉండండి</string>
+    <string name="select_at_least_one_user">కనీసం ఒక వినియోగదారుని ఎంచుకోండి</string>
+    <string name="room_settings">గది సెట్టింగ్‌లు</string>
+    <string name="people">ప్రజలు</string>
+    <string name="copied_to_clipboard">క్లిప్‌బోర్డ్‌కి కాపీ చేయబడింది</string>
+    <string name="room_name">గది పేరు</string>
+    <string name="enter_room_name">గది పేరును నమోదు చేయండి</string>
+    <string name="please_enter_room_name">దయచేసి గది పేరును నమోదు చేయండి</string>
+    <string name="seat_mode">సీటు మోడ్</string>
+    <string name="_8_seat">8 సీట్లు</string>
+    <string name="use">Useఉపయోగించండి</string>
+    <string name="_12_seat">12 సీట్లు</string>
+    <string name="_16_seat">16 సీట్లు</string>
+    <string name="seat_update">సీటు నవీకరణ</string>
+    <string name="room_welcome_message">గది స్వాగత సందేశం</string>
+    <string name="enter_room_welcome_message">గది స్వాగత సందేశాన్ని నమోదు చేయండి</string>
+    <string name="please_enter_room_welcome_message">దయచేసి గది స్వాగత సందేశాన్ని నమోదు చేయండి</string>
+    <string name="room_passcode">గది పాస్‌కోడ్</string>
+    <string name="enter_room_passcode">గది పాస్‌కోడ్‌ని నమోదు చేయండి</string>
+    <string name="change_background">నేపథ్యాన్ని మార్చండి</string>
+    <string name="live_ended">ప్రత్యక్ష ప్రసారం ముగిసింది</string>
+    <string name="joined_users">చేరిన వినియోగదారులు</string>
+    <string name="live_duration">ప్రత్యక్ష వ్యవధి</string>
+    <string name="received_gifts">బహుమతులు అందుకున్నారు</string>
+    <string name="increased_fans">పెరిగిన అభిమానులు</string>
+    <string name="rcoins">Rcoins</string>
+    <string name="back_to_the_home">తిరిగి ఇంటికి</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_watch_live">మీరు ప్రస్తుతం ఆడియోరూమ్‌లో ఉన్నారు. దయచేసి గది నుండి బయటకు వెళ్లి ప్రత్యక్షంగా చూడండి.</string>
+    <string name="s_live_has_ended">ప్రత్యక్ష ప్రసారం ముగిసింది.</string>
+    <string name="all_is_well_party">పార్టీ అంతా బాగానే ఉంది</string>
+    <string name="private_room">ప్రైవేట్ గది</string>
+    <string name="_123456">123456</string>
+    <string name="enter_valid_passcode">చెల్లుబాటు అయ్యే పాస్‌కోడ్‌ని నమోదు చేయండి</string>
+    <string name="enter_passcode">పాస్‌కోడ్‌ని నమోదు చేయండి</string>
+    <string name="decline">తిరస్కరించు</string>
+    <string name="audio_request_received_from">నుండి ఆడియో అభ్యర్థన స్వీకరించబడింది</string>
+    <string name="please_choose_another_seat">దయచేసి మరొక సీటును ఎంచుకోండి</string>
+    <string name="this_seat_is_locked_by_host">ఈ సీటు హోస్ట్ ద్వారా లాక్ చేయబడింది</string>
+    <string name="add_location">స్థానాన్ని జోడించండి</string>
+    <string name="search_area_or_city">ప్రాంతం లేదా నగరాన్ని శోధించండి</string>
+    <string name="manage_audio_volume">ఆడియో వాల్యూమ్‌ని నిర్వహించండి</string>
+    <string name="video_volume_label">వీడియో వాల్యూమ్</string>
+    <string name="song_volume_label">పాట వాల్యూమ్</string>
+    <string name="failed_to_delete">తొలగించడంలో విఫలమైంది</string>
+    <string name="error_try_again">మళ్లీ ప్రయత్నించండి</string>
+    <string name="solved">పరిష్కరించబడింది</string>
+    <string name="relites">రిలైట్</string>
+    <string name="error_loading_plans">ప్లాన్‌లను లోడ్ చేయడంలో లోపం</string>
+    <string name="billing_not_ready">బిల్లింగ్ సిద్ధంగా లేదు</string>
+    <string name="purchase_error">కొనుగోలు లోపం</string>
+    <string name="payment_init_failed">చెల్లింపు ప్రారంభం విఫలమైంది</string>
+    <string name="purchase_canceled">కొనుగోలు రద్దు చేయబడింది</string>
+    <string name="purchase_success">కొనుగోలు విజయం</string>
+    <string name="purchase_failed">కొనుగోలు విఫలమైంది</string>
+    <string name="please_select_a_gift">దయచేసి బహుమతిని ఎంచుకోండి</string>
+    <string name="please_select_at_least_one_user">దయచేసి కనీసం ఒక వినియోగదారుని ఎంచుకోండి</string>
+    <string name="no_user_found">వినియోగదారు కనుగొనబడలేదు!</string>
+    <string name="notification_channel_name">డిఫాల్ట్</string>
+    <string name="audio_conversion_failed">ఆడియో మార్పిడి విఫలమైంది</string>
+    <string name="no_message_available">సందేశం అందుబాటులో లేదు</string>
+    <string name="no_date">తేదీ లేదు</string>
+    <string name="invalid_user_id">చెల్లని వినియోగదారు ID</string>
+    <string name="user_has_been_blocked">వినియోగదారు బ్లాక్ చేయబడ్డారు</string>
+    <string name="user_data_is_not_available">వినియోగదారు డేటా అందుబాటులో లేదు</string>
+    <string name="user_data_not_loaded">వినియోగదారు డేటా లోడ్ చేయబడలేదు</string>
+    <string name="cannot_load_video_preview">వీడియో ప్రివ్యూను లోడ్ చేయడం సాధ్యపడదు.</string>
+    <string name="failed_to_process_video">వీడియోను ప్రాసెస్ చేయడంలో విఫలమైంది.</string>
+    <string name="are_you_sure_you_want_to_delete_your_room">మీరు ఖచ్చితంగా మీ గదిని తొలగించాలనుకుంటున్నారా?</string>
+    <string name="your_room_deleted_successfully">మీ గది విజయవంతంగా తొలగించబడింది..</string>
+    <string name="you_are_not_able_to_post_at_your_level">మీరు మీ స్థాయిలో పోస్ట్ చేయలేరు</string>
+    <string name="room_passcode_changed">గది పాస్‌కోడ్ మార్చబడింది..</string>
+    <string name="using">ఉపయోగించి</string>
+    <string name="failed_to_logout_please_try_again">లాగ్ అవుట్ చేయడంలో విఫలమైంది. దయచేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="link_not_available">లింక్ అందుబాటులో లేదు.</string>
+    <string name="we_will_take_immediate_action_thank_you">వెంటనే చర్యలు తీసుకుంటాం. ధన్యవాదాలు.</string>
+    <string name="picture_capture_timeout_please_try_again">చిత్రం క్యాప్చర్ సమయం ముగిసింది. దయచేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="error_loading_image">చిత్రాన్ని లోడ్ చేయడంలో లోపం</string>
+    <string name="no_image_selected">చిత్రం ఏదీ ఎంచుకోబడలేదు</string>
+    <string name="error_processing_video">వీడియోను ప్రాసెస్ చేయడంలో లోపం</string>
+    <string name="failed_to_capture_image">చిత్రాన్ని క్యాప్చర్ చేయడంలో విఫలమైంది.</string>
+    <string name="failed_to_save_image">చిత్రాన్ని సేవ్ చేయడంలో విఫలమైంది.</string>
+    <string name="you_cant_unmute_your_self">మిమ్మల్ని మీరు అన్‌మ్యూట్ చేయలేరు</string>
+    <string name="audio_file_missing">ఆడియో ఫైల్ లేదు!</string>
+    <string name="video_file_missing">వీడియో ఫైల్ లేదు!</string>
+    <string name="unexpected_error">ఊహించని లోపం:</string>
+    <string name="final_merge_failed">చివరి విలీనం విఫలమైంది.</string>
+    <string name="video_merge_failed">వీడియో విలీనం విఫలమైంది.</string>
+    <string name="unblocked_successfully">విజయవంతంగా అన్‌బ్లాక్ చేయబడింది.</string>
+    <string name="unable_to_share_at_this_moment">ఈ సమయంలో భాగస్వామ్యం చేయడం సాధ్యపడదు</string>
+    <string name="unexpected_error_occurred_please_try_again">ఊహించని లోపం సంభవించింది. దయచేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="unknown_error">తెలియని లోపం</string>
+    <string name="transaction_failed">లావాదేవీ విఫలమైంది</string>
+    <string name="delete_failed">తొలగించడం విఫలమైంది:</string>
+    <string name="invalid_post">చెల్లని పోస్ట్</string>
+    <string name="report_successful">నివేదిక విజయవంతమైంది</string>
+    <string name="failed_to_upload_image">చిత్రాన్ని అప్‌లోడ్ చేయడంలో విఫలమైంది.</string>
+    <string name="failed_to_upload_image_please_try_again">చిత్రాన్ని అప్‌లోడ్ చేయడంలో విఫలమైంది. దయచేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="failed_to_load_data_please_try_again">డేటాను లోడ్ చేయడంలో విఫలమైంది. దయచేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="comment_text_cannot_be_empty">వ్యాఖ్య వచనం ఖాళీగా ఉండకూడదు.</string>
+    <string name="failed_to_submit_comment_please_try_again">వ్యాఖ్యను సమర్పించడంలో విఫలమైంది. దయచేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="invalid_video">చెల్లని వీడియో</string>
+    <string name="failed_to_delete_video">వీడియోను తొలగించడంలో విఫలమైంది.</string>
+    <string name="all_fields_required">అన్ని ఫీల్డ్‌లు అవసరం</string>
+    <string name="purchase_failed_please_try_again">కొనుగోలు విఫలమైంది. దయచేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="failed_to_send_request">అభ్యర్థనను పంపడంలో విఫలమైంది</string>
+    <string name="failed_to_start_live_stream">ప్రత్యక్ష ప్రసారాన్ని ప్రారంభించడంలో విఫలమైంది</string>
+    <string name="live_user_data_is_missing">ప్రత్యక్ష వినియోగదారు డేటా లేదు</string>
+    <string name="failed_to_delete_room">గదిని తొలగించడంలో విఫలమైంది</string>
+    <string name="update_failed">నవీకరణ విఫలమైంది</string>
+    <string name="private_room_passcode">ప్రైవేట్ రూమ్ పాస్‌కోడ్</string>
+    <string name="here_s_the_private_passcode_for_the_room">గదికి సంబంధించిన ప్రైవేట్ పాస్‌కోడ్ ఇక్కడ ఉంది:</string>
+    <string name="share_via">ద్వారా భాగస్వామ్యం చేయండి</string>
+    <string name="passcode_empty_error">దయచేసి చెల్లుబాటు అయ్యే పాస్‌కోడ్‌ని నమోదు చేయండి</string>
+    <string name="failed_to_update_passcode">పాస్‌కోడ్‌ని అప్‌డేట్ చేయడంలో విఫలమైంది</string>
+    <string name="enter_new_room_passcode">కొత్త గది పాస్‌కోడ్‌ని నమోదు చేయండి</string>
+    <string name="change_room_passcode">గది పాస్‌కోడ్‌ని మార్చండి</string>
+    <string name="banned_list">నిషేధించబడిన జాబితా</string>
+    <string name="my_following">నా ఫాలోయింగ్</string>
+    <string name="please_enter_valid_input">దయచేసి చెల్లుబాటు అయ్యే ఇన్‌పుట్‌ని నమోదు చేయండి</string>
+    <string name="join_requests">అభ్యర్థనలలో చేరండి</string>
+    <string name="sorry_this_call_can_t_be_completed_right_now">క్షమించండి, ఈ కాల్‌ని ప్రస్తుతం పూర్తి చేయడం సాధ్యపడదు.</string>
+    <string name="watch_video_now">ఇప్పుడే వీడియో చూడండి</string>
+    <string name="you_exceed_your_ad_limit">మీరు మీ ప్రకటన పరిమితిని మించిపోయారు.</string>
+    <string name="search_people">వ్యక్తులను వెతకండి..</string>
+    <string name="public_room">పబ్లిక్ రూమ్</string>
+    <string name="my_profile">నా ప్రొఫైల్</string>
+    <string name="edit_self">స్వీయ సవరణ</string>
+    <string name="blocked_user">బ్లాక్ చేయబడిన వినియోగదారు</string>
+    <string name="my_wallet">నా వాలెట్</string>
+    <string name="select_age">వయస్సును ఎంచుకోండి</string>
+    <string name="save_changes">మార్పులను సేవ్ చేయండి</string>
+    <string name="enter_your_bio">మీ బయోని నమోదు చేయండి</string>
+    <string name="enter_bio_here">ఇక్కడ బయోని నమోదు చేయండి..</string>
+    <string name="hey_there">హే!</string>
+    <string name="follow_back">ఫాలో బ్యాక్</string>
+    <string name="purchase">కొనుగోలు</string>
+    <string name="select">ఎంచుకోండి</string>
+    <string name="selected">ఎంపిక చేయబడింది</string>
+    <string name="method_2_desc">మీ రిఫరల్ కోడ్‌ని ఉపయోగించి చేరడానికి మీ స్నేహితులను ఆహ్వానించండి. మీ కోడ్ ఉపయోగించిన ప్రతిసారీ రివార్డ్‌లను పొందండి!</string>
+    <string name="method_1_desc">ఒక చిన్న ప్రకటన వీడియోను చూడండి మరియు తక్షణమే ఉచిత వజ్రాలను సంపాదించండి! చూడటం ప్రారంభించడానికి మరియు మీ రివార్డ్‌ను స్వీకరించడానికి దిగువ బటన్‌ను నొక్కండి.</string>
+    <string name="pay_now">ఇప్పుడే చెల్లించండి</string>
+    <string name="select_room_image">గది చిత్రాన్ని ఎంచుకోండి</string>
+    <string name="room_description">గది వివరణ</string>
+    <string name="room_type">గది రకం</string>
+    <string name="upload_image_">చిత్రాన్ని అప్‌లోడ్ చేయండి</string>
+    <string name="enter_your_room_name">మీ గది పేరును నమోదు చేయండి</string>
+    <string name="enter_your_room_passcode">మీ గది పాస్‌కోడ్‌ని నమోదు చేయండి</string>
+    <string name="enter_your_room_description">మీ గది వివరణను నమోదు చేయండి</string>
+    <string name="enter_note_here">గమనికను ఇక్కడ నమోదు చేయండి..</string>
+    <string name="add_caption">శీర్షికను జోడించండి</string>
+    <string name="attachments">జోడింపులు</string>
+    <string name="enter_details_here">ఇక్కడ వివరాలను నమోదు చేయండి…</string>
+    <string name="my_income">నా ఆదాయం</string>
+    <string name="best_plan">ఉత్తమ ప్రణాళిక</string>
+    <string name="best_recharge_plan">ఉత్తమ రీఛార్జ్ ప్లాన్</string>
+    <string name="purchase_recharge_plan">రీఛార్జ్ ప్లాన్‌ని కొనుగోలు చేయండి</string>
+    <string name="available_my_r_coins">నా R-నాణేలు అందుబాటులో ఉన్నాయి</string>
+    <string name="payment">చెల్లింపు</string>
+    <string name="select_payment_option">చెల్లింపు ఎంపికను ఎంచుకోండి:</string>
+    <string name="select_record_duration">రికార్డ్ వ్యవధిని ఎంచుకోండి:</string>
+    <string name="start_date_">ప్రారంభ తేదీ:</string>
+    <string name="end_date_">ముగింపు తేదీ:</string>
+    <string name="demo_purpose">ఈ APKలో, మొత్తం డేటా డెమో ప్రయోజనం కోసం మాత్రమే.</string>
+    <string name="no_data_text">చూపించడానికి ఏమీ లేదు</string>
+    <string name="vip">VIPVIP</string>
+    <string name="payment_option">చెల్లింపు ఎంపిక:</string>
+    <string name="withdrawable_r_coins">విత్‌డ్రా చేయగల R-నాణేలు:</string>
+    <string name="please_select_a_payment_option">దయచేసి చెల్లింపు ఎంపికను ఎంచుకోండి</string>
+    <string name="select_option">ఎంపికను ఎంచుకోండి:</string>
+    <string name="bd">BD</string>
+    <string name="version">వెర్షన్:</string>
+    <string name="upload">అప్‌లోడ్ చేయండి</string>
+    <string name="no_one_joined">ఎవరూ చేరలేదు</string>
+    <string name="blocked_list">బ్లాక్ చేయబడిన జాబితా</string>
+    <string name="room_close">గది దగ్గరగా</string>
+    <string name="common_bio">కనెక్షన్‌లను అన్వేషించడం, ప్రొఫైల్‌లు మాత్రమే కాదు.</string>
+    <string name="reactions">ప్రతిచర్యలు</string>
+    <string name="delete_confirmation_text">మీరు ఖచ్చితంగా తొలగించాలనుకుంటున్నారా? ఈ చర్య రద్దు చేయబడదు</string>
+    <string name="confirm_deletion">తొలగింపును నిర్ధారించండి</string>
+    <string name="confirm_stand_up">స్టాండ్-అప్‌ని నిర్ధారించండి</string>
+    <string name="delete_post_confirmation">మీరు ఖచ్చితంగా ఈ పోస్ట్‌ను తొలగించాలనుకుంటున్నారా?</string>
+    <string name="delete_relite_confirmation">మీరు ఖచ్చితంగా ఈ Reliteని తొలగించాలనుకుంటున్నారా?</string>
+    <string name="delete">తొలగించు</string>
+    <string name="demo_agency">డెమో ఏజెన్సీ</string>
+    <string name="exposure">బహిరంగపరచడం</string>
+    <string name="smoothness">మృదుత్వం</string>
+    <string name="redness">ఎరుపు రంగు</string>
+    <string name="sharpness">పదును</string>
+    <string name="ar_effects">AR ప్రభావాలు</string>
+    <string name="calling">పిలుస్తోంది</string>
+    <string name="no_comments_yet_be_the_first_to_say_something">ఇంకా వ్యాఖ్యలు లేవు. ఏదైనా చెప్పే మొదటి వ్యక్తి అవ్వండి!</string>
+    <string name="no_likes_yet_tap_to_spread_some_love">ఇంకా ఇష్టాలు లేవు. కొంత ప్రేమను పంచడానికి ❤️ నొక్కండి!</string>
+    <string name="finding_reasons_to_smile_everywhere_i_go_and_sharing_that_happiness_with_the_world">ఎక్కడికెళ్లినా నవ్వడానికి కారణాలను వెతుక్కుంటూ ఆ ఆనందాన్ని ప్రపంచంతో పంచుకుంటున్నాను.</string>
+    <string name="okay">సరే</string>
+    <string name="please_wait_for_a_spot_to_open">దయచేసి ఒక స్పాట్ తెరవడానికి వేచి ఉండండి</string>
+    <string name="all_seats_are_taken">అన్ని సీట్లు తీసుకోబడ్డాయి</string>
+    <string name="alex_sierra">#VALUE!</string>
+    <string name="request_sent">అభ్యర్థన పంపబడింది</string>
+    <string name="join">చేరండి</string>
+    <string name="video_call_gift">వీడియో కాల్ బహుమతి</string>
+    <string name="chat_gift">చాట్ బహుమతి</string>
+    <string name="uploading_">అప్‌లోడ్ చేస్తోంది...</string>
+    <string name="please_try_after_some_time">దయచేసి కొంత సమయం తర్వాత ప్రయత్నించండి</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_make_call">మీరు ప్రస్తుతం ఆడియో గదిలో ఉన్నట్లు కనిపిస్తోంది. దయచేసి గది నుండి నిష్క్రమించి, కాల్ చేయండి.</string>
+    <string name="notification_permission_denied">నోటిఫికేషన్ అనుమతి నిరాకరించబడింది</string>
+    <string name="you_have_to_enable_it_from_settings">మీరు దీన్ని సెట్టింగ్‌ల నుండి ప్రారంభించాలి.</string>
+    <string name="open_settings">సెట్టింగ్‌లను తెరవండి</string>
+    <string name="cannot_unmute_user">వినియోగదారుని అన్‌మ్యూట్ చేయలేరు</string>
+    <string name="this_user_has_muted_themselves_only_they_can_unmute">ఈ వినియోగదారు తమను తాము మ్యూట్ చేసుకున్నారు. వారు మాత్రమే అన్‌మ్యూట్ చేయగలరు.</string>
+    <string name="you_are_not_able_to_live_at_your_level">మీరు మీ స్థాయిలో జీవించలేరు</string>
+    <string name="conversion_successful">మార్పిడి విజయవంతమైంది</string>
+    <string name="screen_overlay_permission_needed">స్క్రీన్ ఓవర్‌లే అనుమతి అవసరం</string>
+    <string name="enable_display_over_other_apps_from_system_settings">సిస్టమ్ సెట్టింగ్‌ల నుండి ఇతర యాప్‌లపై ప్రదర్శించడాన్ని ప్రారంభించండి.</string>
+    <string name="you_are_vip_now">మీరు ఇప్పుడు VIP</string>
+    <string name="restart_app">యాప్‌ని పునఃప్రారంభించండి</string>
+    <string name="this_seat_is_reserved">ఈ సీటు రిజర్వ్ చేయబడింది</string>
+    <string name="do_you_really_want_to_log_out">మీరు నిజంగా లాగ్ అవుట్ చేయాలనుకుంటున్నారా? మీ ఖాతాను యాక్సెస్ చేయడానికి మీరు మళ్లీ సైన్ ఇన్ చేయాలి</string>
+    <string name="notification_permission_granted">నోటిఫికేషన్ అనుమతి మంజూరు చేయబడింది</string>
+    <string name="verified">ధృవీకరించబడింది</string>
+    <string name="no_one_has_requested">ఎవరూ కోరలేదు</string>
+    <string name="user_data_not_found_please_login_again">వినియోగదారు డేటా కనుగొనబడలేదు. దయచేసి మళ్లీ లాగిన్ చేయండి.</string>
+    <string name="update_failed_">నవీకరణ విఫలమైంది:</string>
+    <string name="dummy_name">మియా మాల్కోవా</string>
+    <string name="miya">మియా</string>
+    <string name="riya">రియా</string>
+    <string name="luliya">లులియా</string>
+    <string name="rehan">రెహాన్</string>
+    <string name="susmita">సుస్మిత</string>
+    <string name="rahi">రాహి</string>
+    <string name="nirma">నిర్మా</string>
+    <string name="jashvi">జాష్వి</string>
+    <string name="hely">హేలీ</string>
+    <string name="shruti">శ్రుతి</string>
+    <string name="dhruvi">ధ్రూవి</string>
+    <string name="mamta">మమ్తా</string>
+    <string name="zeel">జీల్</string>
+    <string name="audio_live">ఆడియో లైవ్</string>
+    <string name="post">పోస్ట్ చేయండి</string>
+    <string name="demo_host_center">డెమో హోస్ట్ సెంటర్</string>
+    <string name="agency_center">ఏజెన్సీ కేంద్రం</string>
+    <string name="select_language">భాషను ఎంచుకోండి</string>
+    <string name="english">ఇంగ్లీష్</string>
+    <string name="explore">అన్వేషించండి</string>
+    <string name="party">పార్టీ</string>
+    <string name="my_features">నా ఫీచర్లు</string>
+    <string name="host_vip_privilege">హోస్ట్ &amp; VIP特ాధికారాలు</string>
+    <string name="restart_the_app">యాప్‌ను రీస్టార్ట్ చేయండి!</string>
+    <string name="restart">రీస్టార్ట్</string>
+    <string name="version_">"వర్షన్ "</string>
+    <string name="top_users">టాప్ వినియోగదారులు</string>
+    <string name="top_creators">టాప్ క్రియేటర్లు</string>
+    <string name="top_agency">టాప్ ఏజెన్సీ</string>
+    <string name="daily">ప్రతి రోజు</string>
+    <string name="weekly">వారానికి ఒకసారి</string>
+    <string name="monthly">నెలకు ఒకసారి</string>
+    <string name="get_premium_crown">ప్రీమియం క్రౌన్ పొందండి</string>
+    <string name="get_extra_coins">అదనపు నాణేలు పొందండి</string>
+    <string name="get_all_level_access">అన్ని స్థాయిలకు యాక్సెస్ పొందండి</string>
+    <string name="invalid_validity_period">చెల్లుబాటు కాలం సరైనది కాదు</string>
+    <string name="user_id">వినియోగదారు ID</string>
+    <string name="you_ve_spent_s">"మీరు %s ఖర్చు చేశారు "</string>
+    <string name="you_have">"మీ వద్ద ఉంది "</string>
+    <string name="referrals">" రెఫెరల్స్"</string>
+    <string name="id_">ID: </string>
+
+    <string name="feed">ఫీడ్</string>
+    <string name="video">వీడియో</string>
+    <string name="sent_a_gift_to">" ఒక వరం పంపించబడింది "</string>
+    <string name="announcement">"ప్రకటన : "</string>
+    <string name="please_enter_valid_passcode">దయచేసి చెల్లుబాటైన పాస్‌కోడ్‌ను నమోదు చేయండి</string>
+    <string name="passcode_length_invalid">పాస్‌కోడ్ పొడవు తప్పుగా ఉంది</string>
+    <string name="_0">0</string>
+    <string name="error_missing_room_data">గది సమాచారం లేనిది</string>
+    <string name="error_invalid_room_data">తప్పు గది సమాచారం</string>
+    <string name="dummy_noti_desc">జేమ్స్ బాండ్ డైజీ శర్మకు వరం పంపినట్లు</string>
+    <string name="dummy_id">ID : 564321</string>
+    <string name="dummy_time">00:00</string>
+    <string name="cherry">చెర్రీ</string>
+    <string name="level_1">స్థాయి 1</string>
+    <string name="hello">హలో</string>
+    <string name="dummy_comment">ఎవరు మిలియనీర్ అయ్యారు?</string>
+    <string name="country">దేశం</string>
+    <string name="title1">శీర్షిక 1</string>
+    <string name="incoming_video_call">వీడియో కాల్ వస్తోంది</string>
+    <string name="upload_completed">అప్‌లోడ్ పూర్తైంది!</string>
+    <string name="image_file_does_not_exist">చిత్ర ఫైల్ లేదు.</string>
+    <string name="user_session_not_found">వినియోగదారు సెషన్ కనబడలేదు</string>
+    <string name="add">జోడించండి</string>
+    <string name="leave">విడిచివేయండి</string>
+    <string name="requested">అభ్యర్థించబడింది</string>
+    <string name="call_request_rejected">కాల్ అభ్యర్థన తిరస్కరించబడింది</string>
+    <string name="call_setup_failed">"కాల్ సెటప్ విఫలమైంది: "</string>
+    <string name="invalid_chat_user">చాట్ వినియోగదారు చెల్లదు</string>
+    <string name="you">మీరు</string>
+    <string name="sent_a_gift_">బహుమతి పంపారు 🎁</string>
+    <string name="invalid_url">చెల్లని URL</string>
+    <string name="here_is_my_referral_code">"ఇదిగో నా రెఫరల్ కోడ్"</string>
+    <string name="let_me_recommend_you_this_application">\nనేను మీకు ఈ అప్లికేషన్‌ని సిఫార్సు చేస్తున్నాను\n\n</string>
+    <string name="unknown_user">తెలియని వినియోగదారు</string>
+    <string name="you_will_receive">"మీరు అందుకుంటారు"</string>
+    <string name="_diamonds">"వజ్రాలు"</string>
+    <string name="camera_not_ready">కెమెరా సిద్ధంగా లేదు</string>
+    <string name="ar_is_starting_please_try_again">AR ప్రారంభమవుతుంది… దయచేసి మళ్లీ ప్రయత్నించండి.</string>
+    <string name="recording_started">రికార్డింగ్ ప్రారంభమైంది.</string>
+    <string name="camera_is_not_available">కెమెరా అందుబాటులో లేదు.</string>
+    <string name="permission_rationale_upload">గ్యాలరీ నుండి వీడియోని ఎంచుకొని అప్‌లోడ్ చేయడానికి, నిల్వ అనుమతి అవసరం.</string>
+    <string name="unable_to_choose_video_for_upload">అప్‌లోడ్ కోసం వీడియోను ఎంచుకోలేకపోయింది.</string>
+    <string name="sticker_item_is_missing">స్టిక్కర్ అంశం లేదు.</string>
+    <string name="audio_file_is_missing">ఆడియో ఫైల్ లేదు.</string>
+    <string name="could_not_load_audio">ఆడియోను లోడ్ చేయడం సాధ్యపడలేదు.</string>
+    <string name="selected_video_uri_is_missing">ఎంచుకున్న వీడియో URI లేదు.</string>
+    <string name="failed_to_prepare_video_for_upload">అప్‌లోడ్ చేయడానికి వీడియోను సిద్ధం చేయడంలో విఫలమైంది.</string>
+    <string name="error_copying_file">ఫైల్‌ను కాపీ చేయడంలో లోపం.</string>
+    <string name="failed_to_create_directory">డైరెక్టరీని సృష్టించడం విఫలమైంది.</string>
+    <string name="upload_failed_">"అప్‌లోడ్ విఫలమైంది:"</string>
+    <string name="uploading">అప్‌లోడ్ చేస్తోంది…</string>
+    <string name="public_">పబ్లిక్</string>
+    <string name="unknown_title">తెలియని శీర్షిక</string>
+    <string name="unknown_singer">తెలియని గాయకుడు</string>
+    <string name="invalid_host_data">చెల్లని హోస్ట్ డేటా</string>
+    <string name="type_something">ఏదైనా టైప్ చేయండి..</string>
+
+    <string-array name="fake_times">
+        <item>ఇప్పుడే</item>
+        <item>కొన్ని క్షణాల క్రితం</item>
+        <item>5 నిమిషాల క్రితం</item>
+        <item>సుమారు ఒక గంట క్రితం</item>
+        <item>1 గంట క్రితం</item>
+        <item>ఈ రోజు ముందు</item>
+        <item>ఈ రోజు</item>
+        <item>నిన్న</item>
+        <item>మరో రోజు</item>
+        <item>3 రోజులు క్రితం</item>
+        <item>గత వారం</item>
+        <item>కొన్ని రోజులు క్రితం</item>
+        <item>2 వారాలు క్రితం</item>
+        <item>గత నెల</item>
+        <item>కొంతకాలం క్రితం</item>
+        <item>కొన్ని క్షణాలు క్రితం</item>
+        <item>చాలా కాలం క్రితం</item>
+    </string-array>
+
+    <string-array name="fake_chat_sender">
+        <item>హాయ్! ఎలా ఉన్నావు?</item>
+        <item>ఈ రాత్రి సినిమాను చూడాలని ప్లాన్ చేస్తున్నాను.</item>
+        <item>ఇటీవలి వార్తల గురించి నీ అభిప్రాయం ఏమిటి?</item>
+        <item>జాబ్‌లో ఒక కొత్త ప్రాజెక్టుపై పని చేస్తున్నాను.</item>
+        <item>తరువాత కాఫీకి వస్తావా?</item>
+        <item>ఇప్పుడే పరుగెత్తి వచ్చాను, చాలా ఫ్రెష్‌గా ఉంది!</item>
+        <item>ఏమైనా మంచి పుస్తక సిఫార్సులు ఉన్నాయా?</item>
+        <item>నీ వీకెండ్ ఎలా గడిచింది?</item>
+        <item>తరువాత నెల సెలవులకు వెళ్లాలని అనుకుంటున్నాను.</item>
+        <item>టౌన్‌లో కొత్త రెస్టారెంట్ ట్రై చేశావా?</item>
+        <item>ఈరోజు ఏం చేస్తున్నావు?</item>
+        <item>ఒక అద్భుతమైన పుస్తకం పూర్తిచేశాను, నీకు చెప్పాలని ఆతృతగా ఉన్నాను.</item>
+        <item>ఈవెనింగ్‌కు ఏమైనా ప్లాన్ ఉన్నదా?</item>
+        <item>ఒక కొత్త భాష నేర్చుకోవాలని అనుకుంటున్నాను.</item>
+        <item>లేటెస్ట్ ఎపిసోడ్ చూశావా?</item>
+        <item>కొత్త ఆల్బమ్ నచ్చిందా?</item>
+        <item>ఈ మధ్యకాలంలో నేను పొడ్కాస్ట్‌లను బాగా వింటున్నాను.</item>
+        <item>కొత్త గ్యాడ్జెట్ గురించి నీ అభిప్రాయం ఏమిటి?</item>
+        <item>ఒక బ్లాగ్ మొదలుపెట్టాలని ప్లాన్ చేస్తున్నాను.</item>
+        <item>నీకు ఇష్టమైన హాబీ ఏంటి?</item>
+        <item>నీవు మోటివేటెడ్‌గా ఉండడానికి ఏమి చేస్తావు?</item>
+        <item>ఉత్పాదకత పెంచేందుకు ఎలాంటి చిట్కాలు ఉన్నాయా?</item>
+        <item>నీవు రిలాక్స్ అవడానికి ఏం చేస్తావు?</item>
+        <item>నీవు స్ట్రెస్‌ను ఎలా హ్యాండిల్ చేస్తావు?</item>
+        <item>నిన్ను ఏం ప్రేరేపిస్తుంది?</item>
+    </string-array>
+
+    <string-array name="fake_chat_receiver">
+        <item>నేను బాగున్నాను, నీవు ఎలా ఉన్నావు?</item>
+        <item>బాగుంది! ఏ సినిమా?</item>
+        <item>నాకు తెలియదు, నేను వార్తలు చూడలేదు ఈ మధ్య.</item>
+        <item>నిజంగా? ఆ ప్రాజెక్టు గురించి చెప్పు.</item>
+        <item>ఖచ్చితంగా, నాకు చాలా ఇష్టం!</item>
+        <item>వాహ్, అదిరింది! నేను కూడా మళ్లీ ఎక్సర్సైజ్ చేయాలి.</item>
+        <item>ఇటీవల నేను ఒక మంచి థ్రిల్లర్ చదివాను.</item>
+        <item>చాలా రిలాక్సింగ్‌గా గడిచింది, ఎక్కువగా ఏమి చేయలేదు.</item>
+        <item>అద్భుతం! ఎక్కడికి వెళ్లాలని ప్లాన్ చేస్తున్నావు?</item>
+        <item>ఇంకా ట్రై చేయలేదు. బాగుందా?</item>
+        <item>ఇంటినుంచి పని చేస్తున్నాను, నీవు?</item>
+        <item>ఇంటరెస్టింగ్‌గా ఉంది, మరింత చెప్పు!</item>
+        <item>ఏమీలేదు, కాస్త రిలాక్స్ అవుతున్నాను.</item>
+        <item>అద్భుతం! ఏ భాష నేర్చుకోవాలని ఉంది?</item>
+        <item>అవును, చాలా బాగుంది! తరువాత ఎపిసోడ్ కోసం ఎదురుచూస్తున్నాను.</item>
+        <item>ఇంకా వినలేదు, ఏమైనా మంచి పాటలున్నాయా?</item>
+        <item>నాకు కూడా అలాగే ఉంది, చాలా ఇన్ఫర్మేటివ్‌గా ఉంటాయి.</item>
+        <item>నేను కూడా ఒకటి కొనే ఆలోచనలో ఉన్నాను. నీకు ఎలాంటి ఫీచర్లు నచ్చాయి?</item>
+        <item>ఆసక్తికరంగా ఉంది! ఏ విషయం మీద రాయబోతున్నావు?</item>
+        <item>నాకు పంటింగ్ మరియు చదవడం ఇష్టం.</item>
+        <item>చిన్న లక్ష్యాలు పెట్టుకుని మోటివేటెడ్‌గా ఉంటాను.</item>
+        <item>టు-డూ లిస్టులు తయారు చేస్తే నన్ను Productive‌గా ఉంచుతాయి.</item>
+        <item>ఒక సినిమా చూస్తాను లేదా పుస్తకం చదువుతాను.</item>
+        <item>ధ్యానం చేస్తాను లేదా నడకకు వెళ్తాను.</item>
+        <item>ప్రకృతి మరియు కళ నన్ను ఎక్కువగా ప్రేరేపిస్తాయి.</item>
+    </string-array>
+
+    <string-array name="lightening_contrast_options">
+        <item>తక్కువ</item>
+        <item>సాధారణం</item>
+        <item>అధికం</item>
+    </string-array>
+
+    <string-array name="fake_messages">
+        <item>హాయ్! 👋</item>
+        <item>మీ ప్రొఫైల్ నచ్చింది!</item>
+        <item>ఇక్కడ కొత్త—హలో చెప్పండి!</item>
+        <item>సరదా చాట్ చేద్దామా?</item>
+        <item>హే! 😊</item>
+        <item>మీ రోజు ఎలా ఉంది?</item>
+        <item>మీరు ఆసక్తికరంగా ఉన్నారు 👀</item>
+        <item>మీరు ఇక్కడకు వచ్చేందుకు కారణం ఏమిటి?</item>
+        <item>మీతో కలవడం సంతోషం! 🙌</item>
+        <item>హలో అజ్ఞాతుడు 😄</item>
+        <item>కాఫీ లేదా టీ వ్యక్తి? ☕🍵</item>
+        <item>ఈ యాప్ మరింత మంచి అయ్యింది 😉</item>
+        <item>అతే… మీ కథ ఏమిటి?</item>
+        <item>హే హే! ✨</item>
+        <item>చర్చ కోసం ఎదురుచూస్తున్నాను!</item>
+        <item>మీరు మంచి vibes కలిగి ఉన్నారు 🌟</item>
+        <item>హాయ్! కనెక్ట్ కావాలా?</item>
+        <item>మనం మ్యాచ్ అయ్యాము 😍</item>
+        <item>హే, జీవితం ఎలా ఉంది?</item>
+        <item>మీ కోసం పెద్ద చిరునవ్వు 😁</item>
+        <item>మీరు ఇప్పుడు నా స్క్రీన్ పై 나타났ారు 👌</item>
+        <item>ఇది నేనేనా, లేక మనం just బెస్ట్ ఫ్రెండ్స్ అయ్యామా? 😂</item>
+        <item>నేను ఆశించుకున్నాను మనం మ్యాచ్ అవుతాము 💫</item>
+        <item>మీరు మాట్లాడటానికి సరదాగా ఉన్నారు 😏</item>
+        <item>ఇక్కడ నేను ఉన్నాను! మీ కారణం ఏమిటి? 😜</item>
+        <item>ఎందుకు తెలుసా? మీరు నా మొదటి మెసేజ్ ఈ రోజు 📩</item>
+        <item>మీరు అవకాశాలను లేదా భాగ్యాన్ని నమ్ముతారా? ✨</item>
+        <item>నేను అనుకుంటున్నాను మీరు నాకు హలో ఇవ్వాలి 😇</item>
+        <item>సరే, మీ చిరునవ్వు సంక్రమిస్తుంది 😍</item>
+        <item>నిజంగా, మీ ప్రొఫైల్ ఆకట్టుకుంది 🔥</item>
+    </string-array>
+</resources>

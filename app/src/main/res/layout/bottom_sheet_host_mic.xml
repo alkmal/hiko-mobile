@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/choiceLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/bg_bottom_sheet_top_corner_radius"
+        android:orientation="vertical">
+
+        <include layout="@layout/bottom_sheet_view" />
+
+        <TextView
+            android:id="@+id/takeMic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingVertical="@dimen/_15sdp"
+            android:text="@string/take_the_mic"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="15dp"
+            android:fontFamily="@font/airbnbcereal_w_md"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+        <include layout="@layout/custom_line_view" />
+
+        <TextView
+            android:id="@+id/tvGiveRemove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingVertical="@dimen/_15sdp"
+            android:text="@string/give_the_mic"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="15dp"
+            android:fontFamily="@font/airbnbcereal_w_md"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+        <include layout="@layout/custom_line_view" />
+
+        <TextView
+            android:id="@+id/tvLock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingVertical="@dimen/_15sdp"
+            android:text="@string/lock_the_mic"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="15dp"
+            android:fontFamily="@font/airbnbcereal_w_md"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+        <include layout="@layout/custom_line_view" />
+
+        <TextView
+            android:id="@+id/tvMute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingVertical="@dimen/_15sdp"
+            android:text="@string/mute_the_mic"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="15dp"
+            android:fontFamily="@font/airbnbcereal_w_md"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+
+        <include layout="@layout/custom_line_view" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_15sdp"
+            android:text="@string/cancel"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="15dp"
+            android:fontFamily="@font/airbnbcereal_w_md"
+            android:textColor="@color/redColor"
+            android:visibility="visible" />
+    </LinearLayout>
+</layout>

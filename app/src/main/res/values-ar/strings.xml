@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">HIKO</string>
+
+    <string name="no_internet_connection">لا يوجد اتصال بالإنترنت</string>
+    <string name="back_online">عاد الاتصال</string>
+    <string name="we_are_under_maintenance_text">نحن في وضع الصيانة</string>
+    <string name="dismiss">إغلاق</string>
+    <string name="you_are_blocked_by_admin_text">تم حظرك من قبل المسؤول</string>
+    <string name="cancel">إلغاء</string>
+    <string name="you_are_logged_in_other_devices">تم تسجيل دخولك على أجهزة أخرى</string>
+    <string name="log_out">تسجيل الخروج</string>
+    <string name="policy">بالتسجيل فإنك توافق على</string>
+    <string name="terms_amp_condition">الشروط والأحكام</string>
+    <string name="and">و</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="please_wait">يرجى الانتظار</string>
+    <string name="your_name">اسمك</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+    <string name="select_your_age">اختر عمرك</string>
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="submit">إرسال</string>
+    <string name="enter_your_name">أدخل اسمك</string>
+    <string name="enter_username_first">أدخل اسم المستخدم أولاً</string>
+    <string name="select_your_gender">اختر جنسك</string>
+    <string name="minimum_age_must_be_18_years">الحد الأدنى للعمر 18 عامًا.</string>
+    <string name="connecting">جارٍ الاتصال…</string>
+    <string name="privacy_policy_text">سياسة الخصوصية</string>
+    <string name="accept_privacy_policy">أنا أكبر من 18 عامًا وقد قرأت سياسة الخصوصية.</string>
+    <string name="deny">رفض</string>
+    <string name="accept">قبول</string>
+    <string name="please_accept_privacy_policy">يرجى التأكيد أنك قرأت سياسة الخصوصية للمتابعة.</string>
+    <string name="exit_app_confirmation">هل أنت متأكد أنك تريد الخروج من التطبيق؟</string>
+    <string name="exit_this_app">الخروج من هذا التطبيق</string>
+    <string name="fans">المعجبون</string>
+    <string name="my_diamonds">ألماسي</string>
+    <string name="demo_host_center_text">مركز المضيف التجريبي</string>
+    <string name="demo_agency_center">مركز الوكالة التجريبي</string>
+    <string name="host_request">طلب مضيف</string>
+    <string name="offline_recharge">إعادة شحن دون اتصال</string>
+    <string name="my_posts">منشوراتي</string>
+    <string name="my_relites">ريلز الخاصة بي</string>
+    <string name="store">المتجر</string>
+    <string name="free_coins">عملات مجانية</string>
+    <string name="become_vip">كن من كبار الشخصيات</string>
+    <string name="user_level">مستوى المستخدم</string>
+    <string name="copied_successfully">تم النسخ بنجاح</string>
+    <string name="id">"المعرّف: "</string>
+    <string name="agency_center_text">مركز الوكالة</string>
+    <string name="host_center">مركز المضيف</string>
+    <string name="ok">حسنًا</string>
+    <string name="history">السجل</string>
+    <string name="recharge">إعادة الشحن</string>
+    <string name="my_diamond_balance">رصيد الألماس</string>
+    <string name="enter_user_id">أدخل معرّف المستخدم</string>
+    <string name="enter_diamonds">أدخل عدد الألماس</string>
+    <string name="note">ملاحظة</string>
+    <string name="top_up">شحن</string>
+    <string name="user_not_found">المستخدم غير موجود</string>
+    <string name="please_verify_user_id">يرجى التحقق من معرّف المستخدم</string>
+    <string name="enter_coin_value">أدخل قيمة العملة</string>
+    <string name="invalid_coin_value">قيمة عملة غير صالحة</string>
+    <string name="insufficient_coins">عملات غير كافية</string>
+    <string name="send_successfully">تم الإرسال بنجاح</string>
+    <string name="continue_text">متابعة</string>
+    <string name="in_this_apk_all_data_are_only_for_demo_purpose">في هذا التطبيق،\nكافة البيانات لأغراض العرض فقط.</string>
+    <string name="deleted_successfully">تم الحذف بنجاح</string>
+    <string name="india">الهند</string>
+    <string name="we_will_take_immediately_action_for_this_user_thank_you">سنتخذ إجراءً فوريًا بحق هذا المستخدم\nشكرًا لك</string>
+    <string name="likes">الإعجابات</string>
+    <string name="comments">التعليقات</string>
+    <string name="report_user">الإبلاغ عن مستخدم</string>
+    <string name="blocked_successfully">تم الحظر بنجاح</string>
+    <string name="report_this_user">أبلغ عن هذا المستخدم</string>
+    <string name="please_describe_your_issue_here">يرجى وصف مشكلتك هنا..</string>
+    <string name="unable_to_report">غير قادر على الإبلاغ..\n</string>
+    <string name="something_went_wrong_text">حدث خطأ ما</string>
+    <string name="block_this_user">حظر هذا المستخدم</string>
+    <string name="yes">نعم</string>
+    <string name="type_message_first">اكتب رسالة أولاً</string>
+    <string name="toast_cannot_retrieve_cropped_image">تعذر جلب الصورة المقصوصة</string>
+    <string name="toast_unexpected_error">خطأ غير متوقع</string>
+    <string name="call_ended">انتهت المكالمة!</string>
+    <string name="ringing">يرن</string>
+    <string name="we_will_take_immediately_action_for_this_user_n_thank_you">سنتخذ إجراءً فوريًا بحق هذا المستخدم \n شكرًا لك</string>
+    <string name="enter_valid_message">أدخل رسالة صالحة</string>
+    <string name="is_busy_with_someone_else">" مشغول مع شخص آخر."</string>
+    <string name="discard_entire_video">هل تريد تجاهل الفيديو بالكامل؟</string>
+    <string name="if_you_go_back_now_you_will_lose_all_the_clips_added_to_your_video">إذا عدت الآن، ستفقد كل المقاطع التي أضفتها إلى الفيديو</string>
+    <string name="discard_video">تجاهل الفيديو</string>
+    <string name="incoming_call">مكالمة واردة…</string>
+    <string name="need_permissions">"بحاجة إلى أذونات "</string>
+    <string name="call_declined">تم رفض المكالمة</string>
+    <string name="rtc_stats_format">معدل البت للتنزيل: %.2f كيلوبت/ث%nمعدل الفقد في التنزيل: %.2f%% %nمعدل البت للرفع: %.2f كيلوبت/ث%nمعدل الفقد في الرفع: %.2f%%</string>
+    <string name="unfollow">إلغاء المتابعة</string>
+    <string name="follow">متابعة</string>
+    <string name="unblock">إلغاء الحظر</string>
+    <string name="block">حظر</string>
+    <string name="message">رسالة</string>
+    <string name="message_delete_confirmation">هل أنت متأكد أنك تريد حذف هذه الرسالة؟</string>
+    <string name="following">يتابع</string>
+    <string name="my_fans">معجبيني</string>
+    <string name="image">صورة</string>
+    <string name="choose_one">اختر واحدًا</string>
+    <string name="say_something">قل شيئًا…</string>
+    <string name="failed_to_load_videos">فشل تحميل الفيديوهات.</string>
+    <string name="settings">الإعدادات</string>
+    <string name="notification">الإشعارات</string>
+    <string name="have_an_issue">لديك مشكلة</string>
+    <string name="my_complains">شكاواي</string>
+    <string name="terms_of_service">شروط الخدمة</string>
+    <string name="about_us">معلومات عنا</string>
+    <string name="next">التالي</string>
+    <string name="complaint_or_suggestion">شكوى أو اقتراح</string>
+    <string name="typing_somethings">جارٍ الكتابة…</string>
+    <string name="contact">اتصال</string>
+    <string name="enter_your_mobile_number_or_email">أدخل رقم هاتفك أو بريدك الإلكتروني</string>
+    <string name="attach_your_image_or_screenshot">أرفق صورتك أو لقطة الشاشة</string>
+    <string name="browse">استعراض</string>
+    <string name="complain_send_successfully">تم إرسال الشكوى بنجاح</string>
+    <string name="please_enter_message">يرجى إدخال الرسالة</string>
+    <string name="please_enter_contact">يرجى إدخال جهة الاتصال</string>
+    <string name="my_tickets">تذاكري</string>
+    <string name="open">فتح</string>
+    <string name="ticket_details">تفاصيل التذكرة</string>
+    <string name="status">الحالة</string>
+    <string name="close">إغلاق</string>
+    <string name="_1_self_introduction">1. التعريف بالنفس</string>
+    <string name="name">الاسم</string>
+    <string name="enter_name">أدخل الاسم</string>
+    <string name="mobile_number">رقم الهاتف</string>
+    <string name="enter_mobile_number">أدخل رقم الهاتف</string>
+    <string name="Bio">نبذة</string>
+    <string name="_2_agency_code">2. رمز الوكالة</string>
+    <string name="if_you_have">(إن وجد)</string>
+    <string name="_3_upload_photos">3. رفع الصور</string>
+    <string name="personal_photo">صورة شخصية</string>
+    <string name="_4_bank_details">4. تفاصيل البنك</string>
+    <string name="enter_your_bank_details">أدخل تفاصيل حسابك البنكي</string>
+    <string name="admission_car">سيارة القبول</string>
+    <string name="enter_bio_text">أدخل النبذة</string>
+    <string name="select_personal_photo">اختر صورة شخصية</string>
+    <string name="image_file_not_found">ملف الصورة غير موجود</string>
+    <string name="host_request_send">تم إرسال طلب المضيف</string>
+    <string name="try_after_some_time">يرجى المحاولة لاحقًا</string>
+    <string name="avatar_frame">إطار الصورة الرمزية</string>
+    <string name="super_star">سوبر ستار</string>
+    <string name="you_don_t_have_required_diamonds">لا تملك الألماس المطلوب!</string>
+    <string name="diamond_star">نجمة الألماس</string>
+    <string name="stepping_in">الدخول!</string>
+    <string name="free_diamonds">ألماس مجاني</string>
+    <string name="method_1">الطريقة 1: </string>
+    <string name="method_2">الطريقة 2: </string>
+    <string name="your_refer_code">رمز الإحالة الخاص بك:</string>
+    <string name="enter_referral_code_here">أدخل رمز الإحالة هنا</string>
+    <string name="you_have_2_referrals">لديك 2 إحالات</string>
+    <string name="referral_code_copied">تم نسخ رمز الإحالة!</string>
+    <string name="enter_refer_code">أدخل رمز الإحالة</string>
+    <string name="refereed_successfully">تمت الإحالة بنجاح</string>
+    <string name="generic_error">حدث خطأ ما. يرجى المحاولة لاحقًا.</string>
+    <string name="earned_by_user">تم منح المكافأة</string>
+    <string name="invite_desc">"ادعُ أصدقاءك! عند كل سحب أرباح لصديق مدعو، ستحصلان أنت وصديقك على "</string>
+    <string name="vip_plan">خطة كبار الشخصيات</string>
+    <string name="become_vip_and_get_many_privileges">كن من كبار الشخصيات واحصل على العديد من الامتيازات</string>
+    <string name="vip_privileges">امتيازات كبار الشخصيات</string>
+    <string name="get_vip_to_access_all_function">احصل على عضوية كبار الشخصيات للوصول إلى جميع الميزات</string>
+    <string name="vip_package">باقة كبار الشخصيات</string>
+    <string name="get_now">احصل عليها الآن</string>
+    <string name="first_select_the_plan">يرجى اختيار الخطة أولاً.</string>
+    <string name="credit_debit_card">بطاقة ائتمانية/خصم</string>
+    <string name="google_play">Google Play</string>
+    <string name="hot">رائج</string>
+    <string name="your_level">مستواك</string>
+    <string name="no_level_available">لا يوجد مستوى</string>
+    <string name="unknown">غير معروف</string>
+    <string name="income">الدخل</string>
+    <string name="record">سجل</string>
+    <string name="diamonds">ألماس</string>
+    <string name="outcome">الإنفاق</string>
+    <string name="r_coins">R-Coins</string>
+    <string name="confirm">تأكيد</string>
+    <string name="diamond_record">سجل الألماس</string>
+    <string name="spending">الإنفاق</string>
+    <string name="converted_to_diamonds">" تم تحويله إلى ألماسات"</string>
+    <string name="diamond_purchase">شراء ألماس</string>
+    <string name="you_have_called">لقد أجريت مكالمة</string>
+    <string name="watching_ads">مشاهدة الإعلانات</string>
+    <string name="login_bonus">مكافأة تسجيل الدخول</string>
+    <string name="referral_bonus">مكافأة الإحالة</string>
+    <string name="cash_out">سحب نقدي</string>
+    <string name="svga_animation_purchased">تم شراء حركة SVGA</string>
+    <string name="add_in_teenpatti_game">إضافة في لعبة Teenpatti</string>
+    <string name="purchased_avatar_frame">تم شراء إطار الصورة الرمزية</string>
+    <string name="coin_add_by_offline_recharge">إضافة عملات عبر شحن دون اتصال</string>
+    <string name="call_coin_received">عملة المكالمة</string>
+    <string name="lucy_gift_bonus">مكافأة هدية لوسي</string>
+    <string name="add_in_roulette_game">إضافة في لعبة الروليت</string>
+    <string name="add_in_ferry_wheel_game">إضافة في لعبة العجلة الدوارة</string>
+    <string name="convert_in_coin_seller_coin">تحويل إلى عملة بائع العملات</string>
+    <string name="unknown_transaction">معاملة غير معروفة</string>
+    <string name="gift_broadcast_during_livestream_by_you">هدية بُعثت أثناء البث المباشر من قبلك</string>
+    <string name="gift_received">"تم استلام هدية "</string>
+    <string name="gift_send_to">هدية مرسلة إلى</string>
+    <string name="added_by_admin">أضيفت بواسطة المسؤول</string>
+    <string name="reduce_by_admin">خُفضت بواسطة المسؤول</string>
+    <string name="_1">$1</string>
+    <string name="withdrawing_rcoins">سحب RCoins</string>
+    <string name="convert_to_diamond">التحويل إلى ألماس</string>
+    <string name="what_is_coins">ما هي العملات؟</string>
+    <string name="what_is_rcoin">1. عندما تتلقى هدايا مثل لامبورغيني أو قلعة، تكسب فورًا نفس عدد العملات بقيمة الهدية في متجر الهدايا.\n\n2. يمكنك تحويل العملات إلى ألماس ونقدًا.\n\n3. رصيد العملات = المتاح + قيد السحب\n</string>
+    <string name="google_pay" translatable="false">google pay</string>
+    <string name="stripe" translatable="false">stripe</string>
+    <string name="this_is_a_demo_version">هذه نسخة تجريبية</string>
+    <string name="payment_done">تم الدفع</string>
+    <string name="coin_sellers_list">قائمة بائعي العملات</string>
+    <string name="how_much_rcoins_convert_cash">كم من Rcoins تتحول إلى نقد؟</string>
+    <string name="how_much_rcoins_convert_into_diamonds">كم من Rcoins تتحول إلى ألماس؟</string>
+    <string name="setting_error">خطأ في الإعداد</string>
+    <string name="minimum_amount_is">"الحد الأدنى للمبلغ هو "</string>
+    <string name="you_not_have_enough">لا تملك ما يكفي</string>
+    <string name="you_are_not_able_to_cashout_at_your_level">لا يمكنك السحب النقدي على مستواك الحالي</string>
+    <string name="your">"خاصتك "</string>
+    <string name="successfully_converted_into">" تم تحويلها بنجاح إلى "</string>
+    <string name="conversion_failed">فشل التحويل</string>
+    <string name="redeem_your_coins">استبدل عملاتك</string>
+    <string name="enter_coins_to_withdraw">أدخل العملات للسحب</string>
+    <string name="your_redeem_history">سجل الاستبدال الخاص بك </string>
+    <string name="pending">قيد الانتظار</string>
+    <string name="r_coin_convert">تحويل R-Coin</string>
+    <string name="how_much_coins_convert_into_diamonds">كم من العملات تتحول إلى ألماس؟</string>
+    <string name="enter_coins">أدخل العملات</string>
+    <string name="convert_to_diamonds">التحويل إلى ألماس</string>
+    <string name="whatsapp_not_installed">واتساب غير مثبت</string>
+    <string name="invalid_whatsapp_number">رقم واتساب غير صالح</string>
+    <string name="withdrawable_rcoins">"Rcoins القابلة للسحب "</string>
+    <string name="no_payment_method_found">لم يتم العثور على طريقة دفع</string>
+    <string name="insufficient">"غير كافٍ "</string>
+    <string name="please_enter_your_details">يرجى إدخال بياناتك</string>
+    <string name="redeem_request_sent_successfully">تم إرسال طلب الاستبدال بنجاح</string>
+    <string name="enter_your_upi_details">أدخل تفاصيل UPI الخاصة بك</string>
+    <string name="enter_your_paytm_details">أدخل تفاصيل Paytm الخاصة بك</string>
+    <string name="enter_your_bank_account_details">أدخل تفاصيل حسابك البنكي</string>
+    <string name="enter_your_bybit_details">أدخل تفاصيل Bybit الخاصة بك</string>
+    <string name="purchased">تم الشراء</string>
+    <string name="go_live">ابدأ البث</string>
+    <string name="song_hint">انقر لاختيار أغنية.</string>
+    <string name="timer_hint">لإلغاء المؤقت قبل أن يبدأ، انقر هنا.</string>
+    <string name="duration">المدة</string>
+    <string name="mmss">00:00</string>
+    <string name="welcome_to_join_the_live_any_content_related_to_porn_violence_gambling_illegal_dealing_will_be_banned">مرحبًا في البث المباشر. أي محتوى متعلّق بالإباحية أو العنف أو المقامرة أو التعاملات غير القانونية سيتم حظره.</string>
+    <string name="enter_a_room">دخل الغرفة</string>
+    <string name="reacted">تفاعل</string>
+    <string name="browse_file_title">استعراض ملف</string>
+    <string name="please_enter_room_title">يرجى إدخال اسم الغرفة</string>
+    <string name="please_select_room_image">يرجى اختيار صورة الغرفة</string>
+    <string name="you_are_block_from_admin_to_go_live">تم حظرك من قبل المسؤول من بدء البث</string>
+    <string name="start_audio_live">ابدأ بثًا صوتيًا</string>
+    <string name="take_picture">التقاط صورة</string>
+    <string name="recorder_error_in_progress">لإجراء ذلك، يرجى إيقاف التسجيل أولاً.</string>
+    <string name="recorder_error_maxed_out">لقد سجّلت لمدة الحد الأقصى بالفعل.</string>
+    <string name="audio_from_clip">صوت مخصص من مقطع.</string>
+    <string name="recorder_error_no_clips">يرجى تسجيل مقطع أولًا للمتابعة.</string>
+    <string name="message_song_select">لا يمكنك اختيار أغنية بعد بدء التسجيل.</string>
+    <string name="message_song_change">لا يمكنك تغيير الأغنية بعد بدء التسجيل.</string>
+    <string name="you_need_storage_permission">تحتاج إلى إذن التخزين</string>
+    <string name="filter">اختر فلتر</string>
+    <string name="you_cannot_upload_video_above_30_mb">لا يمكنك رفع فيديو أكبر من 30 ميغابايت!!!</string>
+    <string name="choose_sticker">اختر ملصقًا</string>
+    <string name="timer">مؤقت</string>
+    <string name="sticker">ملصق</string>
+    <string name="filters">الفلاتر</string>
+    <string name="preview">معاينة</string>
+    <string name="flip">قلب</string>
+    <string name="speed">السرعة</string>
+    <string name="notification_channel_id">افتراضي</string>
+    <string name="notification_download_title">جارٍ تنزيل الملف…</string>
+    <string name="notification_download_description">يجب ألا يستغرق ذلك سوى بضع ثوانٍ.</string>
+    <string name="announcement_welcome_to_room">إعلان: مرحبًا بك في الغرفة</string>
+    <string name="all">الكل</string>
+    <string name="send">" إرسال "</string>
+    <string name="followers">المتابعون</string>
+    <string name="shorts">القصص القصيرة</string>
+    <string name="posts">المنشورات</string>
+    <string name="creator">منشئ</string>
+    <string name="agency">وكالة</string>
+    <string name="coin_seller">بائع عملات</string>
+    <string name="invite">دعوة</string>
+    <string name="live">مباشر</string>
+    <string name="public_text">عام</string>
+    <string name="private_text">خاص</string>
+    <string name="welcome_to_the_party">مرحبًا بك في الحفلة</string>
+    <string name="games">ألعاب</string>
+    <string name="keep">احتفظ</string>
+    <string name="exit_text">خروج</string>
+    <string name="you_not_have_enough_diamonds_to_send_gift">لا تملك ما يكفي من الألماس لإرسال هدية</string>
+    <string name="sent_a_gift">" أرسل هدية"</string>
+    <string name="you_are_blocked_by_host">لقد تم حظرك من قبل المضيف</string>
+    <string name="you_cannot_upload_video_above_30_mb_text">لا يمكنك رفع فيديو أكبر من 30 ميغابايت!!!</string>
+    <string name="select_song">اختر أغنية</string>
+    <string name="select_filter">اختر فلتر</string>
+    <string name="upload_relite">رفع ريل</string>
+    <string name="add_caption_with_hashtags_and_mentions">أضف تسمية توضيحية مع الوسوم و@المنشن</string>
+    <string name="location">الموقع</string>
+    <string name="show_to">إظهار لـ</string>
+    <string name="allow_comments">السماح بالتعليقات</string>
+    <string name="upload_post">رفع منشور</string>
+    <string name="who_show_this_post_to">إلى من تريد إظهار هذا المنشور</string>
+    <string name="only_followers">المتابعون فقط</string>
+    <string name="select_image_first">اختر صورة أولًا</string>
+    <string name="error_opening_gallery">خطأ في فتح المعرض</string>
+    <string name="permission_denied_message">تم رفض الإذن....\\n</string>
+    <string name="error_selecting_image">خطأ في اختيار الصورة</string>
+    <string name="location_not_set">الموقع غير محدد</string>
+    <string name="count_clips">%s مقطع</string>
+    <string name="my_followers">متابعيني</string>
+    <string name="add_a_comment">أضف تعليقًا…</string>
+    <string name="send_a_gift_to">أرسل هدية إلى</string>
+    <string name="room_image_updated">تم تحديث صورة الغرفة</string>
+    <string name="sure_you_want_to_stand_up">هل أنت متأكد أنك تريد الوقوف؟</string>
+    <string name="there_s_no_user_to_invite_on_mic">"لا يوجد مستخدم لدعوته للميكروفون. "</string>
+    <string name="remove_seat">إزالة المقعد</string>
+    <string name="kick_out">طرد</string>
+    <string name="unmute_mic">إلغاء كتم الميكروفون</string>
+    <string name="mute_mic">كتم الميكروفون</string>
+    <string name="remove_mic">إزالة الميكروفون</string>
+    <string name="invite_mic">دعوة للميكروفون</string>
+    <string name="take_the_mic">أخذ الميكروفون</string>
+    <string name="give_the_mic">إعطاء الميكروفون</string>
+    <string name="lock_the_mic">قفل الميكروفون</string>
+    <string name="mute_the_mic">كتم الميكروفون</string>
+    <string name="unmute">إلغاء الكتم</string>
+    <string name="unlock">إلغاء القفل</string>
+    <string name="remove">إزالة</string>
+    <string name="your_live_session_end_by_admin_text">تم إنهاء البث المباشر من قبل المسؤول.</string>
+    <string name="end_live_video">إنهاء البث المباشر</string>
+    <string name="don_t_have_user_to_sent_a_gift_wait_for_user">لا يوجد مستخدم لإرسال هدية له، انتظر أحدهم.</string>
+    <string name="select_at_least_one_user">اختر مستخدمًا واحدًا على الأقل</string>
+    <string name="room_settings">إعدادات الغرفة</string>
+    <string name="people">" أشخاص"</string>
+    <string name="copied_to_clipboard">تم النسخ إلى الحافظة</string>
+    <string name="room_name">اسم الغرفة</string>
+    <string name="enter_room_name">أدخل اسم الغرفة</string>
+    <string name="please_enter_room_name">يرجى إدخال اسم الغرفة</string>
+    <string name="seat_mode">وضع المقاعد</string>
+    <string name="_8_seat">8 مقاعد</string>
+    <string name="use">استخدام</string>
+    <string name="_12_seat">12 مقعدًا</string>
+    <string name="_16_seat">16 مقعدًا</string>
+    <string name="seat_update">تحديث المقاعد</string>
+    <string name="room_welcome_message">رسالة ترحيب الغرفة</string>
+    <string name="enter_room_welcome_message">أدخل رسالة الترحيب</string>
+    <string name="please_enter_room_welcome_message">يرجى إدخال رسالة الترحيب</string>
+    <string name="room_passcode">رمز دخول الغرفة</string>
+    <string name="enter_room_passcode">أدخل رمز الدخول</string>
+    <string name="change_background">تغيير الخلفية</string>
+    <string name="live_ended">انتهى البث المباشر</string>
+    <string name="joined_users">المستخدمون المنضمون</string>
+    <string name="live_duration">مدة البث</string>
+    <string name="received_gifts">الهدايا المستلمة</string>
+    <string name="increased_fans">زيادة المعجبين</string>
+    <string name="rcoins">Rcoins</string>
+    <string name="back_to_the_home">العودة إلى الصفحة الرئيسية</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_watch_live">يبدو أنك في غرفة صوتية. يرجى الخروج ومشاهدة البث المباشر.</string>
+    <string name="s_live_has_ended">" انتهى بثه المباشر."</string>
+    <string name="all_is_well_party">حفلة كل شيء على ما يرام</string>
+    <string name="private_room">غرفة خاصة</string>
+    <string name="_123456">123456</string>
+    <string name="enter_valid_passcode">أدخل رمزًا صالحًا</string>
+    <string name="enter_passcode">أدخل رمز الدخول</string>
+    <string name="decline">رفض</string>
+    <string name="audio_request_received_from">"تم استلام طلب صوتي من "</string>
+    <string name="please_choose_another_seat">يرجى اختيار مقعد آخر</string>
+    <string name="this_seat_is_locked_by_host">هذا المقعد مقفل من قبل المضيف</string>
+    <string name="add_location">أضف موقعًا</string>
+    <string name="search_area_or_city">ابحث عن منطقة أو مدينة</string>
+    <string name="manage_audio_volume">إدارة مستوى الصوت</string>
+    <string name="video_volume_label">صوت الفيديو</string>
+    <string name="song_volume_label">صوت الأغنية</string>
+    <string name="failed_to_delete">فشل الحذف</string>
+    <string name="error_try_again">حاول مرة أخرى</string>
+    <string name="solved">تم الحل</string>
+    <string name="relites">ريل</string>
+    <string name="error_loading_plans">خطأ في تحميل الخطط</string>
+    <string name="billing_not_ready">الفوترة غير جاهزة</string>
+    <string name="purchase_error">خطأ في الشراء</string>
+    <string name="payment_init_failed">فشل تهيئة الدفع</string>
+    <string name="purchase_canceled">تم إلغاء الشراء</string>
+    <string name="purchase_success">تم الشراء بنجاح</string>
+    <string name="purchase_failed">فشل الشراء</string>
+    <string name="please_select_a_gift">يرجى اختيار هدية</string>
+    <string name="please_select_at_least_one_user">يرجى اختيار مستخدم واحد على الأقل</string>
+    <string name="no_user_found">لم يتم العثور على مستخدم!</string>
+    <string name="notification_channel_name">افتراضي</string>
+    <string name="audio_conversion_failed">فشل تحويل الصوت</string>
+    <string name="no_message_available">لا توجد رسائل</string>
+    <string name="no_date">لا يوجد تاريخ</string>
+    <string name="invalid_user_id">معرّف مستخدم غير صالح</string>
+    <string name="user_has_been_blocked">تم حظر المستخدم</string>
+    <string name="user_data_is_not_available">بيانات المستخدم غير متاحة</string>
+    <string name="user_data_not_loaded">لم يتم تحميل بيانات المستخدم</string>
+    <string name="cannot_load_video_preview">لا يمكن تحميل معاينة الفيديو.</string>
+    <string name="failed_to_process_video">فشل في معالجة الفيديو.</string>
+    <string name="are_you_sure_you_want_to_delete_your_room">هل أنت متأكد أنك تريد حذف غرفتك؟</string>
+    <string name="your_room_deleted_successfully">تم حذف غرفتك بنجاح.</string>
+    <string name="you_are_not_able_to_post_at_your_level">لا يمكنك النشر على مستواك الحالي</string>
+    <string name="room_passcode_changed">تم تغيير رمز دخول الغرفة.</string>
+    <string name="using">باستخدام</string>
+    <string name="failed_to_logout_please_try_again">فشل تسجيل الخروج. يرجى المحاولة مرة أخرى.</string>
+    <string name="link_not_available">الرابط غير متاح.</string>
+    <string name="we_will_take_immediate_action_thank_you">سنتخذ إجراءً فوريًا. شكرًا لك.</string>
+    <string name="picture_capture_timeout_please_try_again">انتهت مهلة التقاط الصورة. يرجى المحاولة مرة أخرى.</string>
+    <string name="error_loading_image">خطأ في تحميل الصورة</string>
+    <string name="no_image_selected">لم يتم اختيار صورة</string>
+    <string name="error_processing_video">خطأ في معالجة الفيديو</string>
+    <string name="failed_to_capture_image">فشل التقاط الصورة.</string>
+    <string name="failed_to_save_image">فشل حفظ الصورة.</string>
+    <string name="you_cant_unmute_your_self">لا يمكنك إلغاء كتم نفسك</string>
+    <string name="audio_file_missing">ملف الصوت مفقود!</string>
+    <string name="video_file_missing">ملف الفيديو مفقود!</string>
+    <string name="unexpected_error">"خطأ غير متوقع: "</string>
+    <string name="final_merge_failed">فشل الدمج النهائي.</string>
+    <string name="video_merge_failed">فشل دمج الفيديو.</string>
+    <string name="unblocked_successfully">تم إلغاء الحظر بنجاح.</string>
+    <string name="unable_to_share_at_this_moment">غير قادر على المشاركة حاليًا</string>
+    <string name="unexpected_error_occurred_please_try_again">حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى.</string>
+    <string name="unknown_error">خطأ غير معروف</string>
+    <string name="transaction_failed">فشلت المعاملة</string>
+    <string name="delete_failed">"فشل الحذف: "</string>
+    <string name="invalid_post">منشور غير صالح</string>
+    <string name="report_successful">تم الإبلاغ بنجاح</string>
+    <string name="failed_to_upload_image">فشل رفع الصورة.</string>
+    <string name="failed_to_upload_image_please_try_again">فشل رفع الصورة. يرجى المحاولة مرة أخرى.</string>
+    <string name="failed_to_load_data_please_try_again">فشل تحميل البيانات. يرجى المحاولة مرة أخرى.</string>
+    <string name="comment_text_cannot_be_empty">لا يمكن أن يكون نص التعليق فارغًا.</string>
+    <string name="failed_to_submit_comment_please_try_again">فشل إرسال التعليق. يرجى المحاولة مرة أخرى.</string>
+    <string name="invalid_video">فيديو غير صالح</string>
+    <string name="failed_to_delete_video">فشل حذف الفيديو.</string>
+    <string name="all_fields_required">جميع الحقول مطلوبة</string>
+    <string name="purchase_failed_please_try_again">فشل الشراء. يرجى المحاولة مرة أخرى.</string>
+    <string name="failed_to_send_request">فشل إرسال الطلب</string>
+    <string name="failed_to_start_live_stream">فشل بدء البث المباشر</string>
+    <string name="live_user_data_is_missing">بيانات مستخدم البث مفقودة</string>
+    <string name="failed_to_delete_room">فشل حذف الغرفة</string>
+    <string name="update_failed">فشل التحديث</string>
+    <string name="private_room_passcode">رمز دخول الغرفة الخاصة</string>
+    <string name="here_s_the_private_passcode_for_the_room">"إليك رمز الدخول الخاص بالغرفة: "</string>
+    <string name="share_via">المشاركة عبر</string>
+    <string name="passcode_empty_error">يرجى إدخال رمز دخول صالح</string>
+    <string name="failed_to_update_passcode">فشل تحديث رمز الدخول</string>
+    <string name="enter_new_room_passcode">أدخل رمز دخول جديد</string>
+    <string name="change_room_passcode">تغيير رمز دخول الغرفة</string>
+    <string name="banned_list">قائمة المحظورين</string>
+    <string name="my_following">أتابع</string>
+    <string name="please_enter_valid_input">يرجى إدخال قيمة صالحة</string>
+    <string name="join_requests">طلبات الانضمام</string>
+    <string name="sorry_this_call_can_t_be_completed_right_now">عذرًا، لا يمكن إتمام هذه المكالمة الآن.</string>
+    <string name="watch_video_now">شاهد الفيديو الآن</string>
+    <string name="you_exceed_your_ad_limit">لقد تجاوزت حد الإعلانات الخاص بك.</string>
+    <string name="search_people">ابحث عن أشخاص..</string>
+    <string name="public_room">غرفة عامة</string>
+    <string name="my_profile">ملفي الشخصي</string>
+    <string name="edit_self">تعديل الذات</string>
+    <string name="blocked_user">المستخدمون المحظورون</string>
+    <string name="my_wallet">محفظتي</string>
+    <string name="select_age">اختر العمر</string>
+    <string name="save_changes">حفظ التغييرات</string>
+    <string name="enter_your_bio">أدخل نبذتك</string>
+    <string name="enter_bio_here">أدخل نبذة هنا..</string>
+    <string name="hey_there">مرحبًا!</string>
+    <string name="follow_back">متابعة متبادلة</string>
+    <string name="purchase">شراء</string>
+    <string name="select">اختيار</string>
+    <string name="selected">تم الاختيار</string>
+    <string name="method_2_desc">ادعُ أصدقاءك للانضمام باستخدام رمز إحالتك. اربح مكافآت كلما استُخدم رمزك!</string>
+    <string name="method_1_desc">شاهد مقطع إعلان قصير واربح ألماسًا مجانيًا فورًا! فقط اضغط على الزر أدناه لبدء المشاهدة واستلام مكافأتك.</string>
+    <string name="pay_now">ادفع الآن</string>
+    <string name="select_room_image">اختر صورة الغرفة</string>
+    <string name="room_description">وصف الغرفة</string>
+    <string name="room_type">نوع الغرفة</string>
+    <string name="upload_image_"><u>رفع صورة</u></string>
+    <string name="enter_your_room_name">أدخل اسم غرفتك</string>
+    <string name="enter_your_room_passcode">أدخل رمز دخول غرفتك</string>
+    <string name="enter_your_room_description">أدخل وصف غرفتك</string>
+    <string name="enter_note_here">أدخل ملاحظة هنا..</string>
+    <string name="add_caption">أضف تسمية</string>
+    <string name="attachments">مرفقات</string>
+    <string name="enter_details_here">أدخل التفاصيل هنا…</string>
+    <string name="my_income">دخلي</string>
+    <string name="best_plan">أفضل خطة</string>
+    <string name="best_recharge_plan">أفضل خطة شحن</string>
+    <string name="purchase_recharge_plan">شراء خطة شحن</string>
+    <string name="available_my_r_coins">R-Coins المتاحة</string>
+    <string name="payment">الدفع</string>
+    <string name="select_payment_option">اختر خيار الدفع :</string>
+    <string name="select_record_duration">اختر مدة التسجيل :</string>
+    <string name="start_date_">تاريخ البدء: </string>
+    <string name="end_date_">تاريخ الانتهاء: </string>
+    <string name="demo_purpose">في هذا التطبيق،\nكافة البيانات لأغراض العرض فقط.</string>
+    <string name="no_data_text">لا يوجد شيء للعرض</string>
+    <string name="vip">كبار الشخصيات</string>
+    <string name="payment_option">خيار الدفع:</string>
+    <string name="withdrawable_r_coins">R-Coins القابلة للسحب :</string>
+    <string name="please_select_a_payment_option">يرجى اختيار طريقة دفع</string>
+    <string name="select_option">اختر خيارًا :</string>
+    <string name="bd">BD</string>
+    <string name="version">"الإصدار : "</string>
+    <string name="upload">رفع</string>
+    <string name="no_one_joined">لم ينضم أحد</string>
+    <string name="blocked_list">قائمة المحظورين</string>
+    <string name="room_close">إغلاق الغرفة</string>
+    <string name="common_bio">أستكشف الروابط، لا مجرد الملفات الشخصية.</string>
+    <string name="reactions">التفاعلات</string>
+    <string name="delete_confirmation_text">هل أنت متأكد أنك تريد الحذف؟ لا يمكن التراجع عن هذا الإجراء</string>
+    <string name="confirm_deletion">تأكيد الحذف</string>
+    <string name="confirm_stand_up">تأكيد الوقوف</string>
+    <string name="delete_post_confirmation">هل أنت متأكد أنك تريد حذف هذا المنشور؟</string>
+    <string name="delete_relite_confirmation">هل أنت متأكد أنك تريد حذف هذا الريل؟</string>
+    <string name="delete">حذف</string>
+    <string name="demo_agency">وكالة تجريبية</string>
+    <string name="exposure">الظهور</string>
+    <string name="smoothness">النعومة</string>
+    <string name="redness">الاحمرار</string>
+    <string name="sharpness">الحدة</string>
+    <string name="ar_effects">تأثيرات الواقع المعزز</string>
+    <string name="calling">جارٍ الاتصال</string>
+    <string name="no_comments_yet_be_the_first_to_say_something">لا توجد تعليقات بعد. كن أول من يقول شيئًا!</string>
+    <string name="no_likes_yet_tap_to_spread_some_love">لا إعجابات بعد. اضغط ❤️ لنشر بعض الحب!</string>
+    <string name="finding_reasons_to_smile_everywhere_i_go_and_sharing_that_happiness_with_the_world">أبحث عن أسباب للابتسام في كل مكان وأشارك تلك السعادة مع العالم.</string>
+    <string name="okay">حسنًا</string>
+    <string name="please_wait_for_a_spot_to_open">يرجى الانتظار حتى يتوفر مقعد</string>
+    <string name="all_seats_are_taken">جميع المقاعد محجوزة</string>
+    <string name="alex_sierra"><![CDATA[Alex & Sierra]]></string>
+    <string name="request_sent">تم إرسال الطلب</string>
+    <string name="join">انضمام</string>
+    <string name="video_call_gift">هدية مكالمة فيديو</string>
+    <string name="chat_gift">هدية محادثة</string>
+    <string name="uploading_">جارٍ الرفع...</string>
+    <string name="please_try_after_some_time">يرجى المحاولة لاحقًا</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_make_call">يبدو أنك في غرفة صوتية. يرجى الخروج من الغرفة وإجراء المكالمة.</string>
+    <string name="notification_permission_denied">تم رفض إذن الإشعارات</string>
+    <string name="you_have_to_enable_it_from_settings">يجب تمكينه من الإعدادات.</string>
+    <string name="open_settings">فتح الإعدادات</string>
+    <string name="cannot_unmute_user">لا يمكن إلغاء كتم المستخدم</string>
+    <string name="this_user_has_muted_themselves_only_they_can_unmute">هذا المستخدم كتم نفسه. وحده يمكنه إلغاء الكتم.</string>
+    <string name="you_are_not_able_to_live_at_your_level">لا يمكنك البث المباشر على مستواك</string>
+    <string name="conversion_successful">تم التحويل بنجاح</string>
+    <string name="screen_overlay_permission_needed">مطلوب إذن التراكب على الشاشة</string>
+    <string name="enable_display_over_other_apps_from_system_settings">فعّل "الظهور فوق التطبيقات الأخرى" من إعدادات النظام.</string>
+    <string name="you_are_vip_now">أنت الآن مستخدم مميّز</string>
+    <string name="restart_app">أعد تشغيل التطبيق</string>
+    <string name="this_seat_is_reserved">هذا المقعد محجوز</string>
+    <string name="do_you_really_want_to_log_out">هل تريد حقًا تسجيل الخروج؟ ستحتاج إلى تسجيل الدخول مجددًا للوصول إلى حسابك</string>
+    <string name="notification_permission_granted">تم منح إذن الإشعارات</string>
+    <string name="verified">موثق</string>
+    <string name="no_one_has_requested">لم يطلب أحد</string>
+    <string name="user_data_not_found_please_login_again">بيانات المستخدم غير موجودة. يرجى تسجيل الدخول مرة أخرى.</string>
+    <string name="update_failed_">"فشل التحديث: "</string>
+
+    <string name="share_message_template" translatable="false">https://play.google.com/store/apps/details?id=</string>
+    <string name="dummy_name">ميا مالكوفا</string>
+    <string name="miya">ميا</string>
+    <string name="riya">ريا</string>
+    <string name="luliya">لوليا</string>
+    <string name="rehan">ريحان</string>
+    <string name="susmita">سوسميتا</string>
+    <string name="rahi">راهي</string>
+    <string name="nirma">نيرما</string>
+    <string name="jashvi">جاشفي</string>
+    <string name="hely">هيلي</string>
+    <string name="shruti">شروتي</string>
+    <string name="dhruvi">دروفي</string>
+    <string name="mamta">مامتا</string>
+    <string name="zeel">زيل</string>
+    <string name="audio_live">بث صوتي</string>
+    <string name="post">منشور</string>
+    <string name="demo_host_center">مركز المضيف التجريبي</string>
+    <string name="agency_center">مركز الوكالة</string>
+    <string name="select_language">اختر اللغة</string>
+    <string name="english">الإنجليزية</string>
+    <string name="explore">استكشف</string>
+    <string name="party">حفلة</string>
+    <string name="my_features">ميزاتي</string>
+    <string name="host_vip_privilege">امتيازات المضيف وكبار الشخصيات</string>
+    <string name="restart_the_app">أعد تشغيل التطبيق!</string>
+    <string name="restart">إعادة التشغيل</string>
+    <string name="version_">الإصدار</string>
+    <string name="top_users">أعلى المستخدمين</string>
+    <string name="top_creators">أعلى المبدعين</string>
+    <string name="top_agency">أفضل وكالة</string>
+    <string name="daily">يومي</string>
+    <string name="weekly">أسبوعي</string>
+    <string name="monthly">شهري</string>
+    <string name="get_premium_crown">احصل على التاج المميز</string>
+    <string name="get_extra_coins">احصل على عملات إضافية</string>
+    <string name="get_all_level_access">احصل على وصول لجميع المستويات</string>
+    <string name="invalid_validity_period">فترة الصلاحية غير صالحة</string>
+    <string name="user_id">معرف المستخدم</string>
+    <string name="you_ve_spent_s">لقد أنفقت %s</string>
+    <string name="you_have">لديك</string>
+    <string name="referrals">إحالات</string>
+    <string name="id_">معرف: </string>
+
+    <string name="feed">التغذية</string>
+    <string name="video">فيديو</string>
+    <string name="sent_a_gift_to">" أرسل هدية إلى "</string>
+    <string name="announcement">"الإعلان: "</string>
+    <string name="please_enter_valid_passcode">الرجاء إدخال رمز مرور صالح</string>
+    <string name="passcode_length_invalid">طول رمز المرور غير صالح</string>
+    <string name="_0">0</string>
+    <string name="error_missing_room_data">بيانات الغرفة مفقودة</string>
+    <string name="error_invalid_room_data">بيانات الغرفة غير صالحة</string>
+    <string name="dummy_noti_desc">جيمس بوند أرسل هدية إلى دايزي شارما</string>
+    <string name="dummy_id">ID : 564321</string>
+    <string name="dummy_time">00:00</string>
+    <string name="cherry">كريز</string>
+    <string name="level_1">المستوى 1</string>
+    <string name="hello">مرحباً</string>
+    <string name="dummy_comment">من أصبح مليونيراً؟</string>
+    <string name="country">البلد</string>
+    <string name="title1">عنوان 1</string>
+    <string name="incoming_video_call">مكالمة فيديو واردة</string>
+    <string name="upload_completed">اكتمل الرفع!</string>
+    <string name="image_file_does_not_exist">ملف الصورة غير موجود.</string>
+    <string name="user_session_not_found">لم يتم العثور على جلسة المستخدم</string>
+    <string name="add">إضافة</string>
+    <string name="leave">مغادرة</string>
+    <string name="requested">تم الطلب</string>
+    <string name="call_request_rejected">تم رفض طلب المكالمة</string>
+    <string name="call_setup_failed">"فشل إعداد المكالمة: "</string>
+    <string name="invalid_chat_user">مستخدم دردشة غير صالح</string>
+    <string name="you">أنت</string>
+    <string name="sent_a_gift_">أرسل هدية 🎁</string>
+    <string name="invalid_url">رابط غير صالح</string>
+    <string name="here_is_my_referral_code">"إليك رمز الإحالة الخاص بي "</string>
+    <string name="let_me_recommend_you_this_application">\nدعني أوصي لك بهذا التطبيق\n\n</string>
+    <string name="unknown_user">مستخدم غير معروف</string>
+    <string name="you_will_receive">"ستحصل على "</string>
+    <string name="_diamonds">" ألماسات"</string>
+    <string name="camera_not_ready">الكاميرا غير جاهزة</string>
+    <string name="ar_is_starting_please_try_again">يتم بدء الواقع المعزز… يرجى المحاولة مرة أخرى.</string>
+    <string name="recording_started">تم بدء التسجيل.</string>
+    <string name="camera_is_not_available">الكاميرا غير متاحة.</string>
+    <string name="permission_rationale_upload">لاختيار فيديو من المعرض ورفعه، يلزم إذن الوصول إلى التخزين.</string>
+    <string name="unable_to_choose_video_for_upload">تعذر اختيار فيديو للرفع.</string>
+    <string name="sticker_item_is_missing">عنصر الملصق مفقود.</string>
+    <string name="audio_file_is_missing">ملف الصوت مفقود.</string>
+    <string name="could_not_load_audio">تعذر تحميل الصوت.</string>
+    <string name="selected_video_uri_is_missing">رابط الفيديو المحدد (URI) مفقود.</string>
+    <string name="failed_to_prepare_video_for_upload">فشل في تحضير الفيديو للرفع.</string>
+    <string name="error_copying_file">خطأ أثناء نسخ الملف.</string>
+    <string name="failed_to_create_directory">فشل في إنشاء الدليل.</string>
+    <string name="upload_failed_">"فشل الرفع: "</string>
+    <string name="uploading">جارٍ الرفع...</string>
+    <string name="public_">عام</string>
+    <string name="unknown_title">عنوان غير معروف</string>
+    <string name="unknown_singer">مغني غير معروف</string>
+    <string name="invalid_host_data">بيانات مضيف غير صالحة</string>
+    <string name="type_something">اكتب شيئًا ما..</string>
+
+
+    <string-array name="fake_times">
+        <item>الآن</item>
+        <item>منذ لحظة</item>
+        <item>منذ 5 دقائق</item>
+        <item>منذ حوالي ساعة</item>
+        <item>منذ ساعة</item>
+        <item>في وقت سابق اليوم</item>
+        <item>اليوم</item>
+        <item>أمس</item>
+        <item>منذ يومين</item>
+        <item>منذ 3 أيام</item>
+        <item>الأسبوع الماضي</item>
+        <item>منذ بضعة أيام</item>
+        <item>منذ أسبوعين</item>
+        <item>الشهر الماضي</item>
+        <item>منذ بعض الوقت</item>
+        <item>منذ فترة</item>
+        <item>منذ وقت طويل</item>
+    </string-array>
+
+    <string-array name="fake_chat_sender">
+        <item>مرحبًا! كيف تسير الأمور؟</item>
+        <item>أفكر في مشاهدة فيلم الليلة.</item>
+        <item>ما رأيك في آخر الأخبار؟</item>
+        <item>أعمل على مشروع جديد في العمل.</item>
+        <item>هل تود أن نتناول قهوة لاحقًا؟</item>
+        <item>انتهيت للتو من الجري، أشعر بحال رائع!</item>
+        <item>هل لديك ترشيحات كتب؟</item>
+        <item>كيف كان عطلة نهاية الأسبوع؟</item>
+        <item>أفكر في أخذ إجازة الشهر القادم.</item>
+        <item>هل جربت المطعم الجديد في وسط المدينة؟</item>
+        <item>بماذا تقوم اليوم؟</item>
+        <item>انتهيت من كتاب رائع، لا أطيق الانتظار لأخبرك عنه.</item>
+        <item>هل لديك خطط للمساء؟</item>
+        <item>أفكر في تعلم لغة جديدة.</item>
+        <item>هل شاهدت الحلقة الأخيرة من المسلسل؟</item>
+        <item>هل أعجبك الألبوم الجديد الذي صدر؟</item>
+        <item>أصبحت مهتمًا بالبودكاست مؤخرًا.</item>
+        <item>ما رأيك في الأداة الجديدة؟</item>
+        <item>أخطط لبدء مدونة.</item>
+        <item>ما هي هوايتك المفضلة؟</item>
+        <item>كيف تحافظ على تحفيزك؟</item>
+        <item>أي نصائح للإنتاجية؟</item>
+        <item>ماذا تفعل للاسترخاء؟</item>
+        <item>كيف تتعامل مع التوتر؟</item>
+        <item>ما الذي يلهمك؟</item>
+    </string-array>
+
+    <string-array name="fake_chat_receiver">
+        <item>أنا بخير، ماذا عنك؟</item>
+        <item>يبدو ممتعًا! أي فيلم؟</item>
+        <item>لست متأكدًا، لم أتابع الأخبار كثيرًا.</item>
+        <item>حقًا؟ عن ماذا يدور المشروع؟</item>
+        <item>بالتأكيد، يسعدني ذلك!</item>
+        <item>رائع، أحسنت! أحتاج للعودة إلى التمرين.</item>
+        <item>قرأت مؤخرًا إثارة رائعة.</item>
+        <item>كان هادئًا، لم أفعل الكثير.</item>
+        <item>هذا رائع! إلى أين تخطط للذهاب؟</item>
+        <item>لا بعد. هل هو جيد؟</item>
+        <item>أعمل من المنزل، وأنت؟</item>
+        <item>يبدو مثيرًا للاهتمام، أخبرني المزيد!</item>
+        <item>ليس حقًا، فقط أستريح.</item>
+        <item>جميل! أي لغة تهتم بها؟</item>
+        <item>نعم، كان مذهلًا! لا أطيق انتظار القادم.</item>
+        <item>لم أستمع بعد، هل هناك مقاطع جيدة؟</item>
+        <item>وأنا كذلك، كانت مفيدة جدًا.</item>
+        <item>أفكر في شراء واحدة أيضًا. ما المزايا التي أعجبتك؟</item>
+        <item>هذا مثير! عمّ ستكتب؟</item>
+        <item>أستمتع بالرسم والقراءة.</item>
+        <item>أضع أهدافًا صغيرة لأستمر.</item>
+        <item>أجد أن قوائم المهام مفيدة.</item>
+        <item>أشاهد فيلمًا أو أقرأ كتابًا.</item>
+        <item>أحاول التأمل أو الخروج للمشي.</item>
+        <item>الطبيعة والفن أكبر مصادر إلهامي.</item>
+    </string-array>
+
+    <string-array name="lightening_contrast_options">
+        <item>منخفض</item>
+        <item>عادي</item>
+        <item>مرتفع</item>
+    </string-array>
+
+    <string-array name="fake_messages">
+        <item>مرحباً! 👋</item>
+        <item>أعجبني ملفك الشخصي!</item>
+        <item>أنا جديد هنا—قل مرحباً!</item>
+        <item>هل ترغب في دردشة سريعة؟</item>
+        <item>أهلاً! 😊</item>
+        <item>كيف يسير يومك؟</item>
+        <item>تبدو شخصاً مثيراً للاهتمام 👀</item>
+        <item>ما الذي جاء بك إلى هنا؟</item>
+        <item>تشرفت بمعرفتك! 🙌</item>
+        <item>مرحباً أيها الغريب 😄</item>
+        <item>هل أنت من محبي القهوة أم الشاي؟ ☕🍵</item>
+        <item>هذا التطبيق أصبح أفضل 😉</item>
+        <item>إذن… ما قصتك؟</item>
+        <item>هاي هاي! ✨</item>
+        <item>أتطلع للدردشة معك!</item>
+        <item>لديك طاقة إيجابية 🌟</item>
+        <item>مرحباً! هل تريد التواصل؟</item>
+        <item>سعيد أننا تطابقنا 😍</item>
+        <item>مرحباً، كيف تعاملك الحياة؟</item>
+        <item>ابتسامة كبيرة لك 😁</item>
+        <item>لقد ظهرت للتو على شاشتي 👌</item>
+        <item>هل هو أنا، أم أننا أصبحنا أصدقاء للتو؟ 😂</item>
+        <item>كنت آمل أن نتطابق 💫</item>
+        <item>تبدو كشخص ممتع للتحدث معه 😏</item>
+        <item>ها أنا ذا! ما عذرك؟ 😜</item>
+        <item>تخيل ماذا؟ أنت أول رسالة لي اليوم 📩</item>
+        <item>هل تؤمن بالصدف أم بالقدر؟ ✨</item>
+        <item>أعتقد أنك مدين لي بتحية 😇</item>
+        <item>لن أكذب، ملفك الشخصي لفت انتباهي 🔥</item>
+        <item>حسناً، ابتسامتك معدية 😍</item>
+    </string-array>
+
+</resources>

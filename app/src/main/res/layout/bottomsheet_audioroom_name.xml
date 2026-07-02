@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_sheet_top_corner_radius"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/bg_bottom_sheet_top_corner_radius">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/airbnbcereal_w_bd"
+                android:textSize="18sp"
+                android:text="@string/room_name"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/btnClose"
+                android:src="@drawable/ic_close"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_20"
+            android:layout_marginTop="12dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="10dp"
+                android:focusable="true"
+                android:background="@drawable/bg_12dp_stockwhite15"
+                android:fontFamily="@font/airbnbcereal_w_lt"
+                android:gravity="start|top"
+                android:minHeight="@dimen/_100sdp"
+                android:hint="@string/enter_room_name"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_50" />
+
+            <TextView
+                android:id="@+id/tvSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/gradient_bg_radius_50"
+                android:fontFamily="@font/airbnbcereal_w_bd"
+                android:gravity="center"
+                android:layout_marginHorizontal="15dp"
+                android:paddingVertical="15sp"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

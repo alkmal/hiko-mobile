@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">Uygulama adınızı girin</string>
+
+
+    <string name="no_internet_connection">İnternet Bağlantısı Yok</string>
+    <string name="back_online">Tekrar Çevrimiçi</string>
+    <string name="we_are_under_maintenance_text">Bakımdayız</string>
+    <string name="dismiss">Azletmek</string>
+    <string name="you_are_blocked_by_admin_text">Yönetici tarafından engellendiniz</string>
+    <string name="cancel">İptal etmek</string>
+    <string name="you_are_logged_in_other_devices">Diğer cihazlarda oturum açtınız</string>
+    <string name="log_out">Oturumu Kapat</string>
+    <string name="policy">Kaydolduğunuzda, şunları kabul etmiş olursunuz:</string>
+    <string name="terms_amp_condition">Şartlar ve Koşullar</string>
+    <string name="and">Ve</string>
+    <string name="privacy_policy">Gizlilik Politikası</string>
+    <string name="please_wait">Lütfen bekleyin</string>
+    <string name="your_name">Adınız</string>
+    <string name="male">Erkek</string>
+    <string name="female">Dişi</string>
+    <string name="select_your_age">Yaşınızı seçin</string>
+    <string name="edit_profile">Profili Düzenle</string>
+    <string name="submit">Göndermek</string>
+    <string name="enter_your_name">Adınızı girin</string>
+    <string name="enter_username_first">Önce Kullanıcı Adınızı Girin</string>
+    <string name="select_your_gender">Cinsiyetinizi seçin</string>
+    <string name="minimum_age_must_be_18_years">Minimum yaş 18 olmalıdır.</string>
+    <string name="connecting">Bağlanıyor…</string>
+    <string name="privacy_policy_text">Gizlilik Politikası</string>
+    <string name="accept_privacy_policy">18 yaşından büyüğüm ve Gizlilik Politikasını okudum.</string>
+    <string name="deny">Reddetmek</string>
+    <string name="accept">Kabul etmek</string>
+    <string name="please_accept_privacy_policy">Devam etmek için lütfen Gizlilik Politikasını okuduğunuzu onaylayın.</string>
+    <string name="exit_app_confirmation">Uygulamadan çıkmak istediğinize emin misiniz?</string>
+    <string name="exit_this_app">Bu Uygulamadan Çık</string>
+    <string name="fans">Hayranlar</string>
+    <string name="my_diamonds">Elmaslarım</string>
+    <string name="demo_host_center_text">Demo Host Merkezi</string>
+    <string name="demo_agency_center">Demo Ajans Merkezi</string>
+    <string name="host_request">Ev Sahibi Talebi</string>
+    <string name="offline_recharge">Çevrimdışı Şarj</string>
+    <string name="my_posts">Yazılarım</string>
+    <string name="my_relites">Yakınlarım</string>
+    <string name="store">Mağaza</string>
+    <string name="free_coins">Ücretsiz Jetonlar</string>
+    <string name="become_vip">VIP Olun</string>
+    <string name="user_level">Kullanıcı Seviyesi</string>
+    <string name="copied_successfully">Başarıyla Kopyalandı</string>
+    <string name="id">İD:</string>
+    <string name="agency_center_text">Acente Merkezi</string>
+    <string name="host_center">Ev Sahibi Merkezi</string>
+    <string name="ok">TAMAM</string>
+    <string name="history">Tarih</string>
+    <string name="recharge">Şarj et</string>
+    <string name="my_diamond_balance">Elmas Madeni Param</string>
+    <string name="enter_user_id">Kullanıcı Kimliğini Girin</string>
+    <string name="enter_diamonds">Elmaslara Girin</string>
+    <string name="note">Not</string>
+    <string name="top_up">Tamamla</string>
+    <string name="user_not_found">Kullanıcı Bulunamadı</string>
+    <string name="please_verify_user_id">lütfen kullanıcı kimliğini doğrulayın</string>
+    <string name="enter_coin_value">Madeni Para Değerini Girin</string>
+    <string name="invalid_coin_value">Geçersiz Madeni Para Değeri</string>
+    <string name="insufficient_coins">Yetersiz para</string>
+    <string name="send_successfully">Başarıyla Gönderildi</string>
+    <string name="continue_text">Devam etmek</string>
+    <string name="in_this_apk_all_data_are_only_for_demo_purpose">Bu APK\'da tüm veriler sadece Demo amaçlıdır.</string>
+    <string name="deleted_successfully">Başarıyla Silindi</string>
+    <string name="india">Hindistan</string>
+    <string name="we_will_take_immediately_action_for_this_user_thank_you">Bu kullanıcı için hemen işlem yapacağız. Teşekkürler</string>
+    <string name="likes">Beğeniler</string>
+    <string name="comments">Yorumlar</string>
+    <string name="report_user">Kullanıcıyı Bildir</string>
+    <string name="blocked_successfully">Başarıyla Engellendi</string>
+    <string name="report_this_user">Bu Kullanıcıyı Bildir</string>
+    <string name="please_describe_your_issue_here">Lütfen sorununuzu buraya açıklayın.</string>
+    <string name="unable_to_report">Bildirilemiyor..</string>
+    <string name="something_went_wrong_text">Bir şeyler ters gitti</string>
+    <string name="block_this_user">Bu Kullanıcıyı Engelle</string>
+    <string name="yes">Evet</string>
+    <string name="type_message_first">Önce mesajı yazın</string>
+    <string name="toast_cannot_retrieve_cropped_image">Kırpılan görüntü alınamıyor</string>
+    <string name="toast_unexpected_error">Beklenmeyen Hata</string>
+    <string name="call_ended">Çağrı Sonlandı!</string>
+    <string name="ringing">Çınlama</string>
+    <string name="we_will_take_immediately_action_for_this_user_n_thank_you">Bu kullanıcı için hemen işlem yapacağız. Teşekkürler</string>
+    <string name="enter_valid_message">Geçerli Mesaj girin</string>
+    <string name="is_busy_with_someone_else">başkasıyla meşgul.</string>
+    <string name="discard_entire_video">Tüm videoyu sil?</string>
+    <string name="if_you_go_back_now_you_will_lose_all_the_clips_added_to_your_video">Şimdi geri dönerseniz, videonuza eklediğiniz tüm klipleri kaybedeceksiniz</string>
+    <string name="discard_video">Videoyu Sil</string>
+    <string name="incoming_call">Gelen çağrı…</string>
+    <string name="need_permissions">"İzinlere ihtiyaç var"</string>
+    <string name="call_declined">Çağrı Reddedildi</string>
+    <string name="rtc_stats_format">Aşağı Akış Bit Hızı: %.2f kbps%nAşağı Akış Kayıp Oranı: %.2f%% %nYukarı Akış Bit Hızı: %.2f kbps%nYukarı Akış Kayıp Oranı: %.2f%%</string>
+    <string name="unfollow">Takipten çık</string>
+    <string name="follow">Takip etmek</string>
+    <string name="unblock">Engellemeyi kaldır</string>
+    <string name="block">Engellemek</string>
+    <string name="message">Mesaj</string>
+    <string name="message_delete_confirmation">Bu Mesajı silmek istediğinizden emin misiniz?</string>
+    <string name="following">Takip etme</string>
+    <string name="my_fans">Hayranlarım</string>
+    <string name="image">Görüntü</string>
+    <string name="choose_one">birini seç</string>
+    <string name="say_something">Bir şey söylemek…</string>
+    <string name="failed_to_load_videos">Videolar yüklenemedi.</string>
+    <string name="settings">Ayarlar</string>
+    <string name="notification">Bildiri</string>
+    <string name="have_an_issue">Bir Sorununuz mu Var?</string>
+    <string name="my_complains">Şikayetlerim</string>
+    <string name="terms_of_service">Hizmet Şartları</string>
+    <string name="about_us">Hakkımızda</string>
+    <string name="next">Sonraki</string>
+    <string name="complaint_or_suggestion">Şikayet veya Öneri</string>
+    <string name="typing_somethings">Bir Şeyler Yazıyorum…</string>
+    <string name="contact">Temas etmek</string>
+    <string name="enter_your_mobile_number_or_email">Cep Telefonu Numaranızı veya E-postanızı Girin</string>
+    <string name="attach_your_image_or_screenshot">Resminizi veya Ekran Görüntünüzü Ekleyin</string>
+    <string name="browse">Göz at</string>
+    <string name="complain_send_successfully">Şikayet Başarıyla Gönderildi</string>
+    <string name="please_enter_message">Lütfen Mesaj Girin</string>
+    <string name="please_enter_contact">Lütfen iletişim bilgilerinizi girin</string>
+    <string name="my_tickets">Biletlerim</string>
+    <string name="open">Açık</string>
+    <string name="ticket_details">Bilet Detayları</string>
+    <string name="status">Durum</string>
+    <string name="close">KAPALI</string>
+    <string name="_1_self_introduction">1. Kendini tanıtma</string>
+    <string name="name">İsim</string>
+    <string name="enter_name">Adınızı Girin</string>
+    <string name="mobile_number">Cep numarası</string>
+    <string name="enter_mobile_number">Cep Telefonu Numaranızı Girin</string>
+    <string name="Bio">Biyografi</string>
+    <string name="_2_agency_code">2. Acente Kodu</string>
+    <string name="if_you_have">(Eğer varsa)</string>
+    <string name="_3_upload_photos">3. Fotoğraf Yükleyin</string>
+    <string name="personal_photo">Kişisel Fotoğraf</string>
+    <string name="_4_bank_details">4. Banka Bilgileri</string>
+    <string name="enter_your_bank_details">Banka bilgilerinizi girin</string>
+    <string name="admission_car">Giriş Arabası</string>
+    <string name="enter_bio_text">Biyografinizi Girin</string>
+    <string name="select_personal_photo">Kişisel Fotoğraf Seçin</string>
+    <string name="image_file_not_found">Görüntü dosyası bulunamadı</string>
+    <string name="host_request_send">Ana Bilgisayar İsteği Gönder</string>
+    <string name="try_after_some_time">Lütfen bir süre sonra deneyin</string>
+    <string name="avatar_frame">Avatar Çerçevesi</string>
+    <string name="super_star">Süper Yıldız</string>
+    <string name="you_don_t_have_required_diamonds">Gerekli Elmas\'a sahip değilsiniz!</string>
+    <string name="diamond_star">Elmas Yıldız</string>
+    <string name="stepping_in">İçeri adım atıyoruz!</string>
+    <string name="free_diamonds">Ücretsiz Elmaslar</string>
+    <string name="method_1">Yöntem 1:</string>
+    <string name="method_2">Yöntem 2:</string>
+    <string name="your_refer_code">Referans Kodunuz:</string>
+    <string name="enter_referral_code_here">Yönlendirme kodunu buraya girin</string>
+    <string name="you_have_2_referrals">2 referansınız var</string>
+    <string name="referral_code_copied">Yönlendirme Kodu Kopyalandı!</string>
+    <string name="enter_refer_code">Referans Kodunu Girin</string>
+    <string name="refereed_successfully">Hakemli Başarıyla</string>
+    <string name="generic_error">Bir sorun oluştu. Lütfen daha sonra tekrar deneyin.</string>
+    <string name="earned_by_user">Ödül Verildi</string>
+    <string name="invite_desc">Arkadaşlarınızı Davet Edin! Davet ettiğiniz her arkadaşınızın ödemesi için hem siz hem de arkadaşınız şunları alacaksınız:</string>
+    <string name="vip_plan">VIP Planı</string>
+    <string name="become_vip_and_get_many_privileges">VIP olun ve birçok Ayrıcalığa sahip olun</string>
+    <string name="vip_privileges">VIP Ayrıcalıkları</string>
+    <string name="get_vip_to_access_all_function">Tüm Fonksiyonlara Erişim İçin VIP Üyeliği Alın</string>
+    <string name="vip_package">VIP Paketi</string>
+    <string name="get_now">Şimdi Alın</string>
+    <string name="first_select_the_plan">Öncelikle planı seçin.</string>
+    <string name="credit_debit_card">Kredi/Banka Kartı</string>
+    <string name="google_play">Google Play</string>
+    <string name="hot">Sıcak</string>
+    <string name="your_level">Seviyeniz</string>
+    <string name="no_level_available">Hiçbir Seviye Mevcut Değil</string>
+    <string name="unknown">Bilinmeyen</string>
+    <string name="income">Gelir</string>
+    <string name="record">Kayıt</string>
+    <string name="diamonds">Elmaslar</string>
+    <string name="outcome">Sonuç</string>
+    <string name="r_coins">R-Madeni Paralar</string>
+    <string name="confirm">Onaylamak</string>
+    <string name="diamond_record">Elmas Rekoru</string>
+    <string name="spending">Harcama</string>
+    <string name="converted_to_diamonds">elmasa dönüştürüldü</string>
+    <string name="diamond_purchase">Elmas satın alma</string>
+    <string name="you_have_called">Sen aradın</string>
+    <string name="watching_ads">Reklamları izlemek</string>
+    <string name="login_bonus">giriş bonusu</string>
+    <string name="referral_bonus">Yönlendirme bonusu</string>
+    <string name="cash_out">Nakit çekme</string>
+    <string name="svga_animation_purchased">SVGA Animasyonu Satın Alındı</string>
+    <string name="add_in_teenpatti_game">Teenpatti Oyununa Ekle</string>
+    <string name="purchased_avatar_frame">Avatar çerçevesi satın alındı</string>
+    <string name="coin_add_by_offline_recharge">Çevrimdışı şarj ile jeton ekleme</string>
+    <string name="call_coin_received">Çağrı Madeni Parası</string>
+    <string name="lucy_gift_bonus">Lucy Hediye Bonusu</string>
+    <string name="add_in_roulette_game">Rulet Oyununa Ekle</string>
+    <string name="add_in_ferry_wheel_game">Ferry Wheel Oyununa Ekle</string>
+    <string name="convert_in_coin_seller_coin">Madeni Para Satıcısı Madeni Parasını Dönüştür</string>
+    <string name="unknown_transaction">Bilinmeyen işlem</string>
+    <string name="gift_broadcast_during_livestream_by_you">Canlı yayın sırasında sizin tarafınızdan Hediye Yayını</string>
+    <string name="gift_received">Hediye alındı</string>
+    <string name="gift_send_to">hediye göndermek</string>
+    <string name="added_by_admin">Yönetici Tarafından Eklendi</string>
+    <string name="reduce_by_admin">Yönetici Tarafından Azalt</string>
+    <string name="_1">1 dolar</string>
+    <string name="withdrawing_rcoins">RCoin Çekme</string>
+    <string name="convert_to_diamond">Elmasa Dönüştür</string>
+    <string name="what_is_coins">Coins Nedir?</string>
+    <string name="what_is_rcoin">1. Lamborghini veya Castle gibi hediyeler aldığınızda, Hediye Mağazası\'ndaki hediye fiyatı kadar Jeton kazanırsınız. 2. Jetonları hem elmasa hem de nakite dönüştürebilirsiniz. 3. Kullanılabilir Jeton Bakiyesi + Çekilebilir</string>
+    <string name="this_is_a_demo_version">Bu bir Demo sürümüdür</string>
+    <string name="payment_done">Ödeme Yapıldı</string>
+    <string name="coin_sellers_list">Madeni Para Satıcıları Listesi</string>
+    <string name="how_much_rcoins_convert_cash">Rcoin\'ler ne kadar Nakit\'e çevrilir?</string>
+    <string name="how_much_rcoins_convert_into_diamonds">Rcoin\'lerin ne kadarı Elmas\'a dönüşüyor?</string>
+    <string name="setting_error">Ayar Hatası</string>
+    <string name="minimum_amount_is">Minimum tutar</string>
+    <string name="you_not_have_enough">Yeterince sahip değilsin</string>
+    <string name="you_are_not_able_to_cashout_at_your_level">Seviyenizde nakit çekme işlemini gerçekleştiremezsiniz</string>
+    <string name="your">Senin</string>
+    <string name="successfully_converted_into">Başarıyla dönüştürüldü</string>
+    <string name="conversion_failed">Dönüştürme başarısız oldu</string>
+    <string name="redeem_your_coins">Jetonlarınızı Kullanın</string>
+    <string name="enter_coins_to_withdraw">Çekmek için jetonları girin</string>
+    <string name="your_redeem_history">Kurtarma Geçmişiniz</string>
+    <string name="pending">Askıda olması</string>
+    <string name="r_coin_convert">R-Coin Dönüştürme</string>
+    <string name="how_much_coins_convert_into_diamonds">Elmas\'a dönüşen paraların miktarı ne kadar?</string>
+    <string name="enter_coins">Madeni paraları girin</string>
+    <string name="convert_to_diamonds">Elmaslara Dönüştür</string>
+    <string name="whatsapp_not_installed">Whatsapp yüklü değil</string>
+    <string name="invalid_whatsapp_number">Geçersiz WhatsApp numarası</string>
+    <string name="withdrawable_rcoins">Çekilebilir Rcoin\'ler</string>
+    <string name="no_payment_method_found">Ödeme Yöntemi Bulunamadı</string>
+    <string name="insufficient">Yetersiz</string>
+    <string name="please_enter_your_details">Lütfen Bilgilerinizi Girin</string>
+    <string name="redeem_request_sent_successfully">Kurtarma Talebi Başarıyla Gönderildi</string>
+    <string name="enter_your_upi_details">UPI bilgilerinizi girin</string>
+    <string name="enter_your_paytm_details">Paytm bilgilerinizi girin</string>
+    <string name="enter_your_bank_account_details">Banka hesap bilgilerinizi girin</string>
+    <string name="enter_your_bybit_details">Bybit bilgilerinizi girin</string>
+    <string name="purchased">Satın alındı</string>
+    <string name="go_live">Canlı Yayına Geçin</string>
+    <string name="song_hint">Bir şarkı seçmek için tıklayın.</string>
+    <string name="timer_hint">Zamanlayıcıyı başlamadan önce iptal etmek için buraya tıklayın.</string>
+    <string name="duration">Süre</string>
+    <string name="mmss">0:00</string>
+    <string name="welcome_to_join_the_live_any_content_related_to_porn_violence_gambling_illegal_dealing_will_be_banned">Canlı yayına katılmaya hoş geldiniz. Porno, şiddet, kumar ve yasadışı ticaretle ilgili her türlü içerik yasaklanacaktır.</string>
+    <string name="enter_a_room">odaya girdi</string>
+    <string name="reacted">Tepki verdi</string>
+    <string name="browse_file_title">Dosyaya göz at</string>
+    <string name="please_enter_room_title">Lütfen oda adını girin</string>
+    <string name="please_select_room_image">Lütfen oda resmini seçin</string>
+    <string name="you_are_block_from_admin_to_go_live">Yönetici tarafından canlı yayına geçmeniz engellendi</string>
+    <string name="start_audio_live">Sesli Yayını Başlat</string>
+    <string name="take_picture">Fotoğraf Çek</string>
+    <string name="recorder_error_in_progress">Bunu yapmak için lütfen öncelikle kaydı durdurun.</string>
+    <string name="recorder_error_maxed_out">Zaten maksimum süreyi kaydettiniz.</string>
+    <string name="audio_from_clip">Klipten özel ses.</string>
+    <string name="recorder_error_no_clips">Devam etmek için lütfen önce klibinizi kaydedin.</string>
+    <string name="message_song_select">Kayıt başladıktan sonra şarkı seçemezsiniz.</string>
+    <string name="message_song_change">Kayıt başladıktan sonra şarkıyı değiştiremezsiniz.</string>
+    <string name="you_need_storage_permission">Depolama İznine ihtiyacınız var</string>
+    <string name="filter">Filtreyi Seçin</string>
+    <string name="you_cannot_upload_video_above_30_mb">30 MB\'ın üstünde video yükleyemezsiniz !!!</string>
+    <string name="choose_sticker">Çıkartma Seçin</string>
+    <string name="timer">Zamanlayıcı</string>
+    <string name="sticker">Çıkartma</string>
+    <string name="filters">Filtreler</string>
+    <string name="preview">Önizleme</string>
+    <string name="flip">Çevir</string>
+    <string name="speed">Hız</string>
+    <string name="notification_channel_id">varsayılan</string>
+    <string name="notification_download_title">Dosyayı indir…</string>
+    <string name="notification_download_description">Birkaç saniyeden fazla sürmemelidir.</string>
+    <string name="announcement_welcome_to_room">Duyuru: Odaya hoş geldiniz</string>
+    <string name="all">TÜM</string>
+    <string name="send">Göndermek</string>
+    <string name="followers">Takipçiler</string>
+    <string name="shorts">Şort</string>
+    <string name="posts">Gönderiler</string>
+    <string name="creator">Yaratıcı</string>
+    <string name="agency">Ajans</string>
+    <string name="coin_seller">Madeni Para Satıcısı</string>
+    <string name="invite">Davet etmek</string>
+    <string name="live">Canlı</string>
+    <string name="public_text">Halk</string>
+    <string name="private_text">Özel</string>
+    <string name="welcome_to_the_party">Partiye hoş geldiniz</string>
+    <string name="games">Oyunlar</string>
+    <string name="keep">Kale</string>
+    <string name="exit_text">çıkış</string>
+    <string name="you_not_have_enough_diamonds_to_send_gift">Hediye göndermek için yeterli elmasınız yok</string>
+    <string name="sent_a_gift">Bir hediye gönderildi</string>
+    <string name="you_are_blocked_by_host">Sunucu tarafından engellendiniz</string>
+    <string name="you_cannot_upload_video_above_30_mb_text">30 MB\'ın üstünde video yükleyemezsiniz !!!</string>
+    <string name="select_song">Şarkı Seçin</string>
+    <string name="select_filter">Filtreyi Seçin</string>
+    <string name="upload_relite">Relite\'ı Yükle</string>
+    <string name="add_caption_with_hashtags_and_mentions">Hashtag ve bahsetmelerle başlık ekleyin</string>
+    <string name="location">Konum</string>
+    <string name="show_to">Göstermek için</string>
+    <string name="allow_comments">Yorumlara İzin Ver</string>
+    <string name="upload_post">Gönderiyi Yükle</string>
+    <string name="who_show_this_post_to">Bu gönderiyi kime göstereceğim?</string>
+    <string name="only_followers">Sadece Takipçiler</string>
+    <string name="select_image_first">Önce Resmi Seçin</string>
+    <string name="error_opening_gallery">Galeri açılırken hata oluştu</string>
+    <string name="permission_denied_message">İzin Reddedildi....\n</string>
+    <string name="error_selecting_image">Resim seçilirken hata oluştu</string>
+    <string name="location_not_set">Konum ayarlanmadı</string>
+    <string name="count_clips">%s klip</string>
+    <string name="my_followers">Takipçilerim</string>
+    <string name="add_a_comment">Yorum Ekle…</string>
+    <string name="send_a_gift_to">Bir hediye gönderildi</string>
+    <string name="room_image_updated">Oda Görüntüsü Güncellendi</string>
+    <string name="sure_you_want_to_stand_up">Ayağa kalkmak istediğinizden emin misiniz?</string>
+    <string name="there_s_no_user_to_invite_on_mic">Mikrofonda davet edilecek kullanıcı yok.</string>
+    <string name="remove_seat">Koltuğu Kaldır</string>
+    <string name="kick_out">Dışarı atmak</string>
+    <string name="unmute_mic">Mikrofonu sessize al</string>
+    <string name="mute_mic">Mikrofonu sessize al</string>
+    <string name="remove_mic">Mikrofonu kaldır</string>
+    <string name="invite_mic">Mikrofonu davet et</string>
+    <string name="take_the_mic">Mikrofonu Alın</string>
+    <string name="give_the_mic">Mikrofonu Ver</string>
+    <string name="lock_the_mic">Mikrofonu Kilitle</string>
+    <string name="mute_the_mic">Mikrofonu Sessize Al</string>
+    <string name="unmute">Sesini açmak</string>
+    <string name="unlock">Kilidini aç</string>
+    <string name="remove">Kaldırmak</string>
+    <string name="your_live_session_end_by_admin_text">Canlı oturumunuz admin tarafından sonlandırıldı.</string>
+    <string name="end_live_video">Canlı Videoyu Sonlandır</string>
+    <string name="don_t_have_user_to_sent_a_gift_wait_for_user">Hediye gönderecek kullanıcı yok, kullanıcıyı bekle</string>
+    <string name="select_at_least_one_user">En az bir kullanıcı seçin</string>
+    <string name="room_settings">Oda ayarları</string>
+    <string name="people">İnsanlar</string>
+    <string name="copied_to_clipboard">Panoya Kopyalandı</string>
+    <string name="room_name">Oda adı</string>
+    <string name="enter_room_name">Oda adını girin</string>
+    <string name="please_enter_room_name">Lütfen Oda Adını Girin</string>
+    <string name="seat_mode">Koltuk modu</string>
+    <string name="_8_seat">8 kişilik</string>
+    <string name="use">Kullanmak</string>
+    <string name="_12_seat">12 kişilik</string>
+    <string name="_16_seat">16 koltuk</string>
+    <string name="seat_update">koltuk güncellemesi</string>
+    <string name="room_welcome_message">Oda karşılama mesajı</string>
+    <string name="enter_room_welcome_message">Odaya hoş geldiniz mesajı girin</string>
+    <string name="please_enter_room_welcome_message">Lütfen Odaya Girin Hoş Geldiniz Mesajı</string>
+    <string name="room_passcode">Oda şifresi</string>
+    <string name="enter_room_passcode">Oda şifresini girin</string>
+    <string name="change_background">Arka planı değiştir</string>
+    <string name="live_ended">Canlı Yayın Bitti</string>
+    <string name="joined_users">Katılan kullanıcılar</string>
+    <string name="live_duration">Canlı yayın süresi</string>
+    <string name="received_gifts">Alınan hediyeler</string>
+    <string name="increased_fans">Artan hayranlar</string>
+    <string name="rcoins">Rcoinler</string>
+    <string name="back_to_the_home">Eve dönüş</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_watch_live">Şu anda ses odasındasınız. Lütfen odadan çıkın ve canlı izleyin.</string>
+    <string name="s_live_has_ended">canlı yayını sona erdi.</string>
+    <string name="all_is_well_party">Her şey yolunda partisi</string>
+    <string name="private_room">Özel Oda</string>
+    <string name="_123456">123456</string>
+    <string name="enter_valid_passcode">Geçerli bir şifre girin</string>
+    <string name="enter_passcode">Şifreyi girin</string>
+    <string name="decline">Reddetmek</string>
+    <string name="audio_request_received_from">Ses isteği alındı</string>
+    <string name="please_choose_another_seat">Lütfen başka bir koltuk seçin</string>
+    <string name="this_seat_is_locked_by_host">Bu koltuk ev sahibi tarafından kilitlendi</string>
+    <string name="add_location">Konum Ekle</string>
+    <string name="search_area_or_city">Bölge veya şehir ara</string>
+    <string name="manage_audio_volume">Ses Düzeyini Yönet</string>
+    <string name="video_volume_label">Video hacmi</string>
+    <string name="song_volume_label">Şarkı sesi</string>
+    <string name="failed_to_delete">Silinemedi</string>
+    <string name="error_try_again">Tekrar deneyin</string>
+    <string name="solved">ÇÖZÜLDÜ</string>
+    <string name="relites">Relite</string>
+    <string name="error_loading_plans">Planlar yüklenirken hata oluştu</string>
+    <string name="billing_not_ready">Fatura hazır değil</string>
+    <string name="purchase_error">Satın alma hatası</string>
+    <string name="payment_init_failed">Ödeme başlatılamadı</string>
+    <string name="purchase_canceled">Satın Alma İptal Edildi</string>
+    <string name="purchase_success">Satın Alma Başarısı</string>
+    <string name="purchase_failed">Satın alma başarısız oldu</string>
+    <string name="please_select_a_gift">Lütfen bir hediye seçin</string>
+    <string name="please_select_at_least_one_user">Lütfen en az bir kullanıcı seçin</string>
+    <string name="no_user_found">Kullanıcı Bulunamadı!</string>
+    <string name="notification_channel_name">varsayılan</string>
+    <string name="audio_conversion_failed">Ses dönüştürme başarısız oldu</string>
+    <string name="no_message_available">Mesaj bulunamadı</string>
+    <string name="no_date">Tarih yok</string>
+    <string name="invalid_user_id">Geçersiz kullanıcı kimliği</string>
+    <string name="user_has_been_blocked">Kullanıcı engellendi</string>
+    <string name="user_data_is_not_available">Kullanıcı verileri mevcut değil</string>
+    <string name="user_data_not_loaded">Kullanıcı verileri yüklenmedi</string>
+    <string name="cannot_load_video_preview">Video önizlemesi yüklenemiyor.</string>
+    <string name="failed_to_process_video">Video işlenemedi.</string>
+    <string name="are_you_sure_you_want_to_delete_your_room">Odanızı silmek istediğinizden emin misiniz?</string>
+    <string name="your_room_deleted_successfully">Odanız başarıyla silindi.</string>
+    <string name="you_are_not_able_to_post_at_your_level">Seviyenizde gönderi paylaşamıyorsunuz</string>
+    <string name="room_passcode_changed">Oda Şifresi Değişti..</string>
+    <string name="using">Kullanarak</string>
+    <string name="failed_to_logout_please_try_again">Çıkış yapılamadı. Lütfen tekrar deneyin.</string>
+    <string name="link_not_available">Bağlantı mevcut değil.</string>
+    <string name="we_will_take_immediate_action_thank_you">Hemen harekete geçeceğiz. Teşekkür ederiz.</string>
+    <string name="picture_capture_timeout_please_try_again">Fotoğraf çekimi zaman aşımına uğradı. Lütfen tekrar deneyin.</string>
+    <string name="error_loading_image">Görüntü yüklenirken hata oluştu</string>
+    <string name="no_image_selected">Hiçbir resim seçilmedi</string>
+    <string name="error_processing_video">Video işlenirken hata oluştu</string>
+    <string name="failed_to_capture_image">Görüntü yakalanamadı.</string>
+    <string name="failed_to_save_image">Görüntü kaydedilemedi.</string>
+    <string name="you_cant_unmute_your_self">Kendinizi sessize alamazsınız</string>
+    <string name="audio_file_missing">Ses dosyası eksik!</string>
+    <string name="video_file_missing">Video dosyası eksik!</string>
+    <string name="unexpected_error">Beklenmeyen hata:</string>
+    <string name="final_merge_failed">Son birleştirme başarısız oldu.</string>
+    <string name="video_merge_failed">Video birleştirme başarısız oldu.</string>
+    <string name="unblocked_successfully">Başarıyla Engelleme Kaldırıldı.</string>
+    <string name="unable_to_share_at_this_moment">Şu anda paylaşılamıyor</string>
+    <string name="unexpected_error_occurred_please_try_again">Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin.</string>
+    <string name="unknown_error">Bilinmeyen hata</string>
+    <string name="transaction_failed">İşlem başarısız oldu</string>
+    <string name="delete_failed">Silme başarısız oldu:</string>
+    <string name="invalid_post">Geçersiz Gönderi</string>
+    <string name="report_successful">Rapor başarılı</string>
+    <string name="failed_to_upload_image">Resim yüklenemedi.</string>
+    <string name="failed_to_upload_image_please_try_again">Resim yüklenemedi. Lütfen tekrar deneyin.</string>
+    <string name="failed_to_load_data_please_try_again">Veriler yüklenemedi. Lütfen tekrar deneyin.</string>
+    <string name="comment_text_cannot_be_empty">Yorum metni boş olamaz.</string>
+    <string name="failed_to_submit_comment_please_try_again">Yorum gönderilemedi. Lütfen tekrar deneyin.</string>
+    <string name="invalid_video">Geçersiz Video</string>
+    <string name="failed_to_delete_video">Video silinemedi.</string>
+    <string name="all_fields_required">Tüm Alanlar Gereklidir</string>
+    <string name="purchase_failed_please_try_again">Satın alma işlemi başarısız oldu. Lütfen tekrar deneyin.</string>
+    <string name="failed_to_send_request">İstek gönderilemedi</string>
+    <string name="failed_to_start_live_stream">Canlı yayın başlatılamadı</string>
+    <string name="live_user_data_is_missing">Canlı kullanıcı verileri eksik</string>
+    <string name="failed_to_delete_room">Oda silinemedi</string>
+    <string name="update_failed">Güncelleme başarısız oldu</string>
+    <string name="private_room_passcode">Özel Oda Şifresi</string>
+    <string name="here_s_the_private_passcode_for_the_room">İşte odanın özel şifresi:</string>
+    <string name="share_via">Paylaş yoluyla</string>
+    <string name="passcode_empty_error">Lütfen geçerli bir şifre girin</string>
+    <string name="failed_to_update_passcode">Şifre güncellenemedi</string>
+    <string name="enter_new_room_passcode">Yeni Oda Parolasını Girin</string>
+    <string name="change_room_passcode">Oda Şifresini Değiştir</string>
+    <string name="banned_list">Yasaklı Liste</string>
+    <string name="my_following">Takip ettiklerim</string>
+    <string name="please_enter_valid_input">Lütfen geçerli bir giriş girin</string>
+    <string name="join_requests">Katılım Talepleri</string>
+    <string name="sorry_this_call_can_t_be_completed_right_now">Üzgünüz, bu çağrı şu anda tamamlanamıyor.</string>
+    <string name="watch_video_now">Videoyu Şimdi İzle</string>
+    <string name="you_exceed_your_ad_limit">Reklam limitinizi aştınız.</string>
+    <string name="search_people">Kişileri Ara..</string>
+    <string name="public_room">Umumi Oda</string>
+    <string name="my_profile">Profilim</string>
+    <string name="edit_self">Kendini Düzenle</string>
+    <string name="blocked_user">Engellenen Kullanıcı</string>
+    <string name="my_wallet">Cüzdanım</string>
+    <string name="select_age">Yaş Seçin</string>
+    <string name="save_changes">Değişiklikleri Kaydet</string>
+    <string name="enter_your_bio">Biyografinizi Girin</string>
+    <string name="enter_bio_here">Biyografinizi buraya girin.</string>
+    <string name="hey_there">Selam!</string>
+    <string name="follow_back">Geri takip</string>
+    <string name="purchase">Satın almak</string>
+    <string name="select">Seçme</string>
+    <string name="selected">Seçilmiş</string>
+    <string name="method_2_desc">Arkadaşlarınızı yönlendirme kodunuzu kullanarak katılmaya davet edin. Kodunuzu her kullandığınızda ödül kazanın!</string>
+    <string name="method_1_desc">Kısa bir reklam videosu izleyin ve anında ücretsiz elmas kazanın! İzlemeye başlamak ve ödülünüzü almak için aşağıdaki butona dokunmanız yeterli.</string>
+    <string name="pay_now">Şimdi Öde</string>
+    <string name="select_room_image">Oda Resmini Seçin</string>
+    <string name="room_description">Oda Açıklaması</string>
+    <string name="room_type">Oda Tipi</string>
+    <string name="upload_image_">Resim Yükle</string>
+    <string name="enter_your_room_name">Oda adınızı girin</string>
+    <string name="enter_your_room_passcode">Oda şifrenizi girin</string>
+    <string name="enter_your_room_description">Odanızın açıklamasını girin</string>
+    <string name="enter_note_here">Notunuzu buraya girin.</string>
+    <string name="add_caption">Başlık Ekle</string>
+    <string name="attachments">Ekler</string>
+    <string name="enter_details_here">Ayrıntıları Buraya Girin…</string>
+    <string name="my_income">Gelirim</string>
+    <string name="best_plan">En İyi Plan</string>
+    <string name="best_recharge_plan">En İyi Şarj Planı</string>
+    <string name="purchase_recharge_plan">Satın Alma Şarj Planı</string>
+    <string name="available_my_r_coins">Mevcut My R-Coins</string>
+    <string name="payment">Ödeme</string>
+    <string name="select_payment_option">Ödeme Seçeneğini Seçin :</string>
+    <string name="select_record_duration">Kayıt Süresini Seçin :</string>
+    <string name="start_date_">Başlangıç ​​Tarihi:</string>
+    <string name="end_date_">Bitiş Tarihi:</string>
+    <string name="demo_purpose">Bu APK\'da tüm veriler sadece Demo amaçlıdır.</string>
+    <string name="no_data_text">Gösterilecek bir şey yok</string>
+    <string name="vip">vip</string>
+    <string name="payment_option">Ödeme Seçeneği:</string>
+    <string name="withdrawable_r_coins">Çekilebilir R-Coin\'ler:</string>
+    <string name="please_select_a_payment_option">Lütfen bir ödeme seçeneği seçin</string>
+    <string name="select_option">Seçenek Seçiniz :</string>
+    <string name="bd">BD</string>
+    <string name="version">Sürüm :</string>
+    <string name="upload">Yüklemek</string>
+    <string name="no_one_joined">Hiç kimse katılmadı</string>
+    <string name="blocked_list">Engellenenler Listesi</string>
+    <string name="room_close">Oda Yakın</string>
+    <string name="common_bio">Sadece profilleri değil, bağlantıları da keşfetmek.</string>
+    <string name="reactions">Tepkiler</string>
+    <string name="delete_confirmation_text">Silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.</string>
+    <string name="confirm_deletion">Silmeyi Onayla</string>
+    <string name="confirm_stand_up">Stand-Up\'ı Onayla</string>
+    <string name="delete_post_confirmation">Bu gönderiyi silmek istediğinizden emin misiniz?</string>
+    <string name="delete_relite_confirmation">Bu Relite\'ı silmek istediğinizden emin misiniz?</string>
+    <string name="delete">Silmek</string>
+    <string name="demo_agency">Demo Ajansı</string>
+    <string name="exposure">Maruziyet</string>
+    <string name="smoothness">Pürüzsüzlük</string>
+    <string name="redness">Kırmızılık</string>
+    <string name="sharpness">Keskinlik</string>
+    <string name="ar_effects">AR Efektleri</string>
+    <string name="calling">Çağrı</string>
+    <string name="no_comments_yet_be_the_first_to_say_something">Henüz yorum yok. İlk yorumu siz yapın!</string>
+    <string name="no_likes_yet_tap_to_spread_some_love">Henüz beğeni yok. Biraz sevgi yaymak için ❤️\'a dokunun!</string>
+    <string name="finding_reasons_to_smile_everywhere_i_go_and_sharing_that_happiness_with_the_world">Gittiğim her yerde gülümsemek için sebepler bulmak ve bu mutluluğu dünyayla paylaşmak.</string>
+    <string name="okay">Tamam</string>
+    <string name="please_wait_for_a_spot_to_open">Lütfen bir yerin açılmasını bekleyin</string>
+    <string name="all_seats_are_taken">Tüm koltuklar dolu</string>
+    <string name="alex_sierra">#VALUE!</string>
+    <string name="request_sent">İstek Gönderildi</string>
+    <string name="join">Katılmak</string>
+    <string name="video_call_gift">Görüntülü görüşme hediyesi</string>
+    <string name="chat_gift">Sohbet hediyesi</string>
+    <string name="uploading_">Yükleniyor...</string>
+    <string name="please_try_after_some_time">Lütfen bir süre sonra tekrar deneyin</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_make_call">Şu anda bir ses odasında olduğunuz anlaşılıyor. Lütfen odadan çıkın ve aramayı yapın.</string>
+    <string name="notification_permission_denied">Bildirim izni reddedildi</string>
+    <string name="you_have_to_enable_it_from_settings">Ayarlardan etkinleştirmeniz gerekiyor.</string>
+    <string name="open_settings">Ayarları Aç</string>
+    <string name="cannot_unmute_user">Kullanıcının sesi açılamıyor</string>
+    <string name="this_user_has_muted_themselves_only_they_can_unmute">Bu kullanıcı kendini sessize aldı. Yalnızca kendisi sesini açabilir.</string>
+    <string name="you_are_not_able_to_live_at_your_level">Kendi seviyenizde yaşayamazsınız</string>
+    <string name="conversion_successful">Dönüşüm Başarılı</string>
+    <string name="screen_overlay_permission_needed">Ekran Kaplama İzni Gerekli</string>
+    <string name="enable_display_over_other_apps_from_system_settings">Sistem Ayarları\'ndan \'Diğer uygulamaların üzerinde göster\' seçeneğini etkinleştirin.</string>
+    <string name="you_are_vip_now">Artık VIP\'siniz</string>
+    <string name="restart_app">Uygulamayı yeniden başlat</string>
+    <string name="this_seat_is_reserved">Bu koltuk rezerve edilmiştir</string>
+    <string name="do_you_really_want_to_log_out">Gerçekten çıkış yapmak istiyor musunuz? Hesabınıza erişmek için tekrar oturum açmanız gerekiyor.</string>
+    <string name="notification_permission_granted">Bildirim izni verildi</string>
+    <string name="verified">Doğrulandı</string>
+    <string name="no_one_has_requested">Kimse talep etmedi</string>
+    <string name="user_data_not_found_please_login_again">Kullanıcı verisi bulunamadı. Lütfen tekrar giriş yapın.</string>
+    <string name="update_failed_">Güncelleme başarısız oldu:</string>
+    <string name="dummy_name">Mia Malkova</string>
+    <string name="miya">Miya</string>
+    <string name="riya">Riya</string>
+    <string name="luliya">Luliya</string>
+    <string name="rehan">Rehan</string>
+    <string name="susmita">Susmita</string>
+    <string name="rahi">Rahi</string>
+    <string name="nirma">Nirma</string>
+    <string name="jashvi">Jaşvi</string>
+    <string name="hely">Hely</string>
+    <string name="shruti">Şruti</string>
+    <string name="dhruvi">Drûvi</string>
+    <string name="mamta">Mamta</string>
+    <string name="zeel">Zîl</string>
+    <string name="audio_live">Ses Canlı</string>
+    <string name="post">Postalamak</string>
+    <string name="demo_host_center">Demo Host Merkezi</string>
+    <string name="agency_center">Acente Merkezi</string>
+    <string name="select_language">Dil Seçin</string>
+    <string name="english">İngilizce</string>
+    <string name="explore">Keşfetmek</string>
+    <string name="party">Parti</string>
+    <string name="my_features">Özelliklerim</string>
+    <string name="host_vip_privilege">Sunucu ve VIP Ayrıcalıkları</string>
+    <string name="restart_the_app">Uygulamayı yeniden başlat!</string>
+    <string name="restart">Yeniden Başlat</string>
+    <string name="version_">"sürüm "</string>
+    <string name="top_users">En İyi Kullanıcılar</string>
+    <string name="top_creators">En İyi Üreticiler</string>
+    <string name="top_agency">En İyi Ajans</string>
+    <string name="daily">Günlük</string>
+    <string name="weekly">Haftalık</string>
+    <string name="monthly">Aylık</string>
+    <string name="get_premium_crown">PREMIUM TAÇ AL</string>
+    <string name="get_extra_coins">EKSTRA JETON AL</string>
+    <string name="get_all_level_access">TÜM SEVİYELERE ERİŞİM AL</string>
+    <string name="invalid_validity_period">Geçersiz geçerlilik süresi</string>
+    <string name="user_id">Kullanıcı Kimliği</string>
+    <string name="you_ve_spent_s">"%s harcadınız "</string>
+    <string name="you_have">"Sizde var "</string>
+    <string name="referrals">" yönlendirme"</string>
+    <string name="id_">ID: </string>
+
+    <string name="feed">Besleme</string>
+    <string name="video">Video</string>
+    <string name="sent_a_gift_to">" Bir hediye gönderdi "</string>
+    <string name="announcement">"Duyuru: "</string>
+    <string name="please_enter_valid_passcode">Lütfen geçerli bir şifre girin</string>
+    <string name="passcode_length_invalid">Geçersiz şifre uzunluğu</string>
+    <string name="_0">0</string>
+    <string name="error_missing_room_data">Oda verisi eksik</string>
+    <string name="error_invalid_room_data">Geçersiz oda verisi</string>
+    <string name="dummy_noti_desc">James Bond, Daizy Sharma\'ya hediye gönderdi</string>
+    <string name="dummy_id">ID : 564321</string>
+    <string name="dummy_time">00:00</string>
+    <string name="cherry">Kiraz</string>
+    <string name="level_1">Seviye 1</string>
+    <string name="hello">Merhaba</string>
+    <string name="dummy_comment">Kim milyoner oldu?</string>
+    <string name="country">Ülke</string>
+    <string name="title1">Başlık 1</string>
+    <string name="incoming_video_call">Gelen video araması</string>
+    <string name="upload_completed">Yükleme tamamlandı!</string>
+    <string name="image_file_does_not_exist">Resim dosyası mevcut değil.</string>
+    <string name="user_session_not_found">Kullanıcı oturumu bulunamadı</string>
+    <string name="add">Ekle</string>
+    <string name="leave">Ayrıl</string>
+    <string name="requested">İstendi</string>
+    <string name="call_request_rejected">Arama isteği reddedildi</string>
+    <string name="call_setup_failed">"Arama kurulumu başarısız: "</string>
+    <string name="invalid_chat_user">Geçersiz sohbet kullanıcısı</string>
+    <string name="you">Sen</string>
+    <string name="sent_a_gift_">bir hediye gönderdi 🎁</string>
+    <string name="invalid_url">Geçersiz URL</string>
+    <string name="here_is_my_referral_code">"İşte Yönlendirme Kodum"</string>
+    <string name="let_me_recommend_you_this_application">\nSize bu uygulamayı tavsiye edeyim\n\n</string>
+    <string name="unknown_user">Bilinmeyen Kullanıcı</string>
+    <string name="you_will_receive">"Alacaksın"</string>
+    <string name="_diamonds">"Elmaslar"</string>
+    <string name="camera_not_ready">Kamera hazır değil</string>
+    <string name="ar_is_starting_please_try_again">AR başlıyor… lütfen tekrar deneyin.</string>
+    <string name="recording_started">Kayıt başladı.</string>
+    <string name="camera_is_not_available">Kamera mevcut değil.</string>
+    <string name="permission_rationale_upload">Galeriden video seçip yüklemek için depolama iznine ihtiyaç vardır.</string>
+    <string name="unable_to_choose_video_for_upload">Yüklemek için video seçilemiyor.</string>
+    <string name="sticker_item_is_missing">Etiket öğesi eksik.</string>
+    <string name="audio_file_is_missing">Ses dosyası eksik.</string>
+    <string name="could_not_load_audio">Ses yüklenemedi.</string>
+    <string name="selected_video_uri_is_missing">Seçilen videonun URI\'si eksik.</string>
+    <string name="failed_to_prepare_video_for_upload">Videoyu yüklemeye hazırlama başarısız oldu.</string>
+    <string name="error_copying_file">Dosya kopyalanırken hata oluştu.</string>
+    <string name="failed_to_create_directory">Dizin oluşturulamadı.</string>
+    <string name="upload_failed_">"Yükleme başarısız oldu: "</string>
+    <string name="uploading">Yükleniyor…</string>
+    <string name="public_">Halk</string>
+    <string name="unknown_title">Bilinmeyen Başlık</string>
+    <string name="unknown_singer">Bilinmeyen Şarkıcı</string>
+    <string name="invalid_host_data">Geçersiz ana bilgisayar verileri</string>
+    <string name="type_something">Bir şeyler yazın...</string>
+
+    <string-array name="fake_times">
+        <item>Az önce</item>
+        <item>Bir an önce</item>
+        <item>5 dakika önce</item>
+        <item>Yaklaşık bir saat önce</item>
+        <item>1 saat önce</item>
+        <item>Bugün erken</item>
+        <item>Bugün</item>
+        <item>Dün</item>
+        <item>Geçen gün</item>
+        <item>3 gün önce</item>
+        <item>Geçen hafta</item>
+        <item>Birkaç gün önce</item>
+        <item>2 hafta önce</item>
+        <item>Geçen ay</item>
+        <item>Birkaç zaman önce</item>
+        <item>Birkaç zaman önce</item>
+        <item>Uzun zaman önce</item>
+    </string-array>
+
+    <string-array name="fake_chat_sender">
+        <item>Selam! Nasılsın?</item>
+        <item>Bu akşam bir film izlemeyi planlıyorum.</item>
+        <item>Son haberler hakkında ne düşünüyorsun?</item>
+        <item>İş yerinde yeni bir projeye başladım.</item>
+        <item>Daha sonra bir kahve içmek ister misin?</item>
+        <item>Koşudan yeni geldim, harika hissediyorum!</item>
+        <item>Önerebileceğin bir kitap var mı?</item>
+        <item>Hafta sonun nasıl geçti?</item>
+        <item>Önümüzdeki ay tatile çıkmayı düşünüyorum.</item>
+        <item>Şehir merkezindeki yeni restorana gittin mi?</item>
+        <item>Bugün neler yapıyorsun?</item>
+        <item>Harika bir kitabı bitirdim, sana anlatmak için sabırsızlanıyorum.</item>
+        <item>Akşam için bir planın var mı?</item>
+        <item>Yeni bir dil öğrenmeyi düşünüyorum.</item>
+        <item>Dizinin son bölümünü izledin mi?</item>
+        <item>Yeni çıkan albümü beğendin mi?</item>
+        <item>Son zamanlarda podcast’lere çok merak sardım.</item>
+        <item>Yeni cihaz hakkında ne düşünüyorsun?</item>
+        <item>Bir blog başlatmayı planlıyorum.</item>
+        <item>En sevdiğin hobi nedir?</item>
+        <item>Motivasyonunu nasıl koruyorsun?</item>
+        <item>Verimlilik için önerilerin var mı?</item>
+        <item>Rahatlamak için ne yaparsın?</item>
+        <item>Stresi nasıl yönetiyorsun?</item>
+        <item>Seni ne motive eder?</item>
+    </string-array>
+
+    <string-array name="fake_chat_receiver">
+        <item>İyiyim, sen nasılsın?</item>
+        <item>Kulağa hoş geliyor! Hangi film?</item>
+        <item>Bilmiyorum, son zamanlarda haberleri takip etmedim.</item>
+        <item>Gerçekten mi? Proje neyle ilgili?</item>
+        <item>Tabii, çok isterim!</item>
+        <item>Vay canına, harika! Benim de tekrar egzersiz yapmam gerek.</item>
+        <item>Yakın zamanda harika bir gerilim kitabı okudum.</item>
+        <item>Sakin geçti, çok bir şey yapmadım.</item>
+        <item>Kulağa harika geliyor! Nereye gitmeyi düşünüyorsun?</item>
+        <item>Hayır, henüz denemedim. Güzel mi?</item>
+        <item>Evden çalışıyorum, ya sen?</item>
+        <item>İlginç görünüyor, daha fazla anlat!</item>
+        <item>Pek bir şey yok, sadece dinleniyorum.</item>
+        <item>Güzel! Hangi dili öğrenmek istiyorsun?</item>
+        <item>Evet, harikaydı! Yeni bölümü sabırsızlıkla bekliyorum.</item>
+        <item>Henüz dinlemedim, güzel parçalar var mı?</item>
+        <item>Ben de aynı şekilde, oldukça bilgilendirici oluyorlar.</item>
+        <item>Ben de bir tane almayı düşünüyorum. Hangi özelliklerini sevdin?</item>
+        <item>Heyecan verici! Ne hakkında yazacaksın?</item>
+        <item>Resim yapmayı ve kitap okumayı seviyorum.</item>
+        <item>Küçük hedefler koyarak motive oluyorum.</item>
+        <item>Yapılacaklar listesi hazırlamak bana yardımcı oluyor.</item>
+        <item>Film izlerim ya da kitap okurum.</item>
+        <item>Meditasyon yaparım ya da yürüyüşe çıkarım.</item>
+        <item>Doğa ve sanat beni en çok motive ediyor.</item>
+    </string-array>
+
+    <string-array name="lightening_contrast_options">
+        <item>Düşük</item>
+        <item>Normal</item>
+        <item>Yüksek</item>
+    </string-array>
+
+    <string-array name="fake_messages">
+        <item>Merhaba! 👋</item>
+        <item>Profilini beğendim!</item>
+        <item>Buraya yeni geldim—merhaba de!</item>
+        <item>Kısa bir sohbet ister misin?</item>
+        <item>Hey! 😊</item>
+        <item>Günün nasıl gidiyor?</item>
+        <item>İlginç görünüyorsun 👀</item>
+        <item>Burası neyin için?</item>
+        <item>Tanıştığımıza memnun oldum! 🙌</item>
+        <item>Merhaba yabancı 😄</item>
+        <item>Kahveci misin yoksa çaycı mı? ☕🍵</item>
+        <item>Bu uygulama şimdi daha iyi 😉</item>
+        <item>Peki… hikayen nedir?</item>
+        <item>Hey hey! ✨</item>
+        <item>Sohbeti dört gözle bekliyorum!</item>
+        <item>İyi bir enerjin var 🌟</item>
+        <item>Merhaba! Bağlanmak ister misin?</item>
+        <item>Eşleştiğimiz için mutluyum 😍</item>
+        <item>Hey, hayat nasıl gidiyor?</item>
+        <item>Senin için kocaman bir gülümseme 😁</item>
+        <item>Ekranımda yeni belirdin 👌</item>
+        <item>Bu ben miyim yoksa yeni mi en iyi arkadaş olduk? 😂</item>
+        <item>Umarım eşleşiriz 💫</item>
+        <item>Konuşmak eğlenceli biri gibisin 😏</item>
+        <item>İşte buradayım! Bahane ne? 😜</item>
+        <item>Tahmin et bakalım? Bugün ilk mesajım sensin 📩</item>
+        <item>Tesadüflere mi yoksa kaderine mi inanıyorsun? ✨</item>
+        <item>Bana bir merhaba borçlusun 😇</item>
+        <item>Yalan söylemeyeceğim, profilin öne çıktı 🔥</item>
+        <item>Tamam, gülümsemen bulaşıcı 😍</item>
+    </string-array>
+</resources>

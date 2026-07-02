@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".chat.activity.FakeChatActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/app_main_bg" />
+
+        <LinearLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#12FFFFFF"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    style="@style/toolBarBackImageStyle"
+                    android:onClick="onClickBack" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.codder.ultimate.utils.UserProfileImageView
+                        android:id="@+id/imgUser"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="@dimen/_5sdp" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="7dp"
+                            android:fontFamily="@font/airbnbcereal_w_bd"
+                            android:includeFontPadding="false"
+                            android:text="@string/dummy_name"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="2dp">
+
+                            <View
+                                android:id="@+id/dot"
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_10dp_purewhite"
+                                android:backgroundTint="@color/green" />
+
+                            <TextView
+                                android:id="@+id/tvStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/airbnbcereal_w_lt"
+                                android:includeFontPadding="false"
+                                android:text="Online"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btnVideoCall"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:onClick="onClickVideoCall"
+                    android:src="@drawable/ic_call"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/ivCallType"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:onClick="onClickVideoCall"
+                    android:padding="2dp"
+                    android:src="@drawable/call_1"
+                    android:visibility="gone"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/btnAudioCall"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:padding="2dp"
+                    android:src="@drawable/call"
+                    android:visibility="gone"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/btnReport"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:onClick="onClickReport"
+                    android:src="@drawable/ic_option"
+                    android:visibility="visible"
+                    app:tint="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/rvChatSuggestions"
+            android:layout_below="@id/topLayout"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_chat_image" />
+
+        <RelativeLayout
+            android:id="@+id/lytImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/bg_10dp_purewhite"
+            android:backgroundTint="@color/white"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:maxWidth="150dp"
+                android:maxHeight="200dp" />
+
+            <ProgressBar
+                android:id="@+id/pdImage"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/tintColor"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvChatSuggestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/lytBottom"
+            android:orientation="horizontal"
+            android:overScrollMode="never"
+            android:padding="@dimen/_10sdp"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_chat_suggestion" />
+
+
+        <LinearLayout
+            android:id="@+id/lytBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/gradient_bg_radius_50"
+                android:backgroundTint="@color/white_10"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/icon_et_comment" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="#47FFFFFF" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etChat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/airbnbcereal_w_bk"
+                    android:gravity="center_vertical|start"
+                    android:hint="Type Something..."
+                    android:layoutDirection="locale"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/white_70"
+                    android:textDirection="locale"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/tvSend"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="#FF1D7E"
+                    android:onClick="onClickCamera"
+                    android:src="@drawable/icon_send" />
+
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:src="@drawable/microphone"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btnCamera"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:src="@drawable/ic_camera" />
+
+            <ImageView
+                android:id="@+id/imggift2"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_chat_gift"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layFullImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ivFullImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="25dp"
+                android:background="@drawable/bg_20dp"
+                android:backgroundTint="#80686872"
+                android:padding="10dp"
+                android:src="@drawable/ic_close"
+                app:tint="@color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lytSvgagift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/gift_username_bg"
+            android:clickable="false"
+            android:gravity="center"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvSvgaGiftUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/airbnb_cereal_bold"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imgSvgaGiftCount"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/x10" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/lytGift"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@color/black50"
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/imgGift"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_gift" />
+
+            <ImageView
+                android:id="@+id/imgGiftCount"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@+id/imgGift"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-50dp"
+                android:layout_marginEnd="@dimen/_60sdp"
+                android:src="@drawable/x10" />
+
+            <TextView
+                android:id="@+id/tvGiftUserName"
+                style="@style/TextOnShadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgGiftCount"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:clickable="false"
+                android:fontFamily="@font/airbnb_cereal_bold"
+                android:text="@string/sent_a_gift"
+                android:textColor="@color/coinTextColor"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <com.opensource.svgaplayer.SVGAImageView
+            android:id="@+id/svgaImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:autoPlay="true" />
+    </RelativeLayout>
+</layout>

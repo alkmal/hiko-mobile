@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_10dp"
+        android:backgroundTint="#33FFFFFF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp">
+
+            <RelativeLayout
+                android:id="@+id/imgLyt"
+                android:layout_width="70dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="5dp">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginVertical="10dp"
+                    android:background="@drawable/btn_bg"
+                    android:backgroundTint="@color/shimmerColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imgLyt"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/lytName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_10dp_purewhite"
+                        android:backgroundTint="@color/shimmerColor"
+                        android:fontFamily="@font/airbnb_cereal_bold"
+                        android:text="@string/dummy_name"
+                        android:textColor="@color/shimmerColor" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/shape_round_white"
+                        android:backgroundTint="@color/shimmerColor"
+                        android:fontFamily="@font/alight"
+                        android:paddingHorizontal="5dp"
+                        android:paddingVertical="2dp"
+                        android:text="@string/country"
+                        android:textColor="@color/shimmerColor"
+                        android:textSize="11sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:id="@+id/tvLastChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lytName"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_10dp_purewhite"
+                    android:backgroundTint="@color/shimmerColor"
+                    android:fontFamily="@font/alight"
+                    android:text="@string/dummy_chat"
+                    android:textColor="@color/shimmerColor" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_10dp_purewhite"
+                android:backgroundTint="@color/shimmerColor"
+                android:fontFamily="@font/alight"
+                android:text="12:33 PM"
+                android:textColor="@color/shimmerColor"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/lightGray1"
+            android:visibility="gone" />
+    </LinearLayout>
+</layout>

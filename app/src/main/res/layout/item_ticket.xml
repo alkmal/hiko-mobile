@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <LinearLayout
+            android:id="@+id/layoutMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="-15dp"
+            android:layout_toEndOf="@id/ivStart"
+            android:background="@drawable/bg_white_corner_15"
+            android:backgroundTint="@color/white_10"
+            android:orientation="horizontal"
+            android:paddingHorizontal="15sp"
+            android:paddingVertical="15dp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/airbnbcereal_w_bk"
+                    android:paddingEnd="20sp"
+                    android:layout_marginStart="7sp"
+                    android:text="@string/ticket_details"
+                    android:textColor="@color/ticket_text_color"
+                    android:textSize="10sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <LinearLayout
+                android:id="@+id/lyttop"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/airbnbcereal_w_md"
+                    android:textColor="@color/ticket_time_color"
+                    android:text="2 day ago"
+                    android:layout_marginTop="5sp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginTop="15sp"
+                    android:includeFontPadding="false"
+                    android:background="@drawable/gradient_bg_radius_50"
+                    android:fontFamily="@font/airbnbcereal_w_md"
+                    android:paddingHorizontal="15sp"
+                    android:paddingVertical="5sp"
+                    android:text="@string/open"
+                    android:textSize="12sp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivStart"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_ticket_start" />
+    </RelativeLayout>
+</layout>

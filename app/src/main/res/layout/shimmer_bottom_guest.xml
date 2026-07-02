@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".user.ProfileFragment">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_16sdp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rectangle_border_bg"
+                            android:backgroundTint="@color/transparent"
+                            android:padding="@dimen/_3sdp">
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/layImg"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                app:cardBackgroundColor="@color/shimmerColor"
+                                app:cardCornerRadius="50dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <com.codder.ultimate.utils.UserProfileImageView
+                                android:id="@+id/imgUser"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/girl"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bg_10dp_purewhite"
+                                    android:backgroundTint="@color/shimmerColor"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/airbnb_cereal_bold"
+                                    android:singleLine="true"
+                                    android:textSize="@dimen/_15sdp" />
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <androidx.appcompat.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_10dp_purewhite"
+                                android:backgroundTint="@color/shimmerColor"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/airbnb_cereal_bold"
+                                    android:gravity="center"
+                                    android:text="ID: 998877"
+                                    android:textColor="@color/shimmerColor"
+                                    android:textSize="@dimen/_10sdp" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/_10sdp"
+                                    android:layout_height="@dimen/_10sdp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginHorizontal="@dimen/_5sdp"
+                                    android:src="@drawable/icon_copy"
+                                    app:tint="@color/shimmerColor" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/airbnb_cereal_bold"
+                                    android:gravity="center"
+                                    android:text="ID: 998877"
+                                    android:textColor="@color/shimmerColor"
+                                    android:textSize="@dimen/_10sdp" />
+
+                            </androidx.appcompat.widget.LinearLayoutCompat>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:id="@+id/tvType"
+                                    android:layout_width="60dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="center"
+                                    android:background="@color/shimmerColor"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible">
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="60dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="10dp"
+                                    android:background="@color/shimmerColor"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible">
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="60dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="10dp"
+                                    android:background="@color/shimmerColor"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible">
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    tools:visibility="visible" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="15dp"
+                                android:orientation="vertical">
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_70sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:background="@drawable/card_bg"
+                                    android:backgroundTint="#B3FFFFFF"
+                                    android:weightSum="3">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="@dimen/_5sdp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/bg_10dp_purewhite"
+                                            android:backgroundTint="@color/shimmerColor"
+                                            android:fontFamily="@font/airbnb_cereal_medium"
+                                            android:text="1021"
+                                            android:textColor="@color/shimmerColor"
+                                            android:textSize="@dimen/_16sdp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_5sdp"
+                                            android:background="@drawable/bg_10dp_purewhite"
+                                            android:backgroundTint="@color/shimmerColor"
+                                            android:fontFamily="@font/airbnb_cereal_medium"
+                                            android:text="@string/following"
+                                            android:textColor="@color/shimmerColor"
+                                            android:textSize="@dimen/_10sdp" />
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width=".3dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginVertical="@dimen/_10sdp"
+                                        android:background="@color/hintColor" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="@dimen/_5sdp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/bg_10dp_purewhite"
+                                            android:backgroundTint="@color/shimmerColor"
+                                            android:fontFamily="@font/airbnb_cereal_medium"
+                                            android:text="1021"
+                                            android:textColor="@color/shimmerColor"
+                                            android:textSize="@dimen/_16sdp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_5sdp"
+                                            android:background="@drawable/bg_10dp_purewhite"
+                                            android:backgroundTint="@color/shimmerColor"
+                                            android:fontFamily="@font/airbnb_cereal_medium"
+                                            android:text="@string/followers"
+                                            android:textColor="@color/shimmerColor"
+                                            android:textSize="@dimen/_10sdp" />
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width=".3dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginVertical="@dimen/_10sdp"
+                                        android:background="@color/hintColor" />
+
+                                    <LinearLayout
+                                        android:id="@+id/lytBlock"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="@dimen/_10sdp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="@dimen/_5sdp">
+
+                                        <TextView
+                                            android:id="@+id/tvBlock"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/bg_10dp_purewhite"
+                                            android:backgroundTint="@color/shimmerColor"
+                                            android:fontFamily="@font/airbnb_cereal_medium"
+                                            android:text="1021"
+                                            android:textColor="@color/shimmerColor"
+                                            android:textSize="@dimen/_16sdp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_5sdp"
+                                            android:background="@drawable/bg_10dp_purewhite"
+                                            android:backgroundTint="@color/shimmerColor"
+                                            android:fontFamily="@font/airbnb_cereal_medium"
+                                            android:text="@string/block"
+                                            android:textColor="@color/shimmerColor"
+                                            android:textSize="@dimen/_10sdp" />
+                                    </LinearLayout>
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                            </LinearLayout>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </RelativeLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</layout>

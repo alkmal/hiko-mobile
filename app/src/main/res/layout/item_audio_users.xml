@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_3sdp">
+
+            <com.codder.ultimate.utils.UserProfileImageView
+                android:id="@+id/imgUser1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/imgUser1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/userName"
+                    style="@style/commonTextStyle"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:text="@string/dummy_name"
+                    android:textColor="@color/hintColor2" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_below="@id/userName">
+
+                    <TextView
+                        android:id="@+id/location"
+                        style="@style/commonLabelStyle"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:backgroundTint="@color/sky"
+                        android:drawablePadding="@dimen/_3sdp"
+                        android:text="@string/india"
+                        app:drawableStartCompat="@drawable/ic_country" />
+
+                    <TextView
+                        android:id="@+id/gender"
+                        style="@style/commonLabelStyle"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:backgroundTint="@color/lightGray1"
+                        android:drawablePadding="@dimen/_3sdp"
+                        android:text="@string/male"
+                        app:drawableStartCompat="@drawable/gender_audio" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/custom_line_view" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

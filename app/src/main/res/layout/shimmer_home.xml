@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="loader"
+            type="com.codder.ultimate.MyLoader" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:src="@drawable/app_logo"
+                    app:tint="@color/shimmerColor" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_bg"
+                    android:backgroundTint="@color/shimmerColor"
+                    android:drawableStart="@drawable/icon_search"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:drawableTint="@color/shimmerColor"
+                    android:focusable="false"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:text="@string/search_people"
+                    android:textColor="@color/shimmerColor"
+                    android:textSize="@dimen/_12sdp" />
+
+                <LinearLayout
+                    android:id="@+id/layBackgroundAudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_3sdp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_margin="@dimen/_1sdp"
+                        android:src="@drawable/icon_live_room" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivLeaderboard"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@drawable/btn_bg"
+                    android:backgroundTint="@color/shimmerColor" />
+
+                <ImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="@drawable/btn_bg"
+                    android:backgroundTint="@color/shimmerColor" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvType"
+                    style="@style/commonLabelStyle"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:backgroundTint="#FF5722"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:text="@string/agency"
+                    android:visibility="gone"
+                    app:drawableStartCompat="@drawable/ic_agency" />
+
+                <TextView
+                    android:id="@+id/tvHostType"
+                    style="@style/commonLabelStyle"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:backgroundTint="#4CAF50"
+                    android:text="@string/creator"
+                    android:visibility="gone"
+                    app:drawableStartCompat="@drawable/ic_user_place" />
+
+                <TextView
+                    android:id="@+id/tvVIPType"
+                    style="@style/commonLabelStyle"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:backgroundTint="#EBC514"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:text="@string/vip"
+                    android:visibility="gone"
+                    app:drawableStartCompat="@drawable/ic_crown" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:background="@drawable/bg_20dp"
+                android:backgroundTint="@color/shimmerColor"
+                android:weightSum="2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/_3sdp">
+
+                <RelativeLayout
+                    android:id="@+id/lytFollowUnfollow"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:backgroundTint="@color/shimmerColor">
+
+                    <TextView
+                        android:id="@+id/tvFollowStatus"
+                        style="@style/commonTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/btn_bg"
+                        android:backgroundTint="@color/shimmerColor"
+                        android:fontFamily="@font/airbnb_cereal_bold"
+                        android:paddingHorizontal="@dimen/_5sdp"
+                        android:text="@string/follow"
+                        android:textColor="@color/shimmerColor"
+                        android:textSize="@dimen/_11sdp"
+                        app:drawableStartCompat="@drawable/ic_following_fill"
+                        app:drawableTint="@color/shimmerColor" />
+
+                    <ProgressBar
+                        android:id="@+id/pdFollow"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:indeterminateTint="@color/white"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvMessages"
+                    style="@style/commonTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:backgroundTint="@color/shimmerColor"
+                    android:fontFamily="@font/airbnb_cereal_bold"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:text="@string/message"
+                    android:textColor="@color/shimmerColor"
+                    android:textSize="@dimen/_11sdp"
+                    app:drawableStartCompat="@drawable/allow_comment"
+                    app:drawableTint="@color/shimmerColor" />
+
+                <RelativeLayout
+                    android:id="@+id/lytBlockUnblock"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg"
+                    android:backgroundTint="@color/red">
+
+                    <TextView
+                        android:id="@+id/tvBlock"
+                        style="@style/commonTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/btn_bg"
+                        android:backgroundTint="@color/shimmerColor"
+                        android:fontFamily="@font/airbnb_cereal_bold"
+                        android:paddingHorizontal="@dimen/_5sdp"
+                        android:text="@string/block"
+                        android:textColor="@color/shimmerColor"
+                        android:textSize="@dimen/_11sdp"
+                        app:drawableStartCompat="@drawable/ic_block_fill"
+                        app:drawableTint="@color/shimmerColor" />
+
+                    <ProgressBar
+                        android:id="@+id/pdBlock"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:indeterminateTint="@color/white"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_190sdp"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_10dp"
+                        android:backgroundTint="@color/shimmerColor" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_10dp"
+                        android:backgroundTint="@color/shimmerColor" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_190sdp"
+                    android:layout_marginHorizontal="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_10dp"
+                        android:backgroundTint="@color/shimmerColor" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_10dp"
+                        android:backgroundTint="@color/shimmerColor" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/shimmerColor"
+            android:orientation="vertical" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

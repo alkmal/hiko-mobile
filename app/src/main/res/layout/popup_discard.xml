@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="5dp"
+            app:cardBackgroundColor="@color/black_back"
+            app:cardCornerRadius="30dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bottomSheetColor"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/ivVector"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/vector_info" />
+
+                <TextView
+                    android:id="@+id/tvText"
+                    style="@style/commonPopupTitleStyle"
+                    android:text="@string/discard_entire_video" />
+
+                <TextView
+                    android:id="@+id/tvText2"
+                    style="@style/commonPopupTextStyle"
+                    android:text="@string/if_you_go_back_now_you_will_lose_all_the_clips_added_to_your_video" />
+
+                <include layout="@layout/custom_line_view" />
+
+                <TextView
+                    android:id="@+id/btnContinue"
+                    style="@style/commonPopupButtonStyle"
+                    android:textColor="@color/pink"
+                    android:text="@string/discard_video" />
+
+                <include layout="@layout/custom_line_view" />
+
+                <TextView
+                    android:id="@+id/btnCancel"
+                    style="@style/commonPopupButtonStyle"
+                    android:textColor="@color/hintColor"
+                    android:text="@string/cancel" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black_back" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="#D1D1D1" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/hostDetailsLyt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:paddingBottom="5dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="bottom">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start|center"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginStart="5dp"
+                                android:backgroundTint="@color/shimmerColor"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/airbnb_cereal_medium"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:shadowColor="#000000"
+                                android:shadowDx="0"
+                                android:shadowDy="0"
+                                android:shadowRadius="0.5"
+                                android:text="@string/dummy_name"
+                                android:textColor="@color/white"
+                                android:textSize="20sp"
+                                app:cardCornerRadius="10dp" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="280dp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="15dp"
+                                android:backgroundTint="@color/shimmerColor"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/airbnb_cereal_medium"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:shadowColor="#000000"
+                                android:shadowDx="0"
+                                android:shadowDy="0"
+                                android:shadowRadius="0.5"
+                                android:textColor="@color/white"
+                                android:textSize="15sp"
+                                app:cardCornerRadius="10dp"
+                                tools:text="\@your_samantha" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnReport"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/shimmerColor"
+            android:src="@drawable/baseline_more_vert_24"
+            android:visibility="visible"
+            app:cardCornerRadius="20dp"
+            app:tint="@color/white" />
+    </RelativeLayout>
+</layout>

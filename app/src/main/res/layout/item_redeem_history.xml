@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="-15dp"
+            android:layout_toEndOf="@id/ivStart"
+            android:background="@drawable/bg_16dp"
+            android:backgroundTint="@color/white_10"
+            android:paddingHorizontal="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/layoutCoins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toStartOf="@+id/layoutStatus"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCoin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/airbnbcereal_w_bd"
+                    android:text="70 Diamonds"
+                    android:textColor="#34AA06"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvPaymentGateway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/airbnbcereal_w_md"
+                    android:text="@string/payment_gateway"
+                    android:textColor="@color/textColor"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="7dp"
+                    android:drawablePadding="@dimen/_3sdp"
+                    android:fontFamily="@font/airbnbcereal_w_md"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="22/4/14"
+                    android:textColor="@color/redeem_history"
+                    android:textSize="12sp"
+                    app:drawableStartCompat="@drawable/icon_calendar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="3dp"
+                    android:fontFamily="@font/airbnbcereal_w_md"
+                    android:background="@drawable/bg_10dp_purewhite"
+                    android:backgroundTint="@color/redColor"
+                    android:elevation="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="7dp"
+                    android:text="@string/pending"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_withdraw_start" />
+    </RelativeLayout>
+</layout>

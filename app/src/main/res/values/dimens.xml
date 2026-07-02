@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="live_stat_margin_bottom">68dp</dimen>
+    <dimen name="live_stats_close_button_size">32dp</dimen>
+    <dimen name="live_pk_result_icon_size">130dp</dimen>
+    <dimen name="bottom_offset_dp">150dp</dimen>
+    <dimen name="bottom_insets">85dp</dimen>
+</resources>

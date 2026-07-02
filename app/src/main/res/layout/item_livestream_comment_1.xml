@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/bg_comment"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="9dp"
+            android:fontFamily="@font/airbnbcereal_w_bk"
+            android:text="@string/welcome_to_join_the_live_any_content_related_to_porn_violence_gambling_illegal_dealing_will_be_banned"
+            android:textColor="#25FF96"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</layout>

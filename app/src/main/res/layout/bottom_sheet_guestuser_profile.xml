@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="-30dp"
+            android:clickable="true"
+            android:contentDescription="@string/close"
+            android:focusable="true"
+            android:src="@drawable/ic_close_profile" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_bottom_sheet_top_corner_radius"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/layMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.codder.ultimate.utils.UserProfileImageView
+                    android:id="@+id/imgUser"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-40dp"
+                    android:clipToOutline="true"
+                    android:elevation="10dp"
+                    android:src="@drawable/girl" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/airbnbcereal_w_bd"
+                    android:singleLine="true"
+                    android:text="@string/dummy_name"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layoutUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/airbnbcereal_w_lt"
+                        android:gravity="start"
+                        android:text="@string/dummy_id"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/white_60"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/copy"
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5sp"
+                        android:src="@drawable/icon_copy" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="@dimen/_7sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_20dp"
+                        android:backgroundTint="@color/white_10"
+                        android:paddingHorizontal="10sp"
+                        android:paddingVertical="4sp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/_3sdp"
+                            android:visibility="visible"
+                            app:cardCornerRadius="7.5dp">
+
+                            <ImageView
+                                android:id="@+id/svgWebView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/tvCountry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/airbnbcereal_w_md"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            tools:text="@string/india" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10sp"
+                        android:background="@drawable/bg_20dp"
+                        android:backgroundTint="#1AFF0000"
+                        android:paddingHorizontal="10sp"
+                        android:paddingVertical="4sp">
+
+                        <ImageView
+                            android:id="@+id/ivLevel"
+                            android:layout_width="12sp"
+                            android:layout_height="12sp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="3dp"
+                            android:src="@drawable/ic_level1" />
+
+                        <TextView
+                            android:id="@+id/tvLevel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/airbnbcereal_w_md"
+                            android:text="Lv. 1"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_20dp"
+                        android:backgroundTint="#1AFFFF00"
+                        android:paddingHorizontal="10sp"
+                        android:paddingVertical="4sp">
+
+                        <ImageView
+                            android:id="@+id/ivGender"
+                            android:layout_width="12sp"
+                            android:layout_height="12sp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_female" />
+
+                        <TextView
+                            android:id="@+id/tvAge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2sp"
+                            android:fontFamily="@font/airbnbcereal_w_md"
+                            android:text="20"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layEditDetails"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@id/latProfile"
+                    android:clipToPadding="false"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:id="@+id/tvType"
+                            android:layout_width="55dp"
+                            android:layout_height="20dp"
+                            android:orientation="vertical"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/ic_agency_tag"
+                            android:visibility="visible">
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:id="@+id/tvHostType"
+                            android:layout_width="55dp"
+                            android:layout_height="20dp"
+                            android:orientation="vertical"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/ic_host_tag"
+                            android:visibility="visible">
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/tvBdType"
+                            android:layout_width="45dp"
+                            android:layout_height="20dp"
+                            android:orientation="vertical"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/ic_bd_tag"
+                            android:visibility="gone">
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tvVIPType"
+                            android:layout_width="45dp"
+                            android:layout_height="20dp"
+                            android:orientation="vertical"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/ic_vip_tag"
+                            android:visibility="visible">
+
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:id="@+id/tvCoinseller"
+                            android:layout_width="60dp"
+                            android:layout_height="20dp"
+                            android:orientation="vertical"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/ic_coinseller_tag"
+                            android:visibility="visible">
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10sp"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/lytFollowing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-10sp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvFollowing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/airbnbcereal_w_bd"
+                            android:text="50.2k"
+                            android:textColor="#FFFFFF"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/airbnbcereal_w_lt"
+                            android:text="@string/following"
+                            android:textColor="@color/white_60"
+                            android:textSize="16sp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <View
+                        android:layout_width="1sp"
+                        android:layout_height="26sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_10dp_purewhite"
+                        android:backgroundTint="@color/white_30" />
+
+                    <LinearLayout
+                        android:id="@+id/lyt_followers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvFollowers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/airbnbcereal_w_bd"
+                            android:text="30"
+                            android:textColor="#FFFFFF"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/airbnbcereal_w_lt"
+                            android:text="@string/fans"
+                            android:textColor="@color/white_60"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:layout_marginStart="15sp"
+                        android:visibility="visible"
+                        app:tabGravity="start"
+                        app:tabIndicator="@null"
+                        app:tabMode="auto"
+                        app:tabRippleColor="@null" />
+                </LinearLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:descendantFocusability="blocksDescendants"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_25dp_topradius"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/lytFollowUnfollow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_follow"
+                    android:gravity="center"
+                    android:paddingHorizontal="12sp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="10sp">
+
+                        <ImageView
+                            android:id="@+id/ivFollow"
+                            android:layout_width="18sp"
+                            android:layout_height="18sp"
+                            android:src="@drawable/guest_profile_follow" />
+
+                        <TextView
+                            android:id="@+id/tvFollowStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/airbnbcereal_w_md"
+                            android:paddingStart="5sp"
+                            android:text="@string/follow"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/pdFollow"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:indeterminateTint="@color/white"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/tvMessages"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_20dp"
+                    android:backgroundTint="@color/green_message"
+                    android:gravity="center"
+                    android:paddingHorizontal="12sp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="10sp">
+
+                        <ImageView
+                            android:layout_width="18sp"
+                            android:layout_height="18sp"
+                            android:src="@drawable/ic_message" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/airbnbcereal_w_md"
+                            android:paddingStart="5sp"
+                            android:text="@string/message"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <RelativeLayout
+                    android:id="@+id/lytBlockUnblock"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_20dp"
+                    android:backgroundTint="@color/red"
+                    android:gravity="center"
+                    android:paddingHorizontal="10sp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="10sp">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_block" />
+
+                        <TextView
+                            android:id="@+id/tvBlock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/airbnbcereal_w_md"
+                            android:paddingStart="5sp"
+                            android:text="@string/block"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                    <ProgressBar
+                        android:id="@+id/pdBlock"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:indeterminateTint="@color/white"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/shimmer_bottom_guest" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</layout>

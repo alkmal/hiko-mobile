@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/main"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <WebView
+            android:layout_below="@id/closeBtn"
+            android:id="@+id/webViewGame"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_270sdp" />
+
+        <ImageView
+            android:id="@+id/closeBtn"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/button_close" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loader"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_centerInParent="true"
+            app:lottie_rawRes="@raw/all_in_one_loader" />
+    </RelativeLayout>
+</layout>

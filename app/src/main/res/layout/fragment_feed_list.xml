@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.codder.ultimate.viewModel.FeedListViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".post.fragment.FeedListFragment">
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            app:srlAccentColor="@color/purple"
+            app:srlPrimaryColor="@color/tintColor">
+
+            <com.scwang.smart.refresh.header.ClassicsHeader
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:layout_srlSpinnerStyle="Translate"
+                app:srlAccentColor="@color/pink"
+                app:srlDrawableArrow="@drawable/swipe_arrow"
+                app:srlEnableLastTime="false"
+                app:srlEnablePullToCloseTwoLevel="false"
+                app:srlEnableTwoLevel="false"
+                app:srlPrimaryColor="@color/transparent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvFeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:adapter="@{viewModel.feedAdapter}"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_feed" />
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:visibility="@{viewModel.isFirstTimeLoading?View.VISIBLE : View.GONE}"
+                    app:shimmer_base_color="@color/shimmerColor"
+                    app:shimmer_colored="false"
+                    app:shimmer_highlight_color="@color/white"
+                    tools:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                            <include layout="@layout/shimmer_item_feed" />
+
+                            <include layout="@layout/shimmer_item_feed" />
+
+                            <include layout="@layout/shimmer_item_feed" />
+                    </LinearLayout>
+                </com.facebook.shimmer.ShimmerFrameLayout>
+            </RelativeLayout>
+
+            <com.scwang.smart.refresh.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center" />
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+            android:visibility="@{viewModel.noData?View.VISIBLE : View.GONE}">
+
+            <include layout="@layout/lyt_no_data" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

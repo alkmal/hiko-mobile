@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">Ingiza jina la programu yako</string>
+
+    <string name="no_internet_connection">Hakuna Muunganisho wa Mtandao</string>
+    <string name="back_online">Rudi Mtandaoni</string>
+    <string name="we_are_under_maintenance_text">Tuko Chini ya Matengenezo</string>
+    <string name="dismiss">Ondoa</string>
+    <string name="you_are_blocked_by_admin_text">Umezuiwa na msimamizi</string>
+    <string name="cancel">Ghairi</string>
+    <string name="you_are_logged_in_other_devices">Umeingia kwenye vifaa vingine</string>
+    <string name="log_out">Toka nje</string>
+    <string name="policy">Kwa kujiandikisha utakuwa kukubaliana na yetu</string>
+    <string name="terms_amp_condition">Sheria na Masharti</string>
+    <string name="and">na</string>
+    <string name="privacy_policy">Sera ya Faragha</string>
+    <string name="please_wait">Tafadhali Subiri</string>
+    <string name="your_name">Jina lako</string>
+    <string name="male">Mwanaume</string>
+    <string name="female">Kike</string>
+    <string name="select_your_age">Chagua umri wako</string>
+    <string name="edit_profile">Badilisha Wasifu</string>
+    <string name="submit">Wasilisha</string>
+    <string name="enter_your_name">Ingiza jina lako</string>
+    <string name="enter_username_first">Ingiza Jina la mtumiaji kwanza</string>
+    <string name="select_your_gender">Chagua jinsia yako</string>
+    <string name="minimum_age_must_be_18_years">Umri wa chini lazima uwe miaka 18.</string>
+    <string name="privacy_policy_text">Sera ya Faragha</string>
+    <string name="accept_privacy_policy">Nina umri wa miaka 18+ na nimesoma Sera ya Faragha.</string>
+    <string name="deny">Kataa</string>
+    <string name="accept">Kubali</string>
+    <string name="please_accept_privacy_policy">Tafadhali thibitisha kuwa umesoma Sera ya Faragha ili kuendelea.</string>
+    <string name="exit_app_confirmation">Je, una uhakika unataka kuondoka kwenye programu?</string>
+    <string name="exit_this_app">Ondoka kwenye Programu Hii</string>
+    <string name="fans">Mashabiki</string>
+    <string name="my_diamonds">Almasi Zangu</string>
+    <string name="demo_host_center_text">Kituo cha Kukaribisha Onyesho</string>
+    <string name="demo_agency_center">Kituo cha Wakala wa Maonyesho</string>
+    <string name="host_request">Ombi la Mwenyeji</string>
+    <string name="offline_recharge">Kuchaji upya nje ya mtandao</string>
+    <string name="my_posts">Machapisho Yangu</string>
+    <string name="my_relites">Relites zangu</string>
+    <string name="store">Hifadhi</string>
+    <string name="free_coins">Sarafu za Bure</string>
+    <string name="become_vip">Kuwa VIP</string>
+    <string name="user_level">Kiwango cha Mtumiaji</string>
+    <string name="copied_successfully">Imenakiliwa Imefaulu</string>
+    <string name="id">"ID:</string>
+    <string name="agency_center_text">Kituo cha Wakala</string>
+    <string name="host_center">Kituo cha mwenyeji</string>
+    <string name="ok">OKSawa</string>
+    <string name="history">Historia</string>
+    <string name="recharge">Chaji upya</string>
+    <string name="my_diamond_balance">Sarafu Yangu Ya Almasi</string>
+    <string name="enter_user_id">Weka Kitambulisho cha Mtumiaji</string>
+    <string name="enter_diamonds">Ingiza Almasi</string>
+    <string name="note">Kumbuka</string>
+    <string name="top_up">Juu juu</string>
+    <string name="user_not_found">Mtumiaji Hajapatikana</string>
+    <string name="please_verify_user_id">tafadhali thibitisha kitambulisho cha mtumiaji</string>
+    <string name="enter_coin_value">Ingiza Thamani ya Sarafu</string>
+    <string name="invalid_coin_value">Thamani ya Sarafu Si Sahihi</string>
+    <string name="insufficient_coins">Sarafu za kutosha</string>
+    <string name="send_successfully">Tuma kwa Mafanikio</string>
+    <string name="continue_text">Endelea</string>
+    <string name="in_this_apk_all_data_are_only_for_demo_purpose">Katika APK hii, Data zote ni za Madhumuni ya Onyesho pekee.</string>
+    <string name="deleted_successfully">Imefutwa Imefaulu</string>
+    <string name="india">India</string>
+    <string name="we_will_take_immediately_action_for_this_user_thank_you">Tutachukua hatua mara moja kwa mtumiaji huyu Asante</string>
+    <string name="likes">Anapenda</string>
+    <string name="comments">Maoni</string>
+    <string name="report_user">Ripoti Mtumiaji</string>
+    <string name="blocked_successfully">Imezuiwa Imefaulu</string>
+    <string name="report_this_user">Ripoti Mtumiaji huyu</string>
+    <string name="please_describe_your_issue_here">Tafadhali eleza suala lako hapa..</string>
+    <string name="unable_to_report">Imeshindwa Kuripoti..</string>
+    <string name="something_went_wrong_text">Hitilafu fulani imetokea</string>
+    <string name="block_this_user">Zuia Mtumiaji Huyu</string>
+    <string name="yes">Ndiyo</string>
+    <string name="type_message_first">Andika ujumbe kwanza</string>
+    <string name="toast_cannot_retrieve_cropped_image">Haiwezi kurejesha picha iliyopunguzwa</string>
+    <string name="toast_unexpected_error">Hitilafu Isiyotarajiwa</string>
+    <string name="call_ended">Simu Imeisha!</string>
+    <string name="ringing">Kupigia</string>
+    <string name="we_will_take_immediately_action_for_this_user_n_thank_you">Tutachukua hatua mara moja kwa mtumiaji huyu Asante</string>
+    <string name="enter_valid_message">Weka Ujumbe halali</string>
+    <string name="is_busy_with_someone_else">yuko busy na mtu mwingine.</string>
+    <string name="discard_entire_video">Ungependa kutupa video nzima?</string>
+    <string name="if_you_go_back_now_you_will_lose_all_the_clips_added_to_your_video">Ukirudi sasa, utapoteza klipu zote zilizoongezwa kwenye video yako</string>
+    <string name="discard_video">Tupa Video</string>
+    <string name="incoming_call">Simu inayoingia...</string>
+    <string name="need_permissions">"Unahitaji ruhusa"</string>
+    <string name="call_declined">Simu Imekataliwa</string>
+    <string name="rtc_stats_format">Kasi ya Bitrate ya Mtiririko wa Chini: %.2f kbps%n Kiwango cha Kupotea kwa Mtiririko wa Chini: %.2f%% %nBitrate ya Mtiririko wa Juu: %.2f kbps%n Kiwango cha Hasara cha Juu: %.2f%%</string>
+    <string name="unfollow">Acha kufuata</string>
+    <string name="follow">Fuata</string>
+    <string name="unblock">Ondoa kizuizi</string>
+    <string name="block">Zuia</string>
+    <string name="message">Ujumbe</string>
+    <string name="message_delete_confirmation">Je, una uhakika Unataka kufuta Ujumbe huu?</string>
+    <string name="following">Kufuatia</string>
+    <string name="my_fans">Mashabiki Wangu</string>
+    <string name="image">Picha</string>
+    <string name="choose_one">chagua moja</string>
+    <string name="say_something">Sema kitu...</string>
+    <string name="failed_to_load_videos">Imeshindwa kupakia video.</string>
+    <string name="settings">Mipangilio</string>
+    <string name="notification">Taarifa</string>
+    <string name="have_an_issue">Kuwa na Tatizo</string>
+    <string name="my_complains">Malalamiko Yangu</string>
+    <string name="terms_of_service">Masharti ya Huduma</string>
+    <string name="about_us">Kuhusu Sisi</string>
+    <string name="next">Inayofuata</string>
+    <string name="complaint_or_suggestion">Malalamiko au Pendekezo</string>
+    <string name="typing_somethings">Inaandika Kitu...</string>
+    <string name="contact">Wasiliana</string>
+    <string name="enter_your_mobile_number_or_email">Weka Nambari yako ya Simu au Barua pepe</string>
+    <string name="attach_your_image_or_screenshot">Ambatisha Picha yako au Picha ya skrini</string>
+    <string name="browse">Vinjari</string>
+    <string name="complain_send_successfully">Lalamika Tuma Imefanikiwa</string>
+    <string name="please_enter_message">tafadhali Ingiza Ujumbe</string>
+    <string name="please_enter_contact">tafadhali Weka anwani</string>
+    <string name="my_tickets">Tiketi Zangu</string>
+    <string name="open">Fungua</string>
+    <string name="ticket_details">Maelezo ya Tiketi</string>
+    <string name="status">Hali</string>
+    <string name="close">FUNGA</string>
+    <string name="_1_self_introduction">1. Kujitambulisha</string>
+    <string name="name">Jina</string>
+    <string name="enter_name">Ingiza Jina</string>
+    <string name="mobile_number">Nambari ya Simu</string>
+    <string name="enter_mobile_number">Weka Nambari ya Simu</string>
+    <string name="Bio">Wasifu</string>
+    <string name="_2_agency_code">2. Kanuni ya Wakala</string>
+    <string name="if_you_have">(Kama unayo)</string>
+    <string name="_3_upload_photos">3. Pakia Picha</string>
+    <string name="personal_photo">Picha ya Kibinafsi</string>
+    <string name="_4_bank_details">4. Maelezo ya Benki</string>
+    <string name="enter_your_bank_details">Weka maelezo yako ya benki</string>
+    <string name="admission_car">Gari ya kiingilio</string>
+    <string name="enter_bio_text">Ingiza Wasifu</string>
+    <string name="select_personal_photo">Chagua Picha ya Kibinafsi</string>
+    <string name="image_file_not_found">Faili ya picha haijapatikana</string>
+    <string name="host_request_send">Ombi la Mwenyeji Tuma</string>
+    <string name="try_after_some_time">Tafadhali jaribu Baada ya Muda Fulani</string>
+    <string name="avatar_frame">Sura ya Avatar</string>
+    <string name="super_star">Super Star</string>
+    <string name="you_don_t_have_required_diamonds">Huna almasi zinazohitajika!</string>
+    <string name="diamond_star">Diamond Star</string>
+    <string name="stepping_in">Kuingia!</string>
+    <string name="free_diamonds">Almasi za Bure</string>
+    <string name="method_1">Mbinu ya 1:</string>
+    <string name="method_2">Mbinu ya 2:</string>
+    <string name="your_refer_code">Msimbo wako wa Marejeleo:</string>
+    <string name="enter_referral_code_here">Ingiza msimbo wa Rufaa hapa</string>
+    <string name="you_have_2_referrals">Una marejeleo 2</string>
+    <string name="referral_code_copied">Msimbo wa Rufaa Umenakiliwa!</string>
+    <string name="enter_refer_code">Ingiza Msimbo wa Marejeleo</string>
+    <string name="refereed_successfully">Refa Imefaulu</string>
+    <string name="generic_error">Hitilafu fulani imetokea. Tafadhali jaribu tena baadaye.</string>
+    <string name="earned_by_user">Tuzo Imetolewa</string>
+    <string name="invite_desc">Alika Marafiki zako! kwa kila malipo ya marafiki walioalikwa, wewe na rafiki yako mtapokea</string>
+    <string name="vip_plan">Mpango wa VIP</string>
+    <string name="become_vip_and_get_many_privileges">Kuwa VIP na upate Mapendeleo mengi</string>
+    <string name="vip_privileges">Mapendeleo ya VIP</string>
+    <string name="get_vip_to_access_all_function">Pata VIP ili Upate Kazi Zote</string>
+    <string name="vip_package">Kifurushi cha VIP</string>
+    <string name="get_now">Pata Sasa</string>
+    <string name="first_select_the_plan">Kwanza chagua mpango.</string>
+    <string name="credit_debit_card">Kadi ya Mkopo/Debit</string>
+    <string name="google_play">Google Play</string>
+    <string name="hot">Moto</string>
+    <string name="your_level">Kiwango chako</string>
+    <string name="no_level_available">Hakuna Kiwango Kinachopatikana</string>
+    <string name="unknown">Haijulikani</string>
+    <string name="income">Mapato</string>
+    <string name="record">Rekodi</string>
+    <string name="diamonds">Almasi</string>
+    <string name="outcome">Matokeo</string>
+    <string name="r_coins">R-sarafu</string>
+    <string name="confirm">Thibitisha</string>
+    <string name="diamond_record">Rekodi ya Diamond</string>
+    <string name="spending">Matumizi</string>
+    <string name="converted_to_diamonds">kubadilishwa kuwa almasi</string>
+    <string name="diamond_purchase">Ununuzi wa almasi</string>
+    <string name="you_have_called">Umepiga simu</string>
+    <string name="watching_ads">Kuangalia matangazo</string>
+    <string name="login_bonus">bonus ya kuingia</string>
+    <string name="referral_bonus">Bonasi ya rufaa</string>
+    <string name="cash_out">Pesa nje</string>
+    <string name="svga_animation_purchased">Uhuishaji wa SVGA Umenunuliwa</string>
+    <string name="add_in_teenpatti_game">Ongeza kwenye Mchezo wa Teenpatti</string>
+    <string name="purchased_avatar_frame">Fremu ya Avatar iliyonunuliwa</string>
+    <string name="coin_add_by_offline_recharge">Ongeza sarafu kwa kuchaji upya nje ya mtandao</string>
+    <string name="call_coin_received">Piga Coin</string>
+    <string name="lucy_gift_bonus">Bonasi ya Zawadi ya Lucy</string>
+    <string name="add_in_roulette_game">Ongeza kwenye Mchezo wa Roulette</string>
+    <string name="add_in_ferry_wheel_game">Ongeza kwenye Mchezo wa gurudumu la Feri</string>
+    <string name="convert_in_coin_seller_coin">Badilisha katika Sarafu ya Muuzaji wa Sarafu</string>
+    <string name="unknown_transaction">Muamala usiojulikana</string>
+    <string name="gift_broadcast_during_livestream_by_you">Tangaza Zawadi wakati wa kutiririsha moja kwa moja na wewe</string>
+    <string name="gift_received">Zawadi imepokelewa</string>
+    <string name="gift_send_to">zawadi tuma kwa</string>
+    <string name="added_by_admin">Imeongezwa na Admin</string>
+    <string name="reduce_by_admin">Punguza Kwa Admin</string>
+    <string name="_1">$1$1</string>
+    <string name="withdrawing_rcoins">Kutoa Coins</string>
+    <string name="convert_to_diamond">Badilisha kuwa Diamond</string>
+    <string name="what_is_coins">Sarafu ni nini?</string>
+    <string name="what_is_rcoin">1. Unapopokea zawadi , kama vile Lamborghini au Castle, unapata mara moja kiasi sawa cha Sarafu kama bei ya zawadi katika Duka la Zawadi. 2. Unaweza kubadilisha Sarafu kuwa almasi na pesa taslimu. 3. Salio la sarafu Inapatikana+Kutoa</string>
+    <string name="this_is_a_demo_version">Hili ni toleo la Demo</string>
+    <string name="payment_done">Malipo Yamefanyika</string>
+    <string name="coin_sellers_list">Orodha ya Wauza Sarafu</string>
+    <string name="how_much_rcoins_convert_cash">Kiasi gani Rcoins kubadilisha Cash?</string>
+    <string name="how_much_rcoins_convert_into_diamonds">Rcoins inabadilisha kiasi gani kuwa Almasi?</string>
+    <string name="setting_error">Hitilafu ya Kuweka</string>
+    <string name="minimum_amount_is">Kiasi cha chini ni</string>
+    <string name="you_not_have_enough">Huna vya kutosha</string>
+    <string name="you_are_not_able_to_cashout_at_your_level">Huwezi kutoa pesa kwa kiwango chako</string>
+    <string name="your">Wako</string>
+    <string name="successfully_converted_into">Imebadilishwa kuwa</string>
+    <string name="conversion_failed">Imeshindwa kugeuza</string>
+    <string name="redeem_your_coins">Komboa Sarafu Zako</string>
+    <string name="enter_coins_to_withdraw">Weka sarafu ili Kutoa</string>
+    <string name="your_redeem_history">Historia yako ya Kukomboa</string>
+    <string name="pending">Inasubiri</string>
+    <string name="r_coin_convert">Kubadilisha R-Coin</string>
+    <string name="how_much_coins_convert_into_diamonds">Je! ni sarafu ngapi zinazobadilisha kuwa Almasi?</string>
+    <string name="enter_coins">Ingiza sarafu</string>
+    <string name="convert_to_diamonds">Badilisha Kuwa Almasi</string>
+    <string name="whatsapp_not_installed">Whatsapp haijasakinishwa</string>
+    <string name="invalid_whatsapp_number">Nambari ya whatsapp si sahihi</string>
+    <string name="withdrawable_rcoins">Rcoins zinazoweza kuondolewa</string>
+    <string name="no_payment_method_found">Hakuna Mbinu ya Kulipa Imepatikana</string>
+    <string name="insufficient">Haitoshi</string>
+    <string name="please_enter_your_details">Tafadhali Weka Maelezo Yako</string>
+    <string name="redeem_request_sent_successfully">Ombi la Komboa Limetumwa Kwa Mafanikio</string>
+    <string name="enter_your_upi_details">Weka maelezo yako ya UPI</string>
+    <string name="enter_your_paytm_details">Weka maelezo yako ya Paytm</string>
+    <string name="enter_your_bank_account_details">Weka maelezo ya akaunti yako ya Benki</string>
+    <string name="enter_your_bybit_details">Weka maelezo yako ya Bybit</string>
+    <string name="purchased">Imenunuliwa</string>
+    <string name="go_live">Nenda Moja kwa Moja</string>
+    <string name="song_hint">Bofya ili kuchagua wimbo.</string>
+    <string name="timer_hint">Ili kughairi kipima muda kabla ya kuanza, bofya hapa.</string>
+    <string name="duration">Muda</string>
+    <string name="mmss">0:00</string>
+    <string name="welcome_to_join_the_live_any_content_related_to_porn_violence_gambling_illegal_dealing_will_be_banned">Karibu ujiunge na moja kwa moja. Maudhui yoyote yanayohusiana na ponografia, vurugu, kamari, shughuli haramu yatapigwa marufuku.</string>
+    <string name="enter_a_room">ameingia chumbani</string>
+    <string name="reacted">Imejibu</string>
+    <string name="browse_file_title">Vinjari faili</string>
+    <string name="please_enter_room_title">Tafadhali weka jina la chumba</string>
+    <string name="please_select_room_image">Tafadhali chagua picha ya chumba</string>
+    <string name="you_are_block_from_admin_to_go_live">Umezuiwa na msimamizi ili kwenda moja kwa moja</string>
+    <string name="start_audio_live">Anzisha Sauti Moja kwa Moja</string>
+    <string name="take_picture">Piga Picha</string>
+    <string name="recorder_error_in_progress">Ili kufanya hivyo, tafadhali acha kurekodi kwanza.</string>
+    <string name="recorder_error_maxed_out">Tayari umerekodi kwa muda wa juu zaidi.</string>
+    <string name="audio_from_clip">Sauti maalum kutoka kwa klipu.</string>
+    <string name="recorder_error_no_clips">Tafadhali rekodi klipu yako kwanza ili kuendelea.</string>
+    <string name="message_song_select">Huwezi kuchagua wimbo baada ya kuanza kurekodi.</string>
+    <string name="message_song_change">Huwezi kubadilisha wimbo baada ya kuanza kurekodi.</string>
+    <string name="you_need_storage_permission">Unahitaji Ruhusa ya Kuhifadhi</string>
+    <string name="filter">Chagua Kichujio</string>
+    <string name="you_cannot_upload_video_above_30_mb">Huwezi Kupakia video zaidi ya MB 30 !!!</string>
+    <string name="choose_sticker">Chagua Kibandiko</string>
+    <string name="timer">Kipima muda</string>
+    <string name="sticker">Kibandiko</string>
+    <string name="filters">Vichujio</string>
+    <string name="preview">Hakiki</string>
+    <string name="flip">Geuza</string>
+    <string name="speed">Kasi</string>
+    <string name="notification_channel_id">chaguo-msingi</string>
+    <string name="notification_download_title">Pakua faili…</string>
+    <string name="notification_download_description">Haipaswi kuchukua zaidi ya sekunde chache.</string>
+    <string name="announcement_welcome_to_room">Tangazo: Karibu chumbani</string>
+    <string name="all">YOTE</string>
+    <string name="send">Tuma</string>
+    <string name="followers">Wafuasi</string>
+    <string name="shorts">Shorts</string>
+    <string name="posts">Machapisho</string>
+    <string name="creator">Muumba</string>
+    <string name="agency">Wakala</string>
+    <string name="coin_seller">Muuza Sarafu</string>
+    <string name="invite">Alika</string>
+    <string name="live">Ishi</string>
+    <string name="public_text">Hadharani</string>
+    <string name="private_text">Privat</string>
+    <string name="welcome_to_the_party">Karibu kwenye sherehe</string>
+    <string name="games">Michezo</string>
+    <string name="keep">Weka</string>
+    <string name="exit_text">Utgång</string>
+    <string name="you_not_have_enough_diamonds_to_send_gift">Huna almasi za kutosha kutuma zawadi</string>
+    <string name="sent_a_gift">Ametuma zawadi</string>
+    <string name="you_are_blocked_by_host">Umezuiwa na mwenyeji</string>
+    <string name="you_cannot_upload_video_above_30_mb_text">Huwezi Kupakia video zaidi ya MB 30 !!!</string>
+    <string name="select_song">Chagua Wimbo</string>
+    <string name="select_filter">Chagua Kichujio</string>
+    <string name="upload_relite">Pakia Relite</string>
+    <string name="add_caption_with_hashtags_and_mentions">Ongeza Manukuu yenye lebo za reli na mtaji</string>
+    <string name="location">Mahali</string>
+    <string name="show_to">Onyesha kwa</string>
+    <string name="allow_comments">Ruhusu Maoni</string>
+    <string name="upload_post">Pakia Chapisho</string>
+    <string name="who_show_this_post_to">Nani wa kuonyesha chapisho hili</string>
+    <string name="only_followers">Wafuasi pekee</string>
+    <string name="select_image_first">Chagua Picha Kwanza</string>
+    <string name="error_opening_gallery">Hitilafu imetokea wakati wa kufungua ghala</string>
+    <string name="permission_denied_message">Ruhusa Imekataliwa....\n</string>
+    <string name="error_selecting_image">Hitilafu katika kuchagua picha</string>
+    <string name="location_not_set">Mahali hapajawekwa</string>
+    <string name="count_clips">klipu %s</string>
+    <string name="my_followers">Wafuasi Wangu</string>
+    <string name="add_a_comment">Ongeza Maoni...</string>
+    <string name="send_a_gift_to">Ametuma zawadi kwa</string>
+    <string name="room_image_updated">Picha ya Chumba Imesasishwa</string>
+    <string name="sure_you_want_to_stand_up">Je, una uhakika unataka kusimama?</string>
+    <string name="there_s_no_user_to_invite_on_mic">Hakuna mtumiaji wa kumwalika kwenye maikrofoni.</string>
+    <string name="remove_seat">Ondoa Kiti</string>
+    <string name="kick_out">Piga nje</string>
+    <string name="unmute_mic">Washa maikrofoni</string>
+    <string name="mute_mic">Zima maikrofoni</string>
+    <string name="remove_mic">Ondoa maikrofoni</string>
+    <string name="invite_mic">Alika maikrofoni</string>
+    <string name="take_the_mic">Chukua Maikrofoni</string>
+    <string name="give_the_mic">Nipe Mic</string>
+    <string name="lock_the_mic">Funga Maikrofoni</string>
+    <string name="mute_the_mic">Zima maikrofoni</string>
+    <string name="unmute">Rejesha sauti</string>
+    <string name="unlock">Fungua</string>
+    <string name="remove">Ondoa</string>
+    <string name="your_live_session_end_by_admin_text">Kipindi chako cha moja kwa moja kitaisha na msimamizi.</string>
+    <string name="end_live_video">Maliza Video ya Moja kwa Moja</string>
+    <string name="don_t_have_user_to_sent_a_gift_wait_for_user">Huna mtumiaji wa kutuma zawadi subiri kwa mtumiaji</string>
+    <string name="select_at_least_one_user">Chagua angalau mtumiaji mmoja</string>
+    <string name="room_settings">Mipangilio ya chumba</string>
+    <string name="people">Watu</string>
+    <string name="copied_to_clipboard">Imenakiliwa kwenye Ubao wa kunakili</string>
+    <string name="room_name">Jina la chumba</string>
+    <string name="enter_room_name">Weka jina la chumba</string>
+    <string name="please_enter_room_name">Tafadhali Weka Jina la Chumba</string>
+    <string name="seat_mode">Hali ya kiti</string>
+    <string name="_8_seat">8 kiti</string>
+    <string name="use">Tumia</string>
+    <string name="_12_seat">12 kiti</string>
+    <string name="_16_seat">16 kiti</string>
+    <string name="seat_update">sasisho la kiti</string>
+    <string name="room_welcome_message">Ujumbe wa kukaribisha chumba</string>
+    <string name="enter_room_welcome_message">Weka ujumbe wa kukaribisha chumba</string>
+    <string name="please_enter_room_welcome_message">Tafadhali Ingiza Ujumbe wa Kukaribisha Chumba</string>
+    <string name="room_passcode">Nambari ya siri ya chumba</string>
+    <string name="enter_room_passcode">Weka nambari ya siri ya chumba</string>
+    <string name="change_background">Badilisha usuli</string>
+    <string name="live_ended">Moja kwa Moja Imeisha</string>
+    <string name="joined_users">Watumiaji waliojiunga</string>
+    <string name="live_duration">Muda wa kuishi</string>
+    <string name="received_gifts">Zawadi zilizopokelewa</string>
+    <string name="increased_fans">Kuongezeka kwa mashabiki</string>
+    <string name="rcoins">Fedha za sarafu</string>
+    <string name="back_to_the_home">Rudi nyumbani</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_watch_live">Kwa sasa uko kwenye chumba cha kusikiliza. tafadhali toka kwenye chumba na utazame moja kwa moja.</string>
+    <string name="s_live_has_ended">live imeisha.</string>
+    <string name="all_is_well_party">Yote ni sherehe nzuri</string>
+    <string name="private_room">Chumba cha Kibinafsi</string>
+    <string name="_123456">123456</string>
+    <string name="enter_valid_passcode">Weka nenosiri halali</string>
+    <string name="enter_passcode">Weka nambari ya siri</string>
+    <string name="decline">Kataa</string>
+    <string name="audio_request_received_from">Ombi la sauti limepokelewa kutoka</string>
+    <string name="please_choose_another_seat">Tafadhali Chagua Kiti kingine</string>
+    <string name="this_seat_is_locked_by_host">Kiti hiki kimefungwa na mwenyeji</string>
+    <string name="add_location">Ongeza Mahali</string>
+    <string name="search_area_or_city">Tafuta eneo au jiji</string>
+    <string name="manage_audio_volume">Dhibiti Kiasi cha Sauti</string>
+    <string name="video_volume_label">Kiasi cha video</string>
+    <string name="song_volume_label">Kiasi cha wimbo</string>
+    <string name="failed_to_delete">Imeshindwa kufuta</string>
+    <string name="error_try_again">Jaribu tena</string>
+    <string name="solved">IMETATUMWA</string>
+    <string name="relites">Relite</string>
+    <string name="error_loading_plans">Hitilafu katika kupakia mipango</string>
+    <string name="billing_not_ready">Bili haiko tayari</string>
+    <string name="purchase_error">Hitilafu ya ununuzi</string>
+    <string name="payment_init_failed">Mwanzo wa malipo haukufaulu</string>
+    <string name="purchase_canceled">Ununuzi Umeghairiwa</string>
+    <string name="purchase_success">Ununuzi Mafanikio</string>
+    <string name="purchase_failed">Imeshindwa kununua</string>
+    <string name="please_select_a_gift">Tafadhali chagua zawadi</string>
+    <string name="please_select_at_least_one_user">Tafadhali chagua angalau mtumiaji mmoja</string>
+    <string name="no_user_found">Hakuna Mtumiaji Aliyepatikana!</string>
+    <string name="notification_channel_name">chaguo-msingi</string>
+    <string name="audio_conversion_failed">Ugeuzaji sauti haukufaulu</string>
+    <string name="no_message_available">Hakuna ujumbe unaopatikana</string>
+    <string name="no_date">Hakuna tarehe</string>
+    <string name="invalid_user_id">Kitambulisho batili cha mtumiaji</string>
+    <string name="user_has_been_blocked">Mtumiaji amezuiwa</string>
+    <string name="user_data_is_not_available">Data ya mtumiaji haipatikani</string>
+    <string name="user_data_not_loaded">Data ya mtumiaji haijapakiwa</string>
+    <string name="cannot_load_video_preview">Haiwezi kupakia onyesho la kukagua video.</string>
+    <string name="failed_to_process_video">Imeshindwa kuchakata video.</string>
+    <string name="are_you_sure_you_want_to_delete_your_room">Je, una uhakika unataka kufuta chumba chako?</string>
+    <string name="your_room_deleted_successfully">Chumba chako kimefutwa..</string>
+    <string name="you_are_not_able_to_post_at_your_level">Huwezi Kuchapisha katika kiwango chako</string>
+    <string name="room_passcode_changed">Nambari ya siri ya Chumba Imebadilishwa..</string>
+    <string name="using">Kutumia</string>
+    <string name="failed_to_logout_please_try_again">Imeshindwa kuondoka. Tafadhali jaribu tena.</string>
+    <string name="link_not_available">Kiungo hakipatikani.</string>
+    <string name="we_will_take_immediate_action_thank_you">Tutachukua hatua mara moja. Asante.</string>
+    <string name="picture_capture_timeout_please_try_again">Muda wa kupiga picha umeisha. Tafadhali jaribu tena.</string>
+    <string name="error_loading_image">Hitilafu katika kupakia picha</string>
+    <string name="no_image_selected">Hakuna picha iliyochaguliwa</string>
+    <string name="error_processing_video">Hitilafu katika kuchakata video</string>
+    <string name="failed_to_capture_image">Imeshindwa kunasa picha.</string>
+    <string name="failed_to_save_image">Imeshindwa kuhifadhi picha.</string>
+    <string name="you_cant_unmute_your_self">Huwezi Kunyamazisha nafsi yako</string>
+    <string name="audio_file_missing">Faili ya sauti haipo!</string>
+    <string name="video_file_missing">Faili ya video haipo!</string>
+    <string name="unexpected_error">Hitilafu isiyotarajiwa:</string>
+    <string name="final_merge_failed">Uunganishaji wa mwisho umeshindwa.</string>
+    <string name="video_merge_failed">Uunganishaji wa video umeshindwa.</string>
+    <string name="unblocked_successfully">Imeondolewa Kizuizi.</string>
+    <string name="unable_to_share_at_this_moment">Imeshindwa kushiriki kwa wakati huu</string>
+    <string name="unexpected_error_occurred_please_try_again">Hitilafu isiyotarajiwa imetokea. Tafadhali jaribu tena.</string>
+    <string name="unknown_error">Hitilafu isiyojulikana</string>
+    <string name="transaction_failed">Muamala haukufaulu</string>
+    <string name="delete_failed">Imeshindwa kufuta:</string>
+    <string name="invalid_post">Chapisho Batili</string>
+    <string name="report_successful">Ripoti imefaulu</string>
+    <string name="failed_to_upload_image">Imeshindwa kupakia picha.</string>
+    <string name="failed_to_upload_image_please_try_again">Imeshindwa kupakia picha. Tafadhali jaribu tena.</string>
+    <string name="failed_to_load_data_please_try_again">Imeshindwa kupakia data. Tafadhali jaribu tena.</string>
+    <string name="comment_text_cannot_be_empty">Maandishi ya maoni hayawezi kuwa tupu.</string>
+    <string name="failed_to_submit_comment_please_try_again">Imeshindwa kuwasilisha maoni. Tafadhali jaribu tena.</string>
+    <string name="invalid_video">Video Batili</string>
+    <string name="failed_to_delete_video">Imeshindwa kufuta video.</string>
+    <string name="all_fields_required">Sehemu Zote zinahitajika</string>
+    <string name="purchase_failed_please_try_again">Imeshindwa kununua. Tafadhali jaribu tena.</string>
+    <string name="failed_to_send_request">Imeshindwa kutuma ombi</string>
+    <string name="failed_to_start_live_stream">Imeshindwa kuanzisha mtiririko wa moja kwa moja</string>
+    <string name="live_user_data_is_missing">Data ya mtumiaji haipo</string>
+    <string name="failed_to_delete_room">Imeshindwa kufuta chumba</string>
+    <string name="update_failed">Usasishaji haukufaulu</string>
+    <string name="private_room_passcode">Nambari ya siri ya Chumba cha Kibinafsi</string>
+    <string name="here_s_the_private_passcode_for_the_room">Hapa kuna nambari ya siri ya chumba:</string>
+    <string name="share_via">Shiriki kupitia</string>
+    <string name="passcode_empty_error">Tafadhali weka nenosiri halali</string>
+    <string name="failed_to_update_passcode">Imeshindwa kusasisha nambari ya siri</string>
+    <string name="enter_new_room_passcode">Weka Nambari ya siri ya Chumba Kipya</string>
+    <string name="change_room_passcode">Badilisha Nambari ya siri ya Chumba</string>
+    <string name="banned_list">Orodha iliyopigwa Marufuku</string>
+    <string name="my_following">Ufuasi Wangu</string>
+    <string name="please_enter_valid_input">Tafadhali ingiza ingizo halali</string>
+    <string name="join_requests">Maombi ya Kujiunga</string>
+    <string name="sorry_this_call_can_t_be_completed_right_now">Samahani, simu hii haiwezi kukamilika kwa sasa.</string>
+    <string name="watch_video_now">Tazama Video Sasa</string>
+    <string name="you_exceed_your_ad_limit">Umevuka kikomo chako cha Matangazo.</string>
+    <string name="search_people">Tafuta Watu..</string>
+    <string name="public_room">Chumba cha Umma</string>
+    <string name="my_profile">Wasifu Wangu</string>
+    <string name="edit_self">Hariri Binafsi</string>
+    <string name="blocked_user">Mtumiaji aliyezuiwa</string>
+    <string name="my_wallet">Mkoba Wangu</string>
+    <string name="select_age">Chagua Umri</string>
+    <string name="save_changes">Hifadhi Mabadiliko</string>
+    <string name="enter_your_bio">Weka Wasifu Wako</string>
+    <string name="enter_bio_here">Weka bio hapa..</string>
+    <string name="hey_there">Hujambo!</string>
+    <string name="follow_back">Fuata Nyuma</string>
+    <string name="purchase">Nunua</string>
+    <string name="select">Chagua</string>
+    <string name="selected">Imechaguliwa</string>
+    <string name="method_2_desc">Alika marafiki zako wajiunge kwa kutumia msimbo wako wa rufaa. Pata zawadi kila wakati nambari yako inapotumiwa!</string>
+    <string name="method_1_desc">Tazama video fupi ya tangazo na upate almasi bila malipo papo hapo! Gusa tu kitufe kilicho hapa chini ili kuanza kutazama na kupokea zawadi yako.</string>
+    <string name="pay_now">Lipa Sasa</string>
+    <string name="select_room_image">Chagua Picha ya Chumba</string>
+    <string name="room_description">Maelezo ya Chumba</string>
+    <string name="room_type">Aina ya Chumba</string>
+    <string name="upload_image_">Pakia Picha</string>
+    <string name="enter_your_room_name">Weka jina la chumba chako</string>
+    <string name="enter_your_room_passcode">Weka nambari ya siri ya chumba chako</string>
+    <string name="enter_your_room_description">Weka maelezo ya chumba chako</string>
+    <string name="enter_note_here">Weka Note hapa..</string>
+    <string name="add_caption">Ongeza Manukuu</string>
+    <string name="attachments">Viambatisho</string>
+    <string name="enter_details_here">Weka Maelezo Hapa...</string>
+    <string name="my_income">Mapato Yangu</string>
+    <string name="best_plan">Mpango Bora</string>
+    <string name="best_recharge_plan">Mpango Bora wa Kuchaji tena</string>
+    <string name="purchase_recharge_plan">Nunua Mpango wa Kuchaji tena</string>
+    <string name="available_my_r_coins">Inapatikana My R-Coins</string>
+    <string name="payment">Malipo</string>
+    <string name="select_payment_option">Chagua Chaguo la Malipo :</string>
+    <string name="select_record_duration">Chagua Muda wa Kurekodi :</string>
+    <string name="start_date_">Tarehe ya Kuanza:</string>
+    <string name="end_date_">Tarehe ya Mwisho:</string>
+    <string name="demo_purpose">Katika APK hii, Data zote ni za Madhumuni ya Onyesho pekee.</string>
+    <string name="no_data_text">Hakuna cha kuonyesha</string>
+    <string name="vip">VIP</string>
+    <string name="payment_option">Chaguo la Malipo:</string>
+    <string name="withdrawable_r_coins">Sarafu za R zinazoweza kuondolewa :</string>
+    <string name="please_select_a_payment_option">Tafadhali chagua chaguo la malipo</string>
+    <string name="select_option">Chagua Chaguo:</string>
+    <string name="bd">BDBD</string>
+    <string name="version">Toleo:</string>
+    <string name="upload">Pakia</string>
+    <string name="no_one_joined">Hakuna Aliyejiunga</string>
+    <string name="blocked_list">Orodha Iliyozuiwa</string>
+    <string name="room_close">Chumba Kimefungwa</string>
+    <string name="common_bio">Inachunguza miunganisho, sio wasifu tu.</string>
+    <string name="reactions">Miitikio</string>
+    <string name="delete_confirmation_text">Je, una uhakika unataka kufuta? Kitendo hiki hakiwezi kutenduliwa</string>
+    <string name="confirm_deletion">Thibitisha Ufutaji</string>
+    <string name="confirm_stand_up">Thibitisha Kusimama</string>
+    <string name="delete_post_confirmation">Je, una uhakika unataka kufuta chapisho hili?</string>
+    <string name="delete_relite_confirmation">Je, una uhakika unataka kufuta Relite hii?</string>
+    <string name="delete">Futa</string>
+    <string name="demo_agency">Wakala wa Maonyesho</string>
+    <string name="exposure">Kuwemo hatarini</string>
+    <string name="smoothness">Ulaini</string>
+    <string name="redness">Wekundu</string>
+    <string name="sharpness">Ukali</string>
+    <string name="ar_effects">Athari za Uhalisia Pepe</string>
+    <string name="calling">Kupiga simu</string>
+    <string name="no_comments_yet_be_the_first_to_say_something">Hakuna maoni bado. Kuwa wa kwanza kusema kitu!</string>
+    <string name="no_likes_yet_tap_to_spread_some_love">Bado hakuna walioipenda. Gusa ❤️ ili kueneza upendo!</string>
+    <string name="finding_reasons_to_smile_everywhere_i_go_and_sharing_that_happiness_with_the_world">Kutafuta sababu za kutabasamu kila mahali ninapoenda na kushiriki furaha hiyo na ulimwengu.</string>
+    <string name="okay">Sawa</string>
+    <string name="please_wait_for_a_spot_to_open">Tafadhali subiri sehemu ifunguliwe</string>
+    <string name="all_seats_are_taken">Viti vyote vinachukuliwa</string>
+    <string name="alex_sierra">#VALUE!</string>
+    <string name="request_sent">Ombi Limetumwa</string>
+    <string name="join">Jiunge</string>
+    <string name="video_call_gift">Zawadi ya simu ya video</string>
+    <string name="chat_gift">Zawadi ya gumzo</string>
+    <string name="uploading_">Inapakia...</string>
+    <string name="please_try_after_some_time">Tafadhali jaribu baada ya muda fulani</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_make_call">Inaonekana kwa sasa uko kwenye chumba cha sauti. Tafadhali toka kwenye chumba na upige simu.</string>
+    <string name="notification_permission_denied">Ruhusa ya arifa imekataliwa</string>
+    <string name="you_have_to_enable_it_from_settings">Lazima uiwashe kutoka kwa mipangilio.</string>
+    <string name="open_settings">Fungua Mipangilio</string>
+    <string name="cannot_unmute_user">Haiwezi Kurejesha Sauti ya Mtumiaji</string>
+    <string name="this_user_has_muted_themselves_only_they_can_unmute">Mtumiaji huyu amejinyamazisha. Ni wao pekee wanaoweza kurejesha sauti.</string>
+    <string name="you_are_not_able_to_live_at_your_level">Huwezi Kuishi katika kiwango chako</string>
+    <string name="conversion_successful">Uongofu Umefaulu</string>
+    <string name="screen_overlay_permission_needed">Ruhusa ya Uwekeleaji wa Skrini Inahitajika</string>
+    <string name="enable_display_over_other_apps_from_system_settings">Washa \'Onyesha juu ya programu zingine\' kutoka kwa Mipangilio ya Mfumo.</string>
+    <string name="you_are_vip_now">Wewe ni VIP sasa</string>
+    <string name="restart_app">Anzisha tena programu</string>
+    <string name="this_seat_is_reserved">Kiti hiki kimehifadhiwa</string>
+    <string name="do_you_really_want_to_log_out">Je, kweli unataka kuondoka? Utahitaji kuingia tena ili kufikia akaunti yako</string>
+    <string name="notification_permission_granted">Ruhusa ya arifa imetolewa</string>
+    <string name="verified">Imethibitishwa</string>
+    <string name="no_one_has_requested">Hakuna aliyeomba</string>
+    <string name="user_data_not_found_please_login_again">Data ya mtumiaji haijapatikana. Tafadhali ingia tena.</string>
+    <string name="update_failed_">Usasishaji haukufaulu:</string>
+    <string name="dummy_name">Mía Malkóva</string>
+    <string name="miya">Míya</string>
+    <string name="riya">Ríya</string>
+    <string name="luliya">Lulíya</string>
+    <string name="rehan">Rehán</string>
+    <string name="susmita">Susmíta</string>
+    <string name="rahi">Rahí</string>
+    <string name="nirma">Nírma</string>
+    <string name="jashvi">Jáshvi</string>
+    <string name="hely">Héli</string>
+    <string name="shruti">Shrúti</string>
+    <string name="dhruvi">Drúvi</string>
+    <string name="mamta">Mámta</string>
+    <string name="zeel">Zíl</string>
+    <string name="audio_live">Sauti Moja kwa Moja</string>
+    <string name="post">Chapisha</string>
+    <string name="demo_host_center">Kituo cha Kukaribisha Onyesho</string>
+    <string name="agency_center">Kituo cha Wakala</string>
+    <string name="select_language">Chagua Lugha</string>
+    <string name="english">Kiingereza</string>
+    <string name="explore">Chunguza</string>
+    <string name="party">Sherehe</string>
+    <string name="my_features">Vipengele Vyangu</string>
+    <string name="host_vip_privilege">Haki za Mwenyeji na VIP</string>
+    <string name="restart_the_app">Anzisha upya programu!</string>
+    <string name="restart">Anzisha Upya</string>
+    <string name="version_">"toleo "</string>
+    <string name="top_users">Watumiaji Bora</string>
+    <string name="top_creators">Watayarishaji Bora</string>
+    <string name="top_agency">Shirika Bora</string>
+    <string name="daily">Kila Siku</string>
+    <string name="weekly">Kila Wiki</string>
+    <string name="monthly">Kila Mwezi</string>
+    <string name="get_premium_crown">PATA TAJI YA PREMIUM</string>
+    <string name="get_extra_coins">PATA SARAFU ZA ZIADA</string>
+    <string name="get_all_level_access">PATA UFIKIVU WA NGAZI ZOTE</string>
+    <string name="invalid_validity_period">Kipindi batili cha uhalali</string>
+    <string name="user_id">Kitambulisho cha Mtumiaji</string>
+    <string name="you_ve_spent_s">"Umetumia %s "</string>
+    <string name="you_have">"Una "</string>
+    <string name="referrals">" marejeleo"</string>
+    <string name="id_">ID: </string>
+
+    <string name="feed">Ugavi</string>
+    <string name="video">Video</string>
+    <string name="sent_a_gift_to">" Alituma zawadi kwa "</string>
+    <string name="announcement">"Tangazo: "</string>
+    <string name="please_enter_valid_passcode">Tafadhali ingiza nambari ya siri halali</string>
+    <string name="passcode_length_invalid">Urefu wa nambari ya siri sio sahihi</string>
+    <string name="_0">0</string>
+    <string name="error_missing_room_data">Data ya chumba inakosekana</string>
+    <string name="error_invalid_room_data">Data ya chumba sio sahihi</string>
+    <string name="dummy_noti_desc">James Bond alimtumia zawadi Daizy Sharma</string>
+    <string name="dummy_id">ID : 564321</string>
+    <string name="dummy_time">00:00</string>
+    <string name="cherry">Cheri</string>
+    <string name="level_1">Kiwango 1</string>
+    <string name="hello">Habari</string>
+    <string name="dummy_comment">Nani amekuwa mamilionea?</string>
+    <string name="country">Nchi</string>
+    <string name="title1">Kichwa 1</string>
+    <string name="incoming_video_call">Wito wa video unaokuja</string>
+    <string name="upload_completed">Upakiaji umekamilika!</string>
+    <string name="image_file_does_not_exist">Faili ya picha haipo.</string>
+    <string name="user_session_not_found">Kikao cha mtumiaji hakijapatikana</string>
+    <string name="add">Ongeza</string>
+    <string name="leave">Ondoka</string>
+    <string name="requested">Imeombwa</string>
+    <string name="call_request_rejected">Ombi la simu limekataliwa</string>
+    <string name="call_setup_failed">"Usanidi wa simu umeshindikana: "</string>
+    <string name="invalid_chat_user">Mtumiaji wa gumzo si halali</string>
+    <string name="you">Wewe</string>
+    <string name="sent_a_gift_">alituma zawadi 🎁</string>
+    <string name="invalid_url">URL batili</string>
+    <string name="here_is_my_referral_code">"Hii hapa Nambari Yangu ya Rufaa"</string>
+    <string name="let_me_recommend_you_this_application">\nHebu nikupendekeze programu hii\n\n</string>
+    <string name="unknown_user">Mtumiaji asiyejulikana</string>
+    <string name="you_will_receive">"Utapokea"</string>
+    <string name="_diamonds">"Almasi"</string>
+    <string name="camera_not_ready">Kamera haiko tayari</string>
+    <string name="ar_is_starting_please_try_again">Uhalisia Ulioboreshwa inaanza… tafadhali jaribu tena.</string>
+    <string name="recording_started">Kurekodi kumeanza.</string>
+    <string name="camera_is_not_available">Kamera haipatikani.</string>
+    <string name="permission_rationale_upload">Ili kuchagua na kupakia video kutoka kwenye Ghala, ruhusa ya kuhifadhi inahitajika.</string>
+    <string name="unable_to_choose_video_for_upload">Haiwezi kuchagua video ya kupakiwa.</string>
+    <string name="sticker_item_is_missing">Kipengee cha kibandiko hakipo.</string>
+    <string name="audio_file_is_missing">Faili ya sauti haipo.</string>
+    <string name="could_not_load_audio">Haikuweza kupakia sauti.</string>
+    <string name="selected_video_uri_is_missing">URI ya video iliyochaguliwa haipo.</string>
+    <string name="failed_to_prepare_video_for_upload">Imeshindwa kutayarisha video kwa ajili ya kupakiwa.</string>
+    <string name="error_copying_file">Hitilafu katika kunakili faili.</string>
+    <string name="failed_to_create_directory">Imeshindwa kuunda saraka.</string>
+    <string name="upload_failed_">"Imeshindwa kupakia:"</string>
+    <string name="uploading">Inapakia…</string>
+    <string name="public_">Hadharani</string>
+    <string name="unknown_title">Kichwa kisichojulikana</string>
+    <string name="unknown_singer">Mwimbaji asiyejulikana</string>
+    <string name="invalid_host_data">Data batili ya mpangishaji</string>
+    <string name="type_something">Andika Kitu..</string>
+
+    <string-array name="fake_times">
+        <item>Sasa hivi</item>
+        <item>Kipindi kidogo kilopita</item>
+        <item>Dakika 5 zilizopita</item>
+        <item>Kikadiriwa saa moja iliyopita</item>
+        <item>Saa 1 iliyopita</item>
+        <item>Hivi karibuni leo</item>
+        <item>Leo</item>
+        <item>Jana</item>
+        <item>Siku nyingine</item>
+        <item>Siku 3 zilizopita</item>
+        <item>Wiki iliyopita</item>
+        <item>Siku chache zilizopita</item>
+        <item>Wiki 2 zilizopita</item>
+        <item>Mwezi uliopita</item>
+        <item>Muda fulani uliopita</item>
+        <item>Kidogo tu iliyopita</item>
+        <item>Kipindi kirefu kilopita</item>
+    </string-array>
+
+    <string-array name="fake_chat_sender">
+        <item>Hujambo! Habari yako?</item>
+        <item>Ninapanga kutazama sinema usiku wa leo.</item>
+        <item>Una maoni gani kuhusu habari za hivi karibuni?</item>
+        <item>Ninafanya kazi kwenye mradi mpya kazini.</item>
+        <item>Ungependa kunywa kahawa baadaye?</item>
+        <item>Nimetoka kukimbia, najisikia vizuri sana!</item>
+        <item>Una mapendekezo yoyote ya vitabu?</item>
+        <item>Wikiendi yako ilikuwa aje?</item>
+        <item>Ninapanga kwenda likizo mwezi ujao.</item>
+        <item>Umejaribu mgahawa mpya mjini?</item>
+        <item>Unafanya nini leo?</item>
+        <item>Nimemaliza kusoma kitabu kizuri sana, siwezi kusubiri kukielezea kwako.</item>
+        <item>Una mipango yoyote kwa jioni?</item>
+        <item>Ninawaza kujifunza lugha mpya.</item>
+        <item>Umeona kipindi kipya cha mwisho?</item>
+        <item>Umeupenda albamu mpya iliyotoka?</item>
+        <item>Nimekuwa nikisikiliza podcast sana siku hizi.</item>
+        <item>Una maoni gani kuhusu kifaa kipya?</item>
+        <item>Ninapanga kuanzisha blogu.</item>
+        <item>Shughuli yako ya burudani unayoipenda ni ipi?</item>
+        <item>Unajichochea vipi kuendelea?</item>
+        <item>Una vidokezo vyovyote vya kuongeza tija?</item>
+        <item>Unapumzika vipi?</item>
+        <item>Unakabiliana vipi na msongo wa mawazo?</item>
+        <item>Nini kinakuvutia au kukupa msukumo?</item>
+    </string-array>
+
+    <string-array name="fake_chat_receiver">
+        <item>Niko vizuri, na wewe je?</item>
+        <item>Inasikika vizuri! Sinema gani?</item>
+        <item>Sijui sana, sijafuatilia habari hivi karibuni.</item>
+        <item>Kweli? Mradi huo unahusu nini?</item>
+        <item>Ndiyo, ningependa sana!</item>
+        <item>Wow, hongera! Nahitaji pia kurudi kufanya mazoezi.</item>
+        <item>Nimesoma kitabu cha kutisha kizuri sana hivi karibuni.</item>
+        <item>Ilikuwa ya kupumzika tu, sikufanya mengi.</item>
+        <item>Hiyo inasikika vizuri! Unapanga kwenda wapi?</item>
+        <item>Bado sijajaribu. Ni mzuri?</item>
+        <item>Nafanya kazi kutoka nyumbani, na wewe?</item>
+        <item>Hicho kinaonekana cha kuvutia, niambie zaidi!</item>
+        <item>Sina mipango yoyote, napumzika tu.</item>
+        <item>Hicho ni kizuri! Unataka kujifunza lugha gani?</item>
+        <item>Ndiyo, ilikuwa nzuri sana! Siwezi kusubiri kuona inayofuata.</item>
+        <item>Bado sijaisikiliza, kuna nyimbo nzuri?</item>
+        <item>Mimi pia, zimekuwa za kuelimisha sana.</item>
+        <item>Ninawaza kununua pia. Unapenda vipengele gani?</item>
+        <item>Inapendeza! Utaandika kuhusu nini?</item>
+        <item>Napenda kuchora na kusoma.</item>
+        <item>Naweka malengo madogo ili nijichochee.</item>
+        <item>Kuandika orodha ya kazi hunisaidia sana.</item>
+        <item>Kuangalia sinema au kusoma kitabu.</item>
+        <item>Huaga natafakari au kutembea kidogo.</item>
+        <item>Asili na sanaa ndizo zinazonivutia zaidi.</item>
+    </string-array>
+
+    <string-array name="lightening_contrast_options">
+        <item>Chini</item>
+        <item>Kawaida</item>
+        <item>Juu</item>
+    </string-array>
+
+    <string-array name="fake_messages">
+        <item>Hujambo! 👋</item>
+        <item>Nimependezwa na wasifu wako!</item>
+        <item>Mpya hapa—sema jambo!</item>
+        <item>Uko tayari kwa mazungumzo mafupi?</item>
+        <item>Hey! 😊</item>
+        <item>Jinsi siku yako inavyokwenda?</item>
+        <item>Unaonekana wa kuvutia 👀</item>
+        <item>Nini kilikuletea hapa?</item>
+        <item>Nimefurahi kukutana nawe! 🙌</item>
+        <item>Habari mgeni 😄</item>
+        <item>Wewe ni mtu wa kahawa au chai? ☕🍵</item>
+        <item>App hii imeboreshwa 😉</item>
+        <item>Basi… hadithi yako ni ipi?</item>
+        <item>Hey hey! ✨</item>
+        <item>Natarajia kuzungumza!</item>
+        <item>Una vibe nzuri 🌟</item>
+        <item>Hujambo! Unataka kuunganishwa?</item>
+        <item>Nimefurahi tume-match 😍</item>
+        <item>Hey, maisha yanaendaje?</item>
+        <item>Tabasamu kubwa kwako 😁</item>
+        <item>Umeonekana kwenye skrini yangu 👌</item>
+        <item>Ni mimi, au tumekuwa marafiki bora? 😂</item>
+        <item>Nili matumaini tutapendana 💫</item>
+        <item>Unaonekana mtu wa kufurahisha kuzungumza naye 😏</item>
+        <item>Niko hapa! Sababu yako ni ipi? 😜</item>
+        <item>Makisia? Wewe ni ujumbe wangu wa kwanza leo 📩</item>
+        <item>Unaamini kwa bahati au hatma? ✨</item>
+        <item>Nadhani unani deni hello 😇</item>
+        <item>Sisemi uongo, wasifu wako umejitoa 🔥</item>
+        <item>Sawa, tabasamu lako linaenea 😍</item>
+    </string-array>
+</resources>

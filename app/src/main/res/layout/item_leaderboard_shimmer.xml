@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginTop="180dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/secondLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:background="@drawable/top_2"
+                android:backgroundTint="@color/shimmerColor"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/profileImage2"
+                    android:layout_width="56sp"
+                    android:layout_height="56sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5sp"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/inter_bold"
+                        android:singleLine="true"
+                        android:background="@color/shimmerColor"
+                        android:text="@string/cherry"
+                        android:textColor="@color/shimmerColor"
+                        android:textSize="12sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/lay2Flag"
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5sp"
+                        android:visibility="gone"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/flag_india" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/shimmerColor"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:paddingVertical="@dimen/_1sdp">
+
+                    <ImageView
+                        android:layout_width="13sp"
+                        android:layout_height="13sp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_coin"
+                        app:tint="@color/shimmerColor" />
+
+                    <TextView
+                        android:id="@+id/tvRcoin2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="1000"
+                        android:textColor="@color/shimmerColor"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/firstLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:background="@drawable/top_1"
+                android:backgroundTint="@color/shimmerColor"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/profileImage1"
+                    android:layout_width="73sp"
+                    android:layout_height="73sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5sp"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/inter_bold"
+                        android:singleLine="true"
+                        android:text="@string/cherry"
+                        android:textColor="@color/shimmerColor"
+                        android:background="@color/shimmerColor"
+                        android:textSize="12sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/lay1Flag"
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5sp"
+                        android:visibility="gone"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/flag_india" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/shimmerColor"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:paddingVertical="@dimen/_1sdp">
+
+                    <ImageView
+                        android:layout_width="13sp"
+                        android:layout_height="13sp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_coin"
+                        app:tint="@color/shimmerColor" />
+
+                    <TextView
+                        android:id="@+id/tvRcoin1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:fontFamily="@font/inter_bold"
+                        android:text="1000"
+                        android:textColor="@color/shimmerColor"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thirdLay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:background="@drawable/top_3"
+                android:backgroundTint="@color/shimmerColor"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/profileImage3"
+                    android:layout_width="56sp"
+                    android:layout_height="56sp"
+                    android:layout_marginTop="5sp"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/inter_bold"
+                        android:singleLine="true"
+                        android:text="@string/cherry"
+                        android:textColor="@color/shimmerColor"
+                        android:background="@color/shimmerColor"
+                        android:textSize="12sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/lay3Flag"
+                        android:layout_width="12sp"
+                        android:layout_height="12sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5sp"
+                        android:visibility="gone"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/flag_india" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/shimmerColor"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:paddingVertical="@dimen/_1sdp">
+
+                    <ImageView
+                        android:layout_width="13sp"
+                        android:layout_height="13sp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_coin"
+                        app:tint="@color/shimmerColor" />
+
+                    <TextView
+                        android:id="@+id/tvRcoin3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="1000"
+                        android:textColor="@color/shimmerColor"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay1"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70sp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="7sp"
+            android:background="@drawable/leaderboard_bg1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:backgroundTint="@color/shimmerColor"
+            android:paddingVertical="@dimen/_7sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70sp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="7sp"
+            android:background="@drawable/leaderboard_bg1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:backgroundTint="@color/shimmerColor"
+            android:paddingVertical="@dimen/_7sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70sp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="7sp"
+            android:background="@drawable/leaderboard_bg1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:backgroundTint="@color/shimmerColor"
+            android:paddingVertical="@dimen/_7sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70sp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="7sp"
+            android:background="@drawable/leaderboard_bg1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:backgroundTint="@color/shimmerColor"
+            android:paddingVertical="@dimen/_7sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70sp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="7sp"
+            android:background="@drawable/leaderboard_bg1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:backgroundTint="@color/shimmerColor"
+            android:paddingVertical="@dimen/_7sdp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

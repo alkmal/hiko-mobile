@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">Digite o nome do seu aplicativo</string>
+
+    <string name="no_internet_connection">Sem conexão com a Internet</string>
+    <string name="back_online">De volta online</string>
+    <string name="we_are_under_maintenance_text">Estamos em manutenção</string>
+    <string name="dismiss">Liberar</string>
+    <string name="you_are_blocked_by_admin_text">Você está bloqueado pelo administrador</string>
+    <string name="cancel">Cancelar</string>
+    <string name="you_are_logged_in_other_devices">Você está conectado em outros dispositivos</string>
+    <string name="log_out">Sair</string>
+    <string name="policy">Ao se inscrever, você concorda com nossos</string>
+    <string name="terms_amp_condition">Termos e Condições</string>
+    <string name="and">e</string>
+    <string name="privacy_policy">política de Privacidade</string>
+    <string name="please_wait">Por favor, aguarde</string>
+    <string name="your_name">Seu nome</string>
+    <string name="male">Macho</string>
+    <string name="female">Fêmea</string>
+    <string name="select_your_age">Selecione sua idade</string>
+    <string name="edit_profile">Editar perfil</string>
+    <string name="submit">Enviar</string>
+    <string name="enter_your_name">Digite seu nome</string>
+    <string name="enter_username_first">Digite o nome de usuário primeiro</string>
+    <string name="select_your_gender">Selecione seu gênero</string>
+    <string name="minimum_age_must_be_18_years">A idade mínima deve ser 18 anos.</string>
+    <string name="privacy_policy_text">política de Privacidade</string>
+    <string name="accept_privacy_policy">Tenho mais de 18 anos e li a Política de Privacidade.</string>
+    <string name="deny">Negar</string>
+    <string name="accept">Aceitar</string>
+    <string name="please_accept_privacy_policy">Confirme que você leu a Política de Privacidade para continuar.</string>
+    <string name="exit_app_confirmation">Tem certeza de que deseja sair do aplicativo?</string>
+    <string name="exit_this_app">Sair deste aplicativo</string>
+    <string name="fans">Fãs</string>
+    <string name="my_diamonds">Meus Diamantes</string>
+    <string name="demo_host_center_text">Centro de hospedagem de demonstração</string>
+    <string name="demo_agency_center">Centro de Agência de Demonstração</string>
+    <string name="host_request">Solicitação de host</string>
+    <string name="offline_recharge">Recarga offline</string>
+    <string name="my_posts">Minhas postagens</string>
+    <string name="my_relites">Minhas Relites</string>
+    <string name="store">Loja</string>
+    <string name="free_coins">Moedas grátis</string>
+    <string name="become_vip">Torne-se VIP</string>
+    <string name="user_level">Nível do usuário</string>
+    <string name="copied_successfully">Copiado com sucesso</string>
+    <string name="id">EU IA:</string>
+    <string name="agency_center_text">Centro de Agências</string>
+    <string name="host_center">Centro de Hospedagem</string>
+    <string name="ok">OK</string>
+    <string name="history">História</string>
+    <string name="recharge">Recarregar</string>
+    <string name="my_diamond_balance">Minha Moeda de Diamante</string>
+    <string name="enter_user_id">Digite o ID do usuário</string>
+    <string name="enter_diamonds">Entre Diamantes</string>
+    <string name="note">Observação</string>
+    <string name="top_up">Recarga</string>
+    <string name="user_not_found">Usuário não encontrado</string>
+    <string name="please_verify_user_id">por favor verifique o id do usuário</string>
+    <string name="enter_coin_value">Insira o valor da moeda</string>
+    <string name="invalid_coin_value">Valor de moeda inválido</string>
+    <string name="insufficient_coins">Moedas insuficientes</string>
+    <string name="send_successfully">Enviado com sucesso</string>
+    <string name="continue_text">Continuar</string>
+    <string name="in_this_apk_all_data_are_only_for_demo_purpose">Neste APK, todos os dados são apenas para fins de demonstração.</string>
+    <string name="deleted_successfully">Excluído com sucesso</string>
+    <string name="india">Índia</string>
+    <string name="we_will_take_immediately_action_for_this_user_thank_you">Tomaremos medidas imediatas para este usuário Obrigado</string>
+    <string name="likes">Curtidas</string>
+    <string name="comments">Comentários</string>
+    <string name="report_user">Denunciar usuário</string>
+    <string name="blocked_successfully">Bloqueado com sucesso</string>
+    <string name="report_this_user">Denunciar este usuário</string>
+    <string name="please_describe_your_issue_here">Por favor, descreva seu problema aqui.</string>
+    <string name="unable_to_report">Não é possível relatar.</string>
+    <string name="something_went_wrong_text">Algo deu errado</string>
+    <string name="block_this_user">Bloquear este usuário</string>
+    <string name="yes">Sim</string>
+    <string name="type_message_first">Digite a mensagem primeiro</string>
+    <string name="toast_cannot_retrieve_cropped_image">Não é possível recuperar a imagem recortada</string>
+    <string name="toast_unexpected_error">Erro inesperado</string>
+    <string name="call_ended">Chamada encerrada!</string>
+    <string name="ringing">Toque</string>
+    <string name="we_will_take_immediately_action_for_this_user_n_thank_you">Tomaremos medidas imediatas para este usuário Obrigado</string>
+    <string name="enter_valid_message">Digite uma mensagem válida</string>
+    <string name="is_busy_with_someone_else">está ocupado com outra pessoa.</string>
+    <string name="discard_entire_video">Descartar vídeo inteiro?</string>
+    <string name="if_you_go_back_now_you_will_lose_all_the_clips_added_to_your_video">Se você voltar agora, perderá todos os clipes adicionados ao seu vídeo</string>
+    <string name="discard_video">Descartar vídeo</string>
+    <string name="incoming_call">Chamada recebida…</string>
+    <string name="need_permissions">"Precisa de permissões"</string>
+    <string name="call_declined">Chamada recusada</string>
+    <string name="rtc_stats_format">Taxa de bits downstream: %.2f kbps%nTaxa de perda downstream: %.2f%% %nTaxa de bits upstream: %.2f kbps%nTaxa de perda upstream: %.2f%%</string>
+    <string name="unfollow">Deixar de seguir</string>
+    <string name="follow">Seguir</string>
+    <string name="unblock">Desbloquear</string>
+    <string name="block">Bloquear</string>
+    <string name="message">Mensagem</string>
+    <string name="message_delete_confirmation">Tem certeza de que deseja excluir esta mensagem?</string>
+    <string name="following">Seguindo</string>
+    <string name="my_fans">Meus fãs</string>
+    <string name="image">Imagem</string>
+    <string name="choose_one">escolha um</string>
+    <string name="say_something">Dizer algo…</string>
+    <string name="failed_to_load_videos">Falha ao carregar vídeos.</string>
+    <string name="settings">Configurações</string>
+    <string name="notification">Notificação</string>
+    <string name="have_an_issue">Tem um problema</string>
+    <string name="my_complains">Minhas Reclamações</string>
+    <string name="terms_of_service">Termos de Serviço</string>
+    <string name="about_us">Sobre nós</string>
+    <string name="next">Próximo</string>
+    <string name="complaint_or_suggestion">Reclamação ou Sugestão</string>
+    <string name="typing_somethings">Digitando alguma coisa…</string>
+    <string name="contact">Contato</string>
+    <string name="enter_your_mobile_number_or_email">Digite seu número de celular ou e-mail</string>
+    <string name="attach_your_image_or_screenshot">Anexe sua imagem ou captura de tela</string>
+    <string name="browse">Navegar</string>
+    <string name="complain_send_successfully">Reclamação enviada com sucesso</string>
+    <string name="please_enter_message">Por favor, insira a mensagem</string>
+    <string name="please_enter_contact">por favor insira contato</string>
+    <string name="my_tickets">Meus ingressos</string>
+    <string name="open">Abrir</string>
+    <string name="ticket_details">Detalhes do ingresso</string>
+    <string name="status">Status</string>
+    <string name="close">FECHAR</string>
+    <string name="_1_self_introduction">1. Autoapresentação</string>
+    <string name="name">Nome</string>
+    <string name="enter_name">Digite o nome</string>
+    <string name="mobile_number">Número de telemóvel</string>
+    <string name="enter_mobile_number">Digite o número do celular</string>
+    <string name="Bio">Biografia</string>
+    <string name="_2_agency_code">2. Código da Agência</string>
+    <string name="if_you_have">(Se você tiver)</string>
+    <string name="_3_upload_photos">3. Carregar fotos</string>
+    <string name="personal_photo">Foto pessoal</string>
+    <string name="_4_bank_details">4. Dados bancários</string>
+    <string name="enter_your_bank_details">Insira seus dados bancários</string>
+    <string name="admission_car">Carro de admissão</string>
+    <string name="enter_bio_text">Digite Bio</string>
+    <string name="select_personal_photo">Selecione uma foto pessoal</string>
+    <string name="image_file_not_found">Arquivo de imagem não encontrado</string>
+    <string name="host_request_send">Envio de solicitação de host</string>
+    <string name="try_after_some_time">Por favor, tente depois de algum tempo</string>
+    <string name="avatar_frame">Moldura Avatar</string>
+    <string name="super_star">Super estrela</string>
+    <string name="you_don_t_have_required_diamonds">Você não tem os Diamantes necessários!</string>
+    <string name="diamond_star">Estrela de Diamante</string>
+    <string name="stepping_in">Entrando em ação!</string>
+    <string name="free_diamonds">Diamantes grátis</string>
+    <string name="method_1">Método 1:</string>
+    <string name="method_2">Método 2:</string>
+    <string name="your_refer_code">Seu código de referência:</string>
+    <string name="enter_referral_code_here">Insira o código de referência aqui</string>
+    <string name="you_have_2_referrals">Você tem 2 referências</string>
+    <string name="referral_code_copied">Código de referência copiado!</string>
+    <string name="enter_refer_code">Insira o código de referência</string>
+    <string name="refereed_successfully">Arbitrado com sucesso</string>
+    <string name="generic_error">Algo deu errado. Tente novamente mais tarde.</string>
+    <string name="earned_by_user">Recompensa concedida</string>
+    <string name="invite_desc">Convide seus amigos! Para cada pagamento de amigos convidados, você e seu amigo receberão</string>
+    <string name="vip_plan">Plano VIP</string>
+    <string name="become_vip_and_get_many_privileges">Torne-se VIP e ganhe muitos privilégios</string>
+    <string name="vip_privileges">Privilégios VIP</string>
+    <string name="get_vip_to_access_all_function">Obtenha VIP para acessar todas as funções</string>
+    <string name="vip_package">Pacote VIP</string>
+    <string name="get_now">Obtenha agora</string>
+    <string name="first_select_the_plan">Primeiro selecione o plano.</string>
+    <string name="credit_debit_card">Cartão de crédito/débito</string>
+    <string name="google_play">Google Play</string>
+    <string name="hot">Quente</string>
+    <string name="your_level">Seu nível</string>
+    <string name="no_level_available">Nenhum nível disponível</string>
+    <string name="unknown">Desconhecido</string>
+    <string name="income">Renda</string>
+    <string name="record">Registro</string>
+    <string name="diamonds">Diamantes</string>
+    <string name="outcome">Resultado</string>
+    <string name="r_coins">Moedas R</string>
+    <string name="confirm">Confirmar</string>
+    <string name="diamond_record">Disco de Diamante</string>
+    <string name="spending">Gastos</string>
+    <string name="converted_to_diamonds">convertido em diamantes</string>
+    <string name="diamond_purchase">Compra de diamantes</string>
+    <string name="you_have_called">Você ligou</string>
+    <string name="watching_ads">Assistindo anúncios</string>
+    <string name="login_bonus">bônus de login</string>
+    <string name="referral_bonus">Bônus de indicação</string>
+    <string name="cash_out">Saque</string>
+    <string name="svga_animation_purchased">Animação SVGA adquirida</string>
+    <string name="add_in_teenpatti_game">Adicionar no jogo Teenpatti</string>
+    <string name="purchased_avatar_frame">Quadro Avatar comprado</string>
+    <string name="coin_add_by_offline_recharge">Adicionar moedas por recarga offline</string>
+    <string name="call_coin_received">Ligue para Coin</string>
+    <string name="lucy_gift_bonus">Bônus de presente Lucy</string>
+    <string name="add_in_roulette_game">Adicionar no jogo de roleta</string>
+    <string name="add_in_ferry_wheel_game">Adicionar no jogo da roda da balsa</string>
+    <string name="convert_in_coin_seller_coin">Converter em Moeda do Vendedor de Moedas</string>
+    <string name="unknown_transaction">Transação desconhecida</string>
+    <string name="gift_broadcast_during_livestream_by_you">Transmissão de presente durante a transmissão ao vivo por você</string>
+    <string name="gift_received">Presente recebido</string>
+    <string name="gift_send_to">presente enviado para</string>
+    <string name="added_by_admin">Adicionado pelo administrador</string>
+    <string name="reduce_by_admin">Reduzir por Admin</string>
+    <string name="_1">$ 1</string>
+    <string name="withdrawing_rcoins">Retirando RCoins</string>
+    <string name="convert_to_diamond">Converter para diamante</string>
+    <string name="what_is_coins">O que são moedas?</string>
+    <string name="what_is_rcoin">1. Ao receber presentes, como uma Lamborghini ou um Castelo, você ganha imediatamente a mesma quantidade de Moedas que o preço do presente na Loja de Presentes. 2. Você pode converter Moedas em diamantes e dinheiro. 3. Saldo de Moedas Disponível + Saque</string>
+    <string name="this_is_a_demo_version">Esta é uma versão demo</string>
+    <string name="payment_done">Pagamento efetuado</string>
+    <string name="coin_sellers_list">Lista de vendedores de moedas</string>
+    <string name="how_much_rcoins_convert_cash">Quanto Rcoins convertem em Cash?</string>
+    <string name="how_much_rcoins_convert_into_diamonds">Quanto Rcoins são convertidos em Diamantes?</string>
+    <string name="setting_error">Erro de configuração</string>
+    <string name="minimum_amount_is">O valor mínimo é</string>
+    <string name="you_not_have_enough">Você não tem o suficiente</string>
+    <string name="you_are_not_able_to_cashout_at_your_level">Você não pode sacar no seu nível</string>
+    <string name="your">Seu</string>
+    <string name="successfully_converted_into">Convertido com sucesso em</string>
+    <string name="conversion_failed">Falha na conversão</string>
+    <string name="redeem_your_coins">Resgate suas moedas</string>
+    <string name="enter_coins_to_withdraw">Insira moedas para sacar</string>
+    <string name="your_redeem_history">Seu histórico de resgate</string>
+    <string name="pending">Pendente</string>
+    <string name="r_coin_convert">Conversor de R-Coin</string>
+    <string name="how_much_coins_convert_into_diamonds">Quantas moedas se convertem em diamantes?</string>
+    <string name="enter_coins">Insira moedas</string>
+    <string name="convert_to_diamonds">Converter em diamantes</string>
+    <string name="whatsapp_not_installed">Whatsapp não instalado</string>
+    <string name="invalid_whatsapp_number">Número de WhatsApp inválido</string>
+    <string name="withdrawable_rcoins">Rcoins retiráveis</string>
+    <string name="no_payment_method_found">Nenhum método de pagamento encontrado</string>
+    <string name="insufficient">Insuficiente</string>
+    <string name="please_enter_your_details">Por favor insira seus dados</string>
+    <string name="redeem_request_sent_successfully">Solicitação de resgate enviada com sucesso</string>
+    <string name="enter_your_upi_details">Insira seus dados UPI</string>
+    <string name="enter_your_paytm_details">Insira seus dados do Paytm</string>
+    <string name="enter_your_bank_account_details">Insira os detalhes da sua conta bancária</string>
+    <string name="enter_your_bybit_details">Insira seus dados Bybit</string>
+    <string name="purchased">Comprado</string>
+    <string name="go_live">Vá ao vivo</string>
+    <string name="song_hint">Clique para escolher uma música.</string>
+    <string name="timer_hint">Para cancelar o cronômetro antes de começar, clique aqui.</string>
+    <string name="duration">Duração</string>
+    <string name="mmss">0:00</string>
+    <string name="welcome_to_join_the_live_any_content_related_to_porn_violence_gambling_illegal_dealing_will_be_banned">Bem-vindo à transmissão ao vivo. Qualquer conteúdo relacionado a pornografia, violência, jogos de azar e tráfico ilegal será banido.</string>
+    <string name="enter_a_room">entrou na sala</string>
+    <string name="reacted">Reagiu</string>
+    <string name="browse_file_title">Navegar pelo arquivo</string>
+    <string name="please_enter_room_title">Por favor, insira o nome da sala</string>
+    <string name="please_select_room_image">Selecione a imagem da sala</string>
+    <string name="you_are_block_from_admin_to_go_live">Você está bloqueado pelo administrador para entrar no ar</string>
+    <string name="start_audio_live">Iniciar áudio ao vivo</string>
+    <string name="take_picture">Tirar foto</string>
+    <string name="recorder_error_in_progress">Para fazer isso, pare a gravação primeiro.</string>
+    <string name="recorder_error_maxed_out">Você já gravou para duração máxima.</string>
+    <string name="audio_from_clip">Áudio personalizado do clipe.</string>
+    <string name="recorder_error_no_clips">Grave seu clipe primeiro para continuar.</string>
+    <string name="message_song_select">Não é possível selecionar uma música após o início da gravação.</string>
+    <string name="message_song_change">Não é possível alterar a música após o início da gravação.</string>
+    <string name="you_need_storage_permission">Você precisa de permissão de armazenamento</string>
+    <string name="filter">Selecione Filtro</string>
+    <string name="you_cannot_upload_video_above_30_mb">Você não pode enviar vídeos com mais de 30 MB!!!</string>
+    <string name="choose_sticker">Escolha o adesivo</string>
+    <string name="timer">Temporizador</string>
+    <string name="sticker">Adesivo</string>
+    <string name="filters">Filtros</string>
+    <string name="preview">Visualização</string>
+    <string name="flip">Virar</string>
+    <string name="speed">Velocidade</string>
+    <string name="notification_channel_id">padrão</string>
+    <string name="notification_download_title">Baixar arquivo…</string>
+    <string name="notification_download_description">Não deve demorar mais do que alguns segundos.</string>
+    <string name="announcement_welcome_to_room">Anúncio: Bem-vindo à sala</string>
+    <string name="all">TODOS</string>
+    <string name="send">Enviar</string>
+    <string name="followers">Seguidores</string>
+    <string name="shorts">Shorts</string>
+    <string name="posts">Postagens</string>
+    <string name="creator">Criador</string>
+    <string name="agency">Agência</string>
+    <string name="coin_seller">Vendedor de moedas</string>
+    <string name="invite">Convidar</string>
+    <string name="live">Ao vivo</string>
+    <string name="public_text">Público</string>
+    <string name="private_text">Privado</string>
+    <string name="welcome_to_the_party">Bem-vindo à festa</string>
+    <string name="games">Jogos</string>
+    <string name="keep">Manter</string>
+    <string name="exit_text">saída</string>
+    <string name="you_not_have_enough_diamonds_to_send_gift">Você não tem diamantes suficientes para enviar o presente</string>
+    <string name="sent_a_gift">Enviei um presente</string>
+    <string name="you_are_blocked_by_host">Você está bloqueado pelo host</string>
+    <string name="you_cannot_upload_video_above_30_mb_text">Você não pode enviar vídeos com mais de 30 MB!!!</string>
+    <string name="select_song">Selecione a música</string>
+    <string name="select_filter">Selecione Filtro</string>
+    <string name="upload_relite">Carregar Relite</string>
+    <string name="add_caption_with_hashtags_and_mentions">Adicione legenda com hashtags e menções</string>
+    <string name="location">Localização</string>
+    <string name="show_to">Mostrar para</string>
+    <string name="allow_comments">Permitir comentários</string>
+    <string name="upload_post">Carregar postagem</string>
+    <string name="who_show_this_post_to">Para quem mostrar esta publicação</string>
+    <string name="only_followers">Somente seguidores</string>
+    <string name="select_image_first">Selecione a imagem primeiro</string>
+    <string name="error_opening_gallery">Erro ao abrir a galeria</string>
+    <string name="permission_denied_message">Permissão negada....\n</string>
+    <string name="error_selecting_image">Erro ao selecionar imagem</string>
+    <string name="location_not_set">Localização não definida</string>
+    <string name="count_clips">%s clipes</string>
+    <string name="my_followers">Meus Seguidores</string>
+    <string name="add_a_comment">Adicione um comentário…</string>
+    <string name="send_a_gift_to">Enviei um presente para</string>
+    <string name="room_image_updated">Imagem da sala atualizada</string>
+    <string name="sure_you_want_to_stand_up">Tem certeza de que quer se levantar?</string>
+    <string name="there_s_no_user_to_invite_on_mic">Não há nenhum usuário para convidar no microfone.</string>
+    <string name="remove_seat">Remover assento</string>
+    <string name="kick_out">Expulsar</string>
+    <string name="unmute_mic">Ativar microfone</string>
+    <string name="mute_mic">Microfone sem som</string>
+    <string name="remove_mic">Remover microfone</string>
+    <string name="invite_mic">Convidar microfone</string>
+    <string name="take_the_mic">Pegue o microfone</string>
+    <string name="give_the_mic">Dê o microfone</string>
+    <string name="lock_the_mic">Bloqueie o microfone</string>
+    <string name="mute_the_mic">Silenciar o microfone</string>
+    <string name="unmute">Ativar som</string>
+    <string name="unlock">Desbloquear</string>
+    <string name="remove">Remover</string>
+    <string name="your_live_session_end_by_admin_text">Sua sessão ao vivo será encerrada pelo administrador.</string>
+    <string name="end_live_video">Fim do vídeo ao vivo</string>
+    <string name="don_t_have_user_to_sent_a_gift_wait_for_user">Não tenho usuário para enviar um presente, espere pelo usuário</string>
+    <string name="select_at_least_one_user">Selecione pelo menos um usuário</string>
+    <string name="room_settings">Configurações da sala</string>
+    <string name="people">Pessoas</string>
+    <string name="copied_to_clipboard">Copiado para a área de transferência</string>
+    <string name="room_name">Nome do quarto</string>
+    <string name="enter_room_name">Digite o nome da sala</string>
+    <string name="please_enter_room_name">Por favor, insira o nome da sala</string>
+    <string name="seat_mode">Modo de assento</string>
+    <string name="_8_seat">8 assentos</string>
+    <string name="use">Usar</string>
+    <string name="_12_seat">12 assentos</string>
+    <string name="_16_seat">16 assentos</string>
+    <string name="seat_update">atualização de assentos</string>
+    <string name="room_welcome_message">Mensagem de boas-vindas do quarto</string>
+    <string name="enter_room_welcome_message">Digite a mensagem de boas-vindas da sala</string>
+    <string name="please_enter_room_welcome_message">Por favor, insira a mensagem de boas-vindas da sala</string>
+    <string name="room_passcode">Senha do quarto</string>
+    <string name="enter_room_passcode">Digite a senha do quarto</string>
+    <string name="change_background">Alterar plano de fundo</string>
+    <string name="live_ended">Ao vivo terminou</string>
+    <string name="joined_users">Usuários associados</string>
+    <string name="live_duration">Duração ao vivo</string>
+    <string name="received_gifts">Presentes recebidos</string>
+    <string name="increased_fans">Aumento de fãs</string>
+    <string name="rcoins">Rcoins</string>
+    <string name="back_to_the_home">De volta para casa</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_watch_live">Você está na sala de áudio. Saia da sala e assista ao vivo.</string>
+    <string name="s_live_has_ended">a transmissão ao vivo terminou.</string>
+    <string name="all_is_well_party">Festa "Tudo está bem"</string>
+    <string name="private_room">Quarto Privado</string>
+    <string name="_123456">123456</string>
+    <string name="enter_valid_passcode">Digite uma senha válida</string>
+    <string name="enter_passcode">Digite a senha</string>
+    <string name="decline">Declínio</string>
+    <string name="audio_request_received_from">Solicitação de áudio recebida de</string>
+    <string name="please_choose_another_seat">Por favor, escolha outro assento</string>
+    <string name="this_seat_is_locked_by_host">Este assento está bloqueado pelo anfitrião</string>
+    <string name="add_location">Adicionar localização</string>
+    <string name="search_area_or_city">Pesquisar Área ou cidade</string>
+    <string name="manage_audio_volume">Gerenciar volume de áudio</string>
+    <string name="video_volume_label">Volume do vídeo</string>
+    <string name="song_volume_label">Volume da música</string>
+    <string name="failed_to_delete">Falha ao excluir</string>
+    <string name="error_try_again">Tentar novamente</string>
+    <string name="solved">RESOLVIDO</string>
+    <string name="relites">Relite</string>
+    <string name="error_loading_plans">Erro ao carregar planos</string>
+    <string name="billing_not_ready">O faturamento não está pronto</string>
+    <string name="purchase_error">Erro de compra</string>
+    <string name="payment_init_failed">Falha na inicialização do pagamento</string>
+    <string name="purchase_canceled">Compra cancelada</string>
+    <string name="purchase_success">Sucesso de compra</string>
+    <string name="purchase_failed">A compra falhou</string>
+    <string name="please_select_a_gift">Por favor selecione um presente</string>
+    <string name="please_select_at_least_one_user">Selecione pelo menos um usuário</string>
+    <string name="no_user_found">Nenhum usuário encontrado!</string>
+    <string name="notification_channel_name">padrão</string>
+    <string name="audio_conversion_failed">Falha na conversão de áudio</string>
+    <string name="no_message_available">Nenhuma mensagem disponível</string>
+    <string name="no_date">Sem data</string>
+    <string name="invalid_user_id">ID de usuário inválido</string>
+    <string name="user_has_been_blocked">O usuário foi bloqueado</string>
+    <string name="user_data_is_not_available">Os dados do usuário não estão disponíveis</string>
+    <string name="user_data_not_loaded">Dados do usuário não carregados</string>
+    <string name="cannot_load_video_preview">Não é possível carregar a pré-visualização do vídeo.</string>
+    <string name="failed_to_process_video">Falha ao processar o vídeo.</string>
+    <string name="are_you_sure_you_want_to_delete_your_room">Tem certeza de que deseja excluir seu quarto?</string>
+    <string name="your_room_deleted_successfully">Seu quarto foi excluído com sucesso.</string>
+    <string name="you_are_not_able_to_post_at_your_level">Você não pode postar no seu nível</string>
+    <string name="room_passcode_changed">Senha do quarto alterada.</string>
+    <string name="using">Usando</string>
+    <string name="failed_to_logout_please_try_again">Falha ao sair. Tente novamente.</string>
+    <string name="link_not_available">Link não disponível.</string>
+    <string name="we_will_take_immediate_action_thank_you">Tomaremos providências imediatamente. Obrigado.</string>
+    <string name="picture_capture_timeout_please_try_again">Tempo limite para captura de imagem. Tente novamente.</string>
+    <string name="error_loading_image">Erro ao carregar a imagem</string>
+    <string name="no_image_selected">Nenhuma imagem selecionada</string>
+    <string name="error_processing_video">Erro ao processar vídeo</string>
+    <string name="failed_to_capture_image">Falha ao capturar a imagem.</string>
+    <string name="failed_to_save_image">Falha ao salvar a imagem.</string>
+    <string name="you_cant_unmute_your_self">Você não pode desativar o som de si mesmo</string>
+    <string name="audio_file_missing">Arquivo de áudio ausente!</string>
+    <string name="video_file_missing">Arquivo de vídeo ausente!</string>
+    <string name="unexpected_error">Erro inesperado:</string>
+    <string name="final_merge_failed">Falha na mesclagem final.</string>
+    <string name="video_merge_failed">Falha na mesclagem de vídeo.</string>
+    <string name="unblocked_successfully">Desbloqueado com sucesso.</string>
+    <string name="unable_to_share_at_this_moment">Não é possível compartilhar neste momento</string>
+    <string name="unexpected_error_occurred_please_try_again">Ocorreu um erro inesperado. Tente novamente.</string>
+    <string name="unknown_error">Erro desconhecido</string>
+    <string name="transaction_failed">A transação falhou</string>
+    <string name="delete_failed">Falha ao excluir:</string>
+    <string name="invalid_post">Postagem inválida</string>
+    <string name="report_successful">Relatório bem-sucedido</string>
+    <string name="failed_to_upload_image">Falha ao carregar a imagem.</string>
+    <string name="failed_to_upload_image_please_try_again">Falha ao carregar a imagem. Tente novamente.</string>
+    <string name="failed_to_load_data_please_try_again">Falha ao carregar os dados. Tente novamente.</string>
+    <string name="comment_text_cannot_be_empty">O texto do comentário não pode estar vazio.</string>
+    <string name="failed_to_submit_comment_please_try_again">Falha ao enviar comentário. Tente novamente.</string>
+    <string name="invalid_video">Vídeo inválido</string>
+    <string name="failed_to_delete_video">Falha ao excluir o vídeo.</string>
+    <string name="all_fields_required">Todos os campos são obrigatórios</string>
+    <string name="purchase_failed_please_try_again">A compra falhou. Tente novamente.</string>
+    <string name="failed_to_send_request">Falha ao enviar solicitação</string>
+    <string name="failed_to_start_live_stream">Falha ao iniciar a transmissão ao vivo</string>
+    <string name="live_user_data_is_missing">Dados do usuário ao vivo estão faltando</string>
+    <string name="failed_to_delete_room">Falha ao excluir a sala</string>
+    <string name="update_failed">A atualização falhou</string>
+    <string name="private_room_passcode">Senha da sala privada</string>
+    <string name="here_s_the_private_passcode_for_the_room">Aqui está a senha privada para a sala:</string>
+    <string name="share_via">Compartilhar via</string>
+    <string name="passcode_empty_error">Por favor, insira uma senha válida</string>
+    <string name="failed_to_update_passcode">Falha ao atualizar a senha</string>
+    <string name="enter_new_room_passcode">Digite a nova senha da sala</string>
+    <string name="change_room_passcode">Alterar senha da sala</string>
+    <string name="banned_list">Lista de banidos</string>
+    <string name="my_following">Meus Seguidores</string>
+    <string name="please_enter_valid_input">Por favor, insira uma entrada válida</string>
+    <string name="join_requests">Solicitações de adesão</string>
+    <string name="sorry_this_call_can_t_be_completed_right_now">Desculpe, esta chamada não pode ser concluída neste momento.</string>
+    <string name="watch_video_now">Assista ao vídeo agora</string>
+    <string name="you_exceed_your_ad_limit">Você excedeu seu limite de anúncios.</string>
+    <string name="search_people">Pesquisar pessoas..</string>
+    <string name="public_room">Sala Pública</string>
+    <string name="my_profile">Meu Perfil</string>
+    <string name="edit_self">Editar a si mesmo</string>
+    <string name="blocked_user">Usuário bloqueado</string>
+    <string name="my_wallet">Minha Carteira</string>
+    <string name="select_age">Selecione a idade</string>
+    <string name="save_changes">Salvar alterações</string>
+    <string name="enter_your_bio">Insira sua biografia</string>
+    <string name="enter_bio_here">Insira sua biografia aqui.</string>
+    <string name="hey_there">Ei!</string>
+    <string name="follow_back">Seguir de volta</string>
+    <string name="purchase">Comprar</string>
+    <string name="select">Selecione</string>
+    <string name="selected">Selecionado</string>
+    <string name="method_2_desc">Convide seus amigos para participar usando seu código de indicação. Ganhe recompensas sempre que seu código for usado!</string>
+    <string name="method_1_desc">Assista a um breve vídeo publicitário e ganhe diamantes grátis instantaneamente! Basta tocar no botão abaixo para começar a assistir e receber sua recompensa.</string>
+    <string name="pay_now">Pague agora</string>
+    <string name="select_room_image">Selecione a imagem da sala</string>
+    <string name="room_description">Descrição do quarto</string>
+    <string name="room_type">Tipo de quarto</string>
+    <string name="upload_image_">Carregar imagem</string>
+    <string name="enter_your_room_name">Digite o nome do seu quarto</string>
+    <string name="enter_your_room_passcode">Digite a senha do seu quarto</string>
+    <string name="enter_your_room_description">Insira a descrição do seu quarto</string>
+    <string name="enter_note_here">Insira a nota aqui.</string>
+    <string name="add_caption">Adicionar legenda</string>
+    <string name="attachments">Anexos</string>
+    <string name="enter_details_here">Insira os detalhes aqui…</string>
+    <string name="my_income">Minha Renda</string>
+    <string name="best_plan">Melhor Plano</string>
+    <string name="best_recharge_plan">Melhor Plano de Recarga</string>
+    <string name="purchase_recharge_plan">Plano de Recarga de Compra</string>
+    <string name="available_my_r_coins">Minhas R-Coins disponíveis</string>
+    <string name="payment">Pagamento</string>
+    <string name="select_payment_option">Selecione a opção de pagamento:</string>
+    <string name="select_record_duration">Selecione a duração da gravação:</string>
+    <string name="start_date_">Data de início:</string>
+    <string name="end_date_">Data de término:</string>
+    <string name="demo_purpose">Neste APK, todos os dados são apenas para fins de demonstração.</string>
+    <string name="no_data_text">Nada para mostrar</string>
+    <string name="vip">VIP</string>
+    <string name="payment_option">Opção de pagamento:</string>
+    <string name="withdrawable_r_coins">R-Coins retiráveis:</string>
+    <string name="please_select_a_payment_option">Selecione uma opção de pagamento</string>
+    <string name="select_option">Selecione a opção:</string>
+    <string name="bd">BD</string>
+    <string name="version">Versão:</string>
+    <string name="upload">Carregar</string>
+    <string name="no_one_joined">Ninguém se juntou</string>
+    <string name="blocked_list">Lista de Bloqueados</string>
+    <string name="room_close">Quarto Fechado</string>
+    <string name="common_bio">Explorando conexões, não apenas perfis.</string>
+    <string name="reactions">Reações</string>
+    <string name="delete_confirmation_text">Tem certeza de que deseja excluir? Esta ação não pode ser desfeita.</string>
+    <string name="confirm_deletion">Confirmar exclusão</string>
+    <string name="confirm_stand_up">Confirmar Stand-Up</string>
+    <string name="delete_post_confirmation">Tem certeza de que deseja excluir esta postagem?</string>
+    <string name="delete_relite_confirmation">Tem certeza de que deseja excluir este Relite?</string>
+    <string name="delete">Excluir</string>
+    <string name="demo_agency">Agência de demonstração</string>
+    <string name="exposure">Exposição</string>
+    <string name="smoothness">Suavidade</string>
+    <string name="redness">Vermelhidão</string>
+    <string name="sharpness">Nitidez</string>
+    <string name="ar_effects">Efeitos de RA</string>
+    <string name="calling">Chamando</string>
+    <string name="no_comments_yet_be_the_first_to_say_something">Nenhum comentário ainda. Seja o primeiro a dizer algo!</string>
+    <string name="no_likes_yet_tap_to_spread_some_love">Nenhuma curtida ainda. Toque em ❤️ para espalhar amor!</string>
+    <string name="finding_reasons_to_smile_everywhere_i_go_and_sharing_that_happiness_with_the_world">Encontrar motivos para sorrir onde quer que eu vá e compartilhar essa felicidade com o mundo.</string>
+    <string name="okay">OK</string>
+    <string name="please_wait_for_a_spot_to_open">Por favor, aguarde a abertura de uma vaga</string>
+    <string name="all_seats_are_taken">Todos os assentos estão ocupados</string>
+    <string name="alex_sierra">#VALUE!</string>
+    <string name="request_sent">Solicitação enviada</string>
+    <string name="join">Juntar</string>
+    <string name="video_call_gift">Presente de videochamada</string>
+    <string name="chat_gift">Presente de bate-papo</string>
+    <string name="uploading_">Enviando...</string>
+    <string name="please_try_after_some_time">Por favor, tente depois de algum tempo</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_make_call">Parece que você está em uma sala de áudio. Por favor, saia da sala e faça a chamada.</string>
+    <string name="notification_permission_denied">Permissão de notificação negada</string>
+    <string name="you_have_to_enable_it_from_settings">Você precisa habilitá-lo nas configurações.</string>
+    <string name="open_settings">Abrir configurações</string>
+    <string name="cannot_unmute_user">Não é possível ativar o som do usuário</string>
+    <string name="this_user_has_muted_themselves_only_they_can_unmute">Este usuário silenciou a si mesmo. Somente ele pode ativar o som.</string>
+    <string name="you_are_not_able_to_live_at_your_level">Você não é capaz de viver no seu nível</string>
+    <string name="conversion_successful">Conversão bem-sucedida</string>
+    <string name="screen_overlay_permission_needed">Permissão de sobreposição de tela necessária</string>
+    <string name="enable_display_over_other_apps_from_system_settings">Ative "Sobrepor outros aplicativos" nas Configurações do Sistema.</string>
+    <string name="you_are_vip_now">Agora você é VIP</string>
+    <string name="restart_app">Reiniciar aplicativo</string>
+    <string name="this_seat_is_reserved">Este assento é reservado</string>
+    <string name="do_you_really_want_to_log_out">Deseja realmente sair? Você precisará fazer login novamente para acessar sua conta.</string>
+    <string name="notification_permission_granted">Permissão de notificação concedida</string>
+    <string name="verified">Verificado</string>
+    <string name="no_one_has_requested">Ninguém solicitou</string>
+    <string name="user_data_not_found_please_login_again">Dados do usuário não encontrados. Efetue login novamente.</string>
+    <string name="update_failed_">Falha na atualização:</string>
+
+    <string name="dummy_name">Mía Malkóva</string>
+    <string name="miya">Míya</string>
+    <string name="riya">Ríya</string>
+    <string name="luliya">Lulíya</string>
+    <string name="rehan">Réhan</string>
+    <string name="susmita">Susmíta</string>
+    <string name="rahi">Rahí</string>
+    <string name="nirma">Nírma</string>
+    <string name="jashvi">Jáshvi</string>
+    <string name="hely">Hély</string>
+    <string name="shruti">Shrúti</string>
+    <string name="dhruvi">Drúvi</string>
+    <string name="mamta">Mámta</string>
+    <string name="zeel">Zíl</string>
+    <string name="audio_live">Áudio ao vivo</string>
+    <string name="post">Publicar</string>
+    <string name="demo_host_center">Centro de hospedagem de demonstração</string>
+    <string name="agency_center">Centro de Agências</string>
+    <string name="select_language">Selecione o idioma</string>
+    <string name="english">Inglês</string>
+    <string name="explore">Explorar</string>
+    <string name="party">Festa</string>
+    <string name="my_features">Minhas funcionalidades</string>
+    <string name="host_vip_privilege">Privilégios de Host e VIP</string>
+    <string name="restart_the_app">Reinicie o aplicativo!</string>
+    <string name="restart">Reiniciar</string>
+    <string name="version_">"versão "</string>
+    <string name="top_users">Usuários principais</string>
+    <string name="top_creators">Principais criadores</string>
+    <string name="top_agency">Agência principal</string>
+    <string name="daily">Diário</string>
+    <string name="weekly">Semanal</string>
+    <string name="monthly">Mensal</string>
+    <string name="get_premium_crown">OBTER COROA PREMIUM</string>
+    <string name="get_extra_coins">OBTER MOEDAS EXTRAS</string>
+    <string name="get_all_level_access">OBTER ACESSO A TODOS OS NÍVEIS</string>
+    <string name="invalid_validity_period">Período de validade inválido</string>
+    <string name="user_id">ID do usuário</string>
+    <string name="you_ve_spent_s">"Você gastou %s "</string>
+    <string name="you_have">"Você tem "</string>
+    <string name="referrals">" indicações"</string>
+    <string name="id_">ID: </string>
+
+    <string name="feed">Feed</string>
+    <string name="video">Vídeo</string>
+    <string name="sent_a_gift_to">" Enviou um presente para "</string>
+    <string name="announcement">"Anúncio : "</string>
+    <string name="please_enter_valid_passcode">Por favor insira um código válido</string>
+    <string name="passcode_length_invalid">Comprimento do código inválido</string>
+    <string name="_0">0</string>
+    <string name="error_missing_room_data">Dados da sala ausentes</string>
+    <string name="error_invalid_room_data">Dados da sala inválidos</string>
+    <string name="dummy_noti_desc">James Bond enviou um presente para Daizy Sharma</string>
+    <string name="dummy_id">ID : 564321</string>
+    <string name="dummy_time">00:00</string>
+    <string name="cherry">Cereja</string>
+    <string name="level_1">Nível 1</string>
+    <string name="hello">Olá</string>
+    <string name="dummy_comment">Quem se tornou milionário?</string>
+    <string name="country">País</string>
+    <string name="title1">Título 1</string>
+    <string name="incoming_video_call">Chamada de vídeo recebida</string>
+    <string name="upload_completed">Envio concluído!</string>
+    <string name="image_file_does_not_exist">O arquivo de imagem não existe.</string>
+    <string name="user_session_not_found">Sessão do usuário não encontrada</string>
+    <string name="add">Adicionar</string>
+    <string name="leave">Sair</string>
+    <string name="requested">Solicitado</string>
+    <string name="call_request_rejected">Solicitação de chamada rejeitada</string>
+    <string name="call_setup_failed">"Falha na configuração da chamada: "</string>
+    <string name="invalid_chat_user">Usuário de chat inválido</string>
+    <string name="you">Você</string>
+    <string name="sent_a_gift_">enviou um presente 🎁</string>
+    <string name="invalid_url">URL inválida</string>
+    <string name="here_is_my_referral_code">"Aqui está meu código de indicação"</string>
+    <string name="let_me_recommend_you_this_application">\nDeixe-me recomendar este aplicativo\n\n</string>
+    <string name="unknown_user">Usuário desconhecido</string>
+    <string name="you_will_receive">"Você receberá"</string>
+    <string name="_diamonds">"Diamantes"</string>
+    <string name="camera_not_ready">Câmera não está pronta</string>
+    <string name="ar_is_starting_please_try_again">O AR está começando… tente novamente.</string>
+    <string name="recording_started">A gravação começou.</string>
+    <string name="camera_is_not_available">A câmera não está disponível.</string>
+    <string name="permission_rationale_upload">Para selecionar e enviar vídeos da Galeria, é necessária permissão de armazenamento.</string>
+    <string name="unable_to_choose_video_for_upload">Não é possível escolher o vídeo para upload.</string>
+    <string name="sticker_item_is_missing">O item do adesivo está faltando.</string>
+    <string name="audio_file_is_missing">O arquivo de áudio está faltando.</string>
+    <string name="could_not_load_audio">Não foi possível carregar o áudio.</string>
+    <string name="selected_video_uri_is_missing">O URI do vídeo selecionado está faltando.</string>
+    <string name="failed_to_prepare_video_for_upload">Falha ao preparar o vídeo para upload.</string>
+    <string name="error_copying_file">Erro ao copiar arquivo.</string>
+    <string name="failed_to_create_directory">Falha ao criar diretório.</string>
+    <string name="upload_failed_">"Falha no upload: "</string>
+    <string name="uploading">Enviando…</string>
+    <string name="public_">Público</string>
+    <string name="unknown_title">Título desconhecido</string>
+    <string name="unknown_singer">Cantora desconhecida</string>
+    <string name="invalid_host_data">Dados de host inválidos</string>
+    <string name="type_something">Digite algo...</string>
+
+    <string-array name="fake_times">
+        <item>Agora mesmo</item>
+        <item>Um momento atrás</item>
+        <item>5 minutos atrás</item>
+        <item>Cerca de uma hora atrás</item>
+        <item>1 hora atrás</item>
+        <item>Mais cedo hoje</item>
+        <item>Hoje</item>
+        <item>Ontem</item>
+        <item>Outro dia</item>
+        <item>3 dias atrás</item>
+        <item>Semana passada</item>
+        <item>Alguns dias atrás</item>
+        <item>2 semanas atrás</item>
+        <item>Mês passado</item>
+        <item>Algum tempo atrás</item>
+        <item>Um tempo atrás</item>
+        <item>Muito tempo atrás</item>
+    </string-array>
+
+    <string-array name="fake_chat_sender">
+        <item>Oi! Como você está?</item>
+        <item>Estou planejando assistir a um filme hoje à noite.</item>
+        <item>O que você acha das últimas notícias?</item>
+        <item>Estou trabalhando em um novo projeto no trabalho.</item>
+        <item>Quer tomar um café mais tarde?</item>
+        <item>Acabei de voltar de uma corrida, estou me sentindo ótimo!</item>
+        <item>Você tem alguma recomendação de livro?</item>
+        <item>Como foi seu fim de semana?</item>
+        <item>Estou pensando em tirar férias no próximo mês.</item>
+        <item>Você já experimentou o novo restaurante no centro?</item>
+        <item>O que você vai fazer hoje?</item>
+        <item>Acabei de terminar um ótimo livro, mal posso esperar para te contar.</item>
+        <item>Tem planos para esta noite?</item>
+        <item>Estou pensando em aprender um novo idioma.</item>
+        <item>Você viu o último episódio da série?</item>
+        <item>Você gostou do novo álbum que saiu?</item>
+        <item>Tenho escutado muitos podcasts ultimamente.</item>
+        <item>O que você acha do novo gadget?</item>
+        <item>Estou planejando começar um blog.</item>
+        <item>Qual é o seu passatempo favorito?</item>
+        <item>Como você se mantém motivado?</item>
+        <item>Alguma dica de produtividade?</item>
+        <item>O que você faz para relaxar?</item>
+        <item>Como você lida com o estresse?</item>
+        <item>O que te inspira?</item>
+    </string-array>
+
+    <string-array name="fake_chat_receiver">
+        <item>Estou bem, e você?</item>
+        <item>Parece divertido! Qual filme?</item>
+        <item>Não tenho certeza, não acompanhei as notícias.</item>
+        <item>Sério? Sobre o que é o projeto?</item>
+        <item>Claro, adoraria!</item>
+        <item>Uau, que legal! Preciso voltar a me exercitar também.</item>
+        <item>Li um ótimo thriller recentemente.</item>
+        <item>Foi tranquilo, não fiz muita coisa.</item>
+        <item>Que legal! Para onde está pensando em ir?</item>
+        <item>Ainda não. É bom?</item>
+        <item>Trabalhando de casa, e você?</item>
+        <item>Interessante, me conta mais!</item>
+        <item>Nada demais, só descansando.</item>
+        <item>Que legal! Qual idioma você quer aprender?</item>
+        <item>Sim, foi incrível! Mal posso esperar pelo próximo episódio.</item>
+        <item>Ainda não ouvi, tem alguma música boa?</item>
+        <item>Eu também, são bem informativos.</item>
+        <item>Estou pensando em comprar um também. Quais recursos você gostou?</item>
+        <item>Que empolgante! Sobre o que vai escrever?</item>
+        <item>Gosto de pintar e ler.</item>
+        <item>Defino pequenas metas para me manter motivado.</item>
+        <item>Fazer listas de tarefas me ajuda muito.</item>
+        <item>Assisto a um filme ou leio um livro.</item>
+        <item>Costumo meditar ou dar uma caminhada.</item>
+        <item>A natureza e a arte são minhas maiores inspirações.</item>
+    </string-array>
+
+    <string-array name="lightening_contrast_options">
+        <item>Baixo</item>
+        <item>Normal</item>
+        <item>Alto</item>
+    </string-array>
+
+    <string-array name="fake_messages">
+        <item>Oi! 👋</item>
+        <item>Adorei seu perfil!</item>
+        <item>Novo por aqui—diga oi!</item>
+        <item>Quer bater um papo rápido?</item>
+        <item>Ei! 😊</item>
+        <item>Como está seu dia?</item>
+        <item>Você parece interessante 👀</item>
+        <item>O que te trouxe aqui?</item>
+        <item>Prazer em conhecer! 🙌</item>
+        <item>Olá estranho 😄</item>
+        <item>Pessoa de café ou chá? ☕🍵</item>
+        <item>Este app ficou ainda melhor 😉</item>
+        <item>Então… qual é a sua história?</item>
+        <item>Oi oi! ✨</item>
+        <item>Ansioso(a) para conversar!</item>
+        <item>Você tem boas vibrações 🌟</item>
+        <item>Oi! Quer se conectar?</item>
+        <item>Feliz que combinamos 😍</item>
+        <item>Ei, como vai a vida?</item>
+        <item>Um grande sorriso para você 😁</item>
+        <item>Você acabou de aparecer na minha tela 👌</item>
+        <item>Sou eu, ou acabamos de virar melhores amigos? 😂</item>
+        <item>Esperava que combinássemos 💫</item>
+        <item>Parece alguém divertido de conversar 😏</item>
+        <item>Aqui estou! Qual é a sua desculpa? 😜</item>
+        <item>Adivinha? Você é minha primeira mensagem de hoje 📩</item>
+        <item>Você acredita em coincidências ou destino? ✨</item>
+        <item>Acho que você me deve um oi 😇</item>
+        <item>Não vou mentir, seu perfil se destacou 🔥</item>
+        <item>Ok, seu sorriso é contagiante 😍</item>
+    </string-array>
+</resources>

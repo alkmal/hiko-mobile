@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bottomSheetColor"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/_3sdp">
+
+    <ImageView
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:padding="@dimen/_3sdp"
+        app:srcCompat="@drawable/ic_baseline_hashtag_36"
+        app:tint="@color/pink" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/airbnb_cereal_bold"
+            android:singleLine="true"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/_10sdp"
+            tools:text="@string/name" />
+
+        <TextView
+            android:id="@+id/clips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8sdp"
+            tools:ignore="SmallSp"
+            tools:text="3.9M clips" />
+    </LinearLayout>
+</LinearLayout>

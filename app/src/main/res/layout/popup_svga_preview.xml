@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3000000">
+
+        <com.opensource.svgaplayer.SVGAImageView
+            android:id="@+id/svgImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_350sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_50sdp"
+            app:autoPlay="true" />
+
+        <RelativeLayout
+            android:id="@+id/nameLyt"
+            android:layout_width="@dimen/_155sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_120sdp">
+
+            <LinearLayout
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@drawable/entry_bg_name_stroke" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/entry_bg_name"
+                    android:orientation="vertical"
+                    android:paddingVertical="@dimen/_8sdp"
+                    android:paddingStart="40dp">
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:fontFamily="@font/airbnb_cereal_medium"
+                        android:includeFontPadding="false"
+                        android:text="@string/diamond_star"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/airbnb_cereal_regular"
+                        android:includeFontPadding="false"
+                        android:text="@string/stepping_in"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_8sdp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@drawable/entry_bg_name_stroke" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="@dimen/_43sdp"
+                    android:layout_height="@dimen/_43sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/profile_entry_bg_blue"
+                    android:padding="2dp" />
+
+                <ImageView
+                    android:id="@+id/avatarFrameImage"
+                    android:layout_width="@dimen/_55sdp"
+                    android:layout_height="@dimen/_55sdp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_80sdp"
+            android:src="@drawable/a_close" />
+    </RelativeLayout>
+</layout>

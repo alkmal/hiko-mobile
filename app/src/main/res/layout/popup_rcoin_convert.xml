@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_20dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/popup_color"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/airbnbcereal_w_xbd"
+                    android:gravity="center"
+                    android:paddingTop="10sp"
+                    android:text="@string/r_coin_convert"
+                    android:textColor="@color/yellow"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="52sp"
+                        android:layout_height="52sp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:src="@drawable/rcoin" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_38sdp"
+                        android:layout_height="@dimen/_38sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_double_arrow" />
+
+                    <ImageView
+                        android:layout_width="47sp"
+                        android:layout_height="54sp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:src="@drawable/diamond" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tvText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:fontFamily="@font/airbnbcereal_w_md"
+                        android:gravity="center"
+                        android:text="@string/how_much_coins_convert_into_diamonds"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etRcoin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15sp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/stroke_bg_15dp"
+                        android:backgroundTint="@color/white_10"
+                        android:fontFamily="@font/airbnbcereal_w_md"
+                        android:gravity="center"
+                        android:hint="@string/enter_coins"
+                        android:inputType="number"
+                        android:lineSpacingExtra="5dp"
+                        android:maxLength="8"
+                        android:paddingVertical="15sp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white_50"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tvDiamondsValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginHorizontal="15sp"
+                        android:fontFamily="@font/airbnbcereal_w_md"
+                        android:text="You will receive 100.00 Diamonds"
+                        android:textColor="@color/yellow"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/btnContinue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/gradient_bg_radius_50"
+                        android:fontFamily="@font/airbnbcereal_w_bd"
+                        android:gravity="center"
+                        android:paddingVertical="15sp"
+                        android:text="@string/convert_to_diamond"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/btnCancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/gray_strock_30"
+                        android:fontFamily="@font/airbnbcereal_w_bd"
+                        android:gravity="center"
+                        android:paddingVertical="15sp"
+                        android:text="@string/cancel"
+                        android:textColor="@color/white_50"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+    </LinearLayout>
+</layout>

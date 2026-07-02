@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/layMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/laySeat"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/chat_room_mic_flow" />
+
+                <RelativeLayout
+                    android:id="@+id/image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/ivSeatBg"
+                        android:layout_width="69dp"
+                        android:layout_height="69dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/profile_round_bg"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/muteMicSeat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/userImage"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/audio_seat" />
+
+                    <ImageView
+                        android:id="@+id/avatarFrameImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/imgHostReaction"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/ivMute"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/ic_mute_seat"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivHost"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/ic_host"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/nameCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-5dp"
+                android:fontFamily="@font/airbnbcereal_w_bd"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/_0"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+</layout>

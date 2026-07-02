@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layoutDirection="ltr"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="148sp"
+                android:background="@drawable/plan_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layTag"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginTop="-10dp"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_30sdp"
+                        android:background="@drawable/plan_gradient"
+                        android:backgroundTint="@color/tag_yellow"
+                        android:gravity="center"
+                        android:rotation="45">
+
+                        <TextView
+                            android:id="@+id/tvTag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_45sdp"
+                            android:fontFamily="@font/airbnbcereal_w_xbd"
+                            android:paddingVertical="@dimen/_1sdp"
+                            android:text="10% OFF"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/tag_text"
+                            android:textSize="9sp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="52sp"
+                        android:layout_height="58sp"
+                        android:layout_marginTop="5sp"
+                        android:src="@drawable/diamond" />
+
+                    <TextView
+                        android:id="@+id/tvCoin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/airbnbcereal_w_bd"
+                        android:text="@string/_0"
+                        android:layout_marginVertical="10sp"
+                        android:textColor="@color/yellow"
+                        android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="10sp"
+                            android:paddingVertical="5sp"
+                            android:background="@drawable/gradient_bg_radius_50"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tvAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/airbnbcereal_w_bd"
+                                android:gravity="center"
+                                android:text="@string/_1"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+</layout>

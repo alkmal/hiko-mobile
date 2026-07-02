@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/bg_vip_item"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/vip_feature_bg">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/crown_royalty" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/airbnbcereal_w_bd"
+            android:text="@string/get_vip_to_access_all_function"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:visibility="visible" />
+    </LinearLayout>
+</layout>

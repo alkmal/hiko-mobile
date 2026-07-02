@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="myLoder"
+            type="com.codder.ultimate.MyLoader" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.MessageFragment">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitleMessages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/airbnbcereal_w_xbd"
+                    android:text="@string/message"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                    <View
+                        android:layout_width="64dp"
+                        android:layout_height="1.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/dot_selected"
+                     />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/layDeleteChat"
+                    android:layout_width="35dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@+id/ivProfile"
+                    android:src="@drawable/ic_delete_popup" />
+
+                <com.codder.ultimate.utils.UserProfileImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/bg_gradient_round" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp">
+
+                <com.scwang.smart.refresh.layout.SmartRefreshLayout
+                    android:id="@+id/swipe_refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <com.scwang.smart.refresh.header.ClassicsHeader
+                        android:id="@+id/header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        app:layout_srlSpinnerStyle="Translate"
+                        app:srlAccentColor="@color/pink"
+                        app:srlDrawableArrow="@drawable/swipe_arrow"
+                        app:srlEnableLastTime="false"
+                        app:srlEnablePullToCloseTwoLevel="false"
+                        app:srlEnableTwoLevel="false" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvMessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:orientation="vertical"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            tools:listitem="@layout/item_chat_users" />
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/shimmer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="10dp"
+                            android:visibility="@{myLoder.isFirstTimeLoading?View.VISIBLE : View.GONE}"
+                            app:shimmer_base_color="@color/shimmerColor"
+                            app:shimmer_colored="false"
+                            app:shimmer_highlight_color="@color/white"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <include layout="@layout/shimmer_item_chat_users" />
+
+                                    <include layout="@layout/shimmer_item_chat_users" />
+
+                                    <include layout="@layout/shimmer_item_chat_users" />
+
+                                    <include layout="@layout/shimmer_item_chat_users" />
+
+                                    <include layout="@layout/shimmer_item_chat_users" />
+
+                                    <include layout="@layout/shimmer_item_chat_users" />
+
+                                    <include layout="@layout/shimmer_item_chat_users" />
+
+                                    <include layout="@layout/shimmer_item_chat_users" />
+
+                                    <include layout="@layout/shimmer_item_chat_users" />
+
+                                    <include layout="@layout/shimmer_item_chat_users" />
+
+                                    <include layout="@layout/shimmer_item_chat_users" />
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+                            </LinearLayout>
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/layoutNoData"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="150dp"
+                            android:visibility="@{myLoder.noData?View.VISIBLE : View.GONE}">
+
+                            <include layout="@layout/lyt_no_data" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <com.scwang.smart.refresh.footer.ClassicsFooter
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center" />
+                </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+            </RelativeLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </FrameLayout>
+</layout>

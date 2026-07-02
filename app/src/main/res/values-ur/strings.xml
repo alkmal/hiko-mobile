@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">اپنے ایپ کا نام درج کریں۔</string>
+
+
+    <string name="no_internet_connection">انٹرنیٹ کنکشن نہیں ہے۔</string>
+    <string name="back_online">واپس آن لائن</string>
+    <string name="we_are_under_maintenance_text">ہم دیکھ بھال کے تحت ہیں</string>
+    <string name="dismiss">برطرف کرنا</string>
+    <string name="you_are_blocked_by_admin_text">آپ کو ایڈمن نے بلاک کر دیا ہے۔</string>
+    <string name="cancel">منسوخ کریں۔</string>
+    <string name="you_are_logged_in_other_devices">آپ دوسرے آلات میں لاگ ان ہیں۔</string>
+    <string name="log_out">لاگ آؤٹ کریں۔</string>
+    <string name="policy">سائن اپ کرنے سے آپ ہماری بات سے اتفاق کریں گے۔</string>
+    <string name="terms_amp_condition">شرائط و ضوابط</string>
+    <string name="and">اور</string>
+    <string name="privacy_policy">رازداری کی پالیسی</string>
+    <string name="please_wait">برائے مہربانی انتظار کریں۔</string>
+    <string name="your_name">آپ کا نام</string>
+    <string name="male">مرد</string>
+    <string name="female">خاتون</string>
+    <string name="select_your_age">اپنی عمر کا انتخاب کریں۔</string>
+    <string name="edit_profile">پروفائل میں ترمیم کریں۔</string>
+    <string name="submit">جمع کروائیں۔</string>
+    <string name="enter_your_name">اپنا نام درج کریں۔</string>
+    <string name="enter_username_first">پہلے صارف نام درج کریں۔</string>
+    <string name="select_your_gender">اپنی جنس منتخب کریں۔</string>
+    <string name="minimum_age_must_be_18_years">کم از کم عمر 18 سال ہونی چاہیے۔</string>
+    <string name="connecting">منسلک ہو رہا ہے…</string>
+    <string name="privacy_policy_text">رازداری کی پالیسی</string>
+    <string name="accept_privacy_policy">میری عمر 18+ ہے اور میں نے رازداری کی پالیسی پڑھ لی ہے۔</string>
+    <string name="deny">انکار کرنا</string>
+    <string name="accept">قبول کریں۔</string>
+    <string name="please_accept_privacy_policy">جاری رکھنے کے لیے براہ کرم تصدیق کریں کہ آپ نے پرائیویسی پالیسی پڑھ لی ہے۔</string>
+    <string name="exit_app_confirmation">کیا آپ واقعی ایپ سے باہر نکلنا چاہتے ہیں؟</string>
+    <string name="exit_this_app">اس ایپ سے باہر نکلیں۔</string>
+    <string name="fans">پرستار</string>
+    <string name="my_diamonds">میرے ہیرے</string>
+    <string name="demo_host_center_text">ڈیمو ہوسٹ سینٹر</string>
+    <string name="demo_agency_center">ڈیمو ایجنسی سینٹر</string>
+    <string name="host_request">میزبان کی درخواست</string>
+    <string name="offline_recharge">آف لائن ریچارج</string>
+    <string name="my_posts">میری پوسٹس</string>
+    <string name="my_relites">میری ریلیٹس</string>
+    <string name="store">اسٹور</string>
+    <string name="free_coins">مفت سکے</string>
+    <string name="become_vip">وی آئی پی بنیں۔</string>
+    <string name="user_level">صارف کی سطح</string>
+    <string name="copied_successfully">کامیابی کے ساتھ کاپی ہو گیا۔</string>
+    <string name="id">ID:</string>
+    <string name="agency_center_text">ایجنسی سینٹر</string>
+    <string name="host_center">میزبان مرکز</string>
+    <string name="ok">ٹھیک ہے</string>
+    <string name="history">تاریخ</string>
+    <string name="recharge">ریچارج کریں۔</string>
+    <string name="my_diamond_balance">میرا ہیرے کا سکہ</string>
+    <string name="enter_user_id">یوزر آئی ڈی درج کریں۔</string>
+    <string name="enter_diamonds">ڈائمنڈز درج کریں۔</string>
+    <string name="note">نوٹ</string>
+    <string name="top_up">ٹاپ اپ</string>
+    <string name="user_not_found">صارف نہیں ملا</string>
+    <string name="please_verify_user_id">براہ کرم صارف کی شناخت کی تصدیق کریں۔</string>
+    <string name="enter_coin_value">سکے کی قیمت درج کریں۔</string>
+    <string name="invalid_coin_value">سکے کی غلط قیمت</string>
+    <string name="insufficient_coins">ناکافی سکے</string>
+    <string name="send_successfully">کامیابی سے بھیجیں۔</string>
+    <string name="continue_text">جاری رکھیں</string>
+    <string name="in_this_apk_all_data_are_only_for_demo_purpose">اس APK میں، تمام ڈیٹا صرف ڈیمو مقصد کے لیے ہیں۔</string>
+    <string name="deleted_successfully">کامیابی سے حذف کر دیا گیا۔</string>
+    <string name="india">انڈیا</string>
+    <string name="we_will_take_immediately_action_for_this_user_thank_you">ہم اس صارف کے لیے فوری کارروائی کریں گے شکریہ</string>
+    <string name="likes">پسند کرتا ہے۔</string>
+    <string name="comments">تبصرے</string>
+    <string name="report_user">صارف کی اطلاع دیں۔</string>
+    <string name="blocked_successfully">کامیابی کے ساتھ بلاک کر دیا گیا۔</string>
+    <string name="report_this_user">اس صارف کی اطلاع دیں۔</string>
+    <string name="please_describe_your_issue_here">براہ کرم یہاں اپنا مسئلہ بیان کریں..</string>
+    <string name="unable_to_report">رپورٹ کرنے سے قاصر..</string>
+    <string name="something_went_wrong_text">کچھ غلط ہو گیا۔</string>
+    <string name="block_this_user">اس صارف کو مسدود کریں۔</string>
+    <string name="yes">جی ہاں</string>
+    <string name="type_message_first">پہلے پیغام ٹائپ کریں۔</string>
+    <string name="toast_cannot_retrieve_cropped_image">تراشی ہوئی تصویر کو بازیافت نہیں کیا جا سکتا</string>
+    <string name="toast_unexpected_error">غیر متوقع خرابی۔</string>
+    <string name="call_ended">کال ختم!</string>
+    <string name="ringing">بج رہا ہے۔</string>
+    <string name="we_will_take_immediately_action_for_this_user_n_thank_you">ہم اس صارف کے لیے فوری کارروائی کریں گے شکریہ</string>
+    <string name="enter_valid_message">درست پیغام درج کریں۔</string>
+    <string name="is_busy_with_someone_else">کسی اور کے ساتھ مصروف ہے؟</string>
+    <string name="discard_entire_video">پوری ویڈیو کو مسترد کریں؟</string>
+    <string name="if_you_go_back_now_you_will_lose_all_the_clips_added_to_your_video">اگر آپ ابھی واپس جاتے ہیں، تو آپ اپنے ویڈیو میں شامل تمام کلپس کھو دیں گے۔</string>
+    <string name="discard_video">ویڈیو کو مسترد کریں۔</string>
+    <string name="incoming_call">آنے والی کال…</string>
+    <string name="need_permissions">"اجازت کی ضرورت ہے"</string>
+    <string name="call_declined">کال مسترد کر دی گئی۔</string>
+    <string name="rtc_stats_format">ڈاؤن اسٹریم بٹریٹ: %.2f kbps%nڈاؤن اسٹریم نقصان کی شرح: %.2f%% %nUpstream Bitrate: %.2f kbps%nاپ اسٹریم نقصان کی شرح: %.2f%%</string>
+    <string name="unfollow">پیروی ختم کریں۔</string>
+    <string name="follow">پیروی کریں۔</string>
+    <string name="unblock">غیر مسدود کریں۔</string>
+    <string name="block">بلاک</string>
+    <string name="message">پیغام</string>
+    <string name="message_delete_confirmation">کیا آپ واقعی اس پیغام کو حذف کرنا چاہتے ہیں؟</string>
+    <string name="following">پیروی کرنا</string>
+    <string name="my_fans">میرے پرستار</string>
+    <string name="image">تصویر</string>
+    <string name="choose_one">ایک کا انتخاب کریں</string>
+    <string name="say_something">کچھ بولو…</string>
+    <string name="failed_to_load_videos">ویڈیوز لوڈ کرنے میں ناکام۔</string>
+    <string name="settings">ترتیبات</string>
+    <string name="notification">اطلاع</string>
+    <string name="have_an_issue">ایک مسئلہ ہے۔</string>
+    <string name="my_complains">میری شکایات</string>
+    <string name="terms_of_service">سروس کی شرائط</string>
+    <string name="about_us">ہمارے بارے میں</string>
+    <string name="next">اگلا</string>
+    <string name="complaint_or_suggestion">شکایت یا تجویز</string>
+    <string name="typing_somethings">کچھ ٹائپ کرنا…</string>
+    <string name="contact">رابطہ کریں۔</string>
+    <string name="enter_your_mobile_number_or_email">اپنا موبائل نمبر یا ای میل درج کریں۔</string>
+    <string name="attach_your_image_or_screenshot">اپنی تصویر یا اسکرین شاٹ منسلک کریں۔</string>
+    <string name="browse">براؤز کریں۔</string>
+    <string name="complain_send_successfully">شکایت کامیابی سے بھیجیں۔</string>
+    <string name="please_enter_message">براہ کرم پیغام درج کریں۔</string>
+    <string name="please_enter_contact">براہ کرم رابطہ درج کریں۔</string>
+    <string name="my_tickets">میرے ٹکٹ</string>
+    <string name="open">کھولیں۔</string>
+    <string name="ticket_details">ٹکٹ کی تفصیلات</string>
+    <string name="status">حیثیت</string>
+    <string name="close">بند</string>
+    <string name="_1_self_introduction">1. خود کا تعارف</string>
+    <string name="name">نام</string>
+    <string name="enter_name">نام درج کریں۔</string>
+    <string name="mobile_number">موبائل نمبر</string>
+    <string name="enter_mobile_number">موبائل نمبر درج کریں۔</string>
+    <string name="Bio">بایو</string>
+    <string name="_2_agency_code">2. ایجنسی کوڈ</string>
+    <string name="if_you_have">(اگر آپ کے پاس ہے)</string>
+    <string name="_3_upload_photos">3. تصاویر اپ لوڈ کریں۔</string>
+    <string name="personal_photo">ذاتی تصویر</string>
+    <string name="_4_bank_details">4. بینک کی تفصیلات</string>
+    <string name="enter_your_bank_details">اپنے بینک کی تفصیلات درج کریں۔</string>
+    <string name="admission_car">داخلہ کار</string>
+    <string name="enter_bio_text">بائیو درج کریں۔</string>
+    <string name="select_personal_photo">ذاتی تصویر منتخب کریں۔</string>
+    <string name="image_file_not_found">تصویری فائل نہیں ملی</string>
+    <string name="host_request_send">میزبان کی درخواست بھیجیں۔</string>
+    <string name="try_after_some_time">براہ کرم کچھ وقت کے بعد کوشش کریں۔</string>
+    <string name="avatar_frame">اوتار فریم</string>
+    <string name="super_star">سپر اسٹار</string>
+    <string name="you_don_t_have_required_diamonds">آپ کو ہیروں کی ضرورت نہیں ہے!</string>
+    <string name="diamond_star">ڈائمنڈ سٹار</string>
+    <string name="stepping_in">قدم بڑھانا!</string>
+    <string name="free_diamonds">مفت ہیرے</string>
+    <string name="method_1">طریقہ 1:</string>
+    <string name="method_2">طریقہ 2:</string>
+    <string name="your_refer_code">آپ کا حوالہ کوڈ:</string>
+    <string name="enter_referral_code_here">یہاں ریفرل کوڈ درج کریں۔</string>
+    <string name="you_have_2_referrals">آپ کے پاس 2 حوالہ جات ہیں۔</string>
+    <string name="referral_code_copied">ریفرل کوڈ کاپی ہو گیا!</string>
+    <string name="enter_refer_code">حوالہ کوڈ درج کریں۔</string>
+    <string name="refereed_successfully">کامیابی کے ساتھ حوالہ دیا گیا۔</string>
+    <string name="generic_error">کچھ غلط ہو گیا۔ براہ کرم بعد میں دوبارہ کوشش کریں۔</string>
+    <string name="earned_by_user">انعام دیا گیا۔</string>
+    <string name="invite_desc">اپنے دوستوں کو مدعو کریں! مدعو دوستوں کی ہر ادائیگی کے لیے، آپ اور آپ کے دوست دونوں وصول کریں گے۔</string>
+    <string name="vip_plan">وی آئی پی پلان</string>
+    <string name="become_vip_and_get_many_privileges">VIP بنیں اور بہت سے مراعات حاصل کریں۔</string>
+    <string name="vip_privileges">VIP مراعات</string>
+    <string name="get_vip_to_access_all_function">تمام فنکشن تک رسائی کے لیے VIP حاصل کریں۔</string>
+    <string name="vip_package">VIP پیکیج</string>
+    <string name="get_now">ابھی حاصل کریں۔</string>
+    <string name="first_select_the_plan">پہلے منصوبہ منتخب کریں۔</string>
+    <string name="credit_debit_card">کریڈٹ/ڈیبٹ کارڈ</string>
+    <string name="google_play">گوگل پلے</string>
+    <string name="hot">گرم</string>
+    <string name="your_level">آپ کی سطح</string>
+    <string name="no_level_available">کوئی سطح دستیاب نہیں ہے۔</string>
+    <string name="unknown">نامعلوم</string>
+    <string name="income">آمدنی</string>
+    <string name="record">ریکارڈ</string>
+    <string name="diamonds">ہیرے</string>
+    <string name="outcome">نتیجہ</string>
+    <string name="r_coins">R-Coins</string>
+    <string name="confirm">تصدیق کریں۔</string>
+    <string name="diamond_record">ڈائمنڈ ریکارڈ</string>
+    <string name="spending">خرچ کرنا</string>
+    <string name="converted_to_diamonds">ہیرے میں تبدیل</string>
+    <string name="diamond_purchase">ہیرے کی خریداری</string>
+    <string name="you_have_called">آپ نے بلایا ہے۔</string>
+    <string name="watching_ads">اشتہارات دیکھ رہے ہیں۔</string>
+    <string name="login_bonus">لاگ ان بونس</string>
+    <string name="referral_bonus">ریفرل بونس</string>
+    <string name="cash_out">کیش آؤٹ</string>
+    <string name="svga_animation_purchased">SVGA اینیمیشن خریدی گئی۔</string>
+    <string name="add_in_teenpatti_game">ٹین پٹی گیم میں شامل کریں۔</string>
+    <string name="purchased_avatar_frame">اوتار فریم خریدا۔</string>
+    <string name="coin_add_by_offline_recharge">آف لائن ریچارج کے ذریعے سکے شامل کریں۔</string>
+    <string name="call_coin_received">سکے کو کال کریں۔</string>
+    <string name="lucy_gift_bonus">لوسی گفٹ بونس</string>
+    <string name="add_in_roulette_game">رولیٹی گیم میں شامل کریں۔</string>
+    <string name="add_in_ferry_wheel_game">فیری وہیل گیم میں شامل کریں۔</string>
+    <string name="convert_in_coin_seller_coin">سکے بیچنے والے سکے میں تبدیل کریں۔</string>
+    <string name="unknown_transaction">نامعلوم لین دین</string>
+    <string name="gift_broadcast_during_livestream_by_you">آپ کی طرف سے لائیو سٹریم کے دوران گفٹ براڈکاسٹ</string>
+    <string name="gift_received">تحفہ موصول ہوا۔</string>
+    <string name="gift_send_to">تحفہ بھیجیں</string>
+    <string name="added_by_admin">ایڈمن کے ذریعے شامل کیا گیا۔</string>
+    <string name="reduce_by_admin">ایڈمن کے ذریعہ کم کریں۔</string>
+    <string name="_1">$1</string>
+    <string name="withdrawing_rcoins">RCCoins واپس لینا</string>
+    <string name="convert_to_diamond">ڈائمنڈ میں تبدیل کریں۔</string>
+    <string name="what_is_coins">سکے کیا ہے؟</string>
+    <string name="what_is_rcoin">1. جب آپ کو تحائف موصول ہوتے ہیں، جیسے لیمبوروگھینی یا کیسل، آپ فوری طور پر گفٹ اسٹور میں گفٹ کی قیمت کے برابر سکے حاصل کرتے ہیں۔ 2. آپ سکے کو ہیرے اور نقدی دونوں میں تبدیل کر سکتے ہیں۔ 3. سککوں کا بیلنس دستیاب + واپس لینا</string>
+    <string name="this_is_a_demo_version">یہ ڈیمو ورژن ہے۔</string>
+    <string name="payment_done">ادائیگی ہو گئی۔</string>
+    <string name="coin_sellers_list">سکے بیچنے والوں کی فہرست</string>
+    <string name="how_much_rcoins_convert_cash">کتنے Rcoins کیش میں بدلتے ہیں؟</string>
+    <string name="how_much_rcoins_convert_into_diamonds">کتنے Rcoins ہیروں میں تبدیل ہوتے ہیں؟</string>
+    <string name="setting_error">ترتیب میں خرابی۔</string>
+    <string name="minimum_amount_is">کم از کم رقم ہے۔</string>
+    <string name="you_not_have_enough">آپ کے پاس کافی نہیں ہے۔</string>
+    <string name="you_are_not_able_to_cashout_at_your_level">آپ اپنی سطح پر کیش آؤٹ کرنے کے قابل نہیں ہیں۔</string>
+    <string name="your">آپ کا</string>
+    <string name="successfully_converted_into">میں کامیابی کے ساتھ تبدیل ہو گیا۔</string>
+    <string name="conversion_failed">تبدیلی ناکام ہو گئی۔</string>
+    <string name="redeem_your_coins">اپنے سکے چھڑائیں۔</string>
+    <string name="enter_coins_to_withdraw">واپس لینے کے لیے سکے درج کریں۔</string>
+    <string name="your_redeem_history">آپ کی ریڈیم ہسٹری</string>
+    <string name="pending">زیر التواء</string>
+    <string name="r_coin_convert">R-Coin کنورٹ</string>
+    <string name="how_much_coins_convert_into_diamonds">کتنے سکے ہیرے میں تبدیل ہوتے ہیں؟</string>
+    <string name="enter_coins">سکے داخل کریں۔</string>
+    <string name="convert_to_diamonds">ہیرے میں تبدیل کریں۔</string>
+    <string name="whatsapp_not_installed">واٹس ایپ انسٹال نہیں ہے۔</string>
+    <string name="invalid_whatsapp_number">غلط واٹس ایپ نمبر</string>
+    <string name="withdrawable_rcoins">قابل واپسی Rcoins</string>
+    <string name="no_payment_method_found">ادائیگی کا کوئی طریقہ نہیں ملا</string>
+    <string name="insufficient">ناکافی</string>
+    <string name="please_enter_your_details">براہ کرم اپنی تفصیلات درج کریں۔</string>
+    <string name="redeem_request_sent_successfully">بھنانے کی درخواست کامیابی کے ساتھ بھیج دی گئی۔</string>
+    <string name="enter_your_upi_details">اپنی UPI کی تفصیلات درج کریں۔</string>
+    <string name="enter_your_paytm_details">اپنی Paytm تفصیلات درج کریں۔</string>
+    <string name="enter_your_bank_account_details">اپنے بینک اکاؤنٹ کی تفصیلات درج کریں۔</string>
+    <string name="enter_your_bybit_details">اپنی Bybit کی تفصیلات درج کریں۔</string>
+    <string name="purchased">خریدا گیا۔</string>
+    <string name="go_live">لائیو جاؤ</string>
+    <string name="song_hint">گانا منتخب کرنے کے لیے کلک کریں۔</string>
+    <string name="timer_hint">ٹائمر شروع ہونے سے پہلے اسے منسوخ کرنے کے لیے، یہاں کلک کریں۔</string>
+    <string name="duration">دورانیہ</string>
+    <string name="mmss">0:00</string>
+    <string name="welcome_to_join_the_live_any_content_related_to_porn_violence_gambling_illegal_dealing_will_be_banned">لائیو میں شامل ہونے کے لیے خوش آمدید۔ فحش، تشدد، جوا، غیر قانونی لین دین سے متعلق کسی بھی مواد پر پابندی ہوگی۔</string>
+    <string name="enter_a_room">کمرے میں داخل ہوا</string>
+    <string name="reacted">رد عمل کا اظہار کیا۔</string>
+    <string name="browse_file_title">فائل کو براؤز کریں۔</string>
+    <string name="please_enter_room_title">براہ کرم کمرے کا نام درج کریں۔</string>
+    <string name="please_select_room_image">براہ کرم کمرے کی تصویر منتخب کریں۔</string>
+    <string name="you_are_block_from_admin_to_go_live">آپ کو ایڈمن کی جانب سے لائیو جانے کے لیے بلاک کر دیا گیا ہے۔</string>
+    <string name="start_audio_live">آڈیو لائیو شروع کریں۔</string>
+    <string name="take_picture">تصویر کھینچو</string>
+    <string name="recorder_error_in_progress">ایسا کرنے کے لیے، براہ کرم پہلے ریکارڈنگ بند کریں۔</string>
+    <string name="recorder_error_maxed_out">آپ پہلے ہی زیادہ سے زیادہ مدت کے لیے ریکارڈ کر چکے ہیں۔</string>
+    <string name="audio_from_clip">کلپ سے حسب ضرورت آڈیو۔</string>
+    <string name="recorder_error_no_clips">جاری رکھنے کے لیے براہ کرم پہلے اپنا کلپ ریکارڈ کریں۔</string>
+    <string name="message_song_select">ریکارڈنگ شروع ہونے کے بعد آپ گانا منتخب نہیں کر سکتے۔</string>
+    <string name="message_song_change">ریکارڈنگ شروع ہونے کے بعد آپ گانا تبدیل نہیں کر سکتے۔</string>
+    <string name="you_need_storage_permission">آپ کو اسٹوریج کی اجازت درکار ہے۔</string>
+    <string name="filter">فلٹر کو منتخب کریں۔</string>
+    <string name="you_cannot_upload_video_above_30_mb">آپ 30 MB سے زیادہ کی ویڈیو اپ لوڈ نہیں کر سکتے!!!</string>
+    <string name="choose_sticker">اسٹیکر کا انتخاب کریں۔</string>
+    <string name="timer">ٹائمر</string>
+    <string name="sticker">اسٹیکر</string>
+    <string name="filters">فلٹرز</string>
+    <string name="preview">پیش نظارہ</string>
+    <string name="flip">پلٹائیں</string>
+    <string name="speed">رفتار</string>
+    <string name="notification_channel_id">پہلے سے طے شدہ</string>
+    <string name="notification_download_title">فائل ڈاؤن لوڈ کریں…</string>
+    <string name="notification_download_description">چند سیکنڈ سے زیادہ وقت نہیں لینا چاہیے۔</string>
+    <string name="announcement_welcome_to_room">اعلان: کمرے میں خوش آمدید</string>
+    <string name="all">تمام</string>
+    <string name="send">بھیجیں۔</string>
+    <string name="followers">پیروکار</string>
+    <string name="shorts">شارٹس</string>
+    <string name="posts">پوسٹس</string>
+    <string name="creator">خالق</string>
+    <string name="agency">ایجنسی</string>
+    <string name="coin_seller">سکے بیچنے والا</string>
+    <string name="invite">دعوت دیں۔</string>
+    <string name="live">جیو</string>
+    <string name="public_text">عوامی</string>
+    <string name="private_text">نجی</string>
+    <string name="welcome_to_the_party">پارٹی میں خوش آمدید</string>
+    <string name="games">گیمز</string>
+    <string name="keep">رکھو</string>
+    <string name="exit_text">باہر نکلنا</string>
+    <string name="you_not_have_enough_diamonds_to_send_gift">آپ کے پاس تحفہ بھیجنے کے لیے اتنے ہیرے نہیں ہیں۔</string>
+    <string name="sent_a_gift">تحفہ بھیجا ہے۔</string>
+    <string name="you_are_blocked_by_host">آپ کو میزبان نے بلاک کر دیا ہے۔</string>
+    <string name="you_cannot_upload_video_above_30_mb_text">آپ 30 MB سے زیادہ کی ویڈیو اپ لوڈ نہیں کر سکتے!!!</string>
+    <string name="select_song">گانا منتخب کریں۔</string>
+    <string name="select_filter">فلٹر کو منتخب کریں۔</string>
+    <string name="upload_relite">ریلیٹ اپ لوڈ کریں۔</string>
+    <string name="add_caption_with_hashtags_and_mentions">ہیش ٹیگز اور ذکر کے ساتھ کیپشن شامل کریں۔</string>
+    <string name="location">مقام</string>
+    <string name="show_to">کو دکھائیں۔</string>
+    <string name="allow_comments">تبصرے کی اجازت دیں۔</string>
+    <string name="upload_post">پوسٹ اپ لوڈ کریں۔</string>
+    <string name="who_show_this_post_to">یہ پوسٹ کس کو دکھائیں۔</string>
+    <string name="only_followers">صرف پیروکار</string>
+    <string name="select_image_first">پہلے تصویر کو منتخب کریں۔</string>
+    <string name="error_opening_gallery">گیلری کھولنے میں خرابی۔</string>
+    <string name="permission_denied_message">اجازت نامنظور...\n</string>
+    <string name="error_selecting_image">تصویر منتخب کرنے میں خرابی۔</string>
+    <string name="location_not_set">مقام متعین نہیں ہے۔</string>
+    <string name="count_clips">%s کلپس</string>
+    <string name="my_followers">میرے پیروکار</string>
+    <string name="add_a_comment">ایک تبصرہ شامل کریں…</string>
+    <string name="send_a_gift_to">کو تحفہ بھیجا ہے۔</string>
+    <string name="room_image_updated">کمرے کی تصویر کو اپ ڈیٹ کر دیا گیا۔</string>
+    <string name="sure_you_want_to_stand_up">کیا آپ واقعی کھڑے ہونا چاہتے ہیں؟</string>
+    <string name="there_s_no_user_to_invite_on_mic">مائیک پر مدعو کرنے کے لیے کوئی صارف نہیں ہے۔</string>
+    <string name="remove_seat">سیٹ ہٹا دیں۔</string>
+    <string name="kick_out">باہر نکالنا</string>
+    <string name="unmute_mic">مائیک کو چالو کریں۔</string>
+    <string name="mute_mic">مائیک خاموش کریں۔</string>
+    <string name="remove_mic">مائیک ہٹا دیں۔</string>
+    <string name="invite_mic">مائیک کو مدعو کریں۔</string>
+    <string name="take_the_mic">مائیک لے لو</string>
+    <string name="give_the_mic">مائیک دیں۔</string>
+    <string name="lock_the_mic">مائیک کو لاک کریں۔</string>
+    <string name="mute_the_mic">مائیک کو خاموش کریں۔</string>
+    <string name="unmute">چالو کریں۔</string>
+    <string name="unlock">غیر مقفل کریں۔</string>
+    <string name="remove">ہٹا دیں۔</string>
+    <string name="your_live_session_end_by_admin_text">منتظم کے ذریعے آپ کا لائیو سیشن ختم۔</string>
+    <string name="end_live_video">لائیو ویڈیو ختم کریں۔</string>
+    <string name="don_t_have_user_to_sent_a_gift_wait_for_user">تحفہ بھیجنے کے لیے صارف نہیں ہے صارف کا انتظار کریں۔</string>
+    <string name="select_at_least_one_user">کم از کم ایک صارف منتخب کریں۔</string>
+    <string name="room_settings">کمرے کی ترتیبات</string>
+    <string name="people">لوگ</string>
+    <string name="copied_to_clipboard">کلپ بورڈ پر کاپی کیا گیا۔</string>
+    <string name="room_name">کمرے کا نام</string>
+    <string name="enter_room_name">کمرے کا نام درج کریں۔</string>
+    <string name="please_enter_room_name">براہ کرم کمرے کا نام درج کریں۔</string>
+    <string name="seat_mode">سیٹ موڈ</string>
+    <string name="_8_seat">8 سیٹ</string>
+    <string name="use">استعمال کریں۔</string>
+    <string name="_12_seat">12 سیٹ</string>
+    <string name="_16_seat">16 سیٹ</string>
+    <string name="seat_update">سیٹ اپ ڈیٹ</string>
+    <string name="room_welcome_message">کمرے میں خوش آمدید کا پیغام</string>
+    <string name="enter_room_welcome_message">کمرے میں خوش آمدید کا پیغام درج کریں۔</string>
+    <string name="please_enter_room_welcome_message">براہ کرم کمرہ میں خوش آمدید کا پیغام درج کریں۔</string>
+    <string name="room_passcode">کمرے کا پاس کوڈ</string>
+    <string name="enter_room_passcode">کمرے کا پاس کوڈ درج کریں۔</string>
+    <string name="change_background">پس منظر تبدیل کریں۔</string>
+    <string name="live_ended">لائیو ختم</string>
+    <string name="joined_users">شامل ہونے والے صارفین</string>
+    <string name="live_duration">لائیو دورانیہ</string>
+    <string name="received_gifts">تحائف وصول کئے</string>
+    <string name="increased_fans">مداحوں میں اضافہ</string>
+    <string name="rcoins">Rcoins</string>
+    <string name="back_to_the_home">واپس گھر پر</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_watch_live">آپ فی الحال آڈیو روم میں ہیں۔ براہ کرم کمرے سے باہر نکلیں اور لائیو دیکھیں۔</string>
+    <string name="s_live_has_ended">کی لائیو ختم ہو گئی ہے۔</string>
+    <string name="all_is_well_party">سب ٹھیک ہے پارٹی</string>
+    <string name="private_room">پرائیویٹ کمرہ</string>
+    <string name="_123456">123456</string>
+    <string name="enter_valid_passcode">درست پاس کوڈ درج کریں۔</string>
+    <string name="enter_passcode">پاس کوڈ درج کریں۔</string>
+    <string name="decline">رد کرنا</string>
+    <string name="audio_request_received_from">سے آڈیو کی درخواست موصول ہوئی۔</string>
+    <string name="please_choose_another_seat">براہ کرم دوسری نشست کا انتخاب کریں۔</string>
+    <string name="this_seat_is_locked_by_host">یہ نشست میزبان کے ذریعہ مقفل ہے۔</string>
+    <string name="add_location">مقام شامل کریں۔</string>
+    <string name="search_area_or_city">علاقہ یا شہر تلاش کریں۔</string>
+    <string name="manage_audio_volume">آڈیو والیوم کا نظم کریں۔</string>
+    <string name="video_volume_label">ویڈیو والیوم</string>
+    <string name="song_volume_label">گانے کا حجم</string>
+    <string name="failed_to_delete">حذف کرنے میں ناکام</string>
+    <string name="error_try_again">دوبارہ کوشش کریں۔</string>
+    <string name="solved">حل شدہ</string>
+    <string name="relites">ریلیٹ</string>
+    <string name="error_loading_plans">پلانز لوڈ کرنے میں خرابی۔</string>
+    <string name="billing_not_ready">بلنگ تیار نہیں ہے۔</string>
+    <string name="purchase_error">خریداری میں خرابی۔</string>
+    <string name="payment_init_failed">ادائیگی کی شروعات ناکام ہوگئی</string>
+    <string name="purchase_canceled">خریداری منسوخ کر دی گئی۔</string>
+    <string name="purchase_success">خریداری کی کامیابی</string>
+    <string name="purchase_failed">خریداری ناکام ہو گئی۔</string>
+    <string name="please_select_a_gift">براہ کرم ایک تحفہ منتخب کریں۔</string>
+    <string name="please_select_at_least_one_user">براہ کرم کم از کم ایک صارف منتخب کریں۔</string>
+    <string name="no_user_found">کوئی صارف نہیں ملا!</string>
+    <string name="notification_channel_name">پہلے سے طے شدہ</string>
+    <string name="audio_conversion_failed">آڈیو کی تبدیلی ناکام ہو گئی۔</string>
+    <string name="no_message_available">کوئی پیغام دستیاب نہیں ہے۔</string>
+    <string name="no_date">کوئی تاریخ نہیں۔</string>
+    <string name="invalid_user_id">غلط صارف ID</string>
+    <string name="user_has_been_blocked">صارف کو بلاک کر دیا گیا ہے۔</string>
+    <string name="user_data_is_not_available">صارف کا ڈیٹا دستیاب نہیں ہے۔</string>
+    <string name="user_data_not_loaded">صارف کا ڈیٹا لوڈ نہیں ہوا۔</string>
+    <string name="cannot_load_video_preview">ویڈیو کا پیش منظر لوڈ نہیں کیا جا سکتا۔</string>
+    <string name="failed_to_process_video">ویڈیو پر کارروائی کرنے میں ناکام۔</string>
+    <string name="are_you_sure_you_want_to_delete_your_room">کیا آپ واقعی اپنا کمرہ حذف کرنا چاہتے ہیں؟</string>
+    <string name="your_room_deleted_successfully">آپ کا کمرہ کامیابی سے حذف ہو گیا..</string>
+    <string name="you_are_not_able_to_post_at_your_level">آپ اپنی سطح پر پوسٹ کرنے کے قابل نہیں ہیں۔</string>
+    <string name="room_passcode_changed">کمرے کا پاس کوڈ تبدیل کر دیا گیا..</string>
+    <string name="using">استعمال کرنا</string>
+    <string name="failed_to_logout_please_try_again">لاگ آؤٹ کرنے میں ناکام۔ براہ کرم دوبارہ کوشش کریں۔</string>
+    <string name="link_not_available">لنک دستیاب نہیں ہے۔</string>
+    <string name="we_will_take_immediate_action_thank_you">ہم فوری کارروائی کریں گے۔ شکریہ</string>
+    <string name="picture_capture_timeout_please_try_again">تصویر کیپچر کا ٹائم آؤٹ۔ براہ کرم دوبارہ کوشش کریں۔</string>
+    <string name="error_loading_image">تصویر لوڈ کرنے میں خرابی۔</string>
+    <string name="no_image_selected">کوئی تصویر منتخب نہیں کی گئی۔</string>
+    <string name="error_processing_video">ویڈیو پر کارروائی کرنے میں خرابی۔</string>
+    <string name="failed_to_capture_image">تصویر کیپچر کرنے میں ناکام۔</string>
+    <string name="failed_to_save_image">تصویر محفوظ کرنے میں ناکام۔</string>
+    <string name="you_cant_unmute_your_self">آپ خود کو چالو نہیں کر سکتے</string>
+    <string name="audio_file_missing">آڈیو فائل غائب!</string>
+    <string name="video_file_missing">ویڈیو فائل غائب!</string>
+    <string name="unexpected_error">غیر متوقع خرابی:</string>
+    <string name="final_merge_failed">حتمی انضمام ناکام ہو گیا۔</string>
+    <string name="video_merge_failed">ویڈیو انضمام ناکام ہو گیا۔</string>
+    <string name="unblocked_successfully">کامیابی کے ساتھ غیر مسدود ہو گیا۔</string>
+    <string name="unable_to_share_at_this_moment">اس وقت اشتراک کرنے سے قاصر</string>
+    <string name="unexpected_error_occurred_please_try_again">غیر متوقع خرابی پیش آگئی۔ براہ کرم دوبارہ کوشش کریں۔</string>
+    <string name="unknown_error">نامعلوم خرابی۔</string>
+    <string name="transaction_failed">لین دین ناکام ہو گیا۔</string>
+    <string name="delete_failed">حذف کرنے میں ناکام:</string>
+    <string name="invalid_post">غلط پوسٹ</string>
+    <string name="report_successful">رپورٹ کامیاب</string>
+    <string name="failed_to_upload_image">تصویر اپ لوڈ کرنے میں ناکام۔</string>
+    <string name="failed_to_upload_image_please_try_again">تصویر اپ لوڈ کرنے میں ناکام۔ براہ کرم دوبارہ کوشش کریں۔</string>
+    <string name="failed_to_load_data_please_try_again">ڈیٹا لوڈ کرنے میں ناکام۔ براہ کرم دوبارہ کوشش کریں۔</string>
+    <string name="comment_text_cannot_be_empty">تبصرہ کا متن خالی نہیں ہو سکتا۔</string>
+    <string name="failed_to_submit_comment_please_try_again">تبصرہ جمع کرانے میں ناکام۔ براہ کرم دوبارہ کوشش کریں۔</string>
+    <string name="invalid_video">غلط ویڈیو</string>
+    <string name="failed_to_delete_video">ویڈیو حذف کرنے میں ناکام۔</string>
+    <string name="all_fields_required">تمام فیلڈز درکار ہیں۔</string>
+    <string name="purchase_failed_please_try_again">خریداری ناکام ہو گئی۔ براہ کرم دوبارہ کوشش کریں۔</string>
+    <string name="failed_to_send_request">درخواست بھیجنے میں ناکام</string>
+    <string name="failed_to_start_live_stream">لائیو سلسلہ شروع کرنے میں ناکام</string>
+    <string name="live_user_data_is_missing">لائیو صارف کا ڈیٹا غائب ہے۔</string>
+    <string name="failed_to_delete_room">کمرہ حذف کرنے میں ناکام</string>
+    <string name="update_failed">اپ ڈیٹ ناکام ہو گیا۔</string>
+    <string name="private_room_passcode">نجی کمرے کا پاس کوڈ</string>
+    <string name="here_s_the_private_passcode_for_the_room">کمرے کا نجی پاس کوڈ یہ ہے:</string>
+    <string name="share_via">کے ذریعے شیئر کریں۔</string>
+    <string name="passcode_empty_error">براہ کرم درست پاس کوڈ درج کریں۔</string>
+    <string name="failed_to_update_passcode">پاس کوڈ اپ ڈیٹ کرنے میں ناکام</string>
+    <string name="enter_new_room_passcode">نئے کمرے کا پاس کوڈ درج کریں۔</string>
+    <string name="change_room_passcode">کمرے کا پاس کوڈ تبدیل کریں۔</string>
+    <string name="banned_list">ممنوعہ فہرست</string>
+    <string name="my_following">میری پیروی</string>
+    <string name="please_enter_valid_input">براہ کرم درست ان پٹ درج کریں۔</string>
+    <string name="join_requests">درخواستوں میں شامل ہوں۔</string>
+    <string name="sorry_this_call_can_t_be_completed_right_now">معذرت، یہ کال ابھی مکمل نہیں کی جا سکتی۔</string>
+    <string name="watch_video_now">ابھی ویڈیو دیکھیں</string>
+    <string name="you_exceed_your_ad_limit">آپ اپنی اشتھاراتی حد سے تجاوز کر گئے ہیں۔</string>
+    <string name="search_people">لوگوں کو تلاش کریں..</string>
+    <string name="public_room">پبلک روم</string>
+    <string name="my_profile">میرا پروفائل</string>
+    <string name="edit_self">خود میں ترمیم کریں۔</string>
+    <string name="blocked_user">مسدود صارف</string>
+    <string name="my_wallet">میرا بٹوہ</string>
+    <string name="select_age">عمر منتخب کریں۔</string>
+    <string name="save_changes">تبدیلیاں محفوظ کریں۔</string>
+    <string name="enter_your_bio">اپنا بائیو درج کریں۔</string>
+    <string name="enter_bio_here">یہاں بائیو درج کریں..</string>
+    <string name="hey_there">ارے وہاں!</string>
+    <string name="follow_back">فالو بیک</string>
+    <string name="purchase">خریداری</string>
+    <string name="select">منتخب کریں۔</string>
+    <string name="selected">منتخب</string>
+    <string name="method_2_desc">اپنے ریفرل کوڈ کا استعمال کرتے ہوئے اپنے دوستوں کو شامل ہونے کی دعوت دیں۔ جب بھی آپ کا کوڈ استعمال ہوتا ہے انعامات حاصل کریں!</string>
+    <string name="method_1_desc">ایک مختصر اشتہاری ویڈیو دیکھیں اور فوری طور پر مفت ہیرے کمائیں! دیکھنا شروع کرنے اور اپنا انعام حاصل کرنے کے لیے بس نیچے کے بٹن کو تھپتھپائیں۔</string>
+    <string name="pay_now">ابھی ادائیگی کریں۔</string>
+    <string name="select_room_image">کمرے کی تصویر منتخب کریں۔</string>
+    <string name="room_description">کمرے کی تفصیل</string>
+    <string name="room_type">کمرے کی قسم</string>
+    <string name="upload_image_">تصویر اپ لوڈ کریں۔</string>
+    <string name="enter_your_room_name">اپنے کمرے کا نام درج کریں۔</string>
+    <string name="enter_your_room_passcode">اپنے کمرے کا پاس کوڈ درج کریں۔</string>
+    <string name="enter_your_room_description">اپنے کمرے کی تفصیل درج کریں۔</string>
+    <string name="enter_note_here">یہاں نوٹ درج کریں..</string>
+    <string name="add_caption">کیپشن شامل کریں۔</string>
+    <string name="attachments">منسلکات</string>
+    <string name="enter_details_here">تفصیلات یہاں درج کریں…</string>
+    <string name="my_income">میری آمدنی</string>
+    <string name="best_plan">بہترین منصوبہ</string>
+    <string name="best_recharge_plan">بہترین ریچارج پلان</string>
+    <string name="purchase_recharge_plan">ریچارج پلان خریدیں۔</string>
+    <string name="available_my_r_coins">میرے R-Coins دستیاب ہیں۔</string>
+    <string name="payment">ادائیگی</string>
+    <string name="select_payment_option">ادائیگی کا اختیار منتخب کریں:</string>
+    <string name="select_record_duration">ریکارڈ کا دورانیہ منتخب کریں:</string>
+    <string name="start_date_">آغاز کی تاریخ:</string>
+    <string name="end_date_">اختتامی تاریخ:</string>
+    <string name="demo_purpose">اس APK میں، تمام ڈیٹا صرف ڈیمو مقصد کے لیے ہیں۔</string>
+    <string name="no_data_text">دکھانے کے لیے کچھ نہیں۔</string>
+    <string name="vip">وی آئی پی</string>
+    <string name="payment_option">ادائیگی کا اختیار:</string>
+    <string name="withdrawable_r_coins">قابل واپسی R-Coins:</string>
+    <string name="please_select_a_payment_option">براہ کرم ادائیگی کا اختیار منتخب کریں۔</string>
+    <string name="select_option">اختیار منتخب کریں:</string>
+    <string name="bd">بی ڈی</string>
+    <string name="version">ورژن:</string>
+    <string name="upload">اپ لوڈ کریں۔</string>
+    <string name="no_one_joined">کوئی شامل نہیں ہوا۔</string>
+    <string name="blocked_list">مسدود فہرست</string>
+    <string name="room_close">کمرہ بند</string>
+    <string name="common_bio">کنکشن کی تلاش، نہ صرف پروفائلز۔</string>
+    <string name="reactions">رد عمل</string>
+    <string name="delete_confirmation_text">کیا آپ واقعی حذف کرنا چاہتے ہیں؟ اس کارروائی کو کالعدم نہیں کیا جا سکتا</string>
+    <string name="confirm_deletion">حذف کرنے کی تصدیق کریں۔</string>
+    <string name="confirm_stand_up">اسٹینڈ اپ کی تصدیق کریں۔</string>
+    <string name="delete_post_confirmation">کیا آپ واقعی اس پوسٹ کو حذف کرنا چاہتے ہیں؟</string>
+    <string name="delete_relite_confirmation">کیا آپ واقعی اس Relite کو حذف کرنا چاہتے ہیں؟</string>
+    <string name="delete">حذف کریں۔</string>
+    <string name="demo_agency">ڈیمو ایجنسی</string>
+    <string name="exposure">ایکسپوژر</string>
+    <string name="smoothness">ہمواری</string>
+    <string name="redness">سرخی</string>
+    <string name="sharpness">نفاست</string>
+    <string name="ar_effects">اے آر ایفیکٹس</string>
+    <string name="calling">کال کرنا</string>
+    <string name="no_comments_yet_be_the_first_to_say_something">ابھی تک کوئی تبصرہ نہیں کچھ کہنے والے پہلے بنیں!</string>
+    <string name="no_likes_yet_tap_to_spread_some_love">ابھی تک کوئی پسند نہیں ہے۔ کچھ محبت پھیلانے کے لیے ❤️ کو تھپتھپائیں!</string>
+    <string name="finding_reasons_to_smile_everywhere_i_go_and_sharing_that_happiness_with_the_world">میں جہاں بھی جاتا ہوں مسکرانے کی وجوہات تلاش کرتا ہوں اور اس خوشی کو دنیا کے ساتھ بانٹتا ہوں۔</string>
+    <string name="okay">ٹھیک ہے۔</string>
+    <string name="please_wait_for_a_spot_to_open">براہ کرم ایک جگہ کھلنے کا انتظار کریں۔</string>
+    <string name="all_seats_are_taken">تمام نشستیں لی جاتی ہیں۔</string>
+    <string name="alex_sierra">#VALUE!</string>
+    <string name="request_sent">درخواست بھیجی گئی۔</string>
+    <string name="join">شمولیت</string>
+    <string name="video_call_gift">ویڈیو کال کا تحفہ</string>
+    <string name="chat_gift">چیٹ گفٹ</string>
+    <string name="uploading_">اپ لوڈ ہو رہا ہے...</string>
+    <string name="please_try_after_some_time">تھوڑی دیر بعد کوشش کریں۔</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_make_call">ایسا لگتا ہے کہ آپ فی الحال آڈیو روم میں ہیں۔ براہ کرم کمرے سے باہر نکلیں اور کال کریں۔</string>
+    <string name="notification_permission_denied">اطلاع کی اجازت مسترد کر دی گئی۔</string>
+    <string name="you_have_to_enable_it_from_settings">آپ کو اسے ترتیبات سے فعال کرنا ہوگا۔</string>
+    <string name="open_settings">ترتیبات کھولیں۔</string>
+    <string name="cannot_unmute_user">صارف کو چالو نہیں کیا جا سکتا</string>
+    <string name="this_user_has_muted_themselves_only_they_can_unmute">اس صارف نے خود کو خاموش کر دیا ہے۔ صرف وہی چالو کر سکتے ہیں۔</string>
+    <string name="you_are_not_able_to_live_at_your_level">آپ اپنی سطح پر رہنے کے قابل نہیں ہیں۔</string>
+    <string name="conversion_successful">تبدیلی کامیاب</string>
+    <string name="screen_overlay_permission_needed">اسکرین اوورلے کی اجازت درکار ہے۔</string>
+    <string name="enable_display_over_other_apps_from_system_settings">سسٹم سیٹنگز سے دیگر ایپس پر ڈسپلے کو فعال کریں۔</string>
+    <string name="you_are_vip_now">آپ اب وی آئی پی ہیں۔</string>
+    <string name="restart_app">ایپ کو دوبارہ شروع کریں۔</string>
+    <string name="this_seat_is_reserved">یہ نشست محفوظ ہے۔</string>
+    <string name="do_you_really_want_to_log_out">کیا آپ واقعی لاگ آؤٹ کرنا چاہتے ہیں؟ اپنے اکاؤنٹ تک رسائی کے لیے آپ کو دوبارہ سائن ان کرنا ہوگا۔</string>
+    <string name="notification_permission_granted">اطلاع کی اجازت دی گئی۔</string>
+    <string name="verified">تصدیق شدہ</string>
+    <string name="no_one_has_requested">کسی نے درخواست نہیں کی۔</string>
+    <string name="user_data_not_found_please_login_again">صارف کا ڈیٹا نہیں ملا۔ براہ کرم دوبارہ لاگ ان کریں۔</string>
+    <string name="update_failed_">اپ ڈیٹ ناکام ہو گیا:</string>
+    <string name="dummy_name">میا مالکووا</string>
+    <string name="miya">میا</string>
+    <string name="riya">ریا</string>
+    <string name="luliya">لولیا</string>
+    <string name="rehan">ریحان</string>
+    <string name="susmita">سُسمیتا</string>
+    <string name="rahi">راہی</string>
+    <string name="nirma">نرما</string>
+    <string name="jashvi">جاشوی</string>
+    <string name="hely">ہیلی</string>
+    <string name="shruti">شروتی</string>
+    <string name="dhruvi">دھرووی</string>
+    <string name="mamta">ممتا</string>
+    <string name="zeel">زیل</string>
+    <string name="audio_live">آڈیو لائیو</string>
+    <string name="post">پوسٹ</string>
+    <string name="demo_host_center">ڈیمو ہوسٹ سینٹر</string>
+    <string name="agency_center">ایجنسی سینٹر</string>
+    <string name="select_language">زبان منتخب کریں۔</string>
+    <string name="english">انگریزی</string>
+    <string name="explore">دریافت کریں۔</string>
+    <string name="party">پارٹی</string>
+    <string name="my_features">میری خصوصیات</string>
+    <string name="host_vip_privilege">میزبان اور VIP مراعات</string>
+    <string name="restart_the_app">ایپ کو دوبارہ شروع کریں!</string>
+    <string name="restart">دوبارہ شروع کریں</string>
+    <string name="version_">"ورژن "</string>
+    <string name="top_users">سرفہرست صارفین</string>
+    <string name="top_creators">سرفہرست تخلیق کار</string>
+    <string name="top_agency">سرفہرست ایجنسی</string>
+    <string name="daily">روزانہ</string>
+    <string name="weekly">ہفتہ وار</string>
+    <string name="monthly">ماہانہ</string>
+    <string name="get_premium_crown">پریمیم تاج حاصل کریں</string>
+    <string name="get_extra_coins">اضافی سکے حاصل کریں</string>
+    <string name="get_all_level_access">تمام سطحوں تک رسائی حاصل کریں</string>
+    <string name="invalid_validity_period">غلط میعاد کا دورانیہ</string>
+    <string name="user_id">صارف کی شناخت</string>
+    <string name="you_ve_spent_s">"آپ نے %s خرچ کیے "</string>
+    <string name="you_have">"آپ کے پاس "</string>
+    <string name="referrals">" حوالہ جات"</string>
+    <string name="id_">ID: </string>
+
+    <string name="feed">فیڈ</string>
+    <string name="video">ویڈیو</string>
+    <string name="sent_a_gift_to">" نے تحفہ بھیجا "</string>
+    <string name="announcement">"اعلان: "</string>
+    <string name="please_enter_valid_passcode">براہ کرم ایک درست پاس کوڈ درج کریں</string>
+    <string name="passcode_length_invalid">پاس کوڈ کی لمبائی غلط ہے</string>
+    <string name="_0">0</string>
+    <string name="error_missing_room_data">کمرے کا ڈیٹا غائب ہے</string>
+    <string name="error_invalid_room_data">کمرے کا ڈیٹا غلط ہے</string>
+    <string name="dummy_noti_desc">جیمز بانڈ نے ڈیزی شرما کو تحفہ بھیجا</string>
+    <string name="dummy_id">ID : 564321</string>
+    <string name="dummy_time">00:00</string>
+    <string name="cherry">چیری</string>
+    <string name="level_1">سطح 1</string>
+    <string name="hello">ہیلو</string>
+    <string name="dummy_comment">کون لاکھ پتی بن چکا ہے؟</string>
+    <string name="country">ملک</string>
+    <string name="title1">عنوان 1</string>
+    <string name="incoming_video_call">آنے والی ویڈیو کال</string>
+    <string name="upload_completed">اپ لوڈ مکمل ہو گیا!</string>
+    <string name="image_file_does_not_exist">تصویر کی فائل موجود نہیں۔</string>
+    <string name="user_session_not_found">صارف کا سیشن نہیں ملا</string>
+    <string name="add">شامل کریں</string>
+    <string name="leave">چھوڑیں</string>
+    <string name="requested">درخواست کی گئی</string>
+    <string name="call_request_rejected">کال کی درخواست مسترد کر دی گئی</string>
+    <string name="call_setup_failed">"کال سیٹ اَپ ناکام: "</string>
+    <string name="invalid_chat_user">غلط چیٹ صارف</string>
+    <string name="you">آپ</string>
+    <string name="sent_a_gift_">ایک تحفہ بھیجا ہے 🎁</string>
+    <string name="invalid_url">غلط URL</string>
+    <string name="here_is_my_referral_code">"یہ میرا ریفرل کوڈ ہے"</string>
+    <string name="let_me_recommend_you_this_application">\nمیں آپ کو اس ایپلیکیشن کی سفارش کرتا ہوں\n\n</string>
+    <string name="unknown_user">نامعلوم صارف</string>
+    <string name="you_will_receive">"آپ وصول کریں گے"</string>
+    <string name="_diamonds">"ہیرے"</string>
+    <string name="camera_not_ready">کیمرہ تیار نہیں ہے۔</string>
+    <string name="ar_is_starting_please_try_again">AR شروع ہو رہا ہے… براہ کرم دوبارہ کوشش کریں۔</string>
+    <string name="recording_started">ریکارڈنگ شروع ہو گئی۔</string>
+    <string name="camera_is_not_available">کیمرہ دستیاب نہیں ہے۔</string>
+    <string name="permission_rationale_upload">گیلری سے ویڈیو لینے اور اپ لوڈ کرنے کے لیے، اسٹوریج کی اجازت درکار ہے۔</string>
+    <string name="unable_to_choose_video_for_upload">اپ لوڈ کے لیے ویڈیو کا انتخاب کرنے سے قاصر۔</string>
+    <string name="sticker_item_is_missing">اسٹیکر آئٹم غائب ہے۔</string>
+    <string name="audio_file_is_missing">آڈیو فائل غائب ہے۔</string>
+    <string name="could_not_load_audio">آڈیو لوڈ نہیں ہو سکا۔</string>
+    <string name="selected_video_uri_is_missing">منتخب ویڈیو URI غائب ہے۔</string>
+    <string name="failed_to_prepare_video_for_upload">اپ لوڈ کے لیے ویڈیو تیار کرنے میں ناکام۔</string>
+    <string name="error_copying_file">فائل کاپی کرنے میں خرابی۔</string>
+    <string name="failed_to_create_directory">ڈائریکٹری بنانے میں ناکام۔</string>
+    <string name="upload_failed_">"اپ لوڈ ناکام:"</string>
+    <string name="uploading">اپ لوڈ ہو رہا ہے…</string>
+    <string name="public_">عوامی</string>
+    <string name="unknown_title">نامعلوم عنوان</string>
+    <string name="unknown_singer">نامعلوم گلوکار</string>
+    <string name="invalid_host_data">غلط میزبان ڈیٹا</string>
+    <string name="type_something">کچھ ٹائپ کریں..</string>
+
+    <string-array name="fake_times">
+        <item>ابھی</item>
+        <item>ایک لمحہ پہلے</item>
+        <item>5 منٹ پہلے</item>
+        <item>تقریباً ایک گھنٹہ پہلے</item>
+        <item>1 گھنٹہ پہلے</item>
+        <item>آج پہلے</item>
+        <item>آج</item>
+        <item>کل</item>
+        <item>دوسرے دن</item>
+        <item>3 دن پہلے</item>
+        <item>پچھلے ہفتے</item>
+        <item>چند دن پہلے</item>
+        <item>2 ہفتے پہلے</item>
+        <item>پچھلے مہینے</item>
+        <item>کچھ وقت پہلے</item>
+        <item>کچھ دیر پہلے</item>
+        <item>بہت پہلے</item>
+    </string-array>
+
+    <string-array name="fake_chat_sender">
+        <item>ہیلو! کیا حال ہے؟</item>
+        <item>میں آج رات ایک فلم دیکھنے کا ارادہ کر رہا ہوں۔</item>
+        <item>تازہ خبروں کے بارے میں تمہارا کیا خیال ہے؟</item>
+        <item>میں کام پر ایک نئے پراجیکٹ پر کام کر رہا ہوں۔</item>
+        <item>کیا تم بعد میں کافی پینا چاہو گے؟</item>
+        <item>ابھی دوڑ کر آیا ہوں، بہت اچھا محسوس کر رہا ہوں!</item>
+        <item>کوئی اچھی کتاب تجویز کر سکتے ہو؟</item>
+        <item>تمہارا ویک اینڈ کیسا گزرا؟</item>
+        <item>میں اگلے مہینے چھٹیاں لینے کا سوچ رہا ہوں۔</item>
+        <item>کیا تم نے شہر کے نئے ریسٹورنٹ کو آزمایا ہے؟</item>
+        <item>آج تم کیا کر رہے ہو؟</item>
+        <item>میں نے ابھی ایک زبردست کتاب مکمل کی ہے، تمہیں بتانے کا انتظار نہیں کر سکتا۔</item>
+        <item>کیا تمہاری شام کے لیے کوئی منصوبہ بندی ہے؟</item>
+        <item>میں ایک نئی زبان سیکھنے کا سوچ رہا ہوں۔</item>
+        <item>کیا تم نے شو کی نئی قسط دیکھی؟</item>
+        <item>کیا تمہیں نیا ریلیز ہونے والا البم پسند آیا؟</item>
+        <item>آج کل میں پوڈکاسٹ سننے میں بہت دلچسپی لے رہا ہوں۔</item>
+        <item>نئے گیجٹ کے بارے میں تمہارا کیا خیال ہے؟</item>
+        <item>میں ایک بلاگ شروع کرنے کا ارادہ کر رہا ہوں۔</item>
+        <item>تمہارا پسندیدہ مشغلہ کیا ہے؟</item>
+        <item>تم خود کو متحرک کیسے رکھتے ہو؟</item>
+        <item>پیداواری صلاحیت بڑھانے کے لیے کوئی تجاویز؟</item>
+        <item>آرام کرنے کے لیے تم کیا کرتے ہو؟</item>
+        <item>تم دباؤ سے کیسے نمٹتے ہو؟</item>
+        <item>تمہیں کیا چیز متاثر کرتی ہے؟</item>
+    </string-array>
+
+    <string-array name="fake_chat_receiver">
+        <item>میں ٹھیک ہوں، تم کیسے ہو؟</item>
+        <item>زبردست! کون سی فلم؟</item>
+        <item>مجھے نہیں معلوم، میں نے خبریں نہیں دیکھی ہیں۔</item>
+        <item>واقعی؟ یہ پراجیکٹ کس بارے میں ہے؟</item>
+        <item>یقیناً، مجھے خوشی ہوگی!</item>
+        <item>واہ، بہت اچھا! مجھے بھی دوبارہ ورزش شروع کرنی چاہیے۔</item>
+        <item>میں نے حال ہی میں ایک بہت اچھی تھرلر پڑھی ہے۔</item>
+        <item>پُرسکون گزرا، کچھ خاص نہیں کیا۔</item>
+        <item>زبردست! کہاں جانے کا ارادہ ہے؟</item>
+        <item>نہیں، ابھی تک نہیں۔ کیا اچھا ہے؟</item>
+        <item>میں گھر سے کام کر رہا ہوں، تم؟</item>
+        <item>دلچسپ لگ رہا ہے، مزید بتاؤ!</item>
+        <item>کچھ خاص نہیں، بس آرام کر رہا ہوں۔</item>
+        <item>بہت اچھا! کون سی زبان سیکھنا چاہتے ہو؟</item>
+        <item>ہاں، بہت زبردست تھا! اگلی قسط کا انتظار ہے۔</item>
+        <item>میں نے ابھی تک نہیں سنا، کوئی اچھی ٹریک ہے؟</item>
+        <item>میں بھی سن رہا ہوں، کافی معلوماتی ہوتے ہیں۔</item>
+        <item>میں بھی خریدنے کا سوچ رہا ہوں۔ کون سی خصوصیات پسند آئیں؟</item>
+        <item>بہت دلچسپ! تم کس بارے میں لکھو گے؟</item>
+        <item>مجھے پینٹنگ اور مطالعہ کرنا پسند ہے۔</item>
+        <item>میں خود کو متحرک رکھنے کے لیے چھوٹے ہدف طے کرتا ہوں۔</item>
+        <item>ٹو-ڈو لسٹ بنانا میرے لیے مددگار ثابت ہوتا ہے۔</item>
+        <item>فلم دیکھتا ہوں یا کتاب پڑھتا ہوں۔</item>
+        <item>میں مراقبہ کرتا ہوں یا چہل قدمی پر جاتا ہوں۔</item>
+        <item>قدرت اور فن مجھے سب سے زیادہ متاثر کرتے ہیں۔</item>
+    </string-array>
+
+    <string-array name="lightening_contrast_options">
+        <item>کم</item>
+        <item>معمول</item>
+        <item>زیادہ</item>
+    </string-array>
+
+    <string-array name="fake_messages">
+        <item>ہیلو! 👋</item>
+        <item>آپ کی پروفائل پسند آئی!</item>
+        <item>یہاں نیا ہوں—ہیلو کہیں!</item>
+        <item>کچھ بات کریں؟</item>
+        <item>ہائے! 😊</item>
+        <item>آپ کا دن کیسا جا رہا ہے؟</item>
+        <item>آپ دلچسپ لگتے ہیں 👀</item>
+        <item>یہاں آنے کی وجہ کیا ہے؟</item>
+        <item>آپ سے مل کر خوشی ہوئی! 🙌</item>
+        <item>ہیلو اجنبی 😄</item>
+        <item>کافی یا چائے پسند ہے؟ ☕🍵</item>
+        <item>یہ ایپ اب اور بہتر ہو گئی ہے 😉</item>
+        <item>تو… آپ کی کہانی کیا ہے؟</item>
+        <item>ہائے ہائے! ✨</item>
+        <item>بات کرنے کا انتظار ہے!</item>
+        <item>آپ میں اچھا vibe ہے 🌟</item>
+        <item>ہیلو! جڑنا چاہیں گے؟</item>
+        <item>خوش ہوں کہ ہم میچ ہوئے 😍</item>
+        <item>ہائے، زندگی کیسی چل رہی ہے؟</item>
+        <item>آپ کے لیے بڑی مسکراہٹ 😁</item>
+        <item>آپ ابھی میری سکرین پر آئے 👌</item>
+        <item>کیا یہ میں ہوں، یا ہم ابھی بہترین دوست بن گئے؟ 😂</item>
+        <item>میں امید کر رہا تھا کہ ہم میچ کریں گے 💫</item>
+        <item>آپ بات کرنے کے لیے دلچسپ لگتے ہیں 😏</item>
+        <item>یہاں ہوں! آپ کا بہانہ کیا ہے؟ 😜</item>
+        <item>کیا معلوم؟ آپ آج میرا پہلا پیغام ہیں 📩</item>
+        <item>کیا آپ اتفاقات یا تقدیر پر یقین رکھتے ہیں؟ ✨</item>
+        <item>میرا خیال ہے کہ آپ مجھے ہیلو کا مقروض ہیں 😇</item>
+        <item>سچ کہوں تو، آپ کی پروفائل نمایاں ہے 🔥</item>
+        <item>ٹھیک ہے، آپ کی مسکراہٹ متاثر کن ہے 😍</item>
+    </string-array>
+</resources>

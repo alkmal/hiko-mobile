@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="7sp"
+        android:background="@drawable/bg_10dp_purewhite"
+        android:backgroundTint="@color/white_10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="15sp"
+            android:background="@drawable/bg_list_item_selector"
+            android:paddingHorizontal="15dp">
+
+            <ImageView
+                android:id="@+id/ivFlag"
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/flag_english" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_toEndOf="@id/ivFlag"
+                android:fontFamily="@font/airbnbcereal_w_bd"
+                android:text="@string/english"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ivCheck"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_check_selector"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

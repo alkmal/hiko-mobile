@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">앱 이름을 입력하세요</string>
+
+    <string name="no_internet_connection">인터넷 연결 없음</string>
+    <string name="back_online">다시 온라인으로</string>
+    <string name="we_are_under_maintenance_text">우리는 유지 보수 중입니다</string>
+    <string name="dismiss">해고하다</string>
+    <string name="you_are_blocked_by_admin_text">관리자에 의해 차단되었습니다</string>
+    <string name="cancel">취소</string>
+    <string name="you_are_logged_in_other_devices">다른 기기에 로그인되어 있습니다</string>
+    <string name="log_out">로그아웃</string>
+    <string name="policy">가입하시면 당사의 내용에 동의하는 것으로 간주됩니다.</string>
+    <string name="terms_amp_condition">이용 약관</string>
+    <string name="and">그리고</string>
+    <string name="privacy_policy">개인정보 보호정책</string>
+    <string name="please_wait">기다리세요</string>
+    <string name="your_name">당신의 이름</string>
+    <string name="male">남성</string>
+    <string name="female">여성</string>
+    <string name="select_your_age">나이를 선택하세요</string>
+    <string name="edit_profile">프로필 편집</string>
+    <string name="submit">제출하다</string>
+    <string name="enter_your_name">이름을 입력하세요</string>
+    <string name="enter_username_first">먼저 사용자 이름을 입력하세요</string>
+    <string name="select_your_gender">성별을 선택하세요</string>
+    <string name="minimum_age_must_be_18_years">최소 연령은 18세입니다.</string>
+    <string name="connecting">연결 중…</string>
+    <string name="privacy_policy_text">개인정보 보호정책</string>
+    <string name="accept_privacy_policy">저는 18세 이상이며 개인정보 보호정책을 읽었습니다.</string>
+    <string name="deny">부인하다</string>
+    <string name="accept">수용하다</string>
+    <string name="please_accept_privacy_policy">계속하려면 개인정보 보호정책을 읽었는지 확인하세요.</string>
+    <string name="exit_app_confirmation">앱을 종료하시겠습니까?</string>
+    <string name="exit_this_app">이 앱 종료</string>
+    <string name="fans">팬들</string>
+    <string name="my_diamonds">내 다이아몬드</string>
+    <string name="demo_host_center_text">데모 호스트 센터</string>
+    <string name="demo_agency_center">데모 에이전시 센터</string>
+    <string name="host_request">호스트 요청</string>
+    <string name="offline_recharge">오프라인 충전</string>
+    <string name="my_posts">내 게시물</string>
+    <string name="my_relites">내 Relites</string>
+    <string name="store">가게</string>
+    <string name="free_coins">무료 코인</string>
+    <string name="become_vip">VIP가 되세요</string>
+    <string name="user_level">사용자 레벨</string>
+    <string name="copied_successfully">성공적으로 복사되었습니다</string>
+    <string name="id">"ID:</string>
+    <string name="agency_center_text">에이전시 센터</string>
+    <string name="host_center">호스트 센터</string>
+    <string name="ok">OK좋아요</string>
+    <string name="history">역사</string>
+    <string name="recharge">재충전</string>
+    <string name="my_diamond_balance">내 다이아몬드 코인</string>
+    <string name="enter_user_id">사용자 ID를 입력하세요</string>
+    <string name="enter_diamonds">다이아몬드 입력</string>
+    <string name="note">메모</string>
+    <string name="top_up">충전하다</string>
+    <string name="user_not_found">사용자를 찾을 수 없습니다</string>
+    <string name="please_verify_user_id">사용자 ID를 확인해 주세요</string>
+    <string name="enter_coin_value">코인 가치 입력</string>
+    <string name="invalid_coin_value">잘못된 코인 값</string>
+    <string name="insufficient_coins">동전이 부족합니다</string>
+    <string name="send_successfully">성공적으로 전송되었습니다</string>
+    <string name="continue_text">계속하다</string>
+    <string name="in_this_apk_all_data_are_only_for_demo_purpose">이 APK의 모든 데이터는 데모 목적으로만 사용됩니다.</string>
+    <string name="deleted_successfully">성공적으로 삭제되었습니다</string>
+    <string name="india">인도</string>
+    <string name="we_will_take_immediately_action_for_this_user_thank_you">해당 사용자에 대해 즉시 조치를 취하겠습니다. 감사합니다.</string>
+    <string name="likes">좋아요</string>
+    <string name="comments">댓글</string>
+    <string name="report_user">사용자 보고서</string>
+    <string name="blocked_successfully">성공적으로 차단되었습니다</string>
+    <string name="report_this_user">이 사용자 신고하기</string>
+    <string name="please_describe_your_issue_here">여기에 문제를 설명해 주세요.</string>
+    <string name="unable_to_report">신고할 수 없습니다.</string>
+    <string name="something_went_wrong_text">뭔가 잘못됐어요</string>
+    <string name="block_this_user">이 사용자 차단</string>
+    <string name="yes">예</string>
+    <string name="type_message_first">먼저 메시지를 입력하세요</string>
+    <string name="toast_cannot_retrieve_cropped_image">자른 이미지를 검색할 수 없습니다.</string>
+    <string name="toast_unexpected_error">예기치 않은 오류</string>
+    <string name="call_ended">통화 종료!</string>
+    <string name="ringing">울리는</string>
+    <string name="we_will_take_immediately_action_for_this_user_n_thank_you">해당 사용자에 대해 즉시 조치를 취하겠습니다. 감사합니다.</string>
+    <string name="enter_valid_message">유효한 메시지를 입력하세요</string>
+    <string name="is_busy_with_someone_else">다른 사람과 바쁘다.</string>
+    <string name="discard_entire_video">전체 영상을 삭제하시겠습니까?</string>
+    <string name="if_you_go_back_now_you_will_lose_all_the_clips_added_to_your_video">지금 돌아가면 비디오에 추가된 모든 클립이 사라집니다.</string>
+    <string name="discard_video">비디오 삭제</string>
+    <string name="incoming_call">수신 전화…</string>
+    <string name="need_permissions">"권한이 필요합니다"</string>
+    <string name="call_declined">전화 거부됨</string>
+    <string name="rtc_stats_format">다운스트림 비트 전송률: %.2f kbps%n다운스트림 손실률: %.2f%% %n업스트림 비트 전송률: %.2f kbps%n업스트림 손실률: %.2f%%</string>
+    <string name="unfollow">팔로우 취소</string>
+    <string name="follow">따르다</string>
+    <string name="unblock">차단 해제</string>
+    <string name="block">차단하다</string>
+    <string name="message">메시지</string>
+    <string name="message_delete_confirmation">이 메시지를 삭제하시겠습니까?</string>
+    <string name="following">수행원</string>
+    <string name="my_fans">내 팬들</string>
+    <string name="image">영상</string>
+    <string name="choose_one">하나를 선택하다</string>
+    <string name="say_something">뭔가 말해보세요…</string>
+    <string name="failed_to_load_videos">비디오를 불러오는 데 실패했습니다.</string>
+    <string name="settings">설정</string>
+    <string name="notification">공고</string>
+    <string name="have_an_issue">문제가 있습니다</string>
+    <string name="my_complains">내 불평</string>
+    <string name="terms_of_service">서비스 약관</string>
+    <string name="about_us">회사 소개</string>
+    <string name="next">다음</string>
+    <string name="complaint_or_suggestion">불만이나 제안</string>
+    <string name="typing_somethings">뭔가를 타이핑하다…</string>
+    <string name="contact">연락하다</string>
+    <string name="enter_your_mobile_number_or_email">휴대폰 번호 또는 이메일을 입력하세요</string>
+    <string name="attach_your_image_or_screenshot">이미지나 스크린샷을 첨부하세요</string>
+    <string name="browse">먹다</string>
+    <string name="complain_send_successfully">불만 보내기 성공</string>
+    <string name="please_enter_message">메시지를 입력하세요</string>
+    <string name="please_enter_contact">연락처를 입력하세요</string>
+    <string name="my_tickets">내 티켓</string>
+    <string name="open">열려 있는</string>
+    <string name="ticket_details">티켓 세부 정보</string>
+    <string name="status">상태</string>
+    <string name="close">닫다</string>
+    <string name="_1_self_introduction">1. 자기소개</string>
+    <string name="name">이름</string>
+    <string name="enter_name">이름을 입력하세요</string>
+    <string name="mobile_number">휴대폰 번호</string>
+    <string name="enter_mobile_number">휴대폰 번호를 입력하세요</string>
+    <string name="Bio">바이오</string>
+    <string name="_2_agency_code">2. 대리점 코드</string>
+    <string name="if_you_have">(만약 당신이 가지고 있다면)</string>
+    <string name="_3_upload_photos">3. 사진 업로드</string>
+    <string name="personal_photo">개인 사진</string>
+    <string name="_4_bank_details">4. 은행 계좌 정보</string>
+    <string name="enter_your_bank_details">은행 계좌 정보를 입력하세요</string>
+    <string name="admission_car">입장차</string>
+    <string name="enter_bio_text">바이오 입력</string>
+    <string name="select_personal_photo">개인 사진 선택</string>
+    <string name="image_file_not_found">이미지 파일을 찾을 수 없습니다</string>
+    <string name="host_request_send">호스트 요청 보내기</string>
+    <string name="try_after_some_time">잠시 후에 다시 시도해 주세요</string>
+    <string name="avatar_frame">아바타 프레임</string>
+    <string name="super_star">슈퍼스타</string>
+    <string name="you_don_t_have_required_diamonds">필요한 다이아몬드가 없습니다!</string>
+    <string name="diamond_star">다이아몬드 스타</string>
+    <string name="stepping_in">들어갑니다!</string>
+    <string name="free_diamonds">무료 다이아몬드</string>
+    <string name="method_1">방법 1:</string>
+    <string name="method_2">방법 2:</string>
+    <string name="your_refer_code">귀하의 추천 코드:</string>
+    <string name="enter_referral_code_here">여기에 추천 코드를 입력하세요</string>
+    <string name="you_have_2_referrals">추천인이 2명 있습니다</string>
+    <string name="referral_code_copied">추천 코드가 복사되었습니다!</string>
+    <string name="enter_refer_code">추천 코드를 입력하세요</string>
+    <string name="refereed_successfully">성공적으로 심판을 받았습니다</string>
+    <string name="generic_error">문제가 발생했습니다. 나중에 다시 시도해 주세요.</string>
+    <string name="earned_by_user">보상이 부여됨</string>
+    <string name="invite_desc">친구를 초대하세요! 초대된 친구의 각 지불에 대해 귀하와 귀하의 친구는 모두 다음과 같은 혜택을 받습니다.</string>
+    <string name="vip_plan">VIP 플랜</string>
+    <string name="become_vip_and_get_many_privileges">VIP가 되어 다양한 혜택을 누리세요</string>
+    <string name="vip_privileges">VIP 특권</string>
+    <string name="get_vip_to_access_all_function">모든 기능에 액세스하려면 VIP를 받으세요</string>
+    <string name="vip_package">VIP 패키지</string>
+    <string name="get_now">지금 받으세요</string>
+    <string name="first_select_the_plan">먼저 계획을 선택하세요.</string>
+    <string name="credit_debit_card">신용/직불 카드</string>
+    <string name="google_play">구글 플레이</string>
+    <string name="hot">더운</string>
+    <string name="your_level">당신의 레벨</string>
+    <string name="no_level_available">사용 가능한 레벨이 없습니다</string>
+    <string name="unknown">알려지지 않은</string>
+    <string name="income">소득</string>
+    <string name="record">기록</string>
+    <string name="diamonds">다이아 패 한 벌</string>
+    <string name="outcome">결과</string>
+    <string name="r_coins">R-코인</string>
+    <string name="confirm">확인하다</string>
+    <string name="diamond_record">다이아몬드 레코드</string>
+    <string name="spending">지출</string>
+    <string name="converted_to_diamonds">다이아몬드로 변환</string>
+    <string name="diamond_purchase">다이아몬드 구매</string>
+    <string name="you_have_called">당신은 전화했습니다</string>
+    <string name="watching_ads">광고 시청</string>
+    <string name="login_bonus">로그인 보너스</string>
+    <string name="referral_bonus">추천 보너스</string>
+    <string name="cash_out">현금화</string>
+    <string name="svga_animation_purchased">SVGA 애니메이션 구매</string>
+    <string name="add_in_teenpatti_game">Teenpatti 게임에 추가</string>
+    <string name="purchased_avatar_frame">구매한 아바타 프레임</string>
+    <string name="coin_add_by_offline_recharge">오프라인 충전으로 코인 추가</string>
+    <string name="call_coin_received">콜코인</string>
+    <string name="lucy_gift_bonus">루시 기프트 보너스</string>
+    <string name="add_in_roulette_game">룰렛 게임에 추가</string>
+    <string name="add_in_ferry_wheel_game">페리 휠 게임 추가</string>
+    <string name="convert_in_coin_seller_coin">코인 판매자 코인으로 변환</string>
+    <string name="unknown_transaction">알 수 없는 거래</string>
+    <string name="gift_broadcast_during_livestream_by_you">라이브 스트리밍 중 선물 방송을 해주세요</string>
+    <string name="gift_received">선물 받음</string>
+    <string name="gift_send_to">선물 보내기</string>
+    <string name="added_by_admin">관리자가 추가함</string>
+    <string name="reduce_by_admin">관리자에 의해 감소</string>
+    <string name="_1">$11달러</string>
+    <string name="withdrawing_rcoins">RCoins 인출</string>
+    <string name="convert_to_diamond">다이아몬드로 변환</string>
+    <string name="what_is_coins">코인이란?</string>
+    <string name="what_is_rcoin">1. 람보르기니나 캐슬과 같은 선물을 받으면 선물 상점에서 선물 가격과 동일한 양의 코인을 즉시 획득합니다. 2. 코인은 다이아몬드와 현금으로 모두 전환할 수 있습니다. 3. 사용 가능한 코인 잔액 + 출금 가능</string>
+    <string name="this_is_a_demo_version">이것은 데모 버전입니다</string>
+    <string name="payment_done">결제 완료</string>
+    <string name="coin_sellers_list">동전 판매자 목록</string>
+    <string name="how_much_rcoins_convert_cash">Rcoin을 현금으로 얼마나 환전할 수 있나요?</string>
+    <string name="how_much_rcoins_convert_into_diamonds">얼마나 많은 R코인이 다이아몬드로 전환되나요?</string>
+    <string name="setting_error">설정 오류</string>
+    <string name="minimum_amount_is">최소 금액은</string>
+    <string name="you_not_have_enough">너는 충분하지 않아</string>
+    <string name="you_are_not_able_to_cashout_at_your_level">귀하의 레벨에서는 현금화할 수 없습니다.</string>
+    <string name="your">당신의</string>
+    <string name="successfully_converted_into">성공적으로 변환되었습니다</string>
+    <string name="conversion_failed">변환에 실패했습니다</string>
+    <string name="redeem_your_coins">코인을 교환하세요</string>
+    <string name="enter_coins_to_withdraw">출금할 코인을 입력하세요</string>
+    <string name="your_redeem_history">귀하의 사용 내역</string>
+    <string name="pending">보류 중</string>
+    <string name="r_coin_convert">R-코인 변환</string>
+    <string name="how_much_coins_convert_into_diamonds">얼마나 많은 동전이 다이아몬드로 변환되나요?</string>
+    <string name="enter_coins">동전을 입력하세요</string>
+    <string name="convert_to_diamonds">다이아몬드로 변환</string>
+    <string name="whatsapp_not_installed">왓츠앱이 설치되지 않았습니다</string>
+    <string name="invalid_whatsapp_number">잘못된 WhatsApp 번호</string>
+    <string name="withdrawable_rcoins">출금 가능한 R코인</string>
+    <string name="no_payment_method_found">결제 방법을 찾을 수 없습니다</string>
+    <string name="insufficient">불충분하다</string>
+    <string name="please_enter_your_details">귀하의 세부 정보를 입력하세요</string>
+    <string name="redeem_request_sent_successfully">교환 요청이 성공적으로 전송되었습니다.</string>
+    <string name="enter_your_upi_details">UPI 세부 정보를 입력하세요</string>
+    <string name="enter_your_paytm_details">Paytm 세부 정보를 입력하세요</string>
+    <string name="enter_your_bank_account_details">은행 계좌 정보를 입력하세요</string>
+    <string name="enter_your_bybit_details">Bybit 세부 정보를 입력하세요</string>
+    <string name="purchased">구매함</string>
+    <string name="go_live">라이브로 전환</string>
+    <string name="song_hint">노래를 선택하려면 클릭하세요.</string>
+    <string name="timer_hint">타이머가 시작되기 전에 취소하려면 여기를 클릭하세요.</string>
+    <string name="duration">지속</string>
+    <string name="mmss">0:00</string>
+    <string name="welcome_to_join_the_live_any_content_related_to_porn_violence_gambling_illegal_dealing_will_be_banned">라이브 방송에 참여하세요. 음란물, 폭력, 도박, 불법 거래와 관련된 모든 콘텐츠는 차단됩니다.</string>
+    <string name="enter_a_room">방에 들어왔다</string>
+    <string name="reacted">반응했다</string>
+    <string name="browse_file_title">파일 찾아보기</string>
+    <string name="please_enter_room_title">객실 이름을 입력하세요</string>
+    <string name="please_select_room_image">객실 이미지를 선택해주세요</string>
+    <string name="you_are_block_from_admin_to_go_live">관리자로부터 라이브 방송이 차단되었습니다.</string>
+    <string name="start_audio_live">오디오 라이브 시작</string>
+    <string name="take_picture">사진 찍기</string>
+    <string name="recorder_error_in_progress">이를 위해서는 먼저 녹음을 중지하세요.</string>
+    <string name="recorder_error_maxed_out">이미 최대 기간 동안 녹화되었습니다.</string>
+    <string name="audio_from_clip">클립의 사용자 정의 오디오.</string>
+    <string name="recorder_error_no_clips">계속하려면 먼저 클립을 녹화하세요.</string>
+    <string name="message_song_select">녹음이 시작된 후에는 노래를 선택할 수 없습니다.</string>
+    <string name="message_song_change">녹음이 시작된 후에는 노래를 변경할 수 없습니다.</string>
+    <string name="you_need_storage_permission">저장 권한이 필요합니다</string>
+    <string name="filter">필터 선택</string>
+    <string name="you_cannot_upload_video_above_30_mb">30MB가 넘는 비디오는 업로드할 수 없습니다!!!</string>
+    <string name="choose_sticker">스티커 선택</string>
+    <string name="timer">시간제 노동자</string>
+    <string name="sticker">상표</string>
+    <string name="filters">필터</string>
+    <string name="preview">시사</string>
+    <string name="flip">튀기다</string>
+    <string name="speed">속도</string>
+    <string name="notification_channel_id">기본</string>
+    <string name="notification_download_title">파일 다운로드…</string>
+    <string name="notification_download_description">몇 초 이상 걸리지 않아야 합니다.</string>
+    <string name="announcement_welcome_to_room">공지사항: 객실에 오신 것을 환영합니다</string>
+    <string name="all">모두</string>
+    <string name="send">보내다</string>
+    <string name="followers">팔로워</string>
+    <string name="shorts">반바지</string>
+    <string name="posts">게시물</string>
+    <string name="creator">창조자</string>
+    <string name="agency">대행사</string>
+    <string name="coin_seller">동전 판매자</string>
+    <string name="invite">초대하다</string>
+    <string name="live">살다</string>
+    <string name="public_text">공공의</string>
+    <string name="private_text">사적인</string>
+    <string name="welcome_to_the_party">파티에 오신 것을 환영합니다</string>
+    <string name="games">계략</string>
+    <string name="keep">유지하다</string>
+    <string name="exit_text">출구</string>
+    <string name="you_not_have_enough_diamonds_to_send_gift">선물을 보낼 다이아몬드가 부족합니다.</string>
+    <string name="sent_a_gift">선물을 보냈습니다</string>
+    <string name="you_are_blocked_by_host">호스트에 의해 차단되었습니다.</string>
+    <string name="you_cannot_upload_video_above_30_mb_text">30MB가 넘는 비디오는 업로드할 수 없습니다!!!</string>
+    <string name="select_song">노래 선택</string>
+    <string name="select_filter">필터 선택</string>
+    <string name="upload_relite">Relite 업로드</string>
+    <string name="add_caption_with_hashtags_and_mentions">해시태그와 언급으로 캡션을 추가하세요</string>
+    <string name="location">위치</string>
+    <string name="show_to">보여주세요</string>
+    <string name="allow_comments">댓글 허용</string>
+    <string name="upload_post">게시물 업로드</string>
+    <string name="who_show_this_post_to">이 게시물을 누구에게 보여줄까요?</string>
+    <string name="only_followers">팔로워만</string>
+    <string name="select_image_first">먼저 이미지를 선택하세요</string>
+    <string name="error_opening_gallery">갤러리를 여는 중 오류가 발생했습니다.</string>
+    <string name="permission_denied_message">권한이 거부되었습니다....\n</string>
+    <string name="error_selecting_image">이미지 선택 오류</string>
+    <string name="location_not_set">위치가 설정되지 않았습니다</string>
+    <string name="count_clips">%s 클립</string>
+    <string name="my_followers">내 팔로워</string>
+    <string name="add_a_comment">댓글을 추가하세요…</string>
+    <string name="send_a_gift_to">선물을 보냈습니다</string>
+    <string name="room_image_updated">방 이미지 업데이트됨</string>
+    <string name="sure_you_want_to_stand_up">정말 일어서시겠습니까?</string>
+    <string name="there_s_no_user_to_invite_on_mic">마이크에 초대할 사용자가 없습니다.</string>
+    <string name="remove_seat">좌석 제거</string>
+    <string name="kick_out">킥아웃</string>
+    <string name="unmute_mic">마이크 음소거 해제</string>
+    <string name="mute_mic">마이크 음소거</string>
+    <string name="remove_mic">마이크 제거</string>
+    <string name="invite_mic">마이크 초대</string>
+    <string name="take_the_mic">마이크를 가져가세요</string>
+    <string name="give_the_mic">마이크를 주세요</string>
+    <string name="lock_the_mic">마이크 잠금</string>
+    <string name="mute_the_mic">마이크 음소거</string>
+    <string name="unmute">음소거 해제</string>
+    <string name="unlock">터놓다</string>
+    <string name="remove">제거하다</string>
+    <string name="your_live_session_end_by_admin_text">관리자가 라이브 세션을 종료했습니다.</string>
+    <string name="end_live_video">라이브 비디오 종료</string>
+    <string name="don_t_have_user_to_sent_a_gift_wait_for_user">선물을 보낼 사용자가 없습니다. 사용자를 기다리세요.</string>
+    <string name="select_at_least_one_user">최소한 한 명의 사용자를 선택하세요</string>
+    <string name="room_settings">객실 설정</string>
+    <string name="people">사람들</string>
+    <string name="copied_to_clipboard">클립보드에 복사됨</string>
+    <string name="room_name">객실 이름</string>
+    <string name="enter_room_name">객실 이름을 입력하세요</string>
+    <string name="please_enter_room_name">객실 이름을 입력하세요</string>
+    <string name="seat_mode">좌석 모드</string>
+    <string name="_8_seat">8인승</string>
+    <string name="use">사용</string>
+    <string name="_12_seat">12인승</string>
+    <string name="_16_seat">16석</string>
+    <string name="seat_update">좌석 업데이트</string>
+    <string name="room_welcome_message">객실 환영 메시지</string>
+    <string name="enter_room_welcome_message">객실 환영 메시지 입력</string>
+    <string name="please_enter_room_welcome_message">객실 환영 메시지를 입력하세요</string>
+    <string name="room_passcode">객실 비밀번호</string>
+    <string name="enter_room_passcode">객실 비밀번호를 입력하세요</string>
+    <string name="change_background">배경 변경</string>
+    <string name="live_ended">라이브 종료</string>
+    <string name="joined_users">가입한 사용자</string>
+    <string name="live_duration">라이브 지속 시간</string>
+    <string name="received_gifts">선물을 받았습니다</string>
+    <string name="increased_fans">팬이 늘어났다</string>
+    <string name="rcoins">알코인</string>
+    <string name="back_to_the_home">집으로 돌아가기</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_watch_live">현재 오디오룸에 있습니다. 오디오룸에서 나와서 생방송을 시청해 주세요.</string>
+    <string name="s_live_has_ended">s 라이브가 종료되었습니다.</string>
+    <string name="all_is_well_party">모두 잘 지내요 파티</string>
+    <string name="private_room">개인실</string>
+    <string name="_123456">123456</string>
+    <string name="enter_valid_passcode">유효한 비밀번호를 입력하세요</string>
+    <string name="enter_passcode">비밀번호를 입력하세요</string>
+    <string name="decline">감소</string>
+    <string name="audio_request_received_from">오디오 요청이 수신되었습니다.</string>
+    <string name="please_choose_another_seat">다른 좌석을 선택해주세요</string>
+    <string name="this_seat_is_locked_by_host">이 좌석은 호스트에 의해 잠겼습니다.</string>
+    <string name="add_location">위치 추가</string>
+    <string name="search_area_or_city">지역 또는 도시 검색</string>
+    <string name="manage_audio_volume">오디오 볼륨 관리</string>
+    <string name="video_volume_label">비디오 볼륨</string>
+    <string name="song_volume_label">노래 볼륨</string>
+    <string name="failed_to_delete">삭제에 실패했습니다</string>
+    <string name="error_try_again">다시 시도하세요</string>
+    <string name="solved">해결됨</string>
+    <string name="relites">리라이트</string>
+    <string name="error_loading_plans">계획을 로드하는 중 오류가 발생했습니다.</string>
+    <string name="billing_not_ready">청구가 준비되지 않았습니다</string>
+    <string name="purchase_error">구매 오류</string>
+    <string name="payment_init_failed">결제 초기화에 실패했습니다</string>
+    <string name="purchase_canceled">구매 취소됨</string>
+    <string name="purchase_success">구매 성공</string>
+    <string name="purchase_failed">구매 실패</string>
+    <string name="please_select_a_gift">선물을 선택해주세요</string>
+    <string name="please_select_at_least_one_user">최소 한 명의 사용자를 선택해 주세요.</string>
+    <string name="no_user_found">사용자를 찾을 수 없습니다!</string>
+    <string name="notification_channel_name">기본</string>
+    <string name="audio_conversion_failed">오디오 변환에 실패했습니다</string>
+    <string name="no_message_available">사용 가능한 메시지가 없습니다</string>
+    <string name="no_date">날짜 없음</string>
+    <string name="invalid_user_id">잘못된 사용자 ID입니다</string>
+    <string name="user_has_been_blocked">사용자가 차단되었습니다</string>
+    <string name="user_data_is_not_available">사용자 데이터를 사용할 수 없습니다</string>
+    <string name="user_data_not_loaded">사용자 데이터가 로드되지 않았습니다</string>
+    <string name="cannot_load_video_preview">비디오 미리보기를 로드할 수 없습니다.</string>
+    <string name="failed_to_process_video">비디오 처리에 실패했습니다.</string>
+    <string name="are_you_sure_you_want_to_delete_your_room">정말로 방을 삭제하시겠습니까?</string>
+    <string name="your_room_deleted_successfully">방이 성공적으로 삭제되었습니다.</string>
+    <string name="you_are_not_able_to_post_at_your_level">귀하의 레벨에서는 게시할 수 없습니다.</string>
+    <string name="room_passcode_changed">객실 비밀번호가 변경되었습니다.</string>
+    <string name="using">사용 중</string>
+    <string name="failed_to_logout_please_try_again">로그아웃에 실패했습니다. 다시 시도해 주세요.</string>
+    <string name="link_not_available">링크를 사용할 수 없습니다.</string>
+    <string name="we_will_take_immediate_action_thank_you">즉시 조치를 취하겠습니다. 감사합니다.</string>
+    <string name="picture_capture_timeout_please_try_again">사진 캡처 시간이 초과되었습니다. 다시 시도해 주세요.</string>
+    <string name="error_loading_image">이미지 로딩 중 오류 발생</string>
+    <string name="no_image_selected">선택된 이미지가 없습니다</string>
+    <string name="error_processing_video">비디오 처리 중 오류 발생</string>
+    <string name="failed_to_capture_image">이미지를 캡처하는 데 실패했습니다.</string>
+    <string name="failed_to_save_image">이미지를 저장하지 못했습니다.</string>
+    <string name="you_cant_unmute_your_self">당신은 당신 자신을 음소거 해제할 수 없습니다</string>
+    <string name="audio_file_missing">오디오 파일이 없습니다!</string>
+    <string name="video_file_missing">비디오 파일이 없습니다!</string>
+    <string name="unexpected_error">예기치 않은 오류:</string>
+    <string name="final_merge_failed">최종 병합에 실패했습니다.</string>
+    <string name="video_merge_failed">비디오 병합에 실패했습니다.</string>
+    <string name="unblocked_successfully">차단 해제에 성공했습니다.</string>
+    <string name="unable_to_share_at_this_moment">지금은 공유할 수 없습니다</string>
+    <string name="unexpected_error_occurred_please_try_again">예기치 않은 오류가 발생했습니다. 다시 시도해 주세요.</string>
+    <string name="unknown_error">알 수 없는 오류</string>
+    <string name="transaction_failed">거래가 실패했습니다</string>
+    <string name="delete_failed">삭제 실패:</string>
+    <string name="invalid_post">잘못된 게시물</string>
+    <string name="report_successful">신고 성공</string>
+    <string name="failed_to_upload_image">이미지를 업로드하는 데 실패했습니다.</string>
+    <string name="failed_to_upload_image_please_try_again">이미지를 업로드하지 못했습니다. 다시 시도해 주세요.</string>
+    <string name="failed_to_load_data_please_try_again">데이터를 로드하지 못했습니다. 다시 시도해 주세요.</string>
+    <string name="comment_text_cannot_be_empty">댓글 내용은 비어 있을 수 없습니다.</string>
+    <string name="failed_to_submit_comment_please_try_again">댓글을 제출하지 못했습니다. 다시 시도해 주세요.</string>
+    <string name="invalid_video">잘못된 비디오</string>
+    <string name="failed_to_delete_video">비디오를 삭제하지 못했습니다.</string>
+    <string name="all_fields_required">모든 필드가 필수입니다</string>
+    <string name="purchase_failed_please_try_again">구매에 실패했습니다. 다시 시도해 주세요.</string>
+    <string name="failed_to_send_request">요청을 보내지 못했습니다</string>
+    <string name="failed_to_start_live_stream">라이브 스트리밍을 시작하지 못했습니다.</string>
+    <string name="live_user_data_is_missing">라이브 사용자 데이터가 없습니다.</string>
+    <string name="failed_to_delete_room">방 삭제에 실패했습니다</string>
+    <string name="update_failed">업데이트에 실패했습니다</string>
+    <string name="private_room_passcode">개인실 비밀번호</string>
+    <string name="here_s_the_private_passcode_for_the_room">해당 객실의 개인 비밀번호는 다음과 같습니다.</string>
+    <string name="share_via">공유를 통해</string>
+    <string name="passcode_empty_error">유효한 비밀번호를 입력하세요</string>
+    <string name="failed_to_update_passcode">비밀번호 업데이트에 실패했습니다</string>
+    <string name="enter_new_room_passcode">새로운 객실 비밀번호를 입력하세요</string>
+    <string name="change_room_passcode">객실 비밀번호 변경</string>
+    <string name="banned_list">금지 목록</string>
+    <string name="my_following">내 팔로잉</string>
+    <string name="please_enter_valid_input">유효한 입력을 입력하세요</string>
+    <string name="join_requests">가입 요청</string>
+    <string name="sorry_this_call_can_t_be_completed_right_now">죄송합니다. 현재 이 통화를 완료할 수 없습니다.</string>
+    <string name="watch_video_now">지금 영상 보기</string>
+    <string name="you_exceed_your_ad_limit">광고 한도를 초과했습니다.</string>
+    <string name="search_people">사람 검색..</string>
+    <string name="public_room">공공실</string>
+    <string name="my_profile">내 프로필</string>
+    <string name="edit_self">자기 편집</string>
+    <string name="blocked_user">차단된 사용자</string>
+    <string name="my_wallet">내 지갑</string>
+    <string name="select_age">연령 선택</string>
+    <string name="save_changes">변경 사항 저장</string>
+    <string name="enter_your_bio">자기소개를 입력하세요</string>
+    <string name="enter_bio_here">여기에 자기소개를 입력하세요.</string>
+    <string name="hey_there">안녕하세요!</string>
+    <string name="follow_back">팔로우 백</string>
+    <string name="purchase">구입</string>
+    <string name="select">선택하다</string>
+    <string name="selected">선택된</string>
+    <string name="method_2_desc">추천 코드를 사용하여 친구를 초대하세요. 코드를 사용할 때마다 보상을 받으세요!</string>
+    <string name="method_1_desc">짧은 광고 영상을 시청하고 즉시 무료 다이아몬드를 받으세요! 아래 버튼을 탭하여 시청을 시작하고 보상을 받으세요.</string>
+    <string name="pay_now">지금 결제하세요</string>
+    <string name="select_room_image">객실 이미지 선택</string>
+    <string name="room_description">객실 설명</string>
+    <string name="room_type">객실 유형</string>
+    <string name="upload_image_">이미지 업로드</string>
+    <string name="enter_your_room_name">객실 이름을 입력하세요</string>
+    <string name="enter_your_room_passcode">객실 비밀번호를 입력하세요</string>
+    <string name="enter_your_room_description">객실 설명을 입력하세요</string>
+    <string name="enter_note_here">여기에 메모를 입력하세요.</string>
+    <string name="add_caption">캡션 추가</string>
+    <string name="attachments">첨부 파일</string>
+    <string name="enter_details_here">여기에 세부 정보를 입력하세요…</string>
+    <string name="my_income">내 소득</string>
+    <string name="best_plan">최고의 계획</string>
+    <string name="best_recharge_plan">최고의 충전 플랜</string>
+    <string name="purchase_recharge_plan">구매 충전 플랜</string>
+    <string name="available_my_r_coins">사용 가능한 내 R-코인</string>
+    <string name="payment">지불</string>
+    <string name="select_payment_option">결제 옵션을 선택하세요 :</string>
+    <string name="select_record_duration">녹화 기간 선택 :</string>
+    <string name="start_date_">시작 날짜:</string>
+    <string name="end_date_">종료일:</string>
+    <string name="demo_purpose">이 APK의 모든 데이터는 데모 목적으로만 사용됩니다.</string>
+    <string name="no_data_text">보여줄 것이 없습니다</string>
+    <string name="vip">요일</string>
+    <string name="payment_option">결제 옵션:</string>
+    <string name="withdrawable_r_coins">출금 가능한 R-코인 :</string>
+    <string name="please_select_a_payment_option">결제방법을 선택해주세요</string>
+    <string name="select_option">옵션 선택 :</string>
+    <string name="bd">BD비디</string>
+    <string name="version">버전 :</string>
+    <string name="upload">업로드</string>
+    <string name="no_one_joined">아무도 참여하지 않았습니다</string>
+    <string name="blocked_list">차단 목록</string>
+    <string name="room_close">룸 클로즈</string>
+    <string name="common_bio">프로필뿐만 아니라 연결도 탐구해 보세요.</string>
+    <string name="reactions">반응</string>
+    <string name="delete_confirmation_text">삭제하시겠습니까? 이 작업은 취소할 수 없습니다.</string>
+    <string name="confirm_deletion">삭제 확인</string>
+    <string name="confirm_stand_up">스탠드업 확인</string>
+    <string name="delete_post_confirmation">이 게시물을 삭제하시겠습니까?</string>
+    <string name="delete_relite_confirmation">이 Relite를 삭제하시겠습니까?</string>
+    <string name="delete">삭제</string>
+    <string name="demo_agency">데모 에이전시</string>
+    <string name="exposure">노출</string>
+    <string name="smoothness">부드러움</string>
+    <string name="redness">홍반</string>
+    <string name="sharpness">날카로움</string>
+    <string name="ar_effects">AR 효과</string>
+    <string name="calling">부름</string>
+    <string name="no_comments_yet_be_the_first_to_say_something">아직 댓글이 없습니다. 처음으로 댓글을 남겨보세요!</string>
+    <string name="no_likes_yet_tap_to_spread_some_love">아직 좋아요가 없습니다. ❤️를 눌러 사랑을 나눠주세요!</string>
+    <string name="finding_reasons_to_smile_everywhere_i_go_and_sharing_that_happiness_with_the_world">어디를 가든지 미소 지을 이유를 찾고 그 행복을 세상과 공유합니다.</string>
+    <string name="okay">좋아요</string>
+    <string name="please_wait_for_a_spot_to_open">자리가 열릴 때까지 기다려주세요</string>
+    <string name="all_seats_are_taken">모든 좌석이 차있습니다</string>
+    <string name="alex_sierra">#VALUE!</string>
+    <string name="request_sent">요청이 전송되었습니다</string>
+    <string name="join">가입하다</string>
+    <string name="video_call_gift">영상통화 선물</string>
+    <string name="chat_gift">채팅 선물</string>
+    <string name="uploading_">업로드 중...</string>
+    <string name="please_try_after_some_time">시간이 지난 후에 다시 시도해 보세요.</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_make_call">현재 오디오 룸에 접속되어 있는 것 같습니다. 룸에서 나가서 전화를 걸어주세요.</string>
+    <string name="notification_permission_denied">알림 권한이 거부되었습니다.</string>
+    <string name="you_have_to_enable_it_from_settings">설정에서 활성화해야 합니다.</string>
+    <string name="open_settings">설정 열기</string>
+    <string name="cannot_unmute_user">사용자 음소거를 해제할 수 없습니다</string>
+    <string name="this_user_has_muted_themselves_only_they_can_unmute">이 사용자는 자신을 음소거했습니다. 본인만 음소거를 해제할 수 있습니다.</string>
+    <string name="you_are_not_able_to_live_at_your_level">당신은 당신의 수준에서 살 수 없습니다</string>
+    <string name="conversion_successful">변환 성공</string>
+    <string name="screen_overlay_permission_needed">화면 오버레이 권한이 필요합니다</string>
+    <string name="enable_display_over_other_apps_from_system_settings">시스템 설정에서 다른 앱 위에 표시를 활성화하세요.</string>
+    <string name="you_are_vip_now">당신은 지금 VIP입니다</string>
+    <string name="restart_app">앱 다시 시작</string>
+    <string name="this_seat_is_reserved">이 좌석은 예약되어 있습니다</string>
+    <string name="do_you_really_want_to_log_out">정말로 로그아웃하시겠습니까? 계정에 액세스하려면 다시 로그인해야 합니다.</string>
+    <string name="notification_permission_granted">알림 권한이 부여되었습니다</string>
+    <string name="verified">확인됨</string>
+    <string name="no_one_has_requested">아무도 요청하지 않았습니다</string>
+    <string name="user_data_not_found_please_login_again">사용자 데이터를 찾을 수 없습니다. 다시 로그인해 주세요.</string>
+    <string name="update_failed_">업데이트에 실패했습니다:</string>
+
+    <string name="dummy_name">미아 말코바</string>
+    <string name="miya">미야</string>
+    <string name="riya">리야</string>
+    <string name="luliya">루리야</string>
+    <string name="rehan">레한</string>
+    <string name="susmita">수스미타</string>
+    <string name="rahi">라히</string>
+    <string name="nirma">니르마</string>
+    <string name="jashvi">자쉬비</string>
+    <string name="hely">헬리</string>
+    <string name="shruti">슈루티</string>
+    <string name="dhruvi">드루비</string>
+    <string name="mamta">맘타</string>
+    <string name="zeel">지일</string>
+    <string name="audio_live">오디오 라이브</string>
+    <string name="post">우편</string>
+    <string name="demo_host_center">데모 호스트 센터</string>
+    <string name="agency_center">에이전시 센터</string>
+    <string name="select_language">언어 선택</string>
+    <string name="english">영어</string>
+    <string name="explore">탐구하다</string>
+    <string name="party">파티</string>
+    <string name="my_features">내 기능</string>
+    <string name="host_vip_privilege">호스트 및 VIP 특권</string>
+    <string name="restart_the_app">앱을 다시 시작하세요!</string>
+    <string name="restart">다시 시작</string>
+    <string name="version_">"버전 "</string>
+    <string name="top_users">상위 사용자</string>
+    <string name="top_creators">상위 크리에이터</string>
+    <string name="top_agency">상위 에이전시</string>
+    <string name="daily">일간</string>
+    <string name="weekly">주간</string>
+    <string name="monthly">월간</string>
+    <string name="get_premium_crown">프리미엄 왕관 받기</string>
+    <string name="get_extra_coins">추가 코인 받기</string>
+    <string name="get_all_level_access">모든 레벨 접근 권한 받기</string>
+    <string name="invalid_validity_period">유효 기간이 잘못되었습니다</string>
+    <string name="user_id">사용자 ID</string>
+    <string name="you_ve_spent_s">"%s을(를) 사용하셨습니다 "</string>
+    <string name="you_have">"보유 중: "</string>
+    <string name="referrals">" 추천"</string>
+    <string name="id_">ID: </string>
+
+    <string name="feed">피드</string>
+    <string name="video">비디오</string>
+    <string name="sent_a_gift_to">" 선물을 보냈습니다 "</string>
+    <string name="announcement">"공지 : "</string>
+    <string name="please_enter_valid_passcode">유효한 비밀번호를 입력하세요</string>
+    <string name="passcode_length_invalid">비밀번호 길이가 잘못되었습니다</string>
+    <string name="_0">0</string>
+    <string name="error_missing_room_data">방 데이터가 없습니다</string>
+    <string name="error_invalid_room_data">잘못된 방 데이터</string>
+    <string name="dummy_noti_desc">James Bond가 Daizy Sharma에게 선물을 보냈습니다</string>
+    <string name="dummy_id">ID : 564321</string>
+    <string name="dummy_time">00:00</string>
+    <string name="cherry">체리</string>
+    <string name="level_1">레벨 1</string>
+    <string name="hello">안녕하세요</string>
+    <string name="dummy_comment">누가 백만장자가 되었나요?</string>
+    <string name="country">국가</string>
+    <string name="title1">제목 1</string>
+    <string name="incoming_video_call">수신 중인 영상 통화</string>
+    <string name="upload_completed">업로드가 완료되었습니다!</string>
+    <string name="image_file_does_not_exist">이미지 파일이 존재하지 않습니다.</string>
+    <string name="user_session_not_found">사용자 세션을 찾을 수 없습니다</string>
+    <string name="add">추가</string>
+    <string name="leave">나가기</string>
+    <string name="requested">요청됨</string>
+    <string name="call_request_rejected">통화 요청이 거절되었습니다</string>
+    <string name="call_setup_failed">"통화 설정 실패: "</string>
+    <string name="invalid_chat_user">유효하지 않은 채팅 사용자</string>
+    <string name="you">너</string>
+    <string name="sent_a_gift_">선물을 보냈어요 🎁</string>
+    <string name="invalid_url">잘못된 URL</string>
+    <string name="here_is_my_referral_code">"제 추천 코드는 다음과 같습니다."</string>
+    <string name="let_me_recommend_you_this_application">\n이 애플리케이션을 추천해 드리겠습니다.\n\n</string>
+    <string name="unknown_user">알 수 없는 사용자</string>
+    <string name="you_will_receive">"당신은 받을 것이다"</string>
+    <string name="_diamonds">"다이아몬드"</string>
+    <string name="camera_not_ready">카메라가 준비되지 않았습니다</string>
+    <string name="ar_is_starting_please_try_again">AR이 시작됩니다. 다시 시도해 주세요.</string>
+    <string name="recording_started">녹음이 시작되었습니다.</string>
+    <string name="camera_is_not_available">카메라를 사용할 수 없습니다.</string>
+    <string name="permission_rationale_upload">갤러리에서 비디오를 선택하고 업로드하려면 저장 권한이 필요합니다.</string>
+    <string name="unable_to_choose_video_for_upload">업로드할 비디오를 선택할 수 없습니다.</string>
+    <string name="sticker_item_is_missing">스티커 항목이 없습니다.</string>
+    <string name="audio_file_is_missing">오디오 파일이 없습니다.</string>
+    <string name="could_not_load_audio">오디오를 로드할 수 없습니다.</string>
+    <string name="selected_video_uri_is_missing">선택한 비디오 URI가 없습니다.</string>
+    <string name="failed_to_prepare_video_for_upload">업로드할 비디오를 준비하지 못했습니다.</string>
+    <string name="error_copying_file">파일 복사 중 오류가 발생했습니다.</string>
+    <string name="failed_to_create_directory">디렉토리를 생성하지 못했습니다.</string>
+    <string name="upload_failed_">"업로드 실패: "</string>
+    <string name="uploading">업로드 중…</string>
+    <string name="public_">공공의</string>
+    <string name="unknown_title">제목 불명</string>
+    <string name="unknown_singer">알려지지 않은 가수</string>
+    <string name="invalid_host_data">잘못된 호스트 데이터</string>
+    <string name="type_something">뭔가를 입력하세요..</string>
+
+    <string-array name="fake_times">
+        <item>방금</item>
+        <item>잠시 전</item>
+        <item>5분 전</item>
+        <item>한 시간 전쯤</item>
+        <item>1시간 전</item>
+        <item>오늘 일찍</item>
+        <item>오늘</item>
+        <item>어제</item>
+        <item>며칠 전</item>
+        <item>3일 전</item>
+        <item>지난주</item>
+        <item>몇 일 전</item>
+        <item>2주 전</item>
+        <item>지난 달</item>
+        <item>얼마 전</item>
+        <item>조금 전</item>
+        <item>오래 전</item>
+    </string-array>
+
+    <string-array name="fake_chat_sender">
+        <item>안녕! 잘 지내?</item>
+        <item>오늘 밤 영화 볼 계획이야.</item>
+        <item>최근 뉴스에 대해 어떻게 생각해?</item>
+        <item>회사에서 새 프로젝트를 시작했어.</item>
+        <item>나중에 커피 마실래?</item>
+        <item>방금 달리기 다녀왔어, 기분 최고야!</item>
+        <item>추천할 만한 책 있어?</item>
+        <item>주말 잘 보냈어?</item>
+        <item>다음 달에 휴가 가려고 해.</item>
+        <item>도심에 새로 생긴 식당 가봤어?</item>
+        <item>오늘 뭐 해?</item>
+        <item>방금 정말 좋은 책을 끝냈어, 얘기해주고 싶어.</item>
+        <item>저녁에 계획 있어?</item>
+        <item>새로운 언어를 배우려고 해.</item>
+        <item>그 드라마 최신 에피소드 봤어?</item>
+        <item>새로 나온 앨범 들어봤어?</item>
+        <item>요즘 팟캐스트에 푹 빠졌어.</item>
+        <item>새로운 기기에 대해 어떻게 생각해?</item>
+        <item>블로그를 시작해보려고 해.</item>
+        <item>네가 좋아하는 취미는 뭐야?</item>
+        <item>어떻게 동기부여를 유지해?</item>
+        <item>생산성을 높이는 팁 있어?</item>
+        <item>쉴 때 뭐 해?</item>
+        <item>스트레스는 어떻게 풀어?</item>
+        <item>무엇이 너에게 영감을 줘?</item>
+    </string-array>
+
+    <string-array name="fake_chat_receiver">
+        <item>난 잘 지내, 너는?</item>
+        <item>재밌겠다! 어떤 영화야?</item>
+        <item>잘 몰라, 요즘 뉴스 못 봤어.</item>
+        <item>진짜? 어떤 프로젝트야?</item>
+        <item>좋아, 나도 마시고 싶어!</item>
+        <item>우와, 대단하다! 나도 운동 다시 시작해야겠어.</item>
+        <item>최근에 정말 재미있는 스릴러를 읽었어.</item>
+        <item>편안했어, 별로 한 건 없어.</item>
+        <item>좋겠다! 어디로 갈 계획이야?</item>
+        <item>아직 안 가봤어. 어때?</item>
+        <item>재택근무 중이야, 너는?</item>
+        <item>재밌겠다, 자세히 말해줘!</item>
+        <item>딱히 없어, 그냥 쉬고 있어.</item>
+        <item>좋다! 어떤 언어 배우고 싶어?</item>
+        <item>응, 정말 재미있었어! 다음 화가 기다려져.</item>
+        <item>아직 안 들어봤어, 좋은 노래 있어?</item>
+        <item>나도 그래, 정보가 유익하더라.</item>
+        <item>나도 하나 사고 싶어. 어떤 기능이 마음에 들어?</item>
+        <item>재미있겠다! 어떤 주제로 쓸 거야?</item>
+        <item>나는 그림 그리기랑 독서를 좋아해.</item>
+        <item>작은 목표를 세우면서 동기부여를 유지해.</item>
+        <item>할 일 목록을 만드는 게 도움이 돼.</item>
+        <item>영화 보거나 책을 읽어.</item>
+        <item>명상하거나 산책해.</item>
+        <item>자연과 예술이 가장 큰 영감이야.</item>
+    </string-array>
+
+    <string-array name="lightening_contrast_options">
+        <item>낮음</item>
+        <item>보통</item>
+        <item>높음</item>
+    </string-array>
+
+    <string-array name="fake_messages">
+        <item>안녕! 👋</item>
+        <item>프로필이 마음에 들어요!</item>
+        <item>여기 처음이에요—안녕하세요!</item>
+        <item>간단한 대화 어때요?</item>
+        <item>안녕하세요! 😊</item>
+        <item>오늘 하루 어땠어요?</item>
+        <item>흥미롭네요 👀</item>
+        <item>여기서 뭐해요?</item>
+        <item>만나서 반가워요! 🙌</item>
+        <item>안녕하세요 낯선 사람 😄</item>
+        <item>커피 아니면 차? ☕🍵</item>
+        <item>앱이 더 좋아졌어요 😉</item>
+        <item>그래서… 당신의 이야기는요?</item>
+        <item>안녕하세요! ✨</item>
+        <item>대화 기대돼요!</item>
+        <item>좋은 에너지가 느껴져요 🌟</item>
+        <item>안녕하세요! 연결할래요?</item>
+        <item>매칭돼서 기뻐요 😍</item>
+        <item>안녕하세요, 인생은 어때요?</item>
+        <item>당신을 위한 큰 미소 😁</item>
+        <item>당신이 내 화면에 나타났어요 👌</item>
+        <item>나였나요, 아니면 우리가 방금 최고의 친구가 된 건가요? 😂</item>
+        <item>우리가 매칭되길 바랐어요 💫</item>
+        <item>대화하기에 재미있어 보이네요 😏</item>
+        <item>여기 있어요! 당신의 이유는요? 😜</item>
+        <item>뭐라고요? 오늘 첫 번째 메시지가 당신이에요 📩</item>
+        <item>우연인지 운명인지 믿어요? ✨</item>
+        <item>안녕하세요를 받을 자격이 있어요 😇</item>
+        <item>정말로, 당신의 프로필이 돋보여요 🔥</item>
+        <item>알겠어요, 당신의 미소가 전염성이 있어요 😍</item>
+    </string-array>
+
+</resources>

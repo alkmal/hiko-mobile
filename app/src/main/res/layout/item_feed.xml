@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp">
+
+            <LinearLayout
+                android:id="@+id/layUserDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center">
+
+                    <com.codder.ultimate.utils.UserProfileImageView
+                        android:id="@+id/imgUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/airbnbcereal_w_bd"
+                        android:singleLine="true"
+                        android:text="@string/dummy_name"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/svgWebView"
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="@dimen/_8sdp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/location_pink"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tvLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/airbnbcereal_w_bk"
+                            android:text="2h ago"
+                            android:textColor="#B3FFFFFF"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/airbnb_cereal_medium"
+                    android:text="2 hours ago"
+                    android:textColor="#CDC7C7"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/lytFollow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/tvFollow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_bg"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/airbnbcereal_w_md"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="@dimen/_6sdp"
+                        android:text="@string/follow"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        app:drawableStartCompat="@drawable/icon_follow" />
+
+                    <ProgressBar
+                        android:id="@+id/pd"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginHorizontal="25dp"
+                        android:indeterminateTint="@color/white"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <com.codder.ultimate.socialView.SocialTextView
+                android:id="@+id/tvCaption1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layUserDetails"
+
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/airbnbcereal_w_bk"
+                android:lineSpacingExtra="2sp"
+                android:text="@string/finding_reasons_to_smile_everywhere_i_go_and_sharing_that_happiness_with_the_world"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCaption1">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="13dp">
+
+                    <ImageView
+                        android:id="@+id/imagePost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:maxHeight="300dp"
+                        android:minHeight="200dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/feed_placeholder"
+                        android:visibility="visible" />
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/heartAnimation"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:alpha="0"
+                    android:scaleX="0"
+                    android:scaleY="0"
+                    android:src="@drawable/ic_heart_gradient"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        <!--    <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/post_top_bg"
+                android:backgroundTint="@color/black_alpha_60" />-->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layoutDirection="locale"
+            android:layout_marginHorizontal="15dp">
+
+            <LinearLayout
+                android:id="@+id/layLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+
+                    <com.codder.ultimate.utils.like.LikeButton
+                        android:id="@+id/likeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        app:anim_scale_factor="2"
+                        app:circle_end_color="@color/white"
+                        app:circle_start_color="@color/tintColor"
+                        app:dots_primary_color="@color/white"
+                        app:dots_secondary_color="@color/purple"
+                        app:follow="false"
+                        app:icon_size="20dp"
+                        app:icon_type="heart"
+                        app:like_drawable="@drawable/ic_like"
+                        app:unlike_drawable="@drawable/ic_unlike" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="7dp"
+                    android:fontFamily="@font/airbnbcereal_w_md"
+                    android:gravity="start"
+                    android:text="@string/_0"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/layLike"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgMessage"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_post_comment" />
+
+                <TextView
+                    android:id="@+id/tvComments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="7dp"
+                    android:fontFamily="@font/airbnbcereal_w_md"
+                    android:gravity="start"
+                    android:text="@string/_0"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btnShare"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+               android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/lytComments"
+                android:src="@drawable/ic_post_share" />
+
+
+            <ImageView
+                android:id="@+id/btnReport"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:onClick="onClickReport"
+                android:src="@drawable/baseline_more_vert_24"
+                android:visibility="visible"
+                app:tint="@color/white" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".6dp"
+            android:background="@color/white_30"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+</layout>

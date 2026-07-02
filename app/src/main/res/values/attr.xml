@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SocialViewStyle">
+
+        <attr name="socialViewStyle" format="reference" />
+
+    </declare-styleable>
+
+    <declare-styleable name="SocialView">
+        <!-- Determine whether each feature should be turned on/off.Default is all true. -->
+        <attr name="socialFlags">
+
+            <flag name="hashtag" value="1" />
+
+            <flag name="mention" value="2" />
+
+            <flag name="hyperlink" value="4" />
+
+        </attr>
+        <!-- Color of each feature.If particular feature is not enabled, this value will be ignored.Default is color accent of current theme. -->
+        <attr name="hashtagColor" format="color" />
+
+        <attr name="mentionColor" format="color" />
+
+        <attr name="hyperlinkColor" format="color" />
+
+    </declare-styleable>
+
+    <declare-styleable name="LikeButton">
+        <attr name="dot_color_1" format="color" />
+        <attr name="dot_color_2" format="color" />
+        <attr name="circle_startColor" format="color" />
+        <attr name="circle_endColor" format="color" />
+        <attr name="like_icon" format="reference" />
+        <attr name="unlike_icon" format="reference" />
+        <attr name="follow" format="boolean" />
+        <attr name="dot_active" format="boolean" />
+        <attr name="circle_active" format="boolean" />
+
+        <attr name="icon_type" format="string" />
+        <attr name="icon_size" format="dimension|reference"/>
+        <attr name="like_drawable" format="reference" />
+        <attr name="unlike_drawable" format="reference" />
+        <attr name="dots_primary_color" format="color|reference" />
+        <attr name="dots_secondary_color" format="color|reference" />
+        <attr name="circle_start_color" format="color|reference" />
+        <attr name="circle_end_color" format="color|reference" />
+        <attr name="liked" format="boolean"/>
+        <attr name="is_enabled" format="boolean"/>
+        <attr name="anim_scale_factor" format="float"/>
+
+    </declare-styleable>
+
+</resources>

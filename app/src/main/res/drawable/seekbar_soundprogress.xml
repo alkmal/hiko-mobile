@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background track (unplayed - medium grey) -->
+    <item
+        android:id="@android:id/background"
+        android:top="8dp"
+        android:bottom="8dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="4dp" />
+            <solid android:color="#24FFFFFF" />
+        </shape>
+    </item>
+
+    <!-- Secondary progress -->
+    <item
+        android:id="@android:id/secondaryProgress"
+        android:top="8dp"
+        android:bottom="8dp">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="4dp" />
+                <solid android:color="#7B5BA8" />
+            </shape>
+        </clip>
+    </item>
+
+    <!-- Primary progress (played - hot pink → purple) -->
+    <item
+        android:id="@android:id/progress"
+        android:top="8dp"
+        android:bottom="8dp">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="3dp" />
+                <gradient
+                    android:angle="0"
+                    android:startColor="#FFFFFF"
+                    android:endColor="#FFFFFF"
+                    android:type="linear" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

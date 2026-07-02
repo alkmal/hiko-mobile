@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:background="@drawable/level_item_bg"
+        android:backgroundTint="#33FFFFFF">
+
+        <ImageView
+            android:id="@+id/sLogo"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/bg_20dp"
+            android:backgroundTint="#33FFFFFF"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/a_send"
+            app:tint="@color/shimmerColor" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/sLogo"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_10dp_purewhite"
+                android:backgroundTint="@color/shimmerColor"
+                android:text="20000000000"
+                android:textColor="@color/shimmerColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="23dp"
+            android:background="@drawable/bg_10dp_purewhite"
+            android:backgroundTint="@color/shimmerColor"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:text="Level 1"
+            android:textColor="@color/shimmerColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</layout>

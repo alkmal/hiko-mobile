@@ -1,0 +1,8 @@
+package com.codder.ultimate.utils.datepicker.factory;
+
+public interface TimeFactoryListener {
+
+    void onHourChanged(int hour);
+
+    void onMinuteChanged(int minute);
+}

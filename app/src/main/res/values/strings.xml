@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HIKO</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="back_online">Back Online</string>
+    <string name="we_are_under_maintenance_text">We are Under Maintenance</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="you_are_blocked_by_admin_text">You are blocked by admin</string>
+    <string name="cancel">Cancel</string>
+    <string name="you_are_logged_in_other_devices">You are logged in other devices</string>
+    <string name="log_out">Log Out</string>
+    <string name="policy">By Signing up you will be agree to our</string>
+    <string name="terms_amp_condition">Terms &amp; Condition</string>
+    <string name="and">and</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="your_name">Your name</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="select_your_age">Select your age</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="submit">Submit</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_username_first">Enter Username first</string>
+    <string name="select_your_gender">Select your gender</string>
+    <string name="minimum_age_must_be_18_years">Minimum age must be 18 years.</string>
+    <string name="privacy_policy_text">Privacy Policy</string>
+    <string name="accept_privacy_policy">I’m 18+ and I’ve read the Privacy Policy.</string>
+    <string name="deny">Deny</string>
+    <string name="accept">Accept</string>
+    <string name="please_accept_privacy_policy">Please confirm you have read the Privacy Policy to continue.</string>
+    <string name="exit_app_confirmation">Are you sure you want to exit the app?</string>
+    <string name="exit_this_app">Exit This App</string>
+    <string name="fans">Fans</string>
+    <string name="my_diamonds">My Diamonds</string>
+    <string name="demo_host_center_text">Demo Host</string>
+    <string name="demo_agency_center">Demo Agency</string>
+    <string name="host_request">Host Request</string>
+    <string name="offline_recharge">Offline Recharge</string>
+    <string name="my_posts">My Posts</string>
+    <string name="my_relites">My Relites</string>
+    <string name="store">Store</string>
+    <string name="free_coins">Free Coins</string>
+    <string name="become_vip">Become VIP</string>
+    <string name="user_level">User Level</string>
+    <string name="copied_successfully">Copied Successfully</string>
+    <string name="id">"ID: "</string>
+    <string name="agency_center_text">Agency Center</string>
+    <string name="host_center">Host Center</string>
+    <string name="ok">OK</string>
+    <string name="history">History</string>
+    <string name="recharge">Recharge</string>
+    <string name="my_diamond_balance">My Diamond Coin</string>
+    <string name="enter_user_id">Enter User ID</string>
+    <string name="enter_diamonds">Enter Diamonds</string>
+    <string name="note">Note</string>
+    <string name="top_up">Top up</string>
+    <string name="user_not_found">User Not Found</string>
+    <string name="please_verify_user_id">please verify user id</string>
+    <string name="enter_coin_value">Enter Coin Value</string>
+    <string name="invalid_coin_value">Invalid Coin Value</string>
+    <string name="insufficient_coins">Insufficient coins</string>
+    <string name="send_successfully">Send Successfully</string>
+    <string name="continue_text">Continue</string>
+    <string name="in_this_apk_all_data_are_only_for_demo_purpose">Welcome to HIKO.</string>
+    <string name="deleted_successfully">Deleted Successfully</string>
+    <string name="india">India</string>
+    <string name="we_will_take_immediately_action_for_this_user_thank_you">We will take immediately action for this user \n Thank You</string>
+    <string name="likes">Likes</string>
+    <string name="comments">Comments</string>
+    <string name="report_user">Report User</string>
+    <string name="blocked_successfully">Blocked Successfully</string>
+    <string name="report_this_user">Report This User</string>
+    <string name="please_describe_your_issue_here">Please Describe your issue here..</string>
+    <string name="unable_to_report">Unable to Report..\n</string>
+    <string name="something_went_wrong_text">Something went wrong</string>
+    <string name="block_this_user">Block This User</string>
+    <string name="yes">Yes</string>
+    <string name="type_message_first">Type message first</string>
+    <string name="toast_cannot_retrieve_cropped_image">Cannot retrieve cropped image</string>
+    <string name="toast_unexpected_error">Unexpected Error</string>
+    <string name="call_ended">Call Ended!</string>
+    <string name="ringing">Ringing...</string>
+    <string name="we_will_take_immediately_action_for_this_user_n_thank_you">We will take immediately action for this user \n Thank You</string>
+    <string name="enter_valid_message">Enter valid Message</string>
+    <string name="is_busy_with_someone_else">" is busy with someone else."</string>
+    <string name="discard_entire_video">Discard Entire video ?</string>
+    <string name="if_you_go_back_now_you_will_lose_all_the_clips_added_to_your_video">If you go back now, you will lose all the clips added to your video</string>
+    <string name="discard_video">Discard Video</string>
+    <string name="incoming_call">Incoming call…</string>
+    <string name="need_permissions">\"Need permissions \"</string>
+    <string name="call_declined">Call Declined</string>
+    <string name="rtc_stats_format">Downstream Bitrate: %.2f kbps%nDownstream Loss Rate: %.2f%% %nUpstream Bitrate: %.2f kbps%nUpstream Loss Rate: %.2f%%</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="follow">Follow</string>
+    <string name="unblock">Unblock</string>
+    <string name="block">Block</string>
+    <string name="message">Message</string>
+    <string name="message_delete_confirmation">Are you sure You want to delete this Message?</string>
+    <string name="following">Following</string>
+    <string name="my_fans">My Fans</string>
+    <string name="image">Image</string>
+    <string name="choose_one">choose one</string>
+    <string name="say_something">Say something…</string>
+    <string name="failed_to_load_videos">Failed to load videos.</string>
+    <string name="settings">Setting</string>
+    <string name="notification">Notification</string>
+    <string name="have_an_issue">Have an Issue</string>
+    <string name="my_complains">My Complains</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="about_us">About Us</string>
+    <string name="next">Next</string>
+    <string name="complaint_or_suggestion">Complaint or Suggestion</string>
+    <string name="typing_somethings">Typing Somethings…</string>
+    <string name="contact">Enter Contact Details</string>
+    <string name="enter_your_mobile_number_or_email">Enter Mobile Number or E-mail Address</string>
+    <string name="attach_your_image_or_screenshot">Attach your Image or Screenshot</string>
+    <string name="browse">Browse</string>
+    <string name="complain_send_successfully">Complain Send Successfully</string>
+    <string name="please_enter_message">please Enter Message</string>
+    <string name="please_enter_contact">please Enter contact</string>
+    <string name="my_tickets">My Tickets</string>
+    <string name="open">Open</string>
+    <string name="ticket_details">Ticket Details</string>
+    <string name="status">Status</string>
+    <string name="close">CLOSE</string>
+    <string name="_1_self_introduction">Self-introduction</string>
+    <string name="name">Name</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="Bio">Bio</string>
+    <string name="_2_agency_code">Agency Code</string>
+    <string name="if_you_have">(If you have)</string>
+    <string name="_3_upload_photos">Upload Profile Photo</string>
+    <string name="personal_photo">Personal Photo</string>
+    <string name="_4_bank_details">Bank Details</string>
+    <string name="enter_your_bank_details">Enter your bank details</string>
+    <string name="admission_car">Admission Car</string>
+    <string name="enter_bio_text">Enter Bio</string>
+    <string name="select_personal_photo">Select Personal Photo</string>
+    <string name="image_file_not_found">Image file not found</string>
+    <string name="host_request_send">Host Request Send</string>
+    <string name="try_after_some_time">Please try After Some Time</string>
+    <string name="avatar_frame">Avatar Frame</string>
+    <string name="super_star">Super Star</string>
+    <string name="you_don_t_have_required_diamonds">You don\'t have required Diamonds!</string>
+    <string name="diamond_star">Diamond Star</string>
+    <string name="stepping_in">Stepping in!</string>
+    <string name="free_diamonds">Free Coins</string>
+    <string name="method_1">Method 1 </string>
+    <string name="method_2">Method 2 </string>
+    <string name="your_refer_code">Your Refer Code:</string>
+    <string name="enter_referral_code_here">Enter Referral code here</string>
+    <string name="you_have_2_referrals">You have 2 referrals</string>
+    <string name="referral_code_copied">Referral Code Copied!</string>
+    <string name="enter_refer_code">Enter Refer Code</string>
+    <string name="refereed_successfully">Refereed Successfully</string>
+    <string name="generic_error">Something went wrong. Please try again later.</string>
+    <string name="earned_by_user">Reward Granted</string>
+    <string name="invite_desc">"Invite your Friends! for each payout of invited friends, you and your friend both will receive "</string>
+    <string name="vip_plan">VIP Plan</string>
+    <string name="become_vip_and_get_many_privileges">Become VIP and get many Privileges</string>
+    <string name="vip_privileges">VIP Privileges</string>
+    <string name="get_vip_to_access_all_function">Get VIP to Access All Function</string>
+    <string name="vip_package">VIP Package</string>
+    <string name="get_now">Get Now</string>
+    <string name="first_select_the_plan">First select the plan.</string>
+    <string name="credit_debit_card">Credit/Debit Card</string>
+    <string name="google_play">Google Play</string>
+    <string name="hot">Hot</string>
+    <string name="your_level">Your Level</string>
+    <string name="no_level_available">No Level Available</string>
+    <string name="unknown">Unknown</string>
+    <string name="income">Income</string>
+    <string name="record">Record</string>
+    <string name="diamonds">Diamonds</string>
+    <string name="outcome">Outcome</string>
+    <string name="r_coins">R-Coins</string>
+    <string name="confirm">Confirm</string>
+    <string name="diamond_record">Diamond Record</string>
+    <string name="spending">Spending</string>
+    <string name="converted_to_diamonds">" converted to diamonds"</string>
+    <string name="diamond_purchase">Diamond purchase</string>
+    <string name="you_have_called">You have called</string>
+    <string name="watching_ads">Watching ads</string>
+    <string name="login_bonus">login bonus</string>
+    <string name="referral_bonus">Referral bonus</string>
+    <string name="cash_out">Cash out</string>
+    <string name="svga_animation_purchased">SVGA Animation Purchased</string>
+    <string name="add_in_teenpatti_game">Add in Teenpatti Game</string>
+    <string name="purchased_avatar_frame">Purchased Avatar frame</string>
+    <string name="coin_add_by_offline_recharge">Coin add by offline recharge</string>
+    <string name="call_coin_received">Call Coin</string>
+    <string name="lucy_gift_bonus">Lucy Gift Bonus</string>
+    <string name="add_in_roulette_game">Add in Roulette Game</string>
+    <string name="add_in_ferry_wheel_game">Add in Ferry wheel Game</string>
+    <string name="convert_in_coin_seller_coin">Convert in Coin Seller Coin</string>
+    <string name="unknown_transaction">Unknown transaction</string>
+    <string name="gift_broadcast_during_livestream_by_you">Gift Broadcast during livestream by you</string>
+    <string name="gift_received">"Gift received "</string>
+    <string name="gift_send_to">gift send to</string>
+    <string name="added_by_admin">Added By Admin</string>
+    <string name="reduce_by_admin">Reduce By Admin</string>
+    <string name="_1">$1</string>
+    <string name="withdrawing_rcoins">Enter Withdrawing Coins</string>
+    <string name="convert_to_diamond">Convert to Diamond</string>
+    <string name="what_is_coins">What is R-Coins?</string>
+    <string name="what_is_rcoin">1. When you receive gifts , like a Lamborghini or Castle, you immediately earn the same amount of Coins as the gift\'s price in the Gift Store.\n\n2. You can convert Coins to both diamonds and cash.\n\n3. Coins balance Available+Withdrawing\n</string>
+    <string name="google_pay" translatable="false">google pay</string>
+    <string name="stripe" translatable="false">stripe</string>
+    <string name="this_is_a_demo_version">HIKO</string>
+    <string name="payment_done">Payment Done</string>
+    <string name="coin_sellers_list">Coin Sellers List</string>
+    <string name="how_much_rcoins_convert_cash">How much Rcoins convert Cash?</string>
+    <string name="how_much_rcoins_convert_into_diamonds">How much Rcoins convert into \nDiamonds?</string>
+    <string name="setting_error">Setting Error</string>
+    <string name="minimum_amount_is">"Minimum amount is "</string>
+    <string name="you_not_have_enough">You not have enough</string>
+    <string name="you_are_not_able_to_cashout_at_your_level">You are not able to cashout at your level</string>
+    <string name="your">"Your "</string>
+    <string name="successfully_converted_into">"Successfully Converted into "</string>
+    <string name="conversion_failed">Conversion failed</string>
+    <string name="redeem_your_coins">Redeem Your Coins</string>
+    <string name="enter_coins_to_withdraw">Enter coins to Withdraw</string>
+    <string name="your_redeem_history">Your Redeem History </string>
+    <string name="pending">Pending</string>
+    <string name="r_coin_convert">R-Coin Convert</string>
+    <string name="how_much_coins_convert_into_diamonds">How much coins convert into \nDiamonds?</string>
+    <string name="enter_coins">Enter coins</string>
+    <string name="convert_to_diamonds">Convert To Diamonds</string>
+    <string name="whatsapp_not_installed">Whatsapp not installed</string>
+    <string name="invalid_whatsapp_number">Invalid whatsapp number</string>
+    <string name="withdrawable_rcoins">"Withdrawable Rcoins "</string>
+    <string name="no_payment_method_found">No Payment Method Found</string>
+    <string name="insufficient">"Insufficient "</string>
+    <string name="please_enter_your_details">Please Enter Your Details</string>
+    <string name="redeem_request_sent_successfully">Redeem Request sent Successfully</string>
+    <string name="enter_your_upi_details">Enter your UPI details</string>
+    <string name="enter_your_paytm_details">Enter your Paytm details</string>
+    <string name="enter_your_bank_account_details">Enter your Bank account details</string>
+    <string name="enter_your_bybit_details">Enter your Bybit details</string>
+    <string name="purchased">Purchased</string>
+    <string name="go_live">Go Live</string>
+    <string name="song_hint">Click to choose a song.</string>
+    <string name="timer_hint">To cancel timer before it starts, click here.</string>
+    <string name="duration">Duration</string>
+    <string name="mmss">00:00</string>
+    <string name="welcome_to_join_the_live_any_content_related_to_porn_violence_gambling_illegal_dealing_will_be_banned">Welcome to join the live. Any content related to porn, violence, gambling,illegal dealing will be banned.</string>
+    <string name="enter_a_room">has entered the room</string>
+    <string name="reacted">Reacted</string>
+    <string name="browse_file_title">Browse file</string>
+    <string name="please_enter_room_title">Please enter room name</string>
+    <string name="please_select_room_image">Please select room image</string>
+    <string name="you_are_block_from_admin_to_go_live">You are block from admin to go live</string>
+    <string name="start_audio_live">Start Audio Live</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="recorder_error_in_progress">To do this, please stop recording first.</string>
+    <string name="recorder_error_maxed_out">You have already recorded for maximum duration.</string>
+    <string name="audio_from_clip">Custom audio from clip.</string>
+    <string name="recorder_error_no_clips">Please record your clip first to continue.</string>
+    <string name="message_song_select">You cannot select song after recording has started.</string>
+    <string name="message_song_change">You cannot change song after recording has started.</string>
+    <string name="you_need_storage_permission">You need Storage Permission</string>
+    <string name="filter">Select Filter</string>
+    <string name="you_cannot_upload_video_above_30_mb">You cannot Upload video above 30 MB !!!</string>
+    <string name="choose_sticker">Choose Sticker</string>
+    <string name="timer">Timer</string>
+    <string name="sticker">Sticker</string>
+    <string name="filters">Filters</string>
+    <string name="preview">Preview</string>
+    <string name="flip">Flip</string>
+    <string name="speed">Speed</string>
+    <string name="notification_channel_id">default</string>
+    <string name="notification_download_title">Download file…</string>
+    <string name="notification_download_description">Should not taker longer than a few seconds.</string>
+    <string name="announcement_welcome_to_room">Announcement: Welcome to room</string>
+    <string name="all">All</string>
+    <string name="send">"Send"</string>
+    <string name="followers">Followers</string>
+    <string name="shorts">Shorts</string>
+    <string name="posts">Posts</string>
+    <string name="creator">Creator</string>
+    <string name="agency">Agency</string>
+    <string name="coin_seller">Coin Seller</string>
+    <string name="invite">Invite</string>
+    <string name="live">Live</string>
+    <string name="public_text">Public</string>
+    <string name="private_text">Private</string>
+    <string name="welcome_to_the_party">Welcome to the party</string>
+    <string name="games">Games</string>
+    <string name="keep">Keep</string>
+    <string name="exit_text">exit</string>
+    <string name="you_not_have_enough_diamonds_to_send_gift">You not have enough diamonds to send gift</string>
+    <string name="sent_a_gift">" Sent a gift"</string>
+    <string name="you_are_blocked_by_host">You are blocked by host</string>
+    <string name="you_cannot_upload_video_above_30_mb_text">You cannot Upload video above 30 MB !!!</string>
+    <string name="select_song">Select Song</string>
+    <string name="select_filter">Select Filter</string>
+    <string name="upload_relite">Upload Relite</string>
+    <string name="add_caption_with_hashtags_and_mentions">Add Caption with hashtags and mentions</string>
+    <string name="location">Location</string>
+    <string name="show_to">Show to</string>
+    <string name="allow_comments">Allow Comments</string>
+    <string name="upload_post">Upload Post</string>
+    <string name="who_show_this_post_to">Who to show this post to</string>
+    <string name="only_followers">Only Followers</string>
+    <string name="select_image_first">Select Image First</string>
+    <string name="error_opening_gallery">Error opening gallery</string>
+    <string name="permission_denied_message">Permission Denied....\\n</string>
+    <string name="error_selecting_image">Error selecting image</string>
+    <string name="location_not_set">Location not set</string>
+    <string name="count_clips">%s clips</string>
+    <string name="my_followers">Followers</string>
+    <string name="add_a_comment">Add a Comment…</string>
+    <string name="send_a_gift_to">Sent a gift to</string>
+    <string name="room_image_updated">Room Image Updated</string>
+    <string name="sure_you_want_to_stand_up">Are you sure you want to stand up?</string>
+    <string name="there_s_no_user_to_invite_on_mic">"There's no user to invite on mic. "</string>
+    <string name="remove_seat">Remove Seat</string>
+    <string name="kick_out">Kick out</string>
+    <string name="unmute_mic">Unmute mic</string>
+    <string name="mute_mic">Mute mic</string>
+    <string name="remove_mic">Remove mic</string>
+    <string name="invite_mic">Invite mic</string>
+    <string name="take_the_mic">Take the Mic</string>
+    <string name="give_the_mic">Give the Mic</string>
+    <string name="lock_the_mic">Lock the Mic</string>
+    <string name="mute_the_mic">Mute the Mic</string>
+    <string name="unmute">Unmute</string>
+    <string name="unlock">Unlock</string>
+    <string name="remove">Remove</string>
+    <string name="your_live_session_end_by_admin_text">Your live session end by admin.</string>
+    <string name="end_live_video">End Live Video</string>
+    <string name="don_t_have_user_to_sent_a_gift_wait_for_user">Don\'t have user to sent a gift wait for user</string>
+    <string name="select_at_least_one_user">Select at least one user</string>
+    <string name="room_settings">Room settings</string>
+    <string name="people">" People"</string>
+    <string name="copied_to_clipboard">Copied to Clipboard</string>
+    <string name="room_name">Room Name</string>
+    <string name="enter_room_name">Enter room name</string>
+    <string name="please_enter_room_name">Please Enter Room Name</string>
+    <string name="seat_mode">Seat mode</string>
+    <string name="_8_seat">8 seat</string>
+    <string name="use">Use</string>
+    <string name="_12_seat">12 seat</string>
+    <string name="_16_seat">16 seat</string>
+    <string name="seat_update">seat update</string>
+    <string name="room_welcome_message">Room welcome message</string>
+    <string name="enter_room_welcome_message">Enter room welcome message</string>
+    <string name="please_enter_room_welcome_message">Please Enter Room Welcome Message</string>
+    <string name="room_passcode">Room passcode</string>
+    <string name="enter_room_passcode">Enter room passcode</string>
+    <string name="change_background">Change background</string>
+    <string name="live_ended">Live Ended</string>
+    <string name="joined_users">Joined users</string>
+    <string name="live_duration">Live duration</string>
+    <string name="received_gifts">Received gifts</string>
+    <string name="increased_fans">Increased fans</string>
+    <string name="rcoins">Rcoins</string>
+    <string name="back_to_the_home">Back to the home</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_watch_live">You are currently in audioroom. please exit room and watch live.</string>
+    <string name="s_live_has_ended">\'s live has ended.</string>
+    <string name="all_is_well_party">All is well party</string>
+    <string name="private_room">Private Room</string>
+    <string name="_123456">123456</string>
+    <string name="enter_valid_passcode">Enter valid passcode</string>
+    <string name="enter_passcode">Enter passcode</string>
+    <string name="decline">Decline</string>
+    <string name="audio_request_received_from">"Audio request received from "</string>
+    <string name="please_choose_another_seat">Please Choose another Seat</string>
+    <string name="this_seat_is_locked_by_host">This seat is Locked by host</string>
+    <string name="add_location">Add Location</string>
+    <string name="search_area_or_city">Search Area or city</string>
+    <string name="manage_audio_volume">Manage Audio Volume</string>
+    <string name="video_volume_label">Video volume</string>
+    <string name="song_volume_label">Song volume</string>
+    <string name="failed_to_delete">Failed to delete</string>
+    <string name="error_try_again">Try again</string>
+    <string name="solved">SOLVED</string>
+    <string name="relites">Relite</string>
+    <string name="error_loading_plans">Error loading plans</string>
+    <string name="billing_not_ready">Billing is not ready</string>
+    <string name="purchase_error">Purchase error</string>
+    <string name="payment_init_failed">Payment init failed</string>
+    <string name="purchase_canceled">Purchase Canceled</string>
+    <string name="purchase_success">Purchase Success</string>
+    <string name="purchase_failed">Purchase failed</string>
+    <string name="please_select_a_gift">Please select a gift</string>
+    <string name="please_select_at_least_one_user">Please select at least one user</string>
+    <string name="no_user_found">No User Found!</string>
+    <string name="notification_channel_name">default</string>
+    <string name="audio_conversion_failed">Audio conversion failed</string>
+    <string name="no_message_available">No message available</string>
+    <string name="no_date">No date</string>
+    <string name="invalid_user_id">Invalid user ID</string>
+    <string name="user_has_been_blocked">User has been blocked</string>
+    <string name="user_data_is_not_available">User data is not available</string>
+    <string name="user_data_not_loaded">User data not loaded</string>
+    <string name="cannot_load_video_preview">Cannot load video preview.</string>
+    <string name="failed_to_process_video">Failed to process video.</string>
+    <string name="are_you_sure_you_want_to_delete_your_room">Are you sure you want to delete your room?</string>
+    <string name="your_room_deleted_successfully">Your room deleted successfully..</string>
+    <string name="you_are_not_able_to_post_at_your_level">You are not able to Post at your level</string>
+    <string name="room_passcode_changed">Room Passcode Changed..</string>
+    <string name="using">Using</string>
+    <string name="failed_to_logout_please_try_again">Failed to logout. Please try again.</string>
+    <string name="link_not_available">Link not available.</string>
+    <string name="we_will_take_immediate_action_thank_you">We will take immediate action. Thank you.</string>
+    <string name="picture_capture_timeout_please_try_again">Picture capture timeout. Please try again.</string>
+    <string name="error_loading_image">Error loading image</string>
+    <string name="no_image_selected">No image selected</string>
+    <string name="error_processing_video">Error processing video</string>
+    <string name="failed_to_capture_image">Failed to capture image.</string>
+    <string name="failed_to_save_image">Failed to save image.</string>
+    <string name="you_cant_unmute_your_self">You can\'t Unmute your self</string>
+    <string name="audio_file_missing">Audio file missing!</string>
+    <string name="video_file_missing">Video file missing!</string>
+    <string name="unexpected_error">"Unexpected error: "</string>
+    <string name="final_merge_failed">Final merge failed.</string>
+    <string name="video_merge_failed">Video merge failed.</string>
+    <string name="unblocked_successfully">Unblocked Successfully.</string>
+    <string name="unable_to_share_at_this_moment">Unable to share at this moment</string>
+    <string name="unexpected_error_occurred_please_try_again">Unexpected error occurred. Please try again.</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="transaction_failed">Transaction failed</string>
+    <string name="delete_failed">"Delete failed: "</string>
+    <string name="invalid_post">Invalid Post</string>
+    <string name="report_successful">Report successful</string>
+    <string name="failed_to_upload_image">Failed to upload image.</string>
+    <string name="failed_to_upload_image_please_try_again">Failed to upload image. Please try again.</string>
+    <string name="failed_to_load_data_please_try_again">Failed to load data. Please try again.</string>
+    <string name="comment_text_cannot_be_empty">Comment text cannot be empty.</string>
+    <string name="failed_to_submit_comment_please_try_again">Failed to submit comment. Please try again.</string>
+    <string name="invalid_video">Invalid Video</string>
+    <string name="failed_to_delete_video">Failed to delete video.</string>
+    <string name="all_fields_required">All Fields required</string>
+    <string name="purchase_failed_please_try_again">Purchase failed. Please try again.</string>
+    <string name="failed_to_send_request">Failed to send request</string>
+    <string name="failed_to_start_live_stream">Failed to start live stream</string>
+    <string name="live_user_data_is_missing">Live user data is missing</string>
+    <string name="failed_to_delete_room">Failed to delete room</string>
+    <string name="update_failed">Update failed</string>
+    <string name="private_room_passcode">Private Room Passcode</string>
+    <string name="here_s_the_private_passcode_for_the_room">"Here's the private passcode for the room: "</string>
+    <string name="share_via">Share via</string>
+    <string name="passcode_empty_error">Please enter valid passcode</string>
+    <string name="failed_to_update_passcode">Failed to update passcode</string>
+    <string name="enter_new_room_passcode">Enter New Room Passcode</string>
+    <string name="change_room_passcode">Change Room Passcode</string>
+    <string name="banned_list">Banned List</string>
+    <string name="my_following">Following</string>
+    <string name="please_enter_valid_input">Please enter valid input</string>
+    <string name="join_requests">Join Requests</string>
+    <string name="sorry_this_call_can_t_be_completed_right_now">Sorry, this call can’t be completed right now.</string>
+    <string name="watch_video_now">Watch Video Now</string>
+    <string name="you_exceed_your_ad_limit">You exceed your Ad limit.</string>
+    <string name="search_people">Search People...</string>
+    <string name="public_room">Public Room</string>
+    <string name="my_profile">Profile</string>
+    <string name="edit_self">Edit Profile</string>
+    <string name="blocked_user">Blocked User</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="select_age">Select Age</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="enter_your_bio">Enter Your Bio</string>
+    <string name="enter_bio_here">Enter Bio here..</string>
+    <string name="hey_there">Hey there!</string>
+    <string name="follow_back">Follow Back</string>
+    <string name="purchase">Purchase</string>
+    <string name="select">Select</string>
+    <string name="selected">Selected</string>
+    <string name="method_2_desc">Invite your friends to join using your referral code. Earn rewards every time your code is used!</string>
+    <string name="method_1_desc">Watch a short advertisement video and earn free diamonds instantly! Simply tap the button below to start watching and receive your reward.</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="select_room_image">Select Room Image</string>
+    <string name="room_description">Room Description</string>
+    <string name="room_type">Room Type</string>
+    <string name="upload_image_"><u>Upload Image</u></string>
+    <string name="enter_your_room_name">Enter your room name</string>
+    <string name="enter_your_room_passcode">Enter your room passcode</string>
+    <string name="enter_your_room_description">Enter your room description</string>
+    <string name="enter_note_here">Enter Note Here...</string>
+    <string name="add_caption">Add Caption</string>
+    <string name="attachments">Attachment</string>
+    <string name="enter_details_here">Enter Details Here…</string>
+    <string name="my_income">My Income</string>
+    <string name="best_plan">Best Plan</string>
+    <string name="best_recharge_plan">Best Recharge Plan</string>
+    <string name="purchase_recharge_plan">Purchase Recharge Plan</string>
+    <string name="available_my_r_coins">Available My R-Coins</string>
+    <string name="payment">Payment</string>
+    <string name="select_payment_option">Select Payment Option :</string>
+    <string name="select_record_duration">Select Record Duration</string>
+    <string name="start_date_">Start Date </string>
+    <string name="end_date_">End Date </string>
+    <string name="demo_purpose">Welcome to HIKO.</string>
+    <string name="no_data_text">Nothing to show</string>
+    <string name="vip">VIP</string>
+    <string name="payment_option">Payment Option:</string>
+    <string name="withdrawable_r_coins">Withdrawable R-Coins :</string>
+    <string name="please_select_a_payment_option">Please select a payment option</string>
+    <string name="select_option">Select Option </string>
+    <string name="bd">BD</string>
+    <string name="version">"Version : "</string>
+    <string name="upload">Upload</string>
+    <string name="no_one_joined">No one Joined</string>
+    <string name="blocked_list">Blocked List</string>
+    <string name="room_close">Room Close</string>
+    <string name="common_bio">Exploring connections, not just profiles.</string>
+    <string name="reactions">Reactions</string>
+    <string name="delete_confirmation_text">Are you sure you want to delete? \nThis action cannot be undone</string>
+    <string name="confirm_deletion">Confirm Deletion</string>
+    <string name="confirm_stand_up">Confirm Stand-Up</string>
+    <string name="delete_post_confirmation">Are you sure you want to delete this post?</string>
+    <string name="delete_relite_confirmation">Are you sure you want to delete this Relite?</string>
+    <string name="delete">Delete</string>
+    <string name="demo_agency">Demo Agency</string>
+    <string name="exposure">Exposure</string>
+    <string name="smoothness">Smoothness</string>
+    <string name="redness">Redness</string>
+    <string name="sharpness">Sharpness</string>
+    <string name="ar_effects">AR Effects</string>
+    <string name="calling">Calling...</string>
+    <string name="no_comments_yet_be_the_first_to_say_something">No comments yet. Be the first to say something!</string>
+    <string name="no_likes_yet_tap_to_spread_some_love">No likes yet. Tap ❤️ to spread some love!</string>
+    <string name="finding_reasons_to_smile_everywhere_i_go_and_sharing_that_happiness_with_the_world">Finding reasons to smile everywhere I go and sharing that happiness with the world.</string>
+    <string name="okay">Okay</string>
+    <string name="please_wait_for_a_spot_to_open">Please wait for a spot to open</string>
+    <string name="all_seats_are_taken">All seats are taken</string>
+    <string name="alex_sierra"><![CDATA[Alex & Sierra]]></string>
+    <string name="request_sent">Request Sent</string>
+    <string name="join">Join</string>
+    <string name="video_call_gift">Video call gift</string>
+    <string name="chat_gift">Chat gift</string>
+    <string name="uploading_">Uploading...</string>
+    <string name="please_try_after_some_time">Please try after some time</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_make_call">It seems you\'re currently in an audio room. Please exit the room and make the call.</string>
+    <string name="notification_permission_denied">Notification permission denied</string>
+    <string name="you_have_to_enable_it_from_settings">You have to enable it from settings.</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="cannot_unmute_user">Cannot Unmute User</string>
+    <string name="this_user_has_muted_themselves_only_they_can_unmute">This user has muted themselves. Only they can unmute.</string>
+    <string name="you_are_not_able_to_live_at_your_level">You are not able to Live at your level</string>
+    <string name="conversion_successful">Conversion Successful</string>
+    <string name="screen_overlay_permission_needed">Screen Overlay Permission Needed</string>
+    <string name="enable_display_over_other_apps_from_system_settings">Enable \'Display over other apps\' from System Settings.</string>
+    <string name="you_are_vip_now">You are VIP now</string>
+    <string name="restart_app">Restart app</string>
+    <string name="this_seat_is_reserved">This seat is reserved</string>
+    <string name="do_you_really_want_to_log_out">Do you really want to log out? You’ll need to sign in again to access your account</string>
+    <string name="notification_permission_granted">Notification permission granted</string>
+    <string name="verified">Verified</string>
+    <string name="no_one_has_requested">No one has requested</string>
+    <string name="user_data_not_found_please_login_again">User data not found. Please login again.</string>
+    <string name="update_failed_">"Update failed: "</string>
+    <string name="share_message_template" translatable="false">https://play.google.com/store/apps/details?id=</string>
+    <string name="dummy_name">Mia Modi</string>
+    <string name="miya">Miya</string>
+    <string name="riya">Riya</string>
+    <string name="luliya">Luliya</string>
+    <string name="rehan">Rehan</string>
+    <string name="susmita">Susmita</string>
+    <string name="rahi">Rahi</string>
+    <string name="nirma">Nirma</string>
+    <string name="jashvi">Jashvi</string>
+    <string name="hely">Hely</string>
+    <string name="shruti">Shruti</string>
+    <string name="dhruvi">Dhruvi</string>
+    <string name="mamta">Mamta</string>
+    <string name="zeel">Zeel</string>
+    <string name="audio_live">Audio Live</string>
+    <string name="post">Post</string>
+    <string name="demo_host_center">Demo Host Center</string>
+    <string name="agency_center">Agency Center</string>
+    <string name="select_language">Select Language</string>
+    <string name="english">English</string>
+    <string name="explore">Explore</string>
+    <string name="party">Party</string>
+    <string name="my_features">My Features</string>
+    <string name="host_vip_privilege">Host &amp; VIP Privilege</string>
+    <string name="restart_the_app">Restart The App!</string>
+    <string name="restart">Restart</string>
+    <string name="version_"><u>"version "</u></string>
+    <string name="top_users">Top Users</string>
+    <string name="top_creators">Top Creators</string>
+    <string name="top_agency">Top Agency</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="get_premium_crown">GET PREMIUM CROWN</string>
+    <string name="get_extra_coins">GET EXTRA COINS</string>
+    <string name="get_all_level_access">GET ALL LEVEL ACCESS</string>
+    <string name="invalid_validity_period">Invalid validity period</string>
+    <string name="user_id">User ID</string>
+    <string name="you_ve_spent_s">"You’ve spent %s "</string>
+    <string name="you_have">"You have "</string>
+    <string name="referrals">" referrals"</string>
+    <string name="id_">"ID: "</string>
+    <string name="feed">Feed</string>
+    <string name="video">Video</string>
+    <string name="sent_a_gift_to">" Sent a gift to "</string>
+    <string name="announcement">"Announcement : "</string>
+    <string name="please_enter_valid_passcode">Please enter valid passcode</string>
+    <string name="passcode_length_invalid">Invalid passcode length</string>
+    <string name="_0">0</string>
+    <string name="error_missing_room_data">Missing Room Data</string>
+    <string name="error_invalid_room_data">Invalid Room Data</string>
+    <string name="dummy_noti_desc">Jems bond send a gift to Daizy sharma</string>
+    <string name="dummy_id">ID : 564321</string>
+    <string name="dummy_time">00:00</string>
+    <string name="cherry">Cherry</string>
+    <string name="level_1">Level 1</string>
+    <string name="hello">Hello</string>
+    <string name="dummy_comment">Who has been a millionaire?</string>
+    <string name="country">Country</string>
+    <string name="title1">Title 1</string>
+    <string name="incoming_video_call">Incoming Video Call</string>
+    <string name="upload_completed">Upload completed!</string>
+    <string name="image_file_does_not_exist">Image file does not exist.</string>
+    <string name="user_session_not_found">User session not found</string>
+    <string name="add">Add</string>
+    <string name="leave">Leave</string>
+    <string name="requested">Requested</string>
+    <string name="call_request_rejected">Call request rejected</string>
+    <string name="call_setup_failed">"Call setup failed: "</string>
+    <string name="invalid_chat_user">Invalid chat user</string>
+    <string name="you">You</string>
+    <string name="sent_a_gift_">sent a gift 🎁</string>
+    <string name="invalid_url">Invalid URL</string>
+    <string name="here_is_my_referral_code">"Here is My Referral Code "</string>
+    <string name="let_me_recommend_you_this_application">\nLet me recommend you this application\n\n</string>
+    <string name="unknown_user">Unknown User</string>
+    <string name="you_will_receive">"You will receive "</string>
+    <string name="_diamonds">" Diamonds"</string>
+    <string name="camera_not_ready">Camera not ready</string>
+    <string name="ar_is_starting_please_try_again">AR is starting… please try again.</string>
+    <string name="recording_started">Recording started.</string>
+    <string name="camera_is_not_available">Camera is not available.</string>
+    <string name="permission_rationale_upload">To pick and upload video from Gallery, storage permission is needed.</string>
+    <string name="unable_to_choose_video_for_upload">Unable to choose video for upload.</string>
+    <string name="sticker_item_is_missing">Sticker item is missing.</string>
+    <string name="audio_file_is_missing">Audio file is missing.</string>
+    <string name="could_not_load_audio">Could not load audio.</string>
+    <string name="selected_video_uri_is_missing">Selected video URI is missing.</string>
+    <string name="failed_to_prepare_video_for_upload">Failed to prepare video for upload.</string>
+    <string name="error_copying_file">Error copying file.</string>
+    <string name="failed_to_create_directory">Failed to create directory.</string>
+    <string name="upload_failed_">"Upload failed: "</string>
+    <string name="uploading">Uploading…</string>
+    <string name="public_">Public</string>
+    <string name="unknown_title">Unknown Title</string>
+    <string name="unknown_singer">Unknown Singer</string>
+    <string name="connecting">Connecting..</string>
+    <string name="invalid_host_data">Invalid host data</string>
+    <string name="failed_to_retrieve_hashtags">Failed to retrieve hashtags.</string>
+    <string name="withdraw_r_coin">Withdraw R-coin:</string>
+    <string name="withdrawable_coins">Withdrawable coins</string>
+    <string name="enter_details">Enter details</string>
+    <string name="dummy_lorem">Lorem Ipsum is simply dummy text of the printing and apppp typesetting industry. Lorem Ipsum has been the...</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="you_already_referred">You Already Referred</string>
+    <string name="flash">Flash</string>
+    <string name="id_card_photo">ID Card Photo</string>
+    <string name="you_ve_spent_0_rcoins">You’ve spent 0 Rcoins</string>
+    <string name="dummy_chat">Hey, how was going?</string>
+    <string name="effect">Effect</string>
+    <string name="host">Host</string>
+    <string name="dummy_room_name">Top Master Party Group</string>
+    <string name="payment_gateway">Payment Gateway</string>
+    <string name="bank">Bank</string>
+    <string name="dummy_song">Little do you know</string>
+    <string name="ticket_title">Ticket Title</string>
+    <string name="testing_ticket">Testing Ticket</string>
+    <string name="type_something">Type Something...</string>
+    <string name="bye">Bye</string>
+    <string name="thank_you">Bye</string>
+    <string name="welcome">Bye</string>
+    <string name="paypal">Paypal</string>
+    <string name="razor_pay">Razor Pay</string>
+    <string name="cashfree">Cash Free</string>
+    <string name="paystack">PayStack</string>
+    <string name="flutterwave">FlutterWave</string>
+    <string name="currency_not_supported">Currency Not Supported</string>
+    <string name="my_music">My Music</string>
+    <string name="add_music">Add Music</string>
+    <string name="demo_bd_center">Demo BD Center</string>
+    <string name="bd_center">BD Center</string>
+    <string name="become_host">Become Host</string>
+
+
+    <string-array name="fake_times">
+        <item>Just now</item>
+        <item>A moment ago</item>
+        <item>5 mins ago</item>
+        <item>About an hour ago</item>
+        <item>1 hour ago</item>
+        <item>Earlier today</item>
+        <item>Today</item>
+        <item>Yesterday</item>
+        <item>The other day</item>
+        <item>3 days ago</item>
+        <item>Last week</item>
+        <item>A few days ago</item>
+        <item>2 weeks ago</item>
+        <item>Last month</item>
+        <item>Some time ago</item>
+        <item>A while ago</item>
+        <item>Long ag</item>
+    </string-array>
+
+    <string-array name="fake_chat_sender">
+        <item>Hey! How\'s it going?</item>
+        <item>I\'m planning to watch a movie tonight.</item>
+        <item>What do you think about the latest news?</item>
+        <item>I\'m working on a new project at work.</item>
+        <item>Want to grab a coffee later?</item>
+        <item>Just got back from a run, feeling great!</item>
+        <item>Do you have any book recommendations?</item>
+        <item>How was your weekend?</item>
+        <item>I\'m thinking of taking a vacation next month.</item>
+        <item>Have you tried the new restaurant downtown?</item>
+        <item>What are you up to today?</item>
+        <item>Just finished a great book, can\'t wait to tell you about it.</item>
+        <item>Got any plans for the evening?</item>
+        <item>I\'m thinking about learning a new language.</item>
+        <item>Have you seen the latest episode of the show?</item>
+        <item>Do you like the new album that came out?</item>
+        <item>I\'ve been really into podcasts lately.</item>
+        <item>What are your thoughts on the new gadget?</item>
+        <item>I\'m planning to start a blog.</item>
+        <item>What\'s your favorite hobby?</item>
+        <item>How do you stay motivated?</item>
+        <item>Any tips for productivity?</item>
+        <item>What do you do to relax?</item>
+        <item>How do you handle stress?</item>
+        <item>What inspires you?</item>
+    </string-array>
+
+    <string-array name="fake_chat_receiver">
+        <item>I\'m good, how about you?</item>
+        <item>That sounds fun! Which movie?</item>
+        <item>I\'m not sure, I haven\'t been following the news much.</item>
+        <item>Really? What\'s the project about?</item>
+        <item>Sure, I\'d love that!</item>
+        <item>Wow, good for you! I need to get back into exercising.</item>
+        <item>I recently read a great thriller.</item>
+        <item>It was relaxing, didn\'t do much.</item>
+        <item>That sounds awesome! Where are you planning to go?</item>
+        <item>No, not yet. Is it good?</item>
+        <item>Just working from home, you?</item>
+        <item>That sounds interesting, tell me more!</item>
+        <item>Not really, just taking it easy.</item>
+        <item>That\'s cool! Which language are you interested in?</item>
+        <item>Yes, it was amazing! Can\'t wait for the next one.</item>
+        <item>I haven\'t listened to it yet, any good tracks?</item>
+        <item>Same here, they\'ve been quite informative.</item>
+        <item>I\'m thinking of getting one too. What features do you like?</item>
+        <item>That\'s exciting! What will you write about?</item>
+        <item>I enjoy painting and reading.</item>
+        <item>I set small goals to keep myself going.</item>
+        <item>I find making to-do lists helpful.</item>
+        <item>Watching a movie or reading a book.</item>
+        <item>I try to meditate or go for a walk.</item>
+        <item>Nature and art are my biggest inspirations.</item>
+    </string-array>
+
+    <string-array name="lightening_contrast_options">
+        <item>Low</item>
+        <item>Normal</item>
+        <item>High</item>
+    </string-array>
+
+    <string-array name="fake_messages">
+        <item>Hi there! 👋</item>
+        <item>Loved your profile!</item>
+        <item>New here—say hello!</item>
+        <item>Up for a quick chat?</item>
+        <item>Hey! 😊</item>
+        <item>How’s your day going?</item>
+        <item>You seem interesting 👀</item>
+        <item>What brings you here?</item>
+        <item>Nice to meet you! 🙌</item>
+        <item>Hello stranger 😄</item>
+        <item>Coffee or tea person? ☕🍵</item>
+        <item>This app just got better 😉</item>
+        <item>So… what’s your story?</item>
+        <item>Hey hey! ✨</item>
+        <item>Looking forward to chatting!</item>
+        <item>You have good vibes 🌟</item>
+        <item>Hi! Wanna connect?</item>
+        <item>Glad we matched 😍</item>
+        <item>Hey, how’s life treating you?</item>
+        <item>Big smile for you 😁</item>
+        <item>You just popped up on my screen 👌</item>
+        <item>Is it me, or did we just become best friends? 😂</item>
+        <item>I was hoping we’d match 💫</item>
+        <item>You look like someone fun to talk to 😏</item>
+        <item>Here I am! What’s your excuse? 😜</item>
+        <item>Guess what? You’re my first message today 📩</item>
+        <item>Do you believe in coincidences or fate? ✨</item>
+        <item>I think you owe me a hello 😇</item>
+        <item>Not gonna lie, your profile stood out 🔥</item>
+        <item>Okay, your smile is contagious 😍</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

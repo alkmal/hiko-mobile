@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/popup_bg"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_50sdp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/airbnbcereal_w_md"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/exit_app_confirmation"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="7sp"
+                android:layout_marginBottom="2sp"
+                android:layout_marginTop="20sp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="5sp"
+                    android:fontFamily="@font/airbnbcereal_w_bd"
+                    android:background="@drawable/gray_strock_30"
+                    android:text="@string/cancel"
+                    android:textSize="16sp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/hintColor" />
+
+                <TextView
+                    android:id="@+id/btnContinue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_bg_radius_50"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingHorizontal="10sp"
+                    android:paddingVertical="10dp"
+                    android:textSize="16sp"
+                    android:layout_marginHorizontal="5sp"
+                    android:text="@string/exit_this_app"
+                    android:fontFamily="@font/airbnbcereal_w_bd"
+                    android:textColor="@color/white" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

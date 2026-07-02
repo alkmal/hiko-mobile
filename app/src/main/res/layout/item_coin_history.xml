@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/bg_itemhistory"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:background="@drawable/bg_14dp_white5">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="54sp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="@dimen/_7sdp"
+                android:src="@drawable/diamond" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/airbnbcereal_w_bd"
+                    android:text="@string/gift_received"
+                    android:textSize="15sp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/airbnbcereal_w_bd"
+                android:textSize="15sp"
+                android:text="@string/dummy_name"
+                android:textColor="@color/white_50" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/airbnbcereal_w_md"
+                android:text="23/12/1019   04:55 PM"
+                android:textColor="@color/history_date"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/airbnbcereal_w_bd"
+            android:paddingHorizontal="15sp"
+            android:paddingVertical="7sp"
+            android:text="+23000"
+            android:textColor="@color/textColor"
+            android:textSize="15sp" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutDirection="locale"
+        android:textDirection="locale"
+        android:layout_marginHorizontal="7dp">
+
+        <FrameLayout
+            android:id="@+id/layProfile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:gravity="center">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_rawRes="@raw/gradient_circle_border"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"/>
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="7dp"
+                android:visibility="visible"
+                android:scaleType="centerCrop" />
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvRoomName"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            android:fadingEdge="horizontal"
+            android:requiresFadingEdge="horizontal"
+            android:fadingEdgeLength="16dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/airbnbcereal_w_lt"
+            android:singleLine="true"
+            android:textSize="13dp"
+            android:layout_below="@id/layProfile"
+            android:text="Quick Join"/>
+
+    </RelativeLayout>
+</layout>

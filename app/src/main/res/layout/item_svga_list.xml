@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/entry_item_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/bg_10dp">
+
+                <ImageView
+                    android:id="@+id/svgImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/layImage"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/svgaName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/airbnbcereal_w_xbd"
+                android:includeFontPadding="false"
+                android:text="@string/super_star"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_10dp"
+                android:backgroundTint="#0FFFFFFF"
+                android:gravity="center"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="21dp"
+                    android:src="@drawable/diamond" />
+
+                <TextView
+                    android:id="@+id/priceDiamonds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="2dp"
+                    android:fontFamily="@font/airbnbcereal_w_md"
+                    android:includeFontPadding="false"
+                    android:text=" 99 Diamond"
+                    android:textColor="@color/yellow"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/validationTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/airbnbcereal_w_md"
+                    android:includeFontPadding="false"
+                    android:singleLine="true"
+                    android:text=" 99"
+                    android:textColor="@color/yellow"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnPurchase"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/dot_selected"
+                android:fontFamily="@font/airbnb_cereal_medium"
+                android:gravity="center"
+                android:paddingVertical="7dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="7dp"
+                android:text="@string/purchase"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_10sdp" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

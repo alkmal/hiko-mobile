@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">Введите название вашего приложения</string>
+
+
+    <string name="no_internet_connection">Нет подключения к Интернету</string>
+    <string name="back_online">Снова в сети</string>
+    <string name="we_are_under_maintenance_text">Мы находимся на техническом обслуживании</string>
+    <string name="dismiss">Увольнять</string>
+    <string name="you_are_blocked_by_admin_text">Вы заблокированы администратором</string>
+    <string name="cancel">Отмена</string>
+    <string name="you_are_logged_in_other_devices">Вы вошли в систему на других устройствах</string>
+    <string name="log_out">Выйти</string>
+    <string name="policy">Регистрируясь, вы соглашаетесь с нашими</string>
+    <string name="terms_amp_condition">Условия и положения</string>
+    <string name="and">и</string>
+    <string name="privacy_policy">политика конфиденциальности</string>
+    <string name="please_wait">Пожалуйста, подождите</string>
+    <string name="your_name">Ваше имя</string>
+    <string name="male">Мужской</string>
+    <string name="female">Женский</string>
+    <string name="select_your_age">Выберите свой возраст</string>
+    <string name="edit_profile">Редактировать профиль</string>
+    <string name="submit">Представлять на рассмотрение</string>
+    <string name="enter_your_name">Введите свое имя</string>
+    <string name="enter_username_first">Сначала введите имя пользователя</string>
+    <string name="select_your_gender">Выберите свой пол</string>
+    <string name="minimum_age_must_be_18_years">Минимальный возраст должен составлять 18 лет.</string>
+    <string name="connecting">Подключение…</string>
+    <string name="privacy_policy_text">политика конфиденциальности</string>
+    <string name="accept_privacy_policy">Мне 18+, и я прочитал(а) Политику конфиденциальности.</string>
+    <string name="deny">Отрицать</string>
+    <string name="accept">Принимать</string>
+    <string name="please_accept_privacy_policy">Чтобы продолжить, подтвердите, что вы ознакомились с Политикой конфиденциальности.</string>
+    <string name="exit_app_confirmation">Вы уверены, что хотите выйти из приложения?</string>
+    <string name="exit_this_app">Выйти из этого приложения</string>
+    <string name="fans">Фанаты</string>
+    <string name="my_diamonds">Мои бриллианты</string>
+    <string name="demo_host_center_text">Демонстрационный хост-центр</string>
+    <string name="demo_agency_center">Демонстрационный центр агентства</string>
+    <string name="host_request">Запрос хоста</string>
+    <string name="offline_recharge">Пополнение счета в автономном режиме</string>
+    <string name="my_posts">Мои сообщения</string>
+    <string name="my_relites">Мои Релиты</string>
+    <string name="store">Магазин</string>
+    <string name="free_coins">Бесплатные монеты</string>
+    <string name="become_vip">Станьте VIP-клиентом</string>
+    <string name="user_level">Уровень пользователя</string>
+    <string name="copied_successfully">Копирование успешно завершено</string>
+    <string name="id">"ИДЕНТИФИКАТОР:</string>
+    <string name="agency_center_text">Агентский центр</string>
+    <string name="host_center">Хост-центр</string>
+    <string name="ok">OKХОРОШО</string>
+    <string name="history">История</string>
+    <string name="recharge">Перезарядка</string>
+    <string name="my_diamond_balance">Моя алмазная монета</string>
+    <string name="enter_user_id">Введите идентификатор пользователя</string>
+    <string name="enter_diamonds">Введите Diamonds</string>
+    <string name="note">Примечание</string>
+    <string name="top_up">Пополнить</string>
+    <string name="user_not_found">Пользователь не найден</string>
+    <string name="please_verify_user_id">пожалуйста, подтвердите идентификатор пользователя</string>
+    <string name="enter_coin_value">Введите стоимость монеты</string>
+    <string name="invalid_coin_value">Неверная стоимость монеты</string>
+    <string name="insufficient_coins">Недостаточно монет</string>
+    <string name="send_successfully">Отправить успешно</string>
+    <string name="continue_text">Продолжать</string>
+    <string name="in_this_apk_all_data_are_only_for_demo_purpose">В этом APK все данные предназначены только для демонстрационных целей.</string>
+    <string name="deleted_successfully">Удалено успешно</string>
+    <string name="india">Индия</string>
+    <string name="we_will_take_immediately_action_for_this_user_thank_you">Мы немедленно примем меры в отношении этого пользователя. Спасибо.</string>
+    <string name="likes">Нравится</string>
+    <string name="comments">Комментарии</string>
+    <string name="report_user">Сообщить о пользователе</string>
+    <string name="blocked_successfully">Заблокировано успешно</string>
+    <string name="report_this_user">Сообщить об этом пользователе</string>
+    <string name="please_describe_your_issue_here">Пожалуйста, опишите вашу проблему здесь.</string>
+    <string name="unable_to_report">Невозможно сообщить..</string>
+    <string name="something_went_wrong_text">Что-то пошло не так</string>
+    <string name="block_this_user">Заблокировать этого пользователя</string>
+    <string name="yes">Да</string>
+    <string name="type_message_first">Сначала введите сообщение</string>
+    <string name="toast_cannot_retrieve_cropped_image">Невозможно получить обрезанное изображение</string>
+    <string name="toast_unexpected_error">Неожиданная ошибка</string>
+    <string name="call_ended">Вызов завершен!</string>
+    <string name="ringing">Звон</string>
+    <string name="we_will_take_immediately_action_for_this_user_n_thank_you">Мы немедленно примем меры в отношении этого пользователя. Спасибо.</string>
+    <string name="enter_valid_message">Введите корректное сообщение</string>
+    <string name="is_busy_with_someone_else">занят кем-то другим.</string>
+    <string name="discard_entire_video">Удалить все видео?</string>
+    <string name="if_you_go_back_now_you_will_lose_all_the_clips_added_to_your_video">Если вы вернетесь сейчас, вы потеряете все клипы, добавленные к вашему видео.</string>
+    <string name="discard_video">Удалить видео</string>
+    <string name="incoming_call">Входящий звонок…</string>
+    <string name="need_permissions">"Нужны разрешения"</string>
+    <string name="call_declined">Вызов отклонен</string>
+    <string name="rtc_stats_format">Скорость нисходящего потока: %.2f кбит/с%nСкорость потерь нисходящего потока: %.2f%% %nСкорость восходящего потока: %.2f кбит/с%nСкорость потерь восходящего потока: %.2f%%</string>
+    <string name="unfollow">Отписаться</string>
+    <string name="follow">Следовать</string>
+    <string name="unblock">Разблокировать</string>
+    <string name="block">Блокировать</string>
+    <string name="message">Сообщение</string>
+    <string name="message_delete_confirmation">Вы уверены, что хотите удалить это сообщение?</string>
+    <string name="following">Следующий</string>
+    <string name="my_fans">Мои фанаты</string>
+    <string name="image">Изображение</string>
+    <string name="choose_one">выберите один</string>
+    <string name="say_something">Скажите что-то…</string>
+    <string name="failed_to_load_videos">Не удалось загрузить видео.</string>
+    <string name="settings">Настройки</string>
+    <string name="notification">Уведомление</string>
+    <string name="have_an_issue">Есть проблема</string>
+    <string name="my_complains">Мои жалобы</string>
+    <string name="terms_of_service">Условия обслуживания</string>
+    <string name="about_us">О нас</string>
+    <string name="next">Следующий</string>
+    <string name="complaint_or_suggestion">Жалоба или предложение</string>
+    <string name="typing_somethings">Что-то печатаю…</string>
+    <string name="contact">Контакт</string>
+    <string name="enter_your_mobile_number_or_email">Введите номер вашего мобильного телефона или адрес электронной почты</string>
+    <string name="attach_your_image_or_screenshot">Прикрепите изображение или скриншот</string>
+    <string name="browse">Просматривать</string>
+    <string name="complain_send_successfully">Пожаловаться Отправить успешно</string>
+    <string name="please_enter_message">пожалуйста, введите сообщение</string>
+    <string name="please_enter_contact">пожалуйста, введите контакт</string>
+    <string name="my_tickets">Мои билеты</string>
+    <string name="open">Открыть</string>
+    <string name="ticket_details">Информация о билетах</string>
+    <string name="status">Статус</string>
+    <string name="close">ЗАКРЫВАТЬ</string>
+    <string name="_1_self_introduction">1. Самопрезентация</string>
+    <string name="name">Имя</string>
+    <string name="enter_name">Введите имя</string>
+    <string name="mobile_number">Номер мобильного телефона</string>
+    <string name="enter_mobile_number">Введите номер мобильного телефона</string>
+    <string name="Bio">Био</string>
+    <string name="_2_agency_code">2. Код агентства</string>
+    <string name="if_you_have">(Если у вас есть)</string>
+    <string name="_3_upload_photos">3. Загрузите фотографии</string>
+    <string name="personal_photo">Личное фото</string>
+    <string name="_4_bank_details">4. Банковские реквизиты</string>
+    <string name="enter_your_bank_details">Введите ваши банковские реквизиты</string>
+    <string name="admission_car">Входной вагон</string>
+    <string name="enter_bio_text">Войти в биографию</string>
+    <string name="select_personal_photo">Выбрать личное фото</string>
+    <string name="image_file_not_found">Файл изображения не найден</string>
+    <string name="host_request_send">Отправить запрос хоста</string>
+    <string name="try_after_some_time">Пожалуйста, попробуйте через некоторое время.</string>
+    <string name="avatar_frame">Рамка аватара</string>
+    <string name="super_star">Суперзвезда</string>
+    <string name="you_don_t_have_required_diamonds">У вас нет необходимых бриллиантов!</string>
+    <string name="diamond_star">Алмазная звезда</string>
+    <string name="stepping_in">Вступаем!</string>
+    <string name="free_diamonds">Бесплатные бриллианты</string>
+    <string name="method_1">Метод 1:</string>
+    <string name="method_2">Метод 2:</string>
+    <string name="your_refer_code">Ваш реферальный код:</string>
+    <string name="enter_referral_code_here">Введите реферальный код здесь</string>
+    <string name="you_have_2_referrals">У вас 2 реферала</string>
+    <string name="referral_code_copied">Реферальный код скопирован!</string>
+    <string name="enter_refer_code">Введите реферальный код</string>
+    <string name="refereed_successfully">Рецензирован успешно</string>
+    <string name="generic_error">Что-то пошло не так. Попробуйте ещё раз позже.</string>
+    <string name="earned_by_user">Награда предоставлена</string>
+    <string name="invite_desc">Пригласите своих друзей! За каждую выплату приглашенным друзьям вы и ваш друг получите</string>
+    <string name="vip_plan">VIP-план</string>
+    <string name="become_vip_and_get_many_privileges">Станьте VIP и получите множество привилегий</string>
+    <string name="vip_privileges">VIP-привилегии</string>
+    <string name="get_vip_to_access_all_function">Получите VIP-доступ ко всем функциям</string>
+    <string name="vip_package">VIP-пакет</string>
+    <string name="get_now">Получить сейчас</string>
+    <string name="first_select_the_plan">Сначала выберите план.</string>
+    <string name="credit_debit_card">Кредитная/дебетовая карта</string>
+    <string name="google_play">Google Play</string>
+    <string name="hot">Горячий</string>
+    <string name="your_level">Ваш уровень</string>
+    <string name="no_level_available">Уровень недоступен</string>
+    <string name="unknown">Неизвестный</string>
+    <string name="income">Доход</string>
+    <string name="record">Записывать</string>
+    <string name="diamonds">Бриллианты</string>
+    <string name="outcome">Исход</string>
+    <string name="r_coins">R-монеты</string>
+    <string name="confirm">Подтверждать</string>
+    <string name="diamond_record">Бриллиантовый рекорд</string>
+    <string name="spending">Расходы</string>
+    <string name="converted_to_diamonds">преобразованы в алмазы</string>
+    <string name="diamond_purchase">Покупка бриллиантов</string>
+    <string name="you_have_called">Вы позвонили</string>
+    <string name="watching_ads">Просмотр рекламы</string>
+    <string name="login_bonus">бонус за вход</string>
+    <string name="referral_bonus">Бонус за рефералов</string>
+    <string name="cash_out">Выплата наличных</string>
+    <string name="svga_animation_purchased">Куплена анимация SVGA</string>
+    <string name="add_in_teenpatti_game">Добавить в игру Teenpatti</string>
+    <string name="purchased_avatar_frame">Купленная рамка Аватара</string>
+    <string name="coin_add_by_offline_recharge">Добавление монет путем офлайн-пополнения</string>
+    <string name="call_coin_received">Колл-монета</string>
+    <string name="lucy_gift_bonus">Бонус за подарок Люси</string>
+    <string name="add_in_roulette_game">Добавить в игру рулетку</string>
+    <string name="add_in_ferry_wheel_game">Добавить в игру «Колесо парома»</string>
+    <string name="convert_in_coin_seller_coin">Конвертировать в Монету Продавца Монет</string>
+    <string name="unknown_transaction">Неизвестная транзакция</string>
+    <string name="gift_broadcast_during_livestream_by_you">Трансляция подарков во время прямой трансляции от вас</string>
+    <string name="gift_received">Подарок получен</string>
+    <string name="gift_send_to">подарок отправить</string>
+    <string name="added_by_admin">Добавлено администратором</string>
+    <string name="reduce_by_admin">Уменьшить администратором</string>
+    <string name="_1">$11 доллар</string>
+    <string name="withdrawing_rcoins">Вывод RCoins</string>
+    <string name="convert_to_diamond">Конвертировать в Diamond</string>
+    <string name="what_is_coins">Что такое монеты?</string>
+    <string name="what_is_rcoin">1. Получая подарки, например, Lamborghini или Castle, вы сразу же получаете столько же монет, сколько стоил подарок в магазине подарков. 2. Монеты можно конвертировать как в алмазы, так и в наличные. 3. Доступный баланс монет + вывод.</string>
+    <string name="this_is_a_demo_version">Это демо-версия.</string>
+    <string name="payment_done">Оплата произведена</string>
+    <string name="coin_sellers_list">Список продавцов монет</string>
+    <string name="how_much_rcoins_convert_cash">Сколько Rcoins конвертируется в наличные?</string>
+    <string name="how_much_rcoins_convert_into_diamonds">Сколько Rcoins конвертируется в Diamonds?</string>
+    <string name="setting_error">Ошибка настройки</string>
+    <string name="minimum_amount_is">Минимальная сумма</string>
+    <string name="you_not_have_enough">У тебя недостаточно</string>
+    <string name="you_are_not_able_to_cashout_at_your_level">Вы не можете вывести средства на своем уровне</string>
+    <string name="your">Твой</string>
+    <string name="successfully_converted_into">Успешно преобразовано в</string>
+    <string name="conversion_failed">Конвертация не удалась</string>
+    <string name="redeem_your_coins">Обменяйте свои монеты</string>
+    <string name="enter_coins_to_withdraw">Введите монеты для вывода</string>
+    <string name="your_redeem_history">Ваша история погашения</string>
+    <string name="pending">В ожидании</string>
+    <string name="r_coin_convert">Конвертировать R-Coin</string>
+    <string name="how_much_coins_convert_into_diamonds">Сколько монет конвертируется в бриллианты?</string>
+    <string name="enter_coins">Введите монеты</string>
+    <string name="convert_to_diamonds">Конвертировать в бриллианты</string>
+    <string name="whatsapp_not_installed">WhatsApp не установлен</string>
+    <string name="invalid_whatsapp_number">Неверный номер WhatsApp</string>
+    <string name="withdrawable_rcoins">Выводимые Rcoins</string>
+    <string name="no_payment_method_found">Способ оплаты не найден</string>
+    <string name="insufficient">Недостаточный</string>
+    <string name="please_enter_your_details">Пожалуйста, введите ваши данные</string>
+    <string name="redeem_request_sent_successfully">Запрос на погашение успешно отправлен</string>
+    <string name="enter_your_upi_details">Введите данные вашего UPI</string>
+    <string name="enter_your_paytm_details">Введите данные вашего Paytm</string>
+    <string name="enter_your_bank_account_details">Введите данные вашего банковского счета</string>
+    <string name="enter_your_bybit_details">Введите данные Bybit</string>
+    <string name="purchased">Куплено</string>
+    <string name="go_live">В эфир</string>
+    <string name="song_hint">Нажмите, чтобы выбрать песню.</string>
+    <string name="timer_hint">Чтобы отменить таймер до его запуска, нажмите здесь.</string>
+    <string name="duration">Продолжительность</string>
+    <string name="mmss">0:00</string>
+    <string name="welcome_to_join_the_live_any_content_related_to_porn_violence_gambling_illegal_dealing_will_be_banned">Добро пожаловать на трансляцию. Любой контент, связанный с порнографией, насилием, азартными играми и незаконным оборотом, будет запрещён.</string>
+    <string name="enter_a_room">вошел в комнату</string>
+    <string name="reacted">Отреагировал</string>
+    <string name="browse_file_title">Просмотреть файл</string>
+    <string name="please_enter_room_title">Пожалуйста, введите название комнаты</string>
+    <string name="please_select_room_image">Пожалуйста, выберите изображение комнаты</string>
+    <string name="you_are_block_from_admin_to_go_live">Вы заблокированы администратором для выхода в эфир</string>
+    <string name="start_audio_live">Начать аудио в прямом эфире</string>
+    <string name="take_picture">Сфотографировать</string>
+    <string name="recorder_error_in_progress">Для этого сначала остановите запись.</string>
+    <string name="recorder_error_maxed_out">Вы уже записали на максимальную продолжительность.</string>
+    <string name="audio_from_clip">Пользовательский звук из клипа.</string>
+    <string name="recorder_error_no_clips">Чтобы продолжить, сначала запишите свой клип.</string>
+    <string name="message_song_select">После начала записи выбрать песню невозможно.</string>
+    <string name="message_song_change">После начала записи сменить песню невозможно.</string>
+    <string name="you_need_storage_permission">Вам необходимо разрешение на хранение</string>
+    <string name="filter">Выбрать фильтр</string>
+    <string name="you_cannot_upload_video_above_30_mb">Вы не можете загружать видео размером более 30 МБ!!!</string>
+    <string name="choose_sticker">Выбрать наклейку</string>
+    <string name="timer">Таймер</string>
+    <string name="sticker">Наклейка</string>
+    <string name="filters">Фильтры</string>
+    <string name="preview">Предварительный просмотр</string>
+    <string name="flip">Подбросить</string>
+    <string name="speed">Скорость</string>
+    <string name="notification_channel_id">по умолчанию</string>
+    <string name="notification_download_title">Загрузить файл…</string>
+    <string name="notification_download_description">Не должно длиться дольше нескольких секунд.</string>
+    <string name="announcement_welcome_to_room">Объявление: Добро пожаловать в комнату</string>
+    <string name="all">ВСЕ</string>
+    <string name="send">Отправлять</string>
+    <string name="followers">Последователи</string>
+    <string name="shorts">Шорты</string>
+    <string name="posts">Посты</string>
+    <string name="creator">Создатель</string>
+    <string name="agency">Агентство</string>
+    <string name="coin_seller">Продавец монет</string>
+    <string name="invite">Приглашать</string>
+    <string name="live">Жить</string>
+    <string name="public_text">Публичный</string>
+    <string name="private_text">Частный</string>
+    <string name="welcome_to_the_party">Добро пожаловать на вечеринку</string>
+    <string name="games">Игры</string>
+    <string name="keep">Держать</string>
+    <string name="exit_text">Выход</string>
+    <string name="you_not_have_enough_diamonds_to_send_gift">У вас недостаточно алмазов для отправки подарка</string>
+    <string name="sent_a_gift">Отправлен подарок</string>
+    <string name="you_are_blocked_by_host">Вы заблокированы хостом</string>
+    <string name="you_cannot_upload_video_above_30_mb_text">Вы не можете загружать видео размером более 30 МБ!!!</string>
+    <string name="select_song">Выбрать песню</string>
+    <string name="select_filter">Выбрать фильтр</string>
+    <string name="upload_relite">Загрузить Relite</string>
+    <string name="add_caption_with_hashtags_and_mentions">Добавить подпись с хэштегами и упоминаниями</string>
+    <string name="location">Расположение</string>
+    <string name="show_to">Показать</string>
+    <string name="allow_comments">Разрешить комментарии</string>
+    <string name="upload_post">Загрузить пост</string>
+    <string name="who_show_this_post_to">Кому показать этот пост?</string>
+    <string name="only_followers">Только подписчики</string>
+    <string name="select_image_first">Сначала выберите изображение</string>
+    <string name="error_opening_gallery">Ошибка открытия галереи</string>
+    <string name="permission_denied_message">В доступе отказано....\n</string>
+    <string name="error_selecting_image">Ошибка выбора изображения</string>
+    <string name="location_not_set">Местоположение не установлено</string>
+    <string name="count_clips">%s клипы</string>
+    <string name="my_followers">Мои подписчики</string>
+    <string name="add_a_comment">Добавить комментарий…</string>
+    <string name="send_a_gift_to">Отправлен подарок</string>
+    <string name="room_image_updated">Изображение комнаты обновлено</string>
+    <string name="sure_you_want_to_stand_up">Вы уверены, что хотите встать?</string>
+    <string name="there_s_no_user_to_invite_on_mic">Нет пользователя, которого можно пригласить на микрофон.</string>
+    <string name="remove_seat">Снять сиденье</string>
+    <string name="kick_out">Выгнать</string>
+    <string name="unmute_mic">Включить микрофон</string>
+    <string name="mute_mic">Отключить микрофон</string>
+    <string name="remove_mic">Удалить микрофон</string>
+    <string name="invite_mic">Пригласить микрофон</string>
+    <string name="take_the_mic">Возьми микрофон</string>
+    <string name="give_the_mic">Дайте микрофон</string>
+    <string name="lock_the_mic">Заблокируйте микрофон</string>
+    <string name="mute_the_mic">Отключить микрофон</string>
+    <string name="unmute">Включить звук</string>
+    <string name="unlock">Разблокировать</string>
+    <string name="remove">Удалять</string>
+    <string name="your_live_session_end_by_admin_text">Ваш сеанс связи завершен администратором.</string>
+    <string name="end_live_video">Конец живого видео</string>
+    <string name="don_t_have_user_to_sent_a_gift_wait_for_user">Не нужно отправлять подарок пользователю, ждите пользователя</string>
+    <string name="select_at_least_one_user">Выберите хотя бы одного пользователя</string>
+    <string name="room_settings">Настройки комнаты</string>
+    <string name="people">Люди</string>
+    <string name="copied_to_clipboard">Скопировано в буфер обмена</string>
+    <string name="room_name">Название комнаты</string>
+    <string name="enter_room_name">Введите название комнаты</string>
+    <string name="please_enter_room_name">Пожалуйста, введите название комнаты</string>
+    <string name="seat_mode">Режим сиденья</string>
+    <string name="_8_seat">8 мест</string>
+    <string name="use">Использовать</string>
+    <string name="_12_seat">12 мест</string>
+    <string name="_16_seat">16 мест</string>
+    <string name="seat_update">обновление сиденья</string>
+    <string name="room_welcome_message">Приветственное сообщение в номере</string>
+    <string name="enter_room_welcome_message">Введите приветственное сообщение в комнату</string>
+    <string name="please_enter_room_welcome_message">Пожалуйста, войдите в комнату. Приветственное сообщение.</string>
+    <string name="room_passcode">Код доступа к комнате</string>
+    <string name="enter_room_passcode">Введите код доступа к комнате</string>
+    <string name="change_background">Изменить фон</string>
+    <string name="live_ended">Живой завершен</string>
+    <string name="joined_users">Присоединившиеся пользователи</string>
+    <string name="live_duration">Продолжительность живого выступления</string>
+    <string name="received_gifts">Полученные подарки</string>
+    <string name="increased_fans">Увеличено количество поклонников</string>
+    <string name="rcoins">Rcoins</string>
+    <string name="back_to_the_home">Возвращение домой</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_watch_live">В настоящее время вы находитесь в аудиокомнате. Пожалуйста, выйдите из комнаты и смотрите прямую трансляцию.</string>
+    <string name="s_live_has_ended">s live закончился.</string>
+    <string name="all_is_well_party">Все хорошо, вечеринка</string>
+    <string name="private_room">Отдельная комната</string>
+    <string name="_123456">123456</string>
+    <string name="enter_valid_passcode">Введите действительный код доступа</string>
+    <string name="enter_passcode">Введите код доступа</string>
+    <string name="decline">Отклонить</string>
+    <string name="audio_request_received_from">Получен аудиозапрос от</string>
+    <string name="please_choose_another_seat">Пожалуйста, выберите другое место</string>
+    <string name="this_seat_is_locked_by_host">Это место заблокировано хозяином.</string>
+    <string name="add_location">Добавить местоположение</string>
+    <string name="search_area_or_city">Поиск по району или городу</string>
+    <string name="manage_audio_volume">Управление громкостью звука</string>
+    <string name="video_volume_label">Громкость видео</string>
+    <string name="song_volume_label">Громкость песни</string>
+    <string name="failed_to_delete">Не удалось удалить</string>
+    <string name="error_try_again">Попробуйте еще раз</string>
+    <string name="solved">РЕШЕНО</string>
+    <string name="relites">Релит</string>
+    <string name="error_loading_plans">Ошибка загрузки планов</string>
+    <string name="billing_not_ready">Биллинг не готов</string>
+    <string name="purchase_error">Ошибка покупки</string>
+    <string name="payment_init_failed">Инициализация платежа не удалась</string>
+    <string name="purchase_canceled">Покупка отменена</string>
+    <string name="purchase_success">Покупка успешна</string>
+    <string name="purchase_failed">Покупка не удалась</string>
+    <string name="please_select_a_gift">Пожалуйста, выберите подарок</string>
+    <string name="please_select_at_least_one_user">Пожалуйста, выберите хотя бы одного пользователя.</string>
+    <string name="no_user_found">Пользователь не найден!</string>
+    <string name="notification_channel_name">по умолчанию</string>
+    <string name="audio_conversion_failed">Не удалось преобразовать аудио.</string>
+    <string name="no_message_available">Нет доступных сообщений</string>
+    <string name="no_date">Нет даты</string>
+    <string name="invalid_user_id">Неверный идентификатор пользователя</string>
+    <string name="user_has_been_blocked">Пользователь заблокирован</string>
+    <string name="user_data_is_not_available">Данные пользователя недоступны</string>
+    <string name="user_data_not_loaded">Данные пользователя не загружены</string>
+    <string name="cannot_load_video_preview">Невозможно загрузить предварительный просмотр видео.</string>
+    <string name="failed_to_process_video">Не удалось обработать видео.</string>
+    <string name="are_you_sure_you_want_to_delete_your_room">Вы уверены, что хотите удалить свою комнату?</string>
+    <string name="your_room_deleted_successfully">Ваша комната успешно удалена..</string>
+    <string name="you_are_not_able_to_post_at_your_level">Вы не можете публиковать сообщения на своем уровне.</string>
+    <string name="room_passcode_changed">Код доступа к комнате изменен.</string>
+    <string name="using">С использованием</string>
+    <string name="failed_to_logout_please_try_again">Не удалось выйти. Попробуйте ещё раз.</string>
+    <string name="link_not_available">Ссылка недоступна.</string>
+    <string name="we_will_take_immediate_action_thank_you">Мы немедленно примем меры. Спасибо.</string>
+    <string name="picture_capture_timeout_please_try_again">Время съёмки истекло. Попробуйте ещё раз.</string>
+    <string name="error_loading_image">Ошибка загрузки изображения</string>
+    <string name="no_image_selected">Изображение не выбрано</string>
+    <string name="error_processing_video">Ошибка обработки видео</string>
+    <string name="failed_to_capture_image">Не удалось сделать снимок.</string>
+    <string name="failed_to_save_image">Не удалось сохранить изображение.</string>
+    <string name="you_cant_unmute_your_self">Вы не можете включить себя.</string>
+    <string name="audio_file_missing">Аудиофайл отсутствует!</string>
+    <string name="video_file_missing">Видеофайл отсутствует!</string>
+    <string name="unexpected_error">Неожиданная ошибка:</string>
+    <string name="final_merge_failed">Окончательное слияние не удалось.</string>
+    <string name="video_merge_failed">Объединение видео не удалось.</string>
+    <string name="unblocked_successfully">Разблокировано успешно.</string>
+    <string name="unable_to_share_at_this_moment">В данный момент невозможно поделиться</string>
+    <string name="unexpected_error_occurred_please_try_again">Произошла непредвиденная ошибка. Попробуйте ещё раз.</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="transaction_failed">Транзакция не удалась</string>
+    <string name="delete_failed">Удаление не удалось:</string>
+    <string name="invalid_post">Неверный пост</string>
+    <string name="report_successful">Отчет успешен</string>
+    <string name="failed_to_upload_image">Не удалось загрузить изображение.</string>
+    <string name="failed_to_upload_image_please_try_again">Не удалось загрузить изображение. Попробуйте ещё раз.</string>
+    <string name="failed_to_load_data_please_try_again">Не удалось загрузить данные. Попробуйте ещё раз.</string>
+    <string name="comment_text_cannot_be_empty">Текст комментария не может быть пустым.</string>
+    <string name="failed_to_submit_comment_please_try_again">Не удалось отправить комментарий. Попробуйте ещё раз.</string>
+    <string name="invalid_video">Недопустимое видео</string>
+    <string name="failed_to_delete_video">Не удалось удалить видео.</string>
+    <string name="all_fields_required">Все поля обязательны для заполнения</string>
+    <string name="purchase_failed_please_try_again">Покупка не удалась. Попробуйте ещё раз.</string>
+    <string name="failed_to_send_request">Не удалось отправить запрос</string>
+    <string name="failed_to_start_live_stream">Не удалось начать прямую трансляцию.</string>
+    <string name="live_user_data_is_missing">Данные о пользователях в реальном времени отсутствуют</string>
+    <string name="failed_to_delete_room">Не удалось удалить комнату</string>
+    <string name="update_failed">Обновление не удалось</string>
+    <string name="private_room_passcode">Код доступа к частной комнате</string>
+    <string name="here_s_the_private_passcode_for_the_room">Вот персональный код доступа к комнате:</string>
+    <string name="share_via">Поделиться через</string>
+    <string name="passcode_empty_error">Пожалуйста, введите действительный код доступа</string>
+    <string name="failed_to_update_passcode">Не удалось обновить код доступа.</string>
+    <string name="enter_new_room_passcode">Введите новый код доступа к комнате</string>
+    <string name="change_room_passcode">Изменить код доступа к комнате</string>
+    <string name="banned_list">Список запрещенных</string>
+    <string name="my_following">Мои подписчики</string>
+    <string name="please_enter_valid_input">Пожалуйста, введите корректные данные</string>
+    <string name="join_requests">Запросы на присоединение</string>
+    <string name="sorry_this_call_can_t_be_completed_right_now">Извините, в данный момент невозможно завершить звонок.</string>
+    <string name="watch_video_now">Посмотрите видео сейчас</string>
+    <string name="you_exceed_your_ad_limit">Вы превысили лимит рекламы.</string>
+    <string name="search_people">Поиск людей..</string>
+    <string name="public_room">Общественная комната</string>
+    <string name="my_profile">Мой профиль</string>
+    <string name="edit_self">Редактировать себя</string>
+    <string name="blocked_user">Заблокированный пользователь</string>
+    <string name="my_wallet">Мой кошелек</string>
+    <string name="select_age">Выберите возраст</string>
+    <string name="save_changes">Сохранить изменения</string>
+    <string name="enter_your_bio">Введите свою биографию</string>
+    <string name="enter_bio_here">Введите биографию здесь..</string>
+    <string name="hey_there">Привет!</string>
+    <string name="follow_back">Следовать обратно</string>
+    <string name="purchase">Покупка</string>
+    <string name="select">Выбирать</string>
+    <string name="selected">Выбранный</string>
+    <string name="method_2_desc">Пригласите друзей присоединиться, используя ваш реферальный код. Получайте вознаграждения за каждое использование кода!</string>
+    <string name="method_1_desc">Посмотрите короткий рекламный ролик и мгновенно получите бесплатные алмазы! Просто нажмите кнопку ниже, чтобы начать просмотр и получить награду.</string>
+    <string name="pay_now">Оплатить сейчас</string>
+    <string name="select_room_image">Выберите изображение комнаты</string>
+    <string name="room_description">Описание номера</string>
+    <string name="room_type">Тип номера</string>
+    <string name="upload_image_">Загрузить изображение</string>
+    <string name="enter_your_room_name">Введите название вашей комнаты</string>
+    <string name="enter_your_room_passcode">Введите код доступа к вашей комнате</string>
+    <string name="enter_your_room_description">Введите описание вашей комнаты</string>
+    <string name="enter_note_here">Введите примечание здесь..</string>
+    <string name="add_caption">Добавить подпись</string>
+    <string name="attachments">Вложения</string>
+    <string name="enter_details_here">Введите данные здесь…</string>
+    <string name="my_income">Мой доход</string>
+    <string name="best_plan">Лучший план</string>
+    <string name="best_recharge_plan">Лучший план пополнения счета</string>
+    <string name="purchase_recharge_plan">План пополнения счета</string>
+    <string name="available_my_r_coins">Доступные мои R-Coins</string>
+    <string name="payment">Оплата</string>
+    <string name="select_payment_option">Выберите способ оплаты:</string>
+    <string name="select_record_duration">Выберите продолжительность записи:</string>
+    <string name="start_date_">Дата начала:</string>
+    <string name="end_date_">Дата окончания:</string>
+    <string name="demo_purpose">В этом APK все данные предназначены только для демонстрационных целей.</string>
+    <string name="no_data_text">Нечего показать</string>
+    <string name="vip">VIP</string>
+    <string name="payment_option">Вариант оплаты:</string>
+    <string name="withdrawable_r_coins">Выводимые R-Coins:</string>
+    <string name="please_select_a_payment_option">Пожалуйста, выберите способ оплаты</string>
+    <string name="select_option">Выберите вариант:</string>
+    <string name="bd">BDБД</string>
+    <string name="version">Версия:</string>
+    <string name="upload">Загрузить</string>
+    <string name="no_one_joined">Никто не присоединился</string>
+    <string name="blocked_list">Список заблокированных</string>
+    <string name="room_close">Комната закрыта</string>
+    <string name="common_bio">Изучение связей, а не только профилей.</string>
+    <string name="reactions">Реакции</string>
+    <string name="delete_confirmation_text">Вы уверены, что хотите удалить? Это действие не может быть отменено.</string>
+    <string name="confirm_deletion">Подтвердить удаление</string>
+    <string name="confirm_stand_up">Подтвердите стендап</string>
+    <string name="delete_post_confirmation">Вы уверены, что хотите удалить этот пост?</string>
+    <string name="delete_relite_confirmation">Вы уверены, что хотите удалить этот Relite?</string>
+    <string name="delete">Удалить</string>
+    <string name="demo_agency">Демонстрационное агентство</string>
+    <string name="exposure">Контакт</string>
+    <string name="smoothness">Гладкость</string>
+    <string name="redness">Покраснение</string>
+    <string name="sharpness">Резкость</string>
+    <string name="ar_effects">Эффекты дополненной реальности</string>
+    <string name="calling">Звонок</string>
+    <string name="no_comments_yet_be_the_first_to_say_something">Комментариев пока нет. Оставьте свой отзыв первым!</string>
+    <string name="no_likes_yet_tap_to_spread_some_love">Пока нет лайков. Нажмите ❤️, чтобы поделиться любовью!</string>
+    <string name="finding_reasons_to_smile_everywhere_i_go_and_sharing_that_happiness_with_the_world">Нахожу причины улыбаться везде, куда бы я ни пошел, и делюсь этим счастьем со всем миром.</string>
+    <string name="okay">Хорошо</string>
+    <string name="please_wait_for_a_spot_to_open">Пожалуйста, подождите, пока освободится место.</string>
+    <string name="all_seats_are_taken">Все места заняты</string>
+    <string name="alex_sierra">#VALUE!</string>
+    <string name="request_sent">Запрос отправлен</string>
+    <string name="join">Присоединиться</string>
+    <string name="video_call_gift">Подарок за видеозвонок</string>
+    <string name="chat_gift">Подарок в чате</string>
+    <string name="uploading_">Загрузка...</string>
+    <string name="please_try_after_some_time">Пожалуйста, попробуйте через некоторое время.</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_make_call">Похоже, вы сейчас находитесь в аудиокомнате. Пожалуйста, выйдите из неё и позвоните.</string>
+    <string name="notification_permission_denied">В разрешении на уведомление отказано</string>
+    <string name="you_have_to_enable_it_from_settings">Эту функцию необходимо включить в настройках.</string>
+    <string name="open_settings">Открыть настройки</string>
+    <string name="cannot_unmute_user">Невозможно включить звук пользователя</string>
+    <string name="this_user_has_muted_themselves_only_they_can_unmute">Этот пользователь отключил свой микрофон. Включить микрофон может только он сам.</string>
+    <string name="you_are_not_able_to_live_at_your_level">Вы не способны жить на своем уровне.</string>
+    <string name="conversion_successful">Конвертация прошла успешно</string>
+    <string name="screen_overlay_permission_needed">Требуется разрешение на наложение экрана</string>
+    <string name="enable_display_over_other_apps_from_system_settings">Включите функцию «Отображать поверх других приложений» в настройках системы.</string>
+    <string name="you_are_vip_now">Теперь вы VIP</string>
+    <string name="restart_app">Перезапустить приложение</string>
+    <string name="this_seat_is_reserved">Это место зарезервировано</string>
+    <string name="do_you_really_want_to_log_out">Вы действительно хотите выйти? Вам нужно будет снова войти в систему, чтобы получить доступ к своей учётной записи.</string>
+    <string name="notification_permission_granted">Разрешение на уведомление предоставлено</string>
+    <string name="verified">Проверено</string>
+    <string name="no_one_has_requested">Никто не запрашивал</string>
+    <string name="user_data_not_found_please_login_again">Данные пользователя не найдены. Пожалуйста, войдите снова.</string>
+    <string name="update_failed_">Обновление не удалось:</string>
+    <string name="dummy_name">Миа Малкова</string>
+    <string name="miya">Мия</string>
+    <string name="riya">Рия</string>
+    <string name="luliya">Лулия</string>
+    <string name="rehan">Рехан</string>
+    <string name="susmita">Сусмита</string>
+    <string name="rahi">Рахи</string>
+    <string name="nirma">Нирма</string>
+    <string name="jashvi">Джашви</string>
+    <string name="hely">Хели</string>
+    <string name="shruti">Шрути</string>
+    <string name="dhruvi">Дхруви</string>
+    <string name="mamta">Мамта</string>
+    <string name="zeel">Зил</string>
+    <string name="audio_live">Аудио в прямом эфире</string>
+    <string name="post">Почта</string>
+    <string name="demo_host_center">Демонстрационный хост-центр</string>
+    <string name="agency_center">Агентский центр</string>
+    <string name="select_language">Выберите язык</string>
+    <string name="english">Английский</string>
+    <string name="explore">Исследовать</string>
+    <string name="party">Вечеринка</string>
+    <string name="my_features">Мои функции</string>
+    <string name="host_vip_privilege">Права хоста и VIP</string>
+    <string name="restart_the_app">Перезапустите приложение!</string>
+    <string name="restart">Перезапуск</string>
+    <string name="version_">"версия "</string>
+    <string name="top_users">Топ пользователи</string>
+    <string name="top_creators">Топ создатели</string>
+    <string name="top_agency">Топ агентство</string>
+    <string name="daily">Ежедневно</string>
+    <string name="weekly">Еженедельно</string>
+    <string name="monthly">Ежемесячно</string>
+    <string name="get_premium_crown">ПОЛУЧИТЬ ПРЕМИУМ КОРОНУ</string>
+    <string name="get_extra_coins">ПОЛУЧИТЬ ДОПОЛНИТЕЛЬНЫЕ МОНЕТЫ</string>
+    <string name="get_all_level_access">ПОЛУЧИТЬ ДОСТУП КО ВСЕМ УРОВНЯМ</string>
+    <string name="invalid_validity_period">Недопустимый срок действия</string>
+    <string name="user_id">ID пользователя</string>
+    <string name="you_ve_spent_s">"Вы потратили %s "</string>
+    <string name="you_have">"У вас есть "</string>
+    <string name="referrals">" рефералов"</string>
+    <string name="id_">ID: </string>
+
+    <string name="feed">Лента</string>
+    <string name="video">Видео</string>
+    <string name="sent_a_gift_to">" Отправил подарок "</string>
+    <string name="announcement">"Объявление: "</string>
+    <string name="please_enter_valid_passcode">Пожалуйста, введите действующий код доступа</string>
+    <string name="passcode_length_invalid">Неверная длина кода доступа</string>
+    <string name="_0">0</string>
+    <string name="error_missing_room_data">Отсутствуют данные комнаты</string>
+    <string name="error_invalid_room_data">Неверные данные комнаты</string>
+    <string name="dummy_noti_desc">Джеймс Бонд отправил подарок Дейзи Шарме</string>
+    <string name="dummy_id">ID : 564321</string>
+    <string name="dummy_time">00:00</string>
+    <string name="cherry">Вишня</string>
+    <string name="level_1">Уровень 1</string>
+    <string name="hello">Привет</string>
+    <string name="dummy_comment">Кто стал миллионером?</string>
+    <string name="country">Страна</string>
+    <string name="title1">Заголовок 1</string>
+    <string name="incoming_video_call">Входящий видеозвонок</string>
+    <string name="upload_completed">Загрузка завершена!</string>
+    <string name="image_file_does_not_exist">Файл изображения не существует.</string>
+    <string name="user_session_not_found">Сеанс пользователя не найден</string>
+    <string name="add">Добавить</string>
+    <string name="leave">Выйти</string>
+    <string name="requested">Запрошено</string>
+    <string name="call_request_rejected">Запрос на звонок отклонён</string>
+    <string name="call_setup_failed">"Не удалось настроить звонок: "</string>
+    <string name="invalid_chat_user">Недопустимый пользователь чата</string>
+    <string name="you">Ты</string>
+    <string name="sent_a_gift_">отправил подарок 🎁</string>
+    <string name="invalid_url">Неверный URL-адрес</string>
+    <string name="here_is_my_referral_code">«Вот мой реферальный код»</string>
+    <string name="let_me_recommend_you_this_application">\nПозвольте мне порекомендовать вам это приложение\n\n</string>
+    <string name="unknown_user">Неизвестный пользователь</string>
+    <string name="you_will_receive">«Вы получите»</string>
+    <string name="_diamonds">"Бриллианты"</string>
+    <string name="camera_not_ready">Камера не готова</string>
+    <string name="ar_is_starting_please_try_again">AR запускается… попробуйте еще раз.</string>
+    <string name="recording_started">Запись началась.</string>
+    <string name="camera_is_not_available">Камера недоступна.</string>
+    <string name="permission_rationale_upload">Для выбора и загрузки видео из Галереи требуется разрешение на хранение.</string>
+    <string name="unable_to_choose_video_for_upload">Невозможно выбрать видео для загрузки.</string>
+    <string name="sticker_item_is_missing">Наклейка отсутствует.</string>
+    <string name="audio_file_is_missing">Аудиофайл отсутствует.</string>
+    <string name="could_not_load_audio">Не удалось загрузить аудио.</string>
+    <string name="selected_video_uri_is_missing">Отсутствует URI выбранного видео.</string>
+    <string name="failed_to_prepare_video_for_upload">Не удалось подготовить видео к загрузке.</string>
+    <string name="error_copying_file">Ошибка копирования файла.</string>
+    <string name="failed_to_create_directory">Не удалось создать каталог.</string>
+    <string name="upload_failed_">"Загрузка не удалась: "</string>
+    <string name="uploading">Загрузка...</string>
+    <string name="public_">Публичный</string>
+    <string name="unknown_title">Неизвестное название</string>
+    <string name="unknown_singer">Неизвестный певец</string>
+    <string name="invalid_host_data">Неверные данные хоста</string>
+    <string name="type_something">Напишите что-нибудь...</string>
+
+    <string-array name="fake_times">
+        <item>Только что</item>
+        <item>Мгновение назад</item>
+        <item>5 минут назад</item>
+        <item>Около часа назад</item>
+        <item>1 час назад</item>
+        <item>Ранее сегодня</item>
+        <item>Сегодня</item>
+        <item>Вчера</item>
+        <item>На днях</item>
+        <item>3 дня назад</item>
+        <item>На прошлой неделе</item>
+        <item>Несколько дней назад</item>
+        <item>2 недели назад</item>
+        <item>В прошлом месяце</item>
+        <item>Некоторое время назад</item>
+        <item>Некоторое время назад</item>
+        <item>Давно</item>
+    </string-array>
+
+    <string-array name="fake_chat_sender">
+        <item>Привет! Как дела?</item>
+        <item>Планирую сегодня вечером посмотреть фильм.</item>
+        <item>Что думаешь о последних новостях?</item>
+        <item>Я работаю над новым проектом на работе.</item>
+        <item>Хочешь сходить на кофе позже?</item>
+        <item>Только что вернулся с пробежки, чувствую себя отлично!</item>
+        <item>Можешь порекомендовать какую-нибудь книгу?</item>
+        <item>Как прошли выходные?</item>
+        <item>Думаю взять отпуск в следующем месяце.</item>
+        <item>Ты был в новом ресторане в центре?</item>
+        <item>Чем сегодня занимаешься?</item>
+        <item>Только что закончил отличную книгу, не могу дождаться, чтобы рассказать тебе о ней.</item>
+        <item>Есть планы на вечер?</item>
+        <item>Хочу начать учить новый язык.</item>
+        <item>Ты видел последнюю серию?</item>
+        <item>Тебе понравился новый альбом?</item>
+        <item>В последнее время я подсел на подкасты.</item>
+        <item>Что думаешь о новом гаджете?</item>
+        <item>Планирую начать вести блог.</item>
+        <item>Какое у тебя любимое хобби?</item>
+        <item>Как ты сохраняешь мотивацию?</item>
+        <item>Есть советы по продуктивности?</item>
+        <item>Что ты делаешь, чтобы расслабиться?</item>
+        <item>Как справляешься со стрессом?</item>
+        <item>Что тебя вдохновляет?</item>
+    </string-array>
+
+    <string-array name="fake_chat_receiver">
+        <item>У меня всё хорошо, а у тебя?</item>
+        <item>Звучит здорово! Какой фильм?</item>
+        <item>Не знаю, я особо не следил за новостями.</item>
+        <item>Серьёзно? О чём проект?</item>
+        <item>Конечно, с удовольствием!</item>
+        <item>Вау, молодец! Мне тоже надо вернуться к тренировкам.</item>
+        <item>Я недавно прочитал отличный триллер.</item>
+        <item>Было спокойно, особо ничего не делал.</item>
+        <item>Круто! Куда собираешься поехать?</item>
+        <item>Пока нет. А что, он хороший?</item>
+        <item>Работаю из дома, а ты?</item>
+        <item>Звучит интересно, расскажи подробнее!</item>
+        <item>Ничего особенного, просто отдыхаю.</item>
+        <item>Круто! Какой язык хочешь выучить?</item>
+        <item>Да, это было классно! Жду следующую серию.</item>
+        <item>Я ещё не слушал, есть хорошие треки?</item>
+        <item>То же самое, подкасты очень информативные.</item>
+        <item>Я тоже подумываю купить. Какие функции тебе нравятся?</item>
+        <item>Здорово! О чём будешь писать?</item>
+        <item>Я люблю рисовать и читать.</item>
+        <item>Ставлю себе маленькие цели, чтобы не терять мотивацию.</item>
+        <item>Мне помогает составление списка дел.</item>
+        <item>Смотрю фильм или читаю книгу.</item>
+        <item>Стараюсь медитировать или гулять.</item>
+        <item>Меня больше всего вдохновляют природа и искусство.</item>
+    </string-array>
+
+    <string-array name="lightening_contrast_options">
+        <item>Низкий</item>
+        <item>Обычный</item>
+        <item>Высокий</item>
+    </string-array>
+
+    <string-array name="fake_messages">
+        <item>Привет! 👋</item>
+        <item>Твой профиль понравился!</item>
+        <item>Я здесь новенький — скажи привет!</item>
+        <item>Хочешь немного поболтать?</item>
+        <item>Привет! 😊</item>
+        <item>Как проходит твой день?</item>
+        <item>Ты выглядишь интересно 👀</item>
+        <item>Что привело тебя сюда?</item>
+        <item>Приятно познакомиться! 🙌</item>
+        <item>Привет, незнакомец 😄</item>
+        <item>Ты любишь кофе или чай? ☕🍵</item>
+        <item>Это приложение стало лучше 😉</item>
+        <item>Итак… какая твоя история?</item>
+        <item>Привет-привет! ✨</item>
+        <item>Жду с нетерпением общения!</item>
+        <item>У тебя хорошие вибрации 🌟</item>
+        <item>Привет! Хочешь связаться?</item>
+        <item>Рад, что мы совпали 😍</item>
+        <item>Привет, как жизнь?</item>
+        <item>Большая улыбка для тебя 😁</item>
+        <item>Ты только что появился на моем экране 👌</item>
+        <item>Это я, или мы только что стали лучшими друзьями? 😂</item>
+        <item>Я надеялся, что мы совпадем 💫</item>
+        <item>Ты выглядишь как веселый собеседник 😏</item>
+        <item>Вот я! А твоя отговорка? 😜</item>
+        <item>Угадай что? Ты мое первое сообщение сегодня 📩</item>
+        <item>Веришь в совпадения или судьбу? ✨</item>
+        <item>Думаю, ты мне должен привет 😇</item>
+        <item>Не буду врать, твой профиль выделяется 🔥</item>
+        <item>Окей, твоя улыбка заразительна 😍</item>
+    </string-array>
+
+</resources>

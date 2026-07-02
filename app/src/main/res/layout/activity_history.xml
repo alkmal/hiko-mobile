@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="myLoder"
+            type="com.codder.ultimate.MyLoader" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_main_bg"
+        android:paddingBottom="@dimen/_30sdp"
+        tools:context=".profile.activity.HistoryActivity">
+
+        <LinearLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_history_datepicker"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="35dp"
+            android:paddingBottom="5sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:gravity="center_vertical"
+                android:layoutDirection="locale">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    style="@style/toolBarBackImageStyle"
+                    android:layout_marginStart="10sp"
+                    android:onClick="onClickBack" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitle"
+                    style="@style/toolBarTextStyle"
+                    android:layout_centerVertical="true"
+                    android:text="Diamond Coin" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:fontFamily="@font/airbnbcereal_w_bd"
+                android:paddingHorizontal="15sp"
+                android:text="@string/select_record_duration"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15sp"
+                android:paddingVertical="10sp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/airbnbcereal_w_md"
+                        android:text="@string/start_date_"
+                        android:textColor="@color/white_50"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/lytDate1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_12dp_stockwhite15"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="12sp"
+                        android:paddingVertical="12sp">
+
+                        <TextView
+                            android:id="@+id/tvDate1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/airbnbcereal_w_bk"
+                            android:text="DD/MM/YYYY"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/airbnbcereal_w_md"
+                        android:text="@string/end_date_"
+                        android:textColor="@color/white_50"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/lytDate2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5sp"
+                        android:background="@drawable/bg_12dp_stockwhite15"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="12sp"
+                        android:paddingVertical="12sp">
+
+                        <TextView
+                            android:id="@+id/tvDate2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/airbnbcereal_w_bk"
+                            android:text="DD/MM/YYYY"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layAllcoin"
+                android:layout_width="match_parent"
+                android:layout_height="86sp"
+                android:layout_marginHorizontal="15sp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:background="@drawable/bg_diamond_history"
+                android:gravity="center"
+                android:paddingVertical="15sp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvIncome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/airbnbcereal_w_bd"
+                        android:paddingHorizontal="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/airbnbcereal_w_md"
+                        android:text="@string/my_income"
+                        android:textColor="@color/white_50"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="52sp"
+                    android:background="@color/white_10" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvOutcome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/airbnbcereal_w_bd"
+                        android:paddingHorizontal="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/airbnbcereal_w_md"
+                        android:text="@string/spending"
+                        android:textColor="@color/white_50"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.scwang.smart.refresh.layout.SmartRefreshLayout
+                    android:id="@+id/swipe_refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.scwang.smart.refresh.header.ClassicsHeader
+                        android:id="@+id/header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        app:layout_srlSpinnerStyle="Translate"
+                        app:srlAccentColor="@color/pink"
+                        app:srlDrawableArrow="@drawable/swipe_arrow"
+                        app:srlEnableLastTime="false"
+                        app:srlEnablePullToCloseTwoLevel="false"
+                        app:srlEnableTwoLevel="false" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15sp"
+                        android:minHeight="0dp"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/item_coin_history" />
+
+                    <com.scwang.smart.refresh.footer.ClassicsFooter
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center" />
+
+                </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutNoData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="150dp"
+                    android:visibility="@{myLoder.noData?View.VISIBLE : View.GONE}">
+
+                    <include layout="@layout/lyt_no_data" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_no_internet" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:shimmer_base_color="@color/shimmerColor"
+            app:shimmer_colored="false"
+            app:shimmer_highlight_color="@color/white"
+            tools:visibility="@{myLoder.isFirstTimeLoading?View.VISIBLE:View.GONE}">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    layout="@layout/shimmer_activity_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true" />
+
+            </RelativeLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+    </RelativeLayout>
+
+</layout>

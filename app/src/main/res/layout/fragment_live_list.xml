@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.codder.ultimate.modelclass.LiveListViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragments.LiveListFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:padding="@dimen/_5sdp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivSearch"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/ivProfile"
+                    android:padding="10dp"
+                    android:src="@drawable/search"
+                    app:tint="@color/white" />
+
+                <com.codder.ultimate.utils.UserProfileImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:src="@drawable/bg_gradient_round" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/contentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+                        android:id="@+id/swipe_refresh"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp">
+
+                        <com.scwang.smart.refresh.header.ClassicsHeader
+                            android:id="@+id/header"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            app:layout_srlSpinnerStyle="Translate"
+                            app:srlAccentColor="@color/pink"
+                            app:srlDrawableArrow="@drawable/swipe_arrow"
+                            app:srlEnableLastTime="false"
+                            app:srlEnablePullToCloseTwoLevel="false"
+                            app:srlEnableTwoLevel="false" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvVideos"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:adapter="@{viewModel.liveListAdapter}"
+                            android:orientation="vertical"
+                            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                            app:spanCount="2"
+                            tools:listitem="@layout/item_video_grid" />
+
+                        <com.scwang.smart.refresh.footer.ClassicsFooter
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center" />
+                    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@android:color/transparent" />
+                </LinearLayout>
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="5dp"
+                    app:shimmer_base_color="@color/shimmerColor"
+                    app:shimmer_colored="true"
+                    app:shimmer_highlight_color="#E0E0E0">
+
+
+                    <LinearLayout
+                        android:id="@+id/shimmerForParty"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_85sdp"
+                            app:cardBackgroundColor="@color/shimmerColor"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            app:cardUseCompatPadding="true"
+                            app:strokeColor="@color/white_10"
+                            app:strokeWidth="1dp" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_85sdp"
+                            app:cardBackgroundColor="@color/shimmerColor"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            app:cardUseCompatPadding="true"
+                            app:strokeColor="@color/white_10"
+                            app:strokeWidth="1dp" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_85sdp"
+                            app:cardBackgroundColor="@color/shimmerColor"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            app:cardUseCompatPadding="true"
+                            app:strokeColor="@color/white_10"
+                            app:strokeWidth="1dp" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_85sdp"
+                            app:cardBackgroundColor="@color/shimmerColor"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            app:cardUseCompatPadding="true"
+                            app:strokeColor="@color/white_10"
+                            app:strokeWidth="1dp" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_85sdp"
+                            app:cardBackgroundColor="@color/shimmerColor"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            app:cardUseCompatPadding="true"
+                            app:strokeColor="@color/white_10"
+                            app:strokeWidth="1dp" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_85sdp"
+                            app:cardBackgroundColor="@color/shimmerColor"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            app:cardUseCompatPadding="true"
+                            app:strokeColor="@color/white_10"
+                            app:strokeWidth="1dp" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_85sdp"
+                            app:cardBackgroundColor="@color/shimmerColor"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            app:cardUseCompatPadding="true"
+                            app:strokeColor="@color/white_10"
+                            app:strokeWidth="1dp" />
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_85sdp"
+                            app:cardBackgroundColor="@color/shimmerColor"
+                            app:cardCornerRadius="@dimen/_10sdp"
+                            app:cardUseCompatPadding="true"
+                            app:strokeColor="@color/white_10"
+                            app:strokeWidth="1dp" />
+                    </LinearLayout>
+                </com.facebook.shimmer.ShimmerFrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:visibility="@{viewModel.noDataFound?View.VISIBLE : View.GONE}">
+
+            <include layout="@layout/lyt_no_data" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/app_main_bg"
+        android:layoutDirection="locale">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/reel_placeholder"
+                android:scaleType="centerCrop" />
+
+            <ProgressBar
+                android:id="@+id/loadingIndicator"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/tintColor"
+                android:visibility="gone" />
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/player_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/black"
+                android:clickable="true"
+                android:focusable="true"
+                app:controller_layout_id="@layout/item_player_controler"
+                app:played_color="@color/transparent"
+                app:scrubber_color="@color/transparent"
+                app:show_timeout="1000"
+                app:shutter_background_color="@color/transparent"
+                app:surface_type="surface_view"
+                app:unplayed_color="@color/transparent" />
+
+            <ImageView
+                android:id="@+id/imgThumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/image"
+                android:scaleType="centerCrop"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layUserDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center">
+
+                            <com.codder.ultimate.utils.UserProfileImageView
+                                android:id="@+id/imgUser"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvUserName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/airbnbcereal_w_bd"
+                                android:singleLine="true"
+                                android:text="@string/dummy_name"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_1sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/svgWebView"
+                                    android:layout_width="@dimen/_8sdp"
+                                    android:layout_height="@dimen/_8sdp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/location_pink"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/tvUserId"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/airbnbcereal_w_md"
+                                    android:text="2h ago"
+                                    android:textColor="@color/white"
+                                    android:textSize="13sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="5dp"
+                            android:fontFamily="@font/airbnb_cereal_medium"
+                            android:text="2 hours ago"
+                            android:textColor="#CDC7C7"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:id="@+id/lytFollow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:id="@+id/tvFollow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/btn_bg"
+                                android:drawablePadding="@dimen/_5sdp"
+                                android:fontFamily="@font/airbnbcereal_w_md"
+                                android:paddingHorizontal="@dimen/_10sdp"
+                                android:paddingVertical="@dimen/_6sdp"
+                                android:text="@string/follow"
+                                android:layout_marginStart="15dp"
+                                android:textColor="@color/white"
+                                android:textSize="13sp"
+                                app:drawableStartCompat="@drawable/icon_follow" />
+
+                            <ProgressBar
+                                android:id="@+id/pd"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginHorizontal="25dp"
+                                android:indeterminateTint="@color/white"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                    <com.codder.ultimate.socialView.SocialTextView
+                        android:id="@+id/tvDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:fontFamily="@font/airbnbcereal_w_md"
+                        android:isScrollContainer="true"
+                        android:maxLength="180"
+                        android:scrollbars="vertical"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        app:animation_duration="500" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/icon_music_note"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tv_sound_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:focusable="true"
+                            android:fontFamily="@font/airbnb_cereal_medium"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="60dp">
+
+                    <ImageView
+                        android:id="@+id/lout_user"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/ic_searchuser_dp_bg"
+                        android:backgroundTint="@color/tintColor"
+                        android:contentDescription="@string/image"
+                        android:padding="2dp"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="5dp">
+
+                        <com.codder.ultimate.utils.like.LikeButton
+                            android:id="@+id/likebtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            app:anim_scale_factor="2"
+                            app:circle_end_color="@color/white"
+                            app:circle_start_color="@color/tintColor"
+                            app:dots_primary_color="@color/white"
+                            app:dots_secondary_color="@color/purple"
+                            app:follow="false"
+                            app:icon_size="34dp"
+                            app:icon_type="heart"
+                            app:like_drawable="@drawable/ic_like"
+                            app:unlike_drawable="@drawable/ic_unlike" />
+
+                        <TextView
+                            android:id="@+id/tv_likeCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="100"
+                            android:fontFamily="@font/airbnbcereal_w_bd"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lytComments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_comment"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:src="@drawable/ic_post_comment" />
+
+                        <TextView
+                            android:id="@+id/tv_comment_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/airbnbcereal_w_bd"
+                            android:text="100"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/btnShare"
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:layout_marginTop="20dp"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_share_fill" />
+
+                    <ImageView
+                        android:id="@+id/btnReport"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:onClick="onClickReport"
+                        android:src="@drawable/icon_report"
+                        android:visibility="visible"
+                        app:tint="@color/white" />
+
+                    <RelativeLayout
+                        android:id="@+id/lytSound"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ic_black_disk"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <com.codder.ultimate.utils.UserProfileImageView
+                            android:id="@+id/imgSong"
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/profile_placeholder" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <RelativeLayout
+                android:id="@+id/rtl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent" />
+
+            <ImageView
+                android:id="@+id/heartAnimation"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:alpha="0"
+                android:scaleX="0"
+                android:scaleY="0"
+                android:src="@drawable/ic_heart_gradient"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/buffering"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:indeterminateOnly="true"
+            app:indicatorColor="@android:color/white"
+            app:trackColor="#11ffffff" />
+    </RelativeLayout>
+</layout>

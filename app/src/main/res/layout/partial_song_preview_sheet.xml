@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/song_preview_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_sheet_top_corner_radius"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_20sdp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_3sdp"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/white_10"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/icon_play_music" />
+
+        <ImageView
+            android:id="@+id/pause"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_3sdp"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/white_10"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/icon_pause_music" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/song"
+                style="@style/TextOnShadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:layout_toStartOf="@id/start"
+                android:fontFamily="@font/airbnb_cereal_medium"
+                android:textColor="@color/pink"
+                android:textSize="15sp"
+                tools:text="Perfect" />
+
+            <TextView
+                android:id="@+id/start"
+                style="@style/TextOnShadow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/airbnb_cereal_medium"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_10sdp"
+                tools:text="00:00" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/song"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:id="@+id/seekbar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:progressTint="@color/pink"
+                    android:thumb="@drawable/custom_thumb_player"
+                    android:thumbOffset="0dp"
+                    tools:progress="50" />
+
+                <TextView
+                    android:id="@+id/end"
+                    style="@style/TextOnShadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:text="00:00" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_green_check" />
+    </LinearLayout>
+</RelativeLayout>

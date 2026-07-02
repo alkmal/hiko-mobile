@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.codder.ultimate.fragments.ProfileFragment.ProfileViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/app_main_bg"
+        android:layoutDirection="locale"
+        android:textDirection="locale"
+        tools:context=".fragments.ProfileFragment">
+
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:gravity="center_vertical"
+            android:layoutDirection="locale">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                style="@style/toolBarBackImageStyle"
+                android:onClick="onClickBack" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/toolBarTextStyle"
+                android:layout_centerVertical="true"
+                android:text="@string/my_profile" />
+
+            <ImageView
+                android:id="@+id/btnSetting"
+                android:layout_width="44sp"
+                android:layout_height="44sp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="15sp"
+                android:src="@drawable/icon_setting" />
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topLayout"
+            android:layout_marginBottom="@dimen/_50sdp">
+
+            <LinearLayout
+                android:id="@+id/layMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/layDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="@{viewModel.isLoading?View.GONE : View.VISIBLE}">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:layoutDirection="locale">
+
+                        <RelativeLayout
+                            android:id="@+id/latProfile"
+                            android:layout_width="115dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15sp"
+                            android:gravity="center"
+                            android:padding="@dimen/_3sdp">
+
+
+                            <com.codder.ultimate.utils.UserProfileImageView
+                                android:id="@+id/imgUser"
+                                android:layout_width="100sp"
+                                android:layout_height="100sp"
+                                android:src="@drawable/girl"
+                                android:visibility="visible" />
+
+
+                            <LinearLayout
+                                android:id="@+id/btnEditProfile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="10dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/btn_bg"
+                                android:paddingHorizontal="7sp"
+                                android:paddingVertical="7sp"
+                                android:visibility="visible">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/icon_edit_profile" />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layEditDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@id/latProfile"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/layName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginHorizontal="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/airbnbcereal_w_bd"
+                                    android:gravity="start"
+                                    android:singleLine="true"
+                                    android:text="@string/dummy_name"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp" />
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tvUserId"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/airbnbcereal_w_lt"
+                                        android:gravity="start"
+                                        android:text="@string/dummy_id"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/white_60"
+                                        android:textSize="12sp" />
+
+                                    <ImageView
+                                        android:id="@+id/copy"
+                                        android:layout_width="16sp"
+                                        android:layout_height="16sp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="5sp"
+                                        android:src="@drawable/icon_copy" />
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginStart="5dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_20dp"
+                                    android:backgroundTint="@color/white_10"
+                                    android:paddingHorizontal="10sp"
+                                    android:paddingVertical="4sp">
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="12dp"
+                                        android:layout_height="12dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="@dimen/_3sdp"
+                                        android:visibility="visible"
+                                        app:cardCornerRadius="7.5dp">
+
+                                        <ImageView
+                                            android:id="@+id/svgWebView"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:adjustViewBounds="true"
+                                            android:scaleType="centerCrop" />
+                                    </androidx.cardview.widget.CardView>
+
+                                    <TextView
+                                        android:id="@+id/tvCountry"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/airbnbcereal_w_md"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp"
+                                        tools:text="@string/india" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="10sp"
+                                    android:background="@drawable/bg_20dp"
+                                    android:backgroundTint="#1AFF0000"
+                                    android:paddingHorizontal="10sp"
+                                    android:paddingVertical="4sp">
+
+                                    <ImageView
+                                        android:id="@+id/ivLevel"
+                                        android:layout_width="14sp"
+                                        android:layout_height="14sp"
+                                        android:layout_marginEnd="3dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/ic_level1" />
+
+                                    <TextView
+                                        android:id="@+id/tvLevel"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/airbnbcereal_w_md"
+                                        android:text="Lv. 1"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_20dp"
+                                    android:backgroundTint="#1AFFFF00"
+                                    android:paddingHorizontal="10sp"
+                                    android:paddingVertical="4sp">
+
+                                    <ImageView
+                                        android:id="@+id/ivGender"
+                                        android:layout_width="12sp"
+                                        android:layout_height="12sp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/ic_female" />
+
+                                    <TextView
+                                        android:id="@+id/tvAge"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="2sp"
+                                        android:fontFamily="@font/airbnbcereal_w_md"
+                                        android:text="20"
+                                        android:textColor="@color/white"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <HorizontalScrollView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginEnd="15dp"
+                                android:overScrollMode="never"
+                                android:scrollbars="none"
+                                android:clipToPadding="false"
+                                android:visibility="visible">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+
+                                    <LinearLayout
+                                        android:id="@+id/tvType"
+                                        android:layout_width="55dp"
+                                        android:layout_height="20dp"
+                                        android:orientation="vertical"
+                                        android:layout_marginRight="5dp"
+                                        android:background="@drawable/ic_agency_tag"
+                                        android:visibility="visible">
+
+                                    </LinearLayout>
+
+
+
+                                    <LinearLayout
+                                        android:id="@+id/tvHostType"
+                                        android:layout_width="55dp"
+                                        android:layout_height="20dp"
+                                        android:orientation="vertical"
+                                        android:layout_marginRight="5dp"
+                                        android:background="@drawable/ic_host_tag"
+                                        android:visibility="visible">
+
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:id="@+id/tvBdType"
+                                        android:layout_width="45dp"
+                                        android:layout_height="20dp"
+                                        android:orientation="vertical"
+                                        android:layout_marginRight="5dp"
+                                        android:background="@drawable/ic_bd_tag"
+                                        android:visibility="visible">
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/tvVIPType"
+                                        android:layout_width="45dp"
+                                        android:layout_height="20dp"
+                                        android:orientation="vertical"
+                                        android:layout_marginRight="5dp"
+                                        android:background="@drawable/ic_vip_tag"
+                                        android:visibility="visible">
+
+
+                                    </LinearLayout>
+
+
+
+                                    <LinearLayout
+                                        android:id="@+id/tvCoinseller"
+                                        android:layout_width="60dp"
+                                        android:layout_height="20dp"
+                                        android:orientation="vertical"
+                                        android:layout_marginRight="5dp"
+                                        android:background="@drawable/ic_coinseller_tag"
+                                        android:visibility="visible">
+
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </HorizontalScrollView>
+
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:visibility="@{viewModel.isLoading?View.GONE : View.VISIBLE}"
+                                    tools:visibility="visible" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginHorizontal="15sp"
+                                android:orientation="vertical">
+
+                                <androidx.appcompat.widget.LinearLayoutCompat
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="15sp"
+                                    android:layoutDirection="locale"
+                                    android:weightSum="3">
+
+                                    <androidx.appcompat.widget.LinearLayoutCompat
+                                        android:id="@+id/lytFollowing"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tvFollowing"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/airbnbcereal_w_bd"
+                                            android:text="50.2k"
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="22sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/airbnbcereal_w_lt"
+                                            android:text="@string/following"
+                                            android:textColor="@color/white_60"
+                                            android:textSize="16sp" />
+                                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                    <View
+                                        android:layout_width="1sp"
+                                        android:layout_height="26sp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginHorizontal="10sp"
+                                        android:background="@drawable/bg_10dp_purewhite"
+                                        android:backgroundTint="@color/white_30" />
+
+                                    <LinearLayout
+                                        android:id="@+id/lyt_followers"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="20sp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tvFollowers"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/airbnbcereal_w_bd"
+                                            android:text="30"
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="22sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/airbnbcereal_w_lt"
+                                            android:text="@string/fans"
+                                            android:textColor="@color/white_60"
+                                            android:textSize="16sp" />
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="1sp"
+                                        android:layout_height="26sp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginHorizontal="10sp"
+                                        android:background="@drawable/bg_10dp_purewhite"
+                                        android:backgroundTint="@color/white_30" />
+
+                                    <LinearLayout
+                                        android:id="@+id/lytBlock"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tvBlock"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/airbnbcereal_w_bd"
+                                            android:text="50.2k"
+                                            android:textColor="#FFFFFF"
+                                            android:textSize="22sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/airbnbcereal_w_lt"
+                                            android:text="@string/blocked_user"
+                                            android:textColor="@color/white_60"
+                                            android:textSize="16sp" />
+                                    </LinearLayout>
+                                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                                <LinearLayout
+                                    android:id="@+id/layWallet"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="70dp"
+                                    android:layout_marginTop="20sp"
+                                    android:background="@drawable/profile_walletbg"
+                                    android:gravity="center"
+                                    android:layoutDirection="locale"
+                                    android:paddingHorizontal="15sp"
+                                    android:paddingVertical="7dp">
+
+                                    <ImageView
+                                        android:layout_width="52sp"
+                                        android:layout_height="60sp"
+                                        android:src="@drawable/diamond" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="10sp"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/airbnbcereal_w_bk"
+                                            android:text="@string/my_diamonds"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:id="@+id/tvCoin"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:layout_marginTop="2sp"
+                                                android:ellipsize="end"
+                                                android:fontFamily="@font/airbnbcereal_w_blk"
+                                                android:singleLine="true"
+                                                android:text="20k"
+                                                android:textColor="@color/white"
+                                                android:textSize="20sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/wallet_text_bg"
+                                        android:gravity="center">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/airbnbcereal_w_bd"
+                                            android:text="@string/my_wallet"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/layBecomeHost"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:background="@drawable/bg_20dp"
+                                    android:backgroundTint="@color/white_10"
+                                    android:gravity="center"
+                                    android:layoutDirection="locale"
+                                    android:visibility="visible"
+                                    android:paddingHorizontal="15sp"
+                                    android:paddingVertical="10dp">
+
+                                    <ImageView
+                                        android:layout_width="55dp"
+                                        android:layout_height="70dp"
+                                        android:src="@drawable/ic_become_host" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="10sp"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/airbnbcereal_w_md"
+                                            android:text="@string/become_host"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp" />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:layout_marginTop="2sp"
+                                                android:ellipsize="end"
+                                                android:fontFamily="@font/airbnbcereal_w_bk"
+                                                android:text="Turn your passion into profit-become a \nhost and start earning today."
+                                                android:textColor="@color/white_60"
+                                                android:textSize="12sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    ......
+
+
+                                    <ImageView
+                                        android:layout_width="30sp"
+                                        android:layout_height="30sp"
+                                        android:layout_centerVertical="true"
+                                        android:layout_alignParentEnd="true"
+                                        android:src="@drawable/arrow_left" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tvHostVipTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="25sp"
+                                    android:visibility="gone"
+                                    android:fontFamily="@font/airbnbcereal_w_bd"
+                                    android:text="@string/host_vip_privilege"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="17sp" />
+
+
+                                <LinearLayout
+                                    android:id="@+id/hostVipSection"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15sp"
+                                    android:background="@drawable/bg_20dp"
+                                    android:backgroundTint="@color/white_10"
+                                    android:layoutDirection="locale"
+                                    android:orientation="vertical">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/rvHostVip"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:overScrollMode="never"
+                                        android:paddingHorizontal="10sp"
+                                        android:paddingVertical="7sp"
+                                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                                        app:spanCount="4"
+                                        tools:itemCount="4"
+                                        tools:listitem="@layout/item_rvprofile" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20sp"
+                                    android:visibility="gone"
+                                    android:fontFamily="@font/airbnbcereal_w_bd"
+                                    android:text="@string/my_features"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="17sp" />
+
+                                <LinearLayout
+                                    android:id="@+id/myFeaturesSection"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginBottom="50dp"
+                                    android:background="@drawable/bg_20dp"
+                                    android:backgroundTint="@color/white_10"
+                                    android:layoutDirection="locale"
+                                    android:orientation="vertical"
+                                    android:paddingHorizontal="@dimen/_10sdp"
+                                    android:paddingVertical="@dimen/_5sdp">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/rvMyFeatures"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:overScrollMode="never"
+                                        android:layout_marginVertical="10dp"
+                                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                        tools:listitem="@layout/item_profile_feature" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </RelativeLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="@{viewModel.isLoading?View.VISIBLE : View.GONE}"
+                    app:shimmer_base_color="@color/shimmerColor"
+                    app:shimmer_colored="false"
+                    app:shimmer_highlight_color="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <include layout="@layout/shimmer_profile" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </LinearLayout>
+                </com.facebook.shimmer.ShimmerFrameLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</layout>

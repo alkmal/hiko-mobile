@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_6">#0FFFFFFF</color>
+    <color name="white_34">#57FFFFFF</color>
+    <color name="white_35">#59FFFFFF</color>
+    <color name="white_17">#2BFFFFFF</color>
+    <color name="white_76">#C2FFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_30">#4DFFFFFF</color>
+    <color name="white_3">#08FFFFFF</color>
+    <color name="white_13">#21FFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_12">#1FFFFFFF</color>
+    <color name="white_15">#26FFFFFF</color>
+    <color name="white_10">#1AFFFFFF</color>
+    <color name="white_8">#14FFFFFF</color>
+    <color name="white_48">#7AFFFFFF</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="white_90">#E6FFFFFF</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="red">#FF2929</color>
+    <color name="green">#109A04</color>
+    <color name="black_back">#111118</color>
+    <color name="tintColor">#9B03FF</color>
+    <color name="sky">#008AFF</color>
+    <color name="lightGray">#B0B0B0</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="party_gradient_1">#FF149F</color>
+    <color name="party_gradient_2">#9B15FF</color>
+    <color name="purple_color">#995AFF</color>
+    <color name="extra_light_grey">#A1A1BC</color>
+    <color name="text_gray">#A7A7B3</color>
+    <color name="lightGray1">#686872</color>
+    <color name="lightBlack">#282B39</color>
+    <color name="lightBlack_27">#463C3C3C</color>
+    <color name="black_alpha_20">#33000000</color>
+    <color name="black_alpha_60">#99000000</color>
+    <color name="colorBlack">#000</color>
+    <color name="yellow">#FFD400</color>
+    <color name="transparent">#00000000</color>
+    <color name="lightPink">#E8538F</color>
+    <color name="shimmerColor">#B3B3B3</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="bottomSheetColor">#280C34</color>
+    <color name="bg_back_image">#1E212D</color>
+    <color name="purple">#821CED</color>
+    <color name="frostBlue">#ADD4FF</color>
+    <color name="chatText">#25282F</color>
+    <color name="light_white">#f1f1f3</color>
+    <color name="shimmerColor2">#878787</color>
+    <color name="gre_alpha_20">#33878787</color>
+    <color name="tabDeselected">#AAFFFFFF</color>
+    <color name="gradient_1">#DD0F6C</color>
+    <color name="gradient_2">#C50CE3</color>
+    <color name="charcoalGray">#23262D</color>
+    <color name="color_text">#E7166B</color>
+    <color name="color_grey">#999999</color>
+    <color name="color_grey1">#bbbbbb</color>
+    <color name="color_grey2">#dfdfdf</color>
+    <color name="gray">#BCBCBC</color>
+    <color name="green_light">#CDFF39</color>
+    <color name="gray_icon">#686872</color>
+
+    <color name="gray_color">#C8C8C8</color>
+    <color name="redColor">#FF0000</color>
+    <color name="hintColor">#A8FFFFFF</color>
+    <color name="blackColor30">#4D000000</color>
+    <color name="cardColor1">#149FF0</color>
+    <color name="cardColor2">#FA3E73</color>
+    <color name="cardColor3">#E7810C</color>
+    <color name="cardColor4">#E12197</color>
+    <color name="pink">#FF0D7B</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="hintColorDark">#816FA5</color>
+    <color name="hintColor2">#9D8EBC</color>
+    <color name="orangeColor">#FF740F</color>
+
+    <color name="radio_selected">#B388FF</color>
+
+
+    <color name="coinTextColor">#FEA832</color>
+
+    <color name="inactiveText">#7E6D85</color>
+
+    <color name="tabInactiveText">#6E6B7B</color>
+    <color name="black50">#80000000</color>
+
+    <color name="status_pending">#F57C00</color>   <!-- amber 700 -->
+    <color name="status_accepted">#2E7D32</color>  <!-- green 800 -->
+    <color name="status_declined">#C62828</color>  <!-- red 800 -->
+    <color name="status_unknown">#546E7A</color>
+    <color name="light_gray_color">#4DAAAAAA</color>   <!-- blue-grey 600 -->
+    <color name="follow_color">#9B03FF</color>
+    <color name="profile_rec_color">#D0C8E1</color>
+    <color name="ticket_time_color">#9E79B1</color>
+    <color name="ticket_text_color">#D2B4E0</color>
+    <color name="popup_color">#2F0F4B</color>
+    <color name="green_message">#109B04</color>
+    <color name="wallet_yellow">#FFEE00</color>
+    <color name="tag_yellow">#FFC918</color>
+    <color name="tag_text">#9E4C0C</color>
+    <color name="history_date">#9385B1</color>
+    <color name="rcoin_color">#8A2CE2</color>
+    <color name="redeem_history">#95839D</color>
+    <color name="free_diamond_text1">#FF801B</color>
+    <color name="free_diamond_text2">#D55E00</color>
+    <color name="green_chat">#00A706</color>
+    <color name="chat_right">#7D4DFF</color>
+    <color name="preview_color">#363434</color>
+    <color name="filter_bg1">#9600C2</color>
+    <color name="filter_bg2">#DF0B9C</color>
+    <color name="profile_bottom">#483A70</color>
+    <color name="room_rcoin_color">#FFF907</color>
+    <color name="app_gradient1">#C238FF</color>
+    <color name="app_gradient2">#FF0CB2</color>
+    <color name="dark_pink">#D90F4C</color>
+    <color name="logo_color">#130E24</color>
+    <color name="chat_time_color">#AB8DE7</color>
+    <color name="chatcall_time_color">#68527A</color>
+    <color name="myroom_color">#FF76AC</color>
+    <color name="quick_join_color">#65DBF6</color>
+
+</resources>
+

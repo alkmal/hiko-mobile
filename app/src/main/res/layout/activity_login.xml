@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash_bg"
+        android:fitsSystemWindows="true"
+        tools:context=".activity.LoginActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/airbnb_cereal_bold"
+                    android:src="@drawable/onlinetv"
+                    android:textColor="@color/tintColor"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/airbnb_cereal_bold"
+                    android:src="@drawable/findmatch"
+                    android:textColor="@color/tintColor"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:src="@drawable/arrow" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bglogin" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp">
+
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivLogo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/app_logo"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tvAppname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/airbnbcereal_w_bd"
+                        android:text="@string/app_name"
+                        android:textSize="25dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btnQuickLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/btnquick" />
+
+                    <ImageView
+                        android:id="@+id/btnGoogleLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/btngoggle" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:alpha=".7"
+                        android:fontFamily="@font/airbnbcereal_w_bk"
+                        android:gravity="center"
+                        android:text="@string/policy"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:onClick="onClickPrivacy"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvTerms"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:alpha=".7"
+                            android:fontFamily="@font/airbnbcereal_w_md"
+                            android:text="@string/terms_amp_condition"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_pink"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginHorizontal="5dp"
+                            android:alpha=".7"
+                            android:fontFamily="@font/airbnbcereal_w_bk"
+                            android:text="@string/and"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvPrivacy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:alpha=".7"
+                            android:fontFamily="@font/airbnbcereal_w_md"
+                            android:text="@string/privacy_policy"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_pink"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/layout_no_internet" />
+    </RelativeLayout>
+</layout>

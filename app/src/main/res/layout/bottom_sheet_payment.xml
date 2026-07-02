@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottom_sheet_top_corner_radius"
+        android:backgroundTint="@color/popup_color"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bottom_sheet_top_corner_radius"
+            android:backgroundTint="@color/popup_color">
+
+            <TextView
+                style="@style/commonTextStyle"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/airbnbcereal_w_bd"
+                android:padding="15dp"
+                android:text="@string/payment"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/btnClose"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_close" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white_20" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/lytStripe"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_payment_unselected"
+                android:layoutDirection="locale"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="5dp"
+                android:textDirection="locale">
+
+                <ImageView
+                    android:id="@+id/ivCredit"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/credit_card" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ivCredit"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="7dp"
+                        android:fontFamily="@font/airbnbcereal_w_bd"
+                        android:paddingHorizontal="@dimen/_3sdp"
+                        android:text="@string/credit_debit_card"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="7dp"
+                        android:fontFamily="@font/airbnbcereal_w_lt"
+                        android:paddingHorizontal="@dimen/_3sdp"
+                        android:text="Visa / RuPay / MasterCard"
+                        android:textColor="@color/white_50"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivSelectCredit"
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="7dp"
+                    android:src="@drawable/radio_unselected"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytgooglepay"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_payment_unselected"
+                android:layoutDirection="locale"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="5dp"
+                android:textDirection="locale">
+
+                <ImageView
+                    android:id="@+id/ivGooglePay"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_play_store" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ivGooglePay"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="7dp"
+                        android:fontFamily="@font/airbnbcereal_w_bd"
+                        android:paddingHorizontal="@dimen/_3sdp"
+                        android:text="@string/google_play"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="7dp"
+                        android:fontFamily="@font/airbnbcereal_w_lt"
+                        android:paddingHorizontal="@dimen/_3sdp"
+                        android:text="UPI / Net Banking / Credit &amp; Debit Card"
+                        android:textColor="@color/white_50"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivSelectGoogle"
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="7dp"
+                    android:src="@drawable/radio_unselected"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytPaypal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_payment_unselected"
+                android:layoutDirection="locale"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="5dp"
+                android:textDirection="locale">
+
+                <ImageView
+                    android:id="@+id/ivPaypal"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_paypal" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ivPaypal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="7dp"
+                        android:fontFamily="@font/airbnbcereal_w_bd"
+                        android:paddingHorizontal="@dimen/_3sdp"
+                        android:text="@string/paypal"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="7dp"
+                        android:fontFamily="@font/airbnbcereal_w_lt"
+                        android:paddingHorizontal="@dimen/_3sdp"
+                        android:text="Bank Transfer / Credit &amp; Debit Card"
+                        android:textColor="@color/white_50"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivSelectPaypal"
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="7dp"
+                    android:src="@drawable/radio_unselected"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytRazorpay"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_payment_unselected"
+                android:layoutDirection="locale"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="5dp"
+                android:textDirection="locale">
+
+                <ImageView
+                    android:id="@+id/ivRazorpay"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_razorpay" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ivRazorpay"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="7dp"
+                        android:fontFamily="@font/airbnbcereal_w_bd"
+                        android:paddingHorizontal="@dimen/_3sdp"
+                        android:text="@string/razor_pay"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="7dp"
+                        android:fontFamily="@font/airbnbcereal_w_lt"
+                        android:paddingHorizontal="@dimen/_3sdp"
+                        android:text="UPI / Net Banking / Credit &amp; Debit Card"
+                        android:textColor="@color/white_50"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivSelectRazorPay"
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="7dp"
+                    android:src="@drawable/radio_unselected"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytCashfree"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_payment_unselected"
+                android:layoutDirection="locale"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="5dp"
+                android:textDirection="locale">
+
+                <ImageView
+                    android:id="@+id/ivCashFree"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_cashfree" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ivCashFree"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="7dp"
+                        android:fontFamily="@font/airbnbcereal_w_bd"
+                        android:paddingHorizontal="@dimen/_3sdp"
+                        android:text="@string/cashfree"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="7dp"
+                        android:fontFamily="@font/airbnbcereal_w_lt"
+                        android:paddingHorizontal="@dimen/_3sdp"
+                        android:text="UPI / Net Banking / Credit &amp; Debit Card"
+                        android:textColor="@color/white_50"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivSelectCashFree"
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="7dp"
+                    android:src="@drawable/radio_unselected"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytPaystack"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_payment_unselected"
+                android:layoutDirection="locale"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="5dp"
+                android:textDirection="locale">
+
+                <ImageView
+                    android:id="@+id/ivPaystack"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_paystack" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ivPaystack"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="7dp"
+                        android:fontFamily="@font/airbnbcereal_w_bd"
+                        android:paddingHorizontal="@dimen/_3sdp"
+                        android:text="@string/paystack"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="7dp"
+                        android:fontFamily="@font/airbnbcereal_w_lt"
+                        android:paddingHorizontal="@dimen/_3sdp"
+                        android:text="Credit card / Debit Card / Bank Transfer"
+                        android:textColor="@color/white_50"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivSelectPaystack"
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="7dp"
+                    android:src="@drawable/radio_unselected"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytFlutterwave"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_payment_unselected"
+                android:layoutDirection="locale"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="5dp"
+                android:textDirection="locale">
+
+                <ImageView
+                    android:id="@+id/ivFlutterWave"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_flutterwave" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ivFlutterWave"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="7dp"
+                        android:fontFamily="@font/airbnbcereal_w_bd"
+                        android:paddingHorizontal="@dimen/_3sdp"
+                        android:text="@string/flutterwave"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="7dp"
+                        android:fontFamily="@font/airbnbcereal_w_lt"
+                        android:paddingHorizontal="@dimen/_3sdp"
+                        android:text="Credit card / Debit Card / Bank Transfer"
+                        android:textColor="@color/white_50"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivSelectFlutterwave"
+                    android:layout_width="22sp"
+                    android:layout_height="22sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="7dp"
+                    android:src="@drawable/radio_unselected"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/btnPayNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/gradient_bg_radius_50"
+            android:fontFamily="@font/airbnbcereal_w_bd"
+            android:gravity="center"
+            android:paddingVertical="15sp"
+            android:text="@string/pay_now"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+</layout>

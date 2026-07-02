@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">请输入您的应用名称</string>
+
+    <string name="no_internet_connection">没有互联网连接</string>
+    <string name="back_online">重新上线</string>
+    <string name="we_are_under_maintenance_text">我们正在维护中</string>
+    <string name="dismiss">解雇</string>
+    <string name="you_are_blocked_by_admin_text">您已被管理员屏蔽</string>
+    <string name="cancel">取消</string>
+    <string name="you_are_logged_in_other_devices">您已在其他设备登录</string>
+    <string name="log_out">登出</string>
+    <string name="policy">通过注册，您将同意我们的</string>
+    <string name="terms_amp_condition">条款和条件</string>
+    <string name="and">和</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="please_wait">请稍等</string>
+    <string name="your_name">您的名字</string>
+    <string name="male">男性</string>
+    <string name="female">女性</string>
+    <string name="select_your_age">选择您的年龄</string>
+    <string name="edit_profile">编辑个人资料</string>
+    <string name="submit">提交</string>
+    <string name="enter_your_name">输入您的姓名</string>
+    <string name="enter_username_first">首先输入用户名</string>
+    <string name="select_your_gender">选择您的性别</string>
+    <string name="minimum_age_must_be_18_years">最低年龄必须为 18 岁。</string>
+    <string name="connecting">正在连接…</string>
+    <string name="privacy_policy_text">隐私政策</string>
+    <string name="accept_privacy_policy">我已年满 18 岁并且已阅读隐私政策。</string>
+    <string name="deny">否定</string>
+    <string name="accept">接受</string>
+    <string name="please_accept_privacy_policy">请确认您已阅读隐私政策以继续。</string>
+    <string name="exit_app_confirmation">您确定要退出该应用程序吗？</string>
+    <string name="exit_this_app">退出此应用程序</string>
+    <string name="fans">风扇</string>
+    <string name="my_diamonds">我的钻石</string>
+    <string name="demo_host_center_text">演示主机中心</string>
+    <string name="demo_agency_center">演示代理中心</string>
+    <string name="host_request">主机请求</string>
+    <string name="offline_recharge">离线充值</string>
+    <string name="my_posts">我的帖子</string>
+    <string name="my_relites">我的 Relites</string>
+    <string name="store">店铺</string>
+    <string name="free_coins">免费硬币</string>
+    <string name="become_vip">成为VIP</string>
+    <string name="user_level">用户级别</string>
+    <string name="copied_successfully">复制成功</string>
+    <string name="id">"ID：</string>
+    <string name="agency_center_text">代理中心</string>
+    <string name="host_center">主机中心</string>
+    <string name="ok">OK好的</string>
+    <string name="history">历史</string>
+    <string name="recharge">充值</string>
+    <string name="my_diamond_balance">我的钻石币</string>
+    <string name="enter_user_id">输入用户ID</string>
+    <string name="enter_diamonds">输入钻石</string>
+    <string name="note">笔记</string>
+    <string name="top_up">充值</string>
+    <string name="user_not_found">未找到用户</string>
+    <string name="please_verify_user_id">请验证用户 ID</string>
+    <string name="enter_coin_value">输入硬币价值</string>
+    <string name="invalid_coin_value">无效的硬币价值</string>
+    <string name="insufficient_coins">硬币不足</string>
+    <string name="send_successfully">发送成功</string>
+    <string name="continue_text">继续</string>
+    <string name="in_this_apk_all_data_are_only_for_demo_purpose">在此 APK 中，所有数据仅用于演示目的。</string>
+    <string name="deleted_successfully">删除成功</string>
+    <string name="india">印度</string>
+    <string name="we_will_take_immediately_action_for_this_user_thank_you">我们将立即对该用户采取行动谢谢</string>
+    <string name="likes">喜欢</string>
+    <string name="comments">评论</string>
+    <string name="report_user">举报用户</string>
+    <string name="blocked_successfully">已成功阻止</string>
+    <string name="report_this_user">举报此用户</string>
+    <string name="please_describe_your_issue_here">请在此处描述您的问题。</string>
+    <string name="unable_to_report">无法报告..</string>
+    <string name="something_went_wrong_text">出了点问题</string>
+    <string name="block_this_user">阻止此用户</string>
+    <string name="yes">是的</string>
+    <string name="type_message_first">首先输入消息</string>
+    <string name="toast_cannot_retrieve_cropped_image">无法检索裁剪的图像</string>
+    <string name="toast_unexpected_error">意外错误</string>
+    <string name="call_ended">通话结束！</string>
+    <string name="ringing">铃声</string>
+    <string name="we_will_take_immediately_action_for_this_user_n_thank_you">我们将立即对该用户采取行动谢谢</string>
+    <string name="enter_valid_message">输入有效的消息</string>
+    <string name="is_busy_with_someone_else">正忙着和别人相处。</string>
+    <string name="discard_entire_video">丢弃整个视频？</string>
+    <string name="if_you_go_back_now_you_will_lose_all_the_clips_added_to_your_video">如果你现在返回，你将丢失添加到视频的所有剪辑</string>
+    <string name="discard_video">丢弃视频</string>
+    <string name="incoming_call">有来电…</string>
+    <string name="need_permissions">“需要权限”</string>
+    <string name="call_declined">拒绝来电</string>
+    <string name="rtc_stats_format">下行比特率：%.2f kbps%n下行丢失率：%.2f%% %n上行比特率：%.2f kbps%n上行丢失率：%.2f%%</string>
+    <string name="unfollow">取消关注</string>
+    <string name="follow">跟随</string>
+    <string name="unblock">解除封锁</string>
+    <string name="block">堵塞</string>
+    <string name="message">信息</string>
+    <string name="message_delete_confirmation">您确定要删除此消息吗？</string>
+    <string name="following">下列的</string>
+    <string name="my_fans">我的粉丝</string>
+    <string name="image">图像</string>
+    <string name="choose_one">选择一个</string>
+    <string name="say_something">说些什么…</string>
+    <string name="failed_to_load_videos">无法加载视频。</string>
+    <string name="settings">设置</string>
+    <string name="notification">通知</string>
+    <string name="have_an_issue">有问题</string>
+    <string name="my_complains">我的投诉</string>
+    <string name="terms_of_service">服务条款</string>
+    <string name="about_us">关于我们</string>
+    <string name="next">下一个</string>
+    <string name="complaint_or_suggestion">投诉或建议</string>
+    <string name="typing_somethings">正在输入一些东西……</string>
+    <string name="contact">接触</string>
+    <string name="enter_your_mobile_number_or_email">输入您的手机号码或电子邮件</string>
+    <string name="attach_your_image_or_screenshot">附上您的图片或截图</string>
+    <string name="browse">浏览</string>
+    <string name="complain_send_successfully">投诉发送成功</string>
+    <string name="please_enter_message">请输入留言</string>
+    <string name="please_enter_contact">请输入联系方式</string>
+    <string name="my_tickets">我的票</string>
+    <string name="open">打开</string>
+    <string name="ticket_details">门票详情</string>
+    <string name="status">地位</string>
+    <string name="close">关闭</string>
+    <string name="_1_self_introduction">1. 自我介绍</string>
+    <string name="name">姓名</string>
+    <string name="enter_name">输入姓名</string>
+    <string name="mobile_number">手机号码</string>
+    <string name="enter_mobile_number">输入手机号码</string>
+    <string name="Bio">简历</string>
+    <string name="_2_agency_code">2. 代理机构代码</string>
+    <string name="if_you_have">（如果有的话）</string>
+    <string name="_3_upload_photos">3.上传照片</string>
+    <string name="personal_photo">个人照片</string>
+    <string name="_4_bank_details">4.银行信息</string>
+    <string name="enter_your_bank_details">输入您的银行详细信息</string>
+    <string name="admission_car">入场车</string>
+    <string name="enter_bio_text">输入生物</string>
+    <string name="select_personal_photo">选择个人照片</string>
+    <string name="image_file_not_found">未找到图像文件</string>
+    <string name="host_request_send">主机请求发送</string>
+    <string name="try_after_some_time">请稍后再试</string>
+    <string name="avatar_frame">头像框</string>
+    <string name="super_star">超级明星</string>
+    <string name="you_don_t_have_required_diamonds">您沒有所需的鑽石！</string>
+    <string name="diamond_star">钻石之星</string>
+    <string name="stepping_in">进场！</string>
+    <string name="free_diamonds">免费钻石</string>
+    <string name="method_1">方法 1：</string>
+    <string name="method_2">方法 2：</string>
+    <string name="your_refer_code">您的推荐代码：</string>
+    <string name="enter_referral_code_here">在此输入推荐代码</string>
+    <string name="you_have_2_referrals">您有 2 个推荐人</string>
+    <string name="referral_code_copied">推荐代码已复制！</string>
+    <string name="enter_refer_code">输入推荐码</string>
+    <string name="refereed_successfully">成功裁判</string>
+    <string name="generic_error">出了点问题。请稍后重试。</string>
+    <string name="earned_by_user">已授予奖励</string>
+    <string name="invite_desc">邀请你的朋友！每次邀请朋友付款，你和你的朋友都会收到</string>
+    <string name="vip_plan">VIP计划</string>
+    <string name="become_vip_and_get_many_privileges">成为VIP并获得许多特权</string>
+    <string name="vip_privileges">VIP特权</string>
+    <string name="get_vip_to_access_all_function">成为VIP即可使用所有功能</string>
+    <string name="vip_package">VIP套餐</string>
+    <string name="get_now">立即获取</string>
+    <string name="first_select_the_plan">首先选择计划。</string>
+    <string name="credit_debit_card">信用卡/借记卡</string>
+    <string name="google_play">Google Play</string>
+    <string name="hot">热的</string>
+    <string name="your_level">你的等级</string>
+    <string name="no_level_available">无可用级别</string>
+    <string name="unknown">未知</string>
+    <string name="income">收入</string>
+    <string name="record">记录</string>
+    <string name="diamonds">钻石</string>
+    <string name="outcome">结果</string>
+    <string name="r_coins">R币</string>
+    <string name="confirm">确认</string>
+    <string name="diamond_record">钻石唱片</string>
+    <string name="spending">开支</string>
+    <string name="converted_to_diamonds">转换成钻石</string>
+    <string name="diamond_purchase">购买钻石</string>
+    <string name="you_have_called">您已致电</string>
+    <string name="watching_ads">观看广告</string>
+    <string name="login_bonus">登录奖励</string>
+    <string name="referral_bonus">推荐奖金</string>
+    <string name="cash_out">提现</string>
+    <string name="svga_animation_purchased">购买了 SVGA 动画</string>
+    <string name="add_in_teenpatti_game">添加 Teenpatti 游戏</string>
+    <string name="purchased_avatar_frame">购买头像框</string>
+    <string name="coin_add_by_offline_recharge">离线充值加币</string>
+    <string name="call_coin_received">呼叫币</string>
+    <string name="lucy_gift_bonus">露西礼品奖励</string>
+    <string name="add_in_roulette_game">添加轮盘游戏</string>
+    <string name="add_in_ferry_wheel_game">添加摩天轮游戏</string>
+    <string name="convert_in_coin_seller_coin">兑换为金币卖家金币</string>
+    <string name="unknown_transaction">未知交易</string>
+    <string name="gift_broadcast_during_livestream_by_you">直播期间赠送礼物</string>
+    <string name="gift_received">收到礼物</string>
+    <string name="gift_send_to">礼物发送给</string>
+    <string name="added_by_admin">由管理员添加</string>
+    <string name="reduce_by_admin">按管理员减少</string>
+    <string name="_1">$11美元</string>
+    <string name="withdrawing_rcoins">提取 RCoins</string>
+    <string name="convert_to_diamond">转换为钻石</string>
+    <string name="what_is_coins">什么是金幣？</string>
+    <string name="what_is_rcoin">1. 当您收到礼物，例如兰博基尼或城堡时，您将立即获得与礼品商店中礼物价格等值的金币。2. 您可以将金币兑换成钻石或现金。3. 金币余额可用+可提现</string>
+    <string name="this_is_a_demo_version">这是一个演示版本</string>
+    <string name="payment_done">付款完成</string>
+    <string name="coin_sellers_list">硬币卖家名单</string>
+    <string name="how_much_rcoins_convert_cash">多少 Rcoins 可以兑换现金？</string>
+    <string name="how_much_rcoins_convert_into_diamonds">多少 R 币可以兑换成钻石？</string>
+    <string name="setting_error">设置错误</string>
+    <string name="minimum_amount_is">最低金额为</string>
+    <string name="you_not_have_enough">你没有足够的</string>
+    <string name="you_are_not_able_to_cashout_at_your_level">您无法以您的级别提现</string>
+    <string name="your">你的</string>
+    <string name="successfully_converted_into">成功转换为</string>
+    <string name="conversion_failed">转换失败</string>
+    <string name="redeem_your_coins">兑换你的硬币</string>
+    <string name="enter_coins_to_withdraw">输入要提取的币种</string>
+    <string name="your_redeem_history">您的兑换历史记录</string>
+    <string name="pending">待办的</string>
+    <string name="r_coin_convert">R币兑换</string>
+    <string name="how_much_coins_convert_into_diamonds">多少金币可以兑换成钻石？</string>
+    <string name="enter_coins">输入硬币</string>
+    <string name="convert_to_diamonds">转换为钻石</string>
+    <string name="whatsapp_not_installed">Whatsapp 未安装</string>
+    <string name="invalid_whatsapp_number">无效的 WhatsApp 号码</string>
+    <string name="withdrawable_rcoins">可提取的Rcoins</string>
+    <string name="no_payment_method_found">未找到付款方式</string>
+    <string name="insufficient">不足的</string>
+    <string name="please_enter_your_details">请输入您的详细信息</string>
+    <string name="redeem_request_sent_successfully">兑换请求已成功发送</string>
+    <string name="enter_your_upi_details">输入您的 UPI 详细信息</string>
+    <string name="enter_your_paytm_details">输入您的 Paytm 详细信息</string>
+    <string name="enter_your_bank_account_details">输入您的银行账户详细信息</string>
+    <string name="enter_your_bybit_details">输入您的 Bybit 详细信息</string>
+    <string name="purchased">购买</string>
+    <string name="go_live">上线</string>
+    <string name="song_hint">单击选择一首歌曲。</string>
+    <string name="timer_hint">要在计时器开始前取消它，请单击此处。</string>
+    <string name="duration">期间</string>
+    <string name="mmss">0:00</string>
+    <string name="welcome_to_join_the_live_any_content_related_to_porn_violence_gambling_illegal_dealing_will_be_banned">欢迎大家加入直播，任何涉及色情、暴力、赌博、非法交易等内容将被禁止。</string>
+    <string name="enter_a_room">已经进入房间</string>
+    <string name="reacted">反应</string>
+    <string name="browse_file_title">浏览文件</string>
+    <string name="please_enter_room_title">请输入房间名称</string>
+    <string name="please_select_room_image">请选择房间图片</string>
+    <string name="you_are_block_from_admin_to_go_live">您已被管理员禁止上线</string>
+    <string name="start_audio_live">开始音频直播</string>
+    <string name="take_picture">拍照</string>
+    <string name="recorder_error_in_progress">为此，请先停止录制。</string>
+    <string name="recorder_error_maxed_out">您已经录制了最长时长。</string>
+    <string name="audio_from_clip">来自剪辑的自定义音频。</string>
+    <string name="recorder_error_no_clips">请先录制您的剪辑然后继续。</string>
+    <string name="message_song_select">录音开始后您无法选择歌曲。</string>
+    <string name="message_song_change">录音开始后，您无法更改歌曲。</string>
+    <string name="you_need_storage_permission">您需要存储权限</string>
+    <string name="filter">选择过滤器</string>
+    <string name="you_cannot_upload_video_above_30_mb">您不能上传超过 30 MB 的视频！！！</string>
+    <string name="choose_sticker">选择贴纸</string>
+    <string name="timer">计时器</string>
+    <string name="sticker">贴纸</string>
+    <string name="filters">过滤器</string>
+    <string name="preview">预览</string>
+    <string name="flip">翻动</string>
+    <string name="speed">速度</string>
+    <string name="notification_channel_id">默认</string>
+    <string name="notification_download_title">下载文件…</string>
+    <string name="notification_download_description">不应花费超过几秒钟的时间。</string>
+    <string name="announcement_welcome_to_room">公告：欢迎来到房间</string>
+    <string name="all">全部</string>
+    <string name="send">发送</string>
+    <string name="followers">关注者</string>
+    <string name="shorts">短裤</string>
+    <string name="posts">帖子</string>
+    <string name="creator">创造者</string>
+    <string name="agency">机构</string>
+    <string name="coin_seller">硬币卖家</string>
+    <string name="invite">邀请</string>
+    <string name="live">居住</string>
+    <string name="public_text">民众</string>
+    <string name="private_text">私人的</string>
+    <string name="welcome_to_the_party">欢迎参加聚会</string>
+    <string name="games">游戏</string>
+    <string name="keep">保持</string>
+    <string name="exit_text">出口</string>
+    <string name="you_not_have_enough_diamonds_to_send_gift">您的钻石不足以送出礼物</string>
+    <string name="sent_a_gift">送了礼物</string>
+    <string name="you_are_blocked_by_host">您已被主机屏蔽</string>
+    <string name="you_cannot_upload_video_above_30_mb_text">您不能上传超过 30 MB 的视频！！！</string>
+    <string name="select_song">选择歌曲</string>
+    <string name="select_filter">选择过滤器</string>
+    <string name="upload_relite">上传Relite</string>
+    <string name="add_caption_with_hashtags_and_mentions">添加带有主题标签和提及的标题</string>
+    <string name="location">地点</string>
+    <string name="show_to">显示给</string>
+    <string name="allow_comments">允许评论</string>
+    <string name="upload_post">上传帖子</string>
+    <string name="who_show_this_post_to">向谁展示此帖子</string>
+    <string name="only_followers">仅限关注者</string>
+    <string name="select_image_first">首先选择图像</string>
+    <string name="error_opening_gallery">打开图库时出错</string>
+    <string name="permission_denied_message">权限被拒绝....\n</string>
+    <string name="error_selecting_image">选择图像时出错</string>
+    <string name="location_not_set">未设置位置</string>
+    <string name="count_clips">%s 个剪辑</string>
+    <string name="my_followers">我的粉丝</string>
+    <string name="add_a_comment">添加评论…</string>
+    <string name="send_a_gift_to">送了礼物给</string>
+    <string name="room_image_updated">房间图片已更新</string>
+    <string name="sure_you_want_to_stand_up">你确定要站起来吗？</string>
+    <string name="there_s_no_user_to_invite_on_mic">没有可邀请的用户加入麦克风。</string>
+    <string name="remove_seat">移除座位</string>
+    <string name="kick_out">踢出</string>
+    <string name="unmute_mic">取消麦克风静音</string>
+    <string name="mute_mic">静音麦克风</string>
+    <string name="remove_mic">移除麦克风</string>
+    <string name="invite_mic">邀请麦克风</string>
+    <string name="take_the_mic">拿起麦克风</string>
+    <string name="give_the_mic">把麦克风交给</string>
+    <string name="lock_the_mic">锁定麦克风</string>
+    <string name="mute_the_mic">静音麦克风</string>
+    <string name="unmute">取消静音</string>
+    <string name="unlock">开锁</string>
+    <string name="remove">消除</string>
+    <string name="your_live_session_end_by_admin_text">您的直播会话由管理员结束。</string>
+    <string name="end_live_video">结束直播视频</string>
+    <string name="don_t_have_user_to_sent_a_gift_wait_for_user">没有用户发送礼物等待用户</string>
+    <string name="select_at_least_one_user">至少选择一位用户</string>
+    <string name="room_settings">房间设置</string>
+    <string name="people">人们</string>
+    <string name="copied_to_clipboard">已复制到剪贴板</string>
+    <string name="room_name">房间名称</string>
+    <string name="enter_room_name">输入房间名称</string>
+    <string name="please_enter_room_name">请输入房间名称</string>
+    <string name="seat_mode">座位模式</string>
+    <string name="_8_seat">8座</string>
+    <string name="use">使用</string>
+    <string name="_12_seat">12座</string>
+    <string name="_16_seat">16座</string>
+    <string name="seat_update">座位更新</string>
+    <string name="room_welcome_message">房间欢迎信息</string>
+    <string name="enter_room_welcome_message">进入房间欢迎信息</string>
+    <string name="please_enter_room_welcome_message">请输入房间欢迎信息</string>
+    <string name="room_passcode">房间密码</string>
+    <string name="enter_room_passcode">输入房间密码</string>
+    <string name="change_background">更改背景</string>
+    <string name="live_ended">直播结束</string>
+    <string name="joined_users">加入的用户</string>
+    <string name="live_duration">直播时长</string>
+    <string name="received_gifts">收到礼物</string>
+    <string name="increased_fans">粉丝增加</string>
+    <string name="rcoins">R币</string>
+    <string name="back_to_the_home">回到家</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_watch_live">您当前位于音频室。请退出房间并观看直播。</string>
+    <string name="s_live_has_ended">的直播已经结束。</string>
+    <string name="all_is_well_party">一切都好派对</string>
+    <string name="private_room">私人房间</string>
+    <string name="_123456">123456</string>
+    <string name="enter_valid_passcode">输入有效的密码</string>
+    <string name="enter_passcode">输入密码</string>
+    <string name="decline">衰退</string>
+    <string name="audio_request_received_from">收到的音频请求来自</string>
+    <string name="please_choose_another_seat">请选择其他座位</string>
+    <string name="this_seat_is_locked_by_host">此座位已被主人锁定</string>
+    <string name="add_location">添加位置</string>
+    <string name="search_area_or_city">搜索区域或城市</string>
+    <string name="manage_audio_volume">管理音量</string>
+    <string name="video_volume_label">视频音量</string>
+    <string name="song_volume_label">歌曲音量</string>
+    <string name="failed_to_delete">删除失败</string>
+    <string name="error_try_again">再试一次</string>
+    <string name="solved">已解决</string>
+    <string name="relites">瑞莱特</string>
+    <string name="error_loading_plans">加载计划时出错</string>
+    <string name="billing_not_ready">账单尚未准备好</string>
+    <string name="purchase_error">购买错误</string>
+    <string name="payment_init_failed">付款初始化失败</string>
+    <string name="purchase_canceled">购买已取消</string>
+    <string name="purchase_success">购买成功</string>
+    <string name="purchase_failed">购买失败</string>
+    <string name="please_select_a_gift">请选择礼物</string>
+    <string name="please_select_at_least_one_user">请至少选择一位用户</string>
+    <string name="no_user_found">未找到用户！</string>
+    <string name="notification_channel_name">默认</string>
+    <string name="audio_conversion_failed">音频转换失败</string>
+    <string name="no_message_available">没有可用消息</string>
+    <string name="no_date">没有日期</string>
+    <string name="invalid_user_id">无效的用户 ID</string>
+    <string name="user_has_been_blocked">用户已被屏蔽</string>
+    <string name="user_data_is_not_available">用户数据不可用</string>
+    <string name="user_data_not_loaded">未加载用户数据</string>
+    <string name="cannot_load_video_preview">无法加载视频预览。</string>
+    <string name="failed_to_process_video">无法处理视频。</string>
+    <string name="are_you_sure_you_want_to_delete_your_room">您确定要删除您的房间吗？</string>
+    <string name="your_room_deleted_successfully">您的房间删除成功..</string>
+    <string name="you_are_not_able_to_post_at_your_level">您无法以您的级别发帖</string>
+    <string name="room_passcode_changed">房间密码已更改..</string>
+    <string name="using">使用</string>
+    <string name="failed_to_logout_please_try_again">退出失败，请重试。</string>
+    <string name="link_not_available">链接不可用。</string>
+    <string name="we_will_take_immediate_action_thank_you">我们将立即采取行动。谢谢。</string>
+    <string name="picture_capture_timeout_please_try_again">图片拍摄超时。请重试。</string>
+    <string name="error_loading_image">加载图片时出错</string>
+    <string name="no_image_selected">未选择图像</string>
+    <string name="error_processing_video">处理视频时出错</string>
+    <string name="failed_to_capture_image">无法捕捉图像。</string>
+    <string name="failed_to_save_image">保存图像失败。</string>
+    <string name="you_cant_unmute_your_self">你不能取消静音</string>
+    <string name="audio_file_missing">音频文件丢失！</string>
+    <string name="video_file_missing">视频文件丢失！</string>
+    <string name="unexpected_error">意外错误：</string>
+    <string name="final_merge_failed">最终合并失败。</string>
+    <string name="video_merge_failed">视频合并失败。</string>
+    <string name="unblocked_successfully">解除阻断成功。</string>
+    <string name="unable_to_share_at_this_moment">目前无法分享</string>
+    <string name="unexpected_error_occurred_please_try_again">发生意外错误。请重试。</string>
+    <string name="unknown_error">未知错误</string>
+    <string name="transaction_failed">交易失败</string>
+    <string name="delete_failed">删除失败：</string>
+    <string name="invalid_post">无效帖子</string>
+    <string name="report_successful">举报成功</string>
+    <string name="failed_to_upload_image">上传图像失败。</string>
+    <string name="failed_to_upload_image_please_try_again">上传图片失败。请重试。</string>
+    <string name="failed_to_load_data_please_try_again">加载数据失败。请重试。</string>
+    <string name="comment_text_cannot_be_empty">评论文本不能为空。</string>
+    <string name="failed_to_submit_comment_please_try_again">提交评论失败。请重试。</string>
+    <string name="invalid_video">无效视频</string>
+    <string name="failed_to_delete_video">删除视频失败。</string>
+    <string name="all_fields_required">所有字段均为必填项</string>
+    <string name="purchase_failed_please_try_again">购买失败。请重试。</string>
+    <string name="failed_to_send_request">发送请求失败</string>
+    <string name="failed_to_start_live_stream">直播开始失败</string>
+    <string name="live_user_data_is_missing">缺少实时用户数据</string>
+    <string name="failed_to_delete_room">删除房间失败</string>
+    <string name="update_failed">更新失败</string>
+    <string name="private_room_passcode">私人房间密码</string>
+    <string name="here_s_the_private_passcode_for_the_room">这是房间的私人密码：</string>
+    <string name="share_via">分享</string>
+    <string name="passcode_empty_error">请输入有效的密码</string>
+    <string name="failed_to_update_passcode">更新密码失败</string>
+    <string name="enter_new_room_passcode">输入新的房间密码</string>
+    <string name="change_room_passcode">更改房间密码</string>
+    <string name="banned_list">禁用列表</string>
+    <string name="my_following">我的关注</string>
+    <string name="please_enter_valid_input">请输入有效的输入</string>
+    <string name="join_requests">加入请求</string>
+    <string name="sorry_this_call_can_t_be_completed_right_now">抱歉，目前无法接通此电话。</string>
+    <string name="watch_video_now">立即观看视频</string>
+    <string name="you_exceed_your_ad_limit">您超出了广告限制。</string>
+    <string name="search_people">搜索人员..</string>
+    <string name="public_room">公共房间</string>
+    <string name="my_profile">我的个人资料</string>
+    <string name="edit_self">编辑自我</string>
+    <string name="blocked_user">已阻止用户</string>
+    <string name="my_wallet">我的钱包</string>
+    <string name="select_age">选择年龄</string>
+    <string name="save_changes">保存更改</string>
+    <string name="enter_your_bio">输入您的简历</string>
+    <string name="enter_bio_here">在此输入个人简介..</string>
+    <string name="hey_there">嘿！</string>
+    <string name="follow_back">跟着回来</string>
+    <string name="purchase">购买</string>
+    <string name="select">选择</string>
+    <string name="selected">选定</string>
+    <string name="method_2_desc">使用您的推荐码邀请好友加入。每次使用您的推荐码，您都能获得奖励！</string>
+    <string name="method_1_desc">观看简短的广告视频，立即获得免费钻石！只需点击下方按钮即可开始观看并领取奖励。</string>
+    <string name="pay_now">立即付款</string>
+    <string name="select_room_image">选择房间图片</string>
+    <string name="room_description">房间描述</string>
+    <string name="room_type">房间类型</string>
+    <string name="upload_image_">上传图片</string>
+    <string name="enter_your_room_name">输入您的房间名称</string>
+    <string name="enter_your_room_passcode">输入您的房间密码</string>
+    <string name="enter_your_room_description">输入您的房间描述</string>
+    <string name="enter_note_here">在此输入注释..</string>
+    <string name="add_caption">添加标题</string>
+    <string name="attachments">附件</string>
+    <string name="enter_details_here">在此输入详细信息...</string>
+    <string name="my_income">我的收入</string>
+    <string name="best_plan">最佳计划</string>
+    <string name="best_recharge_plan">最佳充值计划</string>
+    <string name="purchase_recharge_plan">购买充值计划</string>
+    <string name="available_my_r_coins">可用我的 R 币</string>
+    <string name="payment">支付</string>
+    <string name="select_payment_option">选择付款方式：</string>
+    <string name="select_record_duration">选择记录时长：</string>
+    <string name="start_date_">开始日期：</string>
+    <string name="end_date_">结束日期：</string>
+    <string name="demo_purpose">在此 APK 中，所有数据仅用于演示目的。</string>
+    <string name="no_data_text">沒有显示</string>
+    <string name="vip">贵宾</string>
+    <string name="payment_option">付款方式：</string>
+    <string name="withdrawable_r_coins">可提取的R币：</string>
+    <string name="please_select_a_payment_option">请选择付款方式</string>
+    <string name="select_option">选择选项：</string>
+    <string name="bd">BD屋宇署</string>
+    <string name="version">版本 ：</string>
+    <string name="upload">上传</string>
+    <string name="no_one_joined">无人加入</string>
+    <string name="blocked_list">阻止列表</string>
+    <string name="room_close">房间关闭</string>
+    <string name="common_bio">探索联系，而不仅仅是个人资料。</string>
+    <string name="reactions">反应</string>
+    <string name="delete_confirmation_text">确定要删除吗？此操作无法撤消</string>
+    <string name="confirm_deletion">确认删除</string>
+    <string name="confirm_stand_up">确认站立</string>
+    <string name="delete_post_confirmation">您确定要删除此帖子吗？</string>
+    <string name="delete_relite_confirmation">您确定要删除此 Relite 吗？</string>
+    <string name="delete">删除</string>
+    <string name="demo_agency">演示机构</string>
+    <string name="exposure">接触</string>
+    <string name="smoothness">平滑度</string>
+    <string name="redness">发红</string>
+    <string name="sharpness">锋利度</string>
+    <string name="ar_effects">AR 效果</string>
+    <string name="calling">呼唤</string>
+    <string name="no_comments_yet_be_the_first_to_say_something">暂无评论。快来抢先发表你的评论吧！</string>
+    <string name="no_likes_yet_tap_to_spread_some_love">还没有人点赞。点击❤️来分享爱吧！</string>
+    <string name="finding_reasons_to_smile_everywhere_i_go_and_sharing_that_happiness_with_the_world">无论走到哪里，都能找到微笑的理由，并与世界分享快乐。</string>
+    <string name="okay">好的</string>
+    <string name="please_wait_for_a_spot_to_open">请等待空位</string>
+    <string name="all_seats_are_taken">所有座位均已占</string>
+    <string name="alex_sierra">#VALUE!</string>
+    <string name="request_sent">请求已发送</string>
+    <string name="join">加入</string>
+    <string name="video_call_gift">视频通话礼物</string>
+    <string name="chat_gift">聊天礼物</string>
+    <string name="uploading_">正在上传...</string>
+    <string name="please_try_after_some_time">请稍后再试</string>
+    <string name="you_are_currently_in_audioroom_please_exit_room_and_make_call">您目前似乎位于语音室。请退出语音室并拨打电话。</string>
+    <string name="notification_permission_denied">通知权限被拒绝</string>
+    <string name="you_have_to_enable_it_from_settings">您必须从设置中启用它。</string>
+    <string name="open_settings">打开“设置”</string>
+    <string name="cannot_unmute_user">无法取消用户静音</string>
+    <string name="this_user_has_muted_themselves_only_they_can_unmute">此用户已将自己静音。只有该用户自己可以取消静音。</string>
+    <string name="you_are_not_able_to_live_at_your_level">你无法按照自己的水平生活</string>
+    <string name="conversion_successful">转换成功</string>
+    <string name="screen_overlay_permission_needed">需要屏幕覆盖权限</string>
+    <string name="enable_display_over_other_apps_from_system_settings">从系统设置中启用“显示在其他应用程序上”。</string>
+    <string name="you_are_vip_now">您现在是VIP</string>
+    <string name="restart_app">重启应用程序</string>
+    <string name="this_seat_is_reserved">此座位已预留</string>
+    <string name="do_you_really_want_to_log_out">您确实要退出吗？您需要重新登录才能访问您的帐户</string>
+    <string name="notification_permission_granted">已授予通知权限</string>
+    <string name="verified">已验证</string>
+    <string name="no_one_has_requested">没人请求</string>
+    <string name="user_data_not_found_please_login_again">未找到用户数据。请重新登录。</string>
+    <string name="update_failed_">更新失败：</string>
+    <string name="dummy_name">米娅·马尔科瓦</string>
+    <string name="miya">米娅</string>
+    <string name="riya">里娅</string>
+    <string name="luliya">鲁莉娅</string>
+    <string name="rehan">雷罕</string>
+    <string name="susmita">苏斯米塔</string>
+    <string name="rahi">拉希</string>
+    <string name="nirma">尼尔玛</string>
+    <string name="jashvi">贾什维</string>
+    <string name="hely">海莉</string>
+    <string name="shruti">施鲁蒂</string>
+    <string name="dhruvi">德鲁维</string>
+    <string name="mamta">曼姆塔</string>
+    <string name="zeel">泽尔</string>
+    <string name="audio_live">音频直播</string>
+    <string name="post">邮政</string>
+    <string name="demo_host_center">演示主机中心</string>
+    <string name="agency_center">代理中心</string>
+    <string name="select_language">选择语言</string>
+    <string name="english">英语</string>
+    <string name="explore">探索</string>
+    <string name="party">派对</string>
+    <string name="my_features">我的功能</string>
+    <string name="host_vip_privilege">主持人和VIP特权</string>
+    <string name="restart_the_app">重新启动应用程序！</string>
+    <string name="restart">重启</string>
+    <string name="version_">"版本 "</string>
+    <string name="top_users">顶级用户</string>
+    <string name="top_creators">顶级创作者</string>
+    <string name="top_agency">顶级机构</string>
+    <string name="daily">每日</string>
+    <string name="weekly">每周</string>
+    <string name="monthly">每月</string>
+    <string name="get_premium_crown">获取高级皇冠</string>
+    <string name="get_extra_coins">获取额外金币</string>
+    <string name="get_all_level_access">获取所有等级的访问权限</string>
+    <string name="invalid_validity_period">无效的有效期</string>
+    <string name="user_id">用户ID</string>
+    <string name="you_ve_spent_s">"你已经花费了 %s "</string>
+    <string name="you_have">"你有 "</string>
+    <string name="referrals">" 推荐"</string>
+    <string name="id_">ID: </string>
+
+    <string name="feed">动态</string>
+    <string name="video">视频</string>
+    <string name="sent_a_gift_to">" 送了一个礼物给 "</string>
+    <string name="announcement">"公告 : "</string>
+    <string name="please_enter_valid_passcode">请输入有效的密码</string>
+    <string name="passcode_length_invalid">密码长度无效</string>
+    <string name="_0">0</string>
+    <string name="error_missing_room_data">缺少房间数据</string>
+    <string name="error_invalid_room_data">无效的房间数据</string>
+    <string name="dummy_noti_desc">詹姆斯·邦德给戴兹·夏尔玛送了一个礼物</string>
+    <string name="dummy_id">ID : 564321</string>
+    <string name="dummy_time">00:00</string>
+    <string name="cherry">樱桃</string>
+    <string name="level_1">等级 1</string>
+    <string name="hello">你好</string>
+    <string name="dummy_comment">谁成为了百万富翁？</string>
+    <string name="country">国家</string>
+    <string name="title1">标题 1</string>
+    <string name="incoming_video_call">来电视频通话</string>
+    <string name="upload_completed">上传完成！</string>
+    <string name="image_file_does_not_exist">图像文件不存在。</string>
+    <string name="user_session_not_found">未找到用户会话</string>
+    <string name="add">添加</string>
+    <string name="leave">离开</string>
+    <string name="requested">已请求</string>
+    <string name="call_request_rejected">通话请求被拒绝</string>
+    <string name="call_setup_failed">"通话设置失败： "</string>
+    <string name="invalid_chat_user">无效的聊天用户</string>
+    <string name="you">你</string>
+    <string name="sent_a_gift_">送了一份礼物🎁</string>
+    <string name="invalid_url">无效的网址</string>
+    <string name="here_is_my_referral_code">“这是我的推荐代码”</string>
+    <string name="let_me_recommend_you_this_application">\n让我向你推荐这个应用程序\n\n</string>
+    <string name="unknown_user">未知用户</string>
+    <string name="you_will_receive">“您将收到”</string>
+    <string name="_diamonds">“钻石”</string>
+    <string name="camera_not_ready">相机未准备好</string>
+    <string name="ar_is_starting_please_try_again">AR 正在启动…请重试。</string>
+    <string name="recording_started">录制开始。</string>
+    <string name="camera_is_not_available">相机不可用。</string>
+    <string name="permission_rationale_upload">要从图库中选择和上传视频，需要存储权限。</string>
+    <string name="unable_to_choose_video_for_upload">无法选择要上传的视频。</string>
+    <string name="sticker_item_is_missing">贴纸物品丢失。</string>
+    <string name="audio_file_is_missing">音频文件丢失。</string>
+    <string name="could_not_load_audio">无法加载音频。</string>
+    <string name="selected_video_uri_is_missing">缺少所选视频 URI。</string>
+    <string name="failed_to_prepare_video_for_upload">无法准备好要上传的视频。</string>
+    <string name="error_copying_file">复制文件时出错。</string>
+    <string name="failed_to_create_directory">无法创建目录。</string>
+    <string name="upload_failed_">“上传失败：”</string>
+    <string name="uploading">正在上传…</string>
+    <string name="public_">民众</string>
+    <string name="unknown_title">未知标题</string>
+    <string name="unknown_singer">未知歌手</string>
+    <string name="invalid_host_data">主机数据无效</string>
+    <string name="type_something">输入一些内容……</string>
+
+    <string-array name="fake_times">
+        <item>刚刚</item>
+        <item>片刻前</item>
+        <item>5分钟前</item>
+        <item>大约一小时前</item>
+        <item>1小时前</item>
+        <item>今天早些时候</item>
+        <item>今天</item>
+        <item>昨天</item>
+        <item>前几天</item>
+        <item>3天前</item>
+        <item>上周</item>
+        <item>几天前</item>
+        <item>2周前</item>
+        <item>上个月</item>
+        <item>一段时间前</item>
+        <item>一会儿前</item>
+        <item>很久以前</item>
+    </string-array>
+
+    <string-array name="fake_chat_sender">
+        <item>嘿！你怎么样？</item>
+        <item>我打算今晚看一部电影。</item>
+        <item>你怎么看最近的新闻？</item>
+        <item>我正在公司做一个新项目。</item>
+        <item>待会儿一起喝杯咖啡怎么样？</item>
+        <item>刚跑完步，感觉棒极了！</item>
+        <item>你有推荐的书吗？</item>
+        <item>你周末过得怎么样？</item>
+        <item>我打算下个月去度假。</item>
+        <item>你去过市中心那家新餐厅吗？</item>
+        <item>你今天在做什么？</item>
+        <item>刚读完一本很棒的书，等不及想跟你分享！</item>
+        <item>今晚有什么计划吗？</item>
+        <item>我在考虑学习一门新语言。</item>
+        <item>你看了最新一集的节目吗？</item>
+        <item>你喜欢刚出的那个新专辑吗？</item>
+        <item>我最近很喜欢听播客。</item>
+        <item>你对那个新设备怎么看？</item>
+        <item>我打算开始写博客。</item>
+        <item>你最喜欢的兴趣爱好是什么？</item>
+        <item>你是怎么保持动力的？</item>
+        <item>有什么提高效率的建议吗？</item>
+        <item>你平时怎么放松？</item>
+        <item>你怎么应对压力？</item>
+        <item>是什么激励了你？</item>
+    </string-array>
+
+    <string-array name="fake_chat_receiver">
+        <item>我很好，你呢？</item>
+        <item>听起来不错！看哪一部？</item>
+        <item>我不太清楚，最近没怎么看新闻。</item>
+        <item>真的吗？那个项目是关于什么的？</item>
+        <item>好啊，我很乐意！</item>
+        <item>哇，太棒了！我也得重新开始锻炼了。</item>
+        <item>我最近读了一本很棒的悬疑小说。</item>
+        <item>挺放松的，没做什么特别的事。</item>
+        <item>听起来不错！你准备去哪儿？</item>
+        <item>还没去呢，好吃吗？</item>
+        <item>在家工作，你呢？</item>
+        <item>听起来很有趣，快告诉我！</item>
+        <item>没什么特别的，就在休息。</item>
+        <item>太好了！你想学哪种语言？</item>
+        <item>是啊，太精彩了！迫不及待想看下一集。</item>
+        <item>我还没听，有什么好听的歌吗？</item>
+        <item>我也是，挺有收获的。</item>
+        <item>我也考虑买一个。你喜欢哪些功能？</item>
+        <item>太棒了！你想写什么内容？</item>
+        <item>我喜欢画画和读书。</item>
+        <item>我会设定小目标来激励自己。</item>
+        <item>我发现列待办事项清单很有用。</item>
+        <item>看电影或者读书。</item>
+        <item>我会冥想或者出去散步。</item>
+        <item>大自然和艺术最能激励我。</item>
+    </string-array>
+
+    <string-array name="lightening_contrast_options">
+        <item>低</item>
+        <item>正常</item>
+        <item>高</item>
+    </string-array>
+
+    <string-array name="fake_messages">
+        <item>嗨！ 👋</item>
+        <item>喜欢你的个人资料！</item>
+        <item>我是新来的——打个招呼吧！</item>
+        <item>想聊一会儿吗？</item>
+        <item>嘿！ 😊</item>
+        <item>你今天过得怎么样？</item>
+        <item>你看起来很有趣 👀</item>
+        <item>你为什么来到这里？</item>
+        <item>很高兴认识你！ 🙌</item>
+        <item>你好，陌生人 😄</item>
+        <item>你是咖啡派还是茶派？ ☕🍵</item>
+        <item>这个应用变得更好了 😉</item>
+        <item>那么…你的故事是什么？</item>
+        <item>嘿嘿！ ✨</item>
+        <item>期待聊天！</item>
+        <item>你有好 vibes 🌟</item>
+        <item>嗨！想联系吗？</item>
+        <item>很高兴我们匹配了 😍</item>
+        <item>嘿，生活过得怎么样？</item>
+        <item>给你一个大大的微笑 😁</item>
+        <item>你刚出现在我的屏幕上 👌</item>
+        <item>是我吗，还是我们刚成为最好的朋友？ 😂</item>
+        <item>我希望我们能匹配 💫</item>
+        <item>你看起来很有趣，适合聊天 😏</item>
+        <item>我在这里！你的理由呢？ 😜</item>
+        <item>猜猜看？你是我今天的第一条消息 📩</item>
+        <item>你相信巧合还是命运？ ✨</item>
+        <item>我觉得你欠我一个问候 😇</item>
+        <item>不骗你，你的个人资料很抢眼 🔥</item>
+        <item>好吧，你的笑容有感染力 😍</item>
+    </string-array>
+</resources>
