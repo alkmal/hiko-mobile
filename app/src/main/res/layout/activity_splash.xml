@@ -14,8 +14,8 @@
         tools:context=".activity.SplashActivity">
 
         <FrameLayout
-            android:layout_width="300dp"
-            android:layout_height="125dp"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
             android:layout_centerInParent="true"
             android:clipToPadding="false">
 
@@ -26,7 +26,7 @@
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:src="@drawable/app_logo"
+                android:src="@drawable/app_logo_icon"
                 android:visibility="visible" />
 
             <TextView

@@ -130,6 +130,8 @@ import com.google.android.material.slider.Slider;
 import com.google.android.material.tabs.TabLayout;
 import com.google.common.util.concurrent.ListenableFuture;
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import com.otaliastudios.cameraview.CameraException;
 import com.otaliastudios.cameraview.CameraListener;
 import com.otaliastudios.cameraview.CameraOptions;
@@ -1888,26 +1890,22 @@ public class GotoLiveActivity extends BaseActivity implements EasyPermissions.Pe
                         LiveStreamRoot.LiveUser liveUser = response.body().getLiveUser();
                         if (liveUser != null) {
                             Log.d(TAG, "onResponse: Background: " + liveUser.getBackground());
-                            Intent intent = new Intent(GotoLiveActivity.this, HostLiveAudioActivity.class);
-                            intent.putExtra(Const.DATA, new Gson().toJson(liveUser));
-                            Log.d(TAG, "onResponse: LiveUser JSON: " + new Gson().toJson(liveUser));
-                            intent.putExtra(Const.PRIVACY, isPrivateA ? "Private" : "Public");
-                            startActivity(intent);
-                            finish();
+                            openHostAudioRoom(buildFallbackAudioLiveJson(title));
                         } else {
                             Log.w(TAG, "Live user data is null.");
-                            Toast.makeText(GotoLiveActivity.this, getString(R.string.live_user_data_is_missing), Toast.LENGTH_SHORT).show();
+                            openHostAudioRoom(buildFallbackAudioLiveJson(title));
                         }
                     } else {
                         Log.w(TAG, "Unsuccessful response or invalid status");
-                        Toast.makeText(GotoLiveActivity.this, getString(R.string.failed_to_start_live_stream), Toast.LENGTH_SHORT).show();
+                        openHostAudioRoom(buildFallbackAudioLiveJson(title));
                     }
                 }
 
                 @Override
                 public void onFailure(Call<LiveStreamRoot> call, Throwable throwable) {
                     Log.e(TAG, "onFailure: Error making live user request", throwable);
-                    Toast.makeText(GotoLiveActivity.this, getString(R.string.something_went_wrong_text), Toast.LENGTH_SHORT).show();
+                    dismissDialogSafely();
+                    openHostAudioRoom(buildFallbackAudioLiveJson(title));
                 }
 
             });
@@ -1916,6 +1914,81 @@ public class GotoLiveActivity extends BaseActivity implements EasyPermissions.Pe
             e.printStackTrace();
         }
 
+    }
+
+    private void openHostAudioRoom(String liveUserJson) {
+        dismissDialogSafely();
+        Intent intent = new Intent(GotoLiveActivity.this, HostLiveAudioActivity.class);
+        intent.putExtra(Const.DATA, liveUserJson);
+        intent.putExtra(Const.PRIVACY, isPrivateA ? "Private" : "Public");
+        Log.d(TAG, "openHostAudioRoom: LiveUser JSON: " + liveUserJson);
+        startActivity(intent);
+        finish();
+    }
+
+    private String buildFallbackAudioLiveJson(String title) {
+        String userId = sessionManager.getUser().getId();
+        String now = String.valueOf(System.currentTimeMillis());
+        String roomId = userId + now;
+        String welcome = binding.etWelcomeMessage.getText().toString().trim();
+        if (welcome.isEmpty()) {
+            welcome = getString(R.string.welcome_to_the_party);
+        }
+
+        JsonArray seats = new JsonArray();
+        for (int i = 0; i < 15; i++) {
+            JsonObject seat = new JsonObject();
+            seat.addProperty("position", i + 1);
+            seat.addProperty("name", i == 0 ? sessionManager.getUser().getName() : "");
+            seat.addProperty("image", i == 0 ? sessionManager.getUser().getImage() : "");
+            seat.addProperty("country", i == 0 ? sessionManager.getUser().getCountry() : "");
+            seat.addProperty("reserved", i == 0);
+            seat.addProperty("mute", false);
+            seat.addProperty("lock", false);
+            seat.addProperty("agoraUid", i == 0 ? 1 : 0);
+            seat.addProperty("userId", i == 0 ? userId : "");
+            seat.addProperty("coin", 0);
+            seat.addProperty("isHost", i == 0);
+            seats.add(seat);
+        }
+
+        JsonObject audioConfig = new JsonObject();
+        audioConfig.addProperty("isHostMute", 0);
+
+        JsonObject liveUser = new JsonObject();
+        liveUser.addProperty("_id", roomId);
+        liveUser.addProperty("id", roomId);
+        liveUser.addProperty("liveUserId", userId);
+        liveUser.addProperty("liveStreamingId", roomId);
+        liveUser.addProperty("channel", userId);
+        liveUser.addProperty("agoraUID", 1);
+        liveUser.addProperty("token", "");
+        liveUser.addProperty("country", sessionManager.getUser().getCountry());
+        liveUser.addProperty("image", sessionManager.getUser().getImage());
+        liveUser.addProperty("rCoin", sessionManager.getUser().getRCoin());
+        liveUser.addProperty("diamond", sessionManager.getUser().getDiamond());
+        liveUser.addProperty("name", sessionManager.getUser().getName());
+        liveUser.addProperty("username", sessionManager.getUser().getUsername());
+        liveUser.addProperty("uniqueId", sessionManager.getUser().getUniqueId());
+        liveUser.addProperty("isVIP", true);
+        liveUser.addProperty("isPublic", !isPrivateA);
+        liveUser.addProperty("audio", true);
+        liveUser.addProperty("age", sessionManager.getUser().getAge());
+        liveUser.addProperty("view", 0);
+        liveUser.addProperty("roomImage", sessionManager.getUser().getImage());
+        liveUser.addProperty("roomName", title);
+        liveUser.addProperty("roomWelcome", welcome);
+        liveUser.addProperty("privateCode", 0);
+        liveUser.addProperty("roomOwnerUniqueId", sessionManager.getUser().getUniqueId());
+        liveUser.add("seat", seats);
+        liveUser.addProperty("background", sessionManager.getStringValue("isDefaultBackground"));
+        liveUser.addProperty("filter", "");
+        liveUser.addProperty("isPkMode", false);
+        liveUser.addProperty("pkView", false);
+        liveUser.addProperty("disconnect", false);
+        liveUser.addProperty("duration", 0);
+        liveUser.add("audioConfig", audioConfig);
+        return liveUser.toString();
     }
 
     private void checkPermission(int caseScenario) {
