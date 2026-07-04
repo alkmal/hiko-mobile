@@ -130,6 +130,9 @@ public class LiveStreamRoot {
         @SerializedName("duration")
         private int duration;
 
+        @SerializedName("audioConfig")
+        private AudioRoomConfig audioConfig;
+
         // Getters and setters for all fields (only some shown here for brevity)
 
         public String getCountry() {
@@ -302,6 +305,19 @@ public class LiveStreamRoot {
 
         public int getDuration() {
             return duration;
+        }
+
+        public AudioRoomConfig getAudioRoomConfig() {
+            return audioConfig;
+        }
+
+        public static class AudioRoomConfig {
+            @SerializedName("isHostMute")
+            private int isHostMute;
+
+            public int isHostMute() {
+                return isHostMute;
+            }
         }
 
         @Override

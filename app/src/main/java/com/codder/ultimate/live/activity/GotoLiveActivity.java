@@ -225,7 +225,6 @@ public class GotoLiveActivity extends BaseActivity implements EasyPermissions.Pe
     private final Runnable mStopper = this::stopRecording;
     int timeInSeconds = 0;
     private boolean isCameraReady = false;
-
     private Preview previewUseCase;          // for useExternalCameraTexture == true
     private ImageAnalysis imageAnalysisUseCase; // for analyzer path
 
@@ -1890,7 +1889,7 @@ public class GotoLiveActivity extends BaseActivity implements EasyPermissions.Pe
                         LiveStreamRoot.LiveUser liveUser = response.body().getLiveUser();
                         if (liveUser != null) {
                             Log.d(TAG, "onResponse: Background: " + liveUser.getBackground());
-                            openHostAudioRoom(buildFallbackAudioLiveJson(title));
+                            openHostAudioRoom(new Gson().toJson(liveUser));
                         } else {
                             Log.w(TAG, "Live user data is null.");
                             openHostAudioRoom(buildFallbackAudioLiveJson(title));
@@ -1943,7 +1942,7 @@ public class GotoLiveActivity extends BaseActivity implements EasyPermissions.Pe
             seat.addProperty("image", i == 0 ? sessionManager.getUser().getImage() : "");
             seat.addProperty("country", i == 0 ? sessionManager.getUser().getCountry() : "");
             seat.addProperty("reserved", i == 0);
-            seat.addProperty("mute", false);
+            seat.addProperty("mute", 0);
             seat.addProperty("lock", false);
             seat.addProperty("agoraUid", i == 0 ? 1 : 0);
             seat.addProperty("userId", i == 0 ? userId : "");

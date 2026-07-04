@@ -149,13 +149,15 @@ public class SeatAdapter extends RecyclerView.Adapter<SeatAdapter.SeatHolder> {
 
         binding.avatarFrameImage.setVisibility(VISIBLE);
 
-        if (seatItem.getAvatarFrame() != null && !seatItem.getAvatarFrame().isEmpty()) {
+        String avatarFrame = seatItem.getAvatarFrame() != null ? seatItem.getAvatarFrame() : "";
+
+        if (!avatarFrame.isEmpty()) {
             binding.userImage.setPadding(20, 20, 20, 20);
         } else {
             binding.userImage.setPadding(0, 0, 0, 0);
         }
 
-        if (seatItem.isReserved() && seatItem.getAvatarFrame().isEmpty()) {
+        if (seatItem.isReserved() && avatarFrame.isEmpty()) {
             binding.ivSeatBg.setVisibility(VISIBLE);
         } else {
             binding.ivSeatBg.setVisibility(GONE);
@@ -163,7 +165,7 @@ public class SeatAdapter extends RecyclerView.Adapter<SeatAdapter.SeatHolder> {
 
         if (seatItem.isReserved()) {
             Glide.with(context).load(seatItem.getImage()).circleCrop().placeholder(R.drawable.profile_placeholder).into(binding.userImage);
-            Glide.with(context).load(BuildConfig.BASE_URL + seatItem.getAvatarFrame()).into(binding.avatarFrameImage);
+            Glide.with(context).load(!avatarFrame.isEmpty() ? BuildConfig.BASE_URL + avatarFrame : "").into(binding.avatarFrameImage);
             binding.ivMute.setVisibility(GONE);
         } else if (!seatItem.isReserved() && !seatItem.isLock()) {
             Glide.with(context).load(R.drawable.audio_seat).into(binding.userImage);
