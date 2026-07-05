@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -23,6 +24,7 @@ import com.codder.ultimate.dialog.CustomDialogClass;
 import com.codder.ultimate.live.model.LiveStreamRoot;
 import com.codder.ultimate.live.model.PkAudioLiveUserRoot;
 import com.codder.ultimate.modelclass.UserRoot;
+import com.codder.ultimate.profile.activity.WebActivity;
 import com.codder.ultimate.retrofit.Const;
 import com.codder.ultimate.retrofit.RetrofitBuilder;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -44,6 +46,7 @@ public class LoginActivity extends BaseActivity {
     private String androidId, fcmToken = "";
     private boolean isActivityDestroyed = false;
     private GoogleLoginManager googleLoginManager;
+    private boolean isRegisterMode = false;
 
     private int pendingOps = 0;
 
@@ -60,17 +63,13 @@ public class LoginActivity extends BaseActivity {
     }
 
     private void initListener() {
-        binding.btnQuickLogin.setOnClickListener(view -> {
-            beginBlockingLoading(); // show loader once at the start
-            resetPending();
-            JsonObject jsonObject = new JsonObject();
-            jsonObject.addProperty("name", "");
-            jsonObject.addProperty("gender", "");
-            jsonObject.addProperty("image", "");
-            jsonObject.addProperty("email", androidId);
-            jsonObject.addProperty("loginType", 2);
+        updateAuthMode(false);
 
-            ensureFcmTokenThen(() -> sendData(jsonObject));
+        binding.btnLogin.setOnClickListener(view -> submitUsernamePassword());
+
+        binding.tvToggleMode.setOnClickListener(view -> {
+            isRegisterMode = !isRegisterMode;
+            updateAuthMode(true);
         });
 
         binding.btnGoogleLogin.setOnClickListener(v -> {
@@ -78,6 +77,83 @@ public class LoginActivity extends BaseActivity {
             resetPending();
             ensureFcmTokenThen(() -> googleLoginManager.onLogin());
         });
+    }
+
+    private void submitUsernamePassword() {
+        String username = textOf(binding.etUsername);
+        String password = textOf(binding.etPassword);
+        String displayName = textOf(binding.etDisplayName);
+        String confirmPassword = textOf(binding.etConfirmPassword);
+
+        if (username.length() < 3) {
+            binding.etUsername.setError("Enter at least 3 characters");
+            binding.etUsername.requestFocus();
+            return;
+        }
+
+        if (password.length() < 4) {
+            binding.etPassword.setError("Enter at least 4 characters");
+            binding.etPassword.requestFocus();
+            return;
+        }
+
+        if (isRegisterMode) {
+            if (displayName.isEmpty()) {
+                binding.etDisplayName.setError("Enter your name");
+                binding.etDisplayName.requestFocus();
+                return;
+            }
+
+            if (!password.equals(confirmPassword)) {
+                binding.etConfirmPassword.setError("Passwords do not match");
+                binding.etConfirmPassword.requestFocus();
+                return;
+            }
+        }
+
+        beginBlockingLoading();
+        resetPending();
+
+        JsonObject jsonObject = new JsonObject();
+        jsonObject.addProperty("username", username);
+        jsonObject.addProperty("password", password);
+        jsonObject.addProperty("name", isRegisterMode ? displayName : username);
+        jsonObject.addProperty("email", username.contains("@") ? username : username + "@vola.local");
+        jsonObject.addProperty("gender", Const.MALE);
+        jsonObject.addProperty("image", "");
+        jsonObject.addProperty("loginType", 3);
+        jsonObject.addProperty("authType", isRegisterMode ? "register" : "login");
+        jsonObject.addProperty("isRegister", isRegisterMode);
+
+        ensureFcmTokenThen(() -> sendData(jsonObject));
+    }
+
+    private void updateAuthMode(boolean clearPassword) {
+        binding.tvFormTitle.setText(isRegisterMode ? "Create account" : "Login");
+        binding.tvModeSubtitle.setText(isRegisterMode ? "Create a username and password" : "Use your username and password");
+        binding.btnLogin.setText(isRegisterMode ? "Create account" : "Login");
+        binding.tvToggleMode.setText(isRegisterMode ? "Already have an account? Login" : "Create new account");
+        binding.nameWrapper.setVisibility(isRegisterMode ? View.VISIBLE : View.GONE);
+        binding.confirmWrapper.setVisibility(isRegisterMode ? View.VISIBLE : View.GONE);
+
+        if (clearPassword) {
+            binding.etPassword.setText("");
+            binding.etConfirmPassword.setText("");
+        }
+    }
+
+    private String textOf(EditText editText) {
+        return editText.getText() == null ? "" : editText.getText().toString().trim();
+    }
+
+    public void onClickPrivacy(View view) {
+        if (sessionManager != null && sessionManager.getSetting() != null
+                && sessionManager.getSetting().getPrivacyPolicyLink() != null
+                && !sessionManager.getSetting().getPrivacyPolicyLink().isEmpty()) {
+            WebActivity.open(this, getString(R.string.privacy_policy), sessionManager.getSetting().getPrivacyPolicyLink(), true);
+        } else {
+            Toast.makeText(this, getString(R.string.link_not_available), Toast.LENGTH_SHORT).show();
+        }
     }
 
     @SuppressLint("HardwareIds")
@@ -188,6 +264,7 @@ public class LoginActivity extends BaseActivity {
             @Override
             public void onFailure(Call<UserRoot> call, Throwable t) {
                 Log.e(TAG, "API call failed: " + t.getLocalizedMessage(), t);
+                Toast.makeText(LoginActivity.this, getString(R.string.unexpected_error_occurred_please_try_again), Toast.LENGTH_SHORT).show();
                 endOneOpAndMaybeDismiss();
             }
         });
@@ -307,11 +384,13 @@ public class LoginActivity extends BaseActivity {
 
     private void setButtonsEnabled(boolean enabled) {
         if (binding == null) return;
-        binding.btnQuickLogin.setEnabled(enabled);
+        binding.btnLogin.setEnabled(enabled);
+        binding.tvToggleMode.setEnabled(enabled);
         binding.btnGoogleLogin.setEnabled(enabled);
         // optional: dim buttons while disabled
         float alpha = enabled ? 1f : 0.6f;
-        binding.btnQuickLogin.setAlpha(alpha);
+        binding.btnLogin.setAlpha(alpha);
+        binding.tvToggleMode.setAlpha(alpha);
         binding.btnGoogleLogin.setAlpha(alpha);
         // if you have other clickable views, disable them here as well
     }

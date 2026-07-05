@@ -165,6 +165,18 @@ public class SplashActivity extends BaseActivity {
         getBanner();
         getFakeLiveList();
         getIp();
+
+        if (!sessionManager.getBooleanValue(Const.IS_LOGIN)) {
+            new Handler(Looper.getMainLooper()).postDelayed(this::goToLoginIfNeeded, 1200);
+        }
+    }
+
+    private void goToLoginIfNeeded() {
+        if (hasNavigated || isFinishing() || sessionManager.getBooleanValue(Const.IS_LOGIN)) return;
+        hasNavigated = true;
+        Log.d(TAG, "No saved session, navigating to LoginActivity without waiting for startup APIs");
+        startActivity(new Intent(SplashActivity.this, LoginActivity.class));
+        finish();
     }
 
     private void preloadGameImages() {
@@ -460,6 +472,11 @@ public class SplashActivity extends BaseActivity {
 
                     if (settingRoot.isStatus() && settingRoot.getSetting() != null) {
                         sessionManager.saveSetting(settingRoot.getSetting());
+
+                        if (hasNavigated && !sessionManager.getBooleanValue(Const.IS_LOGIN)) {
+                            return;
+                        }
+
                         ((MainApplication) getApplication()).initAgora(SplashActivity.this);
                         Const.setCurrency(sessionManager.getSetting().getCurrency().getSymbol());
 
