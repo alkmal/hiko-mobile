@@ -12,6 +12,8 @@ public interface AudioRoomHandler {
 
     void onAddRequested(Object[] args);
 
+    void onAddParticipants(Object[] args);
+
 
     void onLessParticipants(Object[] args);
 

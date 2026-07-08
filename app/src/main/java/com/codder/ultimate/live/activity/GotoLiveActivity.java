@@ -1938,16 +1938,16 @@ public class GotoLiveActivity extends BaseActivity implements EasyPermissions.Pe
         for (int i = 0; i < 15; i++) {
             JsonObject seat = new JsonObject();
             seat.addProperty("position", i + 1);
-            seat.addProperty("name", i == 0 ? sessionManager.getUser().getName() : "");
-            seat.addProperty("image", i == 0 ? sessionManager.getUser().getImage() : "");
-            seat.addProperty("country", i == 0 ? sessionManager.getUser().getCountry() : "");
-            seat.addProperty("reserved", i == 0);
+            seat.addProperty("name", "");
+            seat.addProperty("image", "");
+            seat.addProperty("country", "");
+            seat.addProperty("reserved", false);
             seat.addProperty("mute", 0);
             seat.addProperty("lock", false);
-            seat.addProperty("agoraUid", i == 0 ? 1 : 0);
-            seat.addProperty("userId", i == 0 ? userId : "");
+            seat.addProperty("agoraUid", 0);
+            seat.addProperty("userId", "");
             seat.addProperty("coin", 0);
-            seat.addProperty("isHost", i == 0);
+            seat.addProperty("isHost", false);
             seats.add(seat);
         }
 

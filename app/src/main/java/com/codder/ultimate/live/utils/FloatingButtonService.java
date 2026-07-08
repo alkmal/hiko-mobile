@@ -203,6 +203,11 @@ public class FloatingButtonService extends Service {
 
                 }
 
+                @Override
+                public void onAddParticipants(Object[] args) {
+
+                }
+
                 @Override public void onLessParticipants(Object[] args) {  }
                 @Override public void onChangeTheme(Object[] args) {  }
                 @Override public void onBroadcastNotification(Object[] args) {  }

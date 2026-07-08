@@ -137,53 +137,53 @@ public class SeatAdapter extends RecyclerView.Adapter<SeatAdapter.SeatHolder> {
     private void setImage(PkAudioLiveUserRoot.UsersItem.SeatItem seatItem, ItemSeatBinding binding) {
         Log.d(TAG, "setImage: " + seatItem.toString());
 
+        binding.ivHost.setVisibility(GONE);
+        binding.avatarFrameImage.setVisibility(GONE);
+        binding.ivSeatBg.setVisibility(GONE);
+        binding.ivMute.setVisibility(GONE);
+        binding.ivLock.setVisibility(GONE);
+        binding.muteMicSeat.setVisibility(GONE);
 
-        if (seatItem.getUserId() != null) {
-            if (seatItem.getUserId().equals(hostId)) {
-                binding.ivHost.setVisibility(VISIBLE);
-            } else {
-                binding.ivHost.setVisibility(GONE);
-            }
-        }
-
-
-        binding.avatarFrameImage.setVisibility(VISIBLE);
-
+        String userId = seatItem.getUserId() != null ? seatItem.getUserId() : "";
+        String image = seatItem.getImage() != null ? seatItem.getImage() : "";
         String avatarFrame = seatItem.getAvatarFrame() != null ? seatItem.getAvatarFrame() : "";
+        boolean hasAvatarFrame = !avatarFrame.isEmpty();
+        boolean isMuted = seatItem.isMute() == 1 || seatItem.isMute() == 2;
 
-        if (!avatarFrame.isEmpty()) {
+        if (hasAvatarFrame) {
             binding.userImage.setPadding(20, 20, 20, 20);
         } else {
             binding.userImage.setPadding(0, 0, 0, 0);
         }
 
-        if (seatItem.isReserved() && avatarFrame.isEmpty()) {
-            binding.ivSeatBg.setVisibility(VISIBLE);
-        } else {
-            binding.ivSeatBg.setVisibility(GONE);
-        }
-
         if (seatItem.isReserved()) {
-            Glide.with(context).load(seatItem.getImage()).circleCrop().placeholder(R.drawable.profile_placeholder).into(binding.userImage);
-            Glide.with(context).load(!avatarFrame.isEmpty() ? BuildConfig.BASE_URL + avatarFrame : "").into(binding.avatarFrameImage);
-            binding.ivMute.setVisibility(GONE);
+            if (userId.equals(hostId)) {
+                binding.ivHost.setVisibility(VISIBLE);
+            }
+
+            binding.ivSeatBg.setVisibility(hasAvatarFrame ? GONE : VISIBLE);
+            Glide.with(context)
+                    .load(image.isEmpty() ? R.drawable.profile_placeholder : image)
+                    .circleCrop()
+                    .placeholder(R.drawable.profile_placeholder)
+                    .error(R.drawable.profile_placeholder)
+                    .into(binding.userImage);
+
+            if (hasAvatarFrame) {
+                binding.avatarFrameImage.setVisibility(VISIBLE);
+                Glide.with(context).load(BuildConfig.BASE_URL + avatarFrame).into(binding.avatarFrameImage);
+            }
         } else if (!seatItem.isReserved() && !seatItem.isLock()) {
             Glide.with(context).load(R.drawable.audio_seat).into(binding.userImage);
-            binding.avatarFrameImage.setVisibility(GONE);
-            binding.ivHost.setVisibility(GONE);
-            binding.ivSeatBg.setVisibility(GONE);
-            binding.ivMute.setVisibility(GONE);
         } else if (seatItem.isLock()) {
             Glide.with(context).load(R.drawable.audio_lock).into(binding.userImage);
-            binding.avatarFrameImage.setVisibility(GONE);
-            binding.ivHost.setVisibility(GONE);
-            binding.ivSeatBg.setVisibility(GONE);
-            binding.ivMute.setVisibility(GONE);
         }
 
-        if (!seatItem.isReserved() && (seatItem.isMute() == 1 || seatItem.isMute() == 2)) {
+        if (isMuted) {
             binding.ivMute.setVisibility(VISIBLE);
-            binding.muteMicSeat.setVisibility(VISIBLE);
+        }
+        if (seatItem.isLock() && seatItem.isReserved()) {
+            binding.ivLock.setVisibility(VISIBLE);
         }
 
 
@@ -195,7 +195,7 @@ public class SeatAdapter extends RecyclerView.Adapter<SeatAdapter.SeatHolder> {
     }
 
     private void handleSpeakingAnimation(PkAudioLiveUserRoot.UsersItem.SeatItem seatItem, ItemSeatBinding binding) {
-        if (seatItem.isIsSpeaking() && seatItem.getUserId() != null && seatItem.getUserId().equalsIgnoreCase(sessionManager.getUser().getId())) {
+        if (sessionManager.getUser() != null && seatItem.isIsSpeaking() && seatItem.getUserId() != null && seatItem.getUserId().equalsIgnoreCase(sessionManager.getUser().getId())) {
             binding.animationView1.setVisibility(VISIBLE);
             new Handler().postDelayed(() -> binding.animationView1.setVisibility(GONE), 3000);
         }
@@ -213,7 +213,12 @@ public class SeatAdapter extends RecyclerView.Adapter<SeatAdapter.SeatHolder> {
     }
 
     public String getNameText(PkAudioLiveUserRoot.UsersItem.SeatItem seatItem) {
-        return seatItem.isReserved() ? seatItem.getName() : String.valueOf(seatItem.getPosition() + 1);
+        if (seatItem.isReserved()) {
+            return seatItem.getName() != null && !seatItem.getName().isEmpty()
+                    ? seatItem.getName()
+                    : String.valueOf(seatItem.getPosition());
+        }
+        return String.valueOf(Math.max(seatItem.getPosition(), 1));
     }
 
     public void addData(List<PkAudioLiveUserRoot.UsersItem.SeatItem> seat) {

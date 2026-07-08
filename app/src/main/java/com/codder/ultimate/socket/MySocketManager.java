@@ -309,6 +309,13 @@ public class MySocketManager {
             }
         });
 
+        socket.on(Const.EVENT_ADD_PARTICIPATED, args1 -> {
+            Log.d(TAG, "createGlobal: EVENT_ADD_PARTICIPATED");
+            for (AudioRoomHandler audioRoomHandler : audioRoomHandlerList) {
+                audioRoomHandler.onAddParticipants(args1);
+            }
+        });
+
         socket.on(Const.EVENT_HOST_JOIN_AUDIO_ROOM, args1 -> {
             for (AudioRoomHandler audioRoomHandler : audioRoomHandlerList) {
                 audioRoomHandler.onHostEnter(args1);
@@ -350,13 +357,6 @@ public class MySocketManager {
             Log.d(TAG, "createGlobal: EVENT_LOCK_SEAT");
             for (AudioRoomHandler audioRoomHandler : audioRoomHandlerList) {
                 audioRoomHandler.onLockSeat(args1);
-            }
-        });
-
-        socket.on(Const.EVENT_ADD_REQUESTED, args1 -> {
-            Log.d(TAG, "createGlobal: EVENT_ADD_REQUESTED");
-            for (AudioRoomHandler audioRoomHandler : audioRoomHandlerList) {
-                audioRoomHandler.onAddRequested(args1);
             }
         });
 

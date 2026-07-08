@@ -34,6 +34,8 @@ import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 
+import java.util.Locale;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -122,6 +124,7 @@ public class LoginActivity extends BaseActivity {
         jsonObject.addProperty("gender", Const.MALE);
         jsonObject.addProperty("image", "");
         jsonObject.addProperty("loginType", 3);
+        jsonObject.addProperty("firebaseUid", "local:" + username.toLowerCase(Locale.US));
         jsonObject.addProperty("authType", isRegisterMode ? "register" : "login");
         jsonObject.addProperty("isRegister", isRegisterMode);
 
@@ -187,6 +190,7 @@ public class LoginActivity extends BaseActivity {
                 }
                 json.addProperty("email", safe(googleUser.getEmail(), androidId));
                 json.addProperty("loginType", 0);
+                json.addProperty("firebaseUid", "google:" + safe(googleUser.getEmail(), androidId).toLowerCase(Locale.US));
                 // loader already shown before onLogin(); proceed directly
                 sendData(json);
             }
@@ -227,15 +231,21 @@ public class LoginActivity extends BaseActivity {
         // track this network call
         pendingOps++;
 
-        String countryFlag = "https://flagcdn.com/w160/" + sessionManager.getStringValue(Const.COUNTRY_CODE).toLowerCase() + ".png";
+        String countryCode = safe(sessionManager.getStringValue(Const.COUNTRY_CODE), "ps").toLowerCase(Locale.US);
+        String country = safe(sessionManager.getStringValue(Const.COUNTRY), "Palestine");
+        String countryFlag = "https://flagcdn.com/w160/" + countryCode + ".png";
 
         Log.d(TAG, "sendData: =======countryFlagImage : " + countryFlag);
         jsonObject.addProperty("age", 18);
-        jsonObject.addProperty("country", sessionManager.getStringValue(Const.COUNTRY));
+        jsonObject.addProperty("country", country);
         jsonObject.addProperty("countryFlagImage", countryFlag);
-        jsonObject.addProperty("ip", sessionManager.getStringValue(Const.IPADDRESS));
+        jsonObject.addProperty("ip", safe(sessionManager.getStringValue(Const.IPADDRESS), ""));
         jsonObject.addProperty("identity", androidId);
         jsonObject.addProperty("fcmToken", fcmToken != null ? fcmToken : "");
+        if (!jsonObject.has("firebaseUid")) {
+            String email = jsonObject.has("email") ? jsonObject.get("email").getAsString() : androidId;
+            jsonObject.addProperty("firebaseUid", "local:" + safe(email, androidId).toLowerCase(Locale.US));
+        }
 
         RetrofitBuilder.create().createUser(jsonObject).enqueue(new Callback<UserRoot>() {
             @Override

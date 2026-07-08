@@ -13,6 +13,9 @@ public class RestResponse {
     @SerializedName("isLiked")
     private boolean isLiked = false;
 
+    @SerializedName("roomImage")
+    private String roomImage;
+
     public boolean isLiked() {
         return isLiked;
     }
@@ -27,5 +30,9 @@ public class RestResponse {
 
     public boolean isStatus() {
         return status;
+    }
+
+    public String getRoomImage() {
+        return roomImage;
     }
 }

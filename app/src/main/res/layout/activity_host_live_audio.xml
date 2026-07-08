@@ -438,6 +438,7 @@
                     <!-- Input field and send button -->
 
                     <LinearLayout
+                        android:id="@+id/commentInputContainer"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/gradient_bg_radius_50"
@@ -464,7 +465,8 @@
                             android:background="#47FFFFFF"/>
 
                         <RelativeLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
                             android:layout_height="wrap_content">
 
                         <androidx.appcompat.widget.AppCompatEditText
@@ -474,11 +476,14 @@
                             android:layoutDirection="locale"
                             android:textDirection="locale"
                             android:layout_centerVertical="true"
-                            android:layout_toLeftOf="@id/btnSend"
+                            android:layout_toStartOf="@id/btnSend"
                             android:background="@android:color/transparent"
                             android:fontFamily="@font/airbnbcereal_w_bk"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
                             android:gravity="center_vertical|start"
                             android:hint="Type Something..."
+                            android:inputType="textCapSentences|textMultiLine"
                             android:ellipsize="end"
                             android:singleLine="true"
                             android:textColor="@color/textColor"
@@ -555,6 +560,19 @@
                         android:visibility="gone"
                         android:scaleType="centerCrop"
                         android:src="@drawable/ic_unmute" />
+
+                    <ImageView
+                        android:id="@+id/btnMuteAllSeats"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        android:scaleType="centerInside"
+                        android:padding="7dp"
+                        android:background="@drawable/shape_round_white"
+                        android:src="@drawable/ic_mute_seat" />
 
 
                     <ImageView

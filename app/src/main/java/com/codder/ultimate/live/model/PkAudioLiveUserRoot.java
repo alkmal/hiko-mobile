@@ -917,6 +917,34 @@ public class PkAudioLiveUserRoot {
                 this.userId = userId;
             }
 
+            public void setImage(String image) {
+                this.image = image;
+            }
+
+            public void setAvatarFrame(String avatarFrame) {
+                this.avatarFrame = avatarFrame;
+            }
+
+            public void setCountry(String country) {
+                this.country = country;
+            }
+
+            public void setName(String name) {
+                this.name = name;
+            }
+
+            public void setLock(boolean lock) {
+                this.lock = lock;
+            }
+
+            public void setAgoraUid(int agoraUid) {
+                this.agoraUid = agoraUid;
+            }
+
+            public void setSpeaking(boolean speaking) {
+                isSpeaking = speaking;
+            }
+
             public String getName() {
                 return name;
             }
