@@ -590,6 +590,9 @@ public class MainActivity extends BaseActivity implements MyRewardAds.RewardAdLi
                     if (giftRoot.isStatus() && giftRoot.getGift() != null && !giftRoot.getGift().isEmpty()) {
                         List<GiftRoot.GiftItem> gifts = giftRoot.getGift();
                         String category = gifts.get(0).getCategory();
+                        if (category == null || category.isEmpty()) {
+                            category = id;
+                        }
                         allGiftList.addAll(gifts);
                         // Save gifts in session
                         sessionManager.saveGiftsList(category, gifts);

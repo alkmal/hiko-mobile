@@ -6,7 +6,7 @@ import java.util.List;
 
 public class GiftRoot {
 
-    @SerializedName("gift")
+    @SerializedName(value = "gift", alternate = {"data"})
     private List<GiftItem> gift;
 
     @SerializedName("message")
@@ -44,7 +44,7 @@ public class GiftRoot {
         @SerializedName("type")
         private int type;
 
-        @SerializedName("category")
+        @SerializedName(value = "category", alternate = {"giftCategoryId"})
         private String category;
 
         @SerializedName("svgaImage")

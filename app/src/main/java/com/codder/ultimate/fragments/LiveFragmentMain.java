@@ -42,6 +42,7 @@ import com.codder.ultimate.leaderboard.LeaderBoardActivity;
 import com.codder.ultimate.live.activity.GotoLiveActivity;
 import com.codder.ultimate.live.activity.HostLiveAudioActivity;
 import com.codder.ultimate.live.activity.WatchAudioLiveActivity;
+import com.codder.ultimate.live.model.LiveStreamRoot;
 import com.codder.ultimate.live.model.PkAudioLiveUserRoot;
 import com.codder.ultimate.live.utils.FloatingButtonService;
 import com.codder.ultimate.modelclass.LiveListViewModel;
@@ -278,7 +279,7 @@ public class LiveFragmentMain extends BaseFragment {
                             if (sessionManager.getIsAudioRoomExit()) {
 
                                 if (userDummy.isAudio() && !userDummy.isIsFake() && !userDummy.isIsPkMode()) {
-                                    startActivity(new Intent(requireActivity(), WatchAudioLiveActivity.class).putExtra(Const.DATA, new Gson().toJson(userDummy)));
+                                    openAudioLiveAfterCheck(userDummy);
                                 } else if (userDummy.isIsFake() && !userDummy.isIsPkMode() && userDummy.isAudio()) {
                                     Log.d(TAG, "onHostItemClick: fake audio");
                                     startActivity(new Intent(requireActivity(), FakeAudioWatchActivity.class).putExtra(Const.DATA, new Gson().toJson(userDummy)));
@@ -315,6 +316,7 @@ public class LiveFragmentMain extends BaseFragment {
                             jsonObject.addProperty("userId", sessionManager.getUser().getId());
                             jsonObject.addProperty("liveUserMongoId", sessionManager.getUserAudioBgModel().getId());
                             jsonObject.addProperty("liveStreamingId", sessionManager.getUserAudioBgModel().getLiveStreamingId());
+                            jsonObject.addProperty("liveHistoryId", sessionManager.getUserAudioBgModel().getLiveStreamingId());
 
                             MySocketManager.getInstance().getSocket().emit(Const.EVENT_LESS_PARTICIPATED, jsonObject);
 
@@ -322,6 +324,7 @@ public class LiveFragmentMain extends BaseFragment {
                             JSONObject jsonObject1 = new JSONObject();
                             try {
                                 jsonObject1.put("liveStreamingId", sessionManager.getUserAudioBgModel().getLiveStreamingId());
+                                jsonObject1.put("liveHistoryId", sessionManager.getUserAudioBgModel().getLiveStreamingId());
                                 jsonObject1.put("liveUserMongoId", sessionManager.getUserAudioBgModel().getId());
                                 jsonObject1.put("userId", sessionManager.getUser().getId());
                                 jsonObject1.put("isVIP", sessionManager.getUser().isIsVIP());
@@ -338,7 +341,7 @@ public class LiveFragmentMain extends BaseFragment {
                             }
                         }
                         if (userDummy.isAudio() && !userDummy.isIsFake() && !userDummy.isIsPkMode()) {
-                            startActivity(new Intent(requireActivity(), WatchAudioLiveActivity.class).putExtra(Const.DATA, new Gson().toJson(userDummy)));
+                            openAudioLiveAfterCheck(userDummy);
                         } else if (userDummy.isIsFake() && !userDummy.isIsPkMode() && userDummy.isAudio()) {
                             Log.d(TAG, "onHostItemClick: fake audio");
                             startActivity(new Intent(requireActivity(), FakeAudioWatchActivity.class).putExtra(Const.DATA, new Gson().toJson(userDummy)));
@@ -541,10 +544,7 @@ public class LiveFragmentMain extends BaseFragment {
 
             Log.d(TAG, "QuickJoin Real User = " + new Gson().toJson(randomReal));
 
-            startActivity(
-                    new Intent(requireActivity(), WatchAudioLiveActivity.class)
-                            .putExtra(Const.DATA, new Gson().toJson(randomReal))
-            );
+            openAudioLiveAfterCheck(randomReal);
             return;
         }
 
@@ -567,6 +567,54 @@ public class LiveFragmentMain extends BaseFragment {
         Toast.makeText(requireContext(),
                 "No available room to join",
                 Toast.LENGTH_SHORT).show();
+    }
+
+    private void openAudioLiveAfterCheck(PkAudioLiveUserRoot.UsersItem userDummy) {
+        if (userDummy == null || !isAdded()) return;
+
+        if (userDummy.isIsFake()) {
+            startActivity(new Intent(requireActivity(), FakeAudioWatchActivity.class).putExtra(Const.DATA, new Gson().toJson(userDummy)));
+            return;
+        }
+
+        if (!userDummy.isAudio() || userDummy.isIsPkMode() || userDummy.getLiveUserId() == null) {
+            return;
+        }
+
+        customDialogClass.show();
+        RetrofitBuilder.create()
+                .checkUserLiveOrNot(userDummy.getLiveUserId())
+                .enqueue(new Callback<LiveStreamRoot>() {
+                    @Override
+                    public void onResponse(Call<LiveStreamRoot> call, Response<LiveStreamRoot> response) {
+                        if (!isAdded() || requireActivity().isFinishing()) return;
+                        customDialogClass.dismiss();
+
+                        LiveStreamRoot body = response.body();
+                        if (response.isSuccessful() && body != null && body.isStatus() && body.getLiveUser() != null) {
+                            PkAudioLiveUserRoot.UsersItem liveUser = new Gson().fromJson(new Gson().toJson(body.getLiveUser()), PkAudioLiveUserRoot.UsersItem.class);
+                            startActivity(new Intent(requireActivity(), WatchAudioLiveActivity.class).putExtra(Const.DATA, new Gson().toJson(liveUser)));
+                            return;
+                        }
+
+                        showLiveEndedAndRefresh(userDummy);
+                    }
+
+                    @Override
+                    public void onFailure(Call<LiveStreamRoot> call, Throwable t) {
+                        if (!isAdded() || requireActivity().isFinishing()) return;
+                        customDialogClass.dismiss();
+                        showLiveEndedAndRefresh(userDummy);
+                    }
+                });
+    }
+
+    private void showLiveEndedAndRefresh(PkAudioLiveUserRoot.UsersItem userDummy) {
+        Toast.makeText(requireContext(),
+                userDummy.getName() + getString(R.string.s_live_has_ended),
+                Toast.LENGTH_SHORT).show();
+        refreshVM.triggerRefresh();
+        fetchuser();
     }
 
     public void fetchuser(){

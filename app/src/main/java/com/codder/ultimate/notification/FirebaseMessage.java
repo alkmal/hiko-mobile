@@ -17,6 +17,7 @@ import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
 import androidx.core.content.ContextCompat;
 
+import com.codder.ultimate.BuildConfig;
 import com.codder.ultimate.MainApplication;
 import com.codder.ultimate.R;
 import com.codder.ultimate.SessionManager;
@@ -188,7 +189,8 @@ public class FirebaseMessage extends FirebaseMessagingService {
     private void handleDefaultNotification(RemoteMessage remoteMessage) {
         RemoteMessage.Notification notification = remoteMessage.getNotification();
         if (notification == null) {
-            Log.w(TAG, "No notification payload found.");
+            Intent defaultIntent = new Intent(this, SplashActivity.class);
+            showDataNotification(remoteMessage, defaultIntent);
             return;
         }
 
@@ -289,7 +291,11 @@ public class FirebaseMessage extends FirebaseMessagingService {
     }
 
     private void showFirebaseNotification(RemoteMessage message, RemoteMessage.Notification notification, Intent intent) {
-        if (notification == null || intent == null) return;
+        if (intent == null) return;
+        if (notification == null) {
+            showDataNotification(message, intent);
+            return;
+        }
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
@@ -324,6 +330,57 @@ public class FirebaseMessage extends FirebaseMessagingService {
         }
 
         manager.notify(0, builder.build());
+    }
+
+    private void showDataNotification(RemoteMessage message, Intent intent) {
+        if (message == null || intent == null) return;
+
+        Map<String, String> data = message.getData();
+        String title = data.get("title");
+        String body = data.get("body");
+        if (body == null || body.isEmpty()) body = data.get("message");
+        if (title == null || title.isEmpty()) title = getString(R.string.app_name);
+        if (body == null) body = "";
+
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        PendingIntent pendingIntent = PendingIntent.getActivity(
+                this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
+                .setContentTitle(title)
+                .setContentText(body)
+                .setAutoCancel(true)
+                .setContentIntent(pendingIntent)
+                .setSmallIcon(R.drawable.app_logo)
+                .setColor(getResources().getColor(R.color.logo_color))
+                .setLights(Color.MAGENTA, 1000, 300)
+                .setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION))
+                .setDefaults(Notification.DEFAULT_VIBRATE);
+
+        String imageUrl = normalizeImageUrl(data.get("image"));
+        if (imageUrl != null && !imageUrl.isEmpty()) {
+            Bitmap bitmap = getBitmapFromUrl(imageUrl);
+            if (bitmap != null) {
+                builder.setStyle(new NotificationCompat.BigPictureStyle().bigPicture(bitmap));
+                builder.setLargeIcon(bitmap);
+            }
+        }
+
+        NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && manager.getNotificationChannel(CHANNEL_ID) == null) {
+            NotificationChannel channel = new NotificationChannel(
+                    CHANNEL_ID, "General Notifications", NotificationManager.IMPORTANCE_HIGH);
+            channel.setDescription("Channel for all app notifications");
+            manager.createNotificationChannel(channel);
+        }
+
+        manager.notify(0, builder.build());
+    }
+
+    private String normalizeImageUrl(String image) {
+        if (image == null || image.isEmpty()) return "";
+        if (image.startsWith("http://") || image.startsWith("https://")) return image;
+        return BuildConfig.BASE_URL + image.replaceFirst("^/+", "");
     }
 
     private Bitmap getBitmapFromUrl(String imageUrl) {

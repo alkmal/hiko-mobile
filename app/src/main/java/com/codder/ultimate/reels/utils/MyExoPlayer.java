@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.util.Log;
 
+import com.codder.ultimate.BuildConfig;
 import com.codder.ultimate.MainApplication;
 import com.google.android.exoplayer2.DefaultLoadControl;
 import com.google.android.exoplayer2.DefaultRenderersFactory;
@@ -103,9 +104,10 @@ public class MyExoPlayer {
             getPlayer(context);
         }
 
-        Log.d(TAG, "Playing video: " + videoUrl);
+        String normalizedUrl = normalizeVideoUrl(videoUrl);
+        Log.d(TAG, "Playing video: " + normalizedUrl);
 
-        MediaItem mediaItem = MediaItem.fromUri(Uri.parse(videoUrl));
+        MediaItem mediaItem = MediaItem.fromUri(Uri.parse(normalizedUrl));
         MediaSource mediaSource = new ProgressiveMediaSource.Factory(cacheDataSourceFactory)
                 .createMediaSource(mediaItem);
 
@@ -147,7 +149,8 @@ public class MyExoPlayer {
             AtomicBoolean isCanceled = new AtomicBoolean(false);
 
             try {
-                DataSpec dataSpec = new DataSpec(Uri.parse(videoUrl));
+                String normalizedUrl = normalizeVideoUrl(videoUrl);
+                DataSpec dataSpec = new DataSpec(Uri.parse(normalizedUrl));
                 CacheWriter cacheWriter = new CacheWriter(
                         cacheDataSourceFactory.createDataSource(),
                         dataSpec,
@@ -158,11 +161,24 @@ public class MyExoPlayer {
                         });
 
                 cacheWriter.cache();
-                Log.d(TAG, "Pre-cache complete for: " + videoUrl);
+                Log.d(TAG, "Pre-cache complete for: " + normalizedUrl);
             } catch (Exception e) {
                 Log.e(TAG, "Pre-cache error for " + videoUrl, e);
             }
         });
+    }
+
+    private String normalizeVideoUrl(String videoUrl) {
+        if (videoUrl == null) return "";
+        String trimmed = videoUrl.trim();
+        if (trimmed.startsWith("http://")
+                || trimmed.startsWith("https://")
+                || trimmed.startsWith("content://")
+                || trimmed.startsWith("file://")) {
+            return trimmed;
+        }
+        String baseUrl = BuildConfig.BASE_URL.replaceAll("/+$", "");
+        return trimmed.startsWith("/") ? baseUrl + trimmed : baseUrl + "/" + trimmed;
     }
 
     public void releasePreloader() {

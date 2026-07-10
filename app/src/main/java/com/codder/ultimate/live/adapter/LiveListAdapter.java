@@ -30,6 +30,7 @@ import com.codder.ultimate.databinding.ItemPartyBinding;
 import com.codder.ultimate.databinding.ItemPkInviteHostBinding;
 import com.codder.ultimate.databinding.ItemVideoGridBinding;
 import com.codder.ultimate.live.model.PkAudioLiveUserRoot;
+import com.codder.ultimate.utils.ImageUrlUtil;
 
 import java.io.IOException;
 import java.net.URL;
@@ -142,7 +143,7 @@ public class LiveListAdapter extends ListAdapter<PkAudioLiveUserRoot.UsersItem, 
                         new CenterCrop()
                 );
                 Glide.with(context)
-                        .load(userDummy.getImage())
+                        .load(ImageUrlUtil.normalize(userDummy.getImage()))
                         .circleCrop()
                         .apply(MainApplication.requestOptionsLive)
                         .diskCacheStrategy(DiskCacheStrategy.ALL)
@@ -206,13 +207,13 @@ public class LiveListAdapter extends ListAdapter<PkAudioLiveUserRoot.UsersItem, 
             try {
                 if (userDummy.isAudio()) {
                     Glide.with(context)
-                            .load(userDummy.getRoomImage())
+                            .load(ImageUrlUtil.normalize(userDummy.getRoomImage()))
                             .apply(MainApplication.requestOptionsLive)
                             .centerCrop()
                             .into(binding.image);
                 } else {
                     Glide.with(context)
-                            .load(userDummy.getImage())
+                            .load(ImageUrlUtil.normalize(userDummy.getImage()))
                             .apply(MainApplication.requestOptionsLive)
                             .centerCrop()
                             .into(binding.image);

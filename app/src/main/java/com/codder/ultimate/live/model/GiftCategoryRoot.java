@@ -9,7 +9,7 @@ public class GiftCategoryRoot {
     @SerializedName("message")
     private String message;
 
-    @SerializedName("category")
+    @SerializedName(value = "category", alternate = {"data"})
     private List<CategoryItem> category;
 
     @SerializedName("status")

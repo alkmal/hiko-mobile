@@ -16,7 +16,6 @@ import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
-import com.codder.ultimate.BuildConfig;
 import com.codder.ultimate.R;
 import com.codder.ultimate.databinding.ItemUserprofileImageviewBinding;
 
@@ -59,7 +58,7 @@ public class UserProfileImageView extends RelativeLayout {
     public void setUserImage(String profileImage, String avatarFrame, int padding) {
         if (binding != null) {
             if (profileImage != null && !profileImage.isEmpty()) {
-                Glide.with(this).load(profileImage).placeholder(R.drawable.profile_placeholder).circleCrop().into(binding.ivUser);
+                Glide.with(this).load(ImageUrlUtil.normalize(profileImage)).placeholder(R.drawable.profile_placeholder).circleCrop().into(binding.ivUser);
             }
             if (avatarFrame != null && !avatarFrame.isEmpty()) {
                 binding.ivVip.setVisibility(VISIBLE);
@@ -67,7 +66,7 @@ public class UserProfileImageView extends RelativeLayout {
                 binding.ivUser.setBackground(ContextCompat.getDrawable(getContext(), R.color.transparent));
 
                 Glide.with(this)
-                        .load(BuildConfig.BASE_URL + avatarFrame)
+                        .load(ImageUrlUtil.normalize(avatarFrame))
                         .listener(new RequestListener<Drawable>() {
                             @Override
                             public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
@@ -94,7 +93,7 @@ public class UserProfileImageView extends RelativeLayout {
     public void setProfileUserImage(String profileImage, String avatarFrame, int padding) {
         if (binding != null) {
             if (profileImage != null && !profileImage.isEmpty()) {
-                Glide.with(this).load(profileImage).placeholder(R.drawable.profile_placeholder).circleCrop().into(binding.ivUser);
+                Glide.with(this).load(ImageUrlUtil.normalize(profileImage)).placeholder(R.drawable.profile_placeholder).circleCrop().into(binding.ivUser);
             }
             if (avatarFrame != null && !avatarFrame.isEmpty()) {
                 binding.ivVip.setVisibility(VISIBLE);
@@ -102,7 +101,7 @@ public class UserProfileImageView extends RelativeLayout {
                 binding.ivUser.setBackground(ContextCompat.getDrawable(getContext(), R.color.transparent));
 
                 Glide.with(this)
-                        .load(BuildConfig.BASE_URL + avatarFrame)
+                        .load(ImageUrlUtil.normalize(avatarFrame))
                         .listener(new RequestListener<Drawable>() {
                             @Override
                             public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
@@ -130,7 +129,7 @@ public class UserProfileImageView extends RelativeLayout {
     public void setHomeUserImage(String profileImage, String avatarFrame, int padding) {
         if (binding != null) {
             if (profileImage != null && !profileImage.isEmpty()) {
-                Glide.with(this).load(profileImage).placeholder(R.drawable.profile_placeholder).circleCrop().into(binding.ivUser);
+                Glide.with(this).load(ImageUrlUtil.normalize(profileImage)).placeholder(R.drawable.profile_placeholder).circleCrop().into(binding.ivUser);
             }
             if (avatarFrame != null && !avatarFrame.isEmpty()) {
                 binding.ivVip.setVisibility(VISIBLE);
@@ -138,7 +137,7 @@ public class UserProfileImageView extends RelativeLayout {
                 binding.ivUser.setBackground(ContextCompat.getDrawable(getContext(), R.color.transparent));
 
                 Glide.with(this)
-                        .load(BuildConfig.BASE_URL + avatarFrame)
+                        .load(ImageUrlUtil.normalize(avatarFrame))
                         .listener(new RequestListener<Drawable>() {
                             @Override
                             public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
@@ -165,7 +164,7 @@ public class UserProfileImageView extends RelativeLayout {
     public void setChatUserImage(String profileImage, String avatarFrame, int padding) {
         if (binding != null) {
             if (profileImage != null && !profileImage.isEmpty()) {
-                Glide.with(this).load(profileImage).placeholder(R.drawable.profile_placeholder).circleCrop().into(binding.ivUser);
+                Glide.with(this).load(ImageUrlUtil.normalize(profileImage)).placeholder(R.drawable.profile_placeholder).circleCrop().into(binding.ivUser);
             }
             if (avatarFrame != null && !avatarFrame.isEmpty()) {
                 binding.ivVip.setVisibility(VISIBLE);
@@ -173,7 +172,7 @@ public class UserProfileImageView extends RelativeLayout {
                 binding.ivUser.setBackground(ContextCompat.getDrawable(getContext(), R.color.transparent));
 
                 Glide.with(this)
-                        .load(BuildConfig.BASE_URL + avatarFrame)
+                        .load(ImageUrlUtil.normalize(avatarFrame))
                         .listener(new RequestListener<Drawable>() {
                             @Override
                             public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
@@ -200,7 +199,7 @@ public class UserProfileImageView extends RelativeLayout {
     public void setWithoutbgUserImage(String profileImage, String avatarFrame, int padding) {
         if (binding != null) {
             if (profileImage != null && !profileImage.isEmpty()) {
-                Glide.with(this).load(profileImage).placeholder(R.drawable.profile_placeholder).circleCrop().into(binding.ivUser);
+                Glide.with(this).load(ImageUrlUtil.normalize(profileImage)).placeholder(R.drawable.profile_placeholder).circleCrop().into(binding.ivUser);
             }
             if (avatarFrame != null && !avatarFrame.isEmpty()) {
                 binding.ivVip.setVisibility(VISIBLE);
@@ -208,7 +207,7 @@ public class UserProfileImageView extends RelativeLayout {
                 binding.ivUser.setBackground(ContextCompat.getDrawable(getContext(), R.color.transparent));
 
                 Glide.with(this)
-                        .load(BuildConfig.BASE_URL + avatarFrame)
+                        .load(ImageUrlUtil.normalize(avatarFrame))
                         .listener(new RequestListener<Drawable>() {
                             @Override
                             public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {

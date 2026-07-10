@@ -86,6 +86,7 @@ import com.codder.ultimate.retrofit.Const;
 import com.codder.ultimate.socket.AudioRoomHandler;
 import com.codder.ultimate.socket.MySocketManager;
 import com.codder.ultimate.socket.SocketConnectHandler;
+import com.codder.ultimate.utils.ImageUrlUtil;
 import com.codder.ultimate.utils.SvgaCacheManager;
 import com.codder.ultimate.viewModel.ViewModelFactory;
 import com.google.gson.Gson;
@@ -154,6 +155,9 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
     private boolean isUserJoined = false;
     private String lastLocalCommentText = "";
     private long lastLocalCommentAt = 0L;
+    private boolean seatChangePending = false;
+    private final Handler seatChangeHandler = new Handler(Looper.getMainLooper());
+    private final Runnable clearSeatChangePending = () -> seatChangePending = false;
 
     private boolean isOptionsExpanded = false;
 
@@ -648,11 +652,19 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                         if (giftData != null) {
                             String finalGiftLink = null;
                             List<GiftRoot.GiftItem> giftItemList = sessionManager.getGiftsList(giftData.getCategory());
-                            for (GiftRoot.GiftItem item : giftItemList) {
-                                if (giftData.getId().equals(item.getId())) {
-                                    finalGiftLink = BuildConfig.BASE_URL + item.getImage();
-                                    break;
+                            if (giftItemList != null) {
+                                for (GiftRoot.GiftItem item : giftItemList) {
+                                    if (giftData.getId().equals(item.getId())) {
+                                        finalGiftLink = BuildConfig.BASE_URL + item.getImage();
+                                        break;
+                                    }
                                 }
+                            }
+                            if (finalGiftLink == null || finalGiftLink.isEmpty()) {
+                                String image = giftData.getType() == 2 && giftData.getSvgaImage() != null && !giftData.getSvgaImage().isEmpty()
+                                        ? giftData.getSvgaImage()
+                                        : giftData.getImage();
+                                finalGiftLink = image != null && image.startsWith("http") ? image : BuildConfig.BASE_URL + (image == null ? "" : image);
                             }
                             String name = giftJson.getString("userName");
                             giftData.setName(name);
@@ -814,7 +826,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                     try {
                         JSONObject jsonObject = new JSONObject();
                         jsonObject.put("blocked", blockedUsersList);
-                        jsonObject.put("liveStreamingId", host.getLiveStreamingId());
+                        putLiveRoomKeys(jsonObject);
                         Log.d(TAG, "onView: data send " + jsonObject);
                         MySocketManager.getInstance().getSocket().emit(Const.EVENT_BLOCK, jsonObject);
 
@@ -862,8 +874,8 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                 if (!entrySvga.isEmpty()) {
                     binding.layEntry.setVisibility(VISIBLE);
                     binding.userName.setText(userName);
-                    Glide.with(WatchAudioLiveActivity.this).load(userImage).circleCrop().into(binding.userImage);
-                    Glide.with(WatchAudioLiveActivity.this).load(avatarFrame != null && !avatarFrame.isEmpty() ? BuildConfig.BASE_URL + avatarFrame : "").into(binding.avatarFrameImage);
+                    Glide.with(WatchAudioLiveActivity.this).load(ImageUrlUtil.normalize(userImage)).circleCrop().into(binding.userImage);
+                    Glide.with(WatchAudioLiveActivity.this).load(avatarFrame != null && !avatarFrame.isEmpty() ? ImageUrlUtil.normalize(avatarFrame) : "").into(binding.avatarFrameImage);
 
                     Animation animation = AnimationUtils.loadAnimation(WatchAudioLiveActivity.this, R.anim.slide_in_right);
                     animation.setFillAfter(true);
@@ -972,9 +984,11 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                 runOnUiThread(() -> {
                     try {
                         JSONObject payload = new JSONObject(args[0].toString());
-                        int position = payload.optInt("position", -1);
+                        int position = seatIndexFromPayload(payload, currentSeatList());
                         clearSeatAt(position);
-                        if (position == selfPosition && rtcEngine() != null) {
+                        String removedUserId = payload.optString("userId", "");
+                        boolean removedMe = sessionManager.getUser() != null && removedUserId.equals(sessionManager.getUser().getId());
+                        if ((position == selfPosition || removedMe) && rtcEngine() != null) {
                             forceAudienceListenOnly();
                             selfPosition = -1;
                         }
@@ -993,37 +1007,20 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                     String data = args[0].toString();
                     try {
                         JSONObject json = new JSONObject(data);
-                        int seatPosition = json.getInt("position");
+                        List<PkAudioLiveUserRoot.UsersItem.SeatItem> seatList = currentSeatList();
+                        int seatPosition = seatIndexFromPayload(json, seatList);
 
-                        if (json.getInt("position") == -1) {
-                            int mute = json.getInt("mute");
-                            Log.d("mute==>", "onMuteSeat: ==>" + mute);
-                            if (json.getInt("mute") == 1 || json.getInt("mute") == 2) {
-                                binding.ivMute.setVisibility(View.VISIBLE);
-                            } else {
-
-                                rtcEngine().setEnableSpeakerphone(true);
-
-                                AudioManager audioManager;
-                                audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-                                if (audioManager != null) {
-                                    audioManager.setMode(AudioManager.MODE_IN_COMMUNICATION);
-                                    audioManager.setSpeakerphoneOn(true);
-                                }
-
-                                binding.ivMute.setVisibility(View.GONE);
-                            }
-                        }
-
-                        if (json.getInt("position") != -1) {
-                            if (seatPosition >= 0 && seatPosition < bookedSeatItemList.size()) {
-                                bookedSeatItemList.get(seatPosition).setMute(json.optInt("mute", 0));
-                                seatAdapter.updateData(bookedSeatItemList);
+                        if (seatPosition != -1) {
+                            if (seatPosition >= 0 && seatPosition < seatList.size()) {
+                                seatList.get(seatPosition).setMute(json.optInt("mute", 0));
+                                bookedSeatItemList = seatList;
+                                seatAdapter.updateData(seatList);
                             }
                             if (json.has("agoraId")) {
-                                if (bookedSeatItemList.get(json.getInt("position")).getAgoraUid() == json.getInt("agoraId")) {
+                                if (seatPosition >= 0 && seatPosition < seatList.size()
+                                        && seatList.get(seatPosition).getAgoraUid() == json.getInt("agoraId")) {
                                     int mute = json.getInt("mute");
-                                    String seatUserId = bookedSeatItemList.get(seatPosition).getUserId();
+                                    String seatUserId = seatList.get(seatPosition).getUserId();
                                     String localUserId = sessionManager.getUser().getId();
                                     if (seatUserId != null && seatUserId.equals(localUserId)) {
                                         if (mute == 2) {
@@ -1044,6 +1041,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                                         }
                                         if (rtcEngine() != null) {
                                             rtcEngine().muteLocalAudioStream(viewModel.isMuted);
+                                            rtcEngine().adjustRecordingSignalVolume(viewModel.isMuted ? 0 : 100);
                                         }
                                         Log.d(TAG, "onMuteSeat: isMute isMuteByHost==>= " + isMuteByHost);
                                         Log.d(TAG, "onMuteSeat: isMute viewModel.isMuted==> " + viewModel.isMuted);
@@ -1080,10 +1078,12 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                 runOnUiThread(() -> {
                     try {
                         JSONObject payload = new JSONObject(args[0].toString());
-                        int position = payload.optInt("position", -1);
-                        if (position >= 0 && position < bookedSeatItemList.size()) {
-                            bookedSeatItemList.get(position).setLock(payload.optBoolean("lock", true));
-                            seatAdapter.updateData(bookedSeatItemList);
+                        List<PkAudioLiveUserRoot.UsersItem.SeatItem> seatList = currentSeatList();
+                        int position = seatIndexFromPayload(payload, seatList);
+                        if (position >= 0 && position < seatList.size()) {
+                            seatList.get(position).setLock(payload.optBoolean("lock", true));
+                            bookedSeatItemList = seatList;
+                            seatAdapter.updateData(seatList);
                         }
                     } catch (JSONException e) {
                         Log.e(TAG, "onLockSeat: ", e);
@@ -1103,7 +1103,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                         String image = jsonObject.getString("background");
                         host.setBackground(image);
                         Glide.with(WatchAudioLiveActivity.this)
-                                .load(BuildConfig.BASE_URL + image)
+                                .load(ImageUrlUtil.normalize(image))
                                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                                 .placeholder(R.drawable.app_main_bg)
                                 .into(binding.mainImg);
@@ -1181,12 +1181,16 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                             gridLayoutManager.setSpanCount(4); // Default back to 4 columns for less than 16 items
                         }
                         seatAdapter.updateData(userData.getSeat());
-                        if (getSelfPositionFromSeat() == null && selfPosition != -1) {
+                        PkAudioLiveUserRoot.UsersItem.SeatItem selfSeat = getSelfPositionFromSeat();
+                        if (selfSeat == null && selfPosition != -1) {
                             forceAudienceListenOnly();
                             selfPosition = -1;
                             binding.btnMute.setEnabled(true);
                             binding.btnMute.setImageDrawable(ContextCompat.getDrawable(WatchAudioLiveActivity.this, R.drawable.ic_mute));
+                        } else if (selfSeat != null) {
+                            selfPosition = seatIndexForSeat(selfSeat);
                         }
+                        finishSeatChange();
                     });
                     coHostList.clear();
                     for (int i = 0; i < userData.getSeat().size(); i++) {
@@ -1199,12 +1203,12 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                     Log.d(TAG, "doWork: ==> Seat Size " + host.getSeat().size());
 
                     // If the user's seat position is greater than the updated seat size, remove them from their seat.
-                    if (selfPosition > host.getSeat().size()) {
+                    if (selfPosition >= host.getSeat().size()) {
                         JsonObject jsonObject1 = new JsonObject();
-                        jsonObject1.addProperty("position", selfPosition);
-                        jsonObject1.addProperty("liveUserMongoId", host.getId());
-                        jsonObject1.addProperty("liveStreamingId", host.getLiveStreamingId());
-                        MySocketManager.getInstance().getSocket().emit(Const.EVENT_LESS_PARTICIPATED, jsonObject);
+                        putSeatIndex(jsonObject1, selfPosition);
+                        putLiveRoomKeys(jsonObject1);
+                        jsonObject1.addProperty("userId", sessionManager.getUser().getId());
+                        MySocketManager.getInstance().getSocket().emit(Const.EVENT_LESS_PARTICIPATED, jsonObject1);
                         Log.d(TAG, "doWork: become audence");
                         rtcEngine().setClientRole(Constants.CLIENT_ROLE_AUDIENCE);
                         rtcEngine().disableVideo();
@@ -1329,15 +1333,21 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                             new PopupBuilder(WatchAudioLiveActivity.this).showPkRequestPopup(getString(R.string.audio_request_received_from) + host.getName(), host.getImage(), host.getAvatarFrameImage(), "Accept", "Decline", new PopupBuilder.OnMultiButtonPopupLister() {
                                 @Override
                                 public void onClickContinue() {
+                                    if (!beginSeatChange()) return;
                                     JsonObject jsonObject = new JsonObject();
                                     try {
-                                        jsonObject.addProperty("position", jsonObject1.getInt("position"));
+                                        int invitedPosition = seatIndexFromPayload(jsonObject1, currentSeatList());
+                                        if (invitedPosition < 0) {
+                                            finishSeatChange();
+                                            return;
+                                        }
+                                        putSeatIndex(jsonObject, invitedPosition);
                                         jsonObject.addProperty("liveUserMongoId", host.getId());
                                         jsonObject.addProperty("userId", sessionManager.getUser().getId());
                                         jsonObject.addProperty("name", sessionManager.getUser().getName());
                                         jsonObject.addProperty("country", sessionManager.getUser().getCountry());
                                         jsonObject.addProperty("agoraUid", MY_UID);
-                                        jsonObject.addProperty("liveStreamingId", host.getLiveStreamingId());
+                                        putLiveRoomKeys(jsonObject);
                                         jsonObject.addProperty("image", sessionManager.getUser().getImage());
                                         jsonObject.addProperty("avatarFrame", sessionManager.getUser().getAvatarFrameImage());
                                         int currentState = jsonObject1.optInt("mute", 0);
@@ -1351,8 +1361,8 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                                         jsonObject.addProperty("mute", currentState);
                                         MySocketManager.getInstance().getSocket().emit(Const.EVENT_ADD_PARTICIPATED, jsonObject);
 
-                                        int invitedPosition = jsonObject1.getInt("position");
                                         PkAudioLiveUserRoot.UsersItem.SeatItem invitedSeat = getSeatAt(invitedPosition);
+                                        clearAllSeatsForCurrentUserExcept(invitedSeat);
                                         reserveSeatForCurrentUser(invitedSeat, currentState, MY_UID);
                                         becomeHost(invitedSeat, true);
                                         selfPosition = invitedPosition;
@@ -1376,7 +1386,8 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                                             rtcEngine().muteLocalAudioStream(viewModel.isMuted);
                                         }
 
-                                    } catch (JSONException e) {
+                                    } catch (Exception e) {
+                                        finishSeatChange();
                                         Log.e(TAG, "onClickContinue: ", e);
                                     }
 
@@ -1415,20 +1426,22 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                 if (args1[0] != null) {
                     try {
                         JSONObject jsonObject = new JSONObject(args1[0].toString());
-                        if (jsonObject.getInt("position") == -1) {
+                        int rawPosition = jsonObject.optInt("position", -1);
+                        if (rawPosition == -1) {
                             UserRoot.User user = new Gson().fromJson(jsonObject.getString("user"), UserRoot.User.class);
                             LiveStramComment liveStramComment = new LiveStramComment("", user, false, host.getLiveStreamingId(), jsonObject.getString("image"), "reaction", "");
 
                             viewModel.liveStramCommentAdapter.addSingleComment(liveStramComment);
                             scrollAdapterLogic();
 
-                        } else if (jsonObject.getInt("position") == -2) {
+                        } else if (rawPosition == -2) {
                             setUpReaction(jsonObject.getString("image"), binding.imgHostReaction, 7000);
                         } else {
                             RecyclerView.LayoutManager layoutManager = binding.rvSeat.getLayoutManager();
                             if (layoutManager instanceof LinearLayoutManager) {
                                 LinearLayoutManager linearLayoutManager = (LinearLayoutManager) layoutManager;
-                                int position = jsonObject.getInt("position"); // Replace 0 with the position of the item you want
+                                int position = seatIndexFromPayload(jsonObject, currentSeatList());
+                                if (position < 0 || position >= seatAdapter.getList().size()) return;
                                 // Get the View at the specified position from the LayoutManager
                                 View itemView = linearLayoutManager.findViewByPosition(position);
                                 // Now you can use itemView to access the ViewBinding object if you have one
@@ -1464,7 +1477,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
         public void onRoomImageChange(Object[] args) {
             runOnUiThread(() -> {
                 host.setRoomImage(args[0].toString());
-                Glide.with(WatchAudioLiveActivity.this).load(args[0].toString()).into(binding.imgProfile);
+                Glide.with(WatchAudioLiveActivity.this).load(ImageUrlUtil.normalize(args[0].toString())).into(binding.imgProfile);
             });
         }
 
@@ -1536,9 +1549,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
     }
 
     private PkAudioLiveUserRoot.UsersItem.SeatItem getSeatAt(int position) {
-        List<PkAudioLiveUserRoot.UsersItem.SeatItem> seatList = bookedSeatItemList != null && !bookedSeatItemList.isEmpty()
-                ? bookedSeatItemList
-                : seatAdapter.getList();
+        List<PkAudioLiveUserRoot.UsersItem.SeatItem> seatList = currentSeatList();
         if (position >= 0 && position < seatList.size()) {
             return seatList.get(position);
         }
@@ -1552,10 +1563,8 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
 
     private void applySeatParticipantFromPayload(JSONObject payload) {
         if (payload == null || seatAdapter == null) return;
-        List<PkAudioLiveUserRoot.UsersItem.SeatItem> seatList = bookedSeatItemList != null && !bookedSeatItemList.isEmpty()
-                ? bookedSeatItemList
-                : seatAdapter.getList();
-        int position = payload.optInt("position", -1);
+        List<PkAudioLiveUserRoot.UsersItem.SeatItem> seatList = currentSeatList();
+        int position = seatIndexFromPayload(payload, seatList);
         if (position < 0 || position >= seatList.size()) return;
 
         String userId = payload.optString("userId", "");
@@ -1577,17 +1586,17 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
         seat.setSpeaking(false);
         bookedSeatItemList = seatList;
         seatAdapter.updateData(seatList);
+        finishSeatChange();
     }
 
     private void clearSeatAt(int position) {
         if (seatAdapter == null) return;
-        List<PkAudioLiveUserRoot.UsersItem.SeatItem> seatList = bookedSeatItemList != null && !bookedSeatItemList.isEmpty()
-                ? bookedSeatItemList
-                : seatAdapter.getList();
+        List<PkAudioLiveUserRoot.UsersItem.SeatItem> seatList = currentSeatList();
         if (position < 0 || position >= seatList.size()) return;
         clearSeatItem(seatList.get(position));
         bookedSeatItemList = seatList;
         seatAdapter.updateData(seatList);
+        finishSeatChange();
     }
 
     private void clearSeatItem(PkAudioLiveUserRoot.UsersItem.SeatItem seat) {
@@ -1671,6 +1680,93 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
         binding.rvComments.scrollToPosition(0);
     }
 
+    private void putLiveRoomKeys(JSONObject jsonObject) throws JSONException {
+        jsonObject.put("liveStreamingId", host.getLiveStreamingId());
+        jsonObject.put("liveHistoryId", host.getLiveStreamingId());
+        jsonObject.put("liveUserMongoId", host.getId());
+    }
+
+    private void putLiveRoomKeys(JsonObject jsonObject) {
+        jsonObject.addProperty("liveStreamingId", host.getLiveStreamingId());
+        jsonObject.addProperty("liveHistoryId", host.getLiveStreamingId());
+        jsonObject.addProperty("liveUserMongoId", host.getId());
+    }
+
+    private List<PkAudioLiveUserRoot.UsersItem.SeatItem> currentSeatList() {
+        if (bookedSeatItemList != null && !bookedSeatItemList.isEmpty()) {
+            return bookedSeatItemList;
+        }
+        if (host != null && host.getSeat() != null && !host.getSeat().isEmpty()) {
+            return host.getSeat();
+        }
+        return seatAdapter != null ? seatAdapter.getList() : Collections.emptyList();
+    }
+
+    private void putSeatIndex(JsonObject jsonObject, int adapterIndex) {
+        jsonObject.addProperty("position", adapterIndex);
+        jsonObject.addProperty("seatIndex", adapterIndex);
+        List<PkAudioLiveUserRoot.UsersItem.SeatItem> seats = currentSeatList();
+        if (adapterIndex >= 0 && adapterIndex < seats.size()) {
+            jsonObject.addProperty("seatPosition", seats.get(adapterIndex).getPosition());
+        }
+    }
+
+    private int seatIndexFromPayload(JSONObject payload, List<PkAudioLiveUserRoot.UsersItem.SeatItem> seats) {
+        if (payload == null || seats == null) return -1;
+        int index = payload.optInt("seatIndex", -1);
+        if (index >= 0 && index < seats.size()) return index;
+        int position = payload.optInt("position", -1);
+        if (position >= 0 && position < seats.size()) return position;
+        for (int i = 0; i < seats.size(); i++) {
+            if (seats.get(i).getPosition() == position) return i;
+        }
+        return -1;
+    }
+
+    private int seatIndexForSeat(PkAudioLiveUserRoot.UsersItem.SeatItem targetSeat) {
+        if (targetSeat == null) return -1;
+        List<PkAudioLiveUserRoot.UsersItem.SeatItem> seats = currentSeatList();
+        int index = seats.indexOf(targetSeat);
+        if (index >= 0) return index;
+        String userId = targetSeat.getUserId();
+        for (int i = 0; i < seats.size(); i++) {
+            PkAudioLiveUserRoot.UsersItem.SeatItem seat = seats.get(i);
+            if (!TextUtils.isEmpty(userId) && userId.equals(seat.getUserId())) return i;
+            if (seat.getPosition() == targetSeat.getPosition()) return i;
+        }
+        return -1;
+    }
+
+    private void clearAllSeatsForCurrentUserExcept(PkAudioLiveUserRoot.UsersItem.SeatItem keepSeat) {
+        if (sessionManager == null || sessionManager.getUser() == null) return;
+        String localUserId = sessionManager.getUser().getId();
+        if (TextUtils.isEmpty(localUserId)) return;
+        for (PkAudioLiveUserRoot.UsersItem.SeatItem seat : currentSeatList()) {
+            if (seat != keepSeat && localUserId.equals(seat.getUserId())) {
+                clearSeatItem(seat);
+            }
+        }
+    }
+
+    private int agoraUidForCurrentUser() {
+        String userId = sessionManager != null && sessionManager.getUser() != null ? sessionManager.getUser().getId() : "";
+        long hash = TextUtils.isEmpty(userId) ? System.currentTimeMillis() : (userId.hashCode() & 0xffffffffL);
+        return (int) (1000 + (hash % 2000000000L));
+    }
+
+    private boolean beginSeatChange() {
+        if (seatChangePending) return false;
+        seatChangePending = true;
+        seatChangeHandler.removeCallbacks(clearSeatChangePending);
+        seatChangeHandler.postDelayed(clearSeatChangePending, 4000);
+        return true;
+    }
+
+    private void finishSeatChange() {
+        seatChangePending = false;
+        seatChangeHandler.removeCallbacks(clearSeatChangePending);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -1713,7 +1809,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
             binding.tvName.setText(host.getRoomName());
             RayziUtils.marqueeText(binding.tvName);
             binding.tvUniqueId.setText(getString(R.string.id) + host.getUniqueId());
-            Glide.with(this).load(host.getRoomImage()).apply(MainApplication.requestOptions).circleCrop().into(binding.imgProfile);
+            Glide.with(this).load(ImageUrlUtil.normalize(host.getRoomImage())).apply(MainApplication.requestOptions).circleCrop().into(binding.imgProfile);
 
             gridLayoutManager = new GridLayoutManager(this, 4);
             binding.rvSeat.setLayoutManager(gridLayoutManager);
@@ -1722,7 +1818,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
             binding.mainHostnameCount.setText(host.getName());
 
             if (host.getBackground() != null && !host.getBackground().isEmpty()) {
-                Glide.with(WatchAudioLiveActivity.this).load(host.getBackground()).thumbnail(Glide.with(WatchAudioLiveActivity.this).load(BuildConfig.BASE_URL + host.getBackground())).placeholder(R.drawable.default_bg_audioroom).into(binding.mainImg);
+                Glide.with(WatchAudioLiveActivity.this).load(ImageUrlUtil.normalize(host.getBackground())).thumbnail(Glide.with(WatchAudioLiveActivity.this).load(ImageUrlUtil.normalize(host.getBackground()))).placeholder(R.drawable.default_bg_audioroom).into(binding.mainImg);
             } else {
                 Glide.with(WatchAudioLiveActivity.this).load(R.drawable.default_bg_audioroom).into(binding.mainImg);
             }
@@ -1749,7 +1845,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
             if (selfPos != null) {
                 MY_UID = selfPos.getAgoraUid();
             } else {
-                MY_UID = new Random().nextInt(500) + 2;
+                MY_UID = agoraUidForCurrentUser();
             }
 
 
@@ -1849,7 +1945,14 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
             rememberLocalComment(comment);
             viewModel.liveStramCommentAdapter.addSingleComment(liveStramComment);
             scrollAdapterLogic();
-            MySocketManager.getInstance().getSocket().emit(Const.EVENT_COMMENT_AUDIO, new Gson().toJson(liveStramComment));
+            try {
+                JSONObject commentPayload = new JSONObject(new Gson().toJson(liveStramComment));
+                putLiveRoomKeys(commentPayload);
+                commentPayload.put("userId", sessionManager.getUser().getId());
+                MySocketManager.getInstance().getSocket().emit(Const.EVENT_COMMENT_AUDIO, commentPayload);
+            } catch (JSONException e) {
+                Log.e(TAG, "onClickSendComment: ", e);
+            }
         }
     }
 
@@ -1887,9 +1990,10 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
         if (selfPos != null) {
             MY_UID = selfPos.getAgoraUid();
             JsonObject jsonObject = new JsonObject();
-            jsonObject.addProperty("position", selfPos.getPosition());
-            jsonObject.addProperty("liveUserMongoId", host.getId());
-            jsonObject.addProperty("liveStreamingId", host.getLiveStreamingId());
+            int initialSeatIndex = seatIndexForSeat(selfPos);
+            if (initialSeatIndex < 0) return;
+            putSeatIndex(jsonObject, initialSeatIndex);
+            putLiveRoomKeys(jsonObject);
             jsonObject.addProperty("userId", sessionManager.getUser().getId());
             jsonObject.addProperty("name", sessionManager.getUser().getName());
             jsonObject.addProperty("country", sessionManager.getUser().getCountry());
@@ -1902,8 +2006,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
             Log.d(TAG, "doWork: add participate emit " + jsonObject);
 
             becomeHost(selfPos, false);
-            int initialSeatIndex = seatAdapter.getList().indexOf(selfPos);
-            selfPosition = initialSeatIndex >= 0 ? initialSeatIndex : selfPos.getPosition();
+            selfPosition = initialSeatIndex;
 
             if (selfPos.isMute() == 2) {
                 isMuteByHost = true;
@@ -1934,6 +2037,8 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
             rtcEngine().setClientRole(Constants.CLIENT_ROLE_BROADCASTER);
             rtcEngine().enableAudio();
             rtcEngine().disableVideo();
+            rtcEngine().muteLocalAudioStream(viewModel.isMuted);
+            rtcEngine().adjustRecordingSignalVolume(viewModel.isMuted ? 0 : 100);
 
             // keep exactly the same output path & playback volume as audience
             ensureSpeakerphone();
@@ -2011,7 +2116,14 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
 
                 LiveStramComment liveStramComment = new LiveStramComment("", sessionManager.getUser(), true, host.getLiveStreamingId(), "", "comment", "");
                 if (!sessionManager.getBooleanValue("isUserKeep")) {
-                    MySocketManager.getInstance().getSocket().emit(Const.EVENT_COMMENT_AUDIO, new Gson().toJson(liveStramComment));
+                    try {
+                        JSONObject commentPayload = new JSONObject(new Gson().toJson(liveStramComment));
+                        putLiveRoomKeys(commentPayload);
+                        commentPayload.put("userId", sessionManager.getUser().getId());
+                        MySocketManager.getInstance().getSocket().emit(Const.EVENT_COMMENT_AUDIO, commentPayload);
+                    } catch (JSONException e) {
+                        Log.e(TAG, "joinChannel: emit join comment", e);
+                    }
                 }
             }
 
@@ -2088,6 +2200,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
             viewModel.isMuted = !viewModel.isMuted;
             if (rtcEngine() != null) {
                 int kk = rtcEngine().muteLocalAudioStream(viewModel.isMuted);
+                rtcEngine().adjustRecordingSignalVolume(viewModel.isMuted ? 0 : 100);
                 Log.e(TAG, "initLister:   " + kk);
             }
             JsonObject jsonObject = getJsonObject((viewModel.isMuted) ? 1 : 0);
@@ -2144,8 +2257,13 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
 
             try {
                 JSONObject jsonObject = new JSONObject();
-                jsonObject.put("liveStreamingId", host.getLiveStreamingId());
+                putLiveRoomKeys(jsonObject);
                 jsonObject.put("position", selfPosition);
+                jsonObject.put("seatIndex", selfPosition);
+                List<PkAudioLiveUserRoot.UsersItem.SeatItem> seats = currentSeatList();
+                if (selfPosition >= 0 && selfPosition < seats.size()) {
+                    jsonObject.put("seatPosition", seats.get(selfPosition).getPosition());
+                }
                 jsonObject.put("image", reaction.getImage());
                 jsonObject.put("user", new Gson().toJson(sessionManager.getUser()));
                 MySocketManager.getInstance().getSocket().emit(Const.EVENT_SEND_REACTION, jsonObject);
@@ -2181,7 +2299,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                         jsonObject.put("senderUserId", sessionManager.getUser().getId());
                         jsonObject.put("receiverUserId", Arrays.toString(selectedUsers.toArray()));
                         jsonObject.put("hostId", host.getLiveUserId());
-                        jsonObject.put("liveStreamingId", host.getLiveStreamingId());
+                        putLiveRoomKeys(jsonObject);
                         jsonObject.put("userName", sessionManager.getUser().getName());
 //                        jsonObject.put("receiverUserName", Arrays.toString(selectedUsersName.toArray()));
                         jsonObject.put("receiverUserName", String.join(",", selectedUsersName));
@@ -2191,7 +2309,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                         jsonObject.put("timeStamp", System.currentTimeMillis());
                         jsonObject.put("liveType", "audio");
                         int i = selectedUsers.size();
-                        double totalGiftCoin = giftItem.getCoin() * i;
+                        double totalGiftCoin = giftItem.getCoin() * giftItem.getCount() * i;
                         double totalDiamond = sessionManager.getUser().getDiamond();
 
                         if (totalDiamond >= totalGiftCoin) {
@@ -2223,9 +2341,12 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
 
         seatAdapter.setOnSeatClick((seatItem, position) -> {
             Log.d(TAG, "OnClickSeat: isMute ==>  " + seatItem.isMute());
-            if (!isMuteByHost) {
+            String seatUserId = seatItem.getUserId();
+            String localUserId = sessionManager.getUser().getId();
+            if (!isMuteByHost && seatUserId != null && seatUserId.equals(localUserId)) {
                 if (rtcEngine() != null) {
                     rtcEngine().muteLocalAudioStream(seatItem.isMute() != 0);
+                    rtcEngine().adjustRecordingSignalVolume(seatItem.isMute() != 0 ? 0 : 100);
                 }
             }
             doWork(seatItem, position);
@@ -2238,13 +2359,15 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
     private void doWork(PkAudioLiveUserRoot.UsersItem.SeatItem seatItem, int i) {
         Log.d(TAG, "doWork: isReserved " + seatItem.isReserved());
 
-        if (seatItem.isReserved() && seatItem.getUserId().equalsIgnoreCase(sessionManager.getUser().getId())) {
+        if (seatItem.isReserved() && seatItem.getUserId() != null && seatItem.getUserId().equalsIgnoreCase(sessionManager.getUser().getId())) {
             new PopupBuilder(WatchAudioLiveActivity.this).showRemovePopup(() -> {
+                if (!beginSeatChange()) return;
                 JsonObject jsonObject = new JsonObject();
-                jsonObject.addProperty("position", i);
-                jsonObject.addProperty("liveUserMongoId", host.getId());
-                jsonObject.addProperty("liveStreamingId", host.getLiveStreamingId());
+                putSeatIndex(jsonObject, i);
+                putLiveRoomKeys(jsonObject);
+                jsonObject.addProperty("userId", sessionManager.getUser().getId());
                 MySocketManager.getInstance().getSocket().emit(Const.EVENT_LESS_PARTICIPATED, jsonObject);
+                clearSeatAt(i);
                 Log.d(TAG, "doWork: become audience");
                 if (rtcEngine() != null) {
                     rtcEngine().setClientRole(Constants.CLIENT_ROLE_AUDIENCE);
@@ -2267,11 +2390,11 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
             new PopupBuilder(WatchAudioLiveActivity.this).showPopUpWithVector(R.drawable.audio_lock, getString(R.string.this_seat_is_locked_by_host), getString(R.string.please_choose_another_seat), getString(R.string.okay), () -> {
             });
         } else {
+            if (!beginSeatChange()) return;
             JsonObject jsonObject = new JsonObject();
-            jsonObject.addProperty("position", i);
-            jsonObject.addProperty("liveUserMongoId", host.getId());
+            putSeatIndex(jsonObject, i);
+            putLiveRoomKeys(jsonObject);
             jsonObject.addProperty("liveUserId", host.getLiveUserId());
-            jsonObject.addProperty("liveStreamingId", host.getLiveStreamingId());
             jsonObject.addProperty("userId", sessionManager.getUser().getId());
             jsonObject.addProperty("name", sessionManager.getUser().getName());
             jsonObject.addProperty("country", sessionManager.getUser().getCountry());
@@ -2286,9 +2409,9 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                 int oldPosition = seatAdapter.getList().indexOf(selfPos);
                 if (oldPosition >= 0) {
                     JsonObject removeOldSeat = new JsonObject();
-                    removeOldSeat.addProperty("position", oldPosition);
-                    removeOldSeat.addProperty("liveUserMongoId", host.getId());
-                    removeOldSeat.addProperty("liveStreamingId", host.getLiveStreamingId());
+                    putSeatIndex(removeOldSeat, oldPosition);
+                    putLiveRoomKeys(removeOldSeat);
+                    removeOldSeat.addProperty("userId", sessionManager.getUser().getId());
                     MySocketManager.getInstance().getSocket().emit(Const.EVENT_LESS_PARTICIPATED, removeOldSeat);
                 }
             }
@@ -2300,6 +2423,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
             jsonObject.addProperty("image", sessionManager.getUser().getImage());
             jsonObject.addProperty("avatarFrame", sessionManager.getUser().getAvatarFrameImage());
 
+            clearAllSeatsForCurrentUserExcept(seatItem);
             reserveSeatForCurrentUser(seatItem, currentState, MY_UID);
             MySocketManager.getInstance().getSocket().emit(Const.EVENT_ADD_PARTICIPATED, jsonObject);
             becomeHost(seatItem, true);
@@ -2389,9 +2513,9 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
     private void confirmEndLive() {
 
         JsonObject jsonObject = new JsonObject();
-        jsonObject.addProperty("position", selfPosition);
-        jsonObject.addProperty("liveUserMongoId", host.getId());
-        jsonObject.addProperty("liveStreamingId", host.getLiveStreamingId());
+        putSeatIndex(jsonObject, selfPosition);
+        putLiveRoomKeys(jsonObject);
+        jsonObject.addProperty("userId", sessionManager.getUser().getId());
 
         MySocketManager.getInstance().getSocket().emit(Const.EVENT_LESS_PARTICIPATED, jsonObject);
 
@@ -2411,6 +2535,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
         super.onDestroy();
         MySocketManager.getInstance().removeAudioRoomHandler(audioRoomHandler);
         MySocketManager.getInstance().removeSocketConnectHandler(socketConnectHandler);
+        seatChangeHandler.removeCallbacks(clearSeatChangePending);
         BaseActivity.STATUS_LIVE = false;
     }
 
@@ -2605,7 +2730,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
     public void onTokenPrivilegeWillExpire(String token) {
         Log.d(TAG, "onTokenPrivilegeWillExpire: ");
         try {
-            String tkn = RtcTokenBuilderSample.main(host.getChannel(), sessionManager.getSetting().getAgoraKey(), sessionManager.getSetting().getAgoraCertificate());
+            String tkn = RtcTokenBuilderSample.main(host.getChannel() + "audio", sessionManager.getSetting().getAgoraKey(), sessionManager.getSetting().getAgoraCertificate());
             rtcEngine().renewToken(tkn);
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -2729,10 +2854,9 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
     @NonNull
     private JsonObject getJsonObject(int value) {
         JsonObject jsonObject = new JsonObject();
-        jsonObject.addProperty("position", selfPosition);
-        jsonObject.addProperty("liveUserMongoId", host.getId());
+        putSeatIndex(jsonObject, selfPosition);
+        putLiveRoomKeys(jsonObject);
         jsonObject.addProperty("liveUserId", host.getLiveUserId());
-        jsonObject.addProperty("liveStreamingId", host.getLiveStreamingId());
         jsonObject.addProperty("agoraId", MY_UID);
         jsonObject.addProperty("mute", value);
         jsonObject.addProperty("mutedUserId", sessionManager.getUser().getId());

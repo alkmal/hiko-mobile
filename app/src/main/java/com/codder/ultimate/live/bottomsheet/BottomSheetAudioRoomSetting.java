@@ -15,6 +15,7 @@ import com.codder.ultimate.R;
 import com.codder.ultimate.SessionManager;
 import com.codder.ultimate.databinding.BottomSheetAudioroomSettingsBinding;
 import com.codder.ultimate.live.model.PkAudioLiveUserRoot;
+import com.codder.ultimate.utils.ImageUrlUtil;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
@@ -46,7 +47,7 @@ public class BottomSheetAudioRoomSetting {
         }
 
         Glide.with(context)
-                .load(liveUser.getRoomImage())
+                .load(ImageUrlUtil.normalize(liveUser.getRoomImage()))
                 .into(audioRoomSettingsBinding.imgRoom);
 
         audioRoomSettingsBinding.tvSeatCount.setText(liveUser.getSeat().size() + context.getString(R.string.people));

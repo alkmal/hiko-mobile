@@ -22,6 +22,7 @@ import com.codder.ultimate.RayziUtils;
 import com.codder.ultimate.SessionManager;
 import com.codder.ultimate.databinding.ItemSeatBinding;
 import com.codder.ultimate.live.model.PkAudioLiveUserRoot;
+import com.codder.ultimate.utils.ImageUrlUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -163,7 +164,7 @@ public class SeatAdapter extends RecyclerView.Adapter<SeatAdapter.SeatHolder> {
 
             binding.ivSeatBg.setVisibility(hasAvatarFrame ? GONE : VISIBLE);
             Glide.with(context)
-                    .load(image.isEmpty() ? R.drawable.profile_placeholder : image)
+                    .load(image.isEmpty() ? R.drawable.profile_placeholder : ImageUrlUtil.normalize(image))
                     .circleCrop()
                     .placeholder(R.drawable.profile_placeholder)
                     .error(R.drawable.profile_placeholder)
@@ -171,7 +172,7 @@ public class SeatAdapter extends RecyclerView.Adapter<SeatAdapter.SeatHolder> {
 
             if (hasAvatarFrame) {
                 binding.avatarFrameImage.setVisibility(VISIBLE);
-                Glide.with(context).load(BuildConfig.BASE_URL + avatarFrame).into(binding.avatarFrameImage);
+                Glide.with(context).load(ImageUrlUtil.normalize(avatarFrame)).into(binding.avatarFrameImage);
             }
         } else if (!seatItem.isReserved() && !seatItem.isLock()) {
             Glide.with(context).load(R.drawable.audio_seat).into(binding.userImage);
