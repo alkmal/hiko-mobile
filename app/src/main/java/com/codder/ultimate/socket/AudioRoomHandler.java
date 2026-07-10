@@ -59,4 +59,6 @@ public interface AudioRoomHandler {
 
     void onBroadcastNotification(Object[] args);
     void onRoomWelcome(Object[] args);
+
+    default void onRoomHistory(Object[] args) { }
 }

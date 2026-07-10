@@ -429,6 +429,13 @@ public class MySocketManager {
             }
         });
 
+        socket.on("roomHistory", args1 -> {
+            List<AudioRoomHandler> snapshot = new ArrayList<>(audioRoomHandlerList);
+            for (AudioRoomHandler audioRoomHandler : snapshot) {
+                audioRoomHandler.onRoomHistory(args1);
+            }
+        });
+
         socket.on(Const.EVENT_SEAT, args1 -> {
             for (AudioRoomHandler audioRoomHandler : audioRoomHandlerList) {
                 audioRoomHandler.onSeat(args1);

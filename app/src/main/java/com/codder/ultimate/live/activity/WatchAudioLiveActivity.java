@@ -565,6 +565,25 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
         }
 
         @Override
+        public void onRoomHistory(Object[] args) {
+            runOnUiThread(() -> {
+                if (args == null || args.length == 0 || args[0] == null) return;
+                try {
+                    JSONArray history = new JSONArray(args[0].toString());
+                    List<LiveStramComment> comments = new ArrayList<>();
+                    for (int i = 0; i < history.length(); i++) {
+                        LiveStramComment item = new Gson().fromJson(history.getJSONObject(i).toString(), LiveStramComment.class);
+                        if (item != null) comments.add(item);
+                    }
+                    viewModel.liveStramCommentAdapter.setComments(comments);
+                    scrollAdapterLogic();
+                } catch (JSONException error) {
+                    Log.e(TAG, "onRoomHistory: ", error);
+                }
+            });
+        }
+
+        @Override
         public void onUserCoinUpdate(Object[] args) {
             if (args[0] != null) {
                 runOnUiThread(() -> {
