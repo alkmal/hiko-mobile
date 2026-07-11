@@ -551,7 +551,13 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                     Log.d(TAG, "onComment: " + data);
 
                     if (!data.isEmpty()) {
-                        LiveStramComment liveStramComment = new Gson().fromJson(data.toString(), LiveStramComment.class);
+                        LiveStramComment liveStramComment;
+                        try {
+                            liveStramComment = new Gson().fromJson(data, LiveStramComment.class);
+                        } catch (RuntimeException error) {
+                            Log.w(TAG, "Ignoring malformed realtime comment", error);
+                            return;
+                        }
                         if (liveStramComment != null) {
                             if (isDuplicateLocalComment(liveStramComment)) {
                                 return;
@@ -572,8 +578,12 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                     JSONArray history = new JSONArray(args[0].toString());
                     List<LiveStramComment> comments = new ArrayList<>();
                     for (int i = 0; i < history.length(); i++) {
-                        LiveStramComment item = new Gson().fromJson(history.getJSONObject(i).toString(), LiveStramComment.class);
-                        if (item != null) comments.add(item);
+                        try {
+                            LiveStramComment item = new Gson().fromJson(history.getJSONObject(i).toString(), LiveStramComment.class);
+                            if (item != null) comments.add(item);
+                        } catch (RuntimeException error) {
+                            Log.w(TAG, "Skipping malformed room history item", error);
+                        }
                     }
                     viewModel.liveStramCommentAdapter.setComments(comments);
                     scrollAdapterLogic();
