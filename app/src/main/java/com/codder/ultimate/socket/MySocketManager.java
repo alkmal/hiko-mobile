@@ -90,6 +90,12 @@ public class MySocketManager {
 
         URI uri = URI.create(BuildConfig.BASE_URL);
         socket = IO.socket(uri, options);
+        globalConnecting = true;
+        socket.on(Socket.EVENT_CONNECT_ERROR, args -> {
+            globalConnecting = false;
+            globalConnected = false;
+            Log.e(TAG, "Socket connect error: " + (args.length > 0 ? args[0] : "unknown"));
+        });
         socket.connect();
 
         Log.d(TAG, "createGlobal: SSS97  " + socket.connected());
