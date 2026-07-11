@@ -16,7 +16,7 @@ import java.util.List;
 
 import io.socket.client.IO;
 import io.socket.client.Socket;
-import io.socket.engineio.client.transports.Polling;
+import io.socket.engineio.client.transports.WebSocket;
 
 public class MySocketManager {
     private static final String TAG = "SocketManager";
@@ -74,7 +74,10 @@ public class MySocketManager {
         IO.Options options = IO.Options.builder()
                 .setForceNew(false)
                 .setMultiplex(true)
-                .setTransports(new String[]{Polling.NAME})
+                // The production nginx proxy now forwards Socket.IO upgrades.  Use the
+                // persistent WebSocket transport so room state does not disappear when
+                // HTTP polling is recycled by the reverse proxy.
+                .setTransports(new String[]{WebSocket.NAME})
                 .setUpgrade(false)
                 .setRememberUpgrade(false)
                 .setPath("/socket.io/")
