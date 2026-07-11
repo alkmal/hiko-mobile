@@ -16,7 +16,7 @@ import java.util.List;
 
 import io.socket.client.IO;
 import io.socket.client.Socket;
-import io.socket.engineio.client.transports.WebSocket;
+import io.socket.engineio.client.transports.Polling;
 
 public class MySocketManager {
     private static final String TAG = "SocketManager";
@@ -74,7 +74,7 @@ public class MySocketManager {
         IO.Options options = IO.Options.builder()
                 .setForceNew(false)
                 .setMultiplex(true)
-                .setTransports(new String[]{WebSocket.NAME})
+                .setTransports(new String[]{Polling.NAME})
                 .setUpgrade(false)
                 .setRememberUpgrade(false)
                 .setPath("/socket.io/")
