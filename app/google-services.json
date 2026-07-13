@@ -1,41 +1,62 @@
 {
   "project_info": {
-    "project_number": "303159012161",
-    "project_id": "vola-party",
-    "storage_bucket": "vola-party.firebasestorage.app"
+    "project_number": "278025662806",
+    "project_id": "hiko-aecf4",
+    "storage_bucket": "hiko-aecf4.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:303159012161:android:063598a89add700af70fc0",
+        "mobilesdk_app_id": "1:278025662806:android:91548f735156dfd63de6f7",
         "android_client_info": {
-          "package_name": "com.volaparty.voice"
+          "package_name": "com.figgy.chat.live"
         }
       },
       "oauth_client": [
         {
-          "client_id": "303159012161-mrm519rc42mhop7em4k502esi5tem4sa.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.volaparty.voice",
-            "certificate_hash": "b3966c840a3b364a4a0398dfd313a96b1b35bbea"
-          }
-        },
-        {
-          "client_id": "303159012161-gdhjil8hu8661pbhuaf0q0o5846798ot.apps.googleusercontent.com",
+          "client_id": "278025662806-1a0hpd7k3nmgchlms0a117h0pdmm2jkp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB18BfXrFYyA1JOedtChQ_GgjTdjhH5TF8"
+          "current_key": "AIzaSyD3C5ddJbEd18g1d674ucDYnzChNYhucxg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "303159012161-gdhjil8hu8661pbhuaf0q0o5846798ot.apps.googleusercontent.com",
+              "client_id": "278025662806-1a0hpd7k3nmgchlms0a117h0pdmm2jkp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278025662806:android:eb56b9715fff9f063de6f7",
+        "android_client_info": {
+          "package_name": "com.volaparty.voice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278025662806-1a0hpd7k3nmgchlms0a117h0pdmm2jkp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3C5ddJbEd18g1d674ucDYnzChNYhucxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "278025662806-1a0hpd7k3nmgchlms0a117h0pdmm2jkp.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
