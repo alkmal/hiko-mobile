@@ -2530,17 +2530,6 @@ public class HostLiveAudioActivity extends AgoraBaseActivity {
                     currentState = viewModel.isMuted ? 1 : 0;
                 }
                 PkAudioLiveUserRoot.UsersItem.SeatItem selfPos = getSelfPositionFromSeat();
-                if (selfPos != null && selfPos != seatItem) {
-                    int oldPosition = liveUser.getSeat().indexOf(selfPos);
-                    if (oldPosition >= 0) {
-                        JsonObject removeOldSeat = new JsonObject();
-                        putSeatIndex(removeOldSeat, oldPosition);
-                        putLiveRoomKeys(removeOldSeat);
-                        removeOldSeat.addProperty("userId", sessionManager.getUser().getId());
-                        MySocketManager.getInstance().getSocket().emit(Const.EVENT_LESS_PARTICIPATED, removeOldSeat);
-                        clearSeatAt(oldPosition);
-                    }
-                }
                 if (selfPos != null && selfPos.isMute() == 2) {
                     currentState = 2;
                 }
@@ -2549,6 +2538,9 @@ public class HostLiveAudioActivity extends AgoraBaseActivity {
                 jsonObject.addProperty("image", sessionManager.getUser().getImage());
                 jsonObject.addProperty("avatarFrame", sessionManager.getUser().getAvatarFrameImage());
 
+                if (selfPos != null && selfPos != seatItem) {
+                    clearSeatItem(selfPos);
+                }
                 reserveSeatForCurrentUser(seatItem, currentState, liveUser.getAgoraUID());
                 MySocketManager.getInstance().getSocket().emit(Const.EVENT_ADD_PARTICIPATED, jsonObject);
                 Log.d(TAG, "doWork: add participate emit " + jsonObject);

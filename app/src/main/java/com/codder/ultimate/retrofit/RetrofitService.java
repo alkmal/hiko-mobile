@@ -87,6 +87,9 @@ public interface RetrofitService {
     Call<UserRoot> updateUser(@PartMap Map<String, RequestBody> partMap,
                               @Part MultipartBody.Part requestBody, @Part MultipartBody.Part coverImage);
 
+    @PATCH("/user/fcmToken")
+    Call<RestResponse> updateFcmToken(@Body JsonObject jsonObject);
+
     @GET("/block/getBlockedUsers")
     Call<BlockedUserListRoot> getBlockUser(@Query("userId") String userId);
 

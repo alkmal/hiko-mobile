@@ -28,12 +28,14 @@ import com.codder.ultimate.activity.SplashActivity;
 import com.codder.ultimate.chat.activity.ChatActivity;
 import com.codder.ultimate.guestuser.activity.GuestActivity;
 import com.codder.ultimate.modelclass.BlockedUserListRoot;
+import com.codder.ultimate.modelclass.RestResponse;
 import com.codder.ultimate.reels.activity.ReelsActivity;
 import com.codder.ultimate.retrofit.Const;
 import com.codder.ultimate.retrofit.RetrofitBuilder;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -60,6 +62,36 @@ public class FirebaseMessage extends FirebaseMessagingService {
     public void onCreate() {
         super.onCreate();
         sessionManager = new SessionManager(this);
+    }
+
+    @Override
+    public void onNewToken(@NonNull String token) {
+        super.onNewToken(token);
+        SessionManager currentSession = sessionManager != null ? sessionManager : new SessionManager(this);
+        if (currentSession.getUser() == null
+                || currentSession.getUser().getId() == null
+                || currentSession.getUser().getIdentity() == null
+                || currentSession.getUser().getIdentity().isEmpty()) {
+            return;
+        }
+
+        JsonObject payload = new JsonObject();
+        payload.addProperty("userId", currentSession.getUser().getId());
+        payload.addProperty("identity", currentSession.getUser().getIdentity());
+        payload.addProperty("fcmToken", token);
+        RetrofitBuilder.create().updateFcmToken(payload).enqueue(new Callback<RestResponse>() {
+            @Override
+            public void onResponse(Call<RestResponse> call, Response<RestResponse> response) {
+                if (!response.isSuccessful() || response.body() == null || !response.body().isStatus()) {
+                    Log.w(TAG, "Failed to sync refreshed FCM token.");
+                }
+            }
+
+            @Override
+            public void onFailure(Call<RestResponse> call, Throwable throwable) {
+                Log.w(TAG, "Failed to sync refreshed FCM token.", throwable);
+            }
+        });
     }
 
     @Override

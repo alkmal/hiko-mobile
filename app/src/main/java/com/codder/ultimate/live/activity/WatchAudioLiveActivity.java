@@ -2434,16 +2434,6 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                 currentState = viewModel.isMuted ? 1 : 0;
             }
             PkAudioLiveUserRoot.UsersItem.SeatItem selfPos = getSelfPositionFromSeat();
-            if (selfPos != null && selfPos != seatItem) {
-                int oldPosition = seatAdapter.getList().indexOf(selfPos);
-                if (oldPosition >= 0) {
-                    JsonObject removeOldSeat = new JsonObject();
-                    putSeatIndex(removeOldSeat, oldPosition);
-                    putLiveRoomKeys(removeOldSeat);
-                    removeOldSeat.addProperty("userId", sessionManager.getUser().getId());
-                    MySocketManager.getInstance().getSocket().emit(Const.EVENT_LESS_PARTICIPATED, removeOldSeat);
-                }
-            }
             if (selfPos != null && selfPos.isMute() == 2) {
                 currentState = 2;
             }
