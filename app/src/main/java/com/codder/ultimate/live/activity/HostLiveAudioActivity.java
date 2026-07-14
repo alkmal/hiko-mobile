@@ -786,25 +786,7 @@ public class HostLiveAudioActivity extends AgoraBaseActivity {
 
         @Override
         public void onRoomHistory(Object[] args) {
-            runOnUiThread(() -> {
-                if (args == null || args.length == 0 || args[0] == null) return;
-                try {
-                    JSONArray history = new JSONArray(args[0].toString());
-                    List<LiveStramComment> comments = new ArrayList<>();
-                    for (int i = 0; i < history.length(); i++) {
-                        try {
-                            LiveStramComment item = new Gson().fromJson(history.getJSONObject(i).toString(), LiveStramComment.class);
-                            if (item != null) comments.add(item);
-                        } catch (RuntimeException error) {
-                            Log.w(TAG, "Skipping malformed room history item", error);
-                        }
-                    }
-                    viewModel.liveStramCommentAdapter.setComments(comments);
-                    scrollAdapterLogic();
-                } catch (JSONException error) {
-                    Log.e(TAG, "onRoomHistory: ", error);
-                }
-            });
+            Log.d(TAG, "Ignoring roomHistory; audio comments are live-only for this session.");
         }
 
 
@@ -1740,8 +1722,7 @@ public class HostLiveAudioActivity extends AgoraBaseActivity {
 
         MySocketManager.getInstance().getSocket().emit(Const.EVENT_LESS_PARTICIPATED, jsonObject1);
 
-        rtcEngine().setClientRole(Constants.CLIENT_ROLE_AUDIENCE);
-        rtcEngine().disableAudio();
+        forceAudienceListenOnly();
         hostPosition = -1;
 
         JSONObject jsonObject = new JSONObject();
@@ -1774,14 +1755,12 @@ public class HostLiveAudioActivity extends AgoraBaseActivity {
             if (rtcEngine() != null) {
                 rtcEngine().setChannelProfile(Constants.CHANNEL_PROFILE_LIVE_BROADCASTING);
                 String tkn = RtcTokenBuilderSample.main(liveUser.getChannel() + "audio", sessionManager.getSetting().getAgoraKey(), sessionManager.getSetting().getAgoraCertificate());
+                forceAudienceListenOnly();
                 rtcEngine().joinChannel(tkn, liveUser.getChannel() + "audio", "", liveUser.getAgoraUID());
                 Log.d("fatal", "onCreate: audio live" + liveUser.getChannel());
                 rtcEngine().enableAudioVolumeIndication(1000, 3, true); // To detect who is currently speaking
-                rtcEngine().setClientRole(Constants.CLIENT_ROLE_BROADCASTER);
+                forceAudienceListenOnly();
                 rtcEngine().setEnableSpeakerphone(true);
-                rtcEngine().enableAudio();
-                rtcEngine().muteLocalAudioStream(viewModel.isMuted);
-                rtcEngine().adjustRecordingSignalVolume(viewModel.isMuted ? 0 : 100);
 
             }
 
@@ -1789,6 +1768,15 @@ public class HostLiveAudioActivity extends AgoraBaseActivity {
             e.printStackTrace();
         }
 
+    }
+
+    private void forceAudienceListenOnly() {
+        if (rtcEngine() == null) return;
+        rtcEngine().setClientRole(Constants.CLIENT_ROLE_AUDIENCE);
+        rtcEngine().enableAudio();
+        rtcEngine().disableVideo();
+        rtcEngine().muteLocalAudioStream(true);
+        rtcEngine().adjustRecordingSignalVolume(0);
     }
 
     /** Switch to broadcaster role with audio-only capture*/
@@ -2176,6 +2164,12 @@ public class HostLiveAudioActivity extends AgoraBaseActivity {
 
         binding.btnMute.setOnClickListener(v -> {
             if (rtcEngine() != null) {
+                if (hostPosition == -1 || getSelfPositionFromSeat() == null) {
+                    forceAudienceListenOnly();
+                    binding.btnMute.setImageDrawable(ContextCompat.getDrawable(HostLiveAudioActivity.this, R.drawable.ic_mute));
+                    Toast.makeText(this, "Choose a seat first", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 viewModel.isMuted = !viewModel.isMuted;
                 rtcEngine().muteLocalAudioStream(viewModel.isMuted);
                 Log.e(TAG, "initLister: >>>>>>>>>>>>>  " + viewModel.isMuted);
@@ -2497,10 +2491,8 @@ public class HostLiveAudioActivity extends AgoraBaseActivity {
 
                 MySocketManager.getInstance().getSocket().emit(Const.EVENT_LESS_PARTICIPATED, jsonObject);
                 clearSeatAt(i);
-                rtcEngine().setClientRole(Constants.CLIENT_ROLE_AUDIENCE);
-                rtcEngine().disableAudio();
+                forceAudienceListenOnly();
                 hostPosition = -1;
-                rtcEngine().adjustRecordingSignalVolume(0);
                 Log.d(TAG, "doWork: remove sit by it self" + jsonObject.toString());
 
             });

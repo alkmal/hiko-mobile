@@ -572,25 +572,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
 
         @Override
         public void onRoomHistory(Object[] args) {
-            runOnUiThread(() -> {
-                if (args == null || args.length == 0 || args[0] == null) return;
-                try {
-                    JSONArray history = new JSONArray(args[0].toString());
-                    List<LiveStramComment> comments = new ArrayList<>();
-                    for (int i = 0; i < history.length(); i++) {
-                        try {
-                            LiveStramComment item = new Gson().fromJson(history.getJSONObject(i).toString(), LiveStramComment.class);
-                            if (item != null) comments.add(item);
-                        } catch (RuntimeException error) {
-                            Log.w(TAG, "Skipping malformed room history item", error);
-                        }
-                    }
-                    viewModel.liveStramCommentAdapter.setComments(comments);
-                    scrollAdapterLogic();
-                } catch (JSONException error) {
-                    Log.e(TAG, "onRoomHistory: ", error);
-                }
-            });
+            Log.d(TAG, "Ignoring roomHistory; audio comments are live-only for this session.");
         }
 
         @Override
@@ -1239,8 +1221,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                         jsonObject1.addProperty("userId", sessionManager.getUser().getId());
                         MySocketManager.getInstance().getSocket().emit(Const.EVENT_LESS_PARTICIPATED, jsonObject1);
                         Log.d(TAG, "doWork: become audence");
-                        rtcEngine().setClientRole(Constants.CLIENT_ROLE_AUDIENCE);
-                        rtcEngine().disableVideo();
+                        forceAudienceListenOnly();
                         isHost = false;
                         selfPosition = -1;
                     }
@@ -2129,6 +2110,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                 ensureSpeakerphone();
                 normalizePlaybackVolume();
 
+                forceAudienceListenOnly();
                 rtcEngine().joinChannel(tkn, host.getChannel() + "audio", "", MY_UID);
                 forceAudienceListenOnly();
 
@@ -2398,10 +2380,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                 MySocketManager.getInstance().getSocket().emit(Const.EVENT_LESS_PARTICIPATED, jsonObject);
                 clearSeatAt(i);
                 Log.d(TAG, "doWork: become audience");
-                if (rtcEngine() != null) {
-                    rtcEngine().setClientRole(Constants.CLIENT_ROLE_AUDIENCE);
-                    rtcEngine().disableVideo();
-                }
+                forceAudienceListenOnly();
                 isHost = false;
                 selfPosition = -1;
             });
