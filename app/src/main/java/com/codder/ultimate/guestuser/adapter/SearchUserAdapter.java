@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.ListAdapter;
 
 import com.caverock.androidsvg.SVG;
 import com.codder.ultimate.R;
+import com.codder.ultimate.SessionManager;
 import com.codder.ultimate.databinding.ItemSearchUsersBinding;
 import com.codder.ultimate.modelclass.GuestProfileRoot;
 
@@ -86,6 +87,17 @@ public class SearchUserAdapter extends ListAdapter<GuestProfileRoot.User, Search
             binding.tvUsername.setText(displayName);
 
             binding.pd.setVisibility(View.GONE);
+            SessionManager sessionManager = new SessionManager(context.getApplicationContext());
+            String localUserId = sessionManager.getUser() != null ? sessionManager.getUser().getId() : "";
+            boolean isSelf = localUserId != null && !localUserId.isEmpty()
+                    && localUserId.equals(user.getUserId());
+
+            if (isSelf) {
+                binding.tvFollow.setVisibility(View.GONE);
+                binding.tvFollow.setOnClickListener(null);
+            } else {
+                binding.tvFollow.setVisibility(View.VISIBLE);
+            }
 
             if (user.isFollow()) {
                 binding.tvFollow.setText(R.string.following);
@@ -98,6 +110,7 @@ public class SearchUserAdapter extends ListAdapter<GuestProfileRoot.User, Search
             }
 
             binding.tvFollow.setOnClickListener(v -> {
+                if (isSelf) return;
                 if (onUserClickListener != null) {
                     onUserClickListener.onFollowClick(user, binding, position);
                 }

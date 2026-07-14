@@ -1470,7 +1470,7 @@ public class HostLiveAudioActivity extends AgoraBaseActivity {
                     Gson gson = new Gson();
                     GuestProfileRoot.User userData = gson.fromJson(mJson, GuestProfileRoot.User.class);
 
-                    if (userData != null) {
+                    if (userData != null && userData.getUserId() != null && !userData.getUserId().isEmpty()) {
                         doUserTask(userData, userListPosition, viewerListItem);
                     }
                     customDialogClass.dismiss();
@@ -1489,7 +1489,7 @@ public class HostLiveAudioActivity extends AgoraBaseActivity {
                     Gson gson = new Gson();
                     GuestProfileRoot.User userData = gson.fromJson(mJson, GuestProfileRoot.User.class);
 
-                    if (userData != null) {
+                    if (userData != null && userData.getUserId() != null && !userData.getUserId().isEmpty()) {
                         if (!isFinishing()) {
                             if (userData.getUserId().equals(liveUser.getLiveUserId())) {
                                 userProfileBottomSheet.show(false, userData, liveUser.getLiveStreamingId(), false);

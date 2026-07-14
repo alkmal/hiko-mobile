@@ -3,13 +3,16 @@ package com.codder.ultimate.chat.activity;
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.media.MediaRecorder;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -21,6 +24,7 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -120,6 +124,10 @@ public class ChatActivity extends BaseActivity {
     private String picturePath;
     private Uri selectedImage;
     private boolean isFromUserProfileSheet = false;
+    private MediaRecorder voiceRecorder;
+    private File voiceRecordFile;
+    private boolean isRecordingVoice = false;
+    private long voiceRecordStartedAt = 0L;
 
     private EmojiSheetViewModel giftViewModel;
     private EmojiBottomSheetFragment emojiBottomsheetFragment;
@@ -724,6 +732,22 @@ public class ChatActivity extends BaseActivity {
             }
         });
 
+        binding.btnVoiceMessage.setOnTouchListener((v, event) -> {
+            if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                startVoiceRecording();
+                return true;
+            }
+            if (event.getAction() == MotionEvent.ACTION_UP) {
+                finishVoiceRecording(true);
+                return true;
+            }
+            if (event.getAction() == MotionEvent.ACTION_CANCEL) {
+                finishVoiceRecording(false);
+                return true;
+            }
+            return true;
+        });
+
 
         binding.swipeRefresh.setOnRefreshListener(refreshLayout -> viewModel.getOldChat(true,sessionManager.getUser().getId()));
 
@@ -1086,14 +1110,7 @@ public class ChatActivity extends BaseActivity {
                     ChatItem chat = response.body().getChat();
 
                     try {
-                        JSONObject jsonObject = new JSONObject();
-                        jsonObject.put("senderId", sessionManager.getUser().getId());
-                        jsonObject.put("messageType", "image");
-                        jsonObject.put("topic", viewModel.chatTopic);
-                        jsonObject.put("message", "image");
-                        jsonObject.put("date", chat.getDate());
-                        jsonObject.put("image", chat.getImage());
-                        MySocketManager.getInstance().getSocket().emit(Const.EVENT_CHAT, jsonObject);
+                        emitChatMedia(chat, "image");
                         Log.d(TAG, "Image uploaded and emitted via socket.");
                     } catch (JSONException e) {
                         Log.e(TAG, "JSON exception in uploadImage: " + e.getMessage(), e);
@@ -1110,6 +1127,127 @@ public class ChatActivity extends BaseActivity {
                 Toast.makeText(ChatActivity.this, getString(R.string.failed_to_upload_image_please_try_again), Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    private void startVoiceRecording() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECORD_AUDIO}, 4407);
+            Toast.makeText(this, "Microphone permission is required", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if (isRecordingVoice) return;
+
+        try {
+            voiceRecordFile = new File(getCacheDir(), "voice_message_" + System.currentTimeMillis() + ".m4a");
+            voiceRecorder = Build.VERSION.SDK_INT >= Build.VERSION_CODES.S ? new MediaRecorder(this) : new MediaRecorder();
+            voiceRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+            voiceRecorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
+            voiceRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
+            voiceRecorder.setAudioEncodingBitRate(128000);
+            voiceRecorder.setAudioSamplingRate(44100);
+            voiceRecorder.setOutputFile(voiceRecordFile.getAbsolutePath());
+            voiceRecorder.prepare();
+            voiceRecorder.start();
+            voiceRecordStartedAt = System.currentTimeMillis();
+            isRecordingVoice = true;
+            Toast.makeText(this, "Recording...", Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            Log.e(TAG, "Unable to start voice recording", e);
+            releaseVoiceRecorder();
+            Toast.makeText(this, "Unable to record voice", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void finishVoiceRecording(boolean send) {
+        if (!isRecordingVoice) return;
+
+        long duration = System.currentTimeMillis() - voiceRecordStartedAt;
+        File recordedFile = voiceRecordFile;
+        try {
+            if (voiceRecorder != null) {
+                voiceRecorder.stop();
+            }
+        } catch (Exception e) {
+            Log.w(TAG, "Voice recording stopped without valid audio", e);
+            send = false;
+        } finally {
+            releaseVoiceRecorder();
+        }
+
+        if (!send || duration < 700 || recordedFile == null || !recordedFile.exists() || recordedFile.length() <= 0) {
+            if (recordedFile != null && recordedFile.exists()) {
+                //noinspection ResultOfMethodCallIgnored
+                recordedFile.delete();
+            }
+            if (duration < 700) Toast.makeText(this, "Hold to record", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        uploadVoiceMessage(recordedFile);
+    }
+
+    private void releaseVoiceRecorder() {
+        if (voiceRecorder != null) {
+            try {
+                voiceRecorder.release();
+            } catch (Exception ignored) {
+            }
+        }
+        voiceRecorder = null;
+        isRecordingVoice = false;
+        voiceRecordStartedAt = 0L;
+    }
+
+    private void uploadVoiceMessage(File file) {
+        if (file == null || !file.exists()) return;
+
+        RequestBody requestFile = RequestBody.create(MediaType.parse("audio/mp4"), file);
+        MultipartBody.Part body = MultipartBody.Part.createFormData("audio", file.getName(), requestFile);
+
+        HashMap<String, RequestBody> map = new HashMap<>();
+        map.put("messageType", RequestBody.create(MediaType.parse("text/plain"), "audio"));
+        map.put("topic", RequestBody.create(MediaType.parse("text/plain"), viewModel.chatTopic));
+        map.put("senderId", RequestBody.create(MediaType.parse("text/plain"), sessionManager.getUser().getId()));
+
+        RetrofitBuilder.create().uploadChatImage(map, body).enqueue(new Callback<>() {
+            @Override
+            public void onResponse(Call<UploadImageRoot> call, Response<UploadImageRoot> response) {
+                if (response.isSuccessful() && response.body() != null && response.body().isStatus()) {
+                    ChatItem chat = response.body().getChat();
+                    try {
+                        emitChatMedia(chat, "audio");
+                    } catch (JSONException e) {
+                        Log.e(TAG, "JSON exception in uploadVoiceMessage", e);
+                    }
+                } else {
+                    Toast.makeText(ChatActivity.this, "Failed to send voice message", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<UploadImageRoot> call, Throwable t) {
+                Log.e(TAG, "Voice upload failed", t);
+                Toast.makeText(ChatActivity.this, "Failed to send voice message", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+    private void emitChatMedia(ChatItem chat, String messageType) throws JSONException {
+        if (chat == null) return;
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("senderId", sessionManager.getUser().getId());
+        jsonObject.put("messageType", messageType);
+        jsonObject.put("topic", viewModel.chatTopic);
+        jsonObject.put("message", "audio".equals(messageType) ? "Voice message" : "image");
+        jsonObject.put("date", chat.getDate());
+        jsonObject.put("_id", chat.getId());
+        jsonObject.put("messageId", chat.getId());
+        if ("audio".equals(messageType)) {
+            jsonObject.put("audio", chat.getAudio());
+        } else {
+            jsonObject.put("image", chat.getImage());
+        }
+        MySocketManager.getInstance().getSocket().emit(Const.EVENT_CHAT, jsonObject);
     }
 
     public String getRealPathFromURI(Uri contentURI) {
@@ -1158,6 +1296,11 @@ public class ChatActivity extends BaseActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        if (isRecordingVoice) {
+            finishVoiceRecording(false);
+        } else {
+            releaseVoiceRecorder();
+        }
         MySocketManager.getInstance().removeChatHandler(chatHandler);
         viewModel.chatAdapter.releaseSound();
         isOPEN = false;

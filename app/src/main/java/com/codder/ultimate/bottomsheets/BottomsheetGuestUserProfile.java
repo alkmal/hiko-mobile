@@ -35,6 +35,7 @@ import com.bumptech.glide.Glide;
 import com.caverock.androidsvg.SVG;
 import com.codder.ultimate.BuildConfig;
 import com.codder.ultimate.R;
+import com.codder.ultimate.SessionManager;
 import com.codder.ultimate.chat.activity.ChatActivity;
 import com.codder.ultimate.chat.activity.FakeChatActivity;
 import com.codder.ultimate.databinding.BottomSheetGuestuserProfileBinding;
@@ -296,6 +297,9 @@ public class BottomsheetGuestUserProfile extends BottomSheetDialogFragment {
 
 
         binding.imgUser.setUserImage(user.getImage(), user.getAvatarFrameImage(), 40);
+        boolean isSelf = isSelfUser(user);
+        binding.lytFollowUnfollow.setVisibility(isSelf ? GONE : VISIBLE);
+        binding.lytBlockUnblock.setVisibility(isSelf ? GONE : VISIBLE);
 
         binding.tvFollowStatus.setText(user.isFollow() ? ctx.getString(R.string.following) : ctx.getString(R.string.follow));
 
@@ -321,7 +325,7 @@ public class BottomsheetGuestUserProfile extends BottomSheetDialogFragment {
 
     private void initListeners() {
 
-        if (isHost) {
+        if (isHost || isSelfUser(user)) {
             binding.lytBlockUnblock.setVisibility(GONE);
         } else {
             binding.lytBlockUnblock.setVisibility(VISIBLE);
@@ -332,7 +336,7 @@ public class BottomsheetGuestUserProfile extends BottomSheetDialogFragment {
         });
 
         binding.lytFollowUnfollow.setOnClickListener(v -> {
-            if (user != null) {
+            if (user != null && !isSelfUser(user)) {
                 boolean shouldFollow = !user.isFollow();
                 viewModel.followUnfollowUser(shouldFollow, user.getUserId());
             } else {
@@ -341,7 +345,7 @@ public class BottomsheetGuestUserProfile extends BottomSheetDialogFragment {
         });
 
         binding.lytBlockUnblock.setOnClickListener(v -> {
-            if (user != null) {
+            if (user != null && !isSelfUser(user)) {
                 viewModel.blockUnblockUser(user.getUserId());
             } else {
                 Log.d("TAG", "initListeners: User data is not available");
@@ -374,6 +378,12 @@ public class BottomsheetGuestUserProfile extends BottomSheetDialogFragment {
 
         binding.lytFollowing.setOnClickListener(v -> openFollowersList(1));
         binding.lytFollowers.setOnClickListener(v -> openFollowersList(2));
+    }
+
+    private boolean isSelfUser(GuestProfileRoot.User candidate) {
+        if (candidate == null || candidate.getUserId() == null || ctx == null) return false;
+        SessionManager sessionManager = new SessionManager(ctx);
+        return sessionManager.getUser() != null && candidate.getUserId().equals(sessionManager.getUser().getId());
     }
 
     private void openFollowersList(int type) {

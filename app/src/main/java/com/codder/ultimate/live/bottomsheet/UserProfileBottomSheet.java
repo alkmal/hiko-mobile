@@ -94,23 +94,13 @@ public class UserProfileBottomSheet {
             sheetDialogBinding.btnBlock.setVisibility((isWatchAudioActivity || isSelf) ? View.GONE : View.VISIBLE);
 
 
-            if (isHost) {
+            if (isHost || isSelf) {
                 sheetDialogBinding.btnMessage.setVisibility(View.GONE);
                 sheetDialogBinding.lytFollowUnfollow.setVisibility(View.GONE);
                 sheetDialogBinding.layOption.setVisibility(View.GONE);
             } else {
                 sheetDialogBinding.lytFollowUnfollow.setVisibility(View.VISIBLE);
                 sheetDialogBinding.btnMessage.setVisibility(View.VISIBLE);
-                sheetDialogBinding.layOption.setVisibility(View.VISIBLE);
-            }
-
-            if (isSelf) {
-                sheetDialogBinding.btnMessage.setVisibility(View.GONE);
-                sheetDialogBinding.lytFollowUnfollow.setVisibility(View.GONE);
-                sheetDialogBinding.layOption.setVisibility(View.GONE);
-            } else {
-                sheetDialogBinding.btnMessage.setVisibility(View.VISIBLE);
-                sheetDialogBinding.lytFollowUnfollow.setVisibility(View.VISIBLE);
                 sheetDialogBinding.layOption.setVisibility(View.VISIBLE);
             }
 
@@ -209,6 +199,7 @@ public class UserProfileBottomSheet {
 
             // Follow/unfollow button logic
             sheetDialogBinding.lytFollowUnfollow.setOnClickListener(v -> {
+                if (isSelf) return;
                 sheetDialogBinding.lytFollowUnfollow.setEnabled(false);
                 sheetDialogBinding.pdFollow.setVisibility(View.VISIBLE);
                 sheetDialogBinding.tvFollowStatus.setVisibility(View.INVISIBLE);

@@ -1312,7 +1312,7 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
                     Gson gson = new Gson();
                     GuestProfileRoot.User userData = gson.fromJson(mJson, GuestProfileRoot.User.class);
 
-                    if (userData != null) {
+                    if (userData != null && userData.getUserId() != null && !userData.getUserId().isEmpty()) {
                         if (userData.getUserId().equals(host.getLiveUserId())) {
                             userProfileBottomSheet.show(false, userData, host.getLiveStreamingId(), true);
                         } else {

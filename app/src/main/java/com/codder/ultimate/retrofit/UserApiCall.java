@@ -212,6 +212,11 @@ public class UserApiCall {
             onFollowUnfollowListener.onFail();
             return;
         }
+        if (sessionManager.getUser() != null && guestId.equals(sessionManager.getUser().getId())) {
+            Log.w(TAG, "followUnfollowUser: Ignoring self-follow request.");
+            onFollowUnfollowListener.onFail();
+            return;
+        }
 
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("fromUserId", sessionManager.getUser().getId());

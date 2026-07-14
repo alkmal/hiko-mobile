@@ -12,6 +12,9 @@ public class ChatItem {
     @SerializedName("image")
     private String image;
 
+    @SerializedName("audio")
+    private String audio;
+
     @SerializedName("giftsvgaImage")
     private String giftsvgaImage;
 
@@ -74,6 +77,10 @@ public class ChatItem {
 
     public String getImage() {
         return image;
+    }
+
+    public String getAudio() {
+        return audio;
     }
 
     public String getSvgaImage() {

@@ -4,6 +4,8 @@ import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 
 import android.content.Context;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.media.SoundPool;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -60,6 +62,8 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private SoundPool soundPool;
     private int sendSoundId;
     private boolean soundLoaded = false;
+    private MediaPlayer audioPlayer;
+    private String playingAudioUrl = "";
 
     public ChatAdapter(Context context) {
         this.context = context;
@@ -91,6 +95,8 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 return TEXT_TYPE;
             case "image":
                 return PHOTO_TYPE;
+            case "audio":
+                return TEXT_TYPE;
             case "sticker":
             case "emoji":
                 return EMOJI_TYPE;
@@ -170,6 +176,7 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     public void releaseSound() {
         if (soundPool != null) soundPool.release();
+        releaseAudioPlayer();
     }
 
     public void initGuestUser(String guestUserName, String guestUserDummy, String guestAvatarImage) {
@@ -243,7 +250,9 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 binding.tvText.setBackgroundTintList(ContextCompat.getColorStateList(context, R.color.pink));
                 binding.tvText.setBackground(ContextCompat.getDrawable(context, R.drawable.bg_chat_left));
             }
-            binding.tvText.setText(chatDummy.getMessage());
+            boolean isAudio = "audio".equalsIgnoreCase(chatDummy.getMessageType());
+            binding.tvText.setText(isAudio ? "Voice message" : chatDummy.getMessage());
+            binding.tvText.setOnClickListener(isAudio ? v -> playAudioMessage(chatDummy) : null);
             binding.getRoot().setOnLongClickListener(v -> {
                 if (chatDummy.getSenderId().equals(localUserId)) {
                     onChatItemClickLister.onLongPress(chatDummy, position);
@@ -251,6 +260,47 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 return true;
             });
         }
+    }
+
+    private void playAudioMessage(ChatItem chatDummy) {
+        String url = resolveMediaUrl(chatDummy.getAudio());
+        if (url.isEmpty()) return;
+        if (audioPlayer != null && url.equals(playingAudioUrl) && audioPlayer.isPlaying()) {
+            releaseAudioPlayer();
+            return;
+        }
+        releaseAudioPlayer();
+        try {
+            audioPlayer = MediaPlayer.create(context, Uri.parse(url));
+            playingAudioUrl = url;
+            if (audioPlayer != null) {
+                audioPlayer.setOnCompletionListener(mp -> releaseAudioPlayer());
+                audioPlayer.start();
+            }
+        } catch (Exception e) {
+            Log.e(TAG, "Unable to play audio message", e);
+            releaseAudioPlayer();
+        }
+    }
+
+    private String resolveMediaUrl(String value) {
+        if (value == null) return "";
+        String trimmed = value.trim();
+        if (trimmed.isEmpty()) return "";
+        if (trimmed.startsWith("http://") || trimmed.startsWith("https://")) return trimmed;
+        return BuildConfig.BASE_URL + trimmed.replaceFirst("^/+", "");
+    }
+
+    private void releaseAudioPlayer() {
+        if (audioPlayer != null) {
+            try {
+                audioPlayer.stop();
+            } catch (Exception ignored) {
+            }
+            audioPlayer.release();
+            audioPlayer = null;
+        }
+        playingAudioUrl = "";
     }
 
     public class ChatStikerViewHolder extends RecyclerView.ViewHolder {

@@ -32,6 +32,7 @@ import com.bumptech.glide.Glide;
 import com.caverock.androidsvg.SVG;
 import com.codder.ultimate.BuildConfig;
 import com.codder.ultimate.R;
+import com.codder.ultimate.SessionManager;
 import com.codder.ultimate.activity.BaseActivity;
 import com.codder.ultimate.chat.activity.ChatActivity;
 import com.codder.ultimate.chat.activity.FakeChatActivity;
@@ -265,6 +266,9 @@ public class GuestActivity extends BaseActivity {
         binding.tvCoinseller.setVisibility(user.isCoinSeller() ? VISIBLE : GONE);
 
         binding.imgUser.setUserImage(user.getImage(), user.getAvatarFrameImage(), 40);
+        boolean isSelf = isSelfUser(user);
+        binding.lytFollowUnfollow.setVisibility(isSelf ? GONE : VISIBLE);
+        binding.lytBlockUnblock.setVisibility(isSelf ? GONE : VISIBLE);
 
         binding.tvFollowStatus.setText(user.isFollow() ? getString(R.string.following) : getString(R.string.follow));
 
@@ -291,7 +295,7 @@ public class GuestActivity extends BaseActivity {
     private void initListeners() {
 
         binding.lytFollowUnfollow.setOnClickListener(v -> {
-            if (user != null) {
+            if (user != null && !isSelfUser(user)) {
                 boolean shouldFollow = !user.isFollow();
                 viewModel.followUnfollowUser(shouldFollow, user.getUserId());
             } else {
@@ -300,7 +304,7 @@ public class GuestActivity extends BaseActivity {
         });
 
         binding.lytBlockUnblock.setOnClickListener(v -> {
-            if (user != null) {
+            if (user != null && !isSelfUser(user)) {
                 viewModel.blockUnblockUser(user.getUserId());
             } else {
                 Log.d(TAG, "initListeners: User data is not available");
@@ -333,6 +337,12 @@ public class GuestActivity extends BaseActivity {
 
         binding.lytFollowing.setOnClickListener(v -> openFollowersList(1));
         binding.lytFollowers.setOnClickListener(v -> openFollowersList(2));
+    }
+
+    private boolean isSelfUser(GuestProfileRoot.User candidate) {
+        if (candidate == null || candidate.getUserId() == null) return false;
+        SessionManager sessionManager = new SessionManager(this);
+        return sessionManager.getUser() != null && candidate.getUserId().equals(sessionManager.getUser().getId());
     }
 
     private void openFollowersList(int type) {
