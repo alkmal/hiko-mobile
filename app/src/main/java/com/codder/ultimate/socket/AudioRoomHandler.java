@@ -14,6 +14,7 @@ public interface AudioRoomHandler {
 
     void onAddParticipants(Object[] args);
 
+    default void onSeatBusy(Object[] args) { }
 
     void onLessParticipants(Object[] args);
 

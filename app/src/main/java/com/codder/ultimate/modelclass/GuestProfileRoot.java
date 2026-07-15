@@ -1,6 +1,7 @@
 package com.codder.ultimate.modelclass;
 
 import com.google.gson.annotations.SerializedName;
+import com.codder.ultimate.live.model.PkAudioLiveUserRoot;
 
 import java.util.Objects;
 
@@ -111,8 +112,29 @@ public class GuestProfileRoot {
         @SerializedName("isCoinSeller")
         private boolean isCoinSeller;
 
+        @SerializedName("isActiveLive")
+        private boolean isActiveLive;
+
+        @SerializedName("activeLiveSeatPosition")
+        private int activeLiveSeatPosition = -2;
+
+        @SerializedName("activeLiveRoom")
+        private PkAudioLiveUserRoot.UsersItem activeLiveRoom;
+
         public boolean isCoinSeller() {
             return isCoinSeller;
+        }
+
+        public boolean isActiveLive() {
+            return isActiveLive;
+        }
+
+        public int getActiveLiveSeatPosition() {
+            return activeLiveSeatPosition;
+        }
+
+        public PkAudioLiveUserRoot.UsersItem getActiveLiveRoom() {
+            return activeLiveRoom;
         }
 
         public boolean isHost() {

@@ -325,6 +325,13 @@ public class MySocketManager {
             }
         });
 
+        socket.on(Const.EVENT_SEAT_BUSY, args1 -> {
+            Log.d(TAG, "createGlobal: EVENT_SEAT_BUSY");
+            for (AudioRoomHandler audioRoomHandler : audioRoomHandlerList) {
+                audioRoomHandler.onSeatBusy(args1);
+            }
+        });
+
         socket.on(Const.EVENT_HOST_JOIN_AUDIO_ROOM, args1 -> {
             for (AudioRoomHandler audioRoomHandler : audioRoomHandlerList) {
                 audioRoomHandler.onHostEnter(args1);

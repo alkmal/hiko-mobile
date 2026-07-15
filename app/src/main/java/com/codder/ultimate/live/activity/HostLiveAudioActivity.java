@@ -1248,6 +1248,19 @@ public class HostLiveAudioActivity extends AgoraBaseActivity {
         }
 
         @Override
+        public void onSeatBusy(Object[] args) {
+            if (args != null && args.length > 0 && args[0] != null) {
+                runOnUiThread(() -> {
+                    try {
+                        handleSeatBusy(new JSONObject(args[0].toString()));
+                    } catch (JSONException e) {
+                        Log.e(TAG, "onSeatBusy: ", e);
+                    }
+                });
+            }
+        }
+
+        @Override
         public void onLessParticipants(Object[] args) {
             if (args != null && args.length > 0 && args[0] != null) {
                 runOnUiThread(() -> {
@@ -2507,6 +2520,10 @@ public class HostLiveAudioActivity extends AgoraBaseActivity {
         new BottomSheetHostMic(HostLiveAudioActivity.this, seatItem, new BottomSheetHostMic.OnClickListener() {
             @Override
             public void onTakeMic() {
+                if (seatItem.isLock() && !seatItem.isReserved()) {
+                    Toast.makeText(HostLiveAudioActivity.this, getString(R.string.this_seat_is_locked_by_host), Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 if (!beginSeatChange()) return;
 
                 JsonObject jsonObject = new JsonObject();
@@ -2582,7 +2599,7 @@ public class HostLiveAudioActivity extends AgoraBaseActivity {
                             jsonObject.addProperty("name", userDummy.get("name").toString());
                             jsonObject.addProperty("country", userDummy.get("country").toString());
                             jsonObject.addProperty("agoraUid", -1);
-                            jsonObject.addProperty("mute", 0);
+                            jsonObject.addProperty("mute", seatItem.isMute() == 2 ? 2 : 0);
                             jsonObject.addProperty("request", false);
                             jsonObject.addProperty("image", userDummy.get("image").toString());
                             jsonObject.addProperty("avatarFrame", userDummy.get("avatarFrameImage").toString());
@@ -2796,6 +2813,10 @@ public class HostLiveAudioActivity extends AgoraBaseActivity {
 
             @Override
             public void inviteUser() {
+                if (seatItem != null && seatItem.isLock()) {
+                    Toast.makeText(HostLiveAudioActivity.this, getString(R.string.this_seat_is_locked_by_host), Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 JsonObject jsonObject = new JsonObject();
                 putSeatIndex(jsonObject, position);
                 putLiveRoomKeys(jsonObject);
@@ -2803,7 +2824,7 @@ public class HostLiveAudioActivity extends AgoraBaseActivity {
                 jsonObject.addProperty("name", userData.getName());
                 jsonObject.addProperty("country", userData.getCountry());
                 jsonObject.addProperty("agoraUid", -1);
-                jsonObject.addProperty("mute", 0);
+                jsonObject.addProperty("mute", seatItem != null && seatItem.isMute() == 2 ? 2 : 0);
                 jsonObject.addProperty("request", false);
                 jsonObject.addProperty("image", userData.getImage());
                 jsonObject.addProperty("avatarFrame", userData.getAvatarFrameImage());
@@ -3158,6 +3179,26 @@ public class HostLiveAudioActivity extends AgoraBaseActivity {
         clearSeatAt(position);
     }
 
+    private void handleSeatBusy(JSONObject payload) {
+        if (payload == null || sessionManager == null || sessionManager.getUser() == null) return;
+        String userId = payload.optString("userId", "");
+        if (!userId.equals(sessionManager.getUser().getId())) return;
+
+        int position = seatIndexFromPayload(payload, liveUser != null ? liveUser.getSeat() : null);
+        if (position >= 0 && liveUser != null && liveUser.getSeat() != null && position < liveUser.getSeat().size()) {
+            if (payload.optBoolean("locked", false)) {
+                liveUser.getSeat().get(position).setLock(true);
+            }
+            clearSeatAt(position);
+        } else {
+            finishSeatChange();
+        }
+
+        forceAudienceListenOnly();
+        hostPosition = -1;
+        Toast.makeText(this, payload.optBoolean("locked", false) ? getString(R.string.this_seat_is_locked_by_host) : getString(R.string.this_seat_is_reserved), Toast.LENGTH_SHORT).show();
+    }
+
     private void clearSeatAt(int position) {
         if (liveUser == null || liveUser.getSeat() == null || position < 0 || position >= liveUser.getSeat().size()) {
             return;
@@ -3170,13 +3211,14 @@ public class HostLiveAudioActivity extends AgoraBaseActivity {
 
     private void clearSeatItem(PkAudioLiveUserRoot.UsersItem.SeatItem seat) {
         if (seat == null) return;
+        int preservedMute = seat.isMute() == 2 ? 2 : 0;
         seat.setReserved(false);
         seat.setName("");
         seat.setImage("");
         seat.setAvatarFrame("");
         seat.setCountry("");
         seat.setAgoraUid(0);
-        seat.setMute(0);
+        seat.setMute(preservedMute);
         seat.setUserId("");
         seat.setSpeaking(false);
     }

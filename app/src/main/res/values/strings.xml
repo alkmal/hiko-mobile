@@ -96,6 +96,8 @@
     <string name="unblock">Unblock</string>
     <string name="block">Block</string>
     <string name="message">Message</string>
+    <string name="track_user">تتبع</string>
+    <string name="no_live_rooms_available">No live rooms available</string>
     <string name="message_delete_confirmation">Are you sure You want to delete this Message?</string>
     <string name="following">Following</string>
     <string name="my_fans">My Fans</string>

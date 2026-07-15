@@ -990,6 +990,19 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
         }
 
         @Override
+        public void onSeatBusy(Object[] args) {
+            if (args != null && args.length > 0 && args[0] != null) {
+                runOnUiThread(() -> {
+                    try {
+                        handleSeatBusy(new JSONObject(args[0].toString()));
+                    } catch (JSONException e) {
+                        Log.e(TAG, "onSeatBusy: ", e);
+                    }
+                });
+            }
+        }
+
+        @Override
         public void onLessParticipants(Object[] args) {
             if (args != null && args.length > 0 && args[0] != null) {
                 runOnUiThread(() -> {
@@ -1609,15 +1622,38 @@ public class WatchAudioLiveActivity extends AgoraBaseActivity {
         finishSeatChange();
     }
 
+    private void handleSeatBusy(JSONObject payload) {
+        if (payload == null || sessionManager == null || sessionManager.getUser() == null) return;
+        String userId = payload.optString("userId", "");
+        if (!userId.equals(sessionManager.getUser().getId())) return;
+
+        List<PkAudioLiveUserRoot.UsersItem.SeatItem> seatList = currentSeatList();
+        int position = seatIndexFromPayload(payload, seatList);
+        if (position >= 0 && position < seatList.size()) {
+            if (payload.optBoolean("locked", false)) {
+                seatList.get(position).setLock(true);
+            }
+            clearSeatAt(position);
+        } else {
+            finishSeatChange();
+        }
+
+        forceAudienceListenOnly();
+        isHost = false;
+        selfPosition = -1;
+        Toast.makeText(this, payload.optBoolean("locked", false) ? getString(R.string.this_seat_is_locked_by_host) : getString(R.string.this_seat_is_reserved), Toast.LENGTH_SHORT).show();
+    }
+
     private void clearSeatItem(PkAudioLiveUserRoot.UsersItem.SeatItem seat) {
         if (seat == null) return;
+        int preservedMute = seat.isMute() == 2 ? 2 : 0;
         seat.setReserved(false);
         seat.setName("");
         seat.setImage("");
         seat.setAvatarFrame("");
         seat.setCountry("");
         seat.setAgoraUid(0);
-        seat.setMute(0);
+        seat.setMute(preservedMute);
         seat.setUserId("");
         seat.setSpeaking(false);
     }

@@ -40,6 +40,7 @@ import com.codder.ultimate.databinding.ActivityGuestBinding;
 import com.codder.ultimate.guestuser.adapter.GuestUserProfileViewPagerAdapter;
 import com.codder.ultimate.guestuser.model.GuestViewModel;
 import com.codder.ultimate.guestuser.utils.GuestViewModelFactory;
+import com.codder.ultimate.live.activity.WatchAudioLiveActivity;
 import com.codder.ultimate.guestuser.utils.UserRepository;
 import com.codder.ultimate.modelclass.GuestProfileRoot;
 import com.codder.ultimate.retrofit.Const;
@@ -269,6 +270,7 @@ public class GuestActivity extends BaseActivity {
         boolean isSelf = isSelfUser(user);
         binding.lytFollowUnfollow.setVisibility(isSelf ? GONE : VISIBLE);
         binding.lytBlockUnblock.setVisibility(isSelf ? GONE : VISIBLE);
+        binding.lytTrackUser.setVisibility(!isSelf && user.isActiveLive() && user.getActiveLiveRoom() != null ? VISIBLE : GONE);
 
         binding.tvFollowStatus.setText(user.isFollow() ? getString(R.string.following) : getString(R.string.follow));
 
@@ -323,6 +325,15 @@ public class GuestActivity extends BaseActivity {
                     chatIntent.putExtra(Const.USER, new Gson().toJson(user));
                 }
                 startActivity(chatIntent);
+            }
+        });
+
+        binding.lytTrackUser.setOnClickListener(v -> {
+            if (user != null && user.isActiveLive() && user.getActiveLiveRoom() != null) {
+                startActivity(new Intent(this, WatchAudioLiveActivity.class)
+                        .putExtra(Const.DATA, new Gson().toJson(user.getActiveLiveRoom())));
+            } else {
+                Toast.makeText(this, getString(R.string.no_live_rooms_available), Toast.LENGTH_SHORT).show();
             }
         });
 

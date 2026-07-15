@@ -162,6 +162,7 @@ public class Const {
     public static final String EVENT_SEND_REACTION = "sendReaction";
 
     public static final String EVENT_ADD_PARTICIPATED = "addParticipants";
+    public static final String EVENT_SEAT_BUSY = "seatBusy";
     public static final String EVENT_ADD_REQUESTED = "addRequested";
     public static final String EVENT_MUTE_SEAT = "muteSeat";
 
