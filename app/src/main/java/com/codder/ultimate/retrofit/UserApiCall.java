@@ -152,6 +152,8 @@ public class UserApiCall {
 
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("userId", sessionManager.getUser().getId());
+        jsonObject.addProperty("fromUserId", sessionManager.getUser().getId());
+        jsonObject.addProperty("toUserId", guestId);
         jsonObject.addProperty("profileUserId", guestId);
         Call<GuestProfileRoot> call = RetrofitBuilder.create().getGuestUser(jsonObject);
         call.enqueue(new Callback<>() {

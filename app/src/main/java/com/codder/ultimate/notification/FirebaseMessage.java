@@ -131,36 +131,31 @@ public class FirebaseMessage extends FirebaseMessagingService {
             return;
         }
 
-        Intent intent = resolveIntentByType(type, data);
+        JSONObject payload = buildPayload(messageData, data);
+        String intentData = isChatType(type) ? buildChatRoomPayload(payload) : data;
+        Intent intent = resolveIntentByType(type, intentData);
         if (intent == null) {
             Log.w(TAG, "Intent is null. Aborting notification handling.");
             return;
         }
 
-        if ("MESSAGE".equals(type) && isUserInChat(data)) {
-            Log.d(TAG, "User already chatting. Skipping notification.");
+        if ((isChatType(type) || isChatGiftType(type)) && isCurrentOpenChat(payload)) {
+            Log.d(TAG, "User already has this chat open. Skipping notification.");
             return;
         }
 
-        if ("GIFT".equals(type) && isUserInChatGift(data)) {
-            Log.d(TAG, "User already chatting. Skipping notification.");
-            return;
-        }
+        if (isChatType(type)) {
+            final String senderId = getChatSenderId(payload);
+            final String currentUserId = sessionManager.getUser() != null ? sessionManager.getUser().getId() : null;
 
-        if ("MESSAGE".equals(type)) {
-            try {
-                JSONObject jsonData = new JSONObject(data);
-                final String senderId = jsonData.optString("userId", "");
-                final String currentUserId = sessionManager.getUser() != null ? sessionManager.getUser().getId() : null;
+            Log.d(TAG, "Checking blocked status for senderId: " + senderId);
 
-                Log.d(TAG, "Checking blocked status for senderId: " + senderId);
+            if (currentUserId == null) {
+                Log.w(TAG, "Current user ID is null. Cannot fetch block list.");
+                return;
+            }
 
-                if (currentUserId == null) {
-                    Log.w(TAG, "Current user ID is null. Cannot fetch block list.");
-                    return;
-                }
-
-                RetrofitBuilder.create().getBlockUser(currentUserId).enqueue(new Callback<BlockedUserListRoot>() {
+            RetrofitBuilder.create().getBlockUser(currentUserId).enqueue(new Callback<BlockedUserListRoot>() {
                     @Override
                     public void onResponse(Call<BlockedUserListRoot> call, Response<BlockedUserListRoot> response) {
                         if (response.isSuccessful() && response.body() != null) {
@@ -177,7 +172,7 @@ public class FirebaseMessage extends FirebaseMessagingService {
 
                             Log.d(TAG, "Blocked user IDs updated: " + blockedUserIds);
 
-                            if (blockedUserIds.contains(senderId)) {
+                            if (!senderId.isEmpty() && blockedUserIds.contains(senderId)) {
                                 Log.w(TAG, "Notification blocked — sender is in blocked list: " + senderId);
                                 return; // ⛔ Don't show notification
                             }
@@ -204,10 +199,6 @@ public class FirebaseMessage extends FirebaseMessagingService {
                         }
                     }
                 });
-
-            } catch (JSONException e) {
-                Log.e(TAG, "Failed to parse message data", e);
-            }
 
             return; // ⛔ Important! Prevents further notification showing
         }
@@ -261,6 +252,7 @@ public class FirebaseMessage extends FirebaseMessagingService {
         try {
             switch (type) {
                 case "MESSAGE":
+                case "CHAT":
                     Intent chatIntent = new Intent(this, ChatActivity.class);
                     chatIntent.putExtra(Const.CHATROOM, data);
                     return chatIntent;
@@ -300,26 +292,89 @@ public class FirebaseMessage extends FirebaseMessagingService {
         }
     }
 
-    private boolean isUserInChat(String data) {
-        try {
-            JSONObject json = new JSONObject(data);
-            return ChatActivity.isOPEN && ChatActivity.otherUserId.equals(json.getString("userId"));
-        } catch (JSONException e) {
-            Log.e(TAG, "Error checking chat state.", e);
-            return false;
-        }
+    private boolean isChatType(String type) {
+        return "MESSAGE".equals(type) || "CHAT".equals(type);
     }
 
-    private boolean isUserInChatGift(String data) {
-        try {
-            JSONObject json = new JSONObject(data);
-            String incomingTopic = json.optString("chatTopicId",
-                   json.optString("topic", "")); // tolerate either key
-            return ChatActivity.isOPEN && ChatActivity.topicId.equals(incomingTopic);
-        } catch (JSONException e) {
-            Log.e(TAG, "Error checking chat state.", e);
-            return false;
+    private boolean isChatGiftType(String type) {
+        return "GIFT".equals(type) || "CHAT_GIFT".equals(type) || Const.CHAT_GIFT.equals(type);
+    }
+
+    private JSONObject buildPayload(Map<String, String> messageData, String data) {
+        JSONObject payload = new JSONObject();
+        if (data != null && !data.isEmpty()) {
+            try {
+                payload = new JSONObject(data);
+            } catch (JSONException e) {
+                Log.d(TAG, "Notification data is not a JSON object.");
+            }
         }
+
+        try {
+            for (Map.Entry<String, String> entry : messageData.entrySet()) {
+                if (entry.getValue() != null && !"data".equals(entry.getKey())) {
+                    payload.put(entry.getKey(), entry.getValue());
+                }
+            }
+        } catch (JSONException e) {
+            Log.e(TAG, "Error merging notification payload.", e);
+        }
+        return payload;
+    }
+
+    private String buildChatRoomPayload(JSONObject payload) {
+        JSONObject chatRoom = new JSONObject();
+        try {
+            String topic = firstNonEmpty(payload, "topic", "chatTopicId");
+            String userId = getChatSenderId(payload);
+            chatRoom.put("userId", userId);
+            chatRoom.put("topic", topic);
+            chatRoom.put("chatTopicId", topic);
+            chatRoom.put("name", firstNonEmpty(payload, "name", "userName", "senderName"));
+            chatRoom.put("image", firstNonEmpty(payload, "image", "userImage", "senderImage"));
+            chatRoom.put("avatarFrameImage", firstNonEmpty(payload, "avatarFrameImage", "userAvatarFrameImage", "senderAvatarFrameImage"));
+            chatRoom.put("isOnline", firstBoolean(payload, false, "isOnline"));
+            chatRoom.put("isFake", firstBoolean(payload, false, "isFake", "isFakeSender"));
+        } catch (JSONException e) {
+            Log.e(TAG, "Error building chat notification payload.", e);
+        }
+        return chatRoom.toString();
+    }
+
+    private boolean isCurrentOpenChat(JSONObject payload) {
+        if (!ChatActivity.isOPEN) return false;
+
+        String incomingTopic = firstNonEmpty(payload, "chatTopicId", "topic");
+        if (!incomingTopic.isEmpty() && incomingTopic.equals(ChatActivity.topicId)) {
+            return true;
+        }
+
+        String senderId = getChatSenderId(payload);
+        return !senderId.isEmpty() && senderId.equals(ChatActivity.otherUserId);
+    }
+
+    private String getChatSenderId(JSONObject payload) {
+        return firstNonEmpty(payload, "senderId", "userId", "fromUserId");
+    }
+
+    private String firstNonEmpty(JSONObject payload, String... keys) {
+        for (String key : keys) {
+            String value = payload.optString(key, "");
+            if (value != null && !value.trim().isEmpty() && !"null".equalsIgnoreCase(value.trim())) {
+                return value;
+            }
+        }
+        return "";
+    }
+
+    private boolean firstBoolean(JSONObject payload, boolean defaultValue, String... keys) {
+        for (String key : keys) {
+            if (!payload.has(key)) continue;
+            Object value = payload.opt(key);
+            if (value instanceof Boolean) return (boolean) value;
+            if (value instanceof String) return Boolean.parseBoolean((String) value);
+        }
+        return defaultValue;
     }
 
     private void showFirebaseNotification(RemoteMessage message, RemoteMessage.Notification notification, Intent intent) {

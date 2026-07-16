@@ -300,6 +300,7 @@ public class BottomsheetGuestUserProfile extends BottomSheetDialogFragment {
         boolean isSelf = isSelfUser(user);
         binding.lytFollowUnfollow.setVisibility(isSelf ? GONE : VISIBLE);
         binding.lytBlockUnblock.setVisibility(isSelf ? GONE : VISIBLE);
+        binding.tvMessages.setVisibility(isSelf ? GONE : VISIBLE);
 
         binding.tvFollowStatus.setText(user.isFollow() ? ctx.getString(R.string.following) : ctx.getString(R.string.follow));
 
@@ -353,7 +354,7 @@ public class BottomsheetGuestUserProfile extends BottomSheetDialogFragment {
         });
 
         binding.tvMessages.setOnClickListener(v -> {
-            if (user != null) {
+            if (user != null && !isSelfUser(user)) {
                 Intent chatIntent;
                 if (user.isFake()) {
                     chatIntent = new Intent(ctx, FakeChatActivity.class);

@@ -271,6 +271,7 @@ public class GuestActivity extends BaseActivity {
         binding.lytFollowUnfollow.setVisibility(isSelf ? GONE : VISIBLE);
         binding.lytBlockUnblock.setVisibility(isSelf ? GONE : VISIBLE);
         binding.lytTrackUser.setVisibility(!isSelf && user.isActiveLive() && user.getActiveLiveRoom() != null ? VISIBLE : GONE);
+        binding.tvMessages.setVisibility(isSelf ? GONE : VISIBLE);
 
         binding.tvFollowStatus.setText(user.isFollow() ? getString(R.string.following) : getString(R.string.follow));
 
@@ -314,7 +315,7 @@ public class GuestActivity extends BaseActivity {
         });
 
         binding.tvMessages.setOnClickListener(v -> {
-            if (user != null) {
+            if (user != null && !isSelfUser(user)) {
                 Intent chatIntent;
                 if (user.isFake()) {
                     chatIntent = new Intent(this, FakeChatActivity.class);
