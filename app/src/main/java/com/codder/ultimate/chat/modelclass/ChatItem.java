@@ -15,6 +15,9 @@ public class ChatItem {
     @SerializedName("audio")
     private String audio;
 
+    @SerializedName("audioDuration")
+    private long audioDuration;
+
     @SerializedName("giftsvgaImage")
     private String giftsvgaImage;
 
@@ -81,6 +84,14 @@ public class ChatItem {
 
     public String getAudio() {
         return audio;
+    }
+
+    public long getAudioDuration() {
+        return audioDuration;
+    }
+
+    public void setAudioDuration(long audioDuration) {
+        this.audioDuration = audioDuration;
     }
 
     public String getSvgaImage() {

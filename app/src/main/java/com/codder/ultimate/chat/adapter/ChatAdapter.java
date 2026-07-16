@@ -4,9 +4,12 @@ import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 
 import android.content.Context;
+import android.media.MediaMetadataRetriever;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.media.SoundPool;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,7 +39,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
@@ -64,6 +71,13 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private boolean soundLoaded = false;
     private MediaPlayer audioPlayer;
     private String playingAudioUrl = "";
+    private String playingMessageId = "";
+    private int playingPosition = RecyclerView.NO_POSITION;
+    private boolean audioPreparing = false;
+    private final Handler audioHandler = new Handler(Looper.getMainLooper());
+    private Runnable audioProgressRunnable;
+    private final Map<String, Integer> audioDurationCache = new HashMap<>();
+    private final Set<String> loadingAudioDurations = new HashSet<>();
 
     public ChatAdapter(Context context) {
         this.context = context;
@@ -199,17 +213,24 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     public void addSingleChat(ChatItem chatUserItem) {
         chatDummyList.add(0, chatUserItem);
+        if (playingPosition != RecyclerView.NO_POSITION) playingPosition++;
         playSendSound();
         notifyItemInserted(0);
 
     }
 
     public void removeSingleItem(int position) {
+        if (position == playingPosition) {
+            releaseAudioPlayer(false);
+        } else if (playingPosition != RecyclerView.NO_POSITION && position < playingPosition) {
+            playingPosition--;
+        }
         chatDummyList.remove(chatDummyList.get(position));
         notifyDataSetChanged();
     }
 
     public void clear() {
+        releaseAudioPlayer(false);
         chatDummyList.clear();
         notifyDataSetChanged();
     }
@@ -241,18 +262,27 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 binding.tvText.setBackground(ContextCompat.getDrawable(context, R.drawable.bg_chat_right));
                 binding.tvText.setTextColor(ContextCompat.getColor(context, R.color.white));
                 binding.tvText.setBackgroundTintList(ContextCompat.getColorStateList(context, R.color.chat_right));
+                binding.lytAudio.setBackground(ContextCompat.getDrawable(context, R.drawable.bg_chat_right));
+                binding.lytAudio.setBackgroundTintList(ContextCompat.getColorStateList(context, R.color.chat_right));
             } else {
                 binding.imgUser2.setVisibility(View.INVISIBLE);
                 binding.imgUser1.setVisibility(VISIBLE);
                 binding.space1.setVisibility(GONE);
                 binding.space2.setVisibility(VISIBLE);
                 binding.tvText.setTextColor(ContextCompat.getColor(context, R.color.white));
-                binding.tvText.setBackgroundTintList(ContextCompat.getColorStateList(context, R.color.pink));
                 binding.tvText.setBackground(ContextCompat.getDrawable(context, R.drawable.bg_chat_left));
+                binding.tvText.setBackgroundTintList(ContextCompat.getColorStateList(context, R.color.pink));
+                binding.lytAudio.setBackground(ContextCompat.getDrawable(context, R.drawable.bg_chat_left));
+                binding.lytAudio.setBackgroundTintList(ContextCompat.getColorStateList(context, R.color.pink));
             }
             boolean isAudio = "audio".equalsIgnoreCase(chatDummy.getMessageType());
-            binding.tvText.setText(isAudio ? "Voice message" : chatDummy.getMessage());
-            binding.tvText.setOnClickListener(isAudio ? v -> playAudioMessage(chatDummy) : null);
+            binding.tvText.setVisibility(isAudio ? GONE : VISIBLE);
+            binding.lytAudio.setVisibility(isAudio ? VISIBLE : GONE);
+            binding.tvText.setText(chatDummy.getMessage());
+            binding.tvText.setOnClickListener(null);
+            if (isAudio) {
+                bindAudioMessage(binding, chatDummy, position);
+            }
             binding.getRoot().setOnLongClickListener(v -> {
                 if (chatDummy.getSenderId().equals(localUserId)) {
                     onChatItemClickLister.onLongPress(chatDummy, position);
@@ -262,28 +292,94 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         }
     }
 
-    private void playAudioMessage(ChatItem chatDummy) {
+    private void bindAudioMessage(ItemChatTextBinding binding, ChatItem chatDummy, int position) {
         String url = resolveMediaUrl(chatDummy.getAudio());
-        if (url.isEmpty()) return;
-        if (audioPlayer != null && url.equals(playingAudioUrl) && audioPlayer.isPlaying()) {
-            releaseAudioPlayer();
+        String key = getAudioKey(chatDummy, url);
+        int knownDuration = getKnownAudioDuration(chatDummy, url);
+        boolean isCurrent = !key.isEmpty() && key.equals(playingMessageId);
+        int progress = getCurrentAudioProgress(isCurrent);
+        int max = knownDuration > 0 ? knownDuration : Math.max(progress, 1000);
+
+        binding.seekAudio.setMax(max);
+        binding.seekAudio.setProgress(Math.min(progress, max));
+        binding.seekAudio.setEnabled(false);
+        binding.btnPlayAudio.setImageResource(isCurrent && audioPlayer != null && audioPlayer.isPlaying()
+                ? R.drawable.icon_pause
+                : R.drawable.icon_play);
+
+        if (knownDuration > 0) {
+            binding.tvAudioDuration.setText(isCurrent && progress > 0
+                    ? formatDuration(progress) + " / " + formatDuration(knownDuration)
+                    : formatDuration(knownDuration));
+        } else {
+            binding.tvAudioDuration.setText("--:--");
+            ensureAudioDuration(chatDummy, position, url);
+        }
+
+        binding.lytAudio.setOnClickListener(v -> playAudioMessage(chatDummy, position));
+        binding.btnPlayAudio.setOnClickListener(v -> playAudioMessage(chatDummy, position));
+    }
+
+    private void playAudioMessage(ChatItem chatDummy, int position) {
+        String url = resolveMediaUrl(chatDummy.getAudio());
+        if (url.isEmpty() || audioPreparing) return;
+
+        String key = getAudioKey(chatDummy, url);
+        if (audioPlayer != null && key.equals(playingMessageId)) {
+            if (audioPlayer.isPlaying()) {
+                audioPlayer.pause();
+                stopAudioProgressUpdates();
+            } else {
+                audioPlayer.start();
+                startAudioProgressUpdates();
+            }
+            notifyItemChanged(position);
             return;
         }
-        releaseAudioPlayer();
+
+        int previousPosition = playingPosition;
+        releaseAudioPlayer(false);
+        if (previousPosition != RecyclerView.NO_POSITION) notifyItemChanged(previousPosition);
+
         try {
-            audioPlayer = MediaPlayer.create(context, Uri.parse(url));
+            audioPlayer = new MediaPlayer();
             playingAudioUrl = url;
-            if (audioPlayer != null) {
-                audioPlayer.setOnCompletionListener(mp -> releaseAudioPlayer());
-                audioPlayer.start();
-            }
+            playingMessageId = key;
+            playingPosition = position;
+            audioPreparing = true;
+            audioPlayer.setDataSource(context, Uri.parse(url));
+            audioPlayer.setOnPreparedListener(mp -> {
+                audioPreparing = false;
+                int duration = mp.getDuration();
+                if (duration > 0) {
+                    audioDurationCache.put(url, duration);
+                    chatDummy.setAudioDuration(duration);
+                }
+                mp.start();
+                startAudioProgressUpdates();
+                notifyItemChanged(position);
+            });
+            audioPlayer.setOnCompletionListener(mp -> {
+                int oldPosition = playingPosition;
+                releaseAudioPlayer(false);
+                if (oldPosition != RecyclerView.NO_POSITION) notifyItemChanged(oldPosition);
+            });
+            audioPlayer.setOnErrorListener((mp, what, extra) -> {
+                Log.e(TAG, "Unable to play audio message. what=" + what + ", extra=" + extra);
+                int oldPosition = playingPosition;
+                releaseAudioPlayer(false);
+                if (oldPosition != RecyclerView.NO_POSITION) notifyItemChanged(oldPosition);
+                return true;
+            });
+            audioPlayer.prepareAsync();
+            notifyItemChanged(position);
         } catch (Exception e) {
             Log.e(TAG, "Unable to play audio message", e);
-            releaseAudioPlayer();
+            releaseAudioPlayer(true);
         }
     }
 
-    private String resolveMediaUrl(String value) {
+    public String resolveMediaUrl(String value) {
         if (value == null) return "";
         String trimmed = value.trim();
         if (trimmed.isEmpty()) return "";
@@ -291,16 +387,111 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         return BuildConfig.BASE_URL + trimmed.replaceFirst("^/+", "");
     }
 
+    private String getAudioKey(ChatItem chatDummy, String url) {
+        if (chatDummy.getId() != null && !chatDummy.getId().trim().isEmpty()) return chatDummy.getId();
+        return url;
+    }
+
+    private int getKnownAudioDuration(ChatItem chatDummy, String url) {
+        if (chatDummy.getAudioDuration() > 0) return (int) chatDummy.getAudioDuration();
+        Integer cachedDuration = audioDurationCache.get(url);
+        return cachedDuration != null ? cachedDuration : 0;
+    }
+
+    private int getCurrentAudioProgress(boolean isCurrent) {
+        if (!isCurrent || audioPlayer == null) return 0;
+        try {
+            return audioPlayer.getCurrentPosition();
+        } catch (Exception ignored) {
+            return 0;
+        }
+    }
+
+    private void ensureAudioDuration(ChatItem chatDummy, int position, String url) {
+        if (url.isEmpty() || loadingAudioDurations.contains(url)) return;
+        loadingAudioDurations.add(url);
+        new Thread(() -> {
+            int duration = readAudioDuration(url);
+            audioHandler.post(() -> {
+                loadingAudioDurations.remove(url);
+                if (duration > 0) {
+                    audioDurationCache.put(url, duration);
+                    chatDummy.setAudioDuration(duration);
+                    notifyItemChanged(position);
+                }
+            });
+        }).start();
+    }
+
+    private int readAudioDuration(String url) {
+        MediaMetadataRetriever retriever = new MediaMetadataRetriever();
+        try {
+            if (url.startsWith("http://") || url.startsWith("https://")) {
+                retriever.setDataSource(url, new HashMap<>());
+            } else {
+                retriever.setDataSource(url);
+            }
+            String duration = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION);
+            return duration == null ? 0 : Integer.parseInt(duration);
+        } catch (Exception e) {
+            Log.w(TAG, "Unable to read audio duration.", e);
+            return 0;
+        } finally {
+            try {
+                retriever.release();
+            } catch (Exception ignored) {
+            }
+        }
+    }
+
+    private void startAudioProgressUpdates() {
+        stopAudioProgressUpdates();
+        audioProgressRunnable = new Runnable() {
+            @Override
+            public void run() {
+                if (audioPlayer != null && playingPosition != RecyclerView.NO_POSITION) {
+                    notifyItemChanged(playingPosition);
+                    audioHandler.postDelayed(this, 500);
+                }
+            }
+        };
+        audioHandler.post(audioProgressRunnable);
+    }
+
+    private void stopAudioProgressUpdates() {
+        if (audioProgressRunnable != null) {
+            audioHandler.removeCallbacks(audioProgressRunnable);
+            audioProgressRunnable = null;
+        }
+    }
+
+    private String formatDuration(long durationMs) {
+        long totalSeconds = Math.max(0, Math.round(durationMs / 1000.0));
+        long minutes = totalSeconds / 60;
+        long seconds = totalSeconds % 60;
+        return minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+    }
+
     private void releaseAudioPlayer() {
+        releaseAudioPlayer(true);
+    }
+
+    private void releaseAudioPlayer(boolean notifyChanged) {
+        int oldPosition = playingPosition;
+        stopAudioProgressUpdates();
         if (audioPlayer != null) {
             try {
-                audioPlayer.stop();
+                if (audioPlayer.isPlaying()) audioPlayer.stop();
             } catch (Exception ignored) {
             }
             audioPlayer.release();
             audioPlayer = null;
         }
         playingAudioUrl = "";
+        playingMessageId = "";
+        playingPosition = RecyclerView.NO_POSITION;
+        audioPreparing = false;
+        if (notifyChanged && oldPosition != RecyclerView.NO_POSITION) notifyItemChanged(oldPosition);
     }
 
     public class ChatStikerViewHolder extends RecyclerView.ViewHolder {
@@ -359,11 +550,14 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
         public void setData(int position) {
             ChatItem chatDummy = chatDummyList.get(position);
+            String imageUrl = resolveMediaUrl(chatDummy.getImage());
 
             binding.imgUser1.setChatUserImage(guestUserImage, guestUserAvatarImage, 10);
             binding.imgUser2.setChatUserImage(localUserImage, localUserAvatarImage, 10);
-            Glide.with(itemView).load(BuildConfig.BASE_URL + chatDummy.getImage())
+            Glide.with(itemView).load(imageUrl)
                     .placeholder(R.drawable.placeholder_live)
+                    .error(R.drawable.placeholder_live)
+                    .dontAnimate()
                     .into(binding.mainImage);
             binding.mainImage.setAdjustViewBounds(true);
 
@@ -379,9 +573,12 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 binding.space2.setVisibility(VISIBLE);
             }
 
-            ViewCompat.setTransitionName(binding.mainImage, "sharedImage_" + position);
+            String transitionKey = chatDummy.getId() != null && !chatDummy.getId().isEmpty()
+                    ? chatDummy.getId()
+                    : String.valueOf(position);
+            ViewCompat.setTransitionName(binding.mainImage, "sharedImage_" + transitionKey);
             binding.getRoot().setOnClickListener(view -> {
-                if (onChatItemClickLister != null) {
+                if (onChatItemClickLister != null && !imageUrl.isEmpty()) {
                     onChatItemClickLister.onImageClick(chatDummy, position, binding.mainImage);
                 }
             });

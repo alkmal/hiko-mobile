@@ -311,6 +311,18 @@
                         android:layout_marginEnd="@dimen/_10sdp"
                         android:src="@drawable/microphone"
                         android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tvVoiceTimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/airbnbcereal_w_md"
+                        android:text="0:00"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
                 </LinearLayout>
 
                 <ImageView

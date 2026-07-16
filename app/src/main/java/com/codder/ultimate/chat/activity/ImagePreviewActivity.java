@@ -41,29 +41,32 @@ public class ImagePreviewActivity extends AppCompatActivity {
         if (tn != null) ViewCompat.setTransitionName(binding.fullScreenImage, tn);
 
         supportPostponeEnterTransition();
-        if (imageUrl != null && !imageUrl.isEmpty()) {
-            Glide.with(this)
-                    .load(imageUrl)
-                    .dontTransform()
-                    .listener(new RequestListener<Drawable>() {
-                        @Override
-                        public boolean onLoadFailed(@Nullable GlideException e, Object model,
-                                                    Target<Drawable> target, boolean isFirstResource) {
-                            supportStartPostponedEnterTransition();
-                            return false;
-                        }
-
-                        @Override
-                        public boolean onResourceReady(Drawable resource, Object model,
-                                                       Target<Drawable> target, DataSource dataSource,
-                                                       boolean isFirstResource) {
-                            supportStartPostponedEnterTransition();
-                            return false;
-                        }
-                    })
-                    .into(binding.fullScreenImage);
+        if (imageUrl == null || imageUrl.isEmpty()) {
+            supportStartPostponedEnterTransition();
+            finish();
+            return;
         }
 
+        Glide.with(this)
+                .load(imageUrl)
+                .dontTransform()
+                .listener(new RequestListener<Drawable>() {
+                    @Override
+                    public boolean onLoadFailed(@Nullable GlideException e, Object model,
+                                                Target<Drawable> target, boolean isFirstResource) {
+                        supportStartPostponedEnterTransition();
+                        return false;
+                    }
+
+                    @Override
+                    public boolean onResourceReady(Drawable resource, Object model,
+                                                   Target<Drawable> target, DataSource dataSource,
+                                                   boolean isFirstResource) {
+                        supportStartPostponedEnterTransition();
+                        return false;
+                    }
+                })
+                .into(binding.fullScreenImage);
 
         binding.imageContainer.setOnClickListener(v -> onBackPressed());
     }

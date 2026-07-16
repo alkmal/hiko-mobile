@@ -70,9 +70,12 @@ public class StoryUploadWorker extends Worker implements ProgressRequestBody.Upl
         File originalFile = safeFile(localVideo.getVideo());
         File screenshotFile = safeFile(localVideo.getScreenshot());
         File previewFile = safeFile(localVideo.getPreview());
+        updateUploadProgress(1);
 
         if (originalFile == null || !originalFile.exists()) {
             Log.e(TAG, "Original video file is invalid or missing");
+            sendBroadcast(Const.PROGRESS_DONE, "Original video file is invalid or missing");
+            sessionManager.clearUploadProgress();
             return false;
         }
 
@@ -96,6 +99,7 @@ public class StoryUploadWorker extends Worker implements ProgressRequestBody.Upl
                         @Override
                         public void onTranscodeProgress(double progress) {
                             Log.d(TAG, "Compression progress: " + (int) (progress * 100) + "%");
+                            updateUploadProgress(2 + (int) (progress * 23));
                         }
 
                         @Override
@@ -144,9 +148,11 @@ public class StoryUploadWorker extends Worker implements ProgressRequestBody.Upl
         try {
             durationMillis = VideoUtil.getDuration(context, Uri.fromFile(videoFile));
         } catch (IOException e) {
-            throw new RuntimeException("Failed to get video duration", e);
+            Log.w(TAG, "Failed to get video duration, continuing with 0", e);
+            durationMillis = 0;
         }
         long durationSeconds = TimeUnit.MILLISECONDS.toSeconds(durationMillis);
+        updateUploadProgress(30);
 
         // Step 3: Prepare request body
         MultipartBody.Part videoPart = createMultipartPart("video", videoFile);
@@ -176,8 +182,9 @@ public class StoryUploadWorker extends Worker implements ProgressRequestBody.Upl
         CountDownLatch latch = new CountDownLatch(1);
 
         CountingRequestBody.Listener progressListener = (bytesRead, contentLength) -> {
-            int percentage = (int) ((bytesRead * 100) / contentLength);
-            onProgressUpdate(percentage);
+            if (contentLength <= 0) return;
+            int percentage = 30 + (int) ((bytesRead * 69) / contentLength);
+            onProgressUpdate(Math.min(99, percentage));
         };
 
         Call<RestResponse> call = RetrofitBuilder.createStoryUploadFile(progressListener)
@@ -189,12 +196,15 @@ public class StoryUploadWorker extends Worker implements ProgressRequestBody.Upl
                 if (response.isSuccessful() && response.body() != null && response.body().isStatus()) {
                     Log.i(TAG, "Upload successful");
                     Toast.makeText(context, "Upload successful", Toast.LENGTH_SHORT).show();
+                    updateUploadProgress(100);
                     sendBroadcast(Const.PROGRESS_DONE, null);
+                    sessionManager.clearUploadProgress();
                     isSuccess[0] = true;
                 } else {
                     String msg = (response.body() != null) ? response.body().getMessage() : "Unknown error";
                     Log.w(TAG, "Upload failed: " + msg);
                     sendBroadcast(Const.PROGRESS_DONE, msg);
+                    sessionManager.clearUploadProgress();
                 }
                 latch.countDown();
             }
@@ -203,6 +213,7 @@ public class StoryUploadWorker extends Worker implements ProgressRequestBody.Upl
             public void onFailure(Call<RestResponse> call, Throwable t) {
                 Log.e(TAG, "Upload failed", t);
                 sendBroadcast(Const.PROGRESS_DONE, t.getLocalizedMessage());
+                sessionManager.clearUploadProgress();
                 latch.countDown();
             }
         });
@@ -210,6 +221,8 @@ public class StoryUploadWorker extends Worker implements ProgressRequestBody.Upl
         boolean completed = latch.await(TIMEOUT_SECONDS, TimeUnit.SECONDS);
         if (!completed) {
             Log.e(TAG, "Upload timed out");
+            sendBroadcast(Const.PROGRESS_DONE, "Upload timed out");
+            sessionManager.clearUploadProgress();
             return false;
         }
 
@@ -243,9 +256,15 @@ public class StoryUploadWorker extends Worker implements ProgressRequestBody.Upl
 
     @Override
     public void onProgressUpdate(int percentage) {
+        updateUploadProgress(percentage);
+    }
+
+    private void updateUploadProgress(int percentage) {
+        int safeProgress = Math.min(100, Math.max(0, percentage));
         Log.d(TAG, "Upload progress: " + percentage + "%");
+        sessionManager.setUploadProgress(safeProgress);
         Intent intent = new Intent(Const.UPLOAD_PROGRESS);
-        intent.putExtra("progress", percentage);
+        intent.putExtra("progress", safeProgress);
         LocalBroadcastManager.getInstance(context).sendBroadcast(intent);
     }
 

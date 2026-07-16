@@ -47,6 +47,49 @@
                 android:textColor="@color/white"
                 android:textSize="15sp" />
 
+            <LinearLayout
+                android:id="@+id/lytAudio"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/bg_chat_left"
+                android:backgroundTint="@color/chatText"
+                android:gravity="center_vertical"
+                android:minHeight="44dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="6dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/btnPlayAudio"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_play" />
+
+                <SeekBar
+                    android:id="@+id/seekAudio"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginHorizontal="6dp"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:max="1000"
+                    android:progress="0" />
+
+                <TextView
+                    android:id="@+id/tvAudioDuration"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/airbnbcereal_w_md"
+                    android:gravity="end"
+                    android:text="0:00"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
             <View
                 android:id="@+id/space2"
                 android:layout_width="0dp"

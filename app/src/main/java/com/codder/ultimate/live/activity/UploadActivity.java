@@ -248,6 +248,11 @@ public class UploadActivity extends BaseActivity {
     }
 
     private void uploadToServer() {
+        sessionManager.setUploadProgress(1);
+        Intent startIntent = new Intent(Const.UPLOAD_PROGRESS);
+        startIntent.putExtra("progress", 1);
+        LocalBroadcastManager.getInstance(this).sendBroadcast(startIntent);
+
         new Thread(() -> {
             try {
                 File originalFile = new File(mVideo);
@@ -269,7 +274,15 @@ public class UploadActivity extends BaseActivity {
                 }
 
                 // Generate GIF preview
-                new GifMaker(2).makeGifFromVideo(mVideo, 1000, 3000, 250, previewFile.getAbsolutePath());
+                try {
+                    new GifMaker(2).makeGifFromVideo(mVideo, 1000, 3000, 250, previewFile.getAbsolutePath());
+                } catch (Exception e) {
+                    Log.w(TAG, "Failed to generate reel preview, using screenshot fallback", e);
+                    previewFile = screenshotFile;
+                }
+                if (!previewFile.exists() || previewFile.length() == 0) {
+                    previewFile = screenshotFile;
+                }
 
                 // Save local video object
                 sessionManager.saveLocalVideo(new LocalVideo(

@@ -128,6 +128,8 @@ public class ChatActivity extends BaseActivity {
     private File voiceRecordFile;
     private boolean isRecordingVoice = false;
     private long voiceRecordStartedAt = 0L;
+    private final Handler voiceTimerHandler = new Handler(Looper.getMainLooper());
+    private Runnable voiceTimerRunnable;
 
     private EmojiSheetViewModel giftViewModel;
     private EmojiBottomSheetFragment emojiBottomsheetFragment;
@@ -914,16 +916,28 @@ public class ChatActivity extends BaseActivity {
 
             @Override
             public void onImageClick(ChatItem chatDummy, int position, ImageView mainImage) {
+                String imageUrl = viewModel.chatAdapter.resolveMediaUrl(chatDummy.getImage());
+                if (imageUrl.isEmpty()) return;
+
                 Intent intent = new Intent(ChatActivity.this, ImagePreviewActivity.class);
-                intent.putExtra("preview_image", BuildConfig.BASE_URL + chatDummy.getImage());
+                intent.putExtra("preview_image", imageUrl);
 
-                ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
-                        ChatActivity.this,
-                        mainImage,
-                        ViewCompat.getTransitionName(mainImage)
-                );
-
-                ActivityCompat.startActivity(ChatActivity.this, intent, options.toBundle());
+                try {
+                    String transitionName = ViewCompat.getTransitionName(mainImage);
+                    if (transitionName == null || transitionName.isEmpty()) {
+                        startActivity(intent);
+                        return;
+                    }
+                    ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
+                            ChatActivity.this,
+                            mainImage,
+                            transitionName
+                    );
+                    ActivityCompat.startActivity(ChatActivity.this, intent, options.toBundle());
+                } catch (Exception e) {
+                    Log.e(TAG, "Unable to open image preview with transition", e);
+                    startActivity(intent);
+                }
 
             }
         });
@@ -1150,7 +1164,7 @@ public class ChatActivity extends BaseActivity {
             voiceRecorder.start();
             voiceRecordStartedAt = System.currentTimeMillis();
             isRecordingVoice = true;
-            Toast.makeText(this, "Recording...", Toast.LENGTH_SHORT).show();
+            startVoiceTimer();
         } catch (Exception e) {
             Log.e(TAG, "Unable to start voice recording", e);
             releaseVoiceRecorder();
@@ -1183,10 +1197,11 @@ public class ChatActivity extends BaseActivity {
             return;
         }
 
-        uploadVoiceMessage(recordedFile);
+        uploadVoiceMessage(recordedFile, duration);
     }
 
     private void releaseVoiceRecorder() {
+        stopVoiceTimer();
         if (voiceRecorder != null) {
             try {
                 voiceRecorder.release();
@@ -1198,7 +1213,40 @@ public class ChatActivity extends BaseActivity {
         voiceRecordStartedAt = 0L;
     }
 
-    private void uploadVoiceMessage(File file) {
+    private void startVoiceTimer() {
+        binding.tvVoiceTimer.setVisibility(VISIBLE);
+        binding.tvVoiceTimer.setText("0:00");
+        voiceTimerRunnable = new Runnable() {
+            @Override
+            public void run() {
+                if (!isRecordingVoice || voiceRecordStartedAt <= 0) return;
+                long elapsed = System.currentTimeMillis() - voiceRecordStartedAt;
+                binding.tvVoiceTimer.setText(formatVoiceDuration(elapsed));
+                voiceTimerHandler.postDelayed(this, 250);
+            }
+        };
+        voiceTimerHandler.post(voiceTimerRunnable);
+    }
+
+    private void stopVoiceTimer() {
+        if (voiceTimerRunnable != null) {
+            voiceTimerHandler.removeCallbacks(voiceTimerRunnable);
+            voiceTimerRunnable = null;
+        }
+        if (binding != null) {
+            binding.tvVoiceTimer.setText("0:00");
+            binding.tvVoiceTimer.setVisibility(GONE);
+        }
+    }
+
+    private String formatVoiceDuration(long durationMs) {
+        long totalSeconds = Math.max(0, Math.round(durationMs / 1000.0));
+        long minutes = totalSeconds / 60;
+        long seconds = totalSeconds % 60;
+        return minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+    }
+
+    private void uploadVoiceMessage(File file, long durationMs) {
         if (file == null || !file.exists()) return;
 
         RequestBody requestFile = RequestBody.create(MediaType.parse("audio/mp4"), file);
@@ -1208,12 +1256,16 @@ public class ChatActivity extends BaseActivity {
         map.put("messageType", RequestBody.create(MediaType.parse("text/plain"), "audio"));
         map.put("topic", RequestBody.create(MediaType.parse("text/plain"), viewModel.chatTopic));
         map.put("senderId", RequestBody.create(MediaType.parse("text/plain"), sessionManager.getUser().getId()));
+        map.put("audioDuration", RequestBody.create(MediaType.parse("text/plain"), String.valueOf(durationMs)));
 
         RetrofitBuilder.create().uploadChatImage(map, body).enqueue(new Callback<>() {
             @Override
             public void onResponse(Call<UploadImageRoot> call, Response<UploadImageRoot> response) {
                 if (response.isSuccessful() && response.body() != null && response.body().isStatus()) {
                     ChatItem chat = response.body().getChat();
+                    if (chat != null && chat.getAudioDuration() <= 0) {
+                        chat.setAudioDuration(durationMs);
+                    }
                     try {
                         emitChatMedia(chat, "audio");
                     } catch (JSONException e) {
@@ -1244,6 +1296,7 @@ public class ChatActivity extends BaseActivity {
         jsonObject.put("messageId", chat.getId());
         if ("audio".equals(messageType)) {
             jsonObject.put("audio", chat.getAudio());
+            jsonObject.put("audioDuration", chat.getAudioDuration());
         } else {
             jsonObject.put("image", chat.getImage());
         }

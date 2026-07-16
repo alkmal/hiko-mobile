@@ -244,6 +244,26 @@ public class SessionManager {
         editor.apply();
     }
 
+    public void setUploadProgress(int progress) {
+        editor.putBoolean("isUploadingMedia", true);
+        editor.putInt("uploadProgress", Math.max(0, Math.min(100, progress)));
+        editor.apply();
+    }
+
+    public int getUploadProgress() {
+        return pref.getInt("uploadProgress", 0);
+    }
+
+    public boolean isUploadingMedia() {
+        return pref.getBoolean("isUploadingMedia", false);
+    }
+
+    public void clearUploadProgress() {
+        editor.putBoolean("isUploadingMedia", false);
+        editor.putInt("uploadProgress", 0);
+        editor.apply();
+    }
+
     public void setIsAudioRoomBackground(boolean isAudioRoomBackground){
         editor.putBoolean("isAudioRoomBackground", isAudioRoomBackground);
         editor.apply();

@@ -129,6 +129,7 @@ public class MainActivity extends BaseActivity implements MyRewardAds.RewardAdLi
         filter.addAction(Const.PROGRESS_DONE);
         filter.addAction(Const.UPLOAD_SUCCESS);
         LocalBroadcastManager.getInstance(this).registerReceiver(uploadProgressReceiver, filter);
+        restorePendingUploadProgress();
 
     }
 
@@ -805,34 +806,52 @@ public class MainActivity extends BaseActivity implements MyRewardAds.RewardAdLi
                 if (Const.UPLOAD_PROGRESS.equals(action)) {
                     int progress = intent.getIntExtra("progress", 0);
                     Log.d(TAG, "Upload progress: " + progress + "%");
-
-                    if (!isUploadingLytShown && binding.uploadingImageLyt != null) {
-                        isUploadingLytShown = true;
-                        binding.uploadingImageLyt.setVisibility(View.VISIBLE);
-                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.slide_down);
-                        binding.uploadingImageLyt.startAnimation(animation);
-                    }
-
-                    if (binding.uploadingProgress != null && binding.progressPercentage != null) {
-                        binding.uploadingProgress.setProgress(progress);
-                        binding.progressPercentage.setText(progress + "%");
-                    }
+                    sessionManager.setUploadProgress(progress);
+                    showUploadProgress(progress);
 
                 } else if (Const.PROGRESS_DONE.equals(action)) {
                     Log.d(TAG, "Upload complete. Hiding progress UI.");
-                    if (binding.uploadingImageLyt != null) {
-                        isUploadingLytShown = false;
-                        Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.slide_up);
-                        binding.uploadingImageLyt.startAnimation(animation);
-                        binding.uploadingImageLyt.setVisibility(View.GONE);
-                    }
+                    sessionManager.clearUploadProgress();
+                    hideUploadProgress();
                 } else if (Const.UPLOAD_SUCCESS.equals(action)) {
                     Log.d(TAG, "Upload successful. Show success message or update UI here.");
+                    sessionManager.clearUploadProgress();
+                    hideUploadProgress();
                     Toast.makeText(MainActivity.this, getString(R.string.upload_completed), Toast.LENGTH_SHORT).show();
                 }
 
             }
         };
+    }
+
+    private void restorePendingUploadProgress() {
+        if (sessionManager != null && sessionManager.isUploadingMedia()) {
+            showUploadProgress(sessionManager.getUploadProgress());
+        }
+    }
+
+    private void showUploadProgress(int progress) {
+        int safeProgress = Math.max(0, Math.min(100, progress));
+        if (!isUploadingLytShown && binding.uploadingImageLyt != null) {
+            isUploadingLytShown = true;
+            binding.uploadingImageLyt.setVisibility(View.VISIBLE);
+            Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.slide_down);
+            binding.uploadingImageLyt.startAnimation(animation);
+        }
+
+        if (binding.uploadingProgress != null && binding.progressPercentage != null) {
+            binding.uploadingProgress.setProgress(safeProgress);
+            binding.progressPercentage.setText(safeProgress + "%");
+        }
+    }
+
+    private void hideUploadProgress() {
+        if (binding.uploadingImageLyt != null) {
+            isUploadingLytShown = false;
+            Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.slide_up);
+            binding.uploadingImageLyt.startAnimation(animation);
+            binding.uploadingImageLyt.setVisibility(View.GONE);
+        }
     }
 
 
